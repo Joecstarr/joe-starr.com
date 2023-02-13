@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://joe-starr.com/slides/kauf-jones/">
+
+  <title>Jones Polynomial | Joe Starr</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <p><link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/cus_dracula.css" />
+<script>
+  MathJax = {
+    loader: {
+        load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
+        paths: {img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3'}
+    },
+    tex: {
+      inlineMath: [["$", "$"], ["\\(", "\\)"]],
+      displayMath: [["$$","$$"], ["\\[", "\\]"]],
+      processEscapes: true,
+      processEnvironments: true,
+      extensions: ["autoload-all.js","AMSmath.js", "AMSsymbols.js","AMScd.js"],
+      packages: {'[+]': ['img','color','amscd']}
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
+<script type="text/javascript">
+  var addOnClick_pen = function (element, canvas, color, size = 2) {
+    element.onclick = function () {
+      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = size;
+    };
+  };
+  var addOnClick_laser = function (element, canvas, color) {
+    element.onclick = function () {
+      var laser = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush = laser
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = 2;
+    };
+  };
+
+  window.onload = function () {
+    Reveal.configure({ touch: false });
+    Reveal.configure({ transition: 'none' });
+
+    const allTags = document.getElementsByClassName("canvasdiv");
+
+    for (var i = 0; i < allTags.length; i++) {
+      var canvas_tag = allTags[i].getElementsByTagName("canvas")[0];
+      var canvas = new fabric.Canvas(canvas_tag, {
+        width: 1000,
+        height: 1000,
+        allowTouchScrolling: false,
+      })
+      
+      
+      
+      
+      const ctx = canvas.getContext('2d');
+      ctx.imageSmoothingEnabled = true;
+
+
+      canvas.isDrawingMode = true;
+      canvas.freeDrawingBrush.color = "#ffb86c";
+
+
+      var button_pen = document.getElementById(canvas_tag.id + "-pen0");
+      addOnClick_pen(button_pen, canvas, "#bd93f9");
+      button_pen = document.getElementById(canvas_tag.id + "-pen1");
+      addOnClick_pen(button_pen, canvas, "#50fa7b");
+      button_pen = document.getElementById(canvas_tag.id + "-pen2");
+      addOnClick_pen(button_pen, canvas, "#ff79c6");
+      button_pen = document.getElementById(canvas_tag.id + "-pen3");
+      addOnClick_pen(button_pen, canvas, "#ffb86c");
+      button_pen = document.getElementById(canvas_tag.id + "-laser");
+      addOnClick_laser(button_pen, canvas, "#ff5555");
+      button_pen = document.getElementById(canvas_tag.id + "-eraserS");
+      addOnClick_pen(button_pen, canvas, "#282a36", 8)
+      button_pen = document.getElementById(canvas_tag.id + "-eraserB");
+      addOnClick_pen(button_pen, canvas, "#282a36", 20)
+    }
+
+  }
+</script></p>
+<!-- <div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="Kauf_ex1-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="Kauf_ex1-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="Kauf_ex1-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex1-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex1-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex1-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex1-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="Kauf_ex1" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div> -->
+<p hidden>
+`\(\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\LP}{\left(}
+\newcommand{\RP}{\right)}
+\newcommand{\LS}{\left\lbrace}
+\newcommand{\RS}{\right\rbrace}
+\newcommand{\LA}{\left\langle}
+\newcommand{\RA}{\right\rangle}
+\newcommand{\LB}{\left[}
+\newcommand{\RB}{\right]}
+\newcommand{\MM}{\ \middle|\ }
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\msr}[1]{m\left(#1\right)}
+\require{color}\)`
+</p>
+<h1 id="jones-polynomial">Jones Polynomial</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="definition-of-jones-polynomial">Definition Of Jones Polynomial</h2>
+<p>The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
+\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+where $D$ is any oriented diagram for $L$.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Definition is in terms of some odd looking stuff</p>
+<p>The Kauffman bracket of $D$
+\[\LA D\RA\]</p>
+<p>and</p>
+<p>The writhe of $D$
+\[w(D)\]</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="kauffman-bracket">Kauffman Bracket</h2>
+<p>The Kauffman Bracket is a function from unoriented link diagrams in the oriented plane to Laurent polynomials with integer coefficients in an indeterminate $A$. It maps a diagram $D$ to $\LA D\RA\in \Z\LB A^{-1},\ A\RB$
+and is characterized by</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<ol>
+<li>\(\LA \img{/unknot.png} \RA=1\)</li>
+<li>\(\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\)</li>
+<li>\(\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA\)</li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="Kauf_ex2-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="Kauf_ex2-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="Kauf_ex2-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex2-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex2-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex2-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="Kauf_ex2-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="Kauf_ex2" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div>
+<!-- <img style="max-width:1000px !important; height:auto !important" src="/bracket_1.png"/>
+
+<br/>
+
+<img style="max-width:1000px !important; height:auto !important" src="/bracket_2.png"/> -->
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Natural now to ask, &ldquo;Is the Kauffman Bracket a knot invariant?&rdquo;
+How to tell?</p>
+<p>Check Reidemeister moves.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="type-2-and-3">Type 2 and 3</h3>
+<p>If a diagram $D$ is changed by Type II or Type III Reidemeister move, then
+$\LA D\RA$ does not change. That is,</p>
+<ol>
+<li>\(\LA\img{/bracket_type2.png}\RA=\LA\img{/bracket_hor.png}\RA\)</li>
+<li>\(\LA\img{/bracket_type3.png}\RA=\LA\img{/bracket_type3_out.png}\RA\)</li>
+</ol>
+<p>Hence $\LA D\RA$ is invariant under regular isotopy of $D$.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<!--
+<div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="Type_II-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="Type_II-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="Type_II-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="Type_II-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="Type_II-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="Type_II-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="Type_II-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="Type_II" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div>
+
+
+<div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="Type_III-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="Type_III-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="Type_III-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="Type_III-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="Type_III-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="Type_III-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="Type_III-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="Type_III" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div> -->
+<h3 id="type-1">Type 1</h3>
+<p>If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
+changes in the following way:</p>
+<ol>
+<li>\(\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA\)</li>
+<li>\(\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA\)</li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="Type_I-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="Type_I-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="Type_I-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="Type_I-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="Type_I-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="Type_I-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="Type_I-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="Type_I" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>This is a problem&hellip; How to resolve?</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="writhe">Writhe</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="orientation-of-a-crossing">Orientation of a crossing</h3>
+<p>A crossing can be either:</p>
+<ol>
+<li>Positive $+1$ <br/> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/plus.png" alt="&#43;1" loading="lazy" data-zoomable /></div>
+  </div></figure>
+ <br/></li>
+<li>Negative $-1$ <br/> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/minus.png" alt="-1" loading="lazy" data-zoomable /></div>
+  </div></figure>
+ <br/></li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="writhe-of-a-knot">Writhe of a knot</h3>
+<p>The write $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
+signs of the crossings of D.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="Writhe-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="Writhe-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="Writhe-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="Writhe-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="Writhe-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="Writhe-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="Writhe-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="Writhe" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="writhe--bracket">Writhe + Bracket</h3>
+<p>Let $D$ be a diagram of an oriented link $L$. Then the expression
+\[\LP -A\RP^{-3w\LP D\RP}\LA D\RA\]
+is an invariant of the oriented link $L$.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="Writhe_Bracket-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="Writhe_Bracket-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="Writhe_Bracket-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="Writhe_Bracket-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="Writhe_Bracket-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="Writhe_Bracket-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="Writhe_Bracket-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="Writhe_Bracket" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="definition-of-the-jones-polynomial">Definition of the Jones Polynomial</h2>
+<p>The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
+\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+where $D$ is any oriented diagram for $L$.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="jones-polynomial-is-a-function">Jones Polynomial is a function</h2>
+<p>The Jones polynomial invariant is a function
+\[V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS\]
+such that</p>
+<ol>
+<li>\(V\LP\text{unknot}\RP=1\)</li>
+<li>Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  <br/> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/plus.png" alt="&#43;1" loading="lazy" data-zoomable /></div>
+  </div></figure>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/minus.png" alt="-1" loading="lazy" data-zoomable /></div>
+  </div></figure>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/skein_vert.png" alt="-1" loading="lazy" data-zoomable /></div>
+  </div></figure>
+ <br/> Then \[t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0\]</li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="jp_funct-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="jp_funct-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="jp_funct-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="jp_funct-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="jp_funct-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="jp_funct-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="jp_funct-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="jp_funct" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TA | Joe Starr</title>
+    <link>https://joe-starr.com/tag/ta/</link>
+      <atom:link href="https://joe-starr.com/tag/ta/index.xml" rel="self" type="application/rss+xml" />
+    <description>TA</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate>
+    <image>
+      <url>https://joe-starr.com/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_512x512_fill_lanczos_center_3.png</url>
+      <title>TA</title>
+      <link>https://joe-starr.com/tag/ta/</link>
+    </image>
+    
+    <item>
+      <title>MATH:1350 Quantitative Reasoning for Business</title>
+      <link>https://joe-starr.com/teaching/math1350/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://joe-starr.com/teaching/math1350/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Algebraic techniques and modeling; quantitative methods for treating problems that arise in management and economic sciences; topics include algebra techniques, functions and functional models, exponential and logarithmic functions and models, and a thorough introduction to differential calculus; examples and applications from management, economic sciences, and related areas; for students planning to major in business.&lt;/p&gt;
+&lt;h2 id=&#34;taught-from&#34;&gt;Taught from&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lial, Hungerford, Holcomb, &amp;amp; Mullins: Mathematics with Applications in the Management, Natural, and Social Sciences, 12th Edition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;taught-during&#34;&gt;Taught During&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fall 2021&lt;/li&gt;
+&lt;li&gt;Spring 2022&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

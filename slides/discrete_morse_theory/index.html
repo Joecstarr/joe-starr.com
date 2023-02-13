@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://joe-starr.com/slides/discrete_morse_theory/">
+
+  <title>Discrete Morse Theory | Joe Starr</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/cus_dracula.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <p><link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/cus_dracula.css" />
+<script>
+  MathJax = {
+    loader: {
+        load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
+        paths: {img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3'}
+    },
+    tex: {
+      inlineMath: [["$", "$"], ["\\(", "\\)"]],
+      displayMath: [["$$","$$"], ["\\[", "\\]"]],
+      processEscapes: true,
+      processEnvironments: true,
+      extensions: ["autoload-all.js","AMSmath.js", "AMSsymbols.js","AMScd.js"],
+      packages: {'[+]': ['img','color','amscd']}
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
+ <script type="text/javascript">
+   var addOnClick_pen = function (element, canvas, color, size = 2) {
+     element.onclick = function () {
+       canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+       canvas.freeDrawingBrush.color = color;
+       canvas.freeDrawingBrush.width = size;
+     };
+   };
+   var addOnClick_laser = function (element, canvas, color) {
+     element.onclick = function () {
+       var laser = new fabric.PencilBrush(canvas);
+       canvas.freeDrawingBrush = laser
+       canvas.freeDrawingBrush.color = color;
+       canvas.freeDrawingBrush.width = 2;
+     };
+   };
+ 
+   window.onload = function () {
+     Reveal.configure({ touch: false });
+     Reveal.configure({ transition: 'none' });
+ 
+     const allTags = document.getElementsByClassName("canvasdiv");
+ 
+     for (var i = 0; i < allTags.length; i++) {
+       var canvas_tag = allTags[i].getElementsByTagName("canvas")[0];
+       var canvas = new fabric.Canvas(canvas_tag, {
+         width: 1000,
+         height: 1000,
+         allowTouchScrolling: false,
+       })
+       
+       
+       
+       
+       const ctx = canvas.getContext('2d');
+       ctx.imageSmoothingEnabled = true;
+ 
+ 
+       canvas.isDrawingMode = true;
+       canvas.freeDrawingBrush.color = "#ffb86c";
+ 
+ 
+       var button_pen = document.getElementById(canvas_tag.id + "-pen0");
+       addOnClick_pen(button_pen, canvas, "#bd93f9");
+       button_pen = document.getElementById(canvas_tag.id + "-pen1");
+       addOnClick_pen(button_pen, canvas, "#50fa7b");
+       button_pen = document.getElementById(canvas_tag.id + "-pen2");
+       addOnClick_pen(button_pen, canvas, "#ff79c6");
+       button_pen = document.getElementById(canvas_tag.id + "-pen3");
+       addOnClick_pen(button_pen, canvas, "#ffb86c");
+       button_pen = document.getElementById(canvas_tag.id + "-laser");
+       addOnClick_laser(button_pen, canvas, "#ff5555");
+       button_pen = document.getElementById(canvas_tag.id + "-eraserS");
+       addOnClick_pen(button_pen, canvas, "#282a36", 8)
+       button_pen = document.getElementById(canvas_tag.id + "-eraserB");
+       addOnClick_pen(button_pen, canvas, "#282a36", 20)
+     }
+ 
+   }
+ </script></p>
+<p hidden>
+`\(\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\LP}{\left(}
+\newcommand{\RP}{\right)}
+\newcommand{\LS}{\left\lbrace}
+\newcommand{\RS}{\right\rbrace}
+\newcommand{\LA}{\left\langle}
+\newcommand{\RA}{\right\rangle}
+\newcommand{\LB}{\left[}
+\newcommand{\RB}{\right]}
+\newcommand{\MM}{\ \middle|\ }
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\msr}[1]{m\left(#1\right)}
+\require{color}\)`
+</p>
+<h1 id="discrete-morse-theory">Discrete Morse Theory</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<!-- ### CW Complex
+
+---
+
+### n-Cell
+
+An \\(n\\)-cell is open \\(n\\)-ball with boundary \\(S^{n-1}\\).
+
+---
+
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Cells.png"/>
+
+---
+
+### Cell complex
+
+A cell complex is a space constructed from gluing together cells.
+
+This construction works as follows:
+
+* Start with a collection of \\(0\\)-cell, \\(X^0\\), the zero skeleton
+* Attach to the \\(X^{n-1}\\), a collection of \\(n\\)-cells, mapping the boundary of each \\(n\\)-cell to the \\(n-1\\) skeleton.
+
+---
+
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/wedge.png"/>
+
+---
+
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/sphere.png"/>
+
+
+--- -->
+<h3 id="simplicial-complex">Simplicial Complex</h3>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="simplex">Simplex</h3>
+<p>A simplex is just an \(n\)-dimensional &ldquo;triangle&rdquo;
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Simplex.png"/></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>formally</p>
+<p>\[\Delta^n=\LS x \in \R^k: x_0+\cdots+x_{k-1}=1, x_i \geq 0 \text { for } i=0, \ldots, k-1\RS\]</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>We can also describe an \(n\) simplex combinatorially as a
+list of the vertices of the simplex
+\[\sigma = \LB e_0,\ e_1,\ \cdots, e_n\RB\]</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="face-of-a-simplex">Face of a Simplex</h3>
+<p>We define a face \(\tau \), of a simplex \(\sigma\), as a proper subset of \(\sigma\) that is</p>
+<p>\[
+\tau &lt; \sigma
+\]
+when
+\[
+\LB a,b\RB \subset \LB a, \ b,\ c\RB
+\]</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="simplicial-complex-1">Simplicial complex</h3>
+<p>A simplicial complex is a space \(K\) built from glued together simplices and must satisfy</p>
+<ol>
+<li>If \(\tau\) is the face of a simplex $\sigma \in K$ then \(\tau\in K\)</li>
+<li>If \(\sigma, \tau \in K\) then \(\sigma\cap \tau\) is a face of \(\sigma\) and \(\tau\).</li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Torus.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>It&rsquo;s convenient to have a combinatorial description for \(K\).
+This description is called an &ldquo;abstract simplicial complex&rdquo; and is just the
+collection of combinatorial descriptions of simplices of \(K\)</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex.png"/>
+<p>\[\LS
+\LB b,c,d\RB,
+\LB b,c\RB,
+\LB b,d\RB,
+\LB c,d\RB,
+\LB a,c\RB,
+\LB a,b\RB,
+\LB d,e\RB,
+\LB a\RB,
+\LB b\RB,
+\LB c\RB,
+\LB d\RB,
+\LB e\RB\RS
+\]</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="definition-of-a-discrete-function">Definition of a &ldquo;Discrete function&rdquo;</h3>
+<p>A discrete function \(f\) on a simplicial complex \(K\) assigns a number to each simplex</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow">
+<div class="slidecolumn" style="
+font-size: xx-large;
+align-items: right;
+font-size: x-large;
+min-width:50% !important;
+margin-left: auto;
+margin-right: auto;">
+\(
+\begin{aligned}
+f\LP\LB b,c,d\RB\RP &= 5    \\
+  f\LP\LB b,c\RB\RP &= 4    \\
+  f\LP\LB b,d\RB\RP &= 5    \\
+  f\LP\LB c,d\RB\RP &= 3    \\
+  f\LP\LB a,c\RB\RP &= 1    \\
+  f\LP\LB a,b\RB\RP &= 1    \\
+  f\LP\LB d,e\RB\RP &= 5    \\
+    f\LP\LB a\RB\RP &= 0    \\
+    f\LP\LB b\RB\RP &= 2    \\
+    f\LP\LB c\RB\RP &= 2    \\
+    f\LP\LB d\RB\RP &= 4    \\
+    f\LP\LB e\RB\RP &= 6    \\
+\end{aligned}
+\)
+</div>
+<div class="slidecolumn">
+
+<img style="
+max-width:400px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex_f.png"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="definition-of-a-discrete-morse-function">Definition of a &ldquo;Discrete Morse function&rdquo;</h3>
+<!-- @@@ Def box -->
+<p>A discrete function
+\[f:K\to \R\]
+is called a discrete Morse function if for every \(n\)-simplex \(\alpha^n \in K\) the following are true</p>
+<ol>
+<li>\(\#\LS \alpha^n&lt;\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)</li>
+<li>\(\#\LS \alpha^n&gt;\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS\leq 1\)</li>
+</ol>
+<!-- endbox -->
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+<ol>
+  <li>
+  \(\#\LS \alpha^n<\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)
+  </li>
+  <li>
+  \(\#\LS \alpha^n>\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS\leq 1\)
+  </li>
+</ol>
+</div>
+<div class="slidecolumn">
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex_f.png"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+<ol>
+<li>
+\(\#\LS \alpha^n<\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)
+</li>
+<li>
+\(\#\LS \alpha^n>\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS\leq 1\)
+</li>
+</ol>
+</div>
+<div class="slidecolumn">
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex_f_Not_Morse.png"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="definition-of-a-critical-simplex">Definition of a Critical simplex</h3>
+<!-- @@@ Def box -->
+<p>An \(n-\)simplex \(\alpha^n\), of a complex \(K\), is critical under a discrete Morse function \(f\) if the following are true</p>
+<ol>
+<li>\(\#\LS \alpha^n&lt;\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS=0\)</li>
+<li>\(\#\LS \alpha^n&gt;\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS=0\)</li>
+</ol>
+<p>We should note that for all the \(\alpha\in K\) at least one of \(1.\) and \(2.\) must be true.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+<ol>
+<li>
+\(\#\LS \alpha^n<\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS=0\)
+</li>
+<li>
+\(\#\LS \alpha^n>\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS=0\)
+</li>
+</ol>
+</div>
+<div class="slidecolumn">
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex_crit.png"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<!-- <div class="canvasdiv canvrow">
+  <div class="canvcolumn">
+    <div><button id="jp_funct-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
+        Eraser</button></div>
+    <div><button id="jp_funct-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
+        Eraser</button></div>
+    <div><button id="jp_funct-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
+    </div>
+    <div><button id="jp_funct-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
+    </div>
+    <div><button id="jp_funct-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
+    </div>
+    <div><button id="jp_funct-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
+    </div>
+    <div><button id="jp_funct-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
+    </div>
+  </div>
+  <div class="canvcollumn">
+    <canvas id="jp_funct" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
+  </div>
+</div> -->
+<h3 id="discrete-gradient-vector-field">Discrete Gradient Vector Field</h3>
+<!-- @@@ Def box -->
+<p>A discrete gradient vector field on a simplicial complex \(K\)
+is a collection of pairs \(V=\LS\tau^n&lt;\sigma^{n+1}\RS\) of
+simplices in \(K\) such that each simplex is in at most one pair of \(V\).</p>
+<!-- endbox -->
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>A discrete Morse function induces a gradient vector field on \(K\).</p>
+<p>If \(\alpha\) is a non-critical simplex, and \[\alpha&lt;\beta\] with \[f\LP\beta\RP&lt;f\LP\alpha\RP\]
+We draw an arrow from \(\alpha\to \beta\).</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex_grad.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="simplicial-collapse">Simplicial collapse</h3>
+<p>The simplicial equivalent of a deformation retraction is called a
+simplicial collapse.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="maximal-face">Maximal Face</h3>
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+text-align: left !important;
+">
+A face \(\sigma\in K\) is called maximal if there is no \(\beta\in K\) so that \(\sigma<\beta\).
+</div>
+<div class="slidecolumn">
+
+<img style="
+max-width:400px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Facets.png"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="free-face">Free face</h3>
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+text-align: left !important;
+">
+A simplex \(\tau\) of a simplicial complex \(K\) is called a free face if \(\tau\) is a face of exactly one maximal face.
+</div>
+<div class="slidecolumn">
+
+<img style="
+max-width:400px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Free_face.png"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="collapse">Collapse</h3>
+<p>If \(\tau\) is a free face of \(\sigma\) we can collapse \(K \searrow K^\prime\) by the following set operation</p>
+<p>\[K^\prime = K-\LP\tau \cup \sigma\RP\]</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Collapse.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="collapsing-a-vector-field">Collapsing A Vector Field</h3>
+<p>Given a vector field we can simplicially collapse following the arrows.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/Complex_collapse.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="main-result-of-discrete-morse-theory">Main result of discrete Morse Theory</h3>
+<p>Suppose \(K\) is a simplicial complex with a discrete Morse function. Then \(K\) is homotopy equivalent to a CW complex with exactly one cell of dimension \(n\) for each critical simplex of dimension \(n\).</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sphere-theorems">Sphere Theorems</h3>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="star-of-a-face">Star of a face</h2>
+<p>The star of a face \(\tau\) of \(K\) is the subcomplex of \(K\)
+consisting of all faces \(\sigma\) of \(K\) where \(\tau &lt; \sigma\), as well as all faces of \(\sigma\).</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/star.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/star2.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="link-of-a-face">Link of a face</h2>
+<p>The link of a face \(\tau\) of \(K\) is the subcomplex of \(K\)
+consisting of all faces of the star of \(\tau\) that do not intersect \(\tau\).</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/link.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<img style="
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important" src="/DiscMorse/link2.png"/>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="combinatorial-d-ball">Combinatorial d-ball</h3>
+<p>A complex \(K\) is a combinatorial d-ball if \(K\) and \(\Delta^d\) have
+isomorphic subdivisions.</p>
+<p>A combinatorial \(\LP d-1\RP\)-sphere is the boundary of a \(d\)-ball</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="combinatorial-d-manifold">combinatorial d-manifold</h3>
+<p>A complex is a \(d\)-manifold if the link of every vertex is either a
+\((d-1)\)-ball or \((d-1)\)-sphere.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sphere-theorems-1">Sphere theorems</h3>
+<p>Let \(K\) be a combinitorial \(d\)-manifold with boundary which simplicially
+collapses to a vertex. Then \(K\) is a combinitorial \(d\)-ball.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Let \(X\) be a combinatorial \(d\)-manifold with a discrete with a
+discrete Morse function with exactly two critical simplices. Then \(X\)
+is a combinitorial sphere.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://math.rice.edu/~forman/user.ps" target="_blank" rel="noopener">Robin Forman, A user&rsquo;s guide to discrete Morse theory</a></li>
+<li><a href="https://doi.org/10.1006/aima.1997.1650" target="_blank" rel="noopener">Robin Forman, Morse Theory for Cell Complexes</a></li>
+<li><a href="https://www.cis.upenn.edu/~jean/gbooks/convexpoly.html" target="_blank" rel="noopener">Jean Gallier &amp; Jocelyn Quaintance, Aspects of Convex Geometry </a></li>
+</ul>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>

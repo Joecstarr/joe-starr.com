@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joe Starr</title>
+    <link>https://joe-starr.com/</link>
+      <atom:link href="https://joe-starr.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joe Starr</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 12 Feb 2023 17:09:26 +0000</lastBuildDate>
+    <image>
+      <url>https://joe-starr.com/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_512x512_fill_lanczos_center_3.png</url>
+      <title>Joe Starr</title>
+      <link>https://joe-starr.com/</link>
+    </image>
+    
+    <item>
+      <title>Tool Chain</title>
+      <link>https://joe-starr.com/resources/toolchain/</link>
+      <pubDate>Sun, 12 Feb 2023 17:09:26 +0000</pubDate>
+      <guid>https://joe-starr.com/resources/toolchain/</guid>
+      <description>&lt;h2 id=&#34;marginnote&#34;&gt;MarginNote&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.marginnote.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;obsidian&#34;&gt;Obsidian&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://obsidian.md/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;goodnotes&#34;&gt;Goodnotes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodnotes.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;anki&#34;&gt;Anki&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ankiweb.net/about&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;texvscode&#34;&gt;TeX/Vscode&lt;/h2&gt;
+&lt;h3 id=&#34;plugins&#34;&gt;plugins&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX Utilities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX Workshop&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;This is the main plugin: Here&amp;rsquo;s &lt;a href=&#34;https://github.com/James-Yu/LaTeX-Workshop/wiki/Install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spell Checker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gitlens&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;free for students&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Todo Tree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bookmarks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=geddski.macros&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;macros&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;settings&#34;&gt;Settings&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;macros&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathField&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;command&amp;#34;: &amp;#34;type&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;args&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;text&amp;#34;: &amp;#34;\\(\\)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathcField&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;command&amp;#34;: &amp;#34;type&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;args&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;text&amp;#34;: &amp;#34;\\[\\]&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathField_jy&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;command&amp;#34;: &amp;#34;type&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;args&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;text&amp;#34;: &amp;#34;$$&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathcField_jy&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;command&amp;#34;: &amp;#34;type&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;args&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;text&amp;#34;: &amp;#34;$$$$&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathField_md&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;command&amp;#34;: &amp;#34;type&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;args&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;text&amp;#34;: &amp;#34;\\\\(\\\\)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathcField_md&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;command&amp;#34;: &amp;#34;type&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;args&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;text&amp;#34;: &amp;#34;\\\\[\\\\]&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;cursorLeft&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.userWords&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;amsfonts&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;amssymb&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;amsthm&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;bijectivity&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;diffeomorphic&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;diffeomorphism&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;draculabg&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;draculafg&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;homeo&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;homotopy&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;htpc&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;injective&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;injectivity&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;Kauffman&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;Lipschitz&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathbb&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;mathjax&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;MCAL&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;MISRA&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;OEM&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;QAC&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;Reidemeister&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;reindexing&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;Simplicial&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;simplicially&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;surjective&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;surjectivity&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;unoriented&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;WLOG&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.checkLimit&amp;#34;: 1000,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.minWordLength&amp;#34;: 3,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.diagnosticLevel&amp;#34;: &amp;#34;Warning&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.checkOnlyEnabledFileTypes&amp;#34;: false,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.autoFormatConfigFile&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.maxNumberOfProblems&amp;#34;: 1000,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.showAutocompleteSuggestions&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.suggestionMenuType&amp;#34;: &amp;#34;quickFix&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.allowCompoundWords&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.patterns&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;cSpell.languageSettings&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;languageId&amp;#34;: &amp;#34;latex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;patterns&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  &amp;#34;name&amp;#34;: &amp;#34;LaTexMacrosMultiLine&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  &amp;#34;pattern&amp;#34;: &amp;#34;&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  &amp;#34;description&amp;#34;: &amp;#34;Match against all LaTex Macros&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.renderWhitespace&amp;#34;: &amp;#34;all&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;files.trimTrailingWhitespace&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.intellisense.unimathsymbols.enabled&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.message.warning.show&amp;#34;: false,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.latexindent.args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;-c&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;%DIR%/&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;%TMPFILE%&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.view.pdf.hand&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.latex.autoBuild.run&amp;#34;: &amp;#34;onSave&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.latex.recipe.default&amp;#34;: &amp;#34;latexmk (lualatex)&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.latex.autoClean.run&amp;#34;: &amp;#34;onFailed&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.view.pdf.viewer&amp;#34;: &amp;#34;tab&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.bind.enter.key&amp;#34;: false,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.hover.preview.scale&amp;#34;: 0.5,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.intellisense.update.aggressive.enabled&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.synctex.afterBuild.enabled&amp;#34;: true,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;latex-workshop.latex.recipes&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;latexmk 🔃&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;latexmk&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;latexmk (latexmkrc)&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;latexmk_rconly&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;latexmk (lualatex)&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;lualatexmk&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;pdflatex ➞ bibtex ➞ pdflatex × 2&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;pdflatex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;bibtex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;pdflatex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;pdflatex&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;Compile Rnw files&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;rnw2tex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;latexmk&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;Compile Jnw files&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;jnw2tex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;latexmk&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;tectonic&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;tectonic&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;latex-workshop.latex.tools&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;latexmk&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;latexmk&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-synctex=1&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-shell-escape&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-interaction=nonstopmode&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-file-line-error&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-pdf&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-outdir=%OUTDIR%&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;%DOC%&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;lualatexmk&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;latexmk&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-synctex=1&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-interaction=nonstopmode&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-file-line-error&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-lualatex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-outdir=%OUTDIR%&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;%DOC%&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;latexmk_rconly&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;latexmk&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;%DOC%&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;pdflatex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;pdflatex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-synctex=1&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-shell-escape&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-interaction=nonstopmode&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-file-line-error&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;%DOC%&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;bibtex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;bibtex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;%DOCFILE%&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;rnw2tex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;Rscript&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-e&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;knitr::opts_knit$set(concordance = TRUE); knitr::knit(&amp;#39;%DOCFILE_EXT%&amp;#39;)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;jnw2tex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;julia&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-e&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;using Weave; weave(\&amp;#34;%DOC_EXT%\&amp;#34;, doctype=\&amp;#34;tex\&amp;#34;)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;jnw2texmintex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;julia&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;-e&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;using Weave; weave(\&amp;#34;%DOC_EXT%\&amp;#34;, doctype=\&amp;#34;texminted\&amp;#34;)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;name&amp;#34;: &amp;#34;tectonic&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;command&amp;#34;: &amp;#34;tectonic&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;args&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--synctex&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--keep-logs&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;%DOC%.tex&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;env&amp;#34;: {}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ],
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;autobuild-on-push-to-trunk-github-action&#34;&gt;Autobuild on push to trunk github action&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;name: publish pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;on:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  push:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    branches:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - main  # Set a branch to deploy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jobs:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  deploy:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      runs-on: ubuntu-latest
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      steps:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Set up Git repository
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: actions/checkout@v2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Compile LaTeX document
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: xu-cheng/latex-action@v2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          with:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            latexmk_use_lualatex: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            root_file: &amp;#34;*.tex&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            glob_root_file: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Bump version and push tag
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          id: tag_version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: mathieudutour/github-tag-action@v6.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          with:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            github_token: ${{ secrets.GITHUB_TOKEN }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Create a GitHub release
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: ncipollo/release-action@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          with:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            tag: ${{ steps.tag_version.outputs.new_tag }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            name: Release ${{ steps.tag_version.outputs.new_tag }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            body: ${{ steps.tag_version.outputs.changelog }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Release
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: softprops/action-gh-release@v1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          with:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            tag_name: ${{ steps.tag_version.outputs.new_tag }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            files: |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              *.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              *.tex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Analysis Prepsheet</title>
+      <link>https://joe-starr.com/resources/analysis_prepsheet/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://joe-starr.com/resources/analysis_prepsheet/</guid>
+      <description>&lt;p&gt;A prepsheet/card deck for preparing for my analysis qual&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Joecstarr/Analysis_prepsheet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/Joecstarr/Analysis_prepsheet&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tex&#34;&gt;TeX&lt;/h2&gt;
+&lt;p&gt;Generates to a pdf targeting an ipad. Pdf has one page of definition name
+followed by a page of the actual definition content.&lt;/p&gt;
+&lt;h2 id=&#34;anki&#34;&gt;Anki&lt;/h2&gt;
+&lt;p&gt;anki.py is a python script, it takes in a .tex file (drag and drop).
+It then parses out the review content and creates an &lt;a href=&#34;ankiweb.net/&#34;&gt;anki&lt;/a&gt; deck.
+Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MATH:1350 Quantitative Reasoning for Business</title>
+      <link>https://joe-starr.com/teaching/math1350/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://joe-starr.com/teaching/math1350/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Algebraic techniques and modeling; quantitative methods for treating problems that arise in management and economic sciences; topics include algebra techniques, functions and functional models, exponential and logarithmic functions and models, and a thorough introduction to differential calculus; examples and applications from management, economic sciences, and related areas; for students planning to major in business.&lt;/p&gt;
+&lt;h2 id=&#34;taught-from&#34;&gt;Taught from&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lial, Hungerford, Holcomb, &amp;amp; Mullins: Mathematics with Applications in the Management, Natural, and Social Sciences, 12th Edition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;taught-during&#34;&gt;Taught During&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fall 2021&lt;/li&gt;
+&lt;li&gt;Spring 2022&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Legendrian knots</title>
+      <link>https://joe-starr.com/slides/legendrian_knots/</link>
+      <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/slides/legendrian_knots/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
+&lt;script&gt;
+  MathJax = {
+    loader: {
+        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
+        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
+    },
+    tex: {
+      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
+      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
+      processEscapes: true,
+      processEnvironments: true,
+      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
+      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
+    },
+    options: {
+      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
+    }
+  };
+
+  window.addEventListener(&#39;load&#39;, (event) =&gt; {
+      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
+        x.parentElement.classList += &#39;has-jax&#39;})
+    });
+
+&lt;/script&gt;
+&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
+  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+&lt;p hidden&gt;
+`\(\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\LP}{\left(}
+\newcommand{\RP}{\right)}
+\newcommand{\LS}{\left\lbrace}
+\newcommand{\RS}{\right\rbrace}
+\newcommand{\LA}{\left\langle}
+\newcommand{\RA}{\right\rangle}
+\newcommand{\LB}{\left[}
+\newcommand{\RB}{\right]}
+\newcommand{\MM}{\ \middle|\ }
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\msr}[1]{m\left(#1\right)}
+\require{color}\)`
+&lt;/p&gt;
+&lt;h1 id=&#34;legendrian-knots&#34;&gt;Legendrian knots&lt;/h1&gt;
+&lt;hr&gt;
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;
+      &lt;button id=&#34;disablekeys&#34; style=&#34;border-radius: 12px; background-color: #ff5555;&#34;&gt;Slides Enabled&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;
+      &lt;canvas id=&#34;unity-canvas&#34; width=&#34;960&#34; height=&#34;600&#34;
+        style=&#34;width: 960px; height: 600px; background: #231f20;&#34;&gt;&lt;/canvas&gt;
+      &lt;script src=&#34;https://joe-starr.com/games/contact_with_unknot/build.loader.js&#34;&gt;&lt;/script&gt;
+      &lt;script&gt;
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+          
+          var meta = document.createElement(&#39;meta&#39;)
+          meta.name = &#39;viewport&#39;
+          meta.content =
+            &#39;width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes&#39;
+          document.getElementsByTagName(&#39;head&#39;)[0].appendChild(meta)
+
+          var canvas = document.querySelector(&#39;#unity-canvas&#39;)
+          canvas.style.width = &#39;100%&#39;
+          canvas.style.height = &#39;100%&#39;
+          canvas.style.position = &#39;fixed&#39;
+
+          document.body.style.textAlign = &#39;left&#39;
+        }
+
+        createUnityInstance(document.querySelector(&#39;#unity-canvas&#39;), {
+          dataUrl: &#39;\/games\/contact_with_unknot/build.data&#39;,
+          frameworkUrl: &#39;\/games\/contact_with_unknot/build.framework.js&#39;,
+          codeUrl: &#39;\/games\/contact_with_unknot/build.wasm&#39;,
+          streamingAssetsUrl: &#39;StreamingAssets&#39;,
+          companyName: &#39;DefaultCompany&#39;,
+          productName: &#39;My project&#39;,
+          productVersion: &#39;0.1&#39;,
+          
+          
+        })
+
+
+      &lt;/script&gt;
+      &lt;script type=&#34;text/javascript&#34;&gt;
+        var keyboard_stat = true;
+        window.onload = function () {
+          document.getElementById(&#34;disablekeys&#34;).onclick = function () {
+
+            btn = document.getElementById(&#34;disablekeys&#34;)
+            keyboard_stat = !keyboard_stat;
+
+            if (keyboard_stat)
+            {
+              btn.innerHTML = &#34;Slides Enabled&#34;
+            }else
+            {
+              btn.innerHTML = &#34;Slides Disabled&#34;
+            }
+
+            Reveal.configure({ keyboard: keyboard_stat });
+          };
+        }
+      &lt;/script&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Discrete Morse Theory</title>
+      <link>https://joe-starr.com/slides/discrete_morse_theory/</link>
+      <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/slides/discrete_morse_theory/</guid>
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
+&lt;script&gt;
+  MathJax = {
+    loader: {
+        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
+        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
+    },
+    tex: {
+      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
+      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
+      processEscapes: true,
+      processEnvironments: true,
+      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
+      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
+    },
+    options: {
+      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
+    }
+  };
+
+  window.addEventListener(&#39;load&#39;, (event) =&gt; {
+      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
+        x.parentElement.classList += &#39;has-jax&#39;})
+    });
+
+&lt;/script&gt;
+&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
+  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt; &lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
+ &lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
+ &lt;script type=&#34;text/javascript&#34;&gt;
+   var addOnClick_pen = function (element, canvas, color, size = 2) {
+     element.onclick = function () {
+       canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+       canvas.freeDrawingBrush.color = color;
+       canvas.freeDrawingBrush.width = size;
+     };
+   };
+   var addOnClick_laser = function (element, canvas, color) {
+     element.onclick = function () {
+       var laser = new fabric.PencilBrush(canvas);
+       canvas.freeDrawingBrush = laser
+       canvas.freeDrawingBrush.color = color;
+       canvas.freeDrawingBrush.width = 2;
+     };
+   };
+ 
+   window.onload = function () {
+     Reveal.configure({ touch: false });
+     Reveal.configure({ transition: &#39;none&#39; });
+ 
+     const allTags = document.getElementsByClassName(&#34;canvasdiv&#34;);
+ 
+     for (var i = 0; i &lt; allTags.length; i++) {
+       var canvas_tag = allTags[i].getElementsByTagName(&#34;canvas&#34;)[0];
+       var canvas = new fabric.Canvas(canvas_tag, {
+         width: 1000,
+         height: 1000,
+         allowTouchScrolling: false,
+       })
+       
+       
+       
+       
+       const ctx = canvas.getContext(&#39;2d&#39;);
+       ctx.imageSmoothingEnabled = true;
+ 
+ 
+       canvas.isDrawingMode = true;
+       canvas.freeDrawingBrush.color = &#34;#ffb86c&#34;;
+ 
+ 
+       var button_pen = document.getElementById(canvas_tag.id + &#34;-pen0&#34;);
+       addOnClick_pen(button_pen, canvas, &#34;#bd93f9&#34;);
+       button_pen = document.getElementById(canvas_tag.id + &#34;-pen1&#34;);
+       addOnClick_pen(button_pen, canvas, &#34;#50fa7b&#34;);
+       button_pen = document.getElementById(canvas_tag.id + &#34;-pen2&#34;);
+       addOnClick_pen(button_pen, canvas, &#34;#ff79c6&#34;);
+       button_pen = document.getElementById(canvas_tag.id + &#34;-pen3&#34;);
+       addOnClick_pen(button_pen, canvas, &#34;#ffb86c&#34;);
+       button_pen = document.getElementById(canvas_tag.id + &#34;-laser&#34;);
+       addOnClick_laser(button_pen, canvas, &#34;#ff5555&#34;);
+       button_pen = document.getElementById(canvas_tag.id + &#34;-eraserS&#34;);
+       addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 8)
+       button_pen = document.getElementById(canvas_tag.id + &#34;-eraserB&#34;);
+       addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 20)
+     }
+ 
+   }
+ &lt;/script&gt;&lt;/p&gt;
+&lt;p hidden&gt;
+`\(\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\LP}{\left(}
+\newcommand{\RP}{\right)}
+\newcommand{\LS}{\left\lbrace}
+\newcommand{\RS}{\right\rbrace}
+\newcommand{\LA}{\left\langle}
+\newcommand{\RA}{\right\rangle}
+\newcommand{\LB}{\left[}
+\newcommand{\RB}{\right]}
+\newcommand{\MM}{\ \middle|\ }
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\msr}[1]{m\left(#1\right)}
+\require{color}\)`
+&lt;/p&gt;
+&lt;h1 id=&#34;discrete-morse-theory&#34;&gt;Discrete Morse Theory&lt;/h1&gt;
+&lt;hr&gt;
+&lt;!-- ### CW Complex
+
+---
+
+### n-Cell
+
+An \\(n\\)-cell is open \\(n\\)-ball with boundary \\(S^{n-1}\\).
+
+---
+
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Cells.png&#34;/&gt;
+
+---
+
+### Cell complex
+
+A cell complex is a space constructed from gluing together cells.
+
+This construction works as follows:
+
+* Start with a collection of \\(0\\)-cell, \\(X^0\\), the zero skeleton
+* Attach to the \\(X^{n-1}\\), a collection of \\(n\\)-cells, mapping the boundary of each \\(n\\)-cell to the \\(n-1\\) skeleton.
+
+---
+
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/wedge.png&#34;/&gt;
+
+---
+
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/sphere.png&#34;/&gt;
+
+
+--- --&gt;
+&lt;h3 id=&#34;simplicial-complex&#34;&gt;Simplicial Complex&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;simplex&#34;&gt;Simplex&lt;/h3&gt;
+&lt;p&gt;A simplex is just an \(n\)-dimensional &amp;ldquo;triangle&amp;rdquo;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Simplex.png&#34;/&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;formally&lt;/p&gt;
+&lt;p&gt;\[\Delta^n=\LS x \in \R^k: x_0+\cdots+x_{k-1}=1, x_i \geq 0 \text { for } i=0, \ldots, k-1\RS\]&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We can also describe an \(n\) simplex combinatorially as a
+list of the vertices of the simplex
+\[\sigma = \LB e_0,\ e_1,\ \cdots, e_n\RB\]&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;face-of-a-simplex&#34;&gt;Face of a Simplex&lt;/h3&gt;
+&lt;p&gt;We define a face \(\tau \), of a simplex \(\sigma\), as a proper subset of \(\sigma\) that is&lt;/p&gt;
+&lt;p&gt;\[
+\tau &amp;lt; \sigma
+\]
+when
+\[
+\LB a,b\RB \subset \LB a, \ b,\ c\RB
+\]&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;simplicial-complex-1&#34;&gt;Simplicial complex&lt;/h3&gt;
+&lt;p&gt;A simplicial complex is a space \(K\) built from glued together simplices and must satisfy&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If \(\tau\) is the face of a simplex $\sigma \in K$ then \(\tau\in K\)&lt;/li&gt;
+&lt;li&gt;If \(\sigma, \tau \in K\) then \(\sigma\cap \tau\) is a face of \(\sigma\) and \(\tau\).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Torus.png&#34;/&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex.png&#34;/&gt;
+&lt;hr&gt;
+&lt;p&gt;It&amp;rsquo;s convenient to have a combinatorial description for \(K\).
+This description is called an &amp;ldquo;abstract simplicial complex&amp;rdquo; and is just the
+collection of combinatorial descriptions of simplices of \(K\)&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex.png&#34;/&gt;
+&lt;p&gt;\[\LS
+\LB b,c,d\RB,
+\LB b,c\RB,
+\LB b,d\RB,
+\LB c,d\RB,
+\LB a,c\RB,
+\LB a,b\RB,
+\LB d,e\RB,
+\LB a\RB,
+\LB b\RB,
+\LB c\RB,
+\LB d\RB,
+\LB e\RB\RS
+\]&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;definition-of-a-discrete-function&#34;&gt;Definition of a &amp;ldquo;Discrete function&amp;rdquo;&lt;/h3&gt;
+&lt;p&gt;A discrete function \(f\) on a simplicial complex \(K\) assigns a number to each simplex&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+font-size: xx-large;
+align-items: right;
+font-size: x-large;
+min-width:50% !important;
+margin-left: auto;
+margin-right: auto;&#34;&gt;
+\(
+\begin{aligned}
+f\LP\LB b,c,d\RB\RP &amp;= 5    \\
+  f\LP\LB b,c\RB\RP &amp;= 4    \\
+  f\LP\LB b,d\RB\RP &amp;= 5    \\
+  f\LP\LB c,d\RB\RP &amp;= 3    \\
+  f\LP\LB a,c\RB\RP &amp;= 1    \\
+  f\LP\LB a,b\RB\RP &amp;= 1    \\
+  f\LP\LB d,e\RB\RP &amp;= 5    \\
+    f\LP\LB a\RB\RP &amp;= 0    \\
+    f\LP\LB b\RB\RP &amp;= 2    \\
+    f\LP\LB c\RB\RP &amp;= 2    \\
+    f\LP\LB d\RB\RP &amp;= 4    \\
+    f\LP\LB e\RB\RP &amp;= 6    \\
+\end{aligned}
+\)
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+
+&lt;img style=&#34;
+max-width:400px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_f.png&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;definition-of-a-discrete-morse-function&#34;&gt;Definition of a &amp;ldquo;Discrete Morse function&amp;rdquo;&lt;/h3&gt;
+&lt;!-- @@@ Def box --&gt;
+&lt;p&gt;A discrete function
+\[f:K\to \R\]
+is called a discrete Morse function if for every \(n\)-simplex \(\alpha^n \in K\) the following are true&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\(\#\LS \alpha^n&amp;lt;\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)&lt;/li&gt;
+&lt;li&gt;\(\#\LS \alpha^n&amp;gt;\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS\leq 1\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- endbox --&gt;
+&lt;hr&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+&#34;&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+  \(\#\LS \alpha^n&lt;\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)
+  &lt;/li&gt;
+  &lt;li&gt;
+  \(\#\LS \alpha^n&gt;\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS\leq 1\)
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_f.png&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+\(\#\LS \alpha^n&lt;\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)
+&lt;/li&gt;
+&lt;li&gt;
+\(\#\LS \alpha^n&gt;\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS\leq 1\)
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_f_Not_Morse.png&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;definition-of-a-critical-simplex&#34;&gt;Definition of a Critical simplex&lt;/h3&gt;
+&lt;!-- @@@ Def box --&gt;
+&lt;p&gt;An \(n-\)simplex \(\alpha^n\), of a complex \(K\), is critical under a discrete Morse function \(f\) if the following are true&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\(\#\LS \alpha^n&amp;lt;\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS=0\)&lt;/li&gt;
+&lt;li&gt;\(\#\LS \alpha^n&amp;gt;\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS=0\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We should note that for all the \(\alpha\in K\) at least one of \(1.\) and \(2.\) must be true.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+\(\#\LS \alpha^n&lt;\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS=0\)
+&lt;/li&gt;
+&lt;li&gt;
+\(\#\LS \alpha^n&gt;\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS=0\)
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_crit.png&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;!-- &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;jp_funct&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;
+&lt;h3 id=&#34;discrete-gradient-vector-field&#34;&gt;Discrete Gradient Vector Field&lt;/h3&gt;
+&lt;!-- @@@ Def box --&gt;
+&lt;p&gt;A discrete gradient vector field on a simplicial complex \(K\)
+is a collection of pairs \(V=\LS\tau^n&amp;lt;\sigma^{n+1}\RS\) of
+simplices in \(K\) such that each simplex is in at most one pair of \(V\).&lt;/p&gt;
+&lt;!-- endbox --&gt;
+&lt;hr&gt;
+&lt;p&gt;A discrete Morse function induces a gradient vector field on \(K\).&lt;/p&gt;
+&lt;p&gt;If \(\alpha\) is a non-critical simplex, and \[\alpha&amp;lt;\beta\] with \[f\LP\beta\RP&amp;lt;f\LP\alpha\RP\]
+We draw an arrow from \(\alpha\to \beta\).&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_grad.png&#34;/&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;simplicial-collapse&#34;&gt;Simplicial collapse&lt;/h3&gt;
+&lt;p&gt;The simplicial equivalent of a deformation retraction is called a
+simplicial collapse.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;maximal-face&#34;&gt;Maximal Face&lt;/h3&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+text-align: left !important;
+&#34;&gt;
+A face \(\sigma\in K\) is called maximal if there is no \(\beta\in K\) so that \(\sigma&lt;\beta\).
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+
+&lt;img style=&#34;
+max-width:400px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Facets.png&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;free-face&#34;&gt;Free face&lt;/h3&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+text-align: left !important;
+&#34;&gt;
+A simplex \(\tau\) of a simplicial complex \(K\) is called a free face if \(\tau\) is a face of exactly one maximal face.
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+
+&lt;img style=&#34;
+max-width:400px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Free_face.png&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;collapse&#34;&gt;Collapse&lt;/h3&gt;
+&lt;p&gt;If \(\tau\) is a free face of \(\sigma\) we can collapse \(K \searrow K^\prime\) by the following set operation&lt;/p&gt;
+&lt;p&gt;\[K^\prime = K-\LP\tau \cup \sigma\RP\]&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Collapse.png&#34;/&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;collapsing-a-vector-field&#34;&gt;Collapsing A Vector Field&lt;/h3&gt;
+&lt;p&gt;Given a vector field we can simplicially collapse following the arrows.&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_collapse.png&#34;/&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;main-result-of-discrete-morse-theory&#34;&gt;Main result of discrete Morse Theory&lt;/h3&gt;
+&lt;p&gt;Suppose \(K\) is a simplicial complex with a discrete Morse function. Then \(K\) is homotopy equivalent to a CW complex with exactly one cell of dimension \(n\) for each critical simplex of dimension \(n\).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;sphere-theorems&#34;&gt;Sphere Theorems&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;star-of-a-face&#34;&gt;Star of a face&lt;/h2&gt;
+&lt;p&gt;The star of a face \(\tau\) of \(K\) is the subcomplex of \(K\)
+consisting of all faces \(\sigma\) of \(K\) where \(\tau &amp;lt; \sigma\), as well as all faces of \(\sigma\).&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/star.png&#34;/&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/star2.png&#34;/&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;link-of-a-face&#34;&gt;Link of a face&lt;/h2&gt;
+&lt;p&gt;The link of a face \(\tau\) of \(K\) is the subcomplex of \(K\)
+consisting of all faces of the star of \(\tau\) that do not intersect \(\tau\).&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/link.png&#34;/&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:600px !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/link2.png&#34;/&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;combinatorial-d-ball&#34;&gt;Combinatorial d-ball&lt;/h3&gt;
+&lt;p&gt;A complex \(K\) is a combinatorial d-ball if \(K\) and \(\Delta^d\) have
+isomorphic subdivisions.&lt;/p&gt;
+&lt;p&gt;A combinatorial \(\LP d-1\RP\)-sphere is the boundary of a \(d\)-ball&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;combinatorial-d-manifold&#34;&gt;combinatorial d-manifold&lt;/h3&gt;
+&lt;p&gt;A complex is a \(d\)-manifold if the link of every vertex is either a
+\((d-1)\)-ball or \((d-1)\)-sphere.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;sphere-theorems-1&#34;&gt;Sphere theorems&lt;/h3&gt;
+&lt;p&gt;Let \(K\) be a combinitorial \(d\)-manifold with boundary which simplicially
+collapses to a vertex. Then \(K\) is a combinitorial \(d\)-ball.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Let \(X\) be a combinatorial \(d\)-manifold with a discrete with a
+discrete Morse function with exactly two critical simplices. Then \(X\)
+is a combinitorial sphere.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://math.rice.edu/~forman/user.ps&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Robin Forman, A user&amp;rsquo;s guide to discrete Morse theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://doi.org/10.1006/aima.1997.1650&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Robin Forman, Morse Theory for Cell Complexes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cis.upenn.edu/~jean/gbooks/convexpoly.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jean Gallier &amp;amp; Jocelyn Quaintance, Aspects of Convex Geometry &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jones Polynomial</title>
+      <link>https://joe-starr.com/slides/kauf-jones/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/slides/kauf-jones/</guid>
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
+&lt;script&gt;
+  MathJax = {
+    loader: {
+        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
+        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
+    },
+    tex: {
+      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
+      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
+      processEscapes: true,
+      processEnvironments: true,
+      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
+      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
+    },
+    options: {
+      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
+    }
+  };
+
+  window.addEventListener(&#39;load&#39;, (event) =&gt; {
+      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
+        x.parentElement.classList += &#39;has-jax&#39;})
+    });
+
+&lt;/script&gt;
+&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
+  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+  var addOnClick_pen = function (element, canvas, color, size = 2) {
+    element.onclick = function () {
+      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = size;
+    };
+  };
+  var addOnClick_laser = function (element, canvas, color) {
+    element.onclick = function () {
+      var laser = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush = laser
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = 2;
+    };
+  };
+
+  window.onload = function () {
+    Reveal.configure({ touch: false });
+    Reveal.configure({ transition: &#39;none&#39; });
+
+    const allTags = document.getElementsByClassName(&#34;canvasdiv&#34;);
+
+    for (var i = 0; i &lt; allTags.length; i++) {
+      var canvas_tag = allTags[i].getElementsByTagName(&#34;canvas&#34;)[0];
+      var canvas = new fabric.Canvas(canvas_tag, {
+        width: 1000,
+        height: 1000,
+        allowTouchScrolling: false,
+      })
+      
+      
+      
+      
+      const ctx = canvas.getContext(&#39;2d&#39;);
+      ctx.imageSmoothingEnabled = true;
+
+
+      canvas.isDrawingMode = true;
+      canvas.freeDrawingBrush.color = &#34;#ffb86c&#34;;
+
+
+      var button_pen = document.getElementById(canvas_tag.id + &#34;-pen0&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#bd93f9&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-pen1&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#50fa7b&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-pen2&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#ff79c6&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-pen3&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#ffb86c&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-laser&#34;);
+      addOnClick_laser(button_pen, canvas, &#34;#ff5555&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserS&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 8)
+      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserB&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 20)
+    }
+
+  }
+&lt;/script&gt;&lt;/p&gt;
+&lt;!-- &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;Kauf_ex1&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;
+&lt;p hidden&gt;
+`\(\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\LP}{\left(}
+\newcommand{\RP}{\right)}
+\newcommand{\LS}{\left\lbrace}
+\newcommand{\RS}{\right\rbrace}
+\newcommand{\LA}{\left\langle}
+\newcommand{\RA}{\right\rangle}
+\newcommand{\LB}{\left[}
+\newcommand{\RB}{\right]}
+\newcommand{\MM}{\ \middle|\ }
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\msr}[1]{m\left(#1\right)}
+\require{color}\)`
+&lt;/p&gt;
+&lt;h1 id=&#34;jones-polynomial&#34;&gt;Jones Polynomial&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;definition-of-jones-polynomial&#34;&gt;Definition Of Jones Polynomial&lt;/h2&gt;
+&lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
+\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+where $D$ is any oriented diagram for $L$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Definition is in terms of some odd looking stuff&lt;/p&gt;
+&lt;p&gt;The Kauffman bracket of $D$
+\[\LA D\RA\]&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;The writhe of $D$
+\[w(D)\]&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;kauffman-bracket&#34;&gt;Kauffman Bracket&lt;/h2&gt;
+&lt;p&gt;The Kauffman Bracket is a function from unoriented link diagrams in the oriented plane to Laurent polynomials with integer coefficients in an indeterminate $A$. It maps a diagram $D$ to $\LA D\RA\in \Z\LB A^{-1},\ A\RB$
+and is characterized by&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;\(\LA \img{/unknot.png} \RA=1\)&lt;/li&gt;
+&lt;li&gt;\(\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\)&lt;/li&gt;
+&lt;li&gt;\(\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;Kauf_ex2&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- &lt;img style=&#34;max-width:1000px !important; height:auto !important&#34; src=&#34;https://joe-starr.com/bracket_1.png&#34;/&gt;
+
+&lt;br/&gt;
+
+&lt;img style=&#34;max-width:1000px !important; height:auto !important&#34; src=&#34;https://joe-starr.com/bracket_2.png&#34;/&gt; --&gt;
+&lt;hr&gt;
+&lt;p&gt;Natural now to ask, &amp;ldquo;Is the Kauffman Bracket a knot invariant?&amp;rdquo;
+How to tell?&lt;/p&gt;
+&lt;p&gt;Check Reidemeister moves.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;type-2-and-3&#34;&gt;Type 2 and 3&lt;/h3&gt;
+&lt;p&gt;If a diagram $D$ is changed by Type II or Type III Reidemeister move, then
+$\LA D\RA$ does not change. That is,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\(\LA\img{/bracket_type2.png}\RA=\LA\img{/bracket_hor.png}\RA\)&lt;/li&gt;
+&lt;li&gt;\(\LA\img{/bracket_type3.png}\RA=\LA\img{/bracket_type3_out.png}\RA\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hence $\LA D\RA$ is invariant under regular isotopy of $D$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;!--
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_II-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_II-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_II-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_II-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_II-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_II-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_II-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;Type_II&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_III-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_III-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_III-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_III-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_III-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_III-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_III-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;Type_III&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;
+&lt;h3 id=&#34;type-1&#34;&gt;Type 1&lt;/h3&gt;
+&lt;p&gt;If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
+changes in the following way:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\(\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA\)&lt;/li&gt;
+&lt;li&gt;\(\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_I-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_I-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_I-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_I-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_I-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_I-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Type_I-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;Type_I&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;This is a problem&amp;hellip; How to resolve?&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;writhe&#34;&gt;Writhe&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;orientation-of-a-crossing&#34;&gt;Orientation of a crossing&lt;/h3&gt;
+&lt;p&gt;A crossing can be either:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Positive $+1$ &lt;br/&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/plus.png&#34; alt=&#34;&amp;#43;1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+ &lt;br/&gt;&lt;/li&gt;
+&lt;li&gt;Negative $-1$ &lt;br/&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/minus.png&#34; alt=&#34;-1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+ &lt;br/&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;writhe-of-a-knot&#34;&gt;Writhe of a knot&lt;/h3&gt;
+&lt;p&gt;The write $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
+signs of the crossings of D.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;Writhe&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;writhe--bracket&#34;&gt;Writhe + Bracket&lt;/h3&gt;
+&lt;p&gt;Let $D$ be a diagram of an oriented link $L$. Then the expression
+\[\LP -A\RP^{-3w\LP D\RP}\LA D\RA\]
+is an invariant of the oriented link $L$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;Writhe_Bracket&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;definition-of-the-jones-polynomial&#34;&gt;Definition of the Jones Polynomial&lt;/h2&gt;
+&lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
+\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+where $D$ is any oriented diagram for $L$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;jones-polynomial-is-a-function&#34;&gt;Jones Polynomial is a function&lt;/h2&gt;
+&lt;p&gt;The Jones polynomial invariant is a function
+\[V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS\]
+such that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\(V\LP\text{unknot}\RP=1\)&lt;/li&gt;
+&lt;li&gt;Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  &lt;br/&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/plus.png&#34; alt=&#34;&amp;#43;1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/minus.png&#34; alt=&#34;-1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/skein_vert.png&#34; alt=&#34;-1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+ &lt;br/&gt; Then \[t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0\]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
+  &lt;div class=&#34;canvcolumn&#34;&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
+        Eraser&lt;/button&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;button id=&#34;jp_funct-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;canvcollumn&#34;&gt;
+    &lt;canvas id=&#34;jp_funct&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>https://joe-starr.com/publication/example/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/publication/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://joe-starr.com/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/admin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
