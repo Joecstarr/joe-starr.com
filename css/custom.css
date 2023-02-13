@@ -17,7 +17,9 @@ text-align: left !important;
   flex: 50%;
   padding: 3%;
 }
-
+.share-box{
+  visibility: hidden;
+}
 .canvrow {
   display: flex;
   margin-left: auto;
