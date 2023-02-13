@@ -7,6 +7,7 @@ weight: 500
 sitemap:
   priority: 0.8
   weight: 0.4
+share: false
 ---
 
 
