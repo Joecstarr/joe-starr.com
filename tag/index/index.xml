@@ -20,6 +20,7 @@
       <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 &lt;script&gt;
+  if (typeof MathJax === &#39;undefined&#39;) {
   MathJax = {
     loader: {
         load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
@@ -42,11 +43,34 @@
       document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
         x.parentElement.classList += &#39;has-jax&#39;})
     });
+  }
 
 &lt;/script&gt;
 &lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
 &lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
   src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;p hidden&gt;
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  &lt;/p&gt;
+
 &lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
 &lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
 &lt;script type=&#34;text/javascript&#34;&gt;
@@ -153,24 +177,24 @@
 &lt;h2 id=&#34;definition-of-jones-polynomial&#34;&gt;Definition Of Jones Polynomial&lt;/h2&gt;
 &lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
 where $D$ is any oriented diagram for $L$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Definition is in terms of some odd looking stuff&lt;/p&gt;
 &lt;p&gt;The Kauffman bracket of $D$
-\[\LA D\RA\]&lt;/p&gt;
+$$\LA D\RA$$&lt;/p&gt;
 &lt;p&gt;and&lt;/p&gt;
 &lt;p&gt;The writhe of $D$
-\[w(D)\]&lt;/p&gt;
+$$w(D)$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;kauffman-bracket&#34;&gt;Kauffman Bracket&lt;/h2&gt;
 &lt;p&gt;The Kauffman Bracket is a function from unoriented link diagrams in the oriented plane to Laurent polynomials with integer coefficients in an indeterminate $A$. It maps a diagram $D$ to $\LA D\RA\in \Z\LB A^{-1},\ A\RB$
 and is characterized by&lt;/p&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li&gt;\(\LA \img{/unknot.png} \RA=1\)&lt;/li&gt;
-&lt;li&gt;\(\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\)&lt;/li&gt;
-&lt;li&gt;\(\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA\)&lt;/li&gt;
+&lt;li&gt;$\LA \img{/unknot.png} \RA=1$&lt;/li&gt;
+&lt;li&gt;$\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA$&lt;/li&gt;
+&lt;li&gt;$\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
@@ -208,8 +232,8 @@ How to tell?&lt;/p&gt;
 &lt;p&gt;If a diagram $D$ is changed by Type II or Type III Reidemeister move, then
 $\LA D\RA$ does not change. That is,&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;\(\LA\img{/bracket_type2.png}\RA=\LA\img{/bracket_hor.png}\RA\)&lt;/li&gt;
-&lt;li&gt;\(\LA\img{/bracket_type3.png}\RA=\LA\img{/bracket_type3_out.png}\RA\)&lt;/li&gt;
+&lt;li&gt;$\LA\img{/bracket_type2.png}\RA=\LA\img{/bracket_hor.png}\RA$&lt;/li&gt;
+&lt;li&gt;$\LA\img{/bracket_type3.png}\RA=\LA\img{/bracket_type3_out.png}\RA$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Hence $\LA D\RA$ is invariant under regular isotopy of $D$.&lt;/p&gt;
 &lt;hr&gt;
@@ -262,8 +286,8 @@ $\LA D\RA$ does not change. That is,&lt;/p&gt;
 &lt;p&gt;If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
 changes in the following way:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;\(\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA\)&lt;/li&gt;
-&lt;li&gt;\(\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA\)&lt;/li&gt;
+&lt;li&gt;$\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA$&lt;/li&gt;
+&lt;li&gt;$\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
@@ -367,7 +391,7 @@ signs of the crossings of D.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;writhe--bracket&#34;&gt;Writhe + Bracket&lt;/h3&gt;
 &lt;p&gt;Let $D$ be a diagram of an oriented link $L$. Then the expression
-\[\LP -A\RP^{-3w\LP D\RP}\LA D\RA\]
+$$\LP -A\RP^{-3w\LP D\RP}\LA D\RA$$
 is an invariant of the oriented link $L$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
@@ -395,15 +419,15 @@ is an invariant of the oriented link $L$.&lt;/p&gt;
 &lt;h2 id=&#34;definition-of-the-jones-polynomial&#34;&gt;Definition of the Jones Polynomial&lt;/h2&gt;
 &lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
 where $D$ is any oriented diagram for $L$.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;jones-polynomial-is-a-function&#34;&gt;Jones Polynomial is a function&lt;/h2&gt;
 &lt;p&gt;The Jones polynomial invariant is a function
-\[V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS\]
+$$V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS$$
 such that&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;\(V\LP\text{unknot}\RP=1\)&lt;/li&gt;
+&lt;li&gt;$V\LP\text{unknot}\RP=1$&lt;/li&gt;
 &lt;li&gt;Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  &lt;br/&gt; 
 
 
@@ -464,7 +488,7 @@ such that&lt;/p&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/skein_vert.png&#34; alt=&#34;-1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
- &lt;br/&gt; Then \[t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0\]&lt;/li&gt;
+ &lt;br/&gt; Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;div class=&#34;canvasdiv canvrow&#34;&gt;

@@ -61,9 +61,9 @@
     
     <section>
     
-      <link rel="stylesheet" href="/css/custom.css" />
-<link rel="stylesheet" href="/css/cus_dracula.css" />
-<script>
+      <p><link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/cus_dracula.css" /><script>
+  if (typeof MathJax === 'undefined') {
   MathJax = {
     loader: {
         load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
@@ -86,11 +86,34 @@
       document.querySelectorAll("mjx-container").forEach(function(x){
         x.parentElement.classList += 'has-jax'})
     });
+  }
 
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+<p hidden>
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  </p>
+</p>
 <p hidden>
 `\(\newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}

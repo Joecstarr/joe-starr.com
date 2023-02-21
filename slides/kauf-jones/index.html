@@ -24,7 +24,7 @@
   <title>Jones Polynomial | Joe Starr</title>
 
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/cus_dracula.min.css">
 
   
   
@@ -64,6 +64,7 @@
       <p><link rel="stylesheet" href="/css/custom.css" />
 <link rel="stylesheet" href="/css/cus_dracula.css" />
 <script>
+  if (typeof MathJax === 'undefined') {
   MathJax = {
     loader: {
         load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
@@ -86,11 +87,34 @@
       document.querySelectorAll("mjx-container").forEach(function(x){
         x.parentElement.classList += 'has-jax'})
     });
+  }
 
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+<p hidden>
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  </p>
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
 <script type="text/javascript">
@@ -206,7 +230,7 @@
 <h2 id="definition-of-jones-polynomial">Definition Of Jones Polynomial</h2>
 <p>The Jones polynomial $V\LP L\RP$ of an oriented link $L$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
 where $D$ is any oriented diagram for $L$.</p>
 
     </section>
@@ -220,10 +244,10 @@ where $D$ is any oriented diagram for $L$.</p>
       
 <p>Definition is in terms of some odd looking stuff</p>
 <p>The Kauffman bracket of $D$
-\[\LA D\RA\]</p>
+$$\LA D\RA$$</p>
 <p>and</p>
 <p>The writhe of $D$
-\[w(D)\]</p>
+$$w(D)$$</p>
 
     </section>
     
@@ -248,9 +272,9 @@ and is characterized by</p>
     
       
 <ol>
-<li>\(\LA \img{/unknot.png} \RA=1\)</li>
-<li>\(\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\)</li>
-<li>\(\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA\)</li>
+<li>$\LA \img{/unknot.png} \RA=1$</li>
+<li>$\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA$</li>
+<li>$\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA$</li>
 </ol>
 
     </section>
@@ -315,8 +339,8 @@ How to tell?</p>
 <p>If a diagram $D$ is changed by Type II or Type III Reidemeister move, then
 $\LA D\RA$ does not change. That is,</p>
 <ol>
-<li>\(\LA\img{/bracket_type2.png}\RA=\LA\img{/bracket_hor.png}\RA\)</li>
-<li>\(\LA\img{/bracket_type3.png}\RA=\LA\img{/bracket_type3_out.png}\RA\)</li>
+<li>$\LA\img{/bracket_type2.png}\RA=\LA\img{/bracket_hor.png}\RA$</li>
+<li>$\LA\img{/bracket_type3.png}\RA=\LA\img{/bracket_type3_out.png}\RA$</li>
 </ol>
 <p>Hence $\LA D\RA$ is invariant under regular isotopy of $D$.</p>
 
@@ -378,8 +402,8 @@ $\LA D\RA$ does not change. That is,</p>
 <p>If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
 changes in the following way:</p>
 <ol>
-<li>\(\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA\)</li>
-<li>\(\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA\)</li>
+<li>$\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA$</li>
+<li>$\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA$</li>
 </ol>
 
     </section>
@@ -546,7 +570,7 @@ signs of the crossings of D.</p>
       
 <h3 id="writhe--bracket">Writhe + Bracket</h3>
 <p>Let $D$ be a diagram of an oriented link $L$. Then the expression
-\[\LP -A\RP^{-3w\LP D\RP}\LA D\RA\]
+$$\LP -A\RP^{-3w\LP D\RP}\LA D\RA$$
 is an invariant of the oriented link $L$.</p>
 
     </section>
@@ -592,7 +616,7 @@ is an invariant of the oriented link $L$.</p>
 <h2 id="definition-of-the-jones-polynomial">Definition of the Jones Polynomial</h2>
 <p>The Jones polynomial $V\LP L\RP$ of an oriented link $L$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-\[ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} \]
+$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
 where $D$ is any oriented diagram for $L$.</p>
 
     </section>
@@ -606,10 +630,10 @@ where $D$ is any oriented diagram for $L$.</p>
       
 <h2 id="jones-polynomial-is-a-function">Jones Polynomial is a function</h2>
 <p>The Jones polynomial invariant is a function
-\[V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS\]
+$$V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS$$
 such that</p>
 <ol>
-<li>\(V\LP\text{unknot}\RP=1\)</li>
+<li>$V\LP\text{unknot}\RP=1$</li>
 <li>Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  <br/> 
 
 
@@ -670,7 +694,7 @@ such that</p>
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img src="/skein_vert.png" alt="-1" loading="lazy" data-zoomable /></div>
   </div></figure>
- <br/> Then \[t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0\]</li>
+ <br/> Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$</li>
 </ol>
 
     </section>

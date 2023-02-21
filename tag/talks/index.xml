@@ -17,9 +17,9 @@
       <link>https://joe-starr.com/slides/legendrian_knots/</link>
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/legendrian_knots/</guid>
-      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
-&lt;script&gt;
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;&lt;script&gt;
+  if (typeof MathJax === &#39;undefined&#39;) {
   MathJax = {
     loader: {
         load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
@@ -42,11 +42,34 @@
       document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
         x.parentElement.classList += &#39;has-jax&#39;})
     });
+  }
 
 &lt;/script&gt;
 &lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
 &lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
   src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;p hidden&gt;
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  &lt;/p&gt;
+&lt;/p&gt;
 &lt;p hidden&gt;
 `\(\newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -143,6 +166,7 @@
       <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 &lt;script&gt;
+  if (typeof MathJax === &#39;undefined&#39;) {
   MathJax = {
     loader: {
         load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
@@ -165,90 +189,96 @@
       document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
         x.parentElement.classList += &#39;has-jax&#39;})
     });
+  }
 
 &lt;/script&gt;
 &lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
 &lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
-  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt; &lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
- &lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
- &lt;script type=&#34;text/javascript&#34;&gt;
-   var addOnClick_pen = function (element, canvas, color, size = 2) {
-     element.onclick = function () {
-       canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-       canvas.freeDrawingBrush.color = color;
-       canvas.freeDrawingBrush.width = size;
-     };
-   };
-   var addOnClick_laser = function (element, canvas, color) {
-     element.onclick = function () {
-       var laser = new fabric.PencilBrush(canvas);
-       canvas.freeDrawingBrush = laser
-       canvas.freeDrawingBrush.color = color;
-       canvas.freeDrawingBrush.width = 2;
-     };
-   };
- 
-   window.onload = function () {
-     Reveal.configure({ touch: false });
-     Reveal.configure({ transition: &#39;none&#39; });
- 
-     const allTags = document.getElementsByClassName(&#34;canvasdiv&#34;);
- 
-     for (var i = 0; i &lt; allTags.length; i++) {
-       var canvas_tag = allTags[i].getElementsByTagName(&#34;canvas&#34;)[0];
-       var canvas = new fabric.Canvas(canvas_tag, {
-         width: 1000,
-         height: 1000,
-         allowTouchScrolling: false,
-       })
-       
-       
-       
-       
-       const ctx = canvas.getContext(&#39;2d&#39;);
-       ctx.imageSmoothingEnabled = true;
- 
- 
-       canvas.isDrawingMode = true;
-       canvas.freeDrawingBrush.color = &#34;#ffb86c&#34;;
- 
- 
-       var button_pen = document.getElementById(canvas_tag.id + &#34;-pen0&#34;);
-       addOnClick_pen(button_pen, canvas, &#34;#bd93f9&#34;);
-       button_pen = document.getElementById(canvas_tag.id + &#34;-pen1&#34;);
-       addOnClick_pen(button_pen, canvas, &#34;#50fa7b&#34;);
-       button_pen = document.getElementById(canvas_tag.id + &#34;-pen2&#34;);
-       addOnClick_pen(button_pen, canvas, &#34;#ff79c6&#34;);
-       button_pen = document.getElementById(canvas_tag.id + &#34;-pen3&#34;);
-       addOnClick_pen(button_pen, canvas, &#34;#ffb86c&#34;);
-       button_pen = document.getElementById(canvas_tag.id + &#34;-laser&#34;);
-       addOnClick_laser(button_pen, canvas, &#34;#ff5555&#34;);
-       button_pen = document.getElementById(canvas_tag.id + &#34;-eraserS&#34;);
-       addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 8)
-       button_pen = document.getElementById(canvas_tag.id + &#34;-eraserB&#34;);
-       addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 20)
-     }
- 
-   }
- &lt;/script&gt;&lt;/p&gt;
+  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+
+
+
 &lt;p hidden&gt;
-`\(\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\LP}{\left(}
-\newcommand{\RP}{\right)}
-\newcommand{\LS}{\left\lbrace}
-\newcommand{\RS}{\right\rbrace}
-\newcommand{\LA}{\left\langle}
-\newcommand{\RA}{\right\rangle}
-\newcommand{\LB}{\left[}
-\newcommand{\RB}{\right]}
-\newcommand{\MM}{\ \middle|\ }
-\newcommand{\abs}[1]{\left\vert#1\right\vert}
-\newcommand{\msr}[1]{m\left(#1\right)}
-\require{color}\)`
-&lt;/p&gt;
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  &lt;/p&gt;
+
+&lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+  var addOnClick_pen = function (element, canvas, color, size = 2) {
+    element.onclick = function () {
+      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = size;
+    };
+  };
+  var addOnClick_laser = function (element, canvas, color) {
+    element.onclick = function () {
+      var laser = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush = laser
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = 2;
+    };
+  };
+
+  window.onload = function () {
+    Reveal.configure({ touch: false });
+    Reveal.configure({ transition: &#39;none&#39; });
+
+    const allTags = document.getElementsByClassName(&#34;canvasdiv&#34;);
+
+    for (var i = 0; i &lt; allTags.length; i++) {
+      var canvas_tag = allTags[i].getElementsByTagName(&#34;canvas&#34;)[0];
+      var canvas = new fabric.Canvas(canvas_tag, {
+        width: 1000,
+        height: 1000,
+        allowTouchScrolling: false,
+      })
+      
+      
+      
+      
+      const ctx = canvas.getContext(&#39;2d&#39;);
+      ctx.imageSmoothingEnabled = true;
+
+
+      canvas.isDrawingMode = true;
+      canvas.freeDrawingBrush.color = &#34;#ffb86c&#34;;
+
+
+      var button_pen = document.getElementById(canvas_tag.id + &#34;-pen0&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#bd93f9&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-pen1&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#50fa7b&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-pen2&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#ff79c6&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-pen3&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#ffb86c&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-laser&#34;);
+      addOnClick_laser(button_pen, canvas, &#34;#ff5555&#34;);
+      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserS&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 8)
+      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserB&#34;);
+      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 20)
+    }
+
+  }
+&lt;/script&gt;&lt;/p&gt;
 &lt;h1 id=&#34;discrete-morse-theory&#34;&gt;Discrete Morse Theory&lt;/h1&gt;
 &lt;hr&gt;
 &lt;!-- ### CW Complex

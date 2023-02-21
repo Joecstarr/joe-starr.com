@@ -25,7 +25,13 @@
 &lt;p&gt;&lt;a href=&#34;https://www.goodnotes.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;anki&#34;&gt;Anki&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://ankiweb.net/about&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;texvscode&#34;&gt;TeX/Vscode&lt;/h2&gt;
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+&lt;h3 id=&#34;revealjs&#34;&gt;Reveal.js&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://revealjs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;decktape&#34;&gt;Decktape&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/astefanutti/decktape&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;decktape -s 1920x1080 https://joe-starr.com/slides/discrete_morse_theory/ presentation.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;texvscode&#34;&gt;TeX/Vscode&lt;/h2&gt;
 &lt;h3 id=&#34;plugins&#34;&gt;plugins&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX Utilities&lt;/a&gt;&lt;/li&gt;

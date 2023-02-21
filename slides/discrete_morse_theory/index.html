@@ -64,6 +64,7 @@
       <p><link rel="stylesheet" href="/css/custom.css" />
 <link rel="stylesheet" href="/css/cus_dracula.css" />
 <script>
+  if (typeof MathJax === 'undefined') {
   MathJax = {
     loader: {
         load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
@@ -86,90 +87,96 @@
       document.querySelectorAll("mjx-container").forEach(function(x){
         x.parentElement.classList += 'has-jax'})
     });
+  }
 
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
- <script type="text/javascript">
-   var addOnClick_pen = function (element, canvas, color, size = 2) {
-     element.onclick = function () {
-       canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-       canvas.freeDrawingBrush.color = color;
-       canvas.freeDrawingBrush.width = size;
-     };
-   };
-   var addOnClick_laser = function (element, canvas, color) {
-     element.onclick = function () {
-       var laser = new fabric.PencilBrush(canvas);
-       canvas.freeDrawingBrush = laser
-       canvas.freeDrawingBrush.color = color;
-       canvas.freeDrawingBrush.width = 2;
-     };
-   };
- 
-   window.onload = function () {
-     Reveal.configure({ touch: false });
-     Reveal.configure({ transition: 'none' });
- 
-     const allTags = document.getElementsByClassName("canvasdiv");
- 
-     for (var i = 0; i < allTags.length; i++) {
-       var canvas_tag = allTags[i].getElementsByTagName("canvas")[0];
-       var canvas = new fabric.Canvas(canvas_tag, {
-         width: 1000,
-         height: 1000,
-         allowTouchScrolling: false,
-       })
-       
-       
-       
-       
-       const ctx = canvas.getContext('2d');
-       ctx.imageSmoothingEnabled = true;
- 
- 
-       canvas.isDrawingMode = true;
-       canvas.freeDrawingBrush.color = "#ffb86c";
- 
- 
-       var button_pen = document.getElementById(canvas_tag.id + "-pen0");
-       addOnClick_pen(button_pen, canvas, "#bd93f9");
-       button_pen = document.getElementById(canvas_tag.id + "-pen1");
-       addOnClick_pen(button_pen, canvas, "#50fa7b");
-       button_pen = document.getElementById(canvas_tag.id + "-pen2");
-       addOnClick_pen(button_pen, canvas, "#ff79c6");
-       button_pen = document.getElementById(canvas_tag.id + "-pen3");
-       addOnClick_pen(button_pen, canvas, "#ffb86c");
-       button_pen = document.getElementById(canvas_tag.id + "-laser");
-       addOnClick_laser(button_pen, canvas, "#ff5555");
-       button_pen = document.getElementById(canvas_tag.id + "-eraserS");
-       addOnClick_pen(button_pen, canvas, "#282a36", 8)
-       button_pen = document.getElementById(canvas_tag.id + "-eraserB");
-       addOnClick_pen(button_pen, canvas, "#282a36", 20)
-     }
- 
-   }
- </script></p>
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
 <p hidden>
-`\(\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\LP}{\left(}
-\newcommand{\RP}{\right)}
-\newcommand{\LS}{\left\lbrace}
-\newcommand{\RS}{\right\rbrace}
-\newcommand{\LA}{\left\langle}
-\newcommand{\RA}{\right\rangle}
-\newcommand{\LB}{\left[}
-\newcommand{\RB}{\right]}
-\newcommand{\MM}{\ \middle|\ }
-\newcommand{\abs}[1]{\left\vert#1\right\vert}
-\newcommand{\msr}[1]{m\left(#1\right)}
-\require{color}\)`
-</p>
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  </p>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
+<script type="text/javascript">
+  var addOnClick_pen = function (element, canvas, color, size = 2) {
+    element.onclick = function () {
+      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = size;
+    };
+  };
+  var addOnClick_laser = function (element, canvas, color) {
+    element.onclick = function () {
+      var laser = new fabric.PencilBrush(canvas);
+      canvas.freeDrawingBrush = laser
+      canvas.freeDrawingBrush.color = color;
+      canvas.freeDrawingBrush.width = 2;
+    };
+  };
+
+  window.onload = function () {
+    Reveal.configure({ touch: false });
+    Reveal.configure({ transition: 'none' });
+
+    const allTags = document.getElementsByClassName("canvasdiv");
+
+    for (var i = 0; i < allTags.length; i++) {
+      var canvas_tag = allTags[i].getElementsByTagName("canvas")[0];
+      var canvas = new fabric.Canvas(canvas_tag, {
+        width: 1000,
+        height: 1000,
+        allowTouchScrolling: false,
+      })
+      
+      
+      
+      
+      const ctx = canvas.getContext('2d');
+      ctx.imageSmoothingEnabled = true;
+
+
+      canvas.isDrawingMode = true;
+      canvas.freeDrawingBrush.color = "#ffb86c";
+
+
+      var button_pen = document.getElementById(canvas_tag.id + "-pen0");
+      addOnClick_pen(button_pen, canvas, "#bd93f9");
+      button_pen = document.getElementById(canvas_tag.id + "-pen1");
+      addOnClick_pen(button_pen, canvas, "#50fa7b");
+      button_pen = document.getElementById(canvas_tag.id + "-pen2");
+      addOnClick_pen(button_pen, canvas, "#ff79c6");
+      button_pen = document.getElementById(canvas_tag.id + "-pen3");
+      addOnClick_pen(button_pen, canvas, "#ffb86c");
+      button_pen = document.getElementById(canvas_tag.id + "-laser");
+      addOnClick_laser(button_pen, canvas, "#ff5555");
+      button_pen = document.getElementById(canvas_tag.id + "-eraserS");
+      addOnClick_pen(button_pen, canvas, "#282a36", 8)
+      button_pen = document.getElementById(canvas_tag.id + "-eraserB");
+      addOnClick_pen(button_pen, canvas, "#282a36", 20)
+    }
+
+  }
+</script></p>
 <h1 id="discrete-morse-theory">Discrete Morse Theory</h1>
 
     </section>
