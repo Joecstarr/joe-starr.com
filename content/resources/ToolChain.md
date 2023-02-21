@@ -28,6 +28,19 @@ share: false
 
 [Site](https://ankiweb.net/about)
 
+## Presentations
+
+### Reveal.js
+
+[Site](https://revealjs.com/)
+
+### Decktape
+
+[Github](https://github.com/astefanutti/decktape)
+```
+decktape -s 1920x1080 https://joe-starr.com/slides/discrete_morse_theory/ presentation.pdf
+```
+
 ## TeX/Vscode
 
 
@@ -377,3 +390,4 @@ jobs:
               *.pdf
               *.tex
 ```
+
