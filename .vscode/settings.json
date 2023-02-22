@@ -18,7 +18,7 @@
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": false,
-    "**/CVS": true,
+    "**/CVS": false,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },

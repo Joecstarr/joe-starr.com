@@ -8,10 +8,13 @@ tags: [
 draft: false
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
-  theme: cus_dracula
+
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
+  pluginOptions: [
+    "RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"
+  ]
 ---
 
 {{<dracula_css>}}
@@ -76,9 +79,7 @@ and is characterized by
 2. $\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\$
 3. $\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA$
 
----
 
-{{<canvas Kauf_ex2>}}
 
 
 
@@ -126,9 +127,7 @@ changes in the following way:
 1. $\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA$
 2. $\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA$
 
----
 
-{{<canvas Type_I>}}
 
 
 
@@ -159,9 +158,7 @@ A crossing can be either:
 The write $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
 signs of the crossings of D.
 
----
 
-{{<canvas Writhe>}}
 
 ---
 
@@ -171,9 +168,7 @@ Let $D$ be a diagram of an oriented link $L$. Then the expression
 $$\LP -A\RP^{-3w\LP D\RP}\LA D\RA$$
 is an invariant of the oriented link $L$.
 
----
 
-{{<canvas Writhe_Bracket>}}
 
 ---
 
@@ -195,8 +190,6 @@ such that
 1. $V\LP\text{unknot}\RP=1$
 2. Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  <br/> ![+1](/plus.png )   ![-1](/minus.png) ![-1](/skein_vert.png) <br/> Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$
 
----
 
-{{<canvas jp_funct>}}
 
 
