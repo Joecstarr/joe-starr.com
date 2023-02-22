@@ -21,7 +21,6 @@ slides:
 {{<mathjax_support>}}
 {{<canvas_head>}}
 
-<!-- {{<canvas Kauf_ex1>}} -->
 
 
 <p hidden>
@@ -112,11 +111,7 @@ $\LA D\RA$ does not change. That is,
 Hence $\LA D\RA$ is invariant under regular isotopy of $D$.
 
 ---
-<!--
-{{<canvas Type_II>}}
 
-
-{{<canvas Type_III>}} -->
 
 
 ### Type 1

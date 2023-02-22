@@ -267,7 +267,6 @@ min-width:50% !important;
 </div>
 
 ---
-<!-- {{<canvas jp_funct>}} -->
 
 ### Discrete Gradient Vector Field
 
