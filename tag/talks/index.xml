@@ -88,8 +88,7 @@
 \newcommand{\msr}[1]{m\left(#1\right)}
 \require{color}\)`
 &lt;/p&gt;
-&lt;h1 id=&#34;legendrian-knots&#34;&gt;Legendrian knots&lt;/h1&gt;
-&lt;hr&gt;
+&lt;!-- # Legendrian knots --&gt;
 &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
   &lt;div class=&#34;canvcolumn&#34;&gt;
     &lt;div&gt;
@@ -163,7 +162,10 @@
       <link>https://joe-starr.com/slides/discrete_morse_theory/</link>
       <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/discrete_morse_theory/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 &lt;script&gt;
   if (typeof MathJax === &#39;undefined&#39;) {
@@ -216,69 +218,7 @@
   \newcommand{\msr}[1]{m\left(#1\right)}
   \require{color}$`
   &lt;/p&gt;
-
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-  var addOnClick_pen = function (element, canvas, color, size = 2) {
-    element.onclick = function () {
-      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = size;
-    };
-  };
-  var addOnClick_laser = function (element, canvas, color) {
-    element.onclick = function () {
-      var laser = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush = laser
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = 2;
-    };
-  };
-
-  window.onload = function () {
-    Reveal.configure({ touch: false });
-    Reveal.configure({ transition: &#39;none&#39; });
-
-    const allTags = document.getElementsByClassName(&#34;canvasdiv&#34;);
-
-    for (var i = 0; i &lt; allTags.length; i++) {
-      var canvas_tag = allTags[i].getElementsByTagName(&#34;canvas&#34;)[0];
-      var canvas = new fabric.Canvas(canvas_tag, {
-        width: 1000,
-        height: 1000,
-        allowTouchScrolling: false,
-      })
-      
-      
-      
-      
-      const ctx = canvas.getContext(&#39;2d&#39;);
-      ctx.imageSmoothingEnabled = true;
-
-
-      canvas.isDrawingMode = true;
-      canvas.freeDrawingBrush.color = &#34;#ffb86c&#34;;
-
-
-      var button_pen = document.getElementById(canvas_tag.id + &#34;-pen0&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#bd93f9&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen1&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#50fa7b&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen2&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#ff79c6&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen3&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#ffb86c&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-laser&#34;);
-      addOnClick_laser(button_pen, canvas, &#34;#ff5555&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserS&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 8)
-      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserB&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 20)
-    }
-
-  }
-&lt;/script&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h1 id=&#34;discrete-morse-theory&#34;&gt;Discrete Morse Theory&lt;/h1&gt;
 &lt;hr&gt;
 &lt;!-- ### CW Complex
@@ -547,27 +487,6 @@ height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_cri
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;!-- &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;jp_funct&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt; --&gt;
 &lt;h3 id=&#34;discrete-gradient-vector-field&#34;&gt;Discrete Gradient Vector Field&lt;/h3&gt;
 &lt;!-- @@@ Def box --&gt;
 &lt;p&gt;A discrete gradient vector field on a simplicial complex \(K\)

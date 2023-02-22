@@ -24,7 +24,7 @@
   <title>Discrete Morse Theory | Joe Starr</title>
 
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/cus_dracula.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
 
   
   
@@ -61,7 +61,10 @@
     
     <section>
     
-      <p><link rel="stylesheet" href="/css/custom.css" />
+      <p>
+
+
+<link rel="stylesheet" href="/css/custom.css" />
 <link rel="stylesheet" href="/css/cus_dracula.css" />
 <script>
   if (typeof MathJax === 'undefined') {
@@ -114,69 +117,7 @@
   \newcommand{\msr}[1]{m\left(#1\right)}
   \require{color}$`
   </p>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
-<script type="text/javascript">
-  var addOnClick_pen = function (element, canvas, color, size = 2) {
-    element.onclick = function () {
-      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = size;
-    };
-  };
-  var addOnClick_laser = function (element, canvas, color) {
-    element.onclick = function () {
-      var laser = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush = laser
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = 2;
-    };
-  };
-
-  window.onload = function () {
-    Reveal.configure({ touch: false });
-    Reveal.configure({ transition: 'none' });
-
-    const allTags = document.getElementsByClassName("canvasdiv");
-
-    for (var i = 0; i < allTags.length; i++) {
-      var canvas_tag = allTags[i].getElementsByTagName("canvas")[0];
-      var canvas = new fabric.Canvas(canvas_tag, {
-        width: 1000,
-        height: 1000,
-        allowTouchScrolling: false,
-      })
-      
-      
-      
-      
-      const ctx = canvas.getContext('2d');
-      ctx.imageSmoothingEnabled = true;
-
-
-      canvas.isDrawingMode = true;
-      canvas.freeDrawingBrush.color = "#ffb86c";
-
-
-      var button_pen = document.getElementById(canvas_tag.id + "-pen0");
-      addOnClick_pen(button_pen, canvas, "#bd93f9");
-      button_pen = document.getElementById(canvas_tag.id + "-pen1");
-      addOnClick_pen(button_pen, canvas, "#50fa7b");
-      button_pen = document.getElementById(canvas_tag.id + "-pen2");
-      addOnClick_pen(button_pen, canvas, "#ff79c6");
-      button_pen = document.getElementById(canvas_tag.id + "-pen3");
-      addOnClick_pen(button_pen, canvas, "#ffb86c");
-      button_pen = document.getElementById(canvas_tag.id + "-laser");
-      addOnClick_laser(button_pen, canvas, "#ff5555");
-      button_pen = document.getElementById(canvas_tag.id + "-eraserS");
-      addOnClick_pen(button_pen, canvas, "#282a36", 8)
-      button_pen = document.getElementById(canvas_tag.id + "-eraserB");
-      addOnClick_pen(button_pen, canvas, "#282a36", 20)
-    }
-
-  }
-</script></p>
+</p>
 <h1 id="discrete-morse-theory">Discrete Morse Theory</h1>
 
     </section>
@@ -607,27 +548,6 @@ height:auto !important" src="/DiscMorse/Complex_crit.png"/>
     <section>
     
       
-<!-- <div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="jp_funct-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="jp_funct-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="jp_funct-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="jp_funct-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="jp_funct-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="jp_funct-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="jp_funct-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="jp_funct" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div> -->
 <h3 id="discrete-gradient-vector-field">Discrete Gradient Vector Field</h3>
 <!-- @@@ Def box -->
 <p>A discrete gradient vector field on a simplicial complex \(K\)

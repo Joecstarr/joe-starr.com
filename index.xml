@@ -489,8 +489,7 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
 \newcommand{\msr}[1]{m\left(#1\right)}
 \require{color}\)`
 &lt;/p&gt;
-&lt;h1 id=&#34;legendrian-knots&#34;&gt;Legendrian knots&lt;/h1&gt;
-&lt;hr&gt;
+&lt;!-- # Legendrian knots --&gt;
 &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
   &lt;div class=&#34;canvcolumn&#34;&gt;
     &lt;div&gt;
@@ -564,7 +563,10 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
       <link>https://joe-starr.com/slides/discrete_morse_theory/</link>
       <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/discrete_morse_theory/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 &lt;script&gt;
   if (typeof MathJax === &#39;undefined&#39;) {
@@ -617,69 +619,7 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
   \newcommand{\msr}[1]{m\left(#1\right)}
   \require{color}$`
   &lt;/p&gt;
-
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-  var addOnClick_pen = function (element, canvas, color, size = 2) {
-    element.onclick = function () {
-      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = size;
-    };
-  };
-  var addOnClick_laser = function (element, canvas, color) {
-    element.onclick = function () {
-      var laser = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush = laser
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = 2;
-    };
-  };
-
-  window.onload = function () {
-    Reveal.configure({ touch: false });
-    Reveal.configure({ transition: &#39;none&#39; });
-
-    const allTags = document.getElementsByClassName(&#34;canvasdiv&#34;);
-
-    for (var i = 0; i &lt; allTags.length; i++) {
-      var canvas_tag = allTags[i].getElementsByTagName(&#34;canvas&#34;)[0];
-      var canvas = new fabric.Canvas(canvas_tag, {
-        width: 1000,
-        height: 1000,
-        allowTouchScrolling: false,
-      })
-      
-      
-      
-      
-      const ctx = canvas.getContext(&#39;2d&#39;);
-      ctx.imageSmoothingEnabled = true;
-
-
-      canvas.isDrawingMode = true;
-      canvas.freeDrawingBrush.color = &#34;#ffb86c&#34;;
-
-
-      var button_pen = document.getElementById(canvas_tag.id + &#34;-pen0&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#bd93f9&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen1&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#50fa7b&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen2&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#ff79c6&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen3&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#ffb86c&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-laser&#34;);
-      addOnClick_laser(button_pen, canvas, &#34;#ff5555&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserS&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 8)
-      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserB&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 20)
-    }
-
-  }
-&lt;/script&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;h1 id=&#34;discrete-morse-theory&#34;&gt;Discrete Morse Theory&lt;/h1&gt;
 &lt;hr&gt;
 &lt;!-- ### CW Complex
@@ -948,27 +888,6 @@ height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_cri
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;!-- &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;jp_funct&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt; --&gt;
 &lt;h3 id=&#34;discrete-gradient-vector-field&#34;&gt;Discrete Gradient Vector Field&lt;/h3&gt;
 &lt;!-- @@@ Def box --&gt;
 &lt;p&gt;A discrete gradient vector field on a simplicial complex \(K\)
@@ -1187,89 +1106,9 @@ is a combinitorial sphere.&lt;/p&gt;
   \require{color}$`
   &lt;/p&gt;
 
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-  var addOnClick_pen = function (element, canvas, color, size = 2) {
-    element.onclick = function () {
-      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = size;
-    };
-  };
-  var addOnClick_laser = function (element, canvas, color) {
-    element.onclick = function () {
-      var laser = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush = laser
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = 2;
-    };
-  };
-
-  window.onload = function () {
-    Reveal.configure({ touch: false });
-    Reveal.configure({ transition: &#39;none&#39; });
-
-    const allTags = document.getElementsByClassName(&#34;canvasdiv&#34;);
-
-    for (var i = 0; i &lt; allTags.length; i++) {
-      var canvas_tag = allTags[i].getElementsByTagName(&#34;canvas&#34;)[0];
-      var canvas = new fabric.Canvas(canvas_tag, {
-        width: 1000,
-        height: 1000,
-        allowTouchScrolling: false,
-      })
-      
-      
-      
-      
-      const ctx = canvas.getContext(&#39;2d&#39;);
-      ctx.imageSmoothingEnabled = true;
 
 
-      canvas.isDrawingMode = true;
-      canvas.freeDrawingBrush.color = &#34;#ffb86c&#34;;
-
-
-      var button_pen = document.getElementById(canvas_tag.id + &#34;-pen0&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#bd93f9&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen1&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#50fa7b&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen2&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#ff79c6&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-pen3&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#ffb86c&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-laser&#34;);
-      addOnClick_laser(button_pen, canvas, &#34;#ff5555&#34;);
-      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserS&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 8)
-      button_pen = document.getElementById(canvas_tag.id + &#34;-eraserB&#34;);
-      addOnClick_pen(button_pen, canvas, &#34;#282a36&#34;, 20)
-    }
-
-  }
-&lt;/script&gt;&lt;/p&gt;
-&lt;!-- &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex1-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;Kauf_ex1&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt; --&gt;
+&lt;/p&gt;
 &lt;p hidden&gt;
 `\(\newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -1312,28 +1151,6 @@ and is characterized by&lt;/p&gt;
 &lt;li&gt;$\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA$&lt;/li&gt;
 &lt;li&gt;$\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
-&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Kauf_ex2-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;Kauf_ex2&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 &lt;!-- &lt;img style=&#34;max-width:1000px !important; height:auto !important&#34; src=&#34;https://joe-starr.com/bracket_1.png&#34;/&gt;
 
 &lt;br/&gt;
@@ -1353,51 +1170,6 @@ $\LA D\RA$ does not change. That is,&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Hence $\LA D\RA$ is invariant under regular isotopy of $D$.&lt;/p&gt;
 &lt;hr&gt;
-&lt;!--
-&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_II-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_II-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_II-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_II-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_II-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_II-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_II-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;Type_II&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_III-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_III-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_III-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_III-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_III-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_III-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_III-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;Type_III&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt; --&gt;
 &lt;h3 id=&#34;type-1&#34;&gt;Type 1&lt;/h3&gt;
 &lt;p&gt;If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
 changes in the following way:&lt;/p&gt;
@@ -1405,28 +1177,6 @@ changes in the following way:&lt;/p&gt;
 &lt;li&gt;$\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA$&lt;/li&gt;
 &lt;li&gt;$\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
-&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_I-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_I-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_I-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_I-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_I-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_I-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Type_I-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;Type_I&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;This is a problem&amp;hellip; How to resolve?&lt;/p&gt;
 &lt;hr&gt;
@@ -1483,54 +1233,10 @@ changes in the following way:&lt;/p&gt;
 &lt;p&gt;The write $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
 signs of the crossings of D.&lt;/p&gt;
 &lt;hr&gt;
-&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;Writhe&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr&gt;
 &lt;h3 id=&#34;writhe--bracket&#34;&gt;Writhe + Bracket&lt;/h3&gt;
 &lt;p&gt;Let $D$ be a diagram of an oriented link $L$. Then the expression
 $$\LP -A\RP^{-3w\LP D\RP}\LA D\RA$$
 is an invariant of the oriented link $L$.&lt;/p&gt;
-&lt;hr&gt;
-&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;Writhe_Bracket-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;Writhe_Bracket&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;definition-of-the-jones-polynomial&#34;&gt;Definition of the Jones Polynomial&lt;/h2&gt;
 &lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
@@ -1606,28 +1312,6 @@ such that&lt;/p&gt;
   &lt;/div&gt;&lt;/figure&gt;
  &lt;br/&gt; Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
-&lt;div class=&#34;canvasdiv canvrow&#34;&gt;
-  &lt;div class=&#34;canvcolumn&#34;&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserS&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Small
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-eraserB&#34; style=&#34;border-radius: 12px;background-color: #44475a;&#34;&gt;Big
-        Eraser&lt;/button&gt;&lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen0&#34; style=&#34;border-radius: 12px;background-color: #bd93f9;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen1&#34; style=&#34;border-radius: 12px;background-color: #50fa7b;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen2&#34; style=&#34;border-radius: 12px;background-color: #ff79c6;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-pen3&#34; style=&#34;border-radius: 12px;background-color: #ffb86c;&#34;&gt;Pen&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;button id=&#34;jp_funct-laser&#34; style=&#34;border-radius: 12px;background-color: #ff5555;&#34;&gt;Laser&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;canvcollumn&#34;&gt;
-    &lt;canvas id=&#34;jp_funct&#34; style=&#34;border:1px solid #44475a; width: 100%;height: auto;&#34;&gt;&lt;/canvas&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     

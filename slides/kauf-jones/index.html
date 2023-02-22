@@ -24,7 +24,7 @@
   <title>Jones Polynomial | Joe Starr</title>
 
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/cus_dracula.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
 
   
   
@@ -115,89 +115,9 @@
   \require{color}$`
   </p>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js"></script>
-<script type="text/javascript">
-  var addOnClick_pen = function (element, canvas, color, size = 2) {
-    element.onclick = function () {
-      canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = size;
-    };
-  };
-  var addOnClick_laser = function (element, canvas, color) {
-    element.onclick = function () {
-      var laser = new fabric.PencilBrush(canvas);
-      canvas.freeDrawingBrush = laser
-      canvas.freeDrawingBrush.color = color;
-      canvas.freeDrawingBrush.width = 2;
-    };
-  };
-
-  window.onload = function () {
-    Reveal.configure({ touch: false });
-    Reveal.configure({ transition: 'none' });
-
-    const allTags = document.getElementsByClassName("canvasdiv");
-
-    for (var i = 0; i < allTags.length; i++) {
-      var canvas_tag = allTags[i].getElementsByTagName("canvas")[0];
-      var canvas = new fabric.Canvas(canvas_tag, {
-        width: 1000,
-        height: 1000,
-        allowTouchScrolling: false,
-      })
-      
-      
-      
-      
-      const ctx = canvas.getContext('2d');
-      ctx.imageSmoothingEnabled = true;
 
 
-      canvas.isDrawingMode = true;
-      canvas.freeDrawingBrush.color = "#ffb86c";
-
-
-      var button_pen = document.getElementById(canvas_tag.id + "-pen0");
-      addOnClick_pen(button_pen, canvas, "#bd93f9");
-      button_pen = document.getElementById(canvas_tag.id + "-pen1");
-      addOnClick_pen(button_pen, canvas, "#50fa7b");
-      button_pen = document.getElementById(canvas_tag.id + "-pen2");
-      addOnClick_pen(button_pen, canvas, "#ff79c6");
-      button_pen = document.getElementById(canvas_tag.id + "-pen3");
-      addOnClick_pen(button_pen, canvas, "#ffb86c");
-      button_pen = document.getElementById(canvas_tag.id + "-laser");
-      addOnClick_laser(button_pen, canvas, "#ff5555");
-      button_pen = document.getElementById(canvas_tag.id + "-eraserS");
-      addOnClick_pen(button_pen, canvas, "#282a36", 8)
-      button_pen = document.getElementById(canvas_tag.id + "-eraserB");
-      addOnClick_pen(button_pen, canvas, "#282a36", 20)
-    }
-
-  }
-</script></p>
-<!-- <div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="Kauf_ex1-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="Kauf_ex1-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="Kauf_ex1-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex1-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex1-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex1-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex1-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="Kauf_ex1" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div> -->
+</p>
 <p hidden>
 `\(\newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -276,37 +196,6 @@ and is characterized by</p>
 <li>$\LA D \sqcup \img{/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA$</li>
 <li>$\LA \img{/bracket_plus.png}\RA=A\LA \img{/bracket_vert.png} \RA+A^{-1}\LA\img{/bracket_hor.png}\RA$</li>
 </ol>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="Kauf_ex2-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="Kauf_ex2-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="Kauf_ex2-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex2-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex2-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex2-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="Kauf_ex2-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="Kauf_ex2" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div>
 <!-- <img style="max-width:1000px !important; height:auto !important" src="/bracket_1.png"/>
 
 <br/>
@@ -353,51 +242,6 @@ $\LA D\RA$ does not change. That is,</p>
     <section>
     
       
-<!--
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="Type_II-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="Type_II-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="Type_II-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="Type_II-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="Type_II-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="Type_II-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="Type_II-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="Type_II" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div>
-
-
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="Type_III-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="Type_III-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="Type_III-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="Type_III-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="Type_III-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="Type_III-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="Type_III-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="Type_III" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div> -->
 <h3 id="type-1">Type 1</h3>
 <p>If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
 changes in the following way:</p>
@@ -405,37 +249,6 @@ changes in the following way:</p>
 <li>$\LA\img{/bracket_type1_1.png}\RA=-A^{3}\LA\img{/bracket_type1_out.png}\RA$</li>
 <li>$\LA\img{/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/bracket_type1_out.png}\RA$</li>
 </ol>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="Type_I-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="Type_I-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="Type_I-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="Type_I-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="Type_I-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="Type_I-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="Type_I-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="Type_I" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div>
 
     </section>
     
@@ -537,72 +350,10 @@ signs of the crossings of D.</p>
     <section>
     
       
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="Writhe-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="Writhe-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="Writhe-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="Writhe-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="Writhe-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="Writhe-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="Writhe-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="Writhe" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
 <h3 id="writhe--bracket">Writhe + Bracket</h3>
 <p>Let $D$ be a diagram of an oriented link $L$. Then the expression
 $$\LP -A\RP^{-3w\LP D\RP}\LA D\RA$$
 is an invariant of the oriented link $L$.</p>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="Writhe_Bracket-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="Writhe_Bracket-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="Writhe_Bracket-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="Writhe_Bracket-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="Writhe_Bracket-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="Writhe_Bracket-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="Writhe_Bracket-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="Writhe_Bracket" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div>
 
     </section>
     
@@ -696,37 +447,6 @@ such that</p>
   </div></figure>
  <br/> Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$</li>
 </ol>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div><button id="jp_funct-eraserS" style="border-radius: 12px;background-color: #44475a;">Small
-        Eraser</button></div>
-    <div><button id="jp_funct-eraserB" style="border-radius: 12px;background-color: #44475a;">Big
-        Eraser</button></div>
-    <div><button id="jp_funct-pen0" style="border-radius: 12px;background-color: #bd93f9;">Pen</button>
-    </div>
-    <div><button id="jp_funct-pen1" style="border-radius: 12px;background-color: #50fa7b;">Pen</button>
-    </div>
-    <div><button id="jp_funct-pen2" style="border-radius: 12px;background-color: #ff79c6;">Pen</button>
-    </div>
-    <div><button id="jp_funct-pen3" style="border-radius: 12px;background-color: #ffb86c;">Pen</button>
-    </div>
-    <div><button id="jp_funct-laser" style="border-radius: 12px;background-color: #ff5555;">Laser</button>
-    </div>
-  </div>
-  <div class="canvcollumn">
-    <canvas id="jp_funct" style="border:1px solid #44475a; width: 100%;height: auto;"></canvas>
-  </div>
-</div>
 
     </section>
     
