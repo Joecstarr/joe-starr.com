@@ -18,7 +18,23 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://joe-starr.com/</loc>
-    <lastmod>2023-02-12T17:09:26+00:00</lastmod>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/slides/alexander_polynomail/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/slides/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/tags/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/tag/talks/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/resources/</loc>
@@ -26,18 +42,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/slides/legendrian_knots/</loc>
-    <lastmod>2022-11-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/slides/</loc>
-    <lastmod>2022-11-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/tags/</loc>
-    <lastmod>2022-11-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/tag/talks/</loc>
     <lastmod>2022-11-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

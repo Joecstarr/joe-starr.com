@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://joe-starr.com/slides/alexander_polynomail/">
+
+  <title>Alexander Polynomial | Joe Starr</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <p><link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/cus_dracula.css" />
+<script>
+  if (typeof MathJax === 'undefined') {
+  MathJax = {
+    loader: {
+        load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
+        paths: {img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3'}
+    },
+    tex: {
+      inlineMath: [["$", "$"], ["\\(", "\\)"]],
+      displayMath: [["$$","$$"], ["\\[", "\\]"]],
+      processEscapes: true,
+      processEnvironments: true,
+      extensions: ["autoload-all.js","AMSmath.js", "AMSsymbols.js","AMScd.js"],
+      packages: {'[+]': ['img','color','amscd']}
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+  }
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+<p hidden>
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  </p>
+</p>
+<h1 id="draft">Draft</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="alexander-polynomial">Alexander Polynomial</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="knot-crossings">Knot Crossings</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> img of a crossing</li>
+</ul>
+<!-- 
+<img style="
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;" src="presentations/DiscMorse/Simplex.png"/> -->
+<p>Right hand rule</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="link-crossings">Link Crossings</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> img of a crossing</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="seifert-surfaces">Seifert Surfaces</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="examples">Examples</h3>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> image of handles</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> image of knot-y one</p>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="definition">Definition</h2>
+<p>A Seifert Surface for an oriented link in $S^3$ is a compact
+connected oriented surface smoothly embedded in $S^3$ with
+oriented boundary equal to the link.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="existence">Existence</h2>
+<p>We can show existence by giving an algorithm to construct a Seifert Surface from a given link projection.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="remove-crossings">Remove crossings</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> picture of removing crossings</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="close-curves-following-orientation">Close curves following orientation</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> picture of closing curves</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="collection-of-disks">Collection of disks</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> picture/animation of disks</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="attaching-bands">Attaching bands</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> picture of attaching bands</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="construction">Construction</h2>
+<ol>
+<li>Remove crossings.</li>
+<li>Connect strands following orientation without creating new crossings.</li>
+<li>Fill interior of resulting disks.</li>
+<li>Connect disks with &ldquo;twists&rdquo; matching crossing orientation.</li>
+<li>Push disks into bands.</li>
+</ol>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="genus-of-a-surface">Genus of a surface</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> picture of a band disk thing</li>
+</ul>
+<p>Genus of the surface is:</p>
+<p>$$2g=2-s-n+c$$</p>
+<ul>
+<li>$g$: Genus</li>
+<li>$s$: Number of Seifert circles</li>
+<li>$n$: Number of components</li>
+<li>$c$: Number of Crossings</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="is-the-algorithm-output-the-same">Is the algorithm output the same?</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Show SeifertView of $6_2$</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="bands">Bands</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Show bands construction</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="seifert-matrix">Seifert Matrix</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="linking-number">Linking number</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Linking number example</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="links-on-a-surface">Links on a surface</h2>
+<p>We can put oriented simple closed curves through each of the bands.</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> bands circles</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>A Seifert surface is oriented so it has a top side and bottom side. We can take a push off of each of the curves in the &ldquo;up&rdquo; direction</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> bands circles</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>We can take an $\LP i,j\RP$ pair and compute
+$$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Example of $i,j$</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Example of $i,i$</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>This populates a matrix:</p>
+<p>$$\begin{bmatrix}
+\text{Lk}\LP f_1,\ f_1^+\RP &amp; \text{Lk}\LP f_1,\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_1,\ f_{2g}^+\RP\\
+\text{Lk}\LP f_2,\ f_1^+\RP &amp; \text{Lk}\LP f_2,\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_2,\ f_{2g}^+\RP\\
+\text{Lk}\LP f_3,\ f_1^+\RP &amp; \text{Lk}\LP f_3,\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_3,\ f_{2g}^+\RP\\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+\text{Lk}\LP f_{2g},\ f_1^+\RP &amp; \text{Lk}\LP f_{2g},\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_{2g},\ f_{2g}^+\RP\\
+\end{bmatrix}$$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="alexander-polynomial-1">Alexander Polynomial</h2>
+<p>For an oriented link $\mathscr{L}$ and it&rsquo;s associated Seifert matrix $S$ we define the <em>Alexander polynomial</em> of $\mathscr{L}$ as
+$$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\RP$$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="bound-on-genus">Bound on genus</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="sources">Sources</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Stuff</li>
+<li><input disabled="" type="checkbox"> Stuff</li>
+<li><input disabled="" type="checkbox"> Stuff</li>
+<li><input disabled="" type="checkbox"> Stuff</li>
+<li><input disabled="" type="checkbox"> Stuff</li>
+<li><input disabled="" type="checkbox"> Stuff</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>

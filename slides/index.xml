@@ -5,7 +5,216 @@
     <link>https://joe-starr.com/slides/</link>
       <atom:link href="https://joe-starr.com/slides/index.xml" rel="self" type="application/rss+xml" />
     <description>Slides</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Alexander Polynomial</title>
+      <link>https://joe-starr.com/slides/alexander_polynomail/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/slides/alexander_polynomail/</guid>
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
+&lt;script&gt;
+  if (typeof MathJax === &#39;undefined&#39;) {
+  MathJax = {
+    loader: {
+        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
+        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
+    },
+    tex: {
+      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
+      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
+      processEscapes: true,
+      processEnvironments: true,
+      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
+      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
+    },
+    options: {
+      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
+    }
+  };
+
+  window.addEventListener(&#39;load&#39;, (event) =&gt; {
+      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
+        x.parentElement.classList += &#39;has-jax&#39;})
+    });
+  }
+
+&lt;/script&gt;
+&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
+  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;p hidden&gt;
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \require{color}$`
+  &lt;/p&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;draft&#34;&gt;Draft&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;alexander-polynomial&#34;&gt;Alexander Polynomial&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;knot-crossings&#34;&gt;Knot Crossings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; img of a crossing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;presentations/DiscMorse/Simplex.png&#34;/&gt; --&gt;
+&lt;p&gt;Right hand rule&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;link-crossings&#34;&gt;Link Crossings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; img of a crossing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;seifert-surfaces&#34;&gt;Seifert Surfaces&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; image of handles&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; image of knot-y one&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
+&lt;p&gt;A Seifert Surface for an oriented link in $S^3$ is a compact
+connected oriented surface smoothly embedded in $S^3$ with
+oriented boundary equal to the link.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;existence&#34;&gt;Existence&lt;/h2&gt;
+&lt;p&gt;We can show existence by giving an algorithm to construct a Seifert Surface from a given link projection.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;remove-crossings&#34;&gt;Remove crossings&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; picture of removing crossings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;close-curves-following-orientation&#34;&gt;Close curves following orientation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; picture of closing curves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;collection-of-disks&#34;&gt;Collection of disks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; picture/animation of disks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;attaching-bands&#34;&gt;Attaching bands&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; picture of attaching bands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;construction&#34;&gt;Construction&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Remove crossings.&lt;/li&gt;
+&lt;li&gt;Connect strands following orientation without creating new crossings.&lt;/li&gt;
+&lt;li&gt;Fill interior of resulting disks.&lt;/li&gt;
+&lt;li&gt;Connect disks with &amp;ldquo;twists&amp;rdquo; matching crossing orientation.&lt;/li&gt;
+&lt;li&gt;Push disks into bands.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;genus-of-a-surface&#34;&gt;Genus of a surface&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; picture of a band disk thing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Genus of the surface is:&lt;/p&gt;
+&lt;p&gt;$$2g=2-s-n+c$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$g$: Genus&lt;/li&gt;
+&lt;li&gt;$s$: Number of Seifert circles&lt;/li&gt;
+&lt;li&gt;$n$: Number of components&lt;/li&gt;
+&lt;li&gt;$c$: Number of Crossings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;is-the-algorithm-output-the-same&#34;&gt;Is the algorithm output the same?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Show SeifertView of $6_2$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;bands&#34;&gt;Bands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Show bands construction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;seifert-matrix&#34;&gt;Seifert Matrix&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;linking-number&#34;&gt;Linking number&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Linking number example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;links-on-a-surface&#34;&gt;Links on a surface&lt;/h2&gt;
+&lt;p&gt;We can put oriented simple closed curves through each of the bands.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; bands circles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;A Seifert surface is oriented so it has a top side and bottom side. We can take a push off of each of the curves in the &amp;ldquo;up&amp;rdquo; direction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; bands circles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;We can take an $\LP i,j\RP$ pair and compute
+$$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Example of $i,j$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Example of $i,i$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;This populates a matrix:&lt;/p&gt;
+&lt;p&gt;$$\begin{bmatrix}
+\text{Lk}\LP f_1,\ f_1^+\RP &amp;amp; \text{Lk}\LP f_1,\ f_2^+\RP &amp;amp; \cdots &amp;amp; \text{Lk}\LP f_1,\ f_{2g}^+\RP\\
+\text{Lk}\LP f_2,\ f_1^+\RP &amp;amp; \text{Lk}\LP f_2,\ f_2^+\RP &amp;amp; \cdots &amp;amp; \text{Lk}\LP f_2,\ f_{2g}^+\RP\\
+\text{Lk}\LP f_3,\ f_1^+\RP &amp;amp; \text{Lk}\LP f_3,\ f_2^+\RP &amp;amp; \cdots &amp;amp; \text{Lk}\LP f_3,\ f_{2g}^+\RP\\
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots\\
+\text{Lk}\LP f_{2g},\ f_1^+\RP &amp;amp; \text{Lk}\LP f_{2g},\ f_2^+\RP &amp;amp; \cdots &amp;amp; \text{Lk}\LP f_{2g},\ f_{2g}^+\RP\\
+\end{bmatrix}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;alexander-polynomial-1&#34;&gt;Alexander Polynomial&lt;/h2&gt;
+&lt;p&gt;For an oriented link $\mathscr{L}$ and it&amp;rsquo;s associated Seifert matrix $S$ we define the &lt;em&gt;Alexander polynomial&lt;/em&gt; of $\mathscr{L}$ as
+$$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\RP$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;bound-on-genus&#34;&gt;Bound on genus&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>Legendrian knots</title>
       <link>https://joe-starr.com/slides/legendrian_knots/</link>
