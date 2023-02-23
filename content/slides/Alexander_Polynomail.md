@@ -28,6 +28,8 @@ slides:
 
 - [ ] img of a crossing
 
+{{<centerimg "presentations/DiscMorse/Simplex.png" 500>}}
+
 Right hand rule
 
 ---

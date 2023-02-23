@@ -17,26 +17,9 @@ slides:
   ]
 ---
 
-{{<dracula_css>}}{{<mathjax_support>}}
+{{<dracula_css>}}
+{{<mathjax_support>}}
 
-<p hidden>
-`\(\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\LP}{\left(}
-\newcommand{\RP}{\right)}
-\newcommand{\LS}{\left\lbrace}
-\newcommand{\RS}{\right\rbrace}
-\newcommand{\LA}{\left\langle}
-\newcommand{\RA}{\right\rangle}
-\newcommand{\LB}{\left[}
-\newcommand{\RB}{\right]}
-\newcommand{\MM}{\ \middle|\ }
-\newcommand{\abs}[1]{\left\vert#1\right\vert}
-\newcommand{\msr}[1]{m\left(#1\right)}
-\require{color}\)`
-</p>
 
 
 <!-- # Legendrian knots -->

@@ -36,7 +36,7 @@ An \\(n\\)-cell is open \\(n\\)-ball with boundary \\(S^{n-1}\\).
 
 ---
 
-{{<centerimg "/DiscMorse/Cells.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/Cells.png" 600>}}
 
 ---
 
@@ -51,11 +51,11 @@ This construction works as follows:
 
 ---
 
-{{<centerimg "/DiscMorse/wedge.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/wedge.png" 600>}}
 
 ---
 
-{{<centerimg "/DiscMorse/sphere.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/sphere.png" 600>}}
 
 
 --- -->
@@ -67,7 +67,7 @@ This construction works as follows:
 ### Simplex
 
 A simplex is just an \\(n\\)-dimensional "triangle"
-{{<centerimg "/DiscMorse/Simplex.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Simplex.png" 500>}}
 
 ---
 formally
@@ -105,11 +105,11 @@ A simplicial complex is a space \\(K\\) built from glued together simplices and 
 
 ---
 
-{{<centerimg "/DiscMorse/Torus.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/Torus.png" 600>}}
 
 ---
 
-{{<centerimg "/DiscMorse/Complex.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Complex.png" 500>}}
 
 ---
 
@@ -119,7 +119,7 @@ collection of combinatorial descriptions of simplices of \\(K\\)
 
 ---
 
-{{<centerimg "/DiscMorse/Complex.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Complex.png" 500>}}
 
 \\[\LS
 \LB b,c,d\RB,
@@ -170,7 +170,7 @@ f\LP\LB b,c,d\RB\RP &= 5    \\
 \)
 </div>
 <div class="slidecolumn">
-{{<centerimg "/DiscMorse/Complex_f.png" 400>}}
+{{<centerimg "/presentations/DiscMorse/Complex_f.png" 400>}}
 </div>
 </div>
 
@@ -205,7 +205,7 @@ min-width:50% !important;
 </ol>
 </div>
 <div class="slidecolumn">
-{{<centerimg "/DiscMorse/Complex_f.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Complex_f.png" 500>}}
 </div>
 </div>
 
@@ -227,7 +227,7 @@ min-width:50% !important;
 </ol>
 </div>
 <div class="slidecolumn">
-{{<centerimg "/DiscMorse/Complex_f_Not_Morse.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Complex_f_Not_Morse.png" 500>}}
 </div>
 </div>
 
@@ -262,7 +262,7 @@ min-width:50% !important;
 </ol>
 </div>
 <div class="slidecolumn">
-{{<centerimg "/DiscMorse/Complex_crit.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Complex_crit.png" 500>}}
 </div>
 </div>
 
@@ -285,7 +285,7 @@ We draw an arrow from \\(\alpha\to \beta\\).
 
 ---
 
-{{<centerimg "/DiscMorse/Complex_grad.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Complex_grad.png" 500>}}
 
 ---
 
@@ -309,7 +309,7 @@ A face \(\sigma\in K\) is called maximal if there is no \(\beta\in K\) so that \
 
 </div>
 <div class="slidecolumn">
-{{<centerimg "/DiscMorse/Facets.png" 400>}}
+{{<centerimg "/presentations/DiscMorse/Facets.png" 400>}}
 </div>
 </div>
 
@@ -327,7 +327,7 @@ text-align: left !important;
 A simplex \(\tau\) of a simplicial complex \(K\) is called a free face if \(\tau\) is a face of exactly one maximal face.
 </div>
 <div class="slidecolumn">
-{{<centerimg "/DiscMorse/Free_face.png" 400>}}
+{{<centerimg "/presentations/DiscMorse/Free_face.png" 400>}}
 </div>
 </div>
 
@@ -342,7 +342,7 @@ If \\(\tau\\) is a free face of \\(\sigma\\) we can collapse \\(K \searrow K^\pr
 
 ---
 
-{{<centerimg "/DiscMorse/Collapse.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/Collapse.png" 600>}}
 
 ---
 
@@ -352,7 +352,7 @@ Given a vector field we can simplicially collapse following the arrows.
 
 ---
 
-{{<centerimg "/DiscMorse/Complex_collapse.png" 500>}}
+{{<centerimg "/presentations/DiscMorse/Complex_collapse.png" 500>}}
 
 ---
 
@@ -374,11 +374,11 @@ consisting of all faces \\(\sigma\\) of \\(K\\) where \\(\tau < \sigma\\), as we
 
 ---
 
-{{<centerimg "/DiscMorse/star.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/star.png" 600>}}
 
 ---
 
-{{<centerimg "/DiscMorse/star2.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/star2.png" 600>}}
 
 
 ---
@@ -389,11 +389,11 @@ consisting of all faces of the star of \\(\tau\\) that do not intersect \\(\tau\
 
 ---
 
-{{<centerimg "/DiscMorse/link.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/link.png" 600>}}
 
 ---
 
-{{<centerimg "/DiscMorse/link2.png" 600>}}
+{{<centerimg "/presentations/DiscMorse/link2.png" 600>}}
 
 
 ---
