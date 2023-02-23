@@ -5,7 +5,7 @@ summary: "Define the Alexander Polynomial"
 tags: [
     "Talks",
 ]
-draft: true
+draft: false
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
 
@@ -20,15 +20,18 @@ slides:
 {{<dracula_css>}}
 {{<mathjax_support>}}
 
+# Draft
+
+---
 # Alexander Polynomial
 
 ---
 
 ## Knot Crossings
 
-- [ ] img of a crossing
+- [x] img of a crossing
 
-{{<centerimg "presentations/DiscMorse/Simplex.png" 500>}}
+<!-- {{<centerimg "presentations/DiscMorse/Simplex.png" 500>}} -->
 
 Right hand rule
 
@@ -36,7 +39,7 @@ Right hand rule
 
 ## Link Crossings
 
-- [ ] img of a crossing
+- [x] img of a crossing
 
 ---
 
@@ -46,9 +49,9 @@ Right hand rule
 
 ### Examples
 
-- [ ] image of handles
+- [x] image of handles
 
-- [ ] image of knot-y one
+- [x] image of knot-y one
 
 ---
 
@@ -68,25 +71,25 @@ We can show existence by giving an algorithm to construct a Seifert Surface from
 
 ### Remove crossings
 
-- [ ] picture of removing crossings
+- [x] picture of removing crossings
 
 ---
 
 ### Close curves following orientation
 
-- [ ] picture of closing curves
+- [x] picture of closing curves
 
 ---
 
 ### Collection of disks
 
-- [ ] picture/animation of disks
+- [x] picture/animation of disks
 
 ---
 
 ### Attaching bands
 
-- [ ] picture of attaching bands
+- [x] picture of attaching bands
 
 ---
 
@@ -102,7 +105,7 @@ We can show existence by giving an algorithm to construct a Seifert Surface from
 
 ## Genus of a surface
 
-- [ ] picture of a band disk thing
+- [x] picture of a band disk thing
 
 Genus of the surface is:
 
@@ -117,13 +120,13 @@ $$2g=2-s-n+c$$
 
 ## Is the algorithm output the same?
 
-- [ ] Show SeifertView of $6_2$
+- [x] Show SeifertView of $6_2$
 
 ---
 
 ## Bands
 
-- [ ] Show bands construction
+- [x] Show bands construction
 
 ---
 
@@ -133,7 +136,7 @@ $$2g=2-s-n+c$$
 
 ## Linking number
 
-- [ ] Linking number example
+- [x] Linking number example
 
 ---
 
@@ -141,13 +144,13 @@ $$2g=2-s-n+c$$
 
 We can put oriented simple closed curves through each of the bands.
 
-- [ ]  bands circles
+- [x]  bands circles
 
 ---
 
 A Seifert surface is oriented so it has a top side and bottom side. We can take a push off of each of the curves in the "up" direction
 
-- [ ]  bands circles
+- [x]  bands circles
 
 ---
 
@@ -156,11 +159,11 @@ $$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$
 
 ---
 
-- [ ]  Example of $i,j$
+- [x]  Example of $i,j$
 
 ---
 
-- [ ]  Example of $i,i$
+- [x]  Example of $i,i$
 
 ---
 
@@ -183,6 +186,17 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 
 ---
 
+## Bound on genus
+
+
+
+---
+
 ## Sources
 
-- [  ] Stuff
+- [ ] Stuff
+- [ ] Stuff
+- [ ] Stuff
+- [ ] Stuff
+- [ ] Stuff
+- [ ] Stuff
