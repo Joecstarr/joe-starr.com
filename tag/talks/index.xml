@@ -18,7 +18,8 @@
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/legendrian_knots/</guid>
       <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;&lt;script&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
+&lt;script&gt;
   if (typeof MathJax === &#39;undefined&#39;) {
   MathJax = {
     loader: {
@@ -69,24 +70,6 @@
   \newcommand{\msr}[1]{m\left(#1\right)}
   \require{color}$`
   &lt;/p&gt;
-&lt;/p&gt;
-&lt;p hidden&gt;
-`\(\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\LP}{\left(}
-\newcommand{\RP}{\right)}
-\newcommand{\LS}{\left\lbrace}
-\newcommand{\RS}{\right\rbrace}
-\newcommand{\LA}{\left\langle}
-\newcommand{\RA}{\right\rangle}
-\newcommand{\LB}{\left[}
-\newcommand{\RB}{\right]}
-\newcommand{\MM}{\ \middle|\ }
-\newcommand{\abs}[1]{\left\vert#1\right\vert}
-\newcommand{\msr}[1]{m\left(#1\right)}
-\require{color}\)`
 &lt;/p&gt;
 &lt;!-- # Legendrian knots --&gt;
 &lt;div class=&#34;canvasdiv canvrow&#34;&gt;
@@ -235,9 +218,9 @@ An \\(n\\)-cell is open \\(n\\)-ball with boundary \\(S^{n-1}\\).
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Cells.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Cells.png&#34;/&gt;
 
 ---
 
@@ -256,9 +239,9 @@ This construction works as follows:
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/wedge.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/wedge.png&#34;/&gt;
 
 ---
 
@@ -266,9 +249,9 @@ height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/wedge.png&#
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/sphere.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/sphere.png&#34;/&gt;
 
 
 --- --&gt;
@@ -280,9 +263,9 @@ height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/sphere.png&
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Simplex.png&#34;/&gt;&lt;/p&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Simplex.png&#34;/&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;formally&lt;/p&gt;
 &lt;p&gt;\[\Delta^n=\LS x \in \R^k: x_0+\cdots+x_{k-1}=1, x_i \geq 0 \text { for } i=0, \ldots, k-1\RS\]&lt;/p&gt;
@@ -312,17 +295,17 @@ when
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Torus.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Torus.png&#34;/&gt;
 &lt;hr&gt;
 
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex.png&#34;/&gt;
 &lt;hr&gt;
 &lt;p&gt;It&amp;rsquo;s convenient to have a combinatorial description for \(K\).
 This description is called an &amp;ldquo;abstract simplicial complex&amp;rdquo; and is just the
@@ -332,9 +315,9 @@ collection of combinatorial descriptions of simplices of \(K\)&lt;/p&gt;
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex.png&#34;/&gt;
 &lt;p&gt;\[\LS
 \LB b,c,d\RB,
 \LB b,c\RB,
@@ -383,9 +366,9 @@ f\LP\LB b,c,d\RB\RP &amp;= 5    \\
 &lt;img style=&#34;
 max-width:400px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_f.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex_f.png&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -420,9 +403,9 @@ min-width:50% !important;
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_f.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex_f.png&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -446,9 +429,9 @@ min-width:50% !important;
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_f_Not_Morse.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex_f_Not_Morse.png&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -481,9 +464,9 @@ min-width:50% !important;
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_crit.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex_crit.png&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -502,9 +485,9 @@ We draw an arrow from \(\alpha\to \beta\).&lt;/p&gt;
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_grad.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex_grad.png&#34;/&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;simplicial-collapse&#34;&gt;Simplicial collapse&lt;/h3&gt;
 &lt;p&gt;The simplicial equivalent of a deformation retraction is called a
@@ -525,9 +508,9 @@ A face \(\sigma\in K\) is called maximal if there is no \(\beta\in K\) so that \
 &lt;img style=&#34;
 max-width:400px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Facets.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Facets.png&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -546,9 +529,9 @@ A simplex \(\tau\) of a simplicial complex \(K\) is called a free face if \(\tau
 &lt;img style=&#34;
 max-width:400px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Free_face.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Free_face.png&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -560,9 +543,9 @@ height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Free_face.p
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Collapse.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Collapse.png&#34;/&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;collapsing-a-vector-field&#34;&gt;Collapsing A Vector Field&lt;/h3&gt;
 &lt;p&gt;Given a vector field we can simplicially collapse following the arrows.&lt;/p&gt;
@@ -571,9 +554,9 @@ height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Collapse.pn
 &lt;img style=&#34;
 max-width:500px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/Complex_collapse.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/Complex_collapse.png&#34;/&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;main-result-of-discrete-morse-theory&#34;&gt;Main result of discrete Morse Theory&lt;/h3&gt;
 &lt;p&gt;Suppose \(K\) is a simplicial complex with a discrete Morse function. Then \(K\) is homotopy equivalent to a CW complex with exactly one cell of dimension \(n\) for each critical simplex of dimension \(n\).&lt;/p&gt;
@@ -588,17 +571,17 @@ consisting of all faces \(\sigma\) of \(K\) where \(\tau &amp;lt; \sigma\), as w
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/star.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/star.png&#34;/&gt;
 &lt;hr&gt;
 
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/star2.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/star2.png&#34;/&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;link-of-a-face&#34;&gt;Link of a face&lt;/h2&gt;
 &lt;p&gt;The link of a face \(\tau\) of \(K\) is the subcomplex of \(K\)
@@ -608,17 +591,17 @@ consisting of all faces of the star of \(\tau\) that do not intersect \(\tau\).&
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/link.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/link.png&#34;/&gt;
 &lt;hr&gt;
 
 &lt;img style=&#34;
 max-width:600px !important;
 display: block;
-margin-left: auto;
-margin-right: auto;
-height:auto !important&#34; src=&#34;https://joe-starr.com/DiscMorse/link2.png&#34;/&gt;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/DiscMorse/link2.png&#34;/&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;combinatorial-d-ball&#34;&gt;Combinatorial d-ball&lt;/h3&gt;
 &lt;p&gt;A complex \(K\) is a combinatorial d-ball if \(K\) and \(\Delta^d\) have
