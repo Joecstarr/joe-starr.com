@@ -23,7 +23,7 @@ slides:
 
 
 # Jones Polynomial
-1. $\LA \img[]{/unknot.png} \RA=1$
+1. $\LA \img[]{/presentations/kauf_bkt/unknot.png} \RA=1$
 
 ---
 ## Definition Of Jones Polynomial
@@ -54,9 +54,9 @@ and is characterized by
 
 ---
 
-1. $\LA \img{presentations/kauf_bkt/unknot.png} \RA=1$
-2. $\LA D \sqcup \img{presentations/kauf_bkt/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\$
-3. $\LA \img{presentations/kauf_bkt/bracket_plus.png}\RA=A\LA \img{presentations/kauf_bkt/bracket_vert.png} \RA+A^{-1}\LA\img{presentations/kauf_bkt/bracket_hor.png}\RA$
+1. $\LA \img{/presentations/kauf_bkt/unknot.png} \RA=1$
+2. $\LA D \sqcup \img{/presentations/kauf_bkt/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\$
+3. $\LA \img{/presentations/kauf_bkt/bracket_plus.png}\RA=A\LA \img{/presentations/kauf_bkt/bracket_vert.png} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/bracket_hor.png}\RA$
 
 
 
@@ -85,8 +85,8 @@ Check Reidemeister moves.
 If a diagram $D$ is changed by Type II or Type III Reidemeister move, then
 $\LA D\RA$ does not change. That is,
 
-1. $\LA\img{presentations/kauf_bkt/bracket_type2.png}\RA=\LA\img{presentations/kauf_bkt/bracket_hor.png}\RA$
-2. $\LA\img{presentations/kauf_bkt/bracket_type3.png}\RA=\LA\img{presentations/kauf_bkt/bracket_type3_out.png}\RA$
+1. $\LA\img{/presentations/kauf_bkt/bracket_type2.png}\RA=\LA\img{/presentations/kauf_bkt/bracket_hor.png}\RA$
+2. $\LA\img{/presentations/kauf_bkt/bracket_type3.png}\RA=\LA\img{/presentations/kauf_bkt/bracket_type3_out.png}\RA$
 
 Hence $\LA D\RA$ is invariant under regular isotopy of $D$.
 
@@ -99,8 +99,8 @@ Hence $\LA D\RA$ is invariant under regular isotopy of $D$.
 If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
 changes in the following way:
 
-1. $\LA\img{presentations/kauf_bkt/bracket_type1_1.png}\RA=-A^{3}\LA\img{presentations/kauf_bkt/bracket_type1_out.png}\RA$
-2. $\LA\img{presentations/kauf_bkt/bracket_type1_2.png}\RA=-A^{-3}\LA\img{presentations/kauf_bkt/bracket_type1_out.png}\RA$
+1. $\LA\img{/presentations/kauf_bkt/bracket_type1_1.png}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA$
+2. $\LA\img{/presentations/kauf_bkt/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA$
 
 
 
@@ -123,8 +123,8 @@ This is a problem... How to resolve?
 
 A crossing can be either:
 
-1. Positive $+1$ <br/> ![+1](presentations/kauf_bkt/plus.png) <br/>
-2. Negative $-1$ <br/> ![-1](presentations/kauf_bkt/minus.png) <br/>
+1. Positive $+1$ <br/> ![+1](/presentations/kauf_bkt/plus.png) <br/>
+2. Negative $-1$ <br/> ![-1](/presentations/kauf_bkt/minus.png) <br/>
 
 ---
 
@@ -163,7 +163,7 @@ $$V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}
 such that
 
 1. $V\LP\text{unknot}\RP=1$
-2. Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  <br/> ![+1](presentations/kauf_bkt/plus.png )   ![-1](presentations/kauf_bkt/minus.png) ![-1](presentations/kauf_bkt/skein_vert.png) <br/> Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$
+2. Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  <br/> ![+1](/presentations/kauf_bkt/plus.png )   ![-1](/presentations/kauf_bkt/minus.png) ![-1](/presentations/kauf_bkt/skein_vert.png) <br/> Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$
 
 
 
