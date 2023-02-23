@@ -721,6 +721,9 @@ is a combinitorial sphere.&lt;/p&gt;
 \require{color}\)`
 &lt;/p&gt;
 &lt;h1 id=&#34;jones-polynomial&#34;&gt;Jones Polynomial&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;$\LA \img[]{/unknot.png} \RA=1$&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;definition-of-jones-polynomial&#34;&gt;Definition Of Jones Polynomial&lt;/h2&gt;
 &lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
