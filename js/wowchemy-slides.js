@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var slides = { highlight_style: "dracula", pluginoptions: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"] };
+  var slides = { highlight_style: "dracula", reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"] };
 
   // <stdin>
   var enabledPlugins = [RevealMarkdown, RevealSearch, RevealNotes, RevealMath.KaTeX, RevealZoom];
