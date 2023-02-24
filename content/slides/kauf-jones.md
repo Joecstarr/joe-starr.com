@@ -23,7 +23,6 @@ slides:
 
 
 # Jones Polynomial
-1. $\LA \img[]{/presentations/kauf_bkt/unknot.png} \RA=1$
 
 ---
 ## Definition Of Jones Polynomial

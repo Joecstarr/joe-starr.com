@@ -19,6 +19,7 @@ slides:
 
 {{<dracula_css>}}
 {{<mathjax_support>}}
+{{<canvas_head>}}
 
 # Draft
 
@@ -27,19 +28,24 @@ slides:
 
 ---
 
-## Knot Crossings
-
-- [x] img of a crossing
-
-<!-- {{<centerimg "presentations/DiscMorse/Simplex.png" 500>}} -->
-
-Right hand rule
-
----
-
 ## Link Crossings
 
-- [x] img of a crossing
+
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_+.svg" 500>}}
+</div>
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;">
+{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_-.svg" 500>}}
+</div>
+</div>
 
 ---
 
@@ -49,9 +55,22 @@ Right hand rule
 
 ### Examples
 
-- [x] image of handles
-
-- [x] image of knot-y one
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
+</div>
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
+</div>
+</div>
 
 ---
 
@@ -65,31 +84,50 @@ oriented boundary equal to the link.
 
 ## Existence
 
-We can show existence by giving an algorithm to construct a Seifert Surface from a given link projection.
+Existence can be shown by an algorithm to construct a Seifert Surface from a
+given link projection.
 
 ---
 
 ### Remove crossings
 
-- [x] picture of removing crossings
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_1.svg" 500>}}
 
 ---
 
 ### Close curves following orientation
 
-- [x] picture of closing curves
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_2.svg" 500>}}
 
 ---
 
 ### Collection of disks
 
-- [x] picture/animation of disks
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_3.svg" 500>}}
 
 ---
 
 ### Attaching bands
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_4.svg" 500>}}
+</div>
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_5.svg" 500>}}
+</div>
+</div>
 
-- [x] picture of attaching bands
+---
+
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_6.svg" 500>}}
 
 ---
 
@@ -103,31 +141,55 @@ We can show existence by giving an algorithm to construct a Seifert Surface from
 
 ---
 
-## Genus of a surface
+## Genus of a generated surface
 
-- [x] picture of a band disk thing
-
-Genus of the surface is:
-
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
 $$2g=2-s-n+c$$
-
-- $g$: Genus
-- $s$: Number of Seifert circles
-- $n$: Number of components
-- $c$: Number of Crossings
-
+<ol>
+<li>$g$: Genus</li>
+<li>$s$: Number of Seifert circles</li>
+<li>$n$: Number of components</li>
+<li>$c$: Number of Crossings</li>
+</ol>
+</div>
+<div class="slidecolumn">
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
+</div>
+</div>
 ---
 
 ## Is the algorithm output the same?
 
-- [x] Show SeifertView of $6_2$
+SeifertView of $6_2$
 
 ---
 
 ## Bands
 
-- [x] Show bands construction
-
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
+</div>
+<div class="slidecolumn">
+$$\to$$
+</div>
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
+</div>
+</div>
 ---
 
 # Seifert Matrix
@@ -136,7 +198,13 @@ $$2g=2-s-n+c$$
 
 ## Linking number
 
-- [x] Linking number example
+$$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$$
+
+---
+
+## Linking number
+
+- [ ] Linking number example
 
 ---
 
@@ -144,13 +212,14 @@ $$2g=2-s-n+c$$
 
 We can put oriented simple closed curves through each of the bands.
 
-- [x]  bands circles
+{{<centerimg "/presentations/Alex_Poly/bands/Band_SCC.svg" 500>}}
 
 ---
 
-A Seifert surface is oriented so it has a top side and bottom side. We can take a push off of each of the curves in the "up" direction
+A Seifert surface is oriented, it has a top side and bottom side.
+ We can take a push off of each of the curves in the "up" (blue) direction
 
-- [x]  bands circles
+{{<centerimg "/presentations/Alex_Poly/bands/push_off_1.svg" 500>}}
 
 ---
 
@@ -159,11 +228,20 @@ $$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$
 
 ---
 
-- [x]  Example of $i,j$
+{{<centerimg "/presentations/Alex_Poly/bands/ij_loops.svg" 500>}}
 
 ---
 
-- [x]  Example of $i,i$
+{{<centerimg "/presentations/Alex_Poly/bands/ji_loops.svg" 500>}}
+
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/bands/push_off_2.svg" 500>}}
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/bands/ii_loops.svg" 500>}}
 
 ---
 
@@ -188,7 +266,7 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 
 ## Bound on genus
 
-
+@@@
 
 ---
 
