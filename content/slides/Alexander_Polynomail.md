@@ -164,8 +164,6 @@ $$2g=2-s-n+c$$
 
 ---
 
-## Is the algorithm output the same?
-
 SeifertView of $6_2$
 
 ---
