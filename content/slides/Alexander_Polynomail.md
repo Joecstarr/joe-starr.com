@@ -161,6 +161,7 @@ $$2g=2-s-n+c$$
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
 </div>
 </div>
+
 ---
 
 ## Is the algorithm output the same?
@@ -190,6 +191,7 @@ min-width:50% !important;
 {{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
 </div>
 </div>
+
 ---
 
 # Seifert Matrix
