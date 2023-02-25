@@ -690,9 +690,13 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;p&gt;$$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;linking-number-1&#34;&gt;Linking number&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Linking number example&lt;/li&gt;
-&lt;/ul&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/links/link_1.svg&#34;/&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;links-on-a-surface&#34;&gt;Links on a surface&lt;/h2&gt;
 &lt;p&gt;We can put oriented simple closed curves through each of the bands.&lt;/p&gt;
@@ -767,10 +771,10 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 &lt;hr&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
+&lt;li&gt;Livingston, C. (1993). Knot Theory. Mathematical Association of America. doi:10.5948/UPO9781614440239&lt;/li&gt;
+&lt;li&gt;Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. doi:10.1007/978-1-4612-0691-0&lt;/li&gt;
+&lt;li&gt;van Wijk, J. J., &amp;amp; Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). &lt;a href=&#34;https://doi.org/10.1109/tvcg.2006.83&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1109/tvcg.2006.83&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;van Wijk, J. J., &amp;amp; Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. &lt;a href=&#34;https://doi.org/10.1109/visual.2005.1532843&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1109/visual.2005.1532843&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Stuff&lt;/li&gt;
 &lt;/ul&gt;
