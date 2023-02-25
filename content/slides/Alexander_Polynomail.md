@@ -204,7 +204,7 @@ $$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/cross
 
 ## Linking number
 
-- [ ] Linking number example
+{{<centerimg "/presentations/Alex_Poly/links/link_1.svg" 500>}}
 
 ---
 
@@ -272,9 +272,9 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 
 ## Sources
 
-- [ ] Stuff
-- [ ] Stuff
-- [ ] Stuff
-- [ ] Stuff
+- Livingston, C. (1993). Knot Theory. Mathematical Association of America. doi:10.5948/UPO9781614440239
+- Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. doi:10.1007/978-1-4612-0691-0
+- van Wijk, J. J., & Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83
+- van Wijk, J. J., & Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843
 - [ ] Stuff
 - [ ] Stuff
