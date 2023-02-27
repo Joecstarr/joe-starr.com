@@ -101,7 +101,7 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;seifert-surfaces&#34;&gt;Seifert Surfaces&lt;/h2&gt;
+&lt;h2 id=&#34;seifert-surfaces&#34;&gt;Seifert surfaces&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
@@ -134,12 +134,12 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
-&lt;p&gt;A Seifert Surface for an oriented link in $S^3$ is a compact
+&lt;p&gt;A Seifert surface for an oriented link in $S^3$ is a compact
 connected oriented surface smoothly embedded in $S^3$ with
 oriented boundary equal to the link.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;existence&#34;&gt;Existence&lt;/h2&gt;
-&lt;p&gt;Existence can be shown by an algorithm to construct a Seifert Surface from a
+&lt;p&gt;Existence can be shown by an algorithm to construct a Seifert surface from a
 given link projection.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;remove-crossings&#34;&gt;Remove crossings&lt;/h3&gt;
@@ -216,13 +216,13 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;/ol&gt;
 &lt;!-- 5) Push disks into bands. --&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;genus-of-a-seifert-surface&#34;&gt;Genus of a Seifert Surface&lt;/h2&gt;
-&lt;p&gt;As an abstract surface a Seifert Surface for a link is a disc with a number of
+&lt;h2 id=&#34;genus-of-a-seifert-surface&#34;&gt;Genus of a Seifert surface&lt;/h2&gt;
+&lt;p&gt;As an abstract surface a Seifert surface for a link is a disc with a number of
 &amp;ldquo;hollow handles&amp;rdquo; added. That number is its genus.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;genus-of-a-link&#34;&gt;Genus of a Link&lt;/h2&gt;
-&lt;p&gt;We take the smallest genus of possible Seifert Surfaces for a link as &lt;strong&gt;the
-genus of the link&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We take the smallest genus of possible Seifert surfaces for a link as &lt;strong&gt;the
+genus of the link&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;computing-the-genus-of-a-surface&#34;&gt;Computing the genus of a surface&lt;/h2&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
