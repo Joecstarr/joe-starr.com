@@ -11,7 +11,7 @@ slides:
 
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
-  highlight_style: dracula
+  # highlight_style: dracula
   reveal_options: [
     "RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"
   ]
@@ -21,9 +21,9 @@ slides:
 {{<mathjax_support>}}
 {{<canvas_head>}}
 
-# Draft
+<!-- # Draft -->
 
----
+<!-- --- -->
 # Alexander Polynomial
 
 ---
@@ -137,11 +137,24 @@ min-width:50% !important;
 2) Connect strands following orientation without creating new crossings.
 3) Fill interior of resulting disks.
 4) Connect disks with "twists" matching crossing orientation.
-5) Push disks into bands.
+<!-- 5) Push disks into bands. -->
 
 ---
 
-## Genus of a generated surface
+## Genus of a Seifert Surface
+
+As an abstract surface a Seifert Surface for a link is a disc with a number of
+"hollow handles" added. That number is its genus.
+
+---
+
+## Genus of a Link
+
+We take the smallest genus of possible Seifert Surfaces for a link as **the
+genus of the link**
+
+---
+## Computing the genus of a surface
 
 <div class="sliderow">
 <div class="slidecolumn" style="
@@ -164,7 +177,7 @@ $$2g=2-s-n+c$$
 
 ---
 
-SeifertView of $6_2$
+### SeifertView of $6_2$
 
 ---
 
@@ -198,11 +211,18 @@ min-width:50% !important;
 
 ## Linking number
 
-$$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$$
+<span style="
+font-size: 200% !important;
+  align-items: center;
+    text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;">
+$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$
+</span>
 
 ---
 
-## Linking number
 
 {{<centerimg "/presentations/Alex_Poly/links/link_1.svg" 500>}}
 
@@ -264,17 +284,22 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 
 ---
 
-## Bound on genus
+<!-- ## Bound on genus
 
-@@@
+@@@ -->
 
 ---
 
 ## Sources
-
-- Livingston, C. (1993). Knot Theory. Mathematical Association of America. doi:10.5948/UPO9781614440239
-- Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. doi:10.1007/978-1-4612-0691-0
-- van Wijk, J. J., & Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83
-- van Wijk, J. J., & Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843
-- [ ] Stuff
-- [ ] Stuff
+<div style="
+font-size: medium;
+">
+<ol>
+<li>Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239</li>
+<li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0</li>
+<li>Saveliev, N. (2011). Lectures on the Topology of 3-Manifolds. DE GRUYTER. https://doi.org/10.1515/9783110250367</li>
+<li>Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.</li>
+<li>van Wijk, J. J., & Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83</li>
+<li>van Wijk, J. J., & Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843</li>
+</ol>
+</div>
