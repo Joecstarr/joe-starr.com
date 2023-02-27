@@ -118,17 +118,8 @@
 
 
 </p>
-<h1 id="draft">Draft</h1>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
+<!-- # Draft -->
+<!-- --- -->
 <h1 id="alexander-polynomial">Alexander Polynomial</h1>
 
     </section>
@@ -371,8 +362,8 @@ height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_6.svg"/>
 <li>Connect strands following orientation without creating new crossings.</li>
 <li>Fill interior of resulting disks.</li>
 <li>Connect disks with &ldquo;twists&rdquo; matching crossing orientation.</li>
-<li>Push disks into bands.</li>
 </ol>
+<!-- 5) Push disks into bands. -->
 
     </section>
     
@@ -383,7 +374,33 @@ height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_6.svg"/>
     <section>
     
       
-<h2 id="genus-of-a-generated-surface">Genus of a generated surface</h2>
+<h2 id="genus-of-a-seifert-surface">Genus of a Seifert Surface</h2>
+<p>As an abstract surface a Seifert Surface for a link is a disc with a number of
+&ldquo;hollow handles&rdquo; added. That number is its genus.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="genus-of-a-link">Genus of a Link</h2>
+<p>We take the smallest genus of possible Seifert Surfaces for a link as <strong>the
+genus of the link</strong></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="computing-the-genus-of-a-surface">Computing the genus of a surface</h2>
 <div class="sliderow">
 <div class="slidecolumn" style="
 align-items: left;
@@ -418,7 +435,7 @@ height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/>
     <section>
     
       
-<p>SeifertView of $6_2$</p>
+<h3 id="seifertview-of-6_2">SeifertView of $6_2$</h3>
 
     </section>
     
@@ -483,7 +500,15 @@ height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/>
     
       
 <h2 id="linking-number">Linking number</h2>
-<p>$$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$$</p>
+<p><span style="
+font-size: 200% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$
+</span></p>
 
     </section>
     
@@ -494,7 +519,6 @@ height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/>
     <section>
     
       
-<h2 id="linking-number-1">Linking number</h2>
 
 <img style="
 max-width:500px !important;
@@ -661,8 +685,9 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
     <section>
     
       
-<h2 id="bound-on-genus">Bound on genus</h2>
-<p>@@@</p>
+<!-- ## Bound on genus
+
+@@@ -->
 
     </section>
     
@@ -674,14 +699,18 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
     
       
 <h2 id="sources">Sources</h2>
-<ul>
-<li>Livingston, C. (1993). Knot Theory. Mathematical Association of America. doi:10.5948/UPO9781614440239</li>
-<li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. doi:10.1007/978-1-4612-0691-0</li>
-<li>van Wijk, J. J., &amp; Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). <a href="https://doi.org/10.1109/tvcg.2006.83" target="_blank" rel="noopener">https://doi.org/10.1109/tvcg.2006.83</a></li>
-<li>van Wijk, J. J., &amp; Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. <a href="https://doi.org/10.1109/visual.2005.1532843" target="_blank" rel="noopener">https://doi.org/10.1109/visual.2005.1532843</a></li>
-<li><input disabled="" type="checkbox"> Stuff</li>
-<li><input disabled="" type="checkbox"> Stuff</li>
-</ul>
+<div style="
+font-size: medium;
+">
+<ol>
+<li>Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239</li>
+<li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0</li>
+<li>Saveliev, N. (2011). Lectures on the Topology of 3-Manifolds. DE GRUYTER. https://doi.org/10.1515/9783110250367</li>
+<li>Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.</li>
+<li>van Wijk, J. J., & Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83</li>
+<li>van Wijk, J. J., & Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843</li>
+</ol>
+</div>
 
     </section>
     
