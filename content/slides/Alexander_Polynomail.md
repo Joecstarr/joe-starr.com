@@ -49,7 +49,7 @@ min-width:50% !important;">
 
 ---
 
-## Seifert Surfaces
+## Seifert surfaces
 
 ---
 
@@ -76,7 +76,7 @@ min-width:50% !important;
 
 ## Definition
 
-A Seifert Surface for an oriented link in $S^3$ is a compact
+A Seifert surface for an oriented link in $S^3$ is a compact
 connected oriented surface smoothly embedded in $S^3$ with
 oriented boundary equal to the link.
 
@@ -84,7 +84,7 @@ oriented boundary equal to the link.
 
 ## Existence
 
-Existence can be shown by an algorithm to construct a Seifert Surface from a
+Existence can be shown by an algorithm to construct a Seifert surface from a
 given link projection.
 
 ---
@@ -141,17 +141,17 @@ min-width:50% !important;
 
 ---
 
-## Genus of a Seifert Surface
+## Genus of a Seifert surface
 
-As an abstract surface a Seifert Surface for a link is a disc with a number of
+As an abstract surface a Seifert surface for a link is a disc with a number of
 "hollow handles" added. That number is its genus.
 
 ---
 
 ## Genus of a Link
 
-We take the smallest genus of possible Seifert Surfaces for a link as **the
-genus of the link**
+We take the smallest genus of possible Seifert surfaces for a link as **the
+genus of the link**.
 
 ---
 ## Computing the genus of a surface
@@ -213,11 +213,11 @@ min-width:50% !important;
 
 <span style="
 font-size: 200% !important;
-  align-items: center;
-    text-align: center;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;">
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
 $\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$
 </span>
 
