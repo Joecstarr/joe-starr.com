@@ -21,31 +21,10 @@ slides:
 {{<mathjax_support>}}
 {{<canvas_head>}}
 
-<!-- # Draft -->
+<!-- # Draft
 
-<!-- --- -->
+--- -->
 # Alexander Polynomial
-
----
-
-## Link Crossings
-
-
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_+.svg" 500>}}
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;">
-{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_-.svg" 500>}}
-</div>
-</div>
 
 ---
 
@@ -141,10 +120,17 @@ min-width:50% !important;
 
 ---
 
+### SeifertView of $6_{2}$
+
+---
+
 ## Genus of a Seifert surface
 
 As an abstract surface a Seifert surface for a link is a disc with a number of
 "hollow handles" added. That number is its genus.
+
+@@@ what does this mean for 
+
 
 ---
 
@@ -154,6 +140,7 @@ We take the smallest genus of possible Seifert surfaces for a link as **the
 genus of the link**.
 
 ---
+
 ## Computing the genus of a surface
 
 <div class="sliderow">
@@ -174,10 +161,6 @@ $$2g=2-s-n+c$$
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
 </div>
 </div>
-
----
-
-### SeifertView of $6_2$
 
 ---
 
@@ -205,7 +188,33 @@ min-width:50% !important;
 
 ---
 
+@@@ Add description of the slides.
+
+---
+
 # Seifert Matrix
+
+
+---
+
+## Link Crossings
+
+
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_+.svg" 500>}}
+</div>
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;">
+{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_-.svg" 500>}}
+</div>
+</div>
 
 ---
 
@@ -218,8 +227,10 @@ text-align: center;
 display: block;
 margin-left: auto;
 margin-right: auto;">
-$\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg} }{2}$
+$\text{Lk}\LP \mathscr{L}\RP=\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg}$
 </span>
+
+@@@ Check this
 
 ---
 
@@ -233,6 +244,9 @@ $\text{Lk}\LP \mathscr{L}\RP=\frac{\text{#} \img{/presentations/Alex_Poly/crossi
 We can put oriented simple closed curves through each of the bands.
 
 {{<centerimg "/presentations/Alex_Poly/bands/Band_SCC.svg" 500>}}
+
+
+@@@ put orientations on these
 
 ---
 
@@ -263,6 +277,8 @@ $$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$
 
 {{<centerimg "/presentations/Alex_Poly/bands/ii_loops.svg" 500>}}
 
+@@@ fix this to be behind
+
 ---
 
 This populates a matrix:
@@ -277,6 +293,12 @@ $$\begin{bmatrix}
 
 ---
 
+## Example
+
+@@@ 6_2 -> matrix
+
+---
+
 ## Alexander Polynomial
 
 For an oriented link $\mathscr{L}$ and it's associated Seifert matrix $S$ we define the _Alexander polynomial_ of $\mathscr{L}$ as
@@ -284,9 +306,28 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 
 ---
 
-<!-- ## Bound on genus
+## Invariant 
+ 
+@@@ Up to what 
 
-@@@ -->
+
+---
+
+## Example
+ 
+@@@ +[3] -[3]
+
+---
+
+## Bound on genus
+
+@@@ find source for genus bound 
+
+---
+
+## Relationship to Kovanhof homology
+
+@@@ ???
 
 ---
 
