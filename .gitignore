@@ -8,3 +8,4 @@
 /css
 /DiscMorse
 /assets/jsconfig.json
+**/build_dir/**/*

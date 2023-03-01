@@ -8,7 +8,7 @@ tags: [
 draft: false
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
-
+  # theme: dracula
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
   # highlight_style: dracula
@@ -17,6 +17,7 @@ slides:
   ]
 ---
 
+<!-- {{<cuscss>}} -->
 {{<dracula_css>}}
 {{<mathjax_support>}}
 {{<canvas_head>}}
