@@ -12,7 +12,7 @@
 <path d="M246.109 605.992L189.912 484.121L310.718 406.472L283.141 337.462L347.927 306.806L420.465 412.132L333.226 564.192L246.109 605.992Z"/>
 </clipPath>
 <g clip-path="url(#ClipPath)">
-<path d="M301.499 314.374C401.141 355.256 400.611 415.254 300.262 454.369" fill="none" opacity="1" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512"/>
+<path d="M301.499 314.374C401.141 355.256 400.611 415.254 300.262 454.369" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512"/>
 </g>
 </g>
 <g opacity="1">
@@ -20,8 +20,8 @@
 <path d="M244.607 328.517L176.682 186.191L297.488 108.542L285.936 51.6392L352.026 30.1484L407.235 114.202L325.848 285.354L244.607 328.517Z"/>
 </clipPath>
 <g clip-path="url(#ClipPath_2)">
-<path d="M301.499 314.374C201.856 273.492 202.386 213.495 302.735 174.38" fill="none" opacity="1" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512"/>
-<path d="M303.972 34.3852C403.615 75.2671 403.085 135.265 302.735 174.38" fill="none" opacity="1" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512"/>
+<path d="M301.499 314.374C201.856 273.492 202.386 213.495 302.735 174.38" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512"/>
+<path d="M303.972 34.3852C403.615 75.2671 403.085 135.265 302.735 174.38" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512"/>
 </g>
 </g>
 </g>
@@ -58,7 +58,7 @@
 <path d="M216.631 62.7226L333.393 3.42052L43.6393-152.809L-71.0545 505.609L314.423 464.397L290.568 434.334L216.631 62.7226Z"/>
 </clipPath>
 <g clip-path="url(#ClipPath_6)">
-<path d="M288.967 25.7781C-87.6052-65.7709-85.2703 587.072 301.625 453.676" fill="none" opacity="1" stroke="#ff5555" stroke-linecap="square" stroke-linejoin="round" stroke-width="7.37512"/>
+<path d="M288.967 25.7781C-87.6052-65.7709-85.2703 587.072 301.625 453.676" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="square" stroke-linejoin="round" stroke-width="7.37512"/>
 </g>
 </g>
 </g>

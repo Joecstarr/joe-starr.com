@@ -6,11 +6,6 @@
 <clipPath id="ArtboardFrame">
 <rect height="1000" width="1000" x="0" y="0"/>
 </clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer-3" vectornator:layerName="Layer 3">
-<path d="M-154.686-198.035L1194.1-198.035L1194.1 1225.83L-154.686 1225.83L-154.686-198.035Z" fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none"/>
-<path d="M380 510C380 460.294 420.294 420 470 420C519.706 420 560 460.294 560 510C560 559.706 519.706 600 470 600C420.294 600 380 559.706 380 510Z" fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none"/>
-<path d="M488.128 307.641C488.128 306.134 488.331 304.913 488.583 304.913C488.834 304.913 489.037 306.134 489.037 307.641C489.037 309.148 488.834 310.369 488.583 310.369C488.331 310.369 488.128 309.148 488.128 307.641Z" fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none"/>
-</g>
 <g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
 <g opacity="1">
 <path d="M500 949.543C500 864.05 500-2.13163e-14 500-2.13163e-14" fill="none" stroke="#8be9fd" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="39.0728"/>
@@ -24,7 +19,7 @@
 </g>
 <g clip-path="url(#ArtboardFrame)" id="Layer-2" vectornator:layerName="Layer 2">
 <g opacity="1">
-<path d="M949.543 500C864.05 500-2.13163e-14 500-2.13163e-14 500" fill="none" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="39.0728"/>
+<path d="M949.543 500C864.05 500-2.13163e-14 500-2.13163e-14 500" fill="none" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="60"/>
 <g fill="#ffb86c" stroke="none">
 <path d="M838.183 632.339L981.451 515.12L999.931 500L981.451 484.88L838.183 367.661C829.833 360.829 817.524 362.06 810.692 370.41C803.86 378.761 805.09 391.069 813.441 397.902L956.708 515.12L956.708 484.88L813.441 602.098C805.09 608.931 803.86 621.239 810.692 629.59C817.524 637.94 829.833 639.171 838.183 632.339Z" fill="#ffb86c"/>
 </g>
