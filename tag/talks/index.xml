@@ -17,7 +17,8 @@
       <link>https://joe-starr.com/slides/alexander_polynomail/</link>
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/alexander_polynomail/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;!-- &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt; --&gt;
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 &lt;script&gt;
   if (typeof MathJax === &#39;undefined&#39;) {
