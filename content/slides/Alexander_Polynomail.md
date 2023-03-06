@@ -9,7 +9,7 @@ tags: [
 draft: false
 
 slides:
-  reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes"]
+    reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes","RevealZoom"]
 
 ---
 
@@ -146,7 +146,31 @@ min-width:50% !important;
 
 ---
 
-@@@ **Add description of the slides.**
+{{<centerimg "/presentations/Alex_Poly/slide/slide_1.svg" 500>}}
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/slide/slide_2.svg" 500>}}
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/slide/slide_3.svg" 500>}}
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/slide/slide_4.svg" 500>}}
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/slide/slide_5.svg" 500>}}
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/slide/slide_6.svg" 500>}}
+
+---
+
+{{<centerimg "/presentations/Alex_Poly/bands/band.svg" 500>}}
 
 ---
 ## Genus of a Seifert surface
