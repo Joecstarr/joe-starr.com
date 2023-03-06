@@ -9,7 +9,7 @@ tags: [
 draft: false
 
 slides:
-    reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes","RevealZoom"]
+    reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes"]
 
 ---
 
@@ -20,7 +20,11 @@ slides:
 
 <!-- # Draft
 
+
+
+
 --- -->
+
 # Alexander Polynomial
 
 ---
@@ -146,40 +150,37 @@ min-width:50% !important;
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_1.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/slide/slide_1.svg" 700>}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_2.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/slide/slide_2.svg" 700>}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_3.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/slide/slide_3.svg" 700>}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_4.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/slide/slide_4.svg" 700>}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_5.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/slide/slide_5.svg" 700>}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_6.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/slide/slide_6.svg" 700>}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/bands/band.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/bands/band.svg" 700>}}
 
 ---
 ## Genus of a Seifert surface
 
-As an abstract surface a Seifert surface for a link is a disc with a number of
-"hollow handles" added. That number is its genus.
-
-@@@ **what does this mean for Seifert View**
-
+We have then that as an abstract surface, a Seifert surface for a link is a disc with a number of
+"handles" added. That number is its genus.
 
 ---
 
@@ -198,7 +199,15 @@ align-items: left;
 font-size: x-large;
 min-width:50% !important;
 ">
-$$2g=2-s-n+c$$
+<span style="
+font-size: 150% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$2g=2-s-n+c$
+</span>
 <ol>
 <li>$g$: Genus</li>
 <li>$s$: Number of Seifert circles</li>
@@ -251,8 +260,6 @@ margin-right: auto;">
 $\text{Lk}\LP \mathscr{L}\RP=\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg}$
 </span>
 
-@@@ **Check this**
-
 ---
 
 
@@ -267,7 +274,6 @@ We can put oriented simple closed curves through each of the bands.
 {{<centerimg "/presentations/Alex_Poly/bands/Band_SCC.svg" 500>}}
 
 
-@@@ **put orientations on these**
 
 ---
 
@@ -298,7 +304,6 @@ $$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$
 
 {{<centerimg "/presentations/Alex_Poly/bands/ii_loops.svg" 500>}}
 
-@@@ **fix this to be behind**
 
 ---
 
@@ -316,25 +321,177 @@ $$\begin{bmatrix}
 
 ## Example
 
-@@@ **6_2 -> matrix**
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
+</div>
+<div class="slidecolumn">
+$$\to$$
+</div>
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+
+<!-- A_{rc} -->
+<!--
+
+11 & 12 &  13 & 14
+21 & 22 &  23 & 24
+31 & 32 &  33 & 34
+41 & 42 &  43 & 44
+-->
+
+$$\begin{bmatrix}
+-1 &  1 & 0 & 0\\\\
+0 &  1 & 0 & 0\\\\
+0 &  0 & 1 & 1\\\\
+0 & -1 & 0 & 1\\\\
+\end{bmatrix}
+$$
+</div>
+</div>
+<!-- $$1-3t+3t^2-3t^3+t^4$$
+$$-t^4+3 t^3-3 t^2+3 t-1$$ -->
 
 ---
 
 ## Alexander Polynomial
 
 For an oriented link $\mathscr{L}$ and it's associated Seifert matrix $S$ we define the _Alexander polynomial_ of $\mathscr{L}$ as
-$$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\RP$$
+<span style="
+font-size: 150% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\RP$
+</span>
+
+---
+
+<span style="
+font-size: 50% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\operatorname{det}\LP t^{\frac{1}{2}}\begin{bmatrix}
+-1 &  1 & 0 & 0\\\\
+0 &  1 & 0 & 0\\\\
+0 &  0 & 1 & 1\\\\
+0 & -1 & 0 & 1\\\\
+\end{bmatrix}-t^{\frac{-1}{2}}\begin{bmatrix}
+-1 &  1 & 0 & 0\\\\
+0 &  1 & 0 & 0\\\\
+0 &  0 & 1 & 1\\\\
+0 & -1 & 0 & 1\\\\
+\end{bmatrix}^T\RP=-t^4+3 t^3-3 t^2+3 t-1
+$
+</span>
+
+---
+
+<div>
+<div style="
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+grid-auto-rows: minmax(100px, auto);">
+
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+ grid-column: 1 / 2;
+  grid-row: 1;
+">
+<img style="
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:300px !important;
+"
+src="/presentations/Alex_Poly/alg/Alg_1.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+  grid-row: 1;
+">
+<img style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:300px !important;"
+src="/presentations/Alex_Poly/bands/Band.svg"/>
+</div>
+<div class="slidecolumn" style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+flex: 25%;
+padding: 3%;
+grid-column: 1 / 2;
+  grid-row: 2;
+">
+$$\begin{bmatrix}
+-1 &  1 & 0 & 0\\\\
+0 &  1 & 0 & 0\\\\
+0 &  0 & 1 & 1\\\\
+0 & -1 & 0 & 1\\\\
+\end{bmatrix}
+$$
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+flex: 25%;
+padding: 3%;
+grid-column: 2 / 2;
+grid-row: 2;
+">
+$$-t^4+3 t^3-3 t^2+3 t-1$$
+</div>
+</div>
+<div>
 
 ---
 
 ## Invariant
 
-@@@ **Up to what**
+$\Delta_\mathscr{L}\LP t\RP$ is unique up to **stabilization**, a method for adding bands to the surface. Results in $\Delta_\mathscr{L}\LP t\RP$ being unique up to a $\pm t^k$
 
 
 ---
 
 ## Limitations: Example
+
 
 @@@ **+[3] -[3]**
 
@@ -342,17 +499,11 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 
 ## Bound on genus
 
-@@@ **find source for genus bound**
 
 \\(\operatorname{deg}\LP\Delta_\mathscr{L}\LP t\RP\RP\leq 2\large g_{\small\mathscr{L}}\\)
 
 ---
 
-## Relationship to Kovanhof homology
-
-@@@ **???**
-
----
 
 ## Sources
 <div style="
