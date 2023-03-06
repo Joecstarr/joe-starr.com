@@ -1,4 +1,5 @@
 ---
+
 title: "Alexander Polynomial"
 date: "2023-02-20"
 summary: "Define the Alexander Polynomial"
@@ -6,15 +7,10 @@ tags: [
     "Talks",
 ]
 draft: false
+
 slides:
-  # Choose a theme from https://github.com/hakimel/reveal.js#theming
-  # theme: dracula
-  # Choose a code highlighting style (if highlighting enabled in `params.toml`)
-  #   Light style: github. Dark style: dracula (default).
-  # highlight_style: dracula
-  reveal_options: [
-    "RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"
-  ]
+  reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes"]
+
 ---
 
 <!-- {{<cuscss>}} -->
@@ -75,7 +71,7 @@ given link projection.
 
 ---
 
-### Close curves following orientation
+### Close curves
 
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_2.svg" 500>}}
 
@@ -123,14 +119,42 @@ min-width:50% !important;
 
 ### SeifertView of $6_{2}$
 
+
 ---
 
+## Bands
+
+<div class="sliderow">
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
+</div>
+<div class="slidecolumn">
+$$\to$$
+</div>
+<div class="slidecolumn" style="
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+">
+{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
+</div>
+</div>
+
+---
+
+@@@ **Add description of the slides.**
+
+---
 ## Genus of a Seifert surface
 
 As an abstract surface a Seifert surface for a link is a disc with a number of
 "hollow handles" added. That number is its genus.
 
-@@@ what does this mean for 
+@@@ **what does this mean for Seifert View**
 
 
 ---
@@ -162,34 +186,6 @@ $$2g=2-s-n+c$$
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
 </div>
 </div>
-
----
-
-## Bands
-
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
-</div>
-<div class="slidecolumn">
-$$\to$$
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
-</div>
-</div>
-
----
-
-@@@ Add description of the slides.
 
 ---
 
@@ -231,7 +227,7 @@ margin-right: auto;">
 $\text{Lk}\LP \mathscr{L}\RP=\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg}$
 </span>
 
-@@@ Check this
+@@@ **Check this**
 
 ---
 
@@ -247,7 +243,7 @@ We can put oriented simple closed curves through each of the bands.
 {{<centerimg "/presentations/Alex_Poly/bands/Band_SCC.svg" 500>}}
 
 
-@@@ put orientations on these
+@@@ **put orientations on these**
 
 ---
 
@@ -278,7 +274,7 @@ $$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$
 
 {{<centerimg "/presentations/Alex_Poly/bands/ii_loops.svg" 500>}}
 
-@@@ fix this to be behind
+@@@ **fix this to be behind**
 
 ---
 
@@ -296,7 +292,7 @@ $$\begin{bmatrix}
 
 ## Example
 
-@@@ 6_2 -> matrix
+@@@ **6_2 -> matrix**
 
 ---
 
@@ -307,28 +303,30 @@ $$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\
 
 ---
 
-## Invariant 
- 
-@@@ Up to what 
+## Invariant
+
+@@@ **Up to what**
 
 
 ---
 
-## Example
- 
-@@@ +[3] -[3]
+## Limitations: Example
+
+@@@ **+[3] -[3]**
 
 ---
 
 ## Bound on genus
 
-@@@ find source for genus bound 
+@@@ **find source for genus bound**
+
+\\(\operatorname{deg}\LP\Delta_\mathscr{L}\LP t\RP\RP\leq 2\large g_{\small\mathscr{L}}\\)
 
 ---
 
 ## Relationship to Kovanhof homology
 
-@@@ ???
+@@@ **???**
 
 ---
 
