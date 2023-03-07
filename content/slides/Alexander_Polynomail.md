@@ -9,7 +9,7 @@ tags: [
 draft: false
 
 slides:
-    reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"]
+  reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"]
 
 ---
 
@@ -605,6 +605,7 @@ $$1-t+t^2$$
 
 </div>
 </div>
+
 ---
 
 ## Bound on genus
