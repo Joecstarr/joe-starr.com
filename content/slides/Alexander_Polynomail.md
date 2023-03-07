@@ -10,7 +10,6 @@ draft: false
 
 slides:
   highlight_style: dracula
-  reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"]
 
 ---
 
@@ -175,13 +174,15 @@ min-width:50% !important;
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 700>}}
+{{<centerimg "/presentations/Alex_Poly/slide/slide_7.svg" 700>}}
 
 ---
 ## Genus of a Seifert surface
 
 We have then that as an abstract surface, a Seifert surface for a link is a disc with a number of
-"handles" ($D^1\times D^1$) added. That number is its genus.
+"handles"
+
+($D^1\times D^1$) added. That number is its genus.
 
 ---
 
@@ -286,7 +287,15 @@ A Seifert surface is oriented, it has a top side and bottom side.
 ---
 
 We can take an $\LP i,j\RP$ pair and compute
-$$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$$
+<span style="
+font-size: 200% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$a_{i,j}=\text{Lk}\LP f_i,\ f_i^+\RP$
+</span>
 
 ---
 
@@ -444,7 +453,7 @@ height:auto !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-max-width:300px !important;"
+max-width:400px !important;"
 src="/presentations/Alex_Poly/bands/Band.svg"/>
 </div>
 <div class="slidecolumn" style="
@@ -457,14 +466,15 @@ flex: 25%;
 padding: 3%;
 grid-column: 1 / 2;
   grid-row: 2;
+font-size: 70% !important;
 ">
-$$\begin{bmatrix}
--1 &  1 & 0 & 0\\\\
-0 &  1 & 0 & 0\\\\
-0 &  0 & 1 & 1\\\\
-0 & -1 & 0 & 1\\\\
+$\begin{bmatrix}
+-1 &  1 & 0 & 0\\
+0 &  1 & 0 & 0\\
+0 &  0 & 1 & 1\\
+0 & -1 & 0 & 1\\
 \end{bmatrix}
-$$
+$
 </div>
 <div style="
 margin: 0;
@@ -612,7 +622,16 @@ $$1-t+t^2$$
 ## Bound on genus
 
 
-\\(\operatorname{deg}\LP\Delta_\mathscr{L}\LP t\RP\RP\leq 2\large g_{\small\mathscr{L}}\\)
+<span style="
+font-size: 200% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\operatorname{deg}\LP\Delta_\mathscr{L}\LP t\RP\RP\leq 2\large g$
+</span>
+
 
 ---
 
