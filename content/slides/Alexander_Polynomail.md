@@ -9,6 +9,7 @@ tags: [
 draft: false
 
 slides:
+  highlight_style: dracula
   reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"]
 
 ---
