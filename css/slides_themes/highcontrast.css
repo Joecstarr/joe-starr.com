@@ -1,0 +1,27 @@
+:root {
+  --r-background-color: #000000;
+  --r-main-color: #FFFFFF;
+  --r-link-color: #e56db1;
+  --r-link-color-dark: #e56db1;
+  --r-link-color-hover: #1d4289;
+  --r-selection-background-color: #d0d3d4;
+  --r-selection-color: #FFFFFF;
+  --r-selection-color: #d0d3d4;
+  --r-bold-color: #dc582a;
+  --r-italic-color: #ffc845;
+  --r-inline-code-color: #007a78;
+  --r-list-bullet-color: #1d4289;
+
+
+  --r-Background  :#000000;
+  --r-Selection   :#d0d3d4;
+  --r-Foreground  :#FFFFFF;
+  --r-Highlight   :#7da1c4;
+  --r-Blue        :#1d4289;
+  --r-Green       :#007a78;
+  --r-Orange      :#dc582a;
+  --r-Pink        :#e56db1;
+  --r-Purple      :#5d3754;
+  --r-Red         :#d3273e;
+  --r-Yellow      :#ffc845;
+}
