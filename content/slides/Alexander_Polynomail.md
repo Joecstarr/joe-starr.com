@@ -9,7 +9,7 @@ tags: [
 draft: false
 
 slides:
-    reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes"]
+    reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"]
 
 ---
 
@@ -180,7 +180,7 @@ min-width:50% !important;
 ## Genus of a Seifert surface
 
 We have then that as an abstract surface, a Seifert surface for a link is a disc with a number of
-"handles" added. That number is its genus.
+"handles" ($D^1\times D^1$) added. That number is its genus.
 
 ---
 
@@ -485,16 +485,126 @@ $$-t^4+3 t^3-3 t^2+3 t-1$$
 
 ## Invariant
 
-$\Delta_\mathscr{L}\LP t\RP$ is unique up to **stabilization**, a method for adding bands to the surface. Results in $\Delta_\mathscr{L}\LP t\RP$ being unique up to a $\pm t^k$
-
+$\Delta_\mathscr{L}\LP t\RP$ is unique up to **stabilization**, a method for adding bands to the surface. Results in $\Delta_\mathscr{L}\LP t\RP$ being unique up to a $\pm t^k$.
 
 ---
 
 ## Limitations: Example
 
 
-@@@ **+[3] -[3]**
+<div>
+<div style="
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+grid-auto-rows: minmax(100px, auto);">
 
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 1;
+">
+<img style="
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:200px !important;
+"
+src="/presentations/Alex_Poly/trefoil/right.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 1;
+">
+<img style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:200px !important;"
+src="/presentations/Alex_Poly/trefoil/left.svg"/>
+</div>
+
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 2;
+">
+<img style="
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:300px !important;
+"
+src="/presentations/Alex_Poly/trefoil/right_surf.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 2;
+">
+<img style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:300px !important;"
+src="/presentations/Alex_Poly/trefoil/left_surf.svg"/>
+</div>
+
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 3;
+">
+$$1-t+t^2$$
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 3;
+">
+$$1-t+t^2$$
+
+</div>
+</div>
 ---
 
 ## Bound on genus
