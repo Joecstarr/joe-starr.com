@@ -3,7 +3,7 @@
   var slides = { highlight_style: "dracula", reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"] };
 
   // <stdin>
-  var enabledPlugins = [RevealMarkdown, RevealSearch, RevealNotes, RevealMath.KaTeX, RevealZoom];
+  var enabledPlugins = [RevealMarkdown, RevealSearch, RevealNotes, RevealZoom];
   var isObject = function(o) {
     return o === Object(o) && !isArray(o) && typeof o !== "function";
   };
@@ -42,6 +42,9 @@
   }
   pluginOptions["plugins"] = enabledPlugins;
   Reveal.initialize(pluginOptions);
+  Reveal.initialize({
+    transition: "none"
+  });
   if (typeof slides.diagram === "undefined") {
     slides.diagram = false;
   }
