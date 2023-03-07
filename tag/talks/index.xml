@@ -715,7 +715,7 @@ grid-row: 3;
 $$1-t+t^2$$
 &lt;/div&gt;
 &lt;/div&gt;
----
+&lt;hr&gt;
 &lt;h2 id=&#34;bound-on-genus&#34;&gt;Bound on genus&lt;/h2&gt;
 &lt;p&gt;\(\operatorname{deg}\LP\Delta_\mathscr{L}\LP t\RP\RP\leq 2\large g_{\small\mathscr{L}}\)&lt;/p&gt;
 &lt;hr&gt;
