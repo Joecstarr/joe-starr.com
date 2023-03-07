@@ -175,7 +175,7 @@ min-width:50% !important;
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/bands/band.svg" 700>}}
+{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 700>}}
 
 ---
 ## Genus of a Seifert surface
