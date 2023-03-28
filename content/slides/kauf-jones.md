@@ -19,11 +19,12 @@ slides:
 
 {{<dracula_css>}}
 {{<mathjax_support>}}
-{{<canvas_head>}}
+
 
 
 # Jones Polynomial
 
+<!--
 ---
 ## Definition Of Jones Polynomial
 
@@ -32,7 +33,10 @@ is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
 $$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
 where $D$ is any oriented diagram for $L$.
 
+
 ---
+
+# Kauffman Bracket
 
 Definition is in terms of some odd looking stuff
 
@@ -43,32 +47,56 @@ and
 
 The writhe of $D$
 $$w(D)$$
+-->
 
 ---
 
 ## Kauffman Bracket
 
-The Kauffman Bracket is a function from unoriented link diagrams in the oriented plane to Laurent polynomials with integer coefficients in an indeterminate $A$. It maps a diagram $D$ to $\LA D\RA\in \Z\LB A^{-1},\ A\RB$
-and is characterized by
+The Kauffman Bracket is a function from unoriented link diagrams to Laurent polynomials with integer coefficients in an indeterminate $A$. 
+
+---
+
+## Link Diagrams
+
+@@@ Example
+
+---
+
+The Kauffman Bracket maps a diagram $D$ to $\LA D\RA\in \Z\LB A^{-1},\ A\RB$
+and is characterized by three relations
 
 ---
 
 1. $\LA \img{/presentations/kauf_bkt/unknot.png} \RA=1$
+
+---
+
+@@@ Example
+
+---
+
 2. $\LA D \sqcup \img{/presentations/kauf_bkt/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA\$
+
+---
+
+@@@ Example
+
+---
+
 3. $\LA \img{/presentations/kauf_bkt/bracket_plus.png}\RA=A\LA \img{/presentations/kauf_bkt/bracket_vert.png} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/bracket_hor.png}\RA$
 
+---
 
+@@@ Example
 
+---
 
+Putting these together we have: 
 
+---
 
-
-
-<!-- <img style="max-width:1000px !important; height:auto !important" src="/bracket_1.png"/>
-
-<br/>
-
-<img style="max-width:1000px !important; height:auto !important" src="/bracket_2.png"/> -->
+@@@ Example
 
 ---
 
@@ -91,8 +119,6 @@ Hence $\LA D\RA$ is invariant under regular isotopy of $D$.
 
 ---
 
-
-
 ### Type 1
 
 If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
@@ -100,10 +126,6 @@ changes in the following way:
 
 1. $\LA\img{/presentations/kauf_bkt/bracket_type1_1.png}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA$
 2. $\LA\img{/presentations/kauf_bkt/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA$
-
-
-
-
 
 ---
 
@@ -155,15 +177,17 @@ where $D$ is any oriented diagram for $L$.
 
 ---
 
-## Jones Polynomial is a function
+@@@ Example 
 
-The Jones polynomial invariant is a function
-$$V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS$$
-such that
+---
 
-1. $V\LP\text{unknot}\RP=1$
-2. Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  <br/> ![+1](/presentations/kauf_bkt/plus.png )   ![-1](/presentations/kauf_bkt/minus.png) ![-1](/presentations/kauf_bkt/skein_vert.png) <br/> Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$
+## Detected mirrors
 
+@@@ Left and right trefoil
+
+---
+
+@@@ Sources
 
 
 
