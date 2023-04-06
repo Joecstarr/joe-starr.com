@@ -28,10 +28,10 @@ slides:
 ---
 ## Definition Of Jones Polynomial
 
-The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+The Jones polynomial $V\LP L\RP$ of an oriented link $\mathscr{L}$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
-where $D$ is any oriented diagram for $L$.
+$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
+where $D$ is any oriented diagram for $\mathscr{L}$.
 
 
 ---
@@ -41,7 +41,7 @@ where $D$ is any oriented diagram for $L$.
 Definition is in terms of some odd looking stuff
 
 The Kauffman bracket of $D$
-$$\LA D\RA$$
+$$\LA D \RA$$
 
 and
 
@@ -53,7 +53,7 @@ $$w(D)$$
 
 ## Kauffman Bracket
 
-The Kauffman Bracket is a function from **unoriented** link diagrams to Laurent polynomials with integer coefficients in an indeterminate $A$.
+The Kauffman Bracket is a function from **unoriented link diagrams** to **Laurent polynomials with integer coefficients** in an indeterminate $A$.
 
 ---
 
@@ -79,43 +79,48 @@ min-width:50% !important;">
 
 ---
 
-The Kauffman Bracket maps a diagram $D$ to $$\LA D\RA\in \Z\LB A^{-1},\ A\RB$$
+The Kauffman Bracket maps a diagram $D$ to $$\large{\LA D \RA\in \Z\LB A^{-1},\ A\RB}$$
 and is characterized by three relations
 
 ---
 
 ## One
+
 <div style="
 font-size: 200% !important;
 ">
- $$\Huge{\LA \img{/presentations/kauf_bkt/unknot.png} \RA=1}$$
+$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
 </div>
 
 ---
 
-@@@ Example
+@@@ Clockwise
+
+---
+
+@@@ anti-clockwise
 
 ---
 
 
 ## Two
+
 <div style="
 font-size: 200% !important;
 ">
-$$\Huge{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA}$$
+ $$\Huge{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}$$
 </div>
 
 ---
 
-@@@ Example
-
----
-
 ## Three
+
 <div style="
 font-size: 200% !important;
 ">
-$$\Huge{\LA \img{/presentations/kauf_bkt/bracket_plus.png}\RA=A\LA \img{/presentations/kauf_bkt/bracket_vert.png} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/bracket_hor.png}\RA}$$
+$$\Huge{
+\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP
+}$$
 </div>
 
 ---
@@ -128,23 +133,18 @@ $$\Huge{\LA \img{/presentations/kauf_bkt/bracket_plus.png}\RA=A\LA \img{/present
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_1.svg" 500>}}
+{{<centerimg "/presentations/Alex_Poly/trefoil/right.svg" 500>}}
 
 ---
 
-{{<centerimg "/presentations/kauf_bkt/bracket_6_2.svg" 900>}}
+$$\begin{matrix}
+
+\end{matrix}$$
 
 ---
 
-$$\Huge{}$$
+## Is the Kauffman Bracket a knot invariant?
 
----
-
-Natural to ask,
-
-"Is the Kauffman Bracket a knot invariant?"
-
-How can we tell?
 
 ---
 
@@ -154,18 +154,23 @@ How can we tell?
 
 ### Type 2 and 3
 
-First we can check when a diagram $D$ is changed by Type II or Type III Reidemeister move
+First we can check a Type II or Type III Reidemeister move in a diagram $D$.
 
 ---
 
 ### Type 2
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/bracket_type2.png}\RA=\LA\img{/presentations/kauf_bkt/bracket_hor.png}\RA}$$
+$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+
+---
+
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
 
 ---
 ### Type 3
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/bracket_type3.png}\RA=\LA\img{/presentations/kauf_bkt/bracket_type3_out.png}\RA}$$
+$$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$$
 
 ---
 
@@ -173,9 +178,9 @@ $$\Huge{\LA\img{/presentations/kauf_bkt/bracket_type3.png}\RA=\LA\img{/presentat
 
 ---
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/bracket_type1_1.png}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA}$$
+$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA}$$
+$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
 
 ---
 
@@ -199,14 +204,14 @@ align-items: left;
 font-size: x-large;
 min-width:50% !important;
 ">
-1. Positive $+1$ {{<centerimg "/presentations/Alex_Poly/crossing/crossing_+.svg" 200>}}
+1. Positive $+1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_+.svg" 200>}}
 
 </div>
 <div class="slidecolumn" style="
 align-items: left;
 font-size: x-large;
 min-width:50% !important;">
-2. Negative $-1$ {{<centerimg "/presentations/Alex_Poly/crossing/crossing_-.svg" 200>}}
+2. Negative $-1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg" 200>}}
 
 </div>
 </div>
@@ -216,9 +221,9 @@ min-width:50% !important;">
 ### Writhe of a knot
 
 The write $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
-signs of the crossings of D.
+signs of the crossings of $ D $.
 
-$$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/Alex_Poly/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/Alex_Poly/crossing/crossing_-.svg}\RP}$$
+$$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
 
 
 
@@ -226,9 +231,9 @@ $$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/Alex_Poly/crossing/crossing_+.s
 
 ### Writhe + Bracket
 
-Let $D$ be a diagram of an oriented link $L$. Then the expression
-$$\LP -A\RP^{-3w\LP D\RP}\LA D\RA$$
-is an invariant of the oriented link $L$.
+Let $D$ be a diagram of an oriented link $\mathscr{L}$. Then the expression
+$$\Huge{\LP -A\RP^{-3w\LP D\RP}\LA D \RA}$$
+is an invariant of the oriented link $\mathscr{L}$.
 
 
 
@@ -236,10 +241,10 @@ is an invariant of the oriented link $L$.
 
 ## Definition of the Jones Polynomial
 
-The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+The Jones polynomial $V\LP \mathscr{L}\RP$ of an oriented link $\mathscr{L}$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
-where $D$ is any oriented diagram for $L$.
+$$ V\LP \mathscr{L}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
+where $D$ is any oriented diagram for $\mathscr{L}$.
 
 ---
 

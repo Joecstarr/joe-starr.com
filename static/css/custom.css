@@ -13,6 +13,10 @@ text-align: left !important;
   justify-content: center
 }
 
+.mjx-n > img{
+    vertical-align: middle !important;
+}
+
 .slidecolumn {
   flex: 50%;
   padding: 3%;
