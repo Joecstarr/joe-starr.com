@@ -94,11 +94,11 @@ $$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{
 
 ---
 
-@@@ Clockwise
+{{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" 500>}}
 
 ---
 
-@@@ anti-clockwise
+{{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" 500>}}
 
 ---
 
@@ -119,13 +119,9 @@ font-size: 200% !important;
 font-size: 200% !important;
 ">
 $$\Huge{
-\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP
+\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA
 }$$
 </div>
-
----
-
-@@@ Example
 
 ---
 
@@ -137,9 +133,57 @@ $$\Huge{
 
 ---
 
-$$\begin{matrix}
 
-\end{matrix}$$
+<div class="bigmath ">
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
+&= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
+&= A^2\bkt{/presentations/kauf_bkt/trefoil/trefoil_aa.svg}
++\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
+&+\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
++A^{-2}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\
+\end{aligned}
+$$
+</div>
+
+---
+
+<div class="bigmath ">
+$$
+\begin{aligned}
+&=
+A^3\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}
++A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aab.svg}\\
+&+ A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aba.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_abb.svg}\\
+&+A\bkt{/presentations/kauf_bkt/trefoil/trefoil_baa.svg}
+     +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bab.svg}\\
+&+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bba.svg}
+     +A^{-3}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bbb.svg}\\
+\end{aligned}
+$$
+</div>
+
+---
+
+<div class="mediummath ">
+$$
+\begin{aligned}
+&=   A^3\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}
+     -A^3
+     -A^3-A^{-1}
+    -A^3
+     -A^{-5}\\\\
+&=    A^7+A^{-1}+2A^3
+     -3A^3-A^{-1}
+     -A^{-5}\\\\
+&=    A^7-A^3-A^{-5}
+\end{aligned}
+$$
+</div>
+
 
 ---
 
