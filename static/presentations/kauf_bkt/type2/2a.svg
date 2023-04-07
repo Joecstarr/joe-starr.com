@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+
+<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<clipPath id="ClipPath">
+<path d="M-88.582 543.19L-47.0871 246.119L-14.7121-54.2602L133.943 0L100.086 176.508L254.759 169.476L256.239 285.22L254.095 371.742C234.095 386.742 303.925 392.22 303.925 392.22L540 560"/>
+</clipPath>
+<g clip-path="url(#ClipPath)">
+<path d="M0 0C21.2312 401.948 476.927 398.467 500 0" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+</g>
+</g>
+<g clip-path="url(#ArtboardFrame)" id="Layer-3" vectornator:layerName="Layer 3">
+<path d="M497.212 3.32983C349.603 35.6194 318.631 449.453 497.871 500.853" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+<path d="M250.613 199.853C340.639 199.607 340.289 301.121 252.377 299.784" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="30"/>
+</g>
+<g clip-path="url(#ArtboardFrame)" id="Layer-2" vectornator:layerName="Layer 2">
+<clipPath id="ClipPath_2">
+<path d="M-88.582 543.19L53.0765 231.622L109.833 295.653L152.016 250.925L76.6122 177.576L254.759 169.476L256.239 285.22L254.095 371.742C234.095 386.742 303.925 392.22 303.925 392.22L540 560"/>
+</clipPath>
+<g clip-path="url(#ClipPath_2)">
+<path d="M0 500C21.2312 98.0517 476.927 101.533 500 500" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+</g>
+</g>
+</svg>

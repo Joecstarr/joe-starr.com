@@ -1,7 +1,12 @@
 mjx-container[jax="CHTML"][display="true"] mjx-math{
 font-size: xx-large;
 }
-
+.bigmath > mjx-container[jax="CHTML"][display="true"] mjx-math{
+    font-size: 170% !important;
+    }
+.mediummath > mjx-container[jax="CHTML"][display="true"] mjx-math{
+    font-size: 120% !important;
+    }
 .present > p,li{
 text-align: left !important;
 }
@@ -11,6 +16,10 @@ text-align: left !important;
   margin-right: auto;
   align-items: center;
   justify-content: center
+}
+
+.mjx-n > img{
+    vertical-align: middle !important;
 }
 
 .slidecolumn {
