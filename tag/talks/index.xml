@@ -69,6 +69,8 @@
   \newcommand{\MM}{\ \middle|\ }
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
   \require{color}$`
   &lt;/p&gt;
 
@@ -638,7 +640,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;
 &#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -660,7 +662,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;&#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -678,7 +680,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:300px !important;
 &#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right_surf.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left_surf.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -700,7 +702,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 max-width:300px !important;&#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left_surf.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right_surf.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -809,6 +811,8 @@ font-size: medium;
   \newcommand{\MM}{\ \middle|\ }
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
   \require{color}$`
   &lt;/p&gt;
 &lt;/p&gt;
@@ -940,6 +944,8 @@ font-size: medium;
   \newcommand{\MM}{\ \middle|\ }
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
   \require{color}$`
   &lt;/p&gt;
 &lt;/p&gt;

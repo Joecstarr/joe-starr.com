@@ -488,6 +488,8 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
   \newcommand{\MM}{\ \middle|\ }
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
   \require{color}$`
   &lt;/p&gt;
 
@@ -1057,7 +1059,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;
 &#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -1079,7 +1081,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;&#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -1097,7 +1099,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:300px !important;
 &#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right_surf.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left_surf.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -1119,7 +1121,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 max-width:300px !important;&#34;
-src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left_surf.svg&#34;/&gt;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right_surf.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div style=&#34;
 margin: 0;
@@ -1228,6 +1230,8 @@ font-size: medium;
   \newcommand{\MM}{\ \middle|\ }
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
   \require{color}$`
   &lt;/p&gt;
 &lt;/p&gt;
@@ -1359,6 +1363,8 @@ font-size: medium;
   \newcommand{\MM}{\ \middle|\ }
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
   \require{color}$`
   &lt;/p&gt;
 &lt;/p&gt;
@@ -1845,197 +1851,388 @@ is a combinitorial sphere.&lt;/p&gt;
   \newcommand{\MM}{\ \middle|\ }
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
   \require{color}$`
   &lt;/p&gt;
-
-
-
 &lt;/p&gt;
 &lt;h1 id=&#34;jones-polynomial&#34;&gt;Jones Polynomial&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;definition-of-jones-polynomial&#34;&gt;Definition Of Jones Polynomial&lt;/h2&gt;
-&lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+&lt;!--
+---
+## Definition Of Jones Polynomial
+
+The Jones polynomial $V\LP L\RP$ of an oriented link $\mathscr{L}$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
-where $D$ is any oriented diagram for $L$.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Definition is in terms of some odd looking stuff&lt;/p&gt;
-&lt;p&gt;The Kauffman bracket of $D$
-$$\LA D\RA$$&lt;/p&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;p&gt;The writhe of $D$
-$$w(D)$$&lt;/p&gt;
+$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
+where $D$ is any oriented diagram for $\mathscr{L}$.
+
+
+---
+
+# Kauffman Bracket
+
+Definition is in terms of some odd looking stuff
+
+The Kauffman bracket of $D$
+$$\LA D \RA$$
+
+and
+
+The writhe of $D$
+$$w(D)$$
+--&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;kauffman-bracket&#34;&gt;Kauffman Bracket&lt;/h2&gt;
-&lt;p&gt;The Kauffman Bracket is a function from unoriented link diagrams in the oriented plane to Laurent polynomials with integer coefficients in an indeterminate $A$. It maps a diagram $D$ to $\LA D\RA\in \Z\LB A^{-1},\ A\RB$
-and is characterized by&lt;/p&gt;
+&lt;p&gt;The Kauffman Bracket is a function from &lt;strong&gt;unoriented link diagrams&lt;/strong&gt; to &lt;strong&gt;Laurent polynomials with integer coefficients&lt;/strong&gt; in an indeterminate $A$.&lt;/p&gt;
 &lt;hr&gt;
-&lt;ol&gt;
-&lt;li&gt;$\LA \img{/presentations/kauf_bkt/unknot.png} \RA=1$&lt;/li&gt;
-&lt;li&gt;$\LA D \sqcup \img{/presentations/kauf_bkt/unknot.png} \RA=\LP-A^{-2}-A^2\RP \LA D\RA$&lt;/li&gt;
-&lt;li&gt;$\LA \img{/presentations/kauf_bkt/bracket_plus.png}\RA=A\LA \img{/presentations/kauf_bkt/bracket_vert.png} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/bracket_hor.png}\RA$&lt;/li&gt;
+&lt;h2 id=&#34;link-diagrams&#34;&gt;Link Diagrams&lt;/h2&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+&#34;&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/links/link_1.svg&#34;/&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;&#34;&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_1.svg&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;The Kauffman Bracket maps a diagram $D$ to $$\large{\LA D \RA\in \Z\LB A^{-1},\ A\RB}$$
+and is characterized by three relations&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;one&#34;&gt;One&lt;/h2&gt;
+&lt;p&gt;$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/crossing/crossing_un.svg&#34;/&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;two&#34;&gt;Two&lt;/h2&gt;
+&lt;p&gt;$$\Huge{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;three&#34;&gt;Three&lt;/h2&gt;
+&lt;p&gt;$$\Huge{
+\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA
+}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;putting-these-together-we-have&#34;&gt;Putting these together we have&lt;/h1&gt;
+&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/trefoil/trefoil.svg&#34;/&gt;
+&lt;hr&gt;
+&lt;div class=&#34;bigmath &#34;&gt;
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
+&amp;= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;ol style=&#34;
+align-items: left;&#34;&gt;
+&lt;li&gt;$\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$&lt;/li&gt;
+&lt;li&gt;$\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1$&lt;/li&gt;
+&lt;li&gt;$
+\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;!-- &lt;img style=&#34;max-width:1000px !important; height:auto !important&#34; src=&#34;https://joe-starr.com/bracket_1.png&#34;/&gt;
-
-&lt;br/&gt;
-
-&lt;img style=&#34;max-width:1000px !important; height:auto !important&#34; src=&#34;https://joe-starr.com/bracket_2.png&#34;/&gt; --&gt;
+&lt;div class=&#34;bigmath &#34;&gt;
+$$
+\Huge{A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}}
+$$
+&lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;Natural now to ask, &amp;ldquo;Is the Kauffman Bracket a knot invariant?&amp;rdquo;
-How to tell?&lt;/p&gt;
-&lt;p&gt;Check Reidemeister moves.&lt;/p&gt;
+&lt;div class=&#34;bigmath &#34;&gt;
+$$
+\begin{aligned}
+&amp;A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
+&amp;= A^2\bkt{/presentations/kauf_bkt/trefoil/trefoil_aa.svg}
++\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
+&amp;+\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
++A^{-2}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&#34;bigmath &#34;&gt;
+$$
+\begin{aligned}
+&amp;=
+A^3\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}
++A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aab.svg}\\
+&amp;+ A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aba.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_abb.svg}\\
+&amp;+A\bkt{/presentations/kauf_bkt/trefoil/trefoil_baa.svg}
+     +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bab.svg}\\
+&amp;+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bba.svg}
+     +A^{-3}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bbb.svg}\\
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&#34;mediummath &#34;&gt;
+$$
+\begin{aligned}
+&amp;=   A^3\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}
+     -A^3
+     -A^3-A^{-1}
+    -A^3
+     -A^{-5}\\\\
+&amp;=    A^7+A^{-1}+2A^3
+     -3A^3-A^{-1}
+     -A^{-5}\\\\
+&amp;=    A^7-A^3-A^{-5}
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;is-the-kauffman-bracket-a-knot-invariant&#34;&gt;Is the Kauffman Bracket a knot invariant?&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;check-reidemeister-moves&#34;&gt;Check Reidemeister moves&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;type-2-and-3&#34;&gt;Type 2 and 3&lt;/h3&gt;
-&lt;p&gt;If a diagram $D$ is changed by Type II or Type III Reidemeister move, then
-$\LA D\RA$ does not change. That is,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;$\LA\img{/presentations/kauf_bkt/bracket_type2.png}\RA=\LA\img{/presentations/kauf_bkt/bracket_hor.png}\RA$&lt;/li&gt;
-&lt;li&gt;$\LA\img{/presentations/kauf_bkt/bracket_type3.png}\RA=\LA\img{/presentations/kauf_bkt/bracket_type3_out.png}\RA$&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Hence $\LA D\RA$ is invariant under regular isotopy of $D$.&lt;/p&gt;
+&lt;p&gt;First we can check a Type II or Type III Reidemeister move in a diagram $D$.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;type-1&#34;&gt;Type 1&lt;/h3&gt;
-&lt;p&gt;If a diagram is changed by a Type I Reidemeister move, its bracket polynomial
-changes in the following way:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;$\LA\img{/presentations/kauf_bkt/bracket_type1_1.png}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA$&lt;/li&gt;
-&lt;li&gt;$\LA\img{/presentations/kauf_bkt/bracket_type1_2.png}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/bracket_type1_out.png}\RA$&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;type-2&#34;&gt;Type 2&lt;/h3&gt;
+&lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;mediummath &#34;&gt;
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type2/1.svg}
+&amp;=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
+&amp;=A
+\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/4.svg}\RP\\
+&amp;+\inv{A}\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
+&amp;=A^2\bkt{/presentations/kauf_bkt/type2/3a.svg}+\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
+&amp;+\bkt{/presentations/kauf_bkt/type2/6b.svg}+A^{-2}\bkt{/presentations/kauf_bkt/type2/6a.svg}=\bkt{/presentations/kauf_bkt/type2/6b.svg}\\
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;type-3&#34;&gt;Type 3&lt;/h3&gt;
+&lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-about-type-1&#34;&gt;What about Type 1?&lt;/h2&gt;
+&lt;hr&gt;
+&lt;div class=&#34;mediummath &#34;&gt;
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type1/1.svg}
+&amp;=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
+\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
+&amp;=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;This is a problem&amp;hellip; How to resolve?&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;writhe&#34;&gt;Writhe&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;orientation-of-a-crossing&#34;&gt;Orientation of a crossing&lt;/h3&gt;
-&lt;p&gt;A crossing can be either:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Positive $+1$ &lt;br/&gt; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/presentations/kauf_bkt/plus.png&#34; alt=&#34;&amp;#43;1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
- &lt;br/&gt;&lt;/li&gt;
-&lt;li&gt;Negative $-1$ &lt;br/&gt; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/presentations/kauf_bkt/minus.png&#34; alt=&#34;-1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
- &lt;br/&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;
+&#34;&gt;
+1. Positive $+1$ 
+&lt;img style=&#34;
+max-width:200px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/crossing/crossing_&amp;#43;.svg&#34;/&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;
+align-items: left;
+font-size: x-large;
+min-width:50% !important;&#34;&gt;
+2. Negative $-1$ 
+&lt;img style=&#34;
+max-width:200px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/crossing/crossing_-.svg&#34;/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;writhe-of-a-knot&#34;&gt;Writhe of a knot&lt;/h3&gt;
 &lt;p&gt;The write $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
-signs of the crossings of D.&lt;/p&gt;
+signs of the crossings of $ D $.&lt;/p&gt;
+&lt;p&gt;$$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;writhe--bracket&#34;&gt;Writhe + Bracket&lt;/h3&gt;
-&lt;p&gt;Let $D$ be a diagram of an oriented link $L$. Then the expression
-$$\LP -A\RP^{-3w\LP D\RP}\LA D\RA$$
-is an invariant of the oriented link $L$.&lt;/p&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/trefoil/trefoil.svg&#34;/&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;definition-of-the-jones-polynomial&#34;&gt;Definition of the Jones Polynomial&lt;/h2&gt;
-&lt;p&gt;The Jones polynomial $V\LP L\RP$ of an oriented link $L$
+&lt;p&gt;The Jones polynomial $V\LP \mathscr{L}\RP$ of an oriented link $\mathscr{L}$
 is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D\RA\RP _{t^{1/2}=A^{-2}} $$
-where $D$ is any oriented diagram for $L$.&lt;/p&gt;
+$$ V\LP \mathscr{L}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
+where $D$ is any oriented diagram for $\mathscr{L}$.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;jones-polynomial-is-a-function&#34;&gt;Jones Polynomial is a function&lt;/h2&gt;
-&lt;p&gt;The Jones polynomial invariant is a function
-$$V:\LS \text{Oriented links in }S^3\to \Z\LB t^{-\frac{1}{2}},\ t^{-\frac{1}{2}}\RB\RS$$
-such that&lt;/p&gt;
+&lt;div class=&#34;mediummath &#34;&gt;
+$$
+\begin{aligned}
+-A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
+&amp;= -A^{9}\LP A^7-A^3-A^{-5}\RP\\
+&amp;=-A^{16}+A^{12}+A^{-4}\\
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&#34;mediummath &#34;&gt;
+$$
+\begin{aligned}
+&amp;\LP-A^{16}+A^{12}+A^{4}\RP_{t^{1/2}=A^{-2}}\\
+&amp;=-t^{-4}+t^{-3}+t^{-1}
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;detects-mirrors&#34;&gt;Detects mirrors&lt;/h2&gt;
+&lt;div&gt;
+&lt;div style=&#34;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+grid-auto-rows: minmax(100px, auto);&#34;&gt;
+&lt;div style=&#34;
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 1;
+&#34;&gt;
+&lt;img style=&#34;
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:200px !important;
+&#34;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/left.svg&#34;/&gt;
+&lt;/div&gt;
+&lt;div style=&#34;
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 1;
+&#34;&gt;
+&lt;img style=&#34;
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:200px !important;&#34;
+src=&#34;https://joe-starr.com/presentations/Alex_Poly/trefoil/right.svg&#34;/&gt;
+&lt;/div&gt;
+&lt;div style=&#34;
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 2;
+&#34;&gt;
+&lt;p&gt;$$-A^{16}+A^{12}+A^{4}$$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&#34;
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 2;
+&#34;&gt;
+&lt;p&gt;$$-A^{-16}+A^{-12}+A^{-4}$$&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&#34;
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 3;
+&#34;&gt;
+$$-t^{-4}+t^{-3}+t^{-1}$$
+&lt;/div&gt;
+&lt;div style=&#34;
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 3;
+&#34;&gt;
+$$-t^{4}+t^{3}+t$$
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;div style=&#34;
+font-size: medium;
+&#34;&gt;
 &lt;ol&gt;
-&lt;li&gt;$V\LP\text{unknot}\RP=1$&lt;/li&gt;
-&lt;li&gt;Whenever three oriented links $L_+$, $L_-$, and $L_0$ are the same, except in the neighborhood of a point as follows  &lt;br/&gt; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/presentations/kauf_bkt/plus.png&#34; alt=&#34;&amp;#43;1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/presentations/kauf_bkt/minus.png&#34; alt=&#34;-1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://joe-starr.com/presentations/kauf_bkt/skein_vert.png&#34; alt=&#34;-1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
- &lt;br/&gt; Then $$t^{-1}V\LP L_+\RP-t^V\LP L_-\RP+\LP t^{-\frac{1}{2}}-t^{\frac{1}{2}}\RP V\LP L_0\RP=0$$&lt;/li&gt;
+&lt;li&gt;Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239&lt;/li&gt;
+&lt;li&gt;Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0&lt;/li&gt;
+&lt;li&gt;Saveliev, N. (2011). Lectures on the Topology of 3-Manifolds. DE GRUYTER. https://doi.org/10.1515/9783110250367&lt;/li&gt;
+&lt;li&gt;Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.&lt;/li&gt;
+&lt;li&gt;van Wijk, J. J., &amp; Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83&lt;/li&gt;
+&lt;li&gt;van Wijk, J. J., &amp; Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
