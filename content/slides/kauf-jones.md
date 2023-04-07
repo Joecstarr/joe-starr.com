@@ -86,42 +86,28 @@ and is characterized by three relations
 
 ## One
 
-<div style="
-font-size: 200% !important;
-">
 $$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
-</div>
 
 ---
 
 {{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" 500>}}
 
----
-
-{{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" 500>}}
 
 ---
 
 
 ## Two
 
-<div style="
-font-size: 200% !important;
-">
+
  $$\Huge{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}$$
-</div>
 
 ---
 
 ## Three
 
-<div style="
-font-size: 200% !important;
-">
 $$\Huge{
 \LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA
 }$$
-</div>
 
 ---
 
@@ -129,7 +115,7 @@ $$\Huge{
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/trefoil/right.svg" 500>}}
+{{<centerimg "/presentations/kauf_bkt/trefoil/trefoil.svg" 500>}}
 
 ---
 
@@ -139,6 +125,32 @@ $$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
 &= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
+\end{aligned}
+$$
+</div>
+
+---
+
+<ol style="
+align-items: left;">
+<li>$\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$</li>
+<li>$\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1$</li>
+<li>$
+\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA$</li>
+</ol>
+<div class="bigmath ">
+$$
+\Huge{A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}}
+$$
+</div>
+
+---
+
+<div class="bigmath ">
+$$
+\begin{aligned}
+&A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
 +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
 &= A^2\bkt{/presentations/kauf_bkt/trefoil/trefoil_aa.svg}
 +\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
@@ -209,7 +221,21 @@ $$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/k
 ---
 
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+<div class="mediummath ">
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type2/1.svg}
+&=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
+&=A
+\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/4.svg}\RP\\
+&+\inv{A}\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
+&=A^2\bkt{/presentations/kauf_bkt/type2/3a.svg}+\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
+&+\bkt{/presentations/kauf_bkt/type2/6b.svg}+A^{-2}\bkt{/presentations/kauf_bkt/type2/6a.svg}=\bkt{/presentations/kauf_bkt/type2/6b.svg}\\
+\end{aligned}
+$$
+</div>
+
+
 
 ---
 ### Type 3
@@ -222,7 +248,19 @@ $$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/k
 
 ---
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+<div class="mediummath ">
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type1/1.svg}
+&=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
+\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
+&=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
+\end{aligned}
+$$
+</div>
+
+
+---
 
 $$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
 
@@ -269,16 +307,12 @@ signs of the crossings of $ D $.
 
 $$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
 
-
-
 ---
 
-### Writhe + Bracket
 
-Let $D$ be a diagram of an oriented link $\mathscr{L}$. Then the expression
-$$\Huge{\LP -A\RP^{-3w\LP D\RP}\LA D \RA}$$
-is an invariant of the oriented link $\mathscr{L}$.
 
+
+{{<centerimg "/presentations/kauf_bkt/trefoil/trefoil.svg" 500>}}
 
 
 ---
@@ -290,13 +324,33 @@ is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
 $$ V\LP \mathscr{L}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
 where $D$ is any oriented diagram for $\mathscr{L}$.
 
----
-
-@@@ Example
 
 ---
 
-## Detected mirrors
+<div class="mediummath ">
+$$
+\begin{aligned}
+-A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
+&= -A^{9}\LP A^7-A^3-A^{-5}\RP\\
+&=-A^{16}+A^{12}+A^{-4}\\
+\end{aligned}
+$$
+</div>
+
+---
+
+<div class="mediummath ">
+$$
+\begin{aligned}
+&\LP-A^{16}+A^{12}+A^{4}\RP_{t^{1/2}=A^{-2}}\\
+&=-t^{-4}+t^{-3}+t^{-1}
+\end{aligned}
+$$
+</div>
+
+---
+
+## Detects mirrors
 
 
 <div>
@@ -322,7 +376,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;
 "
-src="/presentations/Alex_Poly/trefoil/right.svg"/>
+src="/presentations/Alex_Poly/trefoil/left.svg"/>
 </div>
 <div style="
 margin: 0;
@@ -344,7 +398,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;"
-src="/presentations/Alex_Poly/trefoil/left.svg"/>
+src="/presentations/Alex_Poly/trefoil/right.svg"/>
 </div>
 
 <div style="
@@ -356,14 +410,8 @@ transform: translateY(-50%);
 grid-column: 1 / 2;
 grid-row: 2;
 ">
-<img style="
-height:auto !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-max-width:300px !important;
-"
-src="/presentations/Alex_Poly/trefoil/right_surf.svg"/>
+
+$$-A^{16}+A^{12}+A^{4}$$
 </div>
 <div style="
 margin: 0;
@@ -374,18 +422,8 @@ transform: translateY(-50%);
 grid-column: 2 / 2;
 grid-row: 2;
 ">
-<img style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-height:auto !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-max-width:300px !important;"
-src="/presentations/Alex_Poly/trefoil/left_surf.svg"/>
+
+$$-A^{-16}+A^{-12}+A^{-4}$$
 </div>
 
 <div style="
@@ -397,7 +435,7 @@ transform: translateY(-50%);
 grid-column: 1 / 2;
 grid-row: 3;
 ">
-$$1-t+t^2$$
+$$-t^{-4}+t^{-3}+t^{-1}$$
 </div>
 <div style="
 margin: 0;
@@ -408,7 +446,7 @@ transform: translateY(-50%);
 grid-column: 2 / 2;
 grid-row: 3;
 ">
-$$1-t+t^2$$
+$$-t^{4}+t^{3}+t$$
 
 </div>
 </div>

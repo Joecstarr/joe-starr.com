@@ -3,9 +3,7 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
-<clipPath id="ArtboardFrame">
-<rect height="500" width="500" x="0" y="0"/>
-</clipPath>
+
 <g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
 <path d="M500 500C204.948 478.769 207.504 23.0733 500 0" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
 </g>

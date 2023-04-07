@@ -526,7 +526,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;
 "
-src="/presentations/Alex_Poly/trefoil/right.svg"/>
+src="/presentations/Alex_Poly/trefoil/left.svg"/>
 </div>
 <div style="
 margin: 0;
@@ -548,7 +548,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;"
-src="/presentations/Alex_Poly/trefoil/left.svg"/>
+src="/presentations/Alex_Poly/trefoil/right.svg"/>
 </div>
 
 <div style="
@@ -567,7 +567,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:300px !important;
 "
-src="/presentations/Alex_Poly/trefoil/right_surf.svg"/>
+src="/presentations/Alex_Poly/trefoil/left_surf.svg"/>
 </div>
 <div style="
 margin: 0;
@@ -589,7 +589,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 max-width:300px !important;"
-src="/presentations/Alex_Poly/trefoil/left_surf.svg"/>
+src="/presentations/Alex_Poly/trefoil/right_surf.svg"/>
 </div>
 
 <div style="
