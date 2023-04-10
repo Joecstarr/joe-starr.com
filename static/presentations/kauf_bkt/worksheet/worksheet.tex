@@ -1,0 +1,117 @@
+\documentclass[14pt]{extarticle}
+\usepackage[margin=1cm]{geometry}
+
+\usepackage{svg}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, mathrsfs}
+\usepackage{times, flexisym, mdframed, xcolor}
+\usepackage{ulem,multicol}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tikz-cd}
+\usepackage[doublespacing]{setspace}
+\usepackage[shortlabels]{enumitem}
+
+\newcommand{\nd}{\noindent}
+\newcommand{\Vspc}{\vspace*{0.1in}}
+\newcommand{\vhalfpg}{\vspace{5in}}
+\newcommand{\vthirdpg}{\vspace{3in}}
+\newcommand{\vquartpg}{\vspace{2in}}
+
+% --------------------------------------------------------------
+%                         Config Options
+% --------------------------------------------------------------
+
+% \def\lined{a}
+
+% --------------------------------------------------------------
+%                         Style options
+% --------------------------------------------------------------
+
+\usetikzlibrary{decorations.markings,calc}
+
+
+
+
+% --------------------------------------------------------------
+%                         Paired delimiters
+% --------------------------------------------------------------
+\newcommand{\LP}{\left(}
+\newcommand{\RP}{\right)}
+\newcommand{\LS}{\left\lbrace}
+\newcommand{\RS}{\right\rbrace}
+\newcommand{\LB}{\left[}
+\newcommand{\RB}{\right]}
+\newcommand{\LA}{\left\langle}
+\newcommand{\RA}{\right\rangle}
+\newcommand{\MM}{\ \middle|\ }
+\newcommand{\lrb}[1]{\left[#1\right]}
+\newcommand{\lrp}[1]{\left(#1\right)}
+\newcommand{\lrs}[1]{\left\{#1\right\}}
+\newcommand{\lra}[1]{\left\langle#1\right\rangle}
+
+% --------------------------------------------------------------
+%                         New Commands
+% --------------------------------------------------------------
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\m}{\scalebox{0.5}[1.0]{$-$}}
+\newcommand{\img}[1]{\begin{aligned}
+    &\quad\\
+    &\includesvg[scale=.04]{#1}\\
+    &\quad
+\end{aligned}}
+\newcommand{\bkt}[1]{\LA\img{#1}\RA}
+
+
+% --------------------------------------------------------------
+%                         Math Operators
+% --------------------------------------------------------------
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Syl}{Syl}
+\DeclareMathOperator{\Inn}{Inn}
+
+
+% --------------------------------------------------------------
+%                         Renew Commands
+% --------------------------------------------------------------
+\renewcommand{\headrulewidth}{0pt}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+\fancyhead{}
+
+Compute:
+\vspace{-1.5cm}
+\begin{center}
+    \scalebox{1.5}[1.5]{
+        $A\bkt{trefoil_a.svg}$
+        }
+\end{center}
+
+\vspace{2in}
+
+Show that:
+\vspace{-1.5cm}
+\begin{center}
+    \scalebox{1.5}[1.5]{
+        $\bkt{1.svg}=\bkt{6.svg}$
+        }
+    \end{center}
+
+\vspace{2in}
+
+Compute the writhe:
+\vspace{-4.5cm}
+\begin{center}
+    \scalebox{3}[3]{
+        $\img{trefoil.svg}$
+        }
+\end{center}
+\end{document}
