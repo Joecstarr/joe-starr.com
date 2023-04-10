@@ -467,6 +467,10 @@ $$-t^{4}+t^{3}+t$$
 
 ---
 
+[Worksheet](/presentations/kauf_bkt/worksheet/worksheet.pdf)
+
+---
+
 ## Sources
 <div style="
 font-size: medium;
