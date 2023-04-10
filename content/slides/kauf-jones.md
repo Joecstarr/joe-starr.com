@@ -22,38 +22,26 @@ slides:
 
 
 
-# Jones Polynomial
-
-<!--
----
-## Definition Of Jones Polynomial
-
-The Jones polynomial $V\LP L\RP$ of an oriented link $\mathscr{L}$
-is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
-$$ V\LP L\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
-where $D$ is any oriented diagram for $\mathscr{L}$.
-
+# Lets build some knot polynomials
 
 ---
 
-# Kauffman Bracket
+## Skein Relation
 
-Definition is in terms of some odd looking stuff
+$$\Huge{\begin{matrix}
+\img{/presentations/kauf_bkt/crossing/crossing_un.svg}
+&\quad\img{/presentations/kauf_bkt/type2/6a.svg}
+&\quad\img{/presentations/kauf_bkt/type2/6b.svg}\\\\
++
+&\quad 0
+&\quad\infty\\\\
+\end{matrix}}$$
 
-The Kauffman bracket of $D$
-$$\LA D \RA$$
-
-and
-
-The writhe of $D$
-$$w(D)$$
--->
+$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
 
 ---
 
-## Kauffman Bracket
-
-The Kauffman Bracket is a function from **unoriented link diagrams** to **Laurent polynomials with integer coefficients** in an indeterminate $A$.
+{{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" 500>}}
 
 ---
 
@@ -79,41 +67,144 @@ min-width:50% !important;">
 
 ---
 
+## We want a knot invariant. How can we get one?
+
+---
+
+## Check what happens under Reidemeister moves
+
+
+---
+
+### Type 2
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+
+---
+
+
+**$$\{\small\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$**
+
+<div class="mediummath ">
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type2/1.svg}
+&=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+B\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
+&=A
+\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP\\
+&+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
+\end{aligned}
+$$
+</div>
+
+
+---
+
+
+<div class="bigmath ">
+$$B\bkt{/presentations/kauf_bkt/type2/4.svg}$$
+</div>
+
+---
+
+$$\huge
+\begin{aligned}
+1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+2.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=C\LA D\RA}
+\end{aligned}$$
+
+<!-- \LP-B^{2}-A^2\RP -->
+
+---
+
+$$\large\begin{aligned}
+A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP
+&+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
+&=A\LP A\bkt{/presentations/kauf_bkt/type2/6a.svg}+BC\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
+&+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
+&=A^2\bkt{/presentations/kauf_bkt/type2/6a.svg}+ABC\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
+&+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}+B^2\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
+&=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
+&+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}
+\end{aligned}$$
+
+---
+
+$$\Large\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$$
+
+---
+
+$$B=\inv{A}$$
+$$\begin{aligned}
+\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
+\LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
+\end{aligned}$$
+---
+
+$$C=-A^{-2}-A^2$$
+$$\begin{aligned}
+\LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
+\end{aligned}$$
+
+---
+
+### Type 2
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+
+
+---
+
+### Type 3
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$$
+
+---
+
+## What about Type 1?
+
+---
+
+<div class="mediummath ">
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type1/1.svg}
+&=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
+\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
+&=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
+\end{aligned}
+$$
+</div>
+
+
+---
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+
+---
+
+## Kauffman Bracket
+
+The Kauffman Bracket is a function from **unoriented link diagrams** to **Laurent polynomials with integer coefficients** in an indeterminate $A$.
+
 The Kauffman Bracket maps a diagram $D$ to $$\large{\LA D \RA\in \Z\LB A^{-1},\ A\RB}$$
 and is characterized by three relations
 
 ---
 
-## One
 
-$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+$$\huge
+\begin{aligned}
+1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
+2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
+\end{aligned}$$
+
 
 ---
 
-{{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" 500>}}
-
-
----
-
-
-## Two
-
-
- $$\Huge{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}$$
-
----
-
-## Three
-
-$$\Huge{
-\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA
-}$$
-
----
-
-# Putting these together we have
-
----
+## Exercise
 
 {{<centerimg "/presentations/kauf_bkt/trefoil/trefoil.svg" 500>}}
 
@@ -134,16 +225,15 @@ $$
 
 <ol style="
 align-items: left;">
-<li>$\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$</li>
-<li>$\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1$</li>
-<li>$
+<li>$\small\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$</li>
+<li>$\small\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1$</li>
+<li>$\small
 \LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA$</li>
-</ol>
-<div class="bigmath ">
-$$
-\Huge{A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}}
-$$
-</div>
+</ol></br>
+<div>
+$\Huge{A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}}$
+
+
 
 ---
 
@@ -196,82 +286,6 @@ $$
 $$
 </div>
 
-
----
-
-## Is the Kauffman Bracket a knot invariant?
-
-
----
-
-## Check Reidemeister moves
-
----
-
-### Type 2 and 3
-
-First we can check a Type II or Type III Reidemeister move in a diagram $D$.
-
----
-
-### Type 2
-
-$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
-
----
-
-
-<div class="mediummath ">
-$$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/type2/1.svg}
-&=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
-&=A
-\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/4.svg}\RP\\
-&+\inv{A}\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+\inv{A}\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
-&=A^2\bkt{/presentations/kauf_bkt/type2/3a.svg}+\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
-&+\bkt{/presentations/kauf_bkt/type2/6b.svg}+A^{-2}\bkt{/presentations/kauf_bkt/type2/6a.svg}=\bkt{/presentations/kauf_bkt/type2/6b.svg}\\
-\end{aligned}
-$$
-</div>
-
-
-
----
-### Type 3
-
-$$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$$
-
----
-
-## What about Type 1?
-
----
-
-<div class="mediummath ">
-$$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/type1/1.svg}
-&=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
-\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
-&=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
-\end{aligned}
-$$
-</div>
-
-
----
-
-$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
-
----
-
-
-
-This is a problem... How to resolve?
-
-
-
 ---
 ## Writhe
 
@@ -302,7 +316,7 @@ min-width:50% !important;">
 
 ### Writhe of a knot
 
-The write $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
+The writhe $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
 signs of the crossings of $ D $.
 
 $$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
@@ -319,8 +333,8 @@ $$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.sv
 
 ## Definition of the Jones Polynomial
 
-The Jones polynomial $V\LP \mathscr{L}\RP$ of an oriented link $\mathscr{L}$
-is the Laurent Polynomial in $t^{1/2}$, with integer coefficients, defined by
+The Jones Polynomial $V\LP \mathscr{L}\RP$ of an oriented link $\mathscr{L}$
+is the Laurent polynomial in $t^{1/2}$, with integer coefficients, defined by
 $$ V\LP \mathscr{L}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
 where $D$ is any oriented diagram for $\mathscr{L}$.
 
