@@ -1976,18 +1976,7 @@ $$\large
 &lt;hr&gt;
 &lt;h2 id=&#34;what-about-type-1&#34;&gt;What about Type 1?&lt;/h2&gt;
 &lt;hr&gt;
-&lt;div class=&#34;mediummath &#34;&gt;
-$$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/type1/1.svg}
-&amp;=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
-\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
-&amp;=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
-\end{aligned}
-$$
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$&lt;/p&gt;
+&lt;h2 id=&#34;more-later&#34;&gt;More later.&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;kauffman-bracket&#34;&gt;Kauffman Bracket&lt;/h2&gt;
 &lt;p&gt;The Kauffman Bracket is a function from &lt;strong&gt;unoriented link diagrams&lt;/strong&gt; to &lt;strong&gt;Laurent polynomials with integer coefficients&lt;/strong&gt; in an indeterminate $A$.&lt;/p&gt;
@@ -2096,6 +2085,19 @@ $$
 $$
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;div class=&#34;mediummath &#34;&gt;
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type1/1.svg}
+&amp;=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
+\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
+&amp;=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;writhe&#34;&gt;Writhe&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;orientation-of-a-crossing&#34;&gt;Orientation of a crossing&lt;/h3&gt;
@@ -2139,6 +2141,12 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/trefoil/trefoil.svg&#34;/&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;consider&#34;&gt;Consider&lt;/h2&gt;
+&lt;p&gt;$$\Huge -A^{-3w\LP D\RP}\LA D\RA$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$$\Huge -A^{-3w\LP D\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=\Huge -A^{-3\LP-1\RP}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA=\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
+$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;definition-of-the-jones-polynomial&#34;&gt;Definition of the Jones Polynomial&lt;/h2&gt;
 &lt;p&gt;The Jones Polynomial $V\LP \mathscr{L}\RP$ of an oriented link $\mathscr{L}$
@@ -2267,10 +2275,7 @@ font-size: medium;
 &lt;ol&gt;
 &lt;li&gt;Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239&lt;/li&gt;
 &lt;li&gt;Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0&lt;/li&gt;
-&lt;li&gt;Saveliev, N. (2011). Lectures on the Topology of 3-Manifolds. DE GRUYTER. https://doi.org/10.1515/9783110250367&lt;/li&gt;
 &lt;li&gt;Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.&lt;/li&gt;
-&lt;li&gt;van Wijk, J. J., &amp; Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83&lt;/li&gt;
-&lt;li&gt;van Wijk, J. J., &amp; Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
