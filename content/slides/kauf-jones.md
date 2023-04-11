@@ -172,21 +172,7 @@ $$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/k
 
 ---
 
-<div class="mediummath ">
-$$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/type1/1.svg}
-&=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
-\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
-&=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
-\end{aligned}
-$$
-</div>
-
-
----
-
-$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+## More later. 
 
 ---
 
@@ -316,6 +302,25 @@ $$
 $$
 </div>
 
+
+---
+
+<div class="mediummath ">
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/type1/1.svg}
+&=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
+\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
+&=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
+\end{aligned}
+$$
+</div>
+
+
+---
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+
 ---
 ## Writhe
 
@@ -357,6 +362,17 @@ $$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.sv
 
 
 {{<centerimg "/presentations/kauf_bkt/trefoil/trefoil.svg" 500>}}
+
+---
+
+## Consider
+
+$$\Huge -A^{-3w\LP D\RP}\LA D\RA$$
+
+---
+
+$$\Huge -A^{-3w\LP D\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=\Huge -A^{-3\LP-1\RP}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA=\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
+$$
 
 
 ---
@@ -508,10 +524,7 @@ font-size: medium;
 <ol>
 <li>Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239</li>
 <li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0</li>
-<li>Saveliev, N. (2011). Lectures on the Topology of 3-Manifolds. DE GRUYTER. https://doi.org/10.1515/9783110250367</li>
 <li>Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.</li>
-<li>van Wijk, J. J., & Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83</li>
-<li>van Wijk, J. J., & Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843</li>
 </ol>
 </div>
 
