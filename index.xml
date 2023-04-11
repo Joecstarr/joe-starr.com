@@ -1950,19 +1950,26 @@ A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/t
 &lt;hr&gt;
 &lt;p&gt;$$\Large\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$$&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;endaligned&#34;&gt;$$B=\inv{A}$$
-$$\begin{aligned}
+&lt;p&gt;$$B=\inv{A}$$
+$$\Large\begin{aligned}
 \LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}&amp;amp;=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
 \LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&amp;amp;=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
-\end{aligned}$$&lt;/h2&gt;
+\end{aligned}$$&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;$$C=-A^{-2}-A^2$$
-$$\begin{aligned}
+$$\Large\begin{aligned}
 \LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&amp;amp;=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
 \bkt{/presentations/kauf_bkt/type2/6b.svg}&amp;amp;=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
 \end{aligned}$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;type-2-1&#34;&gt;Type 2&lt;/h3&gt;
-&lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$&lt;/p&gt;
+&lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+$$\large
+\begin{aligned}
+1.\quad&amp;amp;\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
+2.\quad&amp;amp;{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
+3.\quad&amp;amp;{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
+\end{aligned}$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;type-3&#34;&gt;Type 3&lt;/h3&gt;
 &lt;p&gt;$$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$$&lt;/p&gt;
@@ -1985,14 +1992,14 @@ $$
 &lt;h2 id=&#34;kauffman-bracket&#34;&gt;Kauffman Bracket&lt;/h2&gt;
 &lt;p&gt;The Kauffman Bracket is a function from &lt;strong&gt;unoriented link diagrams&lt;/strong&gt; to &lt;strong&gt;Laurent polynomials with integer coefficients&lt;/strong&gt; in an indeterminate $A$.&lt;/p&gt;
 &lt;p&gt;The Kauffman Bracket maps a diagram $D$ to $$\large{\LA D \RA\in \Z\LB A^{-1},\ A\RB}$$
-and is characterized by three relations&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;$$\huge
+and is characterized by our three relations&lt;/p&gt;
+&lt;!--
+$$\huge
 \begin{aligned}
-1.\quad&amp;amp;\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
-2.\quad&amp;amp;{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
-3.\quad&amp;amp;{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
-\end{aligned}$$&lt;/p&gt;
+1.\quad&amp;\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
+2.\quad&amp;{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+3.\quad&amp;{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
+\end{aligned}$$ --&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;exercise&#34;&gt;Exercise&lt;/h2&gt;
 
@@ -2013,6 +2020,40 @@ $$
 $$
 &lt;/div&gt;
 &lt;hr&gt;
+&lt;p&gt;$$
+\LARGE\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}
+&amp;amp;=A\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
++A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\
+&amp;amp;=A\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_baa.svg}+
+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bab.svg}\RP\\
+&amp;amp;+A^{-1}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_bba.svg}+
+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bbb.svg}\RP\\
+\end{aligned}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$$
+\LARGE\begin{aligned}
+&amp;amp;=A\LP A\LP-A^{-2}-A^2\RP+
+A^{-1}\RP\\
+&amp;amp;+A^{-1}\LP A+
+A^{-1}\LP-A^{-2}-A^2\RP\RP\\
+&amp;amp;=-A^4-A^{-4}\\
+\end{aligned}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;bigmath &#34;&gt;
+$$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
+&amp;= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
+&amp;= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
+-A^3-A^{-5}\\
+\end{aligned}
+$$
+&lt;/div&gt;
+&lt;hr&gt;
 &lt;ol style=&#34;
 align-items: left;&#34;&gt;
 &lt;li&gt;$\small\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$&lt;/li&gt;
@@ -2023,47 +2064,34 @@ align-items: left;&#34;&gt;
 &lt;div&gt;
 $\Huge{A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}}$
 &lt;hr&gt;
+&lt;p&gt;$$
+\LARGE\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
+&amp;amp;=A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aa.svg}
++A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
+&amp;amp;=A\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}+
+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_aab.svg}\RP\\
+&amp;amp;+A^{-1}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aba.svg}+
+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_abb.svg}\RP\\
+\end{aligned}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;$$
+\Large\begin{aligned}
+&amp;amp;=A\LP A\LP A\LP-A^{-2}-A^2\RP^2\RP\right.\\
+&amp;amp;\left.+A^{-1}\LP A\LP-A^{-2}-A^2\RP\RP\RP\\
+&amp;amp;+A^{-1}\LP A\LP A\LP-A^{-2}-A^2\RP+A^{-1}\RP\RP\\
+&amp;amp;=A^6
+\end{aligned}
+$$&lt;/p&gt;
+&lt;hr&gt;
 &lt;div class=&#34;bigmath &#34;&gt;
 $$
 \begin{aligned}
-&amp;A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
+&amp;= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
 +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
-&amp;= A^2\bkt{/presentations/kauf_bkt/trefoil/trefoil_aa.svg}
-+\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
-&amp;+\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
-+A^{-2}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\
-\end{aligned}
-$$
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&#34;bigmath &#34;&gt;
-$$
-\begin{aligned}
-&amp;=
-A^3\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}
-+A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aab.svg}\\
-&amp;+ A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aba.svg}
-+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_abb.svg}\\
-&amp;+A\bkt{/presentations/kauf_bkt/trefoil/trefoil_baa.svg}
-     +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bab.svg}\\
-&amp;+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bba.svg}
-     +A^{-3}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bbb.svg}\\
-\end{aligned}
-$$
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&#34;mediummath &#34;&gt;
-$$
-\begin{aligned}
-&amp;=   A^3\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}
-     -A^3
-     -A^3-A^{-1}
-    -A^3
-     -A^{-5}\\\\
-&amp;=    A^7+A^{-1}+2A^3
-     -3A^3-A^{-1}
-     -A^{-5}\\\\
-&amp;=    A^7-A^3-A^{-5}
+&amp;= A^7-A^3-A^{-5}
 \end{aligned}
 $$
 &lt;/div&gt;
