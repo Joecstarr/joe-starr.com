@@ -15,7 +15,7 @@ slides:
 
 <!-- {{<cuscss>}} -->
 {{<dracula_css>}}
-{{<mathjax_support>}}
+{{<mathjax_preamble>}}
 {{<canvas_head>}}
 
 <!-- # Draft
