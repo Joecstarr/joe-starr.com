@@ -45,6 +45,8 @@
     {{ $style := slice $css_custom | resources.Concat "css/reveal_custom.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   {{ end }}
+  {{ partial "hooks/head-end/custom_head.html" . }}
+
 </head>
 <body>
 

@@ -33,18 +33,19 @@ sequenceDiagram
 
 ## Box Name
 
-Curabitur elementum tellus mauris, et tristique odio mattis nec. Aenean id pulvinar odio. Phasellus id augue quam. Etiam vel lorem ac lacus molestie dapibus. Vestibulum ullamcorper fringilla mi vel maximus. Etiam maximus laoreet commodo. Duis mollis risus finibus sapien consectetur, ut rutrum eros molestie. Nam et eros id risus pretium suscipit ac non velit. Mauris finibus nisl purus, et ullamcorper ipsum vehicula in. Donec non viverra felis.
+Curabitur elementum tellus mauris, et tristique odio mattis nec. Aenean id pulvinar odio. Phasellus id augue quam. Etiam vel lorem ac lacus molestie dapibus. Vestibulum ullamcorper fringilla mi vel maximus. Etiam maximus laoreet commodo. Duis mollis risus finibus sapien consectetur, ut rutrum eros molestie.
 
 ---
 
 ## Box Name
 
-Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. Fusce rutrum massa vel elementum viverra. Ut aliquet mauris nec malesuada pellentesque. Nulla non odio tempor, tristique libero nec, tincidunt neque. Donec volutpat neque in neque vulputate semper. Etiam aliquet nulla nec justo condimentum, ornare pretium elit tincidunt. Morbi rutrum et augue non suscipit. Aliquam condimentum lobortis turpis et consequat. Pellentesque in odio vehicula, maximus nunc eget, convallis metus.
+Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. Fusce rutrum massa vel elementum viverra. Ut aliquet mauris nec malesuada pellentesque. Nulla non odio tempor, tristique libero nec, tincidunt neque. Donec volutpat neque in neque vulputate semper.
 
 ---
 
+## Box Name
 
-Nulla egestas justo in risus hendrerit tincidunt ac non orci. Aliquam a massa convallis, dapibus lectus nec, tincidunt orci. Nunc pellentesque risus ut nulla blandit dictum. Ut aliquet hendrerit lacus, ut hendrerit libero maximus ut. Maecenas felis lacus, luctus vel lacus ut, finibus vulputate ipsum. Donec pharetra non tellus eget condimentum. Etiam vehicula elementum ipsum sed imperdiet. Proin nibh metus, efficitur vitae est sed, porta posuere dui.
+Maecenas felis lacus, luctus vel lacus ut, finibus vulputate ipsum. Donec pharetra non tellus eget condimentum. Etiam vehicula elementum ipsum sed imperdiet. Proin nibh metus, efficitur vitae est sed, porta posuere dui.
 $\lim _{x \rightarrow 8} \frac{x^2-36}{x+6} \times \lim _{x \rightarrow 0} \frac{e^{12 x}-1}{x}+-10 e^{\pi i}$Suspendisse eu lacus nisi. Cras sodales lacus at libero vehicula, sit amet pulvinar mauris consectetur. Mauris vel lorem eget turpis iaculis condimentum sit amet quis diam.
 
 $$
@@ -53,10 +54,9 @@ $$
 
 Nulla quis sagittis nulla, eget tincidunt sem. Suspendisse viverra, orci ut pharetra volutpat, libero mi dictum augue, non dapibus elit massa nec justo. Praesent eu metus efficitur, feugiat urna non, elementum ligula. Curabitur ullamcorper justo nibh, quis ornare odio tristique non.
 
-In ultricies ex sed erat feugiat iaculis. Integer laoreet eros pellentesque scelerisque egestas. Ut in magna id est fringilla iaculis. Donec porta at risus eu mollis. Quisque lacus metus, pharetra eget libero ut, ultricies congue diam. Sed ut ipsum urna. Integer dictum lacus fermentum urna venenatis, id bibendum tellus pretium. Pellentesque a metus non urna auctor efficitur. Nullam pellentesque, sapien a mattis dictum, ipsum augue convallis massa, non pulvinar est orci at erat. Nunc sodales vitae arcu in semper.
 
 ---
-{{ <poster_col> }}
+
 
 
 ## Box Name
@@ -94,7 +94,3 @@ Curabitur elementum tellus mauris, et tristique odio mattis nec. Aenean id pulvi
 ## Box Name
 
 Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. Fusce rutrum massa vel elementum viverra. Ut aliquet mauris nec malesuada pellentesque. Nulla non odio tempor, tristique libero nec, tincidunt neque. Donec volutpat neque in neque vulputate semper. Etiam aliquet nulla nec justo condimentum, ornare pretium elit tincidunt. Morbi rutrum et augue non suscipit. Aliquam condimentum lobortis turpis et consequat. Pellentesque in odio vehicula, maximus nunc eget, convallis metus.
-
----
-
-{{ <poster_col> }}

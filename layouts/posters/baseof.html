@@ -3,13 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/poster.css">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
   <link
   href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
   rel="stylesheet">
   <title>{{ .Title }} | {{ site.Title }}</title>
   {{ partial "hooks/head-end/custom_head.html" . }}
+  <style type="text/css">
+    html {
+      font-size: .5 rem
+    }
+  </style>
 </head>
 
 <body vocab="http://schema.org/" typeof="ScholarlyArticle">
@@ -39,7 +44,21 @@
   {{ block "main" . }}{{ end }}
 
   {{/* Initialize Poster. */}}
+
+  <figure style="flex-grow: 9999999">
+  </figure>
   </main>
+
+  <footer>
+    <address class="monospace"> <a
+        href="https://github.com/cpitclaudel/academic-poster-template">https://github.com/cpitclaudel/academic-poster-template</a>
+    </address>
+    <address class="monospace"> clement.pitclaudel@live.com
+    </address>
+    <span class="credits">
+      Based on an <a href="https://github.com/cpitclaudel/academic-poster-template">open poster template</a>.
+    </span>
+  </footer>
 </body>
 
 </html>
