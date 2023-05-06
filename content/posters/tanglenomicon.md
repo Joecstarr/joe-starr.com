@@ -43,10 +43,11 @@ Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. 
 
 ---
 
+
 ## Box Name
 
 Maecenas felis lacus, luctus vel lacus ut, finibus vulputate ipsum. Donec pharetra non tellus eget condimentum. Etiam vehicula elementum ipsum sed imperdiet. Proin nibh metus, efficitur vitae est sed, porta posuere dui.
-$\lim _{x \rightarrow 8} \frac{x^2-36}{x+6} \times \lim _{x \rightarrow 0} \frac{e^{12 x}-1}{x}+-10 e^{\pi i}$Suspendisse eu lacus nisi. Cras sodales lacus at libero vehicula, sit amet pulvinar mauris consectetur. Mauris vel lorem eget turpis iaculis condimentum sit amet quis diam.
+$\lim _{x \rightarrow 8} \frac{x^2-36}{x+6} \times \lim _{x \rightarrow 0} \frac{e^{12 x}-1}{x}+-10 e^{\pi i}$ Suspendisse eu lacus nisi. Cras sodales lacus at libero vehicula, sit amet pulvinar mauris consectetur. Mauris vel lorem eget turpis iaculis condimentum sit amet quis diam.
 
 $$
 \left(\lim _{x \rightarrow 19} \frac{x^2-100}{x+10}-\left(\cos ^2 x+\sin ^2 x\right)\right)

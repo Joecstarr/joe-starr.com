@@ -15,15 +15,14 @@
 {{/* Only begin new slide `<section>` if not already added by custom `slide` shortcode. */}}
 {{ if not (in . "data-noprocess") }}
 
-<article>
+
 {{ end }}
+<div class="card">
   <!-- {{ . | safeHTML }} -->
-  {{ . | replaceRE "<h[1-9] id=\"([^\"]+)\">" `<header id="${1}" class="posterbox-header"><h3>` | replaceRE "</h2>" `</h3></header>` | safeHTML }}
-</article>
-
+{{ . | replaceRE "<h2 id=\"([^\"]+)\">" `<div class="card-header"><h3>` | replaceRE "</h2>" `</h3></div>` | safeHTML }}
+</div>
 {{ end }}
 
 {{ end }}
 {{ end }}
-
 
