@@ -19,37 +19,6 @@
       <guid>https://joe-starr.com/slides/kauf-jones/</guid>
       <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
-&lt;script&gt;
-  if (typeof MathJax === &#39;undefined&#39;) {
-  MathJax = {
-    loader: {
-        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
-        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
-    },
-    tex: {
-      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
-      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
-      processEscapes: true,
-      processEnvironments: true,
-      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
-      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
-    },
-    options: {
-      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
-    }
-  };
-
-  window.addEventListener(&#39;load&#39;, (event) =&gt; {
-      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
-        x.parentElement.classList += &#39;has-jax&#39;})
-    });
-  }
-
-&lt;/script&gt;
-&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
-  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
-
 
 
 &lt;p hidden&gt;

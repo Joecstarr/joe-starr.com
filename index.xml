@@ -5,7 +5,7 @@
     <link>https://joe-starr.com/</link>
       <atom:link href="https://joe-starr.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Joe Starr</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://joe-starr.com/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_512x512_fill_lanczos_center_3.png</url>
       <title>Joe Starr</title>
@@ -432,6 +432,63 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Tanglenomicon</title>
+      <link>https://joe-starr.com/posters/tanglenomicon/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/posters/tanglenomicon/</guid>
+      <description>&lt;h2 id=&#34;box-name&#34;&gt;Box Name&lt;/h2&gt;
+&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
+    Alice-&gt;&gt;+John: Hello John, how are you?
+    Alice-&gt;&gt;+John: John, can you hear me?
+    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
+    John--&gt;&gt;-Alice: I feel great!
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;box-name-1&#34;&gt;Box Name&lt;/h2&gt;
+&lt;p&gt;Curabitur elementum tellus mauris, et tristique odio mattis nec. Aenean id pulvinar odio. Phasellus id augue quam. Etiam vel lorem ac lacus molestie dapibus. Vestibulum ullamcorper fringilla mi vel maximus. Etiam maximus laoreet commodo. Duis mollis risus finibus sapien consectetur, ut rutrum eros molestie.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;box-name-2&#34;&gt;Box Name&lt;/h2&gt;
+&lt;p&gt;Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. Fusce rutrum massa vel elementum viverra. Ut aliquet mauris nec malesuada pellentesque. Nulla non odio tempor, tristique libero nec, tincidunt neque. Donec volutpat neque in neque vulputate semper.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;box-name-3&#34;&gt;Box Name&lt;/h2&gt;
+&lt;p&gt;Maecenas felis lacus, luctus vel lacus ut, finibus vulputate ipsum. Donec pharetra non tellus eget condimentum. Etiam vehicula elementum ipsum sed imperdiet. Proin nibh metus, efficitur vitae est sed, porta posuere dui.
+$\lim _{x \rightarrow 8} \frac{x^2-36}{x+6} \times \lim _{x \rightarrow 0} \frac{e^{12 x}-1}{x}+-10 e^{\pi i}$ Suspendisse eu lacus nisi. Cras sodales lacus at libero vehicula, sit amet pulvinar mauris consectetur. Mauris vel lorem eget turpis iaculis condimentum sit amet quis diam.&lt;/p&gt;
+&lt;p&gt;$$
+\left(\lim _{x \rightarrow 19} \frac{x^2-100}{x+10}-\left(\cos ^2 x+\sin ^2 x\right)\right)
+$$&lt;/p&gt;
+&lt;p&gt;Nulla quis sagittis nulla, eget tincidunt sem. Suspendisse viverra, orci ut pharetra volutpat, libero mi dictum augue, non dapibus elit massa nec justo. Praesent eu metus efficitur, feugiat urna non, elementum ligula. Curabitur ullamcorper justo nibh, quis ornare odio tristique non.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;box-name-4&#34;&gt;Box Name&lt;/h2&gt;
+&lt;div class=&#34;mermaid&#34;&gt;        graph TD
+          A[Christmas] --&gt;|Get money| B(Go shopping)
+          B --&gt; C{Let me think}
+          B --&gt; G[/Another/]
+          C ==&gt;|One| D[Laptop]
+          C --&gt;|Two| E[iPhone]
+          C --&gt;|Three| F[fa:fa-car Car]
+          subgraph section
+            C
+            D
+            E
+            F
+            G
+          end
+
+  %% Class Definitions
+    %% =================
+    class A cssClass;
+    classDef cssClass fill:#f9f,stroke:#333,stroke-width:4px, font-size:15px;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;box-name-5&#34;&gt;Box Name&lt;/h2&gt;
+&lt;p&gt;Curabitur elementum tellus mauris, et tristique odio mattis nec. Aenean id pulvinar odio. Phasellus id augue quam. Etiam vel lorem ac lacus molestie dapibus. Vestibulum ullamcorper fringilla mi vel maximus. Etiam maximus laoreet commodo. Duis mollis risus finibus sapien consectetur, ut rutrum eros molestie. Nam et eros id risus pretium suscipit ac non velit. Mauris finibus nisl purus, et ullamcorper ipsum vehicula in. Donec non viverra felis.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;box-name-6&#34;&gt;Box Name&lt;/h2&gt;
+&lt;p&gt;Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. Fusce rutrum massa vel elementum viverra. Ut aliquet mauris nec malesuada pellentesque. Nulla non odio tempor, tristique libero nec, tincidunt neque. Donec volutpat neque in neque vulputate semper. Etiam aliquet nulla nec justo condimentum, ornare pretium elit tincidunt. Morbi rutrum et augue non suscipit. Aliquam condimentum lobortis turpis et consequat. Pellentesque in odio vehicula, maximus nunc eget, convallis metus.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Alexander Polynomial</title>
       <link>https://joe-starr.com/slides/alexander_polynomail/</link>
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
@@ -439,37 +496,6 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
       <description>&lt;!-- &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt; --&gt;
 &lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
-&lt;script&gt;
-  if (typeof MathJax === &#39;undefined&#39;) {
-  MathJax = {
-    loader: {
-        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
-        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
-    },
-    tex: {
-      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
-      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
-      processEscapes: true,
-      processEnvironments: true,
-      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
-      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
-    },
-    options: {
-      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
-    }
-  };
-
-  window.addEventListener(&#39;load&#39;, (event) =&gt; {
-      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
-        x.parentElement.classList += &#39;has-jax&#39;})
-    });
-  }
-
-&lt;/script&gt;
-&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
-  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
-
 
 
 &lt;p hidden&gt;
@@ -1181,37 +1207,6 @@ font-size: medium;
       <guid>https://joe-starr.com/slides/legendrian_knots/</guid>
       <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
-&lt;script&gt;
-  if (typeof MathJax === &#39;undefined&#39;) {
-  MathJax = {
-    loader: {
-        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
-        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
-    },
-    tex: {
-      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
-      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
-      processEscapes: true,
-      processEnvironments: true,
-      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
-      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
-    },
-    options: {
-      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
-    }
-  };
-
-  window.addEventListener(&#39;load&#39;, (event) =&gt; {
-      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
-        x.parentElement.classList += &#39;has-jax&#39;})
-    });
-  }
-
-&lt;/script&gt;
-&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
-  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
-
 
 
 &lt;p hidden&gt;
@@ -1314,37 +1309,6 @@ font-size: medium;
 
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
-&lt;script&gt;
-  if (typeof MathJax === &#39;undefined&#39;) {
-  MathJax = {
-    loader: {
-        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
-        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
-    },
-    tex: {
-      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
-      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
-      processEscapes: true,
-      processEnvironments: true,
-      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
-      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
-    },
-    options: {
-      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
-    }
-  };
-
-  window.addEventListener(&#39;load&#39;, (event) =&gt; {
-      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
-        x.parentElement.classList += &#39;has-jax&#39;})
-    });
-  }
-
-&lt;/script&gt;
-&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
-  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
-
 
 
 &lt;p hidden&gt;
@@ -1802,37 +1766,6 @@ is a combinitorial sphere.&lt;/p&gt;
       <guid>https://joe-starr.com/slides/kauf-jones/</guid>
       <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
-&lt;script&gt;
-  if (typeof MathJax === &#39;undefined&#39;) {
-  MathJax = {
-    loader: {
-        load: [&#39;[img]/img.min.js&#39;,&#39;[tex]/color&#39;,&#39;[tex]/amscd&#39;],
-        paths: {img: &#39;https://cdn.jsdelivr.net/npm/mathjax-img@3&#39;}
-    },
-    tex: {
-      inlineMath: [[&#34;$&#34;, &#34;$&#34;], [&#34;\\(&#34;, &#34;\\)&#34;]],
-      displayMath: [[&#34;$$&#34;,&#34;$$&#34;], [&#34;\\[&#34;, &#34;\\]&#34;]],
-      processEscapes: true,
-      processEnvironments: true,
-      extensions: [&#34;autoload-all.js&#34;,&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;,&#34;AMScd.js&#34;],
-      packages: {&#39;[+]&#39;: [&#39;img&#39;,&#39;color&#39;,&#39;amscd&#39;]}
-    },
-    options: {
-      skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;]
-    }
-  };
-
-  window.addEventListener(&#39;load&#39;, (event) =&gt; {
-      document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){
-        x.parentElement.classList += &#39;has-jax&#39;})
-    });
-  }
-
-&lt;/script&gt;
-&lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
-&lt;script type=&#34;text/javascript&#34; id=&#34;MathJax-script&#34; async
-  src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
-
 
 
 &lt;p hidden&gt;
