@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default " en-us" }}">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/poster.css">
+  <meta name="viewport" content="height=36in, width=48in, initial-scale=1">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
+  {{ partial "hooks/head-end/custom_head.html" . }}
+</head>
+
+<body>
+  <div class="banner_head">
+    <h1 class="headline">{{ .Title }} </h1>
+    <h2 class="subHeadline">{{ .Page.Params.Poster.Subtitle }} </h2>
+    <div class="address">
+      {{ range $author := .Page.Params.Poster.authors }}
+      <p>
+        <a class="authors"> {{ $author }} </a>
+      </p>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="mainBody">
+
+    {{ block "main" . }}{{ end }}
+
+    <div class="figure" style="flex-grow: 9999999">
+    </div>
+  </div>
+
+  <div class="banner_foot">
+
+  </div>
+</body>
+
+</html>
