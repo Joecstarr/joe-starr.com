@@ -19,9 +19,9 @@
   <link rel="icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://joe-starr.com/slides/legendrian_knots/">
+  <link rel="canonical" href="https://joe-starr.com/slides/lightning/">
 
-  <title>Legendrian knots | Joe Starr</title>
+  <title>Tangled in Knot Theory | Joe Starr</title>
 
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
@@ -117,71 +117,104 @@
   \require{color}$`
   </p>
 </p>
-<!-- # Legendrian knots -->
-<div class="canvasdiv canvrow">
-  <div class="canvcolumn">
-    <div>
-      <button id="disablekeys" style="border-radius: 12px; background-color: #ff5555;">Slides Enabled</button>
-    </div>
-  </div>
-  <div class="canvcolumn">
-    <div>
-      <canvas id="unity-canvas" width="960" height="600"
-        style="width: 960px; height: 600px; background: #231f20;"></canvas>
-      <script src="/games/contact_with_unknot/build.loader.js"></script>
-      <script>
-        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-          
-          var meta = document.createElement('meta')
-          meta.name = 'viewport'
-          meta.content =
-            'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes'
-          document.getElementsByTagName('head')[0].appendChild(meta)
+<h1 id="tanglenomicon">Tanglenomicon</h1>
 
-          var canvas = document.querySelector('#unity-canvas')
-          canvas.style.width = '100%'
-          canvas.style.height = '100%'
-          canvas.style.position = 'fixed'
+    </section>
+    
 
-          document.body.style.textAlign = 'left'
-        }
+    
+    
+    
+    <section>
+    
+      
+<h2 id="tangle-tabulation">Tangle tabulation</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;The Most Important Missing Infrastructure Project in Knot Theory&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-Dr. Dror Bar-Natan
+</span></span></code></pre></div>
+    </section>
+    
 
-        createUnityInstance(document.querySelector('#unity-canvas'), {
-          dataUrl: '\/games\/contact_with_unknot/build.data',
-          frameworkUrl: '\/games\/contact_with_unknot/build.framework.js',
-          codeUrl: '\/games\/contact_with_unknot/build.wasm',
-          streamingAssetsUrl: 'StreamingAssets',
-          companyName: 'DefaultCompany',
-          productName: 'My project',
-          productVersion: '0.1',
-          
-          
-        })
+    
+    
+    
+    <section>
+    
+      
+<h2 id="building-up">Building Up</h2>
+<p>Two string tangle tabulation as &ldquo;plug and chug&rdquo;</p>
+<div class="mermaid">flowchart LR
+    R("Rational Tangles\nClassified ✔️")
+    M("Montesinos Tangles\nClassified ✔️")
+    A("Algebraic Tangles\nClassified ❌")
+    R-->M-->A
+</div>
 
+    </section>
+    
 
-      </script>
-      <script type="text/javascript">
-        var keyboard_stat = true;
-        window.onload = function () {
-          document.getElementById("disablekeys").onclick = function () {
+    
+    
+    
+    <section>
+    
+      
+<p>@@@TODO: picture/animation of building up.</p>
+<h3 id="conway-notation">Conway Notation</h3>
 
-            btn = document.getElementById("disablekeys")
-            keyboard_stat = !keyboard_stat;
+    </section>
+    
 
-            if (keyboard_stat)
-            {
-              btn.innerHTML = "Slides Enabled"
-            }else
-            {
-              btn.innerHTML = "Slides Disabled"
-            }
+    
+    
+    
+    <section>
+    
+      
+<h2 id="design">Design</h2>
+<div class="sliderow">
+<div class="slidecolumn">
+<div class="mermaid">erDiagram
+    Runner ||--|{ Generator : Runs
+    Runner ||--|{ Computation : Runs
+    Runner ||--|{ Translator : Runs
+    Translator ||--|{ Notation : Uses
+    Generator ||--||Notation : Uses
+    Computation ||--||Notation : Uses
+    Generator ||--||Storage : Uses
+    Computation||--||Storage : Uses
+    Translator ||--|| Storage : Uses
+</div>
+</div>
+<div class="slidecolumn">
+<ul>
+<li>Loose coupling</li>
+<li>Highly extensible</li>
+<li>Highly portable</li>
+<li>UI/UX flexability</li>
+</ul>
+</div>
+</div>
 
-            Reveal.configure({ keyboard: keyboard_stat });
-          };
-        }
-      </script>
-    </div>
-  </div>
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="sources">Sources</h2>
+<div style="font-size: .9rem;">
+<ul>
+<li>Dror Bar-Natan <a href="http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf" target="_blank" rel="noopener">The Most Important Missing Infrastructure Project in Knot Theory</a></li>
+<li>Kauffman, L. H., and S. Lambropoulou. &ldquo;From Tangle Fractions to DNA.&rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. <a href="https://doi.org/10.1007/978-3-540-49858-2_5" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-540-49858-2_5</a>.</li>
+<li>Moon, Hyeyoung, and Isabel K. Darcy. &ldquo;Tangle Equations Involving Montesinos Links.&rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. <a href="https://doi.org/10.1142/S0218216521500607" target="_blank" rel="noopener">https://doi.org/10.1142/S0218216521500607</a>.</li>
+<li>Conway, J.H. &ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. <a href="https://doi.org/10.1016/B978-0-08-012975-4.50034-5" target="_blank" rel="noopener">https://doi.org/10.1016/B978-0-08-012975-4.50034-5</a>.</li>
+<li>Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001</li>
+</ul>
 </div>
 
     </section>
@@ -210,6 +243,8 @@
   
 
   
+  
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
   
 
   

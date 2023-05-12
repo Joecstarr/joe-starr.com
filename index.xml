@@ -5,7 +5,7 @@
     <link>https://joe-starr.com/</link>
       <atom:link href="https://joe-starr.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Joe Starr</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://joe-starr.com/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_512x512_fill_lanczos_center_3.png</url>
       <title>Joe Starr</title>
@@ -432,59 +432,89 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tanglenomicon</title>
-      <link>https://joe-starr.com/posters/tanglenomicon/</link>
-      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://joe-starr.com/posters/tanglenomicon/</guid>
-      <description>&lt;h2 id=&#34;box-name&#34;&gt;Box Name&lt;/h2&gt;
-&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
-    Alice-&gt;&gt;+John: Hello John, how are you?
-    Alice-&gt;&gt;+John: John, can you hear me?
-    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
-    John--&gt;&gt;-Alice: I feel great!
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;box-name-1&#34;&gt;Box Name&lt;/h2&gt;
-&lt;p&gt;Curabitur elementum tellus mauris, et tristique odio mattis nec. Aenean id pulvinar odio. Phasellus id augue quam. Etiam vel lorem ac lacus molestie dapibus. Vestibulum ullamcorper fringilla mi vel maximus. Etiam maximus laoreet commodo. Duis mollis risus finibus sapien consectetur, ut rutrum eros molestie.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;box-name-2&#34;&gt;Box Name&lt;/h2&gt;
-&lt;p&gt;Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. Fusce rutrum massa vel elementum viverra. Ut aliquet mauris nec malesuada pellentesque. Nulla non odio tempor, tristique libero nec, tincidunt neque. Donec volutpat neque in neque vulputate semper.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;box-name-3&#34;&gt;Box Name&lt;/h2&gt;
-&lt;p&gt;Maecenas felis lacus, luctus vel lacus ut, finibus vulputate ipsum. Donec pharetra non tellus eget condimentum. Etiam vehicula elementum ipsum sed imperdiet. Proin nibh metus, efficitur vitae est sed, porta posuere dui.
-$\lim _{x \rightarrow 8} \frac{x^2-36}{x+6} \times \lim _{x \rightarrow 0} \frac{e^{12 x}-1}{x}+-10 e^{\pi i}$ Suspendisse eu lacus nisi. Cras sodales lacus at libero vehicula, sit amet pulvinar mauris consectetur. Mauris vel lorem eget turpis iaculis condimentum sit amet quis diam.&lt;/p&gt;
-&lt;p&gt;$$
-\left(\lim _{x \rightarrow 19} \frac{x^2-100}{x+10}-\left(\cos ^2 x+\sin ^2 x\right)\right)
-$$&lt;/p&gt;
-&lt;p&gt;Nulla quis sagittis nulla, eget tincidunt sem. Suspendisse viverra, orci ut pharetra volutpat, libero mi dictum augue, non dapibus elit massa nec justo. Praesent eu metus efficitur, feugiat urna non, elementum ligula. Curabitur ullamcorper justo nibh, quis ornare odio tristique non.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;box-name-4&#34;&gt;Box Name&lt;/h2&gt;
-&lt;div class=&#34;mermaid&#34;&gt;        graph TD
-          A[Christmas] --&gt;|Get money| B(Go shopping)
-          B --&gt; C{Let me think}
-          B --&gt; G[/Another/]
-          C ==&gt;|One| D[Laptop]
-          C --&gt;|Two| E[iPhone]
-          C --&gt;|Three| F[fa:fa-car Car]
-          subgraph section
-            C
-            D
-            E
-            F
-            G
-          end
+      <title>Tangled in Knot Theory</title>
+      <link>https://joe-starr.com/slides/lightning/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/slides/lightning/</guid>
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
-  %% Class Definitions
-    %% =================
-    class A cssClass;
-    classDef cssClass fill:#f9f,stroke:#333,stroke-width:4px, font-size:15px;
+
+&lt;p hidden&gt;
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
+  \require{color}$`
+  &lt;/p&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;tanglenomicon&#34;&gt;Tanglenomicon&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tangle-tabulation&#34;&gt;Tangle tabulation&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;The Most Important Missing Infrastructure Project in Knot Theory&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Dr. Dror Bar-Natan
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;building-up&#34;&gt;Building Up&lt;/h2&gt;
+&lt;p&gt;Two string tangle tabulation as &amp;ldquo;plug and chug&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;flowchart LR
+    R(&#34;Rational Tangles\nClassified ✔️&#34;)
+    M(&#34;Montesinos Tangles\nClassified ✔️&#34;)
+    A(&#34;Algebraic Tangles\nClassified ❌&#34;)
+    R--&gt;M--&gt;A
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;box-name-5&#34;&gt;Box Name&lt;/h2&gt;
-&lt;p&gt;Curabitur elementum tellus mauris, et tristique odio mattis nec. Aenean id pulvinar odio. Phasellus id augue quam. Etiam vel lorem ac lacus molestie dapibus. Vestibulum ullamcorper fringilla mi vel maximus. Etiam maximus laoreet commodo. Duis mollis risus finibus sapien consectetur, ut rutrum eros molestie. Nam et eros id risus pretium suscipit ac non velit. Mauris finibus nisl purus, et ullamcorper ipsum vehicula in. Donec non viverra felis.&lt;/p&gt;
+&lt;p&gt;@@@TODO: picture/animation of building up.&lt;/p&gt;
+&lt;h3 id=&#34;conway-notation&#34;&gt;Conway Notation&lt;/h3&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;box-name-6&#34;&gt;Box Name&lt;/h2&gt;
-&lt;p&gt;Nulla molestie magna sit amet libero sollicitudin, vitae mollis lectus viverra. Fusce rutrum massa vel elementum viverra. Ut aliquet mauris nec malesuada pellentesque. Nulla non odio tempor, tristique libero nec, tincidunt neque. Donec volutpat neque in neque vulputate semper. Etiam aliquet nulla nec justo condimentum, ornare pretium elit tincidunt. Morbi rutrum et augue non suscipit. Aliquam condimentum lobortis turpis et consequat. Pellentesque in odio vehicula, maximus nunc eget, convallis metus.&lt;/p&gt;
+&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+&lt;div class=&#34;mermaid&#34;&gt;erDiagram
+    Runner ||--|{ Generator : Runs
+    Runner ||--|{ Computation : Runs
+    Runner ||--|{ Translator : Runs
+    Translator ||--|{ Notation : Uses
+    Generator ||--||Notation : Uses
+    Computation ||--||Notation : Uses
+    Generator ||--||Storage : Uses
+    Computation||--||Storage : Uses
+    Translator ||--|| Storage : Uses
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Loose coupling&lt;/li&gt;
+&lt;li&gt;Highly extensible&lt;/li&gt;
+&lt;li&gt;Highly portable&lt;/li&gt;
+&lt;li&gt;UI/UX flexability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;div style=&#34;font-size: .9rem;&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Dror Bar-Natan &lt;a href=&#34;http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Most Important Missing Infrastructure Project in Knot Theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kauffman, L. H., and S. Lambropoulou. &amp;ldquo;From Tangle Fractions to DNA.&amp;rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. &lt;a href=&#34;https://doi.org/10.1007/978-3-540-49858-2_5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1007/978-3-540-49858-2_5&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Moon, Hyeyoung, and Isabel K. Darcy. &amp;ldquo;Tangle Equations Involving Montesinos Links.&amp;rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. &lt;a href=&#34;https://doi.org/10.1142/S0218216521500607&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1142/S0218216521500607&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Conway, J.H. &amp;ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&amp;rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. &lt;a href=&#34;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -534,31 +564,21 @@ $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/bands/Band.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/bands/Band.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_7.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_7.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -600,31 +620,21 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;hr&gt;
 &lt;h3 id=&#34;attaching-bands&#34;&gt;Attaching bands&lt;/h3&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_4.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_4.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_5.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_5.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -649,34 +659,24 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;hr&gt;
 &lt;h2 id=&#34;bands&#34;&gt;Bands&lt;/h2&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_7.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_7.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34;&gt;
-$$\to$$
+&lt;div class=&#34;slidecolumn&#34; style=&#34;flex-grow: 0;&#34;&gt;
+&lt;p&gt;$$\to$$&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/bands/Band.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/bands/Band.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -745,22 +745,17 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;p&gt;We take the smallest genus of possible Seifert surfaces for a link as &lt;strong&gt;the
 genus of the link&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;computing-the-genus-of-a-surface&#34;&gt;Computing the genus of a surface&lt;/h2&gt;
+&lt;h3 id=&#34;computing-the-genus-of-a-surface&#34;&gt;Computing the genus of a surface&lt;/h3&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-&lt;span style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;flex-grow: 0; font-size: 2rem;}&#34;&gt;
+&lt;!-- style=&#34;
 font-size: 150% !important;
 align-items: center;
 text-align: center;
 display: block;
 margin-left: auto;
-margin-right: auto;&#34;&gt;
-$2g=2-s-n+c$
-&lt;/span&gt;
+margin-right: auto;&#34; --&gt;
+&lt;p&gt;$2g=2-s-n+c$&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$g$: Genus&lt;/li&gt;
 &lt;li&gt;$s$: Number of Seifert circles&lt;/li&gt;
@@ -768,14 +763,13 @@ $2g=2-s-n+c$
 &lt;li&gt;$c$: Number of Crossings&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_7.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_7.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -783,30 +777,24 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;hr&gt;
 &lt;h2 id=&#34;link-crossings&#34;&gt;Link Crossings&lt;/h2&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/crossing/Crossing_&amp;#43;.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/crossing/Crossing_&amp;#43;.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn&#34; style=&#34;
 align-items: left;
 font-size: x-large;
 min-width:50% !important;&#34;&gt;
-
-&lt;img style=&#34;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/crossing/Crossing_-.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/crossing/Crossing_-.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -903,27 +891,18 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_P
 &lt;hr&gt;
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
-
-&lt;img style=&#34;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;padding: 1rem;&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/bands/Band.svg&#34;/&gt;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/bands/Band.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34;&gt;
-$$\to$$
+&lt;div class=&#34;slidecolumn&#34; style=&#34;flex-grow: 0;&#34;&gt;
+&lt;p&gt;$$\to$$&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34;flex-grow: 0;&#34;&gt;
 &lt;!-- A_{rc} --&gt;
 &lt;!--
 

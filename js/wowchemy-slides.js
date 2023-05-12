@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var slides = { highlight_style: "dracula", reveal_options: ["RevealMarkdown", "RevealSearch", "RevealNotes", "RevealZoom"] };
+  var slides = { diagram: true, diagram_options: { theme: "dark" }, highlight_style: "dracula" };
 
   // <stdin>
   var enabledPlugins = [RevealMarkdown, RevealSearch, RevealNotes, RevealZoom];

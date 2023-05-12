@@ -37,41 +37,36 @@
   
   
   
-  
-<script type="text/javascript" id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
     if (typeof MathJax === 'undefined') {
-    MathJax = {
-      loader: {
-          load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
-          paths: {img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3'}
-      },
-      tex: {
-        inlineMath: [["$", "$"], ["\\(", "\\)"]],
-        displayMath: [["$$","$$"], ["\\[", "\\]"]],
-        processEscapes: true,
-        processEnvironments: true,
-        extensions: ["autoload-all.js","AMSmath.js", "AMSsymbols.js","AMScd.js"],
-        packages: {'[+]': ['img','color','amscd']}
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-      }
-    };
+        MathJax = {
+            loader: {
+                load: ['[img]/img.min.js', '[tex]/color', '[tex]/amscd'],
+                paths: { img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3' }
+            },
+            tex: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+                processEscapes: true,
+                processEnvironments: true,
+                extensions: ["autoload-all.js", "AMSmath.js", "AMSsymbols.js", "AMScd.js"],
+                packages: { '[+]': ['img', 'color', 'amscd'] }
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
 
-    window.addEventListener('load', (event) => {
-        document.querySelectorAll("mjx-container").forEach(function(x){
-          x.parentElement.classList += 'has-jax'})
-      });
+        window.addEventListener('load', (event) => {
+            document.querySelectorAll("mjx-container").forEach(function (x) {
+                x.parentElement.classList += 'has-jax'
+            })
+        });
     }
 
-  </script>
-  <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true });
-    </script>
-
+</script>
 
 </head>
 <body>
@@ -156,31 +151,21 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
 <h3 id="examples">Examples</h3>
 <div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/></p>
 </div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/></p>
 </div>
 </div>
 
@@ -276,31 +261,21 @@ height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_3.svg"/>
       
 <h3 id="attaching-bands">Attaching bands</h3>
 <div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_4.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_4.svg"/></p>
 </div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_5.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_5.svg"/></p>
 </div>
 </div>
 
@@ -361,34 +336,24 @@ height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_6.svg"/>
       
 <h2 id="bands">Bands</h2>
 <div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/></p>
 </div>
-<div class="slidecolumn">
-$$\to$$
+<div class="slidecolumn" style="flex-grow: 0;">
+<p>$$\to$$</p>
 </div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/></p>
 </div>
 </div>
 
@@ -547,22 +512,17 @@ genus of the link</strong>.</p>
     <section>
     
       
-<h2 id="computing-the-genus-of-a-surface">Computing the genus of a surface</h2>
+<h3 id="computing-the-genus-of-a-surface">Computing the genus of a surface</h3>
 <div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-<span style="
+<div class="slidecolumn" style="flex-grow: 0; font-size: 2rem;}">
+<!-- style="
 font-size: 150% !important;
 align-items: center;
 text-align: center;
 display: block;
 margin-left: auto;
-margin-right: auto;">
-$2g=2-s-n+c$
-</span>
+margin-right: auto;" -->
+<p>$2g=2-s-n+c$</p>
 <ol>
 <li>$g$: Genus</li>
 <li>$s$: Number of Seifert circles</li>
@@ -570,14 +530,13 @@ $2g=2-s-n+c$
 <li>$c$: Number of Crossings</li>
 </ol>
 </div>
-<div class="slidecolumn">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/></p>
 </div>
 </div>
 
@@ -603,30 +562,24 @@ height:auto !important;" src="/presentations/Alex_Poly/alg/Alg_7.svg"/>
       
 <h2 id="link-crossings">Link Crossings</h2>
 <div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/crossing/Crossing_&#43;.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/crossing/Crossing_&#43;.svg"/></p>
 </div>
 <div class="slidecolumn" style="
 align-items: left;
 font-size: x-large;
 min-width:50% !important;">
-
-<img style="
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/crossing/Crossing_-.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/crossing/Crossing_-.svg"/></p>
 </div>
 </div>
 
@@ -822,27 +775,18 @@ height:auto !important;" src="/presentations/Alex_Poly/bands/ii_loops.svg"/>
       
 <h2 id="example">Example</h2>
 <div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-
-<img style="
+<div class="slidecolumn" style="padding: 1rem;">
+<p><img style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
-height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/>
+height:auto !important;" src="/presentations/Alex_Poly/bands/Band.svg"/></p>
 </div>
-<div class="slidecolumn">
-$$\to$$
+<div class="slidecolumn" style="flex-grow: 0;">
+<p>$$\to$$</p>
 </div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+<div class="slidecolumn" style="flex-grow: 0;">
 <!-- A_{rc} -->
 <!--
 
@@ -1211,6 +1155,7 @@ font-size: medium;
   
   
   <script src="/js/wowchemy-slides.js"></script>
+  
 
 </body>
 </html>
