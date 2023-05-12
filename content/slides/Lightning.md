@@ -42,7 +42,6 @@ flowchart LR
     R-->M-->A
 ```
 
-
 ---
 
 ## Design
@@ -83,19 +82,7 @@ erDiagram
 
 ## Conway Notation
 
-```mermaid
-%%{init: { 'logLevel': 'debug'} }%%
-erDiagram
-    Runner ||--|{ Generator : Runs
-    Runner ||--|{ Computation : Runs
-    Runner ||--|{ Translator : Runs
-    Translator ||--|{ Notation : Uses
-    Generator ||--||Notation : Uses
-    Computation ||--||Notation : Uses
-    Generator ||--||Storage : Uses
-    Computation||--||Storage : Uses
-    Translator ||--|| Storage : Uses
-```
+- [ ] picture
 
 ---
 
