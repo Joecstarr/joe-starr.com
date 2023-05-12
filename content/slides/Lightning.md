@@ -25,8 +25,11 @@ slides:
 
 ## Tangle tabulation
 
+```
 "The Most Important Missing Infrastructure Project in Knot Theory"
+
 -Dr. Dror Bar-Natan
+```
 
 ---
 
@@ -44,10 +47,19 @@ flowchart LR
 
 ---
 
+@@@TODO: picture/animation of building up.
+
+### Conway Notation
+
+---
+
 ## Design
 
+{{% slides/row %}}
+
+{{% slides/col %}}
+
 ```mermaid
-%%{init: { 'logLevel': 'debug'} }%%
 erDiagram
     Runner ||--|{ Generator : Runs
     Runner ||--|{ Computation : Runs
@@ -60,29 +72,17 @@ erDiagram
     Translator ||--|| Storage : Uses
 ```
 
----
+{{% /slides/col %}}
+{{% slides/col  %}}
 
-## Loose coupling of components
+- Loose coupling
+- Highly extensible
+- Highly portable
+- UI/UX flexability
 
-```mermaid
-%%{init: { 'logLevel': 'debug'} }%%
-erDiagram
-    Runner ||--|{ Generator : Runs
-    Runner ||--|{ Computation : Runs
-    Runner ||--|{ Translator : Runs
-    Translator ||--|{ Notation : Uses
-    Generator ||--||Notation : Uses
-    Computation ||--||Notation : Uses
-    Generator ||--||Storage : Uses
-    Computation||--||Storage : Uses
-    Translator ||--|| Storage : Uses
-```
+{{% /slides/col %}}
 
----
-
-## Conway Notation
-
-- [ ] picture
+{{% /slides/row %}}
 
 ---
 
@@ -95,6 +95,5 @@ erDiagram
 - Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
 - Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
 - Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
-
 
 {{% /slides/citations %}}

@@ -400,6 +400,7 @@ section.has-light-background h6 {
 
 .mermaid > svg {
     max-width: none !important;
-    min-height: 40vh;
+    width: 100% !important;
+    height: auto !important;
     font-size: 0.8rem !important;
 }
