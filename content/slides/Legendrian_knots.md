@@ -17,8 +17,8 @@ slides:
   ]
 ---
 
-{{<dracula_css>}}
-{{<mathjax_preamble>}}
+{{< dracula_css >}}
+{{< mathjax_preamble >}}
 
 
 

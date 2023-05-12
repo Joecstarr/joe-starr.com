@@ -17,9 +17,9 @@ slides:
   ]
 ---
 
-{{<canvas_head>}}
-{{<dracula_css>}}
-{{<mathjax_preamble>}}
+{{< canvas_head >}}
+{{< dracula_css >}}
+{{< mathjax_preamble >}}
 
 
 # Discrete Morse Theory

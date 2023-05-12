@@ -14,9 +14,9 @@ slides:
 ---
 
 <!-- {{<cuscss>}} -->
-{{<dracula_css>}}
-{{<mathjax_preamble>}}
-{{<canvas_head>}}
+{{< dracula_css >}}
+{{< mathjax_preamble >}}
+{{< canvas_head >}}
 
 <!-- # Draft
 
@@ -35,22 +35,21 @@ slides:
 
 ### Examples
 
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+{{% slides/row %}}
+
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+
+{{% /slides/col %}}
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
-</div>
-</div>
+
+{{% /slides/col %}}
+{{% /slides/row %}}
 
 ---
 
@@ -88,22 +87,20 @@ given link projection.
 ---
 
 ### Attaching bands
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+{{% slides/row %}}
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_4.svg" 500>}}
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+
+{{% /slides/col %}}
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_5.svg" 500>}}
-</div>
-</div>
+
+{{% /slides/col %}}
+{{% /slides/row %}}
 
 ---
 
@@ -128,25 +125,26 @@ min-width:50% !important;
 
 ## Bands
 
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+{{% slides/row %}}
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
-</div>
-<div class="slidecolumn">
+
+{{% /slides/col %}}
+{{% slides/col style="flex-grow: 0;" %}}
+
 $$\to$$
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+
+{{% /slides/col %}}
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
-</div>
-</div>
+
+{{% /slides/col %}}
+{{% /slides/row %}}
+
 
 ---
 
@@ -193,34 +191,31 @@ genus of the link**.
 
 ---
 
-## Computing the genus of a surface
+### Computing the genus of a surface
 
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-<span style="
+{{% slides/row %}}
+{{% slides/col style="flex-grow: 0; font-size: 2rem;}"%}}
+
+<!-- style="
 font-size: 150% !important;
 align-items: center;
 text-align: center;
 display: block;
 margin-left: auto;
-margin-right: auto;">
+margin-right: auto;" -->
 $2g=2-s-n+c$
-</span>
-<ol>
-<li>$g$: Genus</li>
-<li>$s$: Number of Seifert circles</li>
-<li>$n$: Number of components</li>
-<li>$c$: Number of Crossings</li>
-</ol>
-</div>
-<div class="slidecolumn">
+1. $g$: Genus
+2. $s$: Number of Seifert circles
+3. $n$: Number of components
+4. $c$: Number of Crossings
+
+{{% /slides/col %}}
+{{% slides/col style="padding: 1rem;" %}}
+
 {{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
-</div>
-</div>
+
+{{% /slides/col %}}
+{{% /slides/row %}}
 
 ---
 
@@ -232,21 +227,20 @@ $2g=2-s-n+c$
 ## Link Crossings
 
 
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+{{% slides/row %}}
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/crossing/Crossing_+.svg" 500>}}
-</div>
+
+{{% /slides/col %}}
 <div class="slidecolumn" style="
 align-items: left;
 font-size: x-large;
 min-width:50% !important;">
 {{<centerimg "/presentations/Alex_Poly/crossing/Crossing_-.svg" 500>}}
 </div>
-</div>
+{{% /slides/row %}}
 
 ---
 
@@ -331,22 +325,21 @@ $$\begin{bmatrix}
 
 ## Example
 
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+{{% slides/row %}}
+{{% slides/col style="padding: 1rem;" %}}
+
+
 {{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
-</div>
-<div class="slidecolumn">
+
+{{% /slides/col %}}
+{{% slides/col style="flex-grow: 0;" %}}
+
 $$\to$$
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
+
+{{% /slides/col %}}
+{{% slides/col style="flex-grow: 0;" %}}
+
+
 
 <!-- A_{rc} -->
 <!--
@@ -364,8 +357,9 @@ $$\begin{bmatrix}
 0 & -1 & 0 & 1\\\\
 \end{bmatrix}
 $$
-</div>
-</div>
+
+{{% /slides/col %}}
+{{% /slides/row %}}
 <!-- $$1-3t+3t^2-3t^3+t^4$$
 $$-t^4+3 t^3-3 t^2+3 t-1$$ -->
 
