@@ -29,6 +29,9 @@ education:
     - course: PhD in Mathematics
       institution: University of Iowa
       year: Fall 2021 - Present
+    - course: MS in Mathematics
+      institution: University of Iowa
+      year: Fall 2021 - Spring 2023
     - course: Bachelor of Science in Computer Science
       institution: University of Michigan - Dearborn
       year: Fall 2013 - Fall 2016
