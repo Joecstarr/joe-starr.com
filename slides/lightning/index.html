@@ -164,21 +164,10 @@ height:auto !important;" src="/presentations/lightning/Untitled2.svg"/>
 <div class="mermaid">flowchart LR
     R("Rational Tangles\nClassified ✔️")
     M("Montesinos Tangles\nClassified ✔️")
+    G("Generalized Montesinos Tangles\nClassified ✔️")
     A("Algebraic Tangles\nClassified ❌")
-    R-->M-->A
+    R-->M-->G-->A
 </div>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<p>@@@TODO: picture/animation of building up.</p>
-<h3 id="conway-notation">Conway Notation</h3>
 
     </section>
     
@@ -190,8 +179,6 @@ height:auto !important;" src="/presentations/lightning/Untitled2.svg"/>
     
       
 <h2 id="design">Design</h2>
-<div class="sliderow">
-<div class="slidecolumn">
 <div class="mermaid">erDiagram
     Runner ||--|{ Generator : Runs
     Runner ||--|{ Computation : Runs
@@ -202,16 +189,6 @@ height:auto !important;" src="/presentations/lightning/Untitled2.svg"/>
     Generator ||--||Storage : Uses
     Computation||--||Storage : Uses
     Translator ||--|| Storage : Uses
-</div>
-</div>
-<div class="slidecolumn">
-<ul>
-<li>Loose coupling</li>
-<li>Highly extensible</li>
-<li>Highly portable</li>
-<li>UI/UX flexability</li>
-</ul>
-</div>
 </div>
 
     </section>

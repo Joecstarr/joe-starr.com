@@ -62,16 +62,12 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightn
 &lt;div class=&#34;mermaid&#34;&gt;flowchart LR
     R(&#34;Rational Tangles\nClassified ✔️&#34;)
     M(&#34;Montesinos Tangles\nClassified ✔️&#34;)
+    G(&#34;Generalized Montesinos Tangles\nClassified ✔️&#34;)
     A(&#34;Algebraic Tangles\nClassified ❌&#34;)
-    R--&gt;M--&gt;A
+    R--&gt;M--&gt;G--&gt;A
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;@@@TODO: picture/animation of building up.&lt;/p&gt;
-&lt;h3 id=&#34;conway-notation&#34;&gt;Conway Notation&lt;/h3&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;
-&lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34;&gt;
 &lt;div class=&#34;mermaid&#34;&gt;erDiagram
     Runner ||--|{ Generator : Runs
     Runner ||--|{ Computation : Runs
@@ -82,16 +78,6 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightn
     Generator ||--||Storage : Uses
     Computation||--||Storage : Uses
     Translator ||--|| Storage : Uses
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;Loose coupling&lt;/li&gt;
-&lt;li&gt;Highly extensible&lt;/li&gt;
-&lt;li&gt;Highly portable&lt;/li&gt;
-&lt;li&gt;UI/UX flexability&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
