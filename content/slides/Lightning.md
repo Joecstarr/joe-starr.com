@@ -41,23 +41,14 @@ Two string tangle tabulation as "plug and chug"
 flowchart LR
     R("Rational Tangles\nClassified ✔️")
     M("Montesinos Tangles\nClassified ✔️")
+    G("Generalized Montesinos Tangles\nClassified ✔️")
     A("Algebraic Tangles\nClassified ❌")
-    R-->M-->A
+    R-->M-->G-->A
 ```
 
 ---
 
-@@@TODO: picture/animation of building up.
-
-### Conway Notation
-
----
-
 ## Design
-
-{{% slides/row %}}
-
-{{% slides/col %}}
 
 ```mermaid
 erDiagram
@@ -71,18 +62,6 @@ erDiagram
     Computation||--||Storage : Uses
     Translator ||--|| Storage : Uses
 ```
-
-{{% /slides/col %}}
-{{% slides/col  %}}
-
-- Loose coupling
-- Highly extensible
-- Highly portable
-- UI/UX flexability
-
-{{% /slides/col %}}
-
-{{% /slides/row %}}
 
 ---
 
