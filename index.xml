@@ -468,6 +468,14 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Dr. Dror Bar-Natan
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+
+&lt;img style=&#34;
+max-width:500px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightning/Untitled2.svg&#34;/&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;building-up&#34;&gt;Building Up&lt;/h2&gt;
 &lt;p&gt;Two string tangle tabulation as &amp;ldquo;plug and chug&amp;rdquo;&lt;/p&gt;
 &lt;div class=&#34;mermaid&#34;&gt;flowchart LR
