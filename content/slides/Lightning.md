@@ -33,6 +33,10 @@ slides:
 
 ---
 
+{{<centerimg "/presentations/lightning/Untitled2.svg" 500>}}
+
+---
+
 ## Building Up
 
 Two string tangle tabulation as "plug and chug"
