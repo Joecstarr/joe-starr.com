@@ -234,12 +234,10 @@ $2g=2-s-n+c$
 {{<centerimg "/presentations/Alex_Poly/crossing/Crossing_+.svg" 500>}}
 
 {{% /slides/col %}}
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;">
+{{% slides/col style=" align-items: left; font-size: x-large; min-width:50% !important;" %}}
 {{<centerimg "/presentations/Alex_Poly/crossing/Crossing_-.svg" 500>}}
 </div>
+{{% /slides/col %}}
 {{% /slides/row %}}
 
 ---

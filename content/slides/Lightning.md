@@ -19,11 +19,8 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-# Tanglenomicon
-
----
-
-## Tangle tabulation
+## The Tanglenomicon
+### Tangle tabulation
 
 ```
 "The Most Important Missing Infrastructure Project in Knot Theory"
@@ -33,27 +30,35 @@ slides:
 
 ---
 
-{{<centerimg "/presentations/lightning/Untitled2.svg" 500>}}
-
----
-
 ## Building Up
 
-Two string tangle tabulation as "plug and chug"
-
 ```mermaid
-flowchart LR
-    R("Rational Tangles\nClassified ✔️")
-    M("Montesinos Tangles\nClassified ✔️")
-    G("Generalized Montesinos Tangles\nClassified ✔️")
-    A("Algebraic Tangles\nClassified ❌")
-    R-->M-->G-->A
+flowchart TD
+R("Rational Tangles")
+M("Montesinos Tangles")
+G("Generalized Montesinos Tangles")
+A("Algebraic Tangles")
+P("Polygonal Tangles")
+
+subgraph C["Classified ✔️"]
+direction LR
+  R --> M --> G
+end
+
+subgraph NC["Classified ❌"]
+direction LR
+    A --> P
+end
+C --> NC
 ```
 
 ---
 
-## Design
+### Architecture
 
+
+{{% slides/row %}}
+{{% slides/col style=" max-width: 80% !important; font-size: 2rem; "%}}
 ```mermaid
 erDiagram
     Runner ||--|{ Generator : Runs
@@ -66,8 +71,10 @@ erDiagram
     Computation||--||Storage : Uses
     Translator ||--|| Storage : Uses
 ```
+{{% /slides/col %}}
+{{% /slides/row %}}
 
----
+<!-- ---
 
 ## Sources
 
@@ -79,4 +86,4 @@ erDiagram
 - Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
 - Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
 
-{{% /slides/citations %}}
+{{% /slides/citations %}} -->
