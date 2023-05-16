@@ -461,32 +461,35 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
   \require{color}$`
   &lt;/p&gt;
 &lt;/p&gt;
-&lt;h1 id=&#34;tanglenomicon&#34;&gt;Tanglenomicon&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;tangle-tabulation&#34;&gt;Tangle tabulation&lt;/h2&gt;
+&lt;h2 id=&#34;the-tanglenomicon&#34;&gt;The Tanglenomicon&lt;/h2&gt;
+&lt;h3 id=&#34;tangle-tabulation&#34;&gt;Tangle tabulation&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;The Most Important Missing Infrastructure Project in Knot Theory&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Dr. Dror Bar-Natan
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-
-&lt;img style=&#34;
-max-width:500px !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightning/Untitled2.svg&#34;/&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;building-up&#34;&gt;Building Up&lt;/h2&gt;
-&lt;p&gt;Two string tangle tabulation as &amp;ldquo;plug and chug&amp;rdquo;&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;flowchart LR
-    R(&#34;Rational Tangles\nClassified ✔️&#34;)
-    M(&#34;Montesinos Tangles\nClassified ✔️&#34;)
-    G(&#34;Generalized Montesinos Tangles\nClassified ✔️&#34;)
-    A(&#34;Algebraic Tangles\nClassified ❌&#34;)
-    R--&gt;M--&gt;G--&gt;A
+&lt;div class=&#34;mermaid&#34;&gt;flowchart TD
+R(&#34;Rational Tangles&#34;)
+M(&#34;Montesinos Tangles&#34;)
+G(&#34;Generalized Montesinos Tangles&#34;)
+A(&#34;Algebraic Tangles&#34;)
+P(&#34;Polygonal Tangles&#34;)
+
+subgraph C[&#34;Classified ✔️&#34;]
+direction LR
+  R --&gt; M --&gt; G
+end
+
+subgraph NC[&#34;Classified ❌&#34;]
+direction LR
+    A --&gt; P
+end
+C --&gt; NC
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;
+&lt;h3 id=&#34;architecture&#34;&gt;Architecture&lt;/h3&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34; max-width: 80% !important; font-size: 2rem; &#34;&gt;
 &lt;div class=&#34;mermaid&#34;&gt;erDiagram
     Runner ||--|{ Generator : Runs
     Runner ||--|{ Computation : Runs
@@ -498,17 +501,24 @@ height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightn
     Computation||--||Storage : Uses
     Translator ||--|| Storage : Uses
 &lt;/div&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
-&lt;div style=&#34;font-size: .9rem;&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;Dror Bar-Natan &lt;a href=&#34;http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Most Important Missing Infrastructure Project in Knot Theory&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Kauffman, L. H., and S. Lambropoulou. &amp;ldquo;From Tangle Fractions to DNA.&amp;rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. &lt;a href=&#34;https://doi.org/10.1007/978-3-540-49858-2_5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1007/978-3-540-49858-2_5&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Moon, Hyeyoung, and Isabel K. Darcy. &amp;ldquo;Tangle Equations Involving Montesinos Links.&amp;rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. &lt;a href=&#34;https://doi.org/10.1142/S0218216521500607&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1142/S0218216521500607&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Conway, J.H. &amp;ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&amp;rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. &lt;a href=&#34;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- ---
+
+## Sources
+
+&lt;div style=&#34;font-size: .9rem;&#34;&gt;
+    
+
+- Dror Bar-Natan [The Most Important Missing Infrastructure Project in Knot Theory](http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf)
+- Kauffman, L. H., and S. Lambropoulou. &#34;From Tangle Fractions to DNA.&#34; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. [https://doi.org/10.1007/978-3-540-49858-2_5](https://doi.org/10.1007/978-3-540-49858-2_5).
+- Moon, Hyeyoung, and Isabel K. Darcy. &#34;Tangle Equations Involving Montesinos Links.&#34; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
+- Conway, J.H. &#34;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&#34; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
+- Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+
+
+&lt;/div&gt;
+ --&gt;
 </description>
     </item>
     
@@ -779,16 +789,14 @@ margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/crossing/Crossing_&amp;#43;.svg&#34;/&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34;
-align-items: left;
-font-size: x-large;
-min-width:50% !important;&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34; align-items: left; font-size: x-large; min-width:50% !important;&#34;&gt;
 &lt;p&gt;&lt;img style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/crossing/Crossing_-.svg&#34;/&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;

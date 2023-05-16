@@ -117,18 +117,8 @@
   \require{color}$`
   </p>
 </p>
-<h1 id="tanglenomicon">Tanglenomicon</h1>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<h2 id="tangle-tabulation">Tangle tabulation</h2>
+<h2 id="the-tanglenomicon">The Tanglenomicon</h2>
+<h3 id="tangle-tabulation">Tangle tabulation</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;The Most Important Missing Infrastructure Project in Knot Theory&#34;
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">-Dr. Dror Bar-Natan
@@ -142,31 +132,24 @@
     <section>
     
       
-
-<img style="
-max-width:500px !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-height:auto !important;" src="/presentations/lightning/Untitled2.svg"/>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
 <h2 id="building-up">Building Up</h2>
-<p>Two string tangle tabulation as &ldquo;plug and chug&rdquo;</p>
-<div class="mermaid">flowchart LR
-    R("Rational Tangles\nClassified ✔️")
-    M("Montesinos Tangles\nClassified ✔️")
-    G("Generalized Montesinos Tangles\nClassified ✔️")
-    A("Algebraic Tangles\nClassified ❌")
-    R-->M-->G-->A
+<div class="mermaid">flowchart TD
+R("Rational Tangles")
+M("Montesinos Tangles")
+G("Generalized Montesinos Tangles")
+A("Algebraic Tangles")
+P("Polygonal Tangles")
+
+subgraph C["Classified ✔️"]
+direction LR
+  R --> M --> G
+end
+
+subgraph NC["Classified ❌"]
+direction LR
+    A --> P
+end
+C --> NC
 </div>
 
     </section>
@@ -178,7 +161,9 @@ height:auto !important;" src="/presentations/lightning/Untitled2.svg"/>
     <section>
     
       
-<h2 id="design">Design</h2>
+<h3 id="architecture">Architecture</h3>
+<div class="sliderow">
+<div class="slidecolumn" style=" max-width: 80% !important; font-size: 2rem; ">
 <div class="mermaid">erDiagram
     Runner ||--|{ Generator : Runs
     Runner ||--|{ Computation : Runs
@@ -190,26 +175,24 @@ height:auto !important;" src="/presentations/lightning/Untitled2.svg"/>
     Computation||--||Storage : Uses
     Translator ||--|| Storage : Uses
 </div>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<h2 id="sources">Sources</h2>
-<div style="font-size: .9rem;">
-<ul>
-<li>Dror Bar-Natan <a href="http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf" target="_blank" rel="noopener">The Most Important Missing Infrastructure Project in Knot Theory</a></li>
-<li>Kauffman, L. H., and S. Lambropoulou. &ldquo;From Tangle Fractions to DNA.&rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. <a href="https://doi.org/10.1007/978-3-540-49858-2_5" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-540-49858-2_5</a>.</li>
-<li>Moon, Hyeyoung, and Isabel K. Darcy. &ldquo;Tangle Equations Involving Montesinos Links.&rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. <a href="https://doi.org/10.1142/S0218216521500607" target="_blank" rel="noopener">https://doi.org/10.1142/S0218216521500607</a>.</li>
-<li>Conway, J.H. &ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. <a href="https://doi.org/10.1016/B978-0-08-012975-4.50034-5" target="_blank" rel="noopener">https://doi.org/10.1016/B978-0-08-012975-4.50034-5</a>.</li>
-<li>Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001</li>
-</ul>
 </div>
+</div>
+<!-- ---
+
+## Sources
+
+<div style="font-size: .9rem;">
+    
+
+- Dror Bar-Natan [The Most Important Missing Infrastructure Project in Knot Theory](http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf)
+- Kauffman, L. H., and S. Lambropoulou. "From Tangle Fractions to DNA." In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. [https://doi.org/10.1007/978-3-540-49858-2_5](https://doi.org/10.1007/978-3-540-49858-2_5).
+- Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
+- Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
+- Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+
+
+</div>
+ -->
 
     </section>
     
