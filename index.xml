@@ -461,6 +461,492 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
   \require{color}$`
   &lt;/p&gt;
 &lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+     
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+&lt;/style&gt;
+&lt;div id=&#34;hidden&#34; style=&#34;display:none;&#34;&gt;
+    &lt;div id=&#34;header&#34;&gt;
+        &lt;div id=&#34;header-right&#34;&gt;
+&lt;div class=&#34;qr_Code&#34;&gt;
+    &lt;svg width=&#34;150&#34; height=&#34;150&#34; viewBox=&#34;0 0 296 296&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;
+        xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; xmlns:ev=&#34;http://www.w3.org/2001/xml-events&#34;&gt;
+        &lt;rect x=&#34;0&#34; y=&#34;0&#34; width=&#34;296&#34; height=&#34;296&#34; fill=&#34;#282a36&#34; /&gt;
+        &lt;defs&gt;
+            &lt;rect id=&#34;p&#34; width=&#34;8&#34; height=&#34;8&#34; /&gt;
+        &lt;/defs&gt;
+        &lt;g fill=&#34;#f8f8f2&#34;&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;40&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;48&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;56&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;64&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;72&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;80&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;88&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;88&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;88&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;88&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;96&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;104&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;112&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;120&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;128&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;136&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;136&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;136&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;136&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;136&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;136&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;136&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;144&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;152&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;160&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;168&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;176&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;184&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;88&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;192&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;200&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;112&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;208&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;144&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;232&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;216&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;208&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;224&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;176&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;216&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;232&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;192&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;224&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;240&#34; y=&#34;256&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;120&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;160&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;240&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;248&#34; y=&#34;248&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;32&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;40&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;48&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;56&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;64&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;72&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;80&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;96&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;104&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;128&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;136&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;152&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;168&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;184&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;200&#34; /&gt;
+            &lt;use xlink:href=&#34;#p&#34; x=&#34;256&#34; y=&#34;224&#34; /&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&#34;https://code.jquery.com/jquery-2.2.4.min.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    
+    var header = $(&#39;#header&#39;).html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( &#39;ready&#39;, function( event ) {
+            $(&#39;.slide-background&#39;).append(header);
+        });
+    }
+    else {
+        $(&#39;div.reveal&#39;).append(header);
+   }
+&lt;/script&gt;
 &lt;h2 id=&#34;the-tanglenomicon&#34;&gt;The Tanglenomicon&lt;/h2&gt;
 &lt;h3 id=&#34;tangle-tabulation&#34;&gt;Tangle tabulation&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;The Most Important Missing Infrastructure Project in Knot Theory&amp;#34;
@@ -468,42 +954,45 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Dr. Dror Bar-Natan
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;building-up&#34;&gt;Building Up&lt;/h2&gt;
-&lt;div class=&#34;mermaid&#34;&gt;flowchart TD
-R(&#34;Rational Tangles&#34;)
-M(&#34;Montesinos Tangles&#34;)
-G(&#34;Generalized Montesinos Tangles&#34;)
-A(&#34;Algebraic Tangles&#34;)
-P(&#34;Polygonal Tangles&#34;)
+&lt;div class=&#34;mermaid&#34;&gt;%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
+flowchart TD
+    R(&#34;Rational Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Rational.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
+    M(&#34;Montesinos Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Mont.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
+    G(&#34;Generalized Montesinos Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/GenMont.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
+    A(&#34;Algebraic Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Alg.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
 
-subgraph C[&#34;Classified ✔️&#34;]
-direction LR
-  R --&gt; M --&gt; G
-end
+    subgraph C[&#34;Classified ✔️&#34;]
+    direction LR
+    R --&gt; M --&gt; G
+    end
 
-subgraph NC[&#34;Classified ❌&#34;]
-direction LR
-    A --&gt; P
-end
-C --&gt; NC
+    subgraph NC[&#34;Classified ❌&#34;]
+    direction LR
+        A
+    end
+    C --&gt; NC
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;architecture&#34;&gt;Architecture&lt;/h3&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
 &lt;div class=&#34;slidecolumn&#34; style=&#34; max-width: 80% !important; font-size: 2rem; &#34;&gt;
-&lt;div class=&#34;mermaid&#34;&gt;erDiagram
-    Runner ||--|{ Generator : Runs
-    Runner ||--|{ Computation : Runs
-    Runner ||--|{ Translator : Runs
-    Translator ||--|{ Notation : Uses
-    Generator ||--||Notation : Uses
-    Computation ||--||Notation : Uses
-    Generator ||--||Storage : Uses
-    Computation||--||Storage : Uses
-    Translator ||--|| Storage : Uses
+&lt;div class=&#34;mermaid&#34;&gt;%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
+flowchart
+    Runner      --&gt;|Runs| Generator
+    Runner      --&gt;|Runs| Computation
+    Runner      --&gt;|Runs| Translator
+    Translator  --&gt;|Uses| Notation
+    Generator   --&gt;|Uses| Notation
+    Computation --&gt;|Uses| Notation
+    Generator   --&gt;|Uses| Storage
+    Computation --&gt;|Uses| Storage
+    Translator  --&gt;|Uses| Storage
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- ---
+flowchart LR
+    A ~~~ B
 
 ## Sources
 

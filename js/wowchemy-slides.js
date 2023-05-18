@@ -54,6 +54,7 @@
       mermaidOptions = slides.diagram_options;
     }
     mermaidOptions["startOnLoad"] = false;
+    mermaidOptions["securityLevel"] = "loose";
     mermaid.initialize(mermaidOptions);
     let renderMermaidDiagrams = function renderMermaidDiagrams2(event) {
       let mermaidDivs = event.currentSlide.querySelectorAll(".mermaid:not(.done)");
