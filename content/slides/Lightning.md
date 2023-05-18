@@ -13,11 +13,14 @@ slides:
   diagram: true
   diagram_options:
     theme: dark
-
 ---
 
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
+
+{{% slides/footer %}}
+{{% qr_code %}}
+{{% /slides/footer %}}
 
 ## The Tanglenomicon
 ### Tangle tabulation
@@ -33,24 +36,25 @@ slides:
 ## Building Up
 
 ```mermaid
+%%{init: {"securityLevel": "loose"}}%%
 flowchart TD
-R("Rational Tangles")
-M("Montesinos Tangles")
-G("Generalized Montesinos Tangles")
-A("Algebraic Tangles")
-P("Polygonal Tangles")
+    R("Rational Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Rational.png' width='60' /&gt;")
+    M("Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Mont.png' width='60' /&gt;")
+    G("Generalized Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/GenMont.png' width='60' /&gt;")
+    A("Algebraic Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Alg.png' width='60' /&gt;")
 
-subgraph C["Classified ✔️"]
-direction LR
-  R --> M --> G
-end
+    subgraph C["Classified ✔️"]
+    direction LR
+    R --> M --> G
+    end
 
-subgraph NC["Classified ❌"]
-direction LR
-    A --> P
-end
-C --> NC
+    subgraph NC["Classified ❌"]
+    direction LR
+        A
+    end
+    C --> NC
 ```
+
 
 ---
 
@@ -59,22 +63,27 @@ C --> NC
 
 {{% slides/row %}}
 {{% slides/col style=" max-width: 80% !important; font-size: 2rem; "%}}
+
 ```mermaid
-erDiagram
-    Runner ||--|{ Generator : Runs
-    Runner ||--|{ Computation : Runs
-    Runner ||--|{ Translator : Runs
-    Translator ||--|{ Notation : Uses
-    Generator ||--||Notation : Uses
-    Computation ||--||Notation : Uses
-    Generator ||--||Storage : Uses
-    Computation||--||Storage : Uses
-    Translator ||--|| Storage : Uses
+%%{init: {"securityLevel": "loose"}}%%
+flowchart
+    Runner      -->|Runs| Generator
+    Runner      -->|Runs| Computation
+    Runner      -->|Runs| Translator
+    Translator  -->|Uses| Notation
+    Generator   -->|Uses| Notation
+    Computation -->|Uses| Notation
+    Generator   -->|Uses| Storage
+    Computation -->|Uses| Storage
+    Translator  -->|Uses| Storage
 ```
+
 {{% /slides/col %}}
 {{% /slides/row %}}
 
 <!-- ---
+flowchart LR
+    A ~~~ B
 
 ## Sources
 

@@ -88,6 +88,7 @@ if (params.slides.diagram) {
 
   // `startOnLoad` must be false since diagrams are lazily rendered.
   mermaidOptions['startOnLoad'] = false;
+  mermaidOptions['securityLevel'] = "loose";
 
   mermaid.initialize(mermaidOptions);
 
