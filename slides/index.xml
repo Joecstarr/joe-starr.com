@@ -58,7 +58,7 @@
     &lt;div id=&#34;header&#34;&gt;
         &lt;div id=&#34;header-right&#34;&gt;
 &lt;div class=&#34;qr_Code&#34;&gt;
-    &lt;svg width=&#34;150&#34; height=&#34;150&#34; viewBox=&#34;0 0 296 296&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    &lt;svg width=&#34;200&#34; height=&#34;200&#34; viewBox=&#34;0 0 296 296&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;
         xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34; xmlns:ev=&#34;http://www.w3.org/2001/xml-events&#34;&gt;
         &lt;rect x=&#34;0&#34; y=&#34;0&#34; width=&#34;296&#34; height=&#34;296&#34; fill=&#34;#282a36&#34; /&gt;
         &lt;defs&gt;
@@ -523,34 +523,94 @@
    }
 &lt;/script&gt;
 &lt;h2 id=&#34;the-tanglenomicon&#34;&gt;The Tanglenomicon&lt;/h2&gt;
-&lt;h3 id=&#34;tangle-tabulation&#34;&gt;Tangle tabulation&lt;/h3&gt;
+&lt;p style=&#34;font-size:.7em;text-align:center !important&#34;&gt;
+Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
+&lt;p&gt;
+&lt;p style=&#34;font-size:.6em; text-align:center !important&#34;&gt;
+Mathematics Department at The University of Iowa&lt;p&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightning/Rational.svg&#34;/&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightning/Mont.svg&#34;/&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightning/GenMont.svg&#34;/&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightning/Alg.svg&#34;/&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;slidecolumn&#34;&gt;
+&lt;p&gt;&lt;img style=&#34;
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/lightning/Non-Alg.svg&#34;/&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;tangle-tabulation&#34;&gt;Tangle tabulation&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;The Most Important Missing Infrastructure Project in Knot Theory&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Dr. Dror Bar-Natan
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-Dr. Dror Bar-Natan [2012]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;building-up&#34;&gt;Building Up&lt;/h2&gt;
+&lt;!-- ##### Building Up --&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34; max-width: none !important; &#34;&gt;
 &lt;div class=&#34;mermaid&#34;&gt;%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
 flowchart TD
-    R(&#34;Rational Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Rational.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
-    M(&#34;Montesinos Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Mont.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
-    G(&#34;Generalized Montesinos Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/GenMont.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
-    A(&#34;Algebraic Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Alg.png&#39; width=&#39;60&#39; /&amp;gt;&#34;)
-
-    subgraph C[&#34;Classified ✔️&#34;]
-    direction LR
-    R --&gt; M --&gt; G
-    end
-
-    subgraph NC[&#34;Classified ❌&#34;]
-    direction LR
-        A
-    end
-    C --&gt; NC
+    R(&#34;○\nRational Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Rational.svg&#39; width=&#39;200&#39; /&amp;gt;\n[3 2 2]&#34;)
+    M(&#34;+\nMontesinos Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Mont.svg&#39; width=&#39;200&#39; /&amp;gt;\n[3 0 ] + [2 1 0] + [2 2 0]&#34;)
+    G(&#34;○\nGeneralized Montesinos Tangles &amp;lt;br/&amp;gt; &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/GenMont.svg&#39; width=&#39;200&#39; /&amp;gt; \n([3 0] + [3 0] + [2 0]) ○ (1,2)&#34;)
+&lt;pre&gt;&lt;code&gt;subgraph C[&amp;quot;Classified ✔️&amp;quot;]
+direction LR
+R --&amp;gt; M --&amp;gt; G
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;!-- ##### Building Up --&gt;
+&lt;div class=&#34;sliderow&#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34; max-width: none !important; &#34;&gt;
+&lt;div class=&#34;mermaid&#34;&gt;%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
+flowchart TD
+    A(&#34;+ ∗\nAlgebraic Tangles \n &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Alg.svg&#39; width=&#39;200&#39; /&amp;gt;&#34;)
+    P(&#34;Non-Algebraic Tangles \n &amp;lt;img src=&#39;https://joe-starr.com/presentations/lightning/Non-Alg.svg&#39; width=&#39;200&#39; /&amp;gt;&#34;)
+&lt;pre&gt;&lt;code&gt;subgraph NC[&amp;quot;Not Classified ☹️&amp;quot;]
+direction LR
+    A --&amp;gt; P
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;architecture&#34;&gt;Architecture&lt;/h3&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
-&lt;div class=&#34;slidecolumn&#34; style=&#34; max-width: 80% !important; font-size: 2rem; &#34;&gt;
+&lt;div class=&#34;slidecolumn&#34; style=&#34; max-width: none !important; &#34;&gt;
 &lt;div class=&#34;mermaid&#34;&gt;%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
 flowchart
     Runner      --&gt;|Runs| Generator
@@ -565,24 +625,17 @@ flowchart
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- ---
-flowchart LR
-    A ~~~ B
-
-## Sources
-
+&lt;hr&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
 &lt;div style=&#34;font-size: .9rem;&#34;&gt;
-    
-
-- Dror Bar-Natan [The Most Important Missing Infrastructure Project in Knot Theory](http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf)
-- Kauffman, L. H., and S. Lambropoulou. &#34;From Tangle Fractions to DNA.&#34; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. [https://doi.org/10.1007/978-3-540-49858-2_5](https://doi.org/10.1007/978-3-540-49858-2_5).
-- Moon, Hyeyoung, and Isabel K. Darcy. &#34;Tangle Equations Involving Montesinos Links.&#34; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
-- Conway, J.H. &#34;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&#34; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
-- Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
-
-
+&lt;ul&gt;
+&lt;li&gt;Dror Bar-Natan &lt;a href=&#34;http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Most Important Missing Infrastructure Project in Knot Theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kauffman, L. H., and S. Lambropoulou. &amp;ldquo;From Tangle Fractions to DNA.&amp;rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. &lt;a href=&#34;https://doi.org/10.1007/978-3-540-49858-2_5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1007/978-3-540-49858-2_5&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Moon, Hyeyoung, and Isabel K. Darcy. &amp;ldquo;Tangle Equations Involving Montesinos Links.&amp;rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. &lt;a href=&#34;https://doi.org/10.1142/S0218216521500607&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1142/S0218216521500607&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Conway, J.H. &amp;ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&amp;rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. &lt;a href=&#34;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
- --&gt;
 </description>
     </item>
     

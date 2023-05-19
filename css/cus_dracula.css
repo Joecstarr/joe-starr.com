@@ -402,5 +402,7 @@ section.has-light-background h6 {
     max-width: none !important;
     width: 100% !important;
     height: auto !important;
-    font-size: 0.8rem !important;
+}
+.mermaid > .nodeLabel{
+    font-size: 4rem !important;
 }

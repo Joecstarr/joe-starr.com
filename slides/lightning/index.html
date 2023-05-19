@@ -139,7 +139,7 @@
     <div id="header">
         <div id="header-right">
 <div class="qr_Code">
-    <svg width="150" height="150" viewBox="0 0 296 296" xmlns="http://www.w3.org/2000/svg"
+    <svg width="200" height="200" viewBox="0 0 296 296" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
         <rect x="0" y="0" width="296" height="296" fill="#282a36" />
         <defs>
@@ -604,10 +604,57 @@
    }
 </script>
 <h2 id="the-tanglenomicon">The Tanglenomicon</h2>
-<h3 id="tangle-tabulation">Tangle tabulation</h3>
+<p style="font-size:.7em;text-align:center !important">
+Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
+<p>
+<p style="font-size:.6em; text-align:center !important">
+Mathematics Department at The University of Iowa<p>
+<div class="sliderow">
+<div class="slidecolumn">
+<p><img style="
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;" src="/presentations/lightning/Rational.svg"/></p>
+</div>
+<div class="slidecolumn">
+<p><img style="
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;" src="/presentations/lightning/Mont.svg"/></p>
+</div>
+<div class="slidecolumn">
+<p><img style="
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;" src="/presentations/lightning/GenMont.svg"/></p>
+</div>
+<div class="slidecolumn">
+<p><img style="
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;" src="/presentations/lightning/Alg.svg"/></p>
+</div>
+<div class="slidecolumn">
+<p><img style="
+max-width:100px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;" src="/presentations/lightning/Non-Alg.svg"/></p>
+</div>
+</div>
+<h4 id="tangle-tabulation">Tangle tabulation</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;The Most Important Missing Infrastructure Project in Knot Theory&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">-Dr. Dror Bar-Natan
+</span></span><span class="line"><span class="cl">-Dr. Dror Bar-Natan [2012]
 </span></span></code></pre></div>
     </section>
     
@@ -618,24 +665,46 @@
     <section>
     
       
-<h2 id="building-up">Building Up</h2>
+<!-- ##### Building Up -->
+<div class="sliderow">
+<div class="slidecolumn" style=" max-width: none !important; ">
 <div class="mermaid">%%{init: {"securityLevel": "loose"}}%%
 flowchart TD
-    R("Rational Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Rational.png' width='60' /&gt;")
-    M("Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Mont.png' width='60' /&gt;")
-    G("Generalized Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/GenMont.png' width='60' /&gt;")
-    A("Algebraic Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Alg.png' width='60' /&gt;")
+    R("○\nRational Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Rational.svg' width='200' /&gt;\n[3 2 2]")
+    M("+\nMontesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Mont.svg' width='200' /&gt;\n[3 0 ] + [2 1 0] + [2 2 0]")
+    G("○\nGeneralized Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/GenMont.svg' width='200' /&gt; \n([3 0] + [3 0] + [2 0]) ○ (1,2)")
+<pre><code>subgraph C[&quot;Classified ✔️&quot;]
+direction LR
+R --&gt; M --&gt; G
+end
+</code></pre>
+</div>
+</div>
+</div>
 
-    subgraph C["Classified ✔️"]
-    direction LR
-    R --> M --> G
-    end
+    </section>
+    
 
-    subgraph NC["Classified ❌"]
-    direction LR
-        A
-    end
-    C --> NC
+    
+    
+    
+    <section>
+    
+      
+<!-- ##### Building Up -->
+<div class="sliderow">
+<div class="slidecolumn" style=" max-width: none !important; ">
+<div class="mermaid">%%{init: {"securityLevel": "loose"}}%%
+flowchart TD
+    A("+ ∗\nAlgebraic Tangles \n &lt;img src='/presentations/lightning/Alg.svg' width='200' /&gt;")
+    P("Non-Algebraic Tangles \n &lt;img src='/presentations/lightning/Non-Alg.svg' width='200' /&gt;")
+<pre><code>subgraph NC[&quot;Not Classified ☹️&quot;]
+direction LR
+    A --&gt; P
+end
+</code></pre>
+</div>
+</div>
 </div>
 
     </section>
@@ -649,7 +718,7 @@ flowchart TD
       
 <h3 id="architecture">Architecture</h3>
 <div class="sliderow">
-<div class="slidecolumn" style=" max-width: 80% !important; font-size: 2rem; ">
+<div class="slidecolumn" style=" max-width: none !important; ">
 <div class="mermaid">%%{init: {"securityLevel": "loose"}}%%
 flowchart
     Runner      -->|Runs| Generator
@@ -664,24 +733,26 @@ flowchart
 </div>
 </div>
 </div>
-<!-- ---
-flowchart LR
-    A ~~~ B
 
-## Sources
-
-<div style="font-size: .9rem;">
+    </section>
     
 
-- Dror Bar-Natan [The Most Important Missing Infrastructure Project in Knot Theory](http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf)
-- Kauffman, L. H., and S. Lambropoulou. "From Tangle Fractions to DNA." In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. [https://doi.org/10.1007/978-3-540-49858-2_5](https://doi.org/10.1007/978-3-540-49858-2_5).
-- Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
-- Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
-- Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
-
-
+    
+    
+    
+    <section>
+    
+      
+<h2 id="sources">Sources</h2>
+<div style="font-size: .9rem;">
+<ul>
+<li>Dror Bar-Natan <a href="http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf" target="_blank" rel="noopener">The Most Important Missing Infrastructure Project in Knot Theory</a></li>
+<li>Kauffman, L. H., and S. Lambropoulou. &ldquo;From Tangle Fractions to DNA.&rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. <a href="https://doi.org/10.1007/978-3-540-49858-2_5" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-540-49858-2_5</a>.</li>
+<li>Moon, Hyeyoung, and Isabel K. Darcy. &ldquo;Tangle Equations Involving Montesinos Links.&rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. <a href="https://doi.org/10.1142/S0218216521500607" target="_blank" rel="noopener">https://doi.org/10.1142/S0218216521500607</a>.</li>
+<li>Conway, J.H. &ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. <a href="https://doi.org/10.1016/B978-0-08-012975-4.50034-5" target="_blank" rel="noopener">https://doi.org/10.1016/B978-0-08-012975-4.50034-5</a>.</li>
+<li>Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001</li>
+</ul>
 </div>
- -->
 
     </section>
     
