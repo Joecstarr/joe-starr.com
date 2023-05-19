@@ -23,37 +23,92 @@ slides:
 {{% /slides/footer %}}
 
 ## The Tanglenomicon
-### Tangle tabulation
+
+
+<p style="font-size:.7em;text-align:center !important">
+Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
+<p>
+
+<p style="font-size:.6em; text-align:center !important">
+Mathematics Department at The University of Iowa<p>
+
+
+{{% slides/row %}}
+{{% slides/col%}}
+{{<centerimg "/presentations/lightning/Rational.svg" 100>}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{<centerimg "/presentations/lightning/Mont.svg" 100>}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{<centerimg "/presentations/lightning/GenMont.svg" 100>}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{<centerimg "/presentations/lightning/Alg.svg" 100>}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{<centerimg "/presentations/lightning/Non-Alg.svg" 100>}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+
+#### Tangle tabulation
 
 ```
 "The Most Important Missing Infrastructure Project in Knot Theory"
 
--Dr. Dror Bar-Natan
+-Dr. Dror Bar-Natan [2012]
 ```
 
 ---
 
-## Building Up
+
+<!-- ##### Building Up -->
+
+{{% slides/row %}}
+{{% slides/col style=" max-width: none !important; " %}}
 
 ```mermaid
 %%{init: {"securityLevel": "loose"}}%%
 flowchart TD
-    R("Rational Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Rational.png' width='60' /&gt;")
-    M("Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Mont.png' width='60' /&gt;")
-    G("Generalized Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/GenMont.png' width='60' /&gt;")
-    A("Algebraic Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Alg.png' width='60' /&gt;")
+    R("○\nRational Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Rational.svg' width='200' /&gt;\n[3 2 2]")
+    M("+\nMontesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Mont.svg' width='200' /&gt;\n[3 0 ] + [2 1 0] + [2 2 0]")
+    G("○\nGeneralized Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/GenMont.svg' width='200' /&gt; \n([3 0] + [3 0] + [2 0]) ○ (1,2)")
 
     subgraph C["Classified ✔️"]
     direction LR
     R --> M --> G
     end
 
-    subgraph NC["Classified ❌"]
-    direction LR
-        A
-    end
-    C --> NC
 ```
+
+{{% /slides/col %}}
+{{% /slides/row %}}
+
+---
+
+
+<!-- ##### Building Up -->
+
+{{% slides/row %}}
+{{% slides/col style=" max-width: none !important; " %}}
+
+```mermaid
+%%{init: {"securityLevel": "loose"}}%%
+flowchart TD
+    A("+ ∗\nAlgebraic Tangles \n &lt;img src='/presentations/lightning/Alg.svg' width='200' /&gt;")
+    P("Non-Algebraic Tangles \n &lt;img src='/presentations/lightning/Non-Alg.svg' width='200' /&gt;")
+
+
+    subgraph NC["Not Classified ☹️"]
+    direction LR
+        A --> P
+    end
+
+```
+
+{{% /slides/col %}}
+{{% /slides/row %}}
 
 
 ---
@@ -62,7 +117,7 @@ flowchart TD
 
 
 {{% slides/row %}}
-{{% slides/col style=" max-width: 80% !important; font-size: 2rem; "%}}
+{{% slides/col style=" max-width: none !important; " %}}
 
 ```mermaid
 %%{init: {"securityLevel": "loose"}}%%
@@ -81,9 +136,7 @@ flowchart
 {{% /slides/col %}}
 {{% /slides/row %}}
 
-<!-- ---
-flowchart LR
-    A ~~~ B
+---
 
 ## Sources
 
@@ -95,4 +148,4 @@ flowchart LR
 - Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
 - Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
 
-{{% /slides/citations %}} -->
+{{% /slides/citations %}}
