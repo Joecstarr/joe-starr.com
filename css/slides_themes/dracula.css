@@ -1,26 +1,25 @@
 :root {
-  --r-background-color: #282A36;
-  --r-main-color: #F8F8F2;
-  --r-link-color: #FF79C6;
-  --r-link-color-dark: #ff2da5;
-  --r-link-color-hover: #8BE9FD;
-  --r-selection-background-color: #44475A;
-  --r-selection-color: #F8F8F2;
-  --r-bold-color: #FFB86C;
-  --r-italic-color: #F1FA8C;
-  --r-inline-code-color: #50FA7B;
-  --r-list-bullet-color: #8BE9FD;
+    --r-background-color: #282a36;
+    --r-main-color: #f8f8f2;
+    --r-link-color: #ff79c6;
+    --r-link-color-dark: #ff2da5;
+    --r-link-color-hover: #8be9fd;
+    --r-selection-background-color: #44475a;
+    --r-selection-color: #f8f8f2;
+    --r-bold-color: #ffb86c;
+    --r-italic-color: #f1fa8c;
+    --r-inline-code-color: #50fa7b;
+    --r-list-bullet-color: #8be9fd;
 
-
-  --r-Background  :#282a36;
-  --r-Selection   :#44475a;
-  --r-Foreground  :#f8f8f2;
-  --r-Highlight   :#6272a4;
-  --r-Blue        :#8be9fd;
-  --r-Green       :#50fa7b;
-  --r-Orange      :#ffb86c;
-  --r-Pink        :#ff79c6;
-  --r-Purple      :#bd93f9;
-  --r-Red         :#ff5555;
-  --r-Yellow      :#f1fa8c;
+    --r-Background: #282a36;
+    --r-Selection: #44475a;
+    --r-Foreground: #f8f8f2;
+    --r-Highlight: #6272a4;
+    --r-Blue: #8be9fd;
+    --r-Green: #50fa7b;
+    --r-Orange: #ffb86c;
+    --r-Pink: #ff79c6;
+    --r-Purple: #bd93f9;
+    --r-Red: #ff5555;
+    --r-Yellow: #f1fa8c;
 }

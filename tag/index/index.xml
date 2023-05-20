@@ -56,12 +56,15 @@
 &lt;p&gt;$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;img style=&#34;
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/crossing/crossing_un.svg&#34;/&gt;
+
 &lt;hr&gt;
 &lt;h2 id=&#34;link-diagrams&#34;&gt;Link Diagrams&lt;/h2&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
@@ -71,24 +74,30 @@ font-size: x-large;
 min-width:50% !important;
 &#34;&gt;
 
-&lt;img style=&#34;
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/links/link_1.svg&#34;/&gt;
+
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn&#34; style=&#34;
 align-items: left;
 font-size: x-large;
 min-width:50% !important;&#34;&gt;
 
-&lt;img style=&#34;
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/Alex_Poly/alg/Alg_1.svg&#34;/&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -178,12 +187,15 @@ $$\huge
 &lt;hr&gt;
 &lt;h2 id=&#34;exercise&#34;&gt;Exercise&lt;/h2&gt;
 
-&lt;img style=&#34;
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/trefoil/trefoil.svg&#34;/&gt;
+
 &lt;hr&gt;
 &lt;div class=&#34;bigmath &#34;&gt;
 $$
@@ -294,24 +306,30 @@ font-size: x-large;
 min-width:50% !important;
 &#34;&gt;
 1. Positive $+1$ 
-&lt;img style=&#34;
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34;
 max-width:200px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/crossing/crossing_&amp;#43;.svg&#34;/&gt;
+
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn&#34; style=&#34;
 align-items: left;
 font-size: x-large;
 min-width:50% !important;&#34;&gt;
 2. Negative $-1$ 
-&lt;img style=&#34;
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34;
 max-width:200px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/crossing/crossing_-.svg&#34;/&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -321,12 +339,15 @@ signs of the crossings of $ D $.&lt;/p&gt;
 &lt;p&gt;$$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;img style=&#34;
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34;
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;&#34; src=&#34;https://joe-starr.com/presentations/kauf_bkt/trefoil/trefoil.svg&#34;/&gt;
+
 &lt;hr&gt;
 &lt;h2 id=&#34;consider&#34;&gt;Consider&lt;/h2&gt;
 &lt;p&gt;$$\Huge -A^{-3w\LP D\RP}\LA D\RA$$&lt;/p&gt;
