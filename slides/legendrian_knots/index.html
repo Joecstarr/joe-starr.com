@@ -117,6 +117,43 @@
   \require{color}$`
   </p>
 </p>
+<style type="text/css">
+     
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 3%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 3%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 0%;
+        left: 3%;
+    }
+</style>
+<div id="hidden" style="display:none;">
+    <div id="header">
+        <div id="header-right">
+</div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+</script>
 <!-- # Legendrian knots -->
 <div class="canvasdiv canvrow">
   <div class="canvcolumn">

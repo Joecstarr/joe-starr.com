@@ -92,10 +92,7 @@
     
     <section>
     
-      <p>
-
-
-<link rel="stylesheet" href="/css/custom.css" />
+      <p><link rel="stylesheet" href="/css/custom.css" />
 <link rel="stylesheet" href="/css/cus_dracula.css" />
 
 
@@ -120,6 +117,43 @@
   \require{color}$`
   </p>
 </p>
+<style type="text/css">
+     
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 3%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 3%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 0%;
+        left: 3%;
+    }
+</style>
+<div id="hidden" style="display:none;">
+    <div id="header">
+        <div id="header-right">
+</div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+</script>
 <h1 id="discrete-morse-theory">Discrete Morse Theory</h1>
 
     </section>
@@ -144,12 +178,14 @@ An \\(n\\)-cell is open \\(n\\)-ball with boundary \\(S^{n-1}\\).
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Cells.png"/>
+
 
 
 ---
@@ -168,6 +204,7 @@ This construction works as follows:
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
@@ -176,7 +213,9 @@ margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/wedge.png"/>
 
 
+
 ---
+
 
 
 
@@ -187,6 +226,7 @@ display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/sphere.png"/>
+
 
 
 
@@ -207,12 +247,14 @@ height:auto !important;" src="/presentations/DiscMorse/sphere.png"/>
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Simplex.png"/>
+
 </p>
 
     </section>
@@ -287,12 +329,14 @@ when
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Torus.png"/>
+
 
 
     </section>
@@ -307,12 +351,14 @@ height:auto !important;" src="/presentations/DiscMorse/Torus.png"/>
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex.png"/>
+
 
 
     </section>
@@ -340,12 +386,14 @@ collection of combinatorial descriptions of simplices of \(K\)</p>
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex.png"/>
+
 
 <p>\[\LS
 \LB b,c,d\RB,
@@ -412,12 +460,14 @@ f\LP\LB b,c,d\RB\RP &= 5    \\
 
 
 
+
 <img class="centerImg" style="
 max-width:400px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex_f.png"/>
+
 
 </div>
 </div>
@@ -470,12 +520,14 @@ min-width:50% !important;
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex_f.png"/>
+
 
 </div>
 </div>
@@ -508,12 +560,14 @@ min-width:50% !important;
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex_f_Not_Morse.png"/>
+
 
 </div>
 </div>
@@ -564,12 +618,14 @@ min-width:50% !important;
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex_crit.png"/>
+
 
 </div>
 </div>
@@ -615,12 +671,14 @@ We draw an arrow from \(\alpha\to \beta\).</p>
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex_grad.png"/>
+
 
 
     </section>
@@ -659,12 +717,14 @@ A face \(\sigma\in K\) is called maximal if there is no \(\beta\in K\) so that \
 
 
 
+
 <img class="centerImg" style="
 max-width:400px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Facets.png"/>
+
 
 </div>
 </div>
@@ -692,12 +752,14 @@ A simplex \(\tau\) of a simplicial complex \(K\) is called a free face if \(\tau
 
 
 
+
 <img class="centerImg" style="
 max-width:400px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Free_face.png"/>
+
 
 </div>
 </div>
@@ -727,12 +789,14 @@ height:auto !important;" src="/presentations/DiscMorse/Free_face.png"/>
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Collapse.png"/>
+
 
 
     </section>
@@ -759,12 +823,14 @@ height:auto !important;" src="/presentations/DiscMorse/Collapse.png"/>
 
 
 
+
 <img class="centerImg" style="
 max-width:500px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/Complex_collapse.png"/>
+
 
 
     </section>
@@ -815,12 +881,14 @@ consisting of all faces \(\sigma\) of \(K\) where \(\tau &lt; \sigma\), as well 
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/star.png"/>
+
 
 
     </section>
@@ -835,12 +903,14 @@ height:auto !important;" src="/presentations/DiscMorse/star.png"/>
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/star2.png"/>
+
 
 
     </section>
@@ -868,12 +938,14 @@ consisting of all faces of the star of \(\tau\) that do not intersect \(\tau\).<
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/link.png"/>
+
 
 
     </section>
@@ -888,12 +960,14 @@ height:auto !important;" src="/presentations/DiscMorse/link.png"/>
 
 
 
+
 <img class="centerImg" style="
 max-width:600px !important;
 display: block;
 margin-left: auto !important;
 margin-right: auto !important;
 height:auto !important;" src="/presentations/DiscMorse/link2.png"/>
+
 
 
     </section>
