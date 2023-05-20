@@ -17,16 +17,19 @@ slides:
             fontSize: 17
 ---
 <style>
+
   .tangrow * {
     font-size: 2.5rem;
   }
+
   .tangrow {
-    margin-left:auto;
-    margin-right:auto;
+    border: 2px solid var(--r-Red);
+    border-radius: 12px;
+    margin:auto;
+    padding:1rem;
+
   }
-  .mathbox *{
-    font-size: .8rem;
-  }
+
 .mermaid svg {
     max-width: none !important;
     width: 100% !important;
@@ -56,16 +59,16 @@ Mathematics Department at The University of Iowa<p>
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/Rational.svg" max-width="10rem">}}
+{{< centerimg src="/presentations/lightning/Rational.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/Mont.svg" max-width="10rem">}}
+{{< centerimg src="/presentations/lightning/Mont.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/GenMont.svg" max-width="10rem">}}
+{{< centerimg src="/presentations/lightning/GenMont.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/Alg.svg" max-width="10rem">}}
+{{< centerimg src="/presentations/lightning/Alg.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
