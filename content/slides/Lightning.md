@@ -70,6 +70,9 @@ Mathematics Department at The University of Iowa<p>
 {{% slides/col%}}
 {{< centerimg src="/presentations/lightning/Alg.svg" width="12rem">}}
 {{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/lightning/Non-Alg.svg" width="12rem">}}
+{{% /slides/col%}}
 {{% /slides/row %}}
 
 
@@ -110,7 +113,9 @@ Montesinos Tangles
 
 {{< centerimg src="/presentations/lightning/annotated/Mont.svg" max-width="12rem" >}}
 
+<p style="font-size:.7em;text-align:center !important;white-space: nowrap;">
 [3 0 ] + [2 1 0] + [2 2 0]
+</p>
 
 {{% /slides/col %}}
 {{% slides/col style="flex-grow: 0;"  %}}
@@ -125,8 +130,9 @@ $\circ$
 Generalized Montesinos Tangles
 
 {{< centerimg src="/presentations/lightning/annotated/GenMont.svg" max-width="12rem" >}}
-
+<p style="font-size:.7em;text-align:center !important;white-space: nowrap;">
 ([3 0] + [3 0] + [2 0]) $\circ$ (1,2)
+</p>
 
 {{% /slides/col %}}
 {{% /slides/row %}}
@@ -139,12 +145,14 @@ Generalized Montesinos Tangles
 {{% slides/row %}}
 {{% slides/col style="padding: 1rem;" class="tangrow"  %}}
 
-$+\ \ast$
+$+\ \vee$
 
   Algebraic Tangles
 {{< centerimg src="/presentations/lightning/annotated/Alg.svg" max-width="20rem"  width="15rem">}}
 
-((([3 2 3] + [3 2 3] ) 0) + (([3 2 3] + [3 2 3] ) 0) 0)
+<p style="font-size:.7em;text-align:center !important;white-space: nowrap;">
+([3 2 3] + [3 2 3]) ∨ ([3 2 3] + [3 2 3] )
+</p>
 
 {{% /slides/col %}}
 {{% slides/col style="flex-grow: 0;"  %}}
