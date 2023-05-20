@@ -1,19 +1,4 @@
-{{ if .IsNamedParams }}
-
-{{ if .Get "width" }}
-    {{- $width := int (.Get "width") -}}
-    <div class="slidecolumn" style="max-width:{{ $width }}% !important;">
-{{ end }}
-
-{{ if .Get "style" }}
-    {{- $style := .Get "style" -}}
-    <div class="slidecolumn" style="{{ $style  | safeCSS }}">
-
-{{ end }}
-
-{{ else }}
-<div class="slidecolumn">
-{{ end }}
+<div class="slidecolumn {{ if .IsNamedParams }} {{ with .Get "class"}} {{ . | safeHTML }}{{ end }} {{ end }} " style="{{ if .IsNamedParams }} {{ with .Get "style"}} {{ . | safeCSS }}{{ end }} {{ end }}">
 
 {{ .Inner }}
 

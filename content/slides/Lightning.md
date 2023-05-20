@@ -13,14 +13,35 @@ slides:
   diagram: true
   diagram_options:
     theme: dark
+    themeVariables:
+            fontSize: 17
 ---
+<style>
+  .tangrow * {
+    font-size: 2.5rem;
+  }
+  .tangrow {
+    border: 2px solid var(--r-Red);
+    border-radius: 12px;
+  }
+  .mathbox *{
+    font-size: .8rem;
+  }
+.mermaid svg {
+    max-width: none !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+</style>
+
 
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-{{% slides/footer %}}
+<!-- {{% slides/footer %}}
 {{% qr_code %}}
-{{% /slides/footer %}}
+{{% /slides/footer %}} -->
 
 ## The Tanglenomicon
 
@@ -34,20 +55,17 @@ Mathematics Department at The University of Iowa<p>
 
 
 {{% slides/row %}}
-{{% slides/col%}}
-{{<centerimg "/presentations/lightning/Rational.svg" 100>}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/lightning/Rational.svg" max-width="10rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{<centerimg "/presentations/lightning/Mont.svg" 100>}}
+{{< centerimg src="/presentations/lightning/Mont.svg" max-width="10rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{<centerimg "/presentations/lightning/GenMont.svg" 100>}}
+{{< centerimg src="/presentations/lightning/GenMont.svg" max-width="10rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{<centerimg "/presentations/lightning/Alg.svg" 100>}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{<centerimg "/presentations/lightning/Non-Alg.svg" 100>}}
+{{< centerimg src="/presentations/lightning/Alg.svg" max-width="10rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -62,25 +80,50 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-
-<!-- ##### Building Up -->
+### Classified ✔️
 
 {{% slides/row %}}
-{{% slides/col style=" max-width: none !important; " %}}
+{{% slides/col style="padding: 1rem; " class="tangrow" %}}
 
-```mermaid
-%%{init: {"securityLevel": "loose"}}%%
-flowchart TD
-    R("○\nRational Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Rational.svg' width='200' /&gt;\n[3 2 2]")
-    M("+\nMontesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/Mont.svg' width='200' /&gt;\n[3 0 ] + [2 1 0] + [2 2 0]")
-    G("○\nGeneralized Montesinos Tangles &lt;br/&gt; &lt;img src='/presentations/lightning/GenMont.svg' width='200' /&gt; \n([3 0] + [3 0] + [2 0]) ○ (1,2)")
+$\circ$
 
-    subgraph C["Classified ✔️"]
-    direction LR
-    R --> M --> G
-    end
+Rational Tangles
 
-```
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg" max-width="12rem" >}}
+
+[3 2 2]
+
+{{% /slides/col %}}
+{{% slides/col style="flex-grow: 0;"  %}}
+
+$$\to$$
+
+{{% /slides/col %}}
+{{% slides/col style="padding: 1rem;" class="tangrow" %}}
+
+$+$
+
+Montesinos Tangles
+
+{{< centerimg src="/presentations/lightning/annotated/Mont.svg" max-width="12rem" >}}
+
+[3 0 ] + [2 1 0] + [2 2 0]
+
+{{% /slides/col %}}
+{{% slides/col style="flex-grow: 0;"  %}}
+
+$$\to$$
+
+{{% /slides/col %}}
+{{% slides/col style="padding: 1rem;" class="tangrow" %}}
+
+$\circ$
+
+Generalized Montesinos Tangles
+
+{{< centerimg src="/presentations/lightning/annotated/GenMont.svg" max-width="12rem" >}}
+
+([3 0] + [3 0] + [2 0]) $\circ$ (1,2)
 
 {{% /slides/col %}}
 {{% /slides/row %}}
@@ -88,28 +131,31 @@ flowchart TD
 ---
 
 
-<!-- ##### Building Up -->
+### Not Classified ☹️
 
 {{% slides/row %}}
-{{% slides/col style=" max-width: none !important; " %}}
+{{% slides/col style="padding: 1rem;" class="tangrow"  %}}
 
-```mermaid
-%%{init: {"securityLevel": "loose"}}%%
-flowchart TD
-    A("+ ∗\nAlgebraic Tangles \n &lt;img src='/presentations/lightning/Alg.svg' width='200' /&gt;")
-    P("Non-Algebraic Tangles \n &lt;img src='/presentations/lightning/Non-Alg.svg' width='200' /&gt;")
+$+\ \ast$
 
+  Algebraic Tangles
+{{< centerimg src="/presentations/lightning/annotated/Alg.svg" max-width="20rem"  width="15rem">}}
 
-    subgraph NC["Not Classified ☹️"]
-    direction LR
-        A --> P
-    end
+((([3 2 3] + [3 2 3] ) 0) + (([3 2 3] + [3 2 3] ) 0) 0)
 
-```
+{{% /slides/col %}}
+{{% slides/col style="flex-grow: 0;"  %}}
+
+$$\to$$
+
+{{% /slides/col %}}
+{{% slides/col style="padding: 1rem;" class="tangrow" %}}
+
+Non-Algebraic Tangles
+{{< centerimg src="/presentations/lightning/annotated/Non-Alg.svg" max-width="30rem" width="30rem" >}}
 
 {{% /slides/col %}}
 {{% /slides/row %}}
-
 
 ---
 
@@ -117,7 +163,7 @@ flowchart TD
 
 
 {{% slides/row %}}
-{{% slides/col style=" max-width: none !important; " %}}
+{{% slides/col style=" max-width: none !important; width:100% !important; " %}}
 
 ```mermaid
 %%{init: {"securityLevel": "loose"}}%%
