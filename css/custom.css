@@ -127,8 +127,6 @@ li {
 
 .sliderow {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -137,5 +135,4 @@ li {
 .slidecolumn {
     padding: 0;
     flex-grow: 1;
-    white-space: nowrap;
 }

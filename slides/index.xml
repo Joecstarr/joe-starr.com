@@ -12,16 +12,19 @@
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/lightning/</guid>
       <description>&lt;style&gt;
+
   .tangrow * {
     font-size: 2.5rem;
   }
+
   .tangrow {
-    margin-left:auto;
-    margin-right:auto;
+    border: 2px solid var(--r-Red);
+    border-radius: 12px;
+    margin:auto;
+    padding:1rem;
+
   }
-  .mathbox *{
-    font-size: .8rem;
-  }
+
 .mermaid svg {
     max-width: none !important;
     width: 100% !important;
@@ -551,16 +554,16 @@ Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;div class=&#34;sliderow&#34;&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
-&lt;img class=&#34;centerImg&#34; style=&#34;  max-width:10rem; &#34; src=&#34; /presentations/lightning/Rational.svg&#34;/&gt;
+&lt;img class=&#34;centerImg&#34; style=&#34; width:12rem;  &#34; src=&#34; /presentations/lightning/Rational.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
-&lt;img class=&#34;centerImg&#34; style=&#34;  max-width:10rem; &#34; src=&#34; /presentations/lightning/Mont.svg&#34;/&gt;
+&lt;img class=&#34;centerImg&#34; style=&#34; width:12rem;  &#34; src=&#34; /presentations/lightning/Mont.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
-&lt;img class=&#34;centerImg&#34; style=&#34;  max-width:10rem; &#34; src=&#34; /presentations/lightning/GenMont.svg&#34;/&gt;
+&lt;img class=&#34;centerImg&#34; style=&#34; width:12rem;  &#34; src=&#34; /presentations/lightning/GenMont.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
-&lt;img class=&#34;centerImg&#34; style=&#34;  max-width:10rem; &#34; src=&#34; /presentations/lightning/Alg.svg&#34;/&gt;
+&lt;img class=&#34;centerImg&#34; style=&#34; width:12rem;  &#34; src=&#34; /presentations/lightning/Alg.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h4 id=&#34;tangle-tabulation&#34;&gt;Tangle tabulation&lt;/h4&gt;
