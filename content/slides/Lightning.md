@@ -29,6 +29,10 @@ slides:
     padding:1rem;
 
   }
+.qr_Code{
+    width:10vw;
+    height:auto;
+}
 
 .mermaid svg {
     max-width: none !important;
@@ -42,9 +46,9 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-<!-- {{% slides/footer %}}
+{{% slides/footer %}}
 {{% qr_code %}}
-{{% /slides/footer %}} -->
+{{% /slides/footer %}}
 
 ## The Tanglenomicon
 

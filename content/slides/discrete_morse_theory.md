@@ -17,10 +17,12 @@ slides:
   ]
 ---
 
-{{< canvas_head >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
+{{% slides/footer %}}
+
+{{% /slides/footer %}}
 
 # Discrete Morse Theory
 

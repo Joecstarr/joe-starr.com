@@ -20,6 +20,10 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
+{{% slides/footer %}}
+
+{{% /slides/footer %}}
+
 
 
 <!-- # Legendrian knots -->

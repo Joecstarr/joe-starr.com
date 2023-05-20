@@ -13,17 +13,12 @@ slides:
 
 ---
 
-<!-- {{<cuscss>}} -->
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
-{{< canvas_head >}}
 
-<!-- # Draft
+{{% slides/footer %}}
 
-
-
-
---- -->
+{{% /slides/footer %}}
 
 # Alexander Polynomial
 
@@ -40,13 +35,13 @@ slides:
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/Band.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_7.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% /slides/row %}}
@@ -70,19 +65,19 @@ given link projection.
 
 ### Remove crossings
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_1.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_1.svg" max-width="500px" >}}
 
 ---
 
 ### Close curves
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_2.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_2.svg" max-width="500px" >}}
 
 ---
 
 ### Collection of disks
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_3.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_3.svg" max-width="500px" >}}
 
 ---
 
@@ -91,20 +86,20 @@ given link projection.
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_4.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_4.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_5.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_5.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% /slides/row %}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_6.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_6.svg" max-width="500px" >}}
 
 ---
 
@@ -129,7 +124,7 @@ given link projection.
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_7.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% slides/col style="flex-grow: 0;" %}}
@@ -140,7 +135,7 @@ $$\to$$
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/Band.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% /slides/row %}}
@@ -148,31 +143,31 @@ $$\to$$
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_1.svg" 700>}}
+{{< centerimg src="/presentations/Alex_Poly/slide/slide_1.svg" max-width="700px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_2.svg" 700>}}
+{{< centerimg src="/presentations/Alex_Poly/slide/slide_2.svg" max-width="700px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_3.svg" 700>}}
+{{< centerimg src="/presentations/Alex_Poly/slide/slide_3.svg" max-width="700px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_4.svg" 700>}}
+{{< centerimg src="/presentations/Alex_Poly/slide/slide_4.svg" max-width="700px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_5.svg" 700>}}
+{{< centerimg src="/presentations/Alex_Poly/slide/slide_5.svg" max-width="700px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_6.svg" 700>}}
+{{< centerimg src="/presentations/Alex_Poly/slide/slide_6.svg" max-width="700px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/slide/slide_7.svg" 700>}}
+{{< centerimg src="/presentations/Alex_Poly/slide/slide_7.svg" max-width="700px" >}}
 
 ---
 ## Genus of a Seifert surface
@@ -212,7 +207,7 @@ $2g=2-s-n+c$
 {{% /slides/col %}}
 {{% slides/col style="padding: 1rem;" %}}
 
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_7.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_7.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% /slides/row %}}
@@ -231,12 +226,11 @@ $2g=2-s-n+c$
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_+.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/crossing/Crossing_+.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% slides/col style=" align-items: left; font-size: x-large; min-width:50% !important;" %}}
-{{<centerimg "/presentations/Alex_Poly/crossing/Crossing_-.svg" 500>}}
-</div>
+{{< centerimg src="/presentations/Alex_Poly/crossing/Crossing_-.svg" max-width="500px" >}}
 {{% /slides/col %}}
 {{% /slides/row %}}
 
@@ -257,7 +251,7 @@ $\text{Lk}\LP \mathscr{L}\RP=\text{#} \img{/presentations/Alex_Poly/crossing/Cro
 ---
 
 
-{{<centerimg "/presentations/Alex_Poly/links/link_1.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/links/link_1.svg" max-width="500px" >}}
 
 ---
 
@@ -265,7 +259,7 @@ $\text{Lk}\LP \mathscr{L}\RP=\text{#} \img{/presentations/Alex_Poly/crossing/Cro
 
 We can put oriented simple closed curves through each of the bands.
 
-{{<centerimg "/presentations/Alex_Poly/bands/Band_SCC.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/Band_SCC.svg" max-width="500px" >}}
 
 
 
@@ -274,7 +268,7 @@ We can put oriented simple closed curves through each of the bands.
 A Seifert surface is oriented, it has a top side and bottom side.
  We can take a push off of each of the curves in the "up" (blue) direction
 
-{{<centerimg "/presentations/Alex_Poly/bands/push_off_1.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/push_off_1.svg" max-width="500px" >}}
 
 ---
 
@@ -291,20 +285,20 @@ $a_{i,j}=\text{Lk}\LP f_i,\ f_j^+\RP$
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/bands/ij_loops.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/ij_loops.svg" max-width="500px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/bands/ji_loops.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/ji_loops.svg" max-width="500px" >}}
 
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/bands/push_off_2.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/push_off_2.svg" max-width="500px" >}}
 
 ---
 
-{{<centerimg "/presentations/Alex_Poly/bands/ii_loops.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/ii_loops.svg" max-width="500px" >}}
 
 
 ---
@@ -327,7 +321,7 @@ $$\begin{bmatrix}
 {{% slides/col style="padding: 1rem;" %}}
 
 
-{{<centerimg "/presentations/Alex_Poly/bands/Band.svg" 500>}}
+{{< centerimg src="/presentations/Alex_Poly/bands/Band.svg" max-width="500px" >}}
 
 {{% /slides/col %}}
 {{% slides/col style="flex-grow: 0;" %}}
