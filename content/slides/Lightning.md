@@ -21,8 +21,8 @@ slides:
     font-size: 2.5rem;
   }
   .tangrow {
-    border: 2px solid var(--r-Red);
-    border-radius: 12px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .mathbox *{
     font-size: .8rem;
@@ -80,7 +80,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-### Classified ✔️
+### Classified
 
 {{% slides/row %}}
 {{% slides/col style="padding: 1rem; " class="tangrow" %}}
@@ -131,7 +131,7 @@ Generalized Montesinos Tangles
 ---
 
 
-### Not Classified ☹️
+### Not Classified
 
 {{% slides/row %}}
 {{% slides/col style="padding: 1rem;" class="tangrow"  %}}
