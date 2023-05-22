@@ -151,7 +151,7 @@ $+\ \vee$
   Algebraic Tangles
 {{< centerimg src="/presentations/lightning/annotated/Alg.svg" max-width="20rem"  width="15rem">}}
 
-<p style="font-size:.7em;text-align:center !important;white-space: nowrap;">
+<p style="font-size:.7em;tex-align:center !important;white-space: nowrap;">
 ([3 2 3] + [3 2 3]) ∨ ([3 2 3] + [3 2 3] )
 </p>
 
@@ -164,8 +164,11 @@ $$\to$$
 {{% slides/col style="padding: 1rem;" class="tangrow" %}}
 
 Non-Algebraic Tangles
-{{< centerimg src="/presentations/lightning/annotated/Non-Alg.svg" max-width="30rem" width="30rem" >}}
+{{< centerimg src="/presentations/lightning/annotated/Non-Alg.svg" max-width="25rem" width="25rem" >}}
 
+<p style="font-size:.7em;tex-align:center !important;white-space: nowrap;">
+6* *.[3 2 3 1].[3 2 3 1].[3 2 3 1].[3 2 3 1].[3 2 3 1]
+</p>
 {{% /slides/col %}}
 {{% /slides/row %}}
 
@@ -205,7 +208,7 @@ flowchart
 - Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
 - Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
 - Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
-
+- Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
 {{% /slides/citations %}}
 
 
