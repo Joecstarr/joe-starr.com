@@ -79,11 +79,10 @@ Mathematics Department at The University of Iowa<p>
 
 #### Tangle tabulation
 
-```
-"The Most Important Missing Infrastructure Project in Knot Theory"
-
+<p style="font-size:.7em;color:var(--r-Green);">
+"The Most Important Missing Infrastructure Project in Knot Theory"</br>
 -Dr. Dror Bar-Natan [2012]
-```
+</p>
 
 ---
 
