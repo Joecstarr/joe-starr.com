@@ -208,7 +208,10 @@ flowchart
 - Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
 - Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
 - Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
-{{% /slides/citations %}}
+- Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor,
+  MI, 1998. Thesis (Ph.D.)–The University of British Columbia (Canada). URL: https:
+  //www.knotplot.com/.
+  {{% /slides/citations %}}
 
 
 {{% slides/footer %}}
