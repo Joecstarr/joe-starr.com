@@ -1,0 +1,228 @@
+<style>
+    body {
+        font-family: 'Verdana';
+    }
+
+    .generator {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .controls {
+        display: block;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #6272a4;
+        border-collapse: collapse;
+    }
+
+    table {
+        margin: 20px auto;
+        padding: 0;
+        background-color: #44475a;
+        border-radius: 5px;
+    }
+
+
+    td {
+        padding: 15px;
+        text-align: center;
+        color: #ffb86c;
+        font-family: monospace;
+    }
+
+    input {
+        width: 70px;
+        padding: 5px;
+        margin: 10px;
+        font-size: 16px;
+        background: #44475a;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .button {
+        margin-top: 15px;
+        padding: 9px 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: #bd93f9;
+        color: #44475a;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+        transition: transform .1s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+        &:active {
+            transform: scale(0.97);
+        }
+
+    }
+
+    .convert {
+        margin-top: 15px;
+        padding: 9px 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: #bd93f9;
+        color: #44475a;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+        transition: transform .1s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+        &:active {
+            transform: scale(0.97);
+        }
+
+    }
+
+    .table-placeholder {
+        max-width: 500px;
+        width: 100%;
+        margin: 20px auto;
+
+        &.hidden {
+            display: none;
+        }
+
+        &__row {
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    &__item {
+        max-width: 150px;
+        width: 100%;
+        height: 36px;
+        margin: 2px;
+        background: #44475a;
+        border-radius: 5px;
+    }
+    }
+</style>
+
+
+
+<div id="table-container">
+    <section class="controls">
+        <label>
+            Size :
+            <input class="size" type="number" min="0" value="1">
+        </label>
+        <button class="button">Create table</button>
+    </section>
+    <table class="table" border="0" cellpadding="" cellspacing="" contenteditable="true"></table>
+</div>
+<button class="convert">Convert table</button>
+<svg id="svg-container">
+</svg>
+
+<script type="text/javascript">
+    class Table {
+        constructor(tableSelector, sizeSelector) {
+            this.sizeSelector = sizeSelector
+            this.tableObj = document.querySelector(tableSelector)
+        }
+
+        generate = () => {
+            let tableHTML = ''
+            const sizeNumber = parseInt(document.querySelector(this.sizeSelector).value)
+
+
+            for (let i = 1; i <= sizeNumber; i++) {
+                let tr = '<tr>'
+                let td = ''
+
+                for (let j = 1; j <= sizeNumber; j++) {
+
+                    // if (i === 1 || j === 1) {
+                    //   td = `<th class="header">${cellContent}</th>`;
+                    // }
+                    // else {
+                    td = `<td>.</td>`;
+                    // }
+
+                    tr += td
+                }
+
+                tr += '</tr>'
+                tableHTML += tr
+            }
+
+            this.tableObj.innerHTML = tableHTML
+        }
+
+    }
+
+    const table = new Table('.table', '.size')
+
+    document.querySelector('.button').addEventListener('click', () => {
+        table.generate()
+    });
+
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+<script type="text/javascript">
+    class Segment {
+        constructor() {
+            this.source = []
+            this.sink = []
+        }
+
+    }
+    class Drawer {
+        constructor(imgSelector, tableSelector) {
+            this.tableObj = document.querySelectorAll(tableSelector)
+            this.draw = SVG().addTo(imgSelector).size(300, 300)
+            this.diagram = []
+            this.__parse_table()
+            this.segments = []
+            this.__get_segments()
+        }
+        __parse_table = () => {
+            this.diagram = Array.prototype.map.call(this.tableObj, function (tr) {
+                return Array.prototype.map.call(tr.querySelectorAll('td'), function (td) {
+                    return td.innerHTML;
+                });
+            });
+        }
+        __get_segments = () => {
+            this.segments.push(this.__get_segments_horizontal())
+            this.segments.push(this.__get_segments_vertical())
+        }
+        __get_segments_horizontal = () => {
+            var segs = []
+            for (var i = 0; i < 10; i++) {
+            }
+        }
+        __get_segments_vertical = () => { }
+        __draw_segment = () => { }
+        __rotate = (x, y) => {
+            var r = 1 / math.sqrt(2)
+            return [(-x * r - y * r), (-x * r + y * r)]
+        }
+        generate = () => {
+            var rect = this.draw.rect(100, 100).attr({ fill: '#f06' })
+        }
+
+    }
+
+
+    document.querySelector('.convert').addEventListener('click', () => {
+        drawer = new Drawer('#svg-container', '.table tr')
+        drawer.generate()
+    });
+</script>
