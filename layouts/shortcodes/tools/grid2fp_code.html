@@ -46,7 +46,9 @@
         border-radius: 5px;
     }
 
-    .button {
+    .button,
+    .convert,
+    .download {
         margin-top: 15px;
         padding: 9px 30px;
         border: none;
@@ -65,24 +67,9 @@
 
     }
 
-    .convert {
-        margin-top: 15px;
-        padding: 9px 30px;
-        border: none;
-        border-radius: 5px;
-        background-color: #bd93f9;
-        color: #44475a;
-        font-size: 16px;
-        font-weight: 700;
+    .convert,
+    .download {
         width: 100%;
-        cursor: pointer;
-        outline: none;
-        transition: transform .1s cubic-bezier(0.77, 0.2, 0.05, 1);
-
-        &:active {
-            transform: scale(0.97);
-        }
-
     }
 
     .table-placeholder {
@@ -108,9 +95,17 @@
         background: #44475a;
         border-radius: 5px;
     }
-    svg{
-        width: 100%;
-        height: auto;
+
+    svg {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #svg-container {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 30vw;
+        max-height: 30vh;
     }
 </style>
 
@@ -120,33 +115,16 @@
     <section class="controls">
         <label>
             Size :
-            <input class="size" type="number" min="0" value="1">
+            <input class="size" type="number" min="3" value="3">
         </label>
         <button class="button">Create table</button>
     </section>
-    <!-- <table class="table" border="0" cellpadding="" cellspacing="" contenteditable="true"></table> -->
-    <table class="table .table" contenteditable="true" cellspacing="" cellpadding="" border="0">
-        <tbody>
-            <tr>
-                <td>x<br></td>
-                <td>.</td>
-                <td>o<br></td>
-            </tr>
-            <tr>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-            </tr>
-            <tr>
-                <td>o<br></td>
-                <td>.</td>
-                <td>x<br></td>
-            </tr>
-        </tbody>
-    </table>
+    <table class="table" border="0" cellpadding="" cellspacing="" contenteditable="true"></table>
+
 </div>
 <button class="convert">Convert table</button>
 <div id="svg-container"></div>
+<button class="download">Download</button>
 
 
 <script type="text/javascript">
@@ -226,8 +204,17 @@
             this.crossing_color = "#ffffff"
             this.string_color = "#000000"
             this.diagram = []
+            this.stroke_width = 0.1
             this.__parse_table()
-            this.draw = SVG().addTo(imgSelector).size(10*this.diagram.length,10*this.diagram.length)
+            this.draw = SVG().addTo(imgSelector)
+            // this.draw.viewbox(10 * this.diagram.length, 10 * this.diagram.length)
+            this.draw.viewbox({
+                x: 0, y: 0,
+                width: 2 * Math.sqrt(2) * this.diagram.length,
+                height: 2 * Math.sqrt(2) * this.diagram.length
+            })
+            this.draw.size(200, 200)
+            // this.draw.size(10 * this.diagram.length, 10 * this.diagram.length)
             this.segments = []
             this.__get_segments()
         }
@@ -266,9 +253,9 @@
         __get_segments_vertical = () => {
 
             var segs = []
-            for (var i = 0; i < this.diagram.length; i++) {
+            for (var j = 0; j < this.diagram.length; j++) {
                 var seg = new Segment()
-                for (var j = 0; j < this.diagram.length; j++) {
+                for (var i = 0; i < this.diagram.length; i++) {
                     if (this.diagram[j][i] != ".") {
                         if (this.diagram[j][i].trim() != "") {
                             if (this.diagram[j][i].trim().toLowerCase() == "x") {
@@ -304,21 +291,23 @@
             return [(-x * r - y * r), (-x * r + y * r)]
         }
         generate = () => {
-            var group = this.draw.group().addClass('my-group'+i)
+            var group = this.draw.group().addClass('my-group' + i)
             group.transform({
-                rotate:0,
-                translateX: Math.sqrt(2)*this.diagram.length,
-                translateY: Math.sqrt(2)*this.diagram.length/2
+                rotate: 0,
+                translateX: Math.sqrt(2) * this.diagram.length,
+                translateY: Math.sqrt(2) * this.diagram.length / 2
             })
             group.attr('fill', "none")
-            group.attr('stroke-width', "0.1")
+            group.attr('stroke-width', this.stroke_width)
             group.attr('stroke', this.string_color)
 
             for (var i = 0; i < this.segments.length; i++) {
-                var inner_group = group.group().addClass('my-group'+i)
-
-                var path = inner_group.path(this.__draw_segment(this.segments[i]))
-                path.stroke({ color: '#f06', width: .1})
+                var inner_group = group.group().addClass('my-group' + i)
+                var path_str = this.__draw_segment(this.segments[i])
+                var path = inner_group.path(path_str)
+                path.stroke({ color: this.crossing_color, width: this.stroke_width * 2 })
+                path.plot()
+                var path = inner_group.path(path_str)
                 path.plot()
             }
         }
@@ -329,5 +318,22 @@
     document.querySelector('.convert').addEventListener('click', () => {
         drawer = new Drawer('#svg-container', '.table tr')
         drawer.generate()
+    });
+</script>
+<script type="text/javascript">
+
+    document.querySelector('.download').addEventListener('click', () => {
+        function uuidv4() {
+            return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+            );
+        }
+        const svg = document.querySelector('#svg-container').innerHTML;
+        const blob = new Blob([svg.toString()]);
+        const element = document.createElement("a");
+        element.download = uuidv4() + ".svg";
+        element.href = window.URL.createObjectURL(blob);
+        element.click();
+        element.remove();
     });
 </script>
