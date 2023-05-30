@@ -108,6 +108,9 @@
         background: #44475a;
         border-radius: 5px;
     }
+    svg{
+        width: 100%;
+        height: auto;
     }
 </style>
 
@@ -121,11 +124,30 @@
         </label>
         <button class="button">Create table</button>
     </section>
-    <table class="table" border="0" cellpadding="" cellspacing="" contenteditable="true"></table>
+    <!-- <table class="table" border="0" cellpadding="" cellspacing="" contenteditable="true"></table> -->
+    <table class="table .table" contenteditable="true" cellspacing="" cellpadding="" border="0">
+        <tbody>
+            <tr>
+                <td>x<br></td>
+                <td>.</td>
+                <td>o<br></td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>o<br></td>
+                <td>.</td>
+                <td>x<br></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <button class="convert">Convert table</button>
-<svg id="svg-container">
-</svg>
+<div id="svg-container"></div>
+
 
 <script type="text/javascript">
     class Table {
@@ -178,44 +200,127 @@
 <script type="text/javascript">
     class Segment {
         constructor() {
-            this.source = []
-            this.sink = []
+            this.source = [null, null]
+            this.sink = [null, null]
+        }
+        isNull = () => {
+            for (var i = 0; i < this.source.length; i++) {
+                if (this.source[i] == null) {
+                    return true
+                }
+            }
+            for (var i = 0; i < this.sink.length; i++) {
+                if (this.sink[i] == null) {
+                    return true
+                }
+            }
+            return false
         }
 
     }
     class Drawer {
         constructor(imgSelector, tableSelector) {
             this.tableObj = document.querySelectorAll(tableSelector)
-            this.draw = SVG().addTo(imgSelector).size(300, 300)
+            SVG().clear(imgSelector)
+            this.eccentricity = 0.9
+            this.crossing_color = "#ffffff"
+            this.string_color = "#000000"
             this.diagram = []
             this.__parse_table()
+            this.draw = SVG().addTo(imgSelector).size(10*this.diagram.length,10*this.diagram.length)
             this.segments = []
             this.__get_segments()
         }
         __parse_table = () => {
             this.diagram = Array.prototype.map.call(this.tableObj, function (tr) {
                 return Array.prototype.map.call(tr.querySelectorAll('td'), function (td) {
-                    return td.innerHTML;
+                    return td.innerHTML.trim().replace(/(<br ?\/?>)*/g, "");;
                 });
             });
         }
         __get_segments = () => {
-            this.segments.push(this.__get_segments_horizontal())
-            this.segments.push(this.__get_segments_vertical())
+            this.__get_segments_horizontal();
+            this.__get_segments_vertical();
         }
         __get_segments_horizontal = () => {
             var segs = []
-            for (var i = 0; i < 10; i++) {
+            for (var i = 0; i < this.diagram.length; i++) {
+                var seg = new Segment()
+                for (var j = 0; j < this.diagram.length; j++) {
+                    if (this.diagram[i][j] != ".") {
+                        if (this.diagram[i][j].trim() != "") {
+                            if (this.diagram[i][j].trim().toLowerCase() == "x") {
+                                seg.sink[0] = j
+                                seg.sink[1] = i
+                            }
+                            if (this.diagram[i][j].trim().toLowerCase() == "o") {
+                                seg.source[0] = j
+                                seg.source[1] = i
+                            }
+                        }
+                    }
+                }
+                if (!seg.isNull()) { this.segments.push(seg) }
             }
         }
-        __get_segments_vertical = () => { }
-        __draw_segment = () => { }
+        __get_segments_vertical = () => {
+
+            var segs = []
+            for (var i = 0; i < this.diagram.length; i++) {
+                var seg = new Segment()
+                for (var j = 0; j < this.diagram.length; j++) {
+                    if (this.diagram[j][i] != ".") {
+                        if (this.diagram[j][i].trim() != "") {
+                            if (this.diagram[j][i].trim().toLowerCase() == "x") {
+                                seg.source[0] = j
+                                seg.source[1] = i
+                            }
+                            if (this.diagram[j][i].trim().toLowerCase() == "o") {
+                                seg.sink[0] = j
+                                seg.sink[1] = i
+                            }
+                        }
+                    }
+                }
+                if (!seg.isNull()) { this.segments.push(seg) }
+            }
+        }
+        __draw_segment = (step) => {
+            var rot_src = this.__rotate(step.source[0], step.source[1])
+            var rot_snk = this.__rotate(step.sink[0], step.sink[1])
+            var delta_x = rot_snk[0] - rot_src[0]
+            var x_ctr1 = rot_src[0] + (this.eccentricity * delta_x)
+            var x_ctr2 = rot_snk[0] - (this.eccentricity * delta_x)
+
+            var path = "M"
+            path += rot_src[0] + "," + rot_src[1]
+            path += " C"
+            path += x_ctr1 + "," + rot_src[1] + "," + x_ctr2 + "," + rot_snk[1] + "," + rot_snk[0] + "," + rot_snk[1]
+
+            return path
+        }
         __rotate = (x, y) => {
-            var r = 1 / math.sqrt(2)
+            var r = 1 / Math.sqrt(2)
             return [(-x * r - y * r), (-x * r + y * r)]
         }
         generate = () => {
-            var rect = this.draw.rect(100, 100).attr({ fill: '#f06' })
+            var group = this.draw.group().addClass('my-group'+i)
+            group.transform({
+                rotate:0,
+                translateX: Math.sqrt(2)*this.diagram.length,
+                translateY: Math.sqrt(2)*this.diagram.length/2
+            })
+            group.attr('fill', "none")
+            group.attr('stroke-width', "0.1")
+            group.attr('stroke', this.string_color)
+
+            for (var i = 0; i < this.segments.length; i++) {
+                var inner_group = group.group().addClass('my-group'+i)
+
+                var path = inner_group.path(this.__draw_segment(this.segments[i]))
+                path.stroke({ color: '#f06', width: .1})
+                path.plot()
+            }
         }
 
     }
