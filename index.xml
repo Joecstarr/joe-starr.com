@@ -13,6 +13,388 @@
     </image>
     
     <item>
+      <title>Grid Diagram to Front Projection</title>
+      <link>https://joe-starr.com/resources/grid2fp/</link>
+      <pubDate>Sun, 12 Feb 2023 17:09:26 +0000</pubDate>
+      <guid>https://joe-starr.com/resources/grid2fp/</guid>
+      <description>
+
+&lt;p hidden&gt;
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
+  \require{color}$`
+  &lt;/p&gt;
+
+&lt;h1 id=&#34;instructions&#34;&gt;Instructions&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an $n\times n$ table with the supplied button.&lt;/li&gt;
+&lt;li&gt;Fill in the table with the grid diagram. Putting . in the cells with no x or o.
+&lt;ol&gt;
+&lt;li&gt;Note there is no error handling so if something goes wrong refresh the page and try again&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Click generate to get the image.&lt;/li&gt;
+&lt;li&gt;Click download to download the image.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;style&gt;
+    body {
+        font-family: &#39;Verdana&#39;;
+    }
+
+    .generator {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .controls {
+        display: block;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #6272a4;
+        border-collapse: collapse;
+    }
+
+    table {
+        margin: 20px auto;
+        padding: 0;
+        background-color: #44475a;
+        border-radius: 5px;
+    }
+
+
+    td {
+        padding: 15px;
+        text-align: center;
+        color: #ffb86c;
+        font-family: monospace;
+    }
+
+    input {
+        width: 70px;
+        padding: 5px;
+        margin: 10px;
+        font-size: 16px;
+        background: #44475a;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .button,
+    .convert,
+    .download {
+        margin-top: 15px;
+        padding: 9px 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: #bd93f9;
+        color: #44475a;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+        transition: transform .1s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+        &amp;:active {
+            transform: scale(0.97);
+        }
+
+    }
+
+    .convert,
+    .download {
+        width: 100%;
+    }
+
+    .table-placeholder {
+        max-width: 500px;
+        width: 100%;
+        margin: 20px auto;
+
+        &amp;.hidden {
+            display: none;
+        }
+
+        &amp;__row {
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    &amp;__item {
+        max-width: 150px;
+        width: 100%;
+        height: 36px;
+        margin: 2px;
+        background: #44475a;
+        border-radius: 5px;
+    }
+
+    svg {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #svg-container {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 30vw;
+        max-height: 30vh;
+    }
+&lt;/style&gt;
+
+
+
+&lt;div id=&#34;table-container&#34;&gt;
+    &lt;section class=&#34;controls&#34;&gt;
+        &lt;label&gt;
+            Size :
+            &lt;input class=&#34;size&#34; type=&#34;number&#34; min=&#34;3&#34; value=&#34;3&#34;&gt;
+        &lt;/label&gt;
+        &lt;button class=&#34;button&#34;&gt;Create table&lt;/button&gt;
+    &lt;/section&gt;
+    &lt;table class=&#34;table&#34; border=&#34;0&#34; cellpadding=&#34;&#34; cellspacing=&#34;&#34; contenteditable=&#34;true&#34;&gt;&lt;/table&gt;
+
+&lt;/div&gt;
+&lt;button class=&#34;convert&#34;&gt;Convert table&lt;/button&gt;
+&lt;div id=&#34;svg-container&#34;&gt;&lt;/div&gt;
+&lt;button class=&#34;download&#34;&gt;Download&lt;/button&gt;
+
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+    class Table {
+        constructor(tableSelector, sizeSelector) {
+            this.sizeSelector = sizeSelector
+            this.tableObj = document.querySelector(tableSelector)
+        }
+
+        generate = () =&gt; {
+            let tableHTML = &#39;&#39;
+            const sizeNumber = parseInt(document.querySelector(this.sizeSelector).value)
+
+
+            for (let i = 1; i &lt;= sizeNumber; i++) {
+                let tr = &#39;&lt;tr&gt;&#39;
+                let td = &#39;&#39;
+
+                for (let j = 1; j &lt;= sizeNumber; j++) {
+
+                    
+                    
+                    
+                    
+                    td = `&lt;td&gt;.&lt;/td&gt;`;
+                    // }
+
+                    tr += td
+                }
+
+                tr += &#39;&lt;/tr&gt;&#39;
+                tableHTML += tr
+            }
+
+            this.tableObj.innerHTML = tableHTML
+        }
+
+    }
+
+    const table = new Table(&#39;.table&#39;, &#39;.size&#39;)
+
+    document.querySelector(&#39;.button&#39;).addEventListener(&#39;click&#39;, () =&gt; {
+        table.generate()
+    });
+
+
+
+&lt;/script&gt;
+
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    class Segment {
+        constructor() {
+            this.source = [null, null]
+            this.sink = [null, null]
+        }
+        isNull = () =&gt; {
+            for (var i = 0; i &lt; this.source.length; i++) {
+                if (this.source[i] == null) {
+                    return true
+                }
+            }
+            for (var i = 0; i &lt; this.sink.length; i++) {
+                if (this.sink[i] == null) {
+                    return true
+                }
+            }
+            return false
+        }
+
+    }
+    class Drawer {
+        constructor(imgSelector, tableSelector) {
+            this.tableObj = document.querySelectorAll(tableSelector)
+            SVG().clear(imgSelector)
+            this.eccentricity = 0.9
+            this.crossing_color = &#34;#ffffff&#34;
+            this.string_color = &#34;#000000&#34;
+            this.diagram = []
+            this.stroke_width = 0.1
+            this.__parse_table()
+            this.draw = SVG().addTo(imgSelector)
+            
+            this.draw.viewbox({
+                x: 0, y: 0,
+                width: 2 * Math.sqrt(2) * this.diagram.length,
+                height: 2 * Math.sqrt(2) * this.diagram.length
+            })
+            this.draw.size(200, 200)
+            
+            this.segments = []
+            this.__get_segments()
+        }
+        __parse_table = () =&gt; {
+            this.diagram = Array.prototype.map.call(this.tableObj, function (tr) {
+                return Array.prototype.map.call(tr.querySelectorAll(&#39;td&#39;), function (td) {
+                    return td.innerHTML.trim().replace(/(&lt;br ?\/?&gt;)*/g, &#34;&#34;);;
+                });
+            });
+        }
+        __get_segments = () =&gt; {
+            this.__get_segments_horizontal();
+            this.__get_segments_vertical();
+        }
+        __get_segments_horizontal = () =&gt; {
+            var segs = []
+            for (var i = 0; i &lt; this.diagram.length; i++) {
+                var seg = new Segment()
+                for (var j = 0; j &lt; this.diagram.length; j++) {
+                    if (this.diagram[i][j] != &#34;.&#34;) {
+                        if (this.diagram[i][j].trim() != &#34;&#34;) {
+                            if (this.diagram[i][j].trim().toLowerCase() == &#34;x&#34;) {
+                                seg.sink[0] = j
+                                seg.sink[1] = i
+                            }
+                            if (this.diagram[i][j].trim().toLowerCase() == &#34;o&#34;) {
+                                seg.source[0] = j
+                                seg.source[1] = i
+                            }
+                        }
+                    }
+                }
+                if (!seg.isNull()) { this.segments.push(seg) }
+            }
+        }
+        __get_segments_vertical = () =&gt; {
+
+            var segs = []
+            for (var j = 0; j &lt; this.diagram.length; j++) {
+                var seg = new Segment()
+                for (var i = 0; i &lt; this.diagram.length; i++) {
+                    if (this.diagram[j][i] != &#34;.&#34;) {
+                        if (this.diagram[j][i].trim() != &#34;&#34;) {
+                            if (this.diagram[j][i].trim().toLowerCase() == &#34;x&#34;) {
+                                seg.source[0] = j
+                                seg.source[1] = i
+                            }
+                            if (this.diagram[j][i].trim().toLowerCase() == &#34;o&#34;) {
+                                seg.sink[0] = j
+                                seg.sink[1] = i
+                            }
+                        }
+                    }
+                }
+                if (!seg.isNull()) { this.segments.push(seg) }
+            }
+        }
+        __draw_segment = (step) =&gt; {
+            var rot_src = this.__rotate(step.source[0], step.source[1])
+            var rot_snk = this.__rotate(step.sink[0], step.sink[1])
+            var delta_x = rot_snk[0] - rot_src[0]
+            var x_ctr1 = rot_src[0] + (this.eccentricity * delta_x)
+            var x_ctr2 = rot_snk[0] - (this.eccentricity * delta_x)
+
+            var path = &#34;M&#34;
+            path += rot_src[0] + &#34;,&#34; + rot_src[1]
+            path += &#34; C&#34;
+            path += x_ctr1 + &#34;,&#34; + rot_src[1] + &#34;,&#34; + x_ctr2 + &#34;,&#34; + rot_snk[1] + &#34;,&#34; + rot_snk[0] + &#34;,&#34; + rot_snk[1]
+
+            return path
+        }
+        __rotate = (x, y) =&gt; {
+            var r = 1 / Math.sqrt(2)
+            return [(-x * r - y * r), (-x * r + y * r)]
+        }
+        generate = () =&gt; {
+            var group = this.draw.group().addClass(&#39;my-group&#39; + i)
+            group.transform({
+                rotate: 0,
+                translateX: Math.sqrt(2) * this.diagram.length,
+                translateY: Math.sqrt(2) * this.diagram.length / 2
+            })
+            group.attr(&#39;fill&#39;, &#34;none&#34;)
+            group.attr(&#39;stroke-width&#39;, this.stroke_width)
+            group.attr(&#39;stroke&#39;, this.string_color)
+
+            for (var i = 0; i &lt; this.segments.length; i++) {
+                var inner_group = group.group().addClass(&#39;my-group&#39; + i)
+                var path_str = this.__draw_segment(this.segments[i])
+                var path = inner_group.path(path_str)
+                path.stroke({ color: this.crossing_color, width: this.stroke_width * 2 })
+                path.plot()
+                var path = inner_group.path(path_str)
+                path.plot()
+            }
+        }
+
+    }
+
+
+    document.querySelector(&#39;.convert&#39;).addEventListener(&#39;click&#39;, () =&gt; {
+        drawer = new Drawer(&#39;#svg-container&#39;, &#39;.table tr&#39;)
+        drawer.generate()
+    });
+&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+
+    document.querySelector(&#39;.download&#39;).addEventListener(&#39;click&#39;, () =&gt; {
+        function uuidv4() {
+            return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =&gt;
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] &amp; 15 &gt;&gt; c / 4).toString(16)
+            );
+        }
+        const svg = document.querySelector(&#39;#svg-container&#39;).innerHTML;
+        const blob = new Blob([svg.toString()]);
+        const element = document.createElement(&#34;a&#34;);
+        element.download = uuidv4() + &#34;.svg&#34;;
+        element.href = window.URL.createObjectURL(blob);
+        element.click();
+        element.remove();
+    });
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tool Chain</title>
       <link>https://joe-starr.com/resources/toolchain/</link>
       <pubDate>Sun, 12 Feb 2023 17:09:26 +0000</pubDate>
