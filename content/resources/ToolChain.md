@@ -449,6 +449,10 @@ pip install flake8 flake8-black scipy numpy pytest pytest-flake8 pytest-html pyt
 
 I use [zotero](https://www.zotero.org/) for citation and pdf management between my ipad and windows pc.
 
+## Notes
+
+I take notes with [obsidian](https://obsidian.md/).
+
 ## Presentations
 
 ### Reveal.js
@@ -499,6 +503,7 @@ decktape -s 1920x1080 <url for presentation> presentation.pdf
 * [zotero](https://www.zotero.org/)
 * [visual studio 2022](https://visualstudio.microsoft.com/vs/)
 * [gitkraken](https://www.gitkraken.com/)
+* [obsidian](https://obsidian.md/)
 
 ```sh
 choco  install ninja -y
