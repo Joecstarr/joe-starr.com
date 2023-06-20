@@ -406,6 +406,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;academic-stuff&#34;&gt;Academic Stuff&lt;/h1&gt;
 &lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
 &lt;p&gt;I use &lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;zotero&lt;/a&gt; for citation and pdf management between my ipad and windows pc.&lt;/p&gt;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;I take notes with &lt;a href=&#34;https://obsidian.md/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;obsidian&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
 &lt;h3 id=&#34;revealjs&#34;&gt;Reveal.js&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://revealjs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site&lt;/a&gt;&lt;/p&gt;
@@ -433,6 +435,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;zotero&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/vs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;visual studio 2022&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.gitkraken.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gitkraken&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://obsidian.md/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;obsidian&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;choco  install ninja -y
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;choco  install cmake -y
