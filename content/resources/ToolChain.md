@@ -1,6 +1,6 @@
 ---
 title: Tool Chain
-date: 2023-02-12T17:09:26.037Z
+date: 2023-06-20
 featured: true
 summary:
 weight: 500
@@ -11,38 +11,11 @@ share: false
 ---
 
 
+# PC
 
-## MarginNote
+## Typesetting
 
-[Site](https://www.marginnote.com/)
-
-## Obsidian
-
-[Site](https://obsidian.md/)
-
-## Goodnotes
-
-[Site](https://www.goodnotes.com/)
-
-## Anki
-
-[Site](https://ankiweb.net/about)
-
-## Presentations
-
-### Reveal.js
-
-[Site](https://revealjs.com/)
-
-### Decktape
-
-[Github](https://github.com/astefanutti/decktape)
-```
-decktape -s 1920x1080 https://joe-starr.com/slides/discrete_morse_theory/ presentation.pdf
-```
-
-## TeX/Vscode
-
+Core tool is [vscode](https://code.visualstudio.com/) here are my settings
 
 ### plugins
 
@@ -59,7 +32,9 @@ decktape -s 1920x1080 https://joe-starr.com/slides/discrete_morse_theory/ presen
 
 ### Settings
 
-```
+{{% collapseable %}}
+
+```json
     "macros": {
       "mathField": [
         {
@@ -344,10 +319,13 @@ decktape -s 1920x1080 https://joe-starr.com/slides/discrete_morse_theory/ presen
 
 ```
 
+{{% /collapseable %}}
 
-### Autobuild on push to trunk github action
+### (Optional) Autobuild on push to trunk github action
 
-```
+{{% collapseable %}}
+
+```yaml
 name: publish pdf
 
 on:
@@ -391,3 +369,162 @@ jobs:
               *.tex
 ```
 
+{{% /collapseable %}}
+
+## Development
+
+### Package manager
+
+Using a package manager makes life a little easier here's what I use on windows [Choco](https://chocolatey.org/).
+
+### Version Control
+
+```sh
+choco install git.install -y
+```
+
+For personal and academic work I use [git](https://git-scm.com/) with [github](https://github.com/) for a production environment. I also maintain a local [gogs](https://gogs.io/) server for local mirrors.
+
+I interact with local repositories with the vscode vs plugin. Rarely I use the comand line if vscode can't do what I need. I've found [gitkraken](https://www.gitkraken.com/) is a very accessable tool for new git users.
+
+For professional work I use [SVN](https://tortoisesvn.net/).
+
+### C/C++
+
+#### Code editor
+
+I use [vscode](https://code.visualstudio.com/) for editing code.
+
+#### Debugger
+
+I use [visual studio 2022](https://visualstudio.microsoft.com/vs/) for debugging.
+
+#### Compiler and build
+
+```sh
+choco  install ninja -y
+choco  install cmake -y
+choco  install llvm -y
+```
+
+Set the following:
+
+```sh
+CC="C:\Program Files\LLVM\bin\clang.exe"
+CXX="C:\Program Files\LLVM\bin\clang++.exe"
+```
+
+#### Documentation engine/s
+
+Doxygen is basically the only option but I present the results with [sphinx](https://www.sphinx-doc.org/en/master/) and [breathe](https://breathe.readthedocs.io/en/latest/) info [here](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/)
+
+```sh
+choco  install doxygen.install -y
+choco install sphinx -y
+pip install sphinx_rtd_theme
+pip install breathe
+```
+
+#### Testing
+
+I use [pytest](https://docs.pytest.org/en/7.3.x/) tests run by cmake as [ctest](https://cmake.org/cmake/help/book/mastering-cmake/chapter/Testing%20With%20CMake%20and%20CTest.html).
+
+```sh
+pip install pytest
+```
+
+### Python
+
+I use the latest lts python version. I use vscode as an editor and debugger. I use black for code formatting and flake8 for style checking.
+
+```sh
+choco install python -y
+pip install flake8 flake8-black scipy numpy pytest pytest-flake8 pytest-html pytest-metadata pytest-pylint pytest-reportlog flake8-docstrings flake8-html
+
+```
+
+# Academic Stuff
+
+## Citations
+
+I use [zotero](https://www.zotero.org/) for citation and pdf management between my ipad and windows pc.
+
+## Notes
+
+I take notes with [obsidian](https://obsidian.md/).
+
+## Presentations
+
+### Reveal.js
+
+[Site](https://revealjs.com/)
+
+### Decktape
+
+[Github](https://github.com/astefanutti/decktape)
+
+```sh
+decktape -s 1920x1080 <url for presentation> presentation.pdf
+```
+
+
+# Ipad
+
+## Zotero
+
+[Site](https://www.zotero.org/)
+
+## Obsidian
+
+[Site](https://obsidian.md/)
+
+## Goodnotes
+
+[Site](https://www.goodnotes.com/)
+
+## Vectornator
+
+[Site](https://www.vectornator.io/)
+
+## Concepts
+
+[Site](https://concepts.app/en/)
+
+## Anki
+
+[Site](https://ankiweb.net/about)
+
+
+# Quick Install List
+
+* [vscode](https://code.visualstudio.com/)
+* [Choco](https://chocolatey.org/)
+* [python](https://www.python.org/)
+* [zotero](https://www.zotero.org/)
+* [visual studio 2022](https://visualstudio.microsoft.com/vs/)
+* [gitkraken](https://www.gitkraken.com/)
+* [obsidian](https://obsidian.md/)
+
+```sh
+choco  install ninja -y
+choco  install cmake -y
+choco  install llvm -y
+choco  install doxygen.install -y
+choco  install sphinx -y
+
+pip install sphinx_rtd_theme
+pip install breathe
+pip install pytest
+pip install flake8 flake8-black scipy numpy pytest pytest-flake8 pytest-html pytest-metadata pytest-pylint pytest-reportlog flake8-docstrings flake8-html
+```
+
+## For Tanglenomicon
+
+We're still in a design phase here's a list of DB options we're considering:
+
+* [mongodb](https://www.mongodb.com/)
+* [Apache cassandra](https://cassandra.apache.org/_/index.html)
+
+```sh
+choco install mongodb
+```
