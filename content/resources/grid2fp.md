@@ -23,3 +23,7 @@ share: false
 ---
 
 {{< tools/grid2fp_code >}}
+
+---
+
+A python library for this code can be found at [grid2fp](https://pypi.org/project/grid2fp/)
