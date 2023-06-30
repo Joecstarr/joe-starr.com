@@ -836,6 +836,8 @@
         element.remove();
     });
 &lt;/script&gt;
+&lt;hr&gt;
+&lt;p&gt;A python library for this code can be found at &lt;a href=&#34;https://pypi.org/project/grid2fp/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;grid2fp&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
