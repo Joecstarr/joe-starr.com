@@ -140,9 +140,6 @@
             crossing_group.transform({
                 translateX: trans_x
             })
-            crossing_group.attr('fill', "none")
-            crossing_group.attr('stroke-width', this.stroke_width)
-            crossing_group.attr('stroke', this.string_color)
 
             var step1 = new Segment()
             step1.source = [0, 0]
@@ -186,7 +183,12 @@
             var offset_y = this.crossing_grid
 
             for (var i = 0; i < this.tv.length; i++) {
+
                 var outer_integral_group = this.draw.group()
+                outer_integral_group.attr('fill', "none")
+                outer_integral_group.attr('stroke-width', this.stroke_width)
+                outer_integral_group.attr('stroke', this.string_color)
+
                 if (i % 2 == 0) {
 
                     outer_integral_group.transform({
@@ -194,10 +196,25 @@
                         translateY: offset_y,
                     })
 
-                    offset_x = (offset_x+this.tv[i]*this.crossing_grid)/2
-                    offset_y = offset_y+(i+2) * this.crossing_grid
-
                     this.__draw_integral(outer_integral_group, this.tv[i], false)
+
+                    if (i > 0) {
+                        var step = new Segment()
+                        step.source = [-this.crossing_grid, -this.crossing_grid*2]
+                        step.sink = [0, 0]
+
+                        this.__draw_strand(outer_integral_group, step)
+
+                        var step = new Segment()
+                        step.source = [-this.crossing_grid, -this.crossing_grid]
+                        step.sink = [0, this.crossing_grid]
+
+                        this.__draw_strand(outer_integral_group, step)
+                    }
+
+                    offset_x = (offset_x + this.tv[i] * this.crossing_grid) / 2
+                    offset_y = offset_y + (i + 2) * this.crossing_grid
+
                 }
                 else {
                     outer_integral_group.transform({
@@ -205,9 +222,22 @@
                         translateY: offset_y,
                     })
 
-                    offset_x = offset_x+(i+2) * this.crossing_grid
-
                     this.__draw_integral(outer_integral_group, this.tv[i], true)
+
+
+                    var step = new Segment()
+                    step.source = [-(this.tv[i] / 2), -offset_x]
+                    step.sink = [0, 0]
+
+                    this.__draw_strand(outer_integral_group, step)
+
+                    var step = new Segment()
+                    step.source = [-(this.tv[i] / 2), -offset_x]
+                    step.sink = [this.crossing_grid, 0]
+
+                    this.__draw_strand(outer_integral_group, step)
+
+                    offset_x = offset_x + (i + 1.5) * this.crossing_grid
                 }
             }
         }
