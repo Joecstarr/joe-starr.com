@@ -1,0 +1,113 @@
+<style>
+    body {
+        font-family: 'Verdana';
+    }
+
+    .text {
+        padding: 5px;
+        margin: 10px;
+        font-size: 16px;
+        background: #44475a;
+        border-radius: 5px;
+        border: 2px solid #44475a;
+    }
+
+    .btn {
+        border: 2px solid #44475a;
+        background-color: #44475a;
+        color: #f8f8f2;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+
+<section class="controls">
+    <div class="row">
+        <div class="column">
+            <label>
+                Twist Vector:
+                <input class="text" id="twist_vector_input" type="text">
+            </label>
+        </div>
+        <div class="column">
+            <input class="btn" type="button" value="🡒" onclick="tv_2_rn()">
+            <input class="btn" type="button" value="🡐" onclick="rn_2_tv()">
+        </div>
+        <div class="column">
+            <label>
+                Rational Number:
+                <input class="text" id="rational_number_input" type="text">
+            </label>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    function tv_2_rn() {
+        var tv = document.getElementById('twist_vector_input').value;
+        tv = tv.split(" ").map(function (item) {
+            return parseInt(item, 10);
+        }).reverse();
+
+        var hm1 = 0;
+        var h = 1;
+        var km1 = 1;
+        var k = 1;
+        tv.forEach(item => {
+            var ht = h;
+            var kt = k;
+
+            h = item*h+hm1
+            k = item*k+km1
+
+            km1 = kt
+            hm1 = ht
+
+        });
+
+        document.getElementById('rational_number_input').value = h+"/"+k;
+    }
+</script>
+<script type="text/javascript">
+    var findGCD = (num1, num2) => {
+        let a = Math.abs(num1);
+        let b = Math.abs(num2);
+        while (a && b && a !== b) {
+           if(a > b){
+              [a, b] = [a - b, b];
+           }else{
+              [a, b] = [a, b - a];
+           };
+        };
+        return a || b;
+     };
+
+    function rn_2_tv() {
+        var rn = document.getElementById('rational_number_input').value;
+
+
+
+        document.getElementById('twist_vector_input').value = tv;
+    }
+</script>
+<script type="text/javascript">
+
+</script>
