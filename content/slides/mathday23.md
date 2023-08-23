@@ -86,6 +86,14 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
+## Knot Info
+
+{{< centerimg src="/qr_codes/knotinfo.svg" width="30%">}}
+
+<p style="text-align:center !important;">knotinfo.math.indiana.edu</p>
+
+---
+
 ## Illustrating Mathematics Discord
 
 {{< centerimg src="/qr_codes/mgb.svg" width="30%">}}
@@ -224,7 +232,6 @@ ___
 --->
 
 # The Tanglenomicon
-
 
 ---
 
