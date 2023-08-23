@@ -1,3 +1,3 @@
-<div class="sliderow">
+<div class="sliderow {{ if .IsNamedParams }} {{ with .Get "class"}} {{ . | safeHTML }}{{ end }} {{ end }} " style="{{ if .IsNamedParams }} {{ with .Get "style"}} {{ . | safeCSS }}{{ end }} {{ end }}">
     {{ .Inner }}
 </div>

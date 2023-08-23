@@ -1,8 +1,8 @@
 ---
 
-title: "Uiowa Fall23 Math Day"
+title: "University of Iowa Fall23 Math Day"
 date: "2023-08-22"
-summary: "Talk given at the Fall23 Uiowa Math Day"
+summary: "Talk given at the Fall23 University of Iowa Math Day"
 tags: [
     "Talks",
 ]
@@ -46,7 +46,7 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-## The Tanglenomicon
+### The Tanglenomicon
 
 
 <p style="font-size:.7em;text-align:center !important">
@@ -58,11 +58,11 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-# Some useful links
+## Some useful links
 
 ---
 
-## Personal Site
+### Personal Site
 
 {{< centerimg src="/qr_codes/joe-starr.svg" width="30%">}}
 
@@ -70,7 +70,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-## MGB
+### MGB
 
 {{< centerimg src="/qr_codes/mgb.svg" width="30%">}}
 
@@ -78,7 +78,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-## KnotPlot
+### KnotPlot
 
 {{< centerimg src="/qr_codes/knotplot.svg" width="30%">}}
 
@@ -86,7 +86,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-## Knot Info
+### Knot Info
 
 {{< centerimg src="/qr_codes/knotinfo.svg" width="30%">}}
 
@@ -94,7 +94,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-## Illustrating Mathematics Discord
+### Illustrating Mathematics Discord
 
 {{< centerimg src="/qr_codes/mgb.svg" width="30%">}}
 
@@ -102,7 +102,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-## Seminars
+### Seminars
 
 {{% slides/text_size_adj size="2rem" %}}
 * Topology Reading Seminar
@@ -120,7 +120,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-# Knots
+## Knots
 
 ---
 
@@ -150,7 +150,7 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
-# Knot Tables
+## Knot Tables
 
 ---
 
@@ -189,13 +189,20 @@ Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æthe
 
 ---
 
-# Conway
+### KnotInfo
+
+
+{{< centerimg src="/presentations/mathday23/knotinfo_ss.png" width="auto" >}}
+
+---
+
+## Conway
 
 How did Conway compute 25 years of work in four hours?
 
 ---
 
-# Tangles
+## Tangles
 
 We define a **tangle** as a portion of a knot diagram from which there emerge just
 4 arcs pointing in the compass directions NW, NE, SW, SE
@@ -220,17 +227,18 @@ Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Pro
 
 ___
 
-# Operations
+## Operations
 
 @@@Todo: Add photos
 
 ---
 
-# The Tanglenomicon
+## The Tanglenomicon
+
 
 ---
 
-# Building up
+## Building up
 
 {{% slides/row %}}
 {{% slides/col %}}
@@ -252,40 +260,42 @@ ___
 
 ---
 
-# Where we are
+## Where we are
 
 ---
-# Rational
+## Rational
 
 {{< centerimg src="/presentations/lightning/Rational.svg" width="30%">}}
 
-___
-
-    1. construction
 
 ---
 
-16. rational numbers
+@@@TODO: Tangle to twistvector and back again
 
 ---
 
-17. current table
+### The Tanglenomicon
+
+{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png" width="auto">}}
 
 ---
 
-18. growth
+{{% slides/row %}}
+{{% slides/col %}}
+All knots up to 15 crossings: 313,231
+{{% /slides/col%}}
+{{% slides/col%}}
+Rational tangles up to 15 crossings: 6.5 Million
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 ---
 
-19. Next steps...
+## Where we're going
 
 ---
 
-# Where we're going
-
----
-
-# Montesinos
+## Montesinos
 
 {{< centerimg src="/presentations/lightning/Mont.svg" width="30%">}}
 
@@ -297,17 +307,17 @@ ___
 
 ---
 
-# Generalized montesions
+## Generalized montesions
 
 {{< centerimg src="/presentations/lightning/GenMont.svg" width="30%">}}
 
 ---
 
-# Into the future
+## Into the future
 
 ---
 
-# Algebraic
+## Algebraic
 
 @@@TODO: Containment diagram
 
@@ -317,27 +327,24 @@ All possible tangles made from $+$ and $\vee$.
 
 ---
 
-# Non-algebraic/Polygonal
+## Non-algebraic/Polygonal
 
 @@@TODO: Containment diagram
 
 ---
 
-# 4 valent planar graph insertions
+## 4 valent planar graph insertions
 
 
 {{< centerimg src="/presentations/lightning/Non-Alg.svg" width="30%">}}
 
+---
 
-
+## Questions?
 
 ---
 
-# Questions?
-
----
-
-## Sources
+### Sources
 
 {{% slides/citations %}}
 
