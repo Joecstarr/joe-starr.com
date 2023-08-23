@@ -46,7 +46,7 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-### The Tanglenomicon
+# The Tanglenomicon
 
 
 <p style="font-size:.7em;text-align:center !important">
@@ -58,7 +58,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-## Some useful links
+# Some useful links
 
 ---
 
@@ -120,7 +120,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-## Knots
+# Knots
 
 ---
 
@@ -150,7 +150,7 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
-## Knot Tables
+# Knot Tables
 
 ---
 
@@ -233,7 +233,7 @@ ___
 
 ---
 
-## The Tanglenomicon
+# The Tanglenomicon
 
 
 ---
@@ -260,7 +260,7 @@ ___
 
 ---
 
-## Where we are
+# Where we are
 
 ---
 ## Rational
@@ -291,7 +291,7 @@ Rational tangles up to 15 crossings: 6.5 Million
 
 ---
 
-## Where we're going
+# Where we're going
 
 ---
 
@@ -313,17 +313,21 @@ Rational tangles up to 15 crossings: 6.5 Million
 
 ---
 
-## Into the future
+# Into the future
 
 ---
 
 ## Algebraic
+
 
 @@@TODO: Containment diagram
 
 ---
 
 All possible tangles made from $+$ and $\vee$.
+
+{{< centerimg src="/presentations/lightning/Alg.svg" width="30%">}}
+
 
 ---
 
@@ -333,8 +337,11 @@ All possible tangles made from $+$ and $\vee$.
 
 ---
 
-## 4 valent planar graph insertions
+## 4-valent planar graphs
 
+---
+
+## 4 valent planar graph insertions
 
 {{< centerimg src="/presentations/lightning/Non-Alg.svg" width="30%">}}
 
