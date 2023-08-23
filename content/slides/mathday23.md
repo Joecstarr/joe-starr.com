@@ -198,7 +198,7 @@ Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æthe
 
 ## Conway
 
-How did Conway compute 25 years of work in four hours?
+How did Conway compute 25 years of work in "a few hours"?
 
 ---
 
