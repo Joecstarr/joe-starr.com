@@ -102,6 +102,24 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
+## Seminars
+
+{{% slides/text_size_adj size="2rem" %}}
+* Topology Reading Seminar
+  * T 2pm-3pm
+  * 221 MLH
+* Knot, Tangles, and Computers
+  * Th 11:30am - 12:30pm
+* Topology Research Seminar
+  * Th 2pm-3pm
+  * 221 MLH
+* Topological Data Visualization
+  * F  3:30pm - 4:30pm
+  * B13 MLH
+{{% /slides/text_size_adj %}}
+
+---
+
 # Knots
 
 ---
@@ -179,7 +197,7 @@ How did Conway compute 25 years of work in four hours?
 
 # Tangles
 
-We define a tangle as a portion of a knot diagram from which there emerge just
+We define a **tangle** as a portion of a knot diagram from which there emerge just
 4 arcs pointing in the compass directions NW, NE, SW, SE
 
 {{% slides/citations align="left" %}}
@@ -204,12 +222,15 @@ ___
 
 # Operations
 
-<!--
 @@@Todo: Add photos
--->
 
 ---
-<!--
+
+# The Tanglenomicon
+
+---
+
+# Building up
 
 {{% slides/row %}}
 {{% slides/col %}}
@@ -229,17 +250,17 @@ ___
 {{% /slides/col%}}
 {{% /slides/row %}}
 
---->
-
-# The Tanglenomicon
-
 ---
 
-1.  Tangle table start easy
+# Where we are
 
 ---
+# Rational
 
-15. rational
+{{< centerimg src="/presentations/lightning/Rational.svg" width="30%">}}
+
+___
+
     1. construction
 
 ---
@@ -260,34 +281,59 @@ ___
 
 ---
 
-20. Montesinos
+# Where we're going
 
 ---
 
-21. Generalized montesions
+# Montesinos
+
+{{< centerimg src="/presentations/lightning/Mont.svg" width="30%">}}
 
 ---
 
-22. The hard part
+
+@@@TODO: picture of addition
+
 
 ---
 
-23.  Algebraic
-    1. construction
+# Generalized montesions
+
+{{< centerimg src="/presentations/lightning/GenMont.svg" width="30%">}}
 
 ---
 
-24. Non-algebraic
-    1. construction
+# Into the future
 
 ---
 
-25. quote
+# Algebraic
+
+@@@TODO: Containment diagram
 
 ---
 
-26. questions
+All possible tangles made from $+$ and $\vee$.
 
+---
+
+# Non-algebraic/Polygonal
+
+@@@TODO: Containment diagram
+
+---
+
+# 4 valent planar graph insertions
+
+
+{{< centerimg src="/presentations/lightning/Non-Alg.svg" width="30%">}}
+
+
+
+
+---
+
+# Questions?
 
 ---
 
