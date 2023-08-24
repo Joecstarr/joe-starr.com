@@ -444,7 +444,7 @@ $[3\\, 2\\, 2] + [3\\, 2\\, 2]$
 
 ---
 
-## Generalized montesions
+## Generalized Montesinos
 
 {{< centerimg src="/presentations/lightning/GenMont.svg" width="30%">}}
 
