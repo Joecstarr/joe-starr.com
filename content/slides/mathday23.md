@@ -172,7 +172,7 @@ Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æthe
 * 1870's Tait, Kirkman, and Little compute knots up to 10 crossing
    * Takes about 25 years
    * 250 knots
-* 1960's Conway computs knots up to 11 crossings
+* 1960's Conway computes knots up to 11 crossings
    * "A few hours"
    * 802 knots
 
