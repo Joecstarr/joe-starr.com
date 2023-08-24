@@ -124,7 +124,7 @@ Mathematics Department at The University of Iowa<p>
 
 ---
 
-A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ ).
+> "A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ )."
 
 {{% slides/citations align="left" %}}
 Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
@@ -169,7 +169,7 @@ Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æthe
 
 * 1860's Tait computes knots up to 7 crossing
    * 15 knots
-* 1870's Tait, kirkman, and Little compute knots up to 10 crossing
+* 1870's Tait, Kirkman, and Little compute knots up to 10 crossing
    * Takes about 25 years
    * 250 knots
 * 1960's Conway computs knots up to 11 crossings
@@ -181,7 +181,7 @@ Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æthe
 * 1980's Dowker and Thistlethwaite compute up to 13 crossings
     * First using a computer
     * 12,966
-* 1990's Hoste, Thistlethwaite and Weeks compute up to 16 crossings
+* 1990's Hoste, Thistlethwaite, and Weeks compute up to 16 crossings
     * Computer runtime on the order of weeks
     * 1,701,936
 * 2020's Burton computes up to 19 crossings
@@ -204,8 +204,7 @@ How did Conway compute 25 years of work in "a few hours"?
 
 ## Tangles
 
-We define a **tangle** as a portion of a knot diagram from which there emerge just
-4 arcs pointing in the compass directions NW, NE, SW, SE
+> "We define a **tangle** as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE"
 
 {{% slides/citations align="left" %}}
 Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5)
@@ -227,9 +226,96 @@ Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Pro
 
 ___
 
-## Operations
 
-@@@Todo: Add photos
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/m1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/0.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/inf.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+## Operation $+$
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$+$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/1_plus_1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/1_plus_1_1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+$2$
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+
+---
+
+## Operation $\vee$
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\vee$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/1_vee_1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/1_vee_1_1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+$\frac{1}{2}$
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+
+
 
 ---
 
@@ -241,6 +327,9 @@ ___
 ## Building up
 
 {{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/general/1.svg" width="12rem">}}
+{{% /slides/col%}}
 {{% slides/col %}}
 {{< centerimg src="/presentations/lightning/Rational.svg" width="12rem">}}
 {{% /slides/col%}}
@@ -270,9 +359,28 @@ ___
 
 ---
 
-@@@TODO: Tangle to twistvector and back again
+# Rational Tangles
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg" max-width="20rem" >}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+$\LP 3 \vee \frac{1}{2}\RP + 2$
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+$[3\\,2\\,2]$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 ---
+
 
 ### The Tanglenomicon
 
@@ -302,7 +410,36 @@ Rational tangles up to 15 crossings: 6.5 Million
 ---
 
 
-@@@TODO: picture of addition
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg" max-width="20rem" >}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$+$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg" max-width="20rem" >}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/rat_plus_rat.svg" width="20rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/rat_plus_rat_1.svg" width="20rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$=$
+{{% /slides/col%}}
+{{% slides/col%}}
+$[3\\, 2\\, 2] + [3\\, 2\\, 2]$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 
 ---
@@ -313,6 +450,10 @@ Rational tangles up to 15 crossings: 6.5 Million
 
 ---
 
+### Operation $\circ$
+
+---
+
 # Into the future
 
 ---
@@ -320,30 +461,51 @@ Rational tangles up to 15 crossings: 6.5 Million
 ## Algebraic
 
 
-@@@TODO: Containment diagram
+{{< centerimg src="/presentations/general/alg_containment.svg" width="35rem">}}
 
 ---
 
 All possible tangles made from $+$ and $\vee$.
 
-{{< centerimg src="/presentations/lightning/Alg.svg" width="30%">}}
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/lightning/Alg.svg" width="20rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+A vertical sum of two Montesinos tangles.
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/lightning/annotated/Alg.svg" width="20rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 
 ---
 
 ## Non-algebraic/Polygonal
 
-@@@TODO: Containment diagram
+{{< centerimg src="/presentations/general/nonalg_containment.svg" width="35rem">}}
 
 ---
 
 ## 4-valent planar graphs
 
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/general/1star.svg" width="15rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/6star.svg" width="30rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
 ---
 
-## 4 valent planar graph insertions
+### 4-valent planar graph insertions
 
-{{< centerimg src="/presentations/lightning/Non-Alg.svg" width="30%">}}
+{{< centerimg src="/presentations/lightning/Non-Alg.svg" width="37rem">}}
 
 ---
 
@@ -366,6 +528,7 @@ All possible tangles made from $+$ and $\vee$.
 9. Dowker, C. H., & Thistlethwaite, M. B. (1983). Classification of knot projections. In Topology and its Applications (Vol. 16, Issue 1, pp. 19-31). Elsevier BV. [https://doi.org/10.1016/0166-8641(83)90004-4](https://doi.org/10.1016/0166-8641(83)90004-4)
 10. Hoste, J., Thistlethwaite, M., & Weeks, J. (1998). The first 1,701,936 knots. In The Mathematical Intelligencer (Vol. 20, Issue 4, pp. 33-48). Springer Science and Business Media LLC. [https://doi.org/10.1007/bf03025227](https://doi.org/10.1007/bf03025227)
 11. Burton, B. A. (2020). The Next 350 Million Knots. Schloss Dagstuhl - Leibniz-Zentrum Für Informatik. [https://doi.org/10.4230/LIPICS.SOCG.2020.25](https://doi.org/10.4230/LIPICS.SOCG.2020.25)
+12.  C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants, knotinfo.math.indiana.edu, today's date (eg. August 24, 2023).
 {{% /slides/citations %}}
 
 
