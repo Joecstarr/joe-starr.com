@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://joe-starr.com/slides/mathday23/">
+
+  <title>University of Iowa Fall23 Math Day | Joe Starr</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    if (typeof MathJax === 'undefined') {
+        MathJax = {
+            loader: {
+                load: ['[img]/img.min.js', '[tex]/color', '[tex]/amscd'],
+                paths: { img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3' }
+            },
+            tex: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+                processEscapes: true,
+                processEnvironments: true,
+                extensions: ["autoload-all.js", "AMSmath.js", "AMSsymbols.js", "AMScd.js"],
+                packages: { '[+]': ['img', 'color', 'amscd'] }
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+
+        window.addEventListener('load', (event) => {
+            document.querySelectorAll("mjx-container").forEach(function (x) {
+                x.parentElement.classList += 'has-jax'
+            })
+        });
+    }
+
+</script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <style>
+
+  .tangrow * {
+    font-size: 2.5rem;
+  }
+
+  .tangrow {
+    border: 2px solid var(--r-Red);
+    border-radius: 12px;
+    margin:auto;
+    padding:1rem;
+
+  }
+.qr_Code{
+    width:10vw;
+    height:auto;
+}
+
+.mermaid svg {
+    max-width: none !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+</style>
+<p><link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/cus_dracula.css" />
+
+
+<p hidden>
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
+  \require{color}$`
+  </p>
+</p>
+<h1 id="the-tanglenomicon">The Tanglenomicon</h1>
+<p style="font-size:.7em;text-align:center !important">
+Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
+<p>
+<p style="font-size:.6em; text-align:center !important">
+Mathematics Department at The University of Iowa<p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="some-useful-links">Some useful links</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="personal-site">Personal Site</h3>
+
+
+
+
+<img class="centerImg" style=" width:30%;   " src=" /qr_codes/joe-starr.svg"/>
+
+
+<p style="text-align:center !important;">joe-starr.com</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="mgb">MGB</h3>
+
+
+
+
+<img class="centerImg" style=" width:30%;   " src=" /qr_codes/mgb.svg"/>
+
+
+<p style="text-align:center !important;">mathgradboard.com</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="knotplot">KnotPlot</h3>
+
+
+
+
+<img class="centerImg" style=" width:30%;   " src=" /qr_codes/knotplot.svg"/>
+
+
+<p style="text-align:center !important;">knotplot.com</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="knot-info">Knot Info</h3>
+
+
+
+
+<img class="centerImg" style=" width:30%;   " src=" /qr_codes/knotinfo.svg"/>
+
+
+<p style="text-align:center !important;">knotinfo.math.indiana.edu</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="illustrating-mathematics-discord">Illustrating Mathematics Discord</h3>
+
+
+
+
+<img class="centerImg" style=" width:30%;   " src=" /qr_codes/discord.svg"/>
+
+
+<p style="text-align:center !important;">discord.gg/jedHjNgZn</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="seminars">Seminars</h3>
+<div style=" font-size:2rem;;;">
+<ul>
+<li>Topology Reading Seminar
+<ul>
+<li>T 2pm-3pm</li>
+<li>221 MLH</li>
+</ul>
+</li>
+<li>Knot, Tangles, and Computers
+<ul>
+<li>Th 11:30am - 12:30pm</li>
+</ul>
+</li>
+<li>Topology Research Seminar
+<ul>
+<li>Th 2pm-3pm</li>
+<li>221 MLH</li>
+</ul>
+</li>
+<li>Topological Data Visualization
+<ul>
+<li>F  3:30pm - 4:30pm</li>
+<li>B13 MLH</li>
+</ul>
+</li>
+</ul>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="knots">Knots</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<blockquote>
+<p>&ldquo;A <strong>knot</strong> is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ ).&rdquo;</p>
+</blockquote>
+<div style="font-size: .9rem; text-align:left;;margin-top:auto;">
+<p>Jablan, S., &amp; Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. <a href="https://doi.org/10.1142/6623" target="_blank" rel="noopener">https://doi.org/10.1142/6623</a></p>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:15rem;   " src=" /presentations/Alex_Poly/trefoil/left.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:15rem;   " src=" /presentations/Alex_Poly/alg/Alg_1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:20rem;   " src=" /presentations/mathday23/tknot_35.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:30rem;   " src=" /presentations/mathday23/star.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="knot-tables">Knot Tables</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:30rem;   " src=" /presentations/mathday23/lord_kelvin.jpg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>Lord Kelvin&rsquo;s vortex theory of the atom. Atoms are knotted vortices in the æther.</p>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<ul>
+<li>1860&rsquo;s Tait computes knots up to 7 crossing
+<ul>
+<li>15 knots</li>
+</ul>
+</li>
+<li>1870&rsquo;s Tait, Kirkman, and Little compute knots up to 10 crossing
+<ul>
+<li>Takes about 25 years</li>
+<li>250 knots</li>
+</ul>
+</li>
+<li>1960&rsquo;s Conway computes knots up to 11 crossings
+<ul>
+<li>&ldquo;A few hours&rdquo;</li>
+<li>802 knots</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<ul>
+<li>1980&rsquo;s Dowker and Thistlethwaite compute up to 13 crossings
+<ul>
+<li>First using a computer</li>
+<li>12,966</li>
+</ul>
+</li>
+<li>1990&rsquo;s Hoste, Thistlethwaite, and Weeks compute up to 16 crossings
+<ul>
+<li>Computer runtime on the order of weeks</li>
+<li>1,701,936</li>
+</ul>
+</li>
+<li>2020&rsquo;s Burton computes up to 19 crossings
+<ul>
+<li>350 Million</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="knotinfo">KnotInfo</h3>
+
+
+
+
+<img class="centerImg" style=" width:auto;   " src=" /presentations/mathday23/knotinfo_ss.png"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="conway">Conway</h2>
+<p>How did Conway compute 25 years of work in &ldquo;a few hours&rdquo;?</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="tangles">Tangles</h2>
+<blockquote>
+<p>&ldquo;We define a <strong>tangle</strong> as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE&rdquo;</p>
+</blockquote>
+<div style="font-size: .9rem; text-align:left;;margin-top:auto;">
+<p>Conway, J.H. &ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. <a href="https://doi.org/10.1016/B978-0-08-012975-4.50034-5" target="_blank" rel="noopener">https://doi.org/10.1016/B978-0-08-012975-4.50034-5</a></p>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/mathday23/cc_1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/mathday23/cc_2.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/lightning/Rational.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/m1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/0.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/inf.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="operation-">Operation $+$</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$+$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1_plus_1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1_plus_1_1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<p>$2$</p>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="operation-vee">Operation $\vee$</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$\vee$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1_vee_1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/1_vee_1_1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<p>$\frac{1}{2}$</p>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="the-tanglenomicon-1">The Tanglenomicon</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="building-up">Building up</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:12rem;   " src=" /presentations/general/1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:12rem;   " src=" /presentations/lightning/Rational.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:12rem;   " src=" /presentations/lightning/Mont.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:12rem;   " src=" /presentations/lightning/GenMont.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:12rem;   " src=" /presentations/lightning/Alg.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:12rem;   " src=" /presentations/lightning/Non-Alg.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="where-we-are">Where we are</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="rational">Rational</h2>
+
+
+
+
+<img class="centerImg" style=" width:30%;   " src=" /presentations/lightning/Rational.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="rational-tangles">Rational Tangles</h1>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/lightning/annotated/Rational.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$\to$</p>
+</div>
+<div class="slidecolumn  " style="">
+<p>$\LP 3 \vee \frac{1}{2}\RP + 2$</p>
+</div>
+<div class="slidecolumn  " style="">
+<p>$\to$</p>
+</div>
+<div class="slidecolumn  " style="">
+<p>$[3\,2\,2]$</p>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="the-tanglenomicon-2">The Tanglenomicon</h3>
+
+
+
+
+<img class="centerImg" style=" width:auto;   " src=" /presentations/mathday23/tanglenomicon_ss.png"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<p>All knots up to 15 crossings: 313,231</p>
+</div>
+<div class="slidecolumn  " style="">
+<p>Rational tangles up to 15 crossings: 6.5 Million</p>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="where-were-going">Where we&rsquo;re going</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="montesinos">Montesinos</h2>
+
+
+
+
+<img class="centerImg" style=" width:30%;   " src=" /presentations/lightning/Mont.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/lightning/annotated/Rational.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$+$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/lightning/annotated/Rational.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/rat_plus_rat.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:auto;   " src=" /presentations/general/rat_plus_rat_1.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$=$</p>
+</div>
+<div class="slidecolumn  " style="">
+<p>$[3\, 2\, 2] + [3\, 2\, 2]$</p>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="generalized-montesinos">Generalized Montesinos</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:35rem;   " src=" /presentations/lightning/GenMont.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="operation-circ">Operation $\circ$</h3>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:35rem;   " src=" /presentations/lightning/annotated/GenMont.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>$= \color{#bd93f9}([3\, 0] + [3\, 0] + [2\, 0]) \color{#f8f8f2}\circ \color{#ff5555}[1\, 2]$</p>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="into-the-future">Into the future</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="algebraic">Algebraic</h2>
+
+
+
+
+<img class="centerImg" style=" width:35rem;   " src=" /presentations/general/alg_containment.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="all-possible-tangles-made-from--and-vee">All possible tangles made from $+$ and $\vee$</h3>
+<p><em>Example:</em></p>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:20rem;   " src=" /presentations/lightning/Alg.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<p>A vertical sum of two Montesinos tangles.</p>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:20rem;   " src=" /presentations/lightning/annotated/Alg.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="non-algebraicpolygonal">Non-algebraic/Polygonal</h2>
+
+
+
+
+<img class="centerImg" style=" width:35rem;   " src=" /presentations/general/nonalg_containment.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="4-valent-planar-graphs">4-valent planar graphs</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:15rem;   " src=" /presentations/general/1star.svg"/>
+</div>
+<div class="slidecolumn  " style="">
+<img class="centerImg" style=" width:30rem;   " src=" /presentations/general/6star.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="4-valent-planar-graph-insertions">4-valent planar graph insertions</h3>
+
+
+
+
+<img class="centerImg" style=" width:37rem;   " src=" /presentations/lightning/Non-Alg.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="questions">Questions?</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="sources">Sources</h3>
+<div style="font-size: .9rem;">
+<ol>
+<li>Dror Bar-Natan <a href="http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf" target="_blank" rel="noopener">The Most Important Missing Infrastructure Project in Knot Theory</a></li>
+<li>Kauffman, L. H., and S. Lambropoulou. &ldquo;From Tangle Fractions to DNA.&rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. <a href="https://doi.org/10.1007/978-3-540-49858-2_5" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-540-49858-2_5</a>.</li>
+<li>Moon, Hyeyoung, and Isabel K. Darcy. &ldquo;Tangle Equations Involving Montesinos Links.&rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. <a href="https://doi.org/10.1142/S0218216521500607" target="_blank" rel="noopener">https://doi.org/10.1142/S0218216521500607</a>.</li>
+<li>Conway, J.H. &ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. <a href="https://doi.org/10.1016/B978-0-08-012975-4.50034-5" target="_blank" rel="noopener">https://doi.org/10.1016/B978-0-08-012975-4.50034-5</a>.</li>
+<li>Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001</li>
+<li>Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d&rsquo;Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.</li>
+<li>Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor, MI, 1998. Thesis (Ph.D. The University of British Columbia (Canada). URL: <a href="https://www.knotplot.com/" target="_blank" rel="noopener">https://www.knotplot.com/</a>.</li>
+<li>Jablan, S., &amp; Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. <a href="https://doi.org/10.1142/6623" target="_blank" rel="noopener">https://doi.org/10.1142/6623</a></li>
+<li>Dowker, C. H., &amp; Thistlethwaite, M. B. (1983). Classification of knot projections. In Topology and its Applications (Vol. 16, Issue 1, pp. 19-31). Elsevier BV. <a href="https://doi.org/10.1016/0166-8641%2883%2990004-4" target="_blank" rel="noopener">https://doi.org/10.1016/0166-8641(83)90004-4</a></li>
+<li>Hoste, J., Thistlethwaite, M., &amp; Weeks, J. (1998). The first 1,701,936 knots. In The Mathematical Intelligencer (Vol. 20, Issue 4, pp. 33-48). Springer Science and Business Media LLC. <a href="https://doi.org/10.1007/bf03025227" target="_blank" rel="noopener">https://doi.org/10.1007/bf03025227</a></li>
+<li>Burton, B. A. (2020). The Next 350 Million Knots. Schloss Dagstuhl - Leibniz-Zentrum Für Informatik. <a href="https://doi.org/10.4230/LIPICS.SOCG.2020.25" target="_blank" rel="noopener">https://doi.org/10.4230/LIPICS.SOCG.2020.25</a></li>
+<li>C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants, knotinfo.math.indiana.edu, today&rsquo;s date (eg. August 24, 2023).</li>
+</ol>
+</div>
+<style type="text/css">
+     
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 3%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 3%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 0%;
+        left: 3%;
+    }
+</style>
+<div id="hidden" style="display:none;">
+    <div id="header">
+        <div id="header-right">
+</div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+</script>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+  
+
+</body>
+</html>

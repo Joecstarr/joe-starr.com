@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40mm"
+   height="69.028191mm"
+   viewBox="0 0 40 69.028191"
+   version="1.1"
+   id="svg4483"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="1star.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4485"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0787568"
+     inkscape:cx="90.845315"
+     inkscape:cy="203.93846"
+     inkscape:window-width="1920"
+     inkscape:window-height="1120"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4480" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-84.134621,-69.667007)">
+    <path
+       style="fill:none;stroke:#6272a4;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 91.726313,90 C 69.628558,65.125233 138.88208,65.320332 116.40567,90"
+       id="path4719"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#6272a4;stroke-width:3.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 91.726315,118.36218 c -22.09776,24.8748 47.155765,24.6797 24.679355,0"
+       id="path4719-3"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill;fill-opacity:1"
+       id="path4663"
+       cx="104.13462"
+       cy="104.69405"
+       r="20" />
+  </g>
+</svg>
