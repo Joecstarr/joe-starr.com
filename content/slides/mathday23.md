@@ -363,7 +363,7 @@ $\frac{1}{2}$
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg" max-width="20rem" >}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $\to$
@@ -413,25 +413,25 @@ Rational tangles up to 15 crossings: 6.5 Million
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg" max-width="20rem" >}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $+$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg" max-width="20rem" >}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/rat_plus_rat.svg" width="20rem">}}
+{{< centerimg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/rat_plus_rat_1.svg" width="20rem">}}
+{{< centerimg src="/presentations/general/rat_plus_rat_1.svg"  width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
