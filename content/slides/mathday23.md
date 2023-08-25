@@ -441,16 +441,30 @@ $[3\\, 2\\, 2] + [3\\, 2\\, 2]$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
-
 ---
 
 ## Generalized Montesinos
 
-{{< centerimg src="/presentations/lightning/GenMont.svg" width="30%">}}
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/lightning/GenMont.svg" width="35rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 ---
 
 ### Operation $\circ$
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/lightning/annotated/GenMont.svg" width="35rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$= \color{#bd93f9}([3\\, 0] + [3\\, 0] + [2\\, 0]) \color{#f8f8f2}\circ \color{#ff5555}[1\\, 2]$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 ---
 
@@ -465,7 +479,9 @@ $[3\\, 2\\, 2] + [3\\, 2\\, 2]$
 
 ---
 
-All possible tangles made from $+$ and $\vee$.
+### All possible tangles made from $+$ and $\vee$
+
+*Example:*
 
 {{% slides/row %}}
 {{% slides/col %}}
@@ -478,7 +494,6 @@ A vertical sum of two Montesinos tangles.
 {{< centerimg src="/presentations/lightning/annotated/Alg.svg" width="20rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
-
 
 ---
 
