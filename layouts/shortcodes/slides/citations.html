@@ -1,3 +1,7 @@
+{{ if .IsNamedParams }}
+<div style="font-size: .9rem;{{ with .Get "align"}} text-align:{{ . | safeCSS }};{{ end }};margin-top:auto;">
+{{else}}
 <div style="font-size: .9rem;">
+{{end}}
     {{ .Inner }}
 </div>
