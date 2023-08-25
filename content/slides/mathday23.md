@@ -96,9 +96,9 @@ Mathematics Department at The University of Iowa<p>
 
 ### Illustrating Mathematics Discord
 
-{{< centerimg src="/qr_codes/mgb.svg" width="30%">}}
+{{< centerimg src="/qr_codes/discord.svg" width="30%">}}
 
-<p style="text-align:center !important;">@@@ discord link</p>
+<p style="text-align:center !important;">discord.gg/jedHjNgZn</p>
 
 ---
 
