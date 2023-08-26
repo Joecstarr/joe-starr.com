@@ -67,9 +67,9 @@ if (pluginOptions.menu_enabled) {
 pluginOptions['plugins'] = enabledPlugins;
 
 Reveal.initialize(pluginOptions);
-Reveal.initialize({
-  transition: "none"
-});
+// Reveal.initialize({
+
+// });
 
 // Disable Mermaid by default.
 if (typeof params.slides.diagram === 'undefined') {
