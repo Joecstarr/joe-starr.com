@@ -12,36 +12,14 @@ slides:
   highlight_style: dracula
   diagram: true
   diagram_options:
-    theme: dark
+    theme: "dark"
     themeVariables:
             fontSize: 17
+  reveal_options:
+    theme: "none"
+    # center: false
+    transition: "none"
 ---
-<style>
-
-  .tangrow * {
-    font-size: 2.5rem;
-  }
-
-  .tangrow {
-    border: 2px solid var(--r-Red);
-    border-radius: 12px;
-    margin:auto;
-    padding:1rem;
-
-  }
-.qr_Code{
-    width:10vw;
-    height:auto;
-}
-
-.mermaid svg {
-    max-width: none !important;
-    width: 100% !important;
-    height: auto !important;
-}
-
-</style>
-
 
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
@@ -55,68 +33,6 @@ Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 
 <p style="font-size:.6em; text-align:center !important">
 Mathematics Department at The University of Iowa<p>
-
----
-
-# Some useful links
-
----
-
-### Personal Site
-
-{{< centerimg src="/qr_codes/joe-starr.svg" width="30%">}}
-
-<p style="text-align:center !important;">joe-starr.com</p>
-
----
-
-### MGB
-
-{{< centerimg src="/qr_codes/mgb.svg" width="30%">}}
-
-<p style="text-align:center !important;">mathgradboard.com</p>
-
----
-
-### KnotPlot
-
-{{< centerimg src="/qr_codes/knotplot.svg" width="30%">}}
-
-<p style="text-align:center !important;">knotplot.com</p>
-
----
-
-### Knot Info
-
-{{< centerimg src="/qr_codes/knotinfo.svg" width="30%">}}
-
-<p style="text-align:center !important;">knotinfo.math.indiana.edu</p>
-
----
-
-### Illustrating Mathematics Discord
-
-{{< centerimg src="/qr_codes/discord.svg" width="30%">}}
-
-<p style="text-align:center !important;">discord.gg/jedHjNgZn</p>
-
----
-
-### Seminars
-
-{{% slides/text_size_adj size="2rem" %}}
-* Topology Reading Seminar
-  * T 2pm-3pm
-  * 221 MLH
-* Knot, Tangles, and Computers
-  * Th 11:30am - 12:30pm
-* Topology Research Seminar
-  * Th 2pm-3pm
-  * 221 MLH
-* Topological Data Visualization
-  * F  3:30pm - 4:30pm
-  * B13 MLH
-{{% /slides/text_size_adj %}}
 
 ---
 
@@ -147,6 +63,11 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 {{< centerimg src="/presentations/mathday23/star.svg" width="30rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
+
+
+{{% slides/citations align="left" %}}
+[https://www.knotplot.com/](https://www.knotplot.com/)
+{{% /slides/citations %}}
 
 ---
 
@@ -427,6 +348,16 @@ $=$
 {{% slides/col%}}
 {{< centerimg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
 {{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+
+
+{{% slides/row %}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
+{{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
@@ -479,19 +410,19 @@ $= \color{#bd93f9}([3\\, 0] + [3\\, 0] + [2\\, 0]) \color{#f8f8f2}\circ \color{#
 
 ---
 
-### All possible tangles made from $+$ and $\vee$
+All possible tangles made from $+$ and $\vee$
 
 *Example:*
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/Alg.svg" width="20rem">}}
+{{< centerimg src="/presentations/lightning/Alg.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 A vertical sum of two Montesinos tangles.
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/annotated/Alg.svg" width="20rem">}}
+{{< centerimg src="/presentations/lightning/annotated/Alg.svg" width="auto">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -521,6 +452,69 @@ A vertical sum of two Montesinos tangles.
 ### 4-valent planar graph insertions
 
 {{< centerimg src="/presentations/lightning/Non-Alg.svg" width="37rem">}}
+
+
+---
+
+# Some useful links
+
+---
+
+### Personal Site
+
+{{< centerimg src="/qr_codes/joe-starr.svg" width="30%">}}
+
+<p style="text-align:center !important;">joe-starr.com</p>
+
+---
+
+### MGB
+
+{{< centerimg src="/qr_codes/mgb.svg" width="30%">}}
+
+<p style="text-align:center !important;">mathgradboard.com</p>
+
+---
+
+### KnotPlot
+
+{{< centerimg src="/qr_codes/knotplot.svg" width="30%">}}
+
+<p style="text-align:center !important;">knotplot.com</p>
+
+---
+
+### Knot Info
+
+{{< centerimg src="/qr_codes/knotinfo.svg" width="30%">}}
+
+<p style="text-align:center !important;">knotinfo.math.indiana.edu</p>
+
+---
+
+### Illustrating Mathematics Discord
+
+{{< centerimg src="/qr_codes/discord.svg" width="30%">}}
+
+<p style="text-align:center !important;">discord.gg/jedHjNgZn</p>
+
+---
+
+### Seminars
+
+{{% slides/text_size_adj size="2rem" %}}
+* Topology Reading Seminar
+  * T 2pm-3pm
+  * 221 MLH
+* Knot, Tangles, and Computers
+  * Th 11:30am - 12:30pm
+* Topology Research Seminar
+  * Th 2pm-3pm
+  * 221 MLH
+* Topological Data Visualization
+  * F  3:30pm - 4:30pm
+  * B13 MLH
+{{% /slides/text_size_adj %}}
 
 ---
 
