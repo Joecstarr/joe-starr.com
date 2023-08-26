@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var slides = { diagram: true, diagram_options: { theme: "dark", themevariables: { fontsize: 17 } }, highlight_style: "dracula" };
+  var slides = { diagram: true, diagram_options: { theme: "dark", themevariables: { fontsize: 17 } }, highlight_style: "dracula", reveal_options: { theme: "none", transition: "none" } };
 
   // <stdin>
   var enabledPlugins = [RevealMarkdown, RevealSearch, RevealNotes, RevealZoom];
@@ -42,9 +42,6 @@
   }
   pluginOptions["plugins"] = enabledPlugins;
   Reveal.initialize(pluginOptions);
-  Reveal.initialize({
-    transition: "none"
-  });
   if (typeof slides.diagram === "undefined") {
     slides.diagram = false;
   }

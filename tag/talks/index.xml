@@ -17,32 +17,7 @@
       <link>https://joe-starr.com/slides/mathday23/</link>
       <pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/mathday23/</guid>
-      <description>&lt;style&gt;
-
-  .tangrow * {
-    font-size: 2.5rem;
-  }
-
-  .tangrow {
-    border: 2px solid var(--r-Red);
-    border-radius: 12px;
-    margin:auto;
-    padding:1rem;
-
-  }
-.qr_Code{
-    width:10vw;
-    height:auto;
-}
-
-.mermaid svg {
-    max-width: none !important;
-    width: 100% !important;
-    height: auto !important;
-}
-
-&lt;/style&gt;
-&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
 
@@ -74,87 +49,6 @@ Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 &lt;p style=&#34;font-size:.6em; text-align:center !important&#34;&gt;
 Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;some-useful-links&#34;&gt;Some useful links&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;personal-site&#34;&gt;Personal Site&lt;/h3&gt;
-
-
-
-
-&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/joe-starr.svg&#34;/&gt;
-
-
-&lt;p style=&#34;text-align:center !important;&#34;&gt;joe-starr.com&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;mgb&#34;&gt;MGB&lt;/h3&gt;
-
-
-
-
-&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/mgb.svg&#34;/&gt;
-
-
-&lt;p style=&#34;text-align:center !important;&#34;&gt;mathgradboard.com&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;knotplot&#34;&gt;KnotPlot&lt;/h3&gt;
-
-
-
-
-&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/knotplot.svg&#34;/&gt;
-
-
-&lt;p style=&#34;text-align:center !important;&#34;&gt;knotplot.com&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;knot-info&#34;&gt;Knot Info&lt;/h3&gt;
-
-
-
-
-&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/knotinfo.svg&#34;/&gt;
-
-
-&lt;p style=&#34;text-align:center !important;&#34;&gt;knotinfo.math.indiana.edu&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;illustrating-mathematics-discord&#34;&gt;Illustrating Mathematics Discord&lt;/h3&gt;
-
-
-
-
-&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/discord.svg&#34;/&gt;
-
-
-&lt;p style=&#34;text-align:center !important;&#34;&gt;discord.gg/jedHjNgZn&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;seminars&#34;&gt;Seminars&lt;/h3&gt;
-&lt;div style=&#34; font-size:2rem;;;&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;Topology Reading Seminar
-&lt;ul&gt;
-&lt;li&gt;T 2pm-3pm&lt;/li&gt;
-&lt;li&gt;221 MLH&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Knot, Tangles, and Computers
-&lt;ul&gt;
-&lt;li&gt;Th 11:30am - 12:30pm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Topology Research Seminar
-&lt;ul&gt;
-&lt;li&gt;Th 2pm-3pm&lt;/li&gt;
-&lt;li&gt;221 MLH&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Topological Data Visualization
-&lt;ul&gt;
-&lt;li&gt;F  3:30pm - 4:30pm&lt;/li&gt;
-&lt;li&gt;B13 MLH&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr&gt;
 &lt;h1 id=&#34;knots&#34;&gt;Knots&lt;/h1&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
@@ -177,6 +71,9 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
 &lt;img class=&#34;centerImg&#34; style=&#34; width:30rem;   &#34; src=&#34; /presentations/mathday23/star.svg&#34;/&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&#34;font-size: .9rem; text-align:left;;margin-top:auto;&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.knotplot.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.knotplot.com/&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;knot-tables&#34;&gt;Knot Tables&lt;/h1&gt;
@@ -438,6 +335,12 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
 &lt;img class=&#34;centerImg&#34; style=&#34; width:auto;   &#34; src=&#34; /presentations/general/rat_plus_rat.svg&#34;/&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&#34;sliderow  &#34; style=&#34;&#34;&gt;
+&lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
+&lt;img class=&#34;centerImg&#34; style=&#34; width:auto;   &#34; src=&#34; /presentations/general/rat_plus_rat.svg&#34;/&gt;
+&lt;/div&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
 &lt;p&gt;$=$&lt;/p&gt;
 &lt;/div&gt;
@@ -480,17 +383,17 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 
 
 &lt;hr&gt;
-&lt;h3 id=&#34;all-possible-tangles-made-from--and-vee&#34;&gt;All possible tangles made from $+$ and $\vee$&lt;/h3&gt;
+&lt;p&gt;All possible tangles made from $+$ and $\vee$&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Example:&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;sliderow  &#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
-&lt;img class=&#34;centerImg&#34; style=&#34; width:20rem;   &#34; src=&#34; /presentations/lightning/Alg.svg&#34;/&gt;
+&lt;img class=&#34;centerImg&#34; style=&#34; width:auto;   &#34; src=&#34; /presentations/lightning/Alg.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
 &lt;p&gt;A vertical sum of two Montesinos tangles.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;slidecolumn  &#34; style=&#34;&#34;&gt;
-&lt;img class=&#34;centerImg&#34; style=&#34; width:20rem;   &#34; src=&#34; /presentations/lightning/annotated/Alg.svg&#34;/&gt;
+&lt;img class=&#34;centerImg&#34; style=&#34; width:auto;   &#34; src=&#34; /presentations/lightning/annotated/Alg.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -521,6 +424,87 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;img class=&#34;centerImg&#34; style=&#34; width:37rem;   &#34; src=&#34; /presentations/lightning/Non-Alg.svg&#34;/&gt;
 
 
+&lt;hr&gt;
+&lt;h1 id=&#34;some-useful-links&#34;&gt;Some useful links&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;personal-site&#34;&gt;Personal Site&lt;/h3&gt;
+
+
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/joe-starr.svg&#34;/&gt;
+
+
+&lt;p style=&#34;text-align:center !important;&#34;&gt;joe-starr.com&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;mgb&#34;&gt;MGB&lt;/h3&gt;
+
+
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/mgb.svg&#34;/&gt;
+
+
+&lt;p style=&#34;text-align:center !important;&#34;&gt;mathgradboard.com&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;knotplot&#34;&gt;KnotPlot&lt;/h3&gt;
+
+
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/knotplot.svg&#34;/&gt;
+
+
+&lt;p style=&#34;text-align:center !important;&#34;&gt;knotplot.com&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;knot-info&#34;&gt;Knot Info&lt;/h3&gt;
+
+
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/knotinfo.svg&#34;/&gt;
+
+
+&lt;p style=&#34;text-align:center !important;&#34;&gt;knotinfo.math.indiana.edu&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;illustrating-mathematics-discord&#34;&gt;Illustrating Mathematics Discord&lt;/h3&gt;
+
+
+
+
+&lt;img class=&#34;centerImg&#34; style=&#34; width:30%;   &#34; src=&#34; /qr_codes/discord.svg&#34;/&gt;
+
+
+&lt;p style=&#34;text-align:center !important;&#34;&gt;discord.gg/jedHjNgZn&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;seminars&#34;&gt;Seminars&lt;/h3&gt;
+&lt;div style=&#34; font-size:2rem;;;&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Topology Reading Seminar
+&lt;ul&gt;
+&lt;li&gt;T 2pm-3pm&lt;/li&gt;
+&lt;li&gt;221 MLH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Knot, Tangles, and Computers
+&lt;ul&gt;
+&lt;li&gt;Th 11:30am - 12:30pm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Topology Research Seminar
+&lt;ul&gt;
+&lt;li&gt;Th 2pm-3pm&lt;/li&gt;
+&lt;li&gt;221 MLH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Topological Data Visualization
+&lt;ul&gt;
+&lt;li&gt;F  3:30pm - 4:30pm&lt;/li&gt;
+&lt;li&gt;B13 MLH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;questions&#34;&gt;Questions?&lt;/h2&gt;
 &lt;hr&gt;
