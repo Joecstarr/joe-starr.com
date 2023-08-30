@@ -300,23 +300,6 @@ $[3\\,2\\,2]$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
----
-
-
-### The Tanglenomicon
-
-{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png" width="auto">}}
-
----
-
-{{% slides/row %}}
-{{% slides/col %}}
-All knots up to 15 crossings: 313,231
-{{% /slides/col%}}
-{{% slides/col%}}
-Rational tangles up to 15 crossings: 6.5 Million
-{{% /slides/col%}}
-{{% /slides/row %}}
 
 ---
 
