@@ -800,7 +800,7 @@
             group.attr(&#39;stroke-width&#39;, this.stroke_width)
             group.attr(&#39;stroke&#39;, this.string_color)
 
-            for (var i = 0; i &lt; this.segments.length; i++) {
+            for (var i = this.segments.length-1; i &gt;= 0; i--) {
                 var inner_group = group.group().addClass(&#39;my-group&#39; + i)
                 var path_str = this.__draw_segment(this.segments[i])
                 var path = inner_group.path(path_str)
