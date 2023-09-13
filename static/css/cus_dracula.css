@@ -371,14 +371,6 @@ section.has-light-background h6 {
     list-style: none;
 }
 
-.reveal ul li::before {
-    content: "•";
-    color: var(--r-list-bullet-color);
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
 .reveal ol {
     list-style: none;
     counter-reset: li;
