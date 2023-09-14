@@ -13,6 +13,169 @@
     </image>
     
     <item>
+      <title>Continued Fraction and Twist Vector Converter</title>
+      <link>https://joe-starr.com/resources/cont_frac_convert/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/resources/cont_frac_convert/</guid>
+      <description>
+
+&lt;p hidden&gt;
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
+  \require{color}$`
+  &lt;/p&gt;
+
+&lt;h1 id=&#34;rational-tangles&#34;&gt;Rational Tangles&lt;/h1&gt;
+&lt;p&gt;A rational tangle is given by alternating NE,SE and SE,SW twisting of the $0$ tangle&lt;a href=&#34;https://doi.org/10.48550/arXiv.math/0212011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${}^{[2]}$&lt;/a&gt;&lt;a href=&#34;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${}^{[1]}$&lt;/a&gt;. Discussion of canonicality of this construction of twist vector can be found in &lt;a href=&#34;https://doi.org/10.48550/arXiv.math/0212011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${}^{[2]}$&lt;/a&gt;. A twist vector encodes these alternating twists as a list of integers. This induces a unique map from the rational tangles onto the rational numbers&lt;a href=&#34;https://doi.org/10.48550/arXiv.math/0212011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;${}^{[2]}$&lt;/a&gt;. We accomplish this by interpreting a twist vector as a sequence for a continued fraction as:
+$$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$&lt;/p&gt;
+&lt;h1 id=&#34;instructions&#34;&gt;Instructions&lt;/h1&gt;
+&lt;p&gt;Twist vectors here are space seperated lists of integers.&lt;/p&gt;
+&lt;p&gt;A rational number here is &amp;ldquo;/&amp;rdquo; seperating two integers.&lt;/p&gt;
+&lt;hr&gt;
+&lt;style&gt;
+    body {
+        font-family: &#39;Verdana&#39;;
+    }
+
+    .text {
+        padding: 5px;
+        font-size: 16px;
+        background: #44475a;
+        border-radius: 5px;
+        border: 2px solid #44475a;
+    }
+
+    .btn {
+        border: 2px solid #44475a;
+        background-color: #44475a;
+        color: #f8f8f2;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin: auto;
+    }
+
+     
+    .column {
+        flex-shrink: 3;
+        flex-grow: 3;
+        padding: 1rem;
+    }
+
+     
+    .row {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        justify-content: space-evenly;
+    }
+&lt;/style&gt;
+
+
+&lt;section class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;row&#34;&gt;
+        &lt;div class=&#34;column&#34;&gt;
+            &lt;label&gt;
+                Twist Vector:
+            &lt;/label&gt;&lt;br/&gt;
+            &lt;input class=&#34;text&#34; id=&#34;twist_vector_input&#34; type=&#34;text&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;column&#34;&gt;
+            &lt;input class=&#34;btn&#34; type=&#34;button&#34; value=&#34;🡒&#34; onclick=&#34;tv_2_rn()&#34;&gt;&lt;br/&gt;
+            &lt;input class=&#34;btn&#34; type=&#34;button&#34; value=&#34;🡐&#34; onclick=&#34;rn_2_tv()&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;column&#34;&gt;
+            &lt;label&gt;
+                Rational Number:
+            &lt;/label&gt;&lt;br/&gt;
+            &lt;input class=&#34;text&#34; id=&#34;rational_number_input&#34; type=&#34;text&#34;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+    function tv_2_rn() {
+        var tv = document.getElementById(&#39;twist_vector_input&#39;).value;
+        tv = tv.split(&#34; &#34;).map(function (item) {
+            return parseInt(item, 10);
+        }).reverse();
+
+        var hm1 = 0;
+        var h = 1;
+        var km1 = 1;
+        var k = 0;
+        tv.forEach(item =&gt; {
+            var ht = h;
+            var kt = k;
+
+            h = item*h+hm1
+            k = item*k+km1
+
+            km1 = kt
+            hm1 = ht
+
+        });
+
+        document.getElementById(&#39;rational_number_input&#39;).value = h+&#34;/&#34;+k;
+    }
+&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+
+    function rn_2_tv() {
+        var rn = document.getElementById(&#39;rational_number_input&#39;).value;
+        rn = rn.split(&#34;/&#34;).map(function (item) {
+            return parseInt(item, 10);
+        });
+
+        var p = rn[0];
+        var q = rn[1];
+        var t = 0;
+        var tv = [];
+
+        while(p%q!=0)
+        {
+            var d = (p/q);
+            tv.push(Math.trunc(p/q));
+            t = q;
+            q = p % q;
+            p = t;
+
+        }
+        tv.push(Math.trunc(p/q));
+
+        tv == tv.reverse();
+        document.getElementById(&#39;twist_vector_input&#39;).value = tv.join(&#34; &#34;);
+
+
+    }
+&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+
+&lt;/script&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;cite&#34;&gt;Cite&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Conway, J.H. &amp;ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&amp;rdquo; In &lt;em&gt;Computational Problems in Abstract Algebra&lt;/em&gt;, 329-58. Elsevier, 1970. &lt;a href=&#34;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Kauffman, Louis H., and Sofia Lambropoulou. &amp;ldquo;On the Classification of Rational Knots,&amp;rdquo; 2002. &lt;a href=&#34;https://doi.org/10.48550/ARXIV.MATH/0212011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.48550/ARXIV.MATH/0212011&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tool Chain</title>
       <link>https://joe-starr.com/resources/toolchain/</link>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>

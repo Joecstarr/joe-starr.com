@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://joe-starr.com/resources/cont_frac_convert/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://joe-starr.com/resources/toolchain/</loc>
     <lastmod>2023-06-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,7 +53,7 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/resources/</loc>
-    <lastmod>2023-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/slides/lightning/</loc>
