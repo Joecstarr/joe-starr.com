@@ -1,5 +1,5 @@
 ---
-title: Continued Fraction Converter
+title: Continued Fraction and Twist Vector Converter
 date: 2023-07-15
 featured: true
 summary:
