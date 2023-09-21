@@ -1,6 +1,4 @@
-mjx-container[jax="CHTML"][display="true"] mjx-math {
-    font-size: xx-large;
-}
+
 .bigmath > mjx-container[jax="CHTML"][display="true"] mjx-math {
     font-size: 170% !important;
 }

@@ -10,7 +10,6 @@
     --r-italic-color: #f1fa8c;
     --r-inline-code-color: #50fa7b;
     --r-list-bullet-color: #8be9fd;
-
     --r-Background: #282a36;
     --r-Selection: #44475a;
     --r-Foreground: #f8f8f2;
@@ -22,4 +21,5 @@
     --r-Purple: #bd93f9;
     --r-Red: #ff5555;
     --r-Yellow: #f1fa8c;
+    --r-main-font-size: 30px;
 }
