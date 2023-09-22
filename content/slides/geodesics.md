@@ -221,6 +221,10 @@ Given $p \in M$ and any neighborhood $\mathcal{U}$ of $p$, there exists a unifor
 As one would expect, the Euclidean geodesic are straight lines.
 
 ---
+
+[Euclidean](/presentations/geodesics/euc.ggb)
+
+---
 ## Spheres
 
 
@@ -234,7 +238,16 @@ First we consider a geodesic $\gamma(t)=\LP x^1(t), \ldots, x^{n+1}(t)\RP $ star
 
 ---
 
-@@@TODO:picture
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/geodesics/ball.svg" width="40rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+[Sphere](/presentations/geodesics/Sphere.ggb)
 
 ---
 
@@ -261,7 +274,8 @@ starting at $N$ with initial tangent vector parallel to $\partial / \partial \xi
 
 ---
 
-@@@TODO: picture
+
+[Hyperboloid](/presentations/geodesics/hp.ggb)
 
 ---
 
@@ -276,13 +290,28 @@ to the boundary.
 
 ---
 
-@@@TODO: picture
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/geodesics/ball.svg" width="40rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 ---
 
 ## HALF-SPACE MODEL
 
 The vertical half-lines and the semicircles with centers on the $y=0$ hyperplane.
+
+---
+
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/geodesics/hp.svg" width="80rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 ---
 
