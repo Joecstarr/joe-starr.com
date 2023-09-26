@@ -241,13 +241,13 @@ First we consider a geodesic $\gamma(t)=\LP x^1(t), \ldots, x^{n+1}(t)\RP $ star
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/geodesics/ball.svg" width="40rem">}}
+{{< centerimg src="/presentations/geodesics/sphere.svg" width="40rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
-
+<!--
 ---
 
-[Sphere](/presentations/geodesics/Sphere.ggb)
+[Sphere](/presentations/geodesics/Sphere.ggb) -->
 
 ---
 
@@ -271,11 +271,11 @@ The "great hyperbolas," or intersections of $\mathbf{H}\_R^n$ with 2-planes thro
 
 We show this by playing the same game we played with the sphere. The geodesic
 starting at $N$ with initial tangent vector parallel to $\partial / \partial \xi^1$ must remain in the $\LP \xi^1, \tau\RP $ plane by symmetry, and therefore must be a constant speed parametrization of the hyperbola where this plane intersects $\mathbf{H}\_R^n$.
-
+<!--
 ---
 
 
-[Hyperboloid](/presentations/geodesics/hp.ggb)
+[Hyperboloid](/presentations/geodesics/hp.ggb) -->
 
 ---
 
