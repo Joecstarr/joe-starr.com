@@ -33,11 +33,12 @@
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 
 &lt;h1 id=&#34;rational-tangles&#34;&gt;Rational Tangles&lt;/h1&gt;
@@ -641,11 +642,12 @@ $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$&lt;/p&gt;
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 
 &lt;h1 id=&#34;instructions&#34;&gt;Instructions&lt;/h1&gt;

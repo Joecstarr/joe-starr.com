@@ -33,11 +33,12 @@
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 
 &lt;h1 id=&#34;rational-tangles&#34;&gt;Rational Tangles&lt;/h1&gt;
@@ -641,11 +642,12 @@ $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$&lt;/p&gt;
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 
 &lt;h1 id=&#34;instructions&#34;&gt;Instructions&lt;/h1&gt;
@@ -1081,11 +1083,12 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;the-tanglenomicon&#34;&gt;The Tanglenomicon&lt;/h1&gt;
@@ -1641,11 +1644,12 @@ Mathematics Department at The University of Iowa&lt;p&gt;
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;the-tanglenomicon&#34;&gt;The Tanglenomicon&lt;/h2&gt;
@@ -2374,11 +2378,12 @@ MI, 1998. Thesis (Ph.D.)–The University of British Columbia (Canada). URL: htt
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 &lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;
@@ -3009,11 +3014,12 @@ font-size: medium;
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 &lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;
@@ -3145,11 +3151,12 @@ font-size: medium;
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 &lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;
@@ -3739,11 +3746,12 @@ is a combinitorial sphere.&lt;/p&gt;
   \newcommand{\LB}{\left[}
   \newcommand{\RB}{\right]}
   \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
   \newcommand{\abs}[1]{\left\vert#1\right\vert}
   \newcommand{\msr}[1]{m\left(#1\right)}
   \newcommand{\inv}[1]{#1^{-1}}
   \newcommand{\bkt}[1]{\LA \img{#1}\RA}
-  \require{color}$`
+  \require{color}$`s
   &lt;/p&gt;
 &lt;/p&gt;
 &lt;h1 id=&#34;lets-build-some-knot-polynomials&#34;&gt;Lets build some knot polynomials&lt;/h1&gt;
