@@ -1,3 +1,3 @@
 @echo off
 
-hugo server --navigateToChanged -d build_dir
+hugo server --navigateToChanged -D -d build_dir

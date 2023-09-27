@@ -12,9 +12,13 @@ slides:
   highlight_style: dracula
   diagram: true
   diagram_options:
-    theme: dark
+    theme: "dark"
     themeVariables:
             fontSize: 17
+  reveal_options:
+    theme: "none"
+    # center: false
+    transition: "none"
 ---
 <style>
 
