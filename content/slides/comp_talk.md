@@ -1,12 +1,12 @@
 ---
 
 title: "Comprehensive Exam Talk "
-date: "2023-08-22"
+date: "2023-09-22"
 summary: "Talk for my comprehensive exam on tangle tabulation."
 tags: [
     "Talks",
 ]
-draft: false
+draft: true
 
 slides:
   highlight_style: dracula
@@ -24,6 +24,7 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
+<!--
 # The Tanglenomicon
 
 
@@ -166,6 +167,10 @@ ___
 
 ---
 
+# Basic Operations
+
+---
+
 ## Operation $+$
 
 
@@ -235,9 +240,6 @@ $\frac{1}{2}$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
-
-
-
 ---
 
 # The Tanglenomicon
@@ -273,10 +275,17 @@ $\frac{1}{2}$
 # Where we are
 
 ---
+ -->
 ## Rational
 
-{{< centerimg src="/presentations/lightning/Rational.svg" width="30%">}}
+Let $t$ be a pair of unoriented arcs properly embedded in a 3 -ball $B$. A 2-tangle is rational if there exists an orientation preserving homeomorphism of pairs: $$ g:(B, t) \longrightarrow\left(D^2 \times I,\{x, y\} \times I\right) \quad(\text { a trivial tangle })$$
 
+@@@TODO: Picture
+
+---
+
+
+{{< centerimg src="/presentations/lightning/Rational.svg" width="30%">}}
 
 ---
 
@@ -300,6 +309,40 @@ $[3\\,2\\,2]$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
+---
+# Genration
+
+@@@TODO
+
+---
+
+# Computations
+
+---
+
+## Parity
+
+@@@TODO
+
+---
+
+## Closures
+
+{{% slides/row %}}
+{{% slides/col %}}
+### Numerator
+{{< centerimg src="/presentations/mathday23/cc_2.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+### Denominator
+@@@TODO
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+## Closure Equivlance and pivoting to knots
+
+@@@TODO
 
 ---
 
@@ -336,7 +379,6 @@ $=$
 ---
 
 
-
 {{% slides/row %}}
 {{% slides/col%}}
 {{< centerimg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
@@ -354,6 +396,20 @@ $=$
 $[3\\, 2\\, 2] + [3\\, 2\\, 2]$
 {{% /slides/col%}}
 {{% /slides/row %}}
+
+---
+
+# Generation
+
+@@@TODO:
+
+---
+# Data
+
+---
+## Internal Loops
+
+@@@TODO:
 
 ---
 
@@ -379,6 +435,12 @@ $[3\\, 2\\, 2] + [3\\, 2\\, 2]$
 $= \color{#bd93f9}([3\\, 0] + [3\\, 0] + [2\\, 0]) \color{#f8f8f2}\circ \color{#ff5555}[1\\, 2]$
 {{% /slides/col%}}
 {{% /slides/row %}}
+
+---
+
+# Generation
+
+@@@TODO:
 
 ---
 
@@ -410,7 +472,20 @@ A vertical sum of two Montesinos tangles.
 {{% /slides/row %}}
 
 ---
+# Generation
 
+---
+
+## Codron Trees
+@@@TODO:
+
+---
+## Generation
+@@@TODO:
+
+
+
+---
 ## Non-algebraic/Polygonal
 
 {{< centerimg src="/presentations/general/nonalg_containment.svg" width="35rem">}}
@@ -436,72 +511,36 @@ A vertical sum of two Montesinos tangles.
 
 {{< centerimg src="/presentations/lightning/Non-Alg.svg" width="37rem">}}
 
+---
+
+# Generation
 
 ---
 
-# Some useful links
+# Tooling
 
 ---
 
-### Personal Site
+## Design Goals
+---
 
-{{< centerimg src="/qr_codes/joe-starr.svg" width="30%">}}
-
-<p style="text-align:center !important;">joe-starr.com</p>
+## Technologies
 
 ---
 
-### MGB
-
-{{< centerimg src="/qr_codes/mgb.svg" width="30%">}}
-
-<p style="text-align:center !important;">mathgradboard.com</p>
-
+### Languages
 ---
 
-### KnotPlot
-
-{{< centerimg src="/qr_codes/knotplot.svg" width="30%">}}
-
-<p style="text-align:center !important;">knotplot.com</p>
-
+### Runners
 ---
 
-### Knot Info
-
-{{< centerimg src="/qr_codes/knotinfo.svg" width="30%">}}
-
-<p style="text-align:center !important;">knotinfo.math.indiana.edu</p>
-
+### Database
 ---
 
-### Illustrating Mathematics Discord
-
-{{< centerimg src="/qr_codes/discord.svg" width="30%">}}
-
-<p style="text-align:center !important;">discord.gg/jedHjNgZn</p>
-
+### API
 ---
 
-### Seminars
-
-{{% slides/text_size_adj size="2rem" %}}
-* Topology Reading Seminar
-  * T 2pm-3pm
-  * 221 MLH
-* Knot, Tangles, and Computers
-  * Th 11:30am - 12:30pm
-* Topology Research Seminar
-  * Th 2pm-3pm
-  * 221 MLH
-* Topological Data Visualization
-  * F  3:30pm - 4:30pm
-  * B13 MLH
-{{% /slides/text_size_adj %}}
-
----
-
-## Questions?
+### WebTech
 
 ---
 
