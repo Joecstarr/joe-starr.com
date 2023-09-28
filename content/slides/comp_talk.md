@@ -1,5 +1,4 @@
 ---
-
 title: "Comprehensive Exam Talk "
 date: "2023-09-22"
 summary: "Talk for my comprehensive exam on tangle tabulation."
@@ -17,7 +16,7 @@ slides:
             fontSize: 17
   reveal_options:
     theme: "none"
-    # center: false
+    center: true
     transition: "none"
 ---
 
@@ -43,7 +42,7 @@ Mathematics Department at The University of Iowa<p>
 
 > "A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ )."
 
-{{% slides/citations align="left" %}}
+{{% slides/citations  %}}
 Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
 {{% /slides/citations %}}
 
@@ -66,7 +65,7 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 {{% /slides/row %}}
 
 
-{{% slides/citations align="left" %}}
+{{% slides/citations  %}}
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
 
@@ -111,6 +110,8 @@ Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æthe
 
 ---
 
+{{% slides/uncenter %}}
+
 ### KnotInfo
 
 
@@ -128,7 +129,7 @@ How did Conway compute 25 years of work in "a few hours"?
 
 > "We define a **tangle** as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE"
 
-{{% slides/citations align="left" %}}
+{{% slides/citations  %}}
 Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5)
 {{% /slides/citations %}}
 
@@ -275,44 +276,59 @@ $\frac{1}{2}$
 # Where we are
 
 ---
- -->
-## Rational
+{{% slides/uncenter %}}
+
+## Rational Tangles
 
 Let $t$ be a pair of unoriented arcs properly embedded in a 3 -ball $B$. A 2-tangle is rational if there exists an orientation preserving homeomorphism of pairs: $$ g:(B, t) \longrightarrow\left(D^2 \times I,\{x, y\} \times I\right) \quad(\text { a trivial tangle })$$
 
 @@@TODO: Picture
 
+
+{{% slides/citations %}}
+Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+{{% /slides/citations %}}
+
 ---
 
+{{% slides/uncenter %}}
 
-{{< centerimg src="/presentations/lightning/Rational.svg" width="30%">}}
+{{< centerimg src="/presentations/lightning/Rational.svg" height="100vh">}}
 
 ---
-
-# Rational Tangles
+{{% slides/uncenter %}}
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="80%" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
-$\to$
+
 {{% /slides/col%}}
 {{% slides/col%}}
-$\LP 3 \vee \frac{1}{2}\RP + 2$
-{{% /slides/col%}}
-{{% slides/col%}}
-$\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-$[3\\,2\\,2]$
+$\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\\\&\\\\
+\to&\ [3\\,2\\,2]\end{aligned}$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
 ---
-# Genration
 
-@@@TODO
+# Generation
+
+---
+ -->
+{{% slides/uncenter %}}
+
+## Compositions of integers
+
+
+Selecting a crossing number $N$ we can express $N$ as:
+
+1. $1+1+\cdots+1=N$
+2. $2+1+\cdots+1=N$
+2. $1+2+\cdots+1=N$
+2. $1+1+\cdots+2=N$
+2. $1+3+\cdots+2=N$
 
 ---
 
@@ -476,7 +492,7 @@ A vertical sum of two Montesinos tangles.
 
 ---
 
-## Codron Trees
+## Caudron Trees
 @@@TODO:
 
 ---
