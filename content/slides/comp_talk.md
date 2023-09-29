@@ -71,6 +71,64 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
+# Knot Equivalence
+
+---
+
+# reidemeister moves
+
+---
+## Type I
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/type1/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type1/2a.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+## Type II
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/type2/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type2/6a.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+## Type III
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/type3/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type3/6.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+# The natural question
+
+---
 # Knot Tables
 
 ---
@@ -127,7 +185,7 @@ How did Conway compute 25 years of work in "a few hours"?
 
 ## Tangles
 
-> "We define a **tangle** as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE"
+> "We define a **tangle** as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE."
 
 {{% slides/citations  %}}
 Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5)
@@ -293,7 +351,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 {{% slides/uncenter %}}
 
-{{< centerimg src="/presentations/lightning/Rational.svg" height="100vh">}}
+{{< centerimg src="/presentations/lightning/Rational.svg" height="auto">}}
 
 ---
 {{% slides/uncenter %}}
@@ -371,7 +429,7 @@ We can write a *canonical twist vector* by taking the odd length vectors, append
 
 ---
 
-# Programatic Description
+# Programmatic Description
 
 ---
 
@@ -452,7 +510,12 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 ---
 
-To play with twist vectors visit https://joe-starr.com/resources/cont_frac_convert/
+To play with twist vectors and continued fractions visit
+
+{{< centerimg src="/qr_codes/TV_tool.svg" width="30%">}}
+
+<p style="text-align:center !important;">https://joe-starr.com/resources/cont_frac_convert/</p>
+
 
 ---
 <!--
@@ -507,7 +570,7 @@ Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic co
 
 {{% slides/uncenter %}}
 
-{{< centerimg src="/presentations/lightning/Mont.svg" height="100vh">}}
+{{< centerimg src="/presentations/lightning/Mont.svg" height="auto">}}
 
 ---
 
@@ -558,7 +621,7 @@ $[3\  2\  2] + [3\  2\  2]$
 
 The Montesinos tangles of crossing number $N$ have a slightly simpler generation strategy compared to rational tangles.
 
-We again generate twist vectors (stencils) but require that each entry satisfies $2\leq e < \N$
+We again generate stencils (twist vectors ) but require that each entry satisfies $2\leq e < \N$.
 
 {{%  slides/admonition type="Example" title="Stencils for $N=5$" %}}
 \begin{array}{|l|l|l|l|}
@@ -569,14 +632,15 @@ We again generate twist vectors (stencils) but require that each entry satisfies
 
 ---
 
-We then take all combinations of rational tangles for each crossing in the stencil satisfying $0<\frac{p_i}{q_i}<1$
+Now for each entry $e_i$ of the stencil we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
 
-{{%  slides/admonition type="Example" title="Montesinos for $N=5$" %}}
-\begin{array}{|l|l|l|l|}
+{{%  slides/admonition type="Example" title="Montesinos tangles for $N=5$" %}}
+\begin{array}{|l|l|}
 \hline
-[1\ 2\ 0] + [1 1 0]\ &\ [2\ 1\ 0] + [1 1 0]\\\\\hline
-[1 1 0] + [1\ 2\ 0]\ &\
-[1 1 0] + [2\ 1\ 0]\\\\\hline
+\color{#bd93f9}\text{Stencil:}[3\ 2]\ &\ \\\\\hline
+\color{#f8f8f2}[1\ 2\ 0] + [1\ 1\ 0]\ &\ [2\ 1\ 0] + [1\ 1\ 0]\\\\\hline
+\color{#bd93f9}\text{Stencil:}[2\ 3]\\\\\hline
+\color{#f8f8f2}[1\ 1\ 0] + [1\ 2\ 0]\ &\ [1\ 1\ 0] + [2\ 1\ 0]\\\\\hline
 \end{array}
 {{% /slides/admonition %}}
 
@@ -622,7 +686,7 @@ $= \color{#bd93f9}([3\  0] + [3\  0] + [2\  0]) \color{#f8f8f2}\circ \color{#ff5
 
 ---
 
-We just need to take our lists of Montesinos and rational and glue them together.
+We just need to take our lists of Montesinos and rational and glue them together with $\circ$.
 
 ---
 
@@ -709,8 +773,7 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 
 # Generation
 
-There exist tables of 4 valent graphs. We can use those with insertions from our list of algebraic
-tangles to generate all polyginal tangles
+There exist tables of 4 valent graphs. We can use those with insertions from our list of algebraic tangles to generate all polygonal tangles.
 
 ---
 
