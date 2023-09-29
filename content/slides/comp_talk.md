@@ -11,13 +11,13 @@ slides:
   highlight_style: dracula
   diagram: true
   diagram_options:
-    theme: "dark"
-    themeVariables:
-            fontSize: 17
+        theme: "dark"
+        themeVariables:
+                fontSize: 30
   reveal_options:
-    theme: "none"
-    center: true
-    transition: "none"
+        theme: "none"
+        center: true
+        transition: "none"
 ---
 
 {{< dracula_css >}}
@@ -316,19 +316,65 @@ $\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\\\&\\\\
 # Generation
 
 ---
- -->
+
+For any $N$ an obvious twist vector is the twist vector of all $1$s
+$$[1\\,1\\,1\\,\cdots\\,1]$$
+Noting that when we write this sequence we have $N-1$ spaces.
+
+---
+
+If we choose to place a $+$ instead of the left most space we get
+$$[1+1\\,1\\,\cdots\\,1]=[2\\,1\\,\cdots\\,1]$$
+we're free to make this choice for each space
+
+---
+
+this gives $N-1$ choices between '$+$' and space
+$$[1\square 1\square 1\square\cdots\square1]$$
+letting us generate twist vectors by simply counting from $0\to 2^{N-1}$.
+
+---
+
+
+{{%  slides/admonition type="Example" title="Twist Vectors for $N=5$" %}}
+\begin{array}{|l|l|l|l|}
+\hline
+[1\\,1\\,1\\,1\\,1]\\,&\\,[2\\,1\\,1\\,1]\\,&\\,[1\\,2\\,1\\,1]\\,&\\,[1\\,1\\,2\\,1]\\\\\hline
+[1\\,1\\,1\\,2]\\,&\\,[3\\,1\\,1]\\,&\\,[1\\,3\\,1]\\,&\\,[1\\,1\\,3]\\\\\hline
+[2\\,2\\,1]\\,&\\,[2\\,1\\,2]\\,&\\,[1\\,2\\,2]\\,&\\,[3\\,2]\\\\\hline
+[2\\,3]\\,&\\,[4\\,1]\\,&\\,[1\\,4]\\,&\\,[5]\\\\\hline
+\end{array}
+{{% /slides/admonition %}}
+
+---
+
 {{% slides/uncenter %}}
 
-## Compositions of integers
+## Canonical Twist Vectors
+
+We can write a *canonical twist vector* by taking the odd length vectors, appending $0$ where needed.
+
+@@@TODO: Pictures
+
+---
+
+{{%  slides/admonition type="Example" title="Compositions of $N=5$" %}}
+\begin{array}{|c|c|c|c|}
+\hline
+[1\\,1\\,1\\,1\\,1]\\,&\\,[2\\,1\\,1\\,1\\,0]\\,&\\,[1\\,2\\,1\\,1\\,0]\\,&\\,[1\\,1\\,2\\,1\\,0]\\\\\hline
+[1\\,1\\,1\\,2\\,0]\\,&\\,[3\\,1\\,1]\\,&\\,[1\\,3\\,1]\\,&\\,[1\\,1\\,3]\\\\\hline
+[2\\,2\\,1]\\,&\\,[2\\,1\\,2]\\,&\\,[1\\,2\\,2]\\,&\\,[3\\,2\\,0]\\\\\hline
+[2\\,3\\,0]\\,&\\,[4\\,1\\,0]\\,&\\,[1\\,4\\,0]\\,&\\,[5]\\\\\hline
+\end{array}
+{{% /slides/admonition %}}
 
 
-Selecting a crossing number $N$ we can express $N$ as:
+---
 
-1. $1+1+\cdots+1=N$
-2. $2+1+\cdots+1=N$
-2. $1+2+\cdots+1=N$
-2. $1+1+\cdots+2=N$
-2. $1+3+\cdots+2=N$
+## Programatic Description
+
+---
+
 
 ---
 
@@ -336,12 +382,43 @@ Selecting a crossing number $N$ we can express $N$ as:
 
 ---
 
+-->
+## Rational Number
+
+
+The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction that is:
+$$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
+
+{{%  slides/admonition type="Example" title="Twist Vector to rational number" %}}
+
+{{% slides/row style="justify-content:flex-start;align-content:flex-start;width:70%;" %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="60%" >}}
+{{% /slides/col%}}
+{{% slides/col style="flex-grow:5"  %}}
+$=$
+{{% /slides/col%}}
+{{% slides/col %}}
+$\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+
+{{%  /slides/admonition %}}
+
+{{% slides/citations %}}
+Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+{{% /slides/citations %}}
+
+---
+<!--
+
 ## Parity
 
 @@@TODO
 
----
 
+---
 ## Closures
 
 {{% slides/row %}}
@@ -361,12 +438,27 @@ Selecting a crossing number $N$ we can express $N$ as:
 @@@TODO
 
 ---
+ -->
 
 # Where we're going
 
 ---
 
-## Montesinos
+# Montesinos
+
+---
+## Existence of canonical diagrams for Montesinos tangles
+
+Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying one of the following constructions for horizontal and vertical Montesinos tangles, respectively.
+
+1. $T \cong L_1+\cdots+L_m+\frac{k}{1}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
+2. $T \cong L_1 * \cdots * L_m * \frac{1}{k}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $-\infty<\frac{p_i}{q_i}<-1$, and $\frac{1}{k}$ is a vertical integer subtangle.
+
+{{% slides/citations %}}
+Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
+{{% /slides/citations %}}
+
+---
 
 {{< centerimg src="/presentations/lightning/Mont.svg" width="30%">}}
 
@@ -417,7 +509,7 @@ $[3\\, 2\\, 2] + [3\\, 2\\, 2]$
 
 # Generation
 
-@@@TODO:
+The construction for
 
 ---
 # Data
@@ -473,7 +565,7 @@ $= \color{#bd93f9}([3\\, 0] + [3\\, 0] + [2\\, 0]) \color{#f8f8f2}\circ \color{#
 
 All possible tangles made from $+$ and $\vee$
 
-*Example:*
+{{%  slides/admonition type="Example" title="Twist Vectors for $N=5$" %}}
 
 {{% slides/row %}}
 {{% slides/col %}}
@@ -486,6 +578,7 @@ A vertical sum of two Montesinos tangles.
 {{< centerimg src="/presentations/lightning/annotated/Alg.svg" width="auto">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
+{{%  /slides/admonition %}}
 
 ---
 # Generation
