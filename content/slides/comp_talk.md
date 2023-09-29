@@ -23,7 +23,7 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-<!--
+
 # The Tanglenomicon
 
 
@@ -276,13 +276,13 @@ $\frac{1}{2}$
 # Where we are
 
 ---
-{{% slides/uncenter %}}
+
 
 ## Rational Tangles
 
 Let $t$ be a pair of unoriented arcs properly embedded in a 3 -ball $B$. A 2-tangle is rational if there exists an orientation preserving homeomorphism of pairs: $$ g:(B, t) \longrightarrow\left(D^2 \times I,\{x, y\} \times I\right) \quad(\text { a trivial tangle })$$
 
-@@@TODO: Picture
+<!-- @@@TODO: Picture -->
 
 
 {{% slides/citations %}}
@@ -307,7 +307,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 {{% /slides/col%}}
 {{% slides/col%}}
 $\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\\\&\\\\
-\to&\ [3\\,2\\,2]\end{aligned}$
+\to&\ [3\ 2\ 2]\end{aligned}$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -318,13 +318,13 @@ $\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\\\&\\\\
 ---
 
 For any $N$ an obvious twist vector is the twist vector of all $1$s
-$$[1\\,1\\,1\\,\cdots\\,1]$$
+$$[1\ 1\ 1\ \cdots\ 1]$$
 Noting that when we write this sequence we have $N-1$ spaces.
 
 ---
 
 If we choose to place a $+$ instead of the left most space we get
-$$[1+1\\,1\\,\cdots\\,1]=[2\\,1\\,\cdots\\,1]$$
+$$[1+1\ 1\ \cdots\ 1]=[2\ 1\ \cdots\ 1]$$
 we're free to make this choice for each space
 
 ---
@@ -339,42 +339,85 @@ letting us generate twist vectors by simply counting from $0\to 2^{N-1}$.
 {{%  slides/admonition type="Example" title="Twist Vectors for $N=5$" %}}
 \begin{array}{|l|l|l|l|}
 \hline
-[1\\,1\\,1\\,1\\,1]\\,&\\,[2\\,1\\,1\\,1]\\,&\\,[1\\,2\\,1\\,1]\\,&\\,[1\\,1\\,2\\,1]\\\\\hline
-[1\\,1\\,1\\,2]\\,&\\,[3\\,1\\,1]\\,&\\,[1\\,3\\,1]\\,&\\,[1\\,1\\,3]\\\\\hline
-[2\\,2\\,1]\\,&\\,[2\\,1\\,2]\\,&\\,[1\\,2\\,2]\\,&\\,[3\\,2]\\\\\hline
-[2\\,3]\\,&\\,[4\\,1]\\,&\\,[1\\,4]\\,&\\,[5]\\\\\hline
+[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1]\ &\ [1\ 2\ 1\ 1]\ &\ [1\ 1\ 2\ 1]\\\\\hline
+[1\ 1\ 1\ 2]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\\\hline
+[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2]\\\\\hline
+[2\ 3]\ &\ [4\ 1]\ &\ [1\ 4]\ &\ [5]\\\\\hline
 \end{array}
 {{% /slides/admonition %}}
 
 ---
 
-{{% slides/uncenter %}}
+<!-- {{% slides/uncenter %}} -->
 
 ## Canonical Twist Vectors
 
 We can write a *canonical twist vector* by taking the odd length vectors, appending $0$ where needed.
 
-@@@TODO: Pictures
+<!-- @@@TODO: Pictures -->
 
 ---
 
 {{%  slides/admonition type="Example" title="Compositions of $N=5$" %}}
 \begin{array}{|c|c|c|c|}
 \hline
-[1\\,1\\,1\\,1\\,1]\\,&\\,[2\\,1\\,1\\,1\\,0]\\,&\\,[1\\,2\\,1\\,1\\,0]\\,&\\,[1\\,1\\,2\\,1\\,0]\\\\\hline
-[1\\,1\\,1\\,2\\,0]\\,&\\,[3\\,1\\,1]\\,&\\,[1\\,3\\,1]\\,&\\,[1\\,1\\,3]\\\\\hline
-[2\\,2\\,1]\\,&\\,[2\\,1\\,2]\\,&\\,[1\\,2\\,2]\\,&\\,[3\\,2\\,0]\\\\\hline
-[2\\,3\\,0]\\,&\\,[4\\,1\\,0]\\,&\\,[1\\,4\\,0]\\,&\\,[5]\\\\\hline
+[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1\ 0]\ &\ [1\ 2\ 1\ 1\ 0]\ &\ [1\ 1\ 2\ 1\ 0]\\\\\hline
+[1\ 1\ 1\ 2\ 0]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\\\hline
+[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2\ 0]\\\\\hline
+[2\ 3\ 0]\ &\ [4\ 1\ 0]\ &\ [1\ 4\ 0]\ &\ [5]\\\\\hline
 \end{array}
 {{% /slides/admonition %}}
 
 
 ---
 
-## Programatic Description
+# Programatic Description
 
 ---
 
+```mermaid
+stateDiagram-v2
+    direction LR
+    state if_done <<choice>>
+    State_i: i=0
+    State_ipp: i++
+    state "Construct TV from i as a bitfield" as tv_calc
+    [*] --> State_i
+    State_i --> if_done
+    if_done --> tv_calc: if i < 2**(N-1)
+    tv_calc --> State_ipp
+    State_ipp --> if_done
+    if_done --> [*]: if i > 2**(N-1)
+
+```
+---
+
+## Construct TV from i as a bitfield
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+        state "tmp=i;j=0" as State_temp
+        State_jpp: j++
+        State_sum_tv: TV[j]++
+        State_rsh: tmp=tmp>>1
+        state if_lsb <<choice>>
+        state if_teo <<choice>>
+        State_store_tv: Store TV
+
+        [*] --> State_temp
+        State_temp --> if_lsb
+        if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
+        State_sum_tv --> if_teo
+        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
+        State_jpp --> State_rsh
+        if_teo--> State_rsh: if tmp>0
+        State_rsh -->if_lsb
+        if_teo--> State_store_tv: if tmp<0
+        State_store_tv --> [*]
+
+```
 
 ---
 
@@ -382,8 +425,7 @@ We can write a *canonical twist vector* by taking the odd length vectors, append
 
 ---
 
--->
-## Rational Number
+## Rational Number (continued fraction)
 
 
 The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction that is:
@@ -391,17 +433,15 @@ $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
 
 {{%  slides/admonition type="Example" title="Twist Vector to rational number" %}}
 
-{{% slides/row style="justify-content:flex-start;align-content:flex-start;width:70%;" %}}
+{{% slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;" %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="60%" >}}
-{{% /slides/col%}}
-{{% slides/col style="flex-grow:5"  %}}
-$=$
+{{< centerimg src="/presentations/lightning/annotated/Rational.svg"height="15rem" >}}
 {{% /slides/col%}}
 {{% slides/col %}}
-$\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$
+$=\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$
 {{% /slides/col%}}
 {{% /slides/row %}}
+
 
 
 {{%  /slides/admonition %}}
@@ -409,6 +449,10 @@ $\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$
 {{% slides/citations %}}
 Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
 {{% /slides/citations %}}
+
+---
+
+To play with twist vectors visit https://joe-starr.com/resources/cont_frac_convert/
 
 ---
 <!--
@@ -460,7 +504,10 @@ Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic co
 
 ---
 
-{{< centerimg src="/presentations/lightning/Mont.svg" width="30%">}}
+
+{{% slides/uncenter %}}
+
+{{< centerimg src="/presentations/lightning/Mont.svg" height="100vh">}}
 
 ---
 
@@ -501,7 +548,7 @@ $=$
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-$[3\\, 2\\, 2] + [3\\, 2\\, 2]$
+$[3\  2\  2] + [3\  2\  2]$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -509,8 +556,31 @@ $[3\\, 2\\, 2] + [3\\, 2\\, 2]$
 
 # Generation
 
-The construction for
+The Montesinos tangles of crossing number $N$ have a slightly simpler generation strategy compared to rational tangles.
 
+We again generate twist vectors (stencils) but require that each entry satisfies $2\leq e < \N$
+
+{{%  slides/admonition type="Example" title="Stencils for $N=5$" %}}
+\begin{array}{|l|l|l|l|}
+\hline
+[2\ 3]\ &\ [3\ 2]\\\\\hline
+\end{array}
+{{% /slides/admonition %}}
+
+---
+
+We then take all combinations of rational tangles for each crossing in the stencil satisfying $0<\frac{p_i}{q_i}<1$
+
+{{%  slides/admonition type="Example" title="Montesinos for $N=5$" %}}
+\begin{array}{|l|l|l|l|}
+\hline
+[1\ 2\ 0] + [1 1 0]\ &\ [2\ 1\ 0] + [1 1 0]\\\\\hline
+[1 1 0] + [1\ 2\ 0]\ &\
+[1 1 0] + [2\ 1\ 0]\\\\\hline
+\end{array}
+{{% /slides/admonition %}}
+
+<!--
 ---
 # Data
 
@@ -518,6 +588,8 @@ The construction for
 ## Internal Loops
 
 @@@TODO:
+
+ -->
 
 ---
 
@@ -540,7 +612,7 @@ The construction for
 {{< centerimg src="/presentations/lightning/annotated/GenMont.svg" width="35rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-$= \color{#bd93f9}([3\\, 0] + [3\\, 0] + [2\\, 0]) \color{#f8f8f2}\circ \color{#ff5555}[1\\, 2]$
+$= \color{#bd93f9}([3\  0] + [3\  0] + [2\  0]) \color{#f8f8f2}\circ \color{#ff5555}[1\  2]$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -548,7 +620,9 @@ $= \color{#bd93f9}([3\\, 0] + [3\\, 0] + [2\\, 0]) \color{#f8f8f2}\circ \color{#
 
 # Generation
 
-@@@TODO:
+---
+
+We just need to take our lists of Montesinos and rational and glue them together.
 
 ---
 
@@ -565,7 +639,7 @@ $= \color{#bd93f9}([3\\, 0] + [3\\, 0] + [2\\, 0]) \color{#f8f8f2}\circ \color{#
 
 All possible tangles made from $+$ and $\vee$
 
-{{%  slides/admonition type="Example" title="Twist Vectors for $N=5$" %}}
+{{%  slides/admonition type="Example" title="Algebraic" %}}
 
 {{% slides/row %}}
 {{% slides/col %}}
@@ -586,12 +660,23 @@ A vertical sum of two Montesinos tangles.
 ---
 
 ## Caudron Trees
-@@@TODO:
+
+To generate all possible rational tangles we can generate all possible algebraic expressions on the trivial tangles.
+
+This boils down to all binary trees on $N$ leaves. With nodes labeled with combinations of $\vee$ and $+$ and leaves labeled with all combinations of trivial tangles.
+
+These binary trees are call Caudron Trees.
+
+{{% slides/citations %}}
+Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
+{{% /slides/citations %}}
+
+<!--
 
 ---
 ## Generation
 @@@TODO:
-
+ -->
 
 
 ---
@@ -624,22 +709,64 @@ A vertical sum of two Montesinos tangles.
 
 # Generation
 
+There exist tables of 4 valent graphs. We can use those with insertions from our list of algebraic
+tangles to generate all polyginal tangles
+
 ---
 
 # Tooling
 
 ---
 
-## Design Goals
+# Design Goals
+
+```mermaid
+flowchart LR
+    Runner
+subgraph "Runnables"
+    Generator
+    Translator
+    Computation
+end
+subgraph "Data Wranglers"
+    Notation
+    Storage
+end
+Runner -->|Runs| Generator
+Runner -->|Runs| Computation
+Runner -->|Runs| Translator
+Translator -->|Uses| Notation
+Generator -->|Uses| Notation
+Computation -->|Uses| Notation
+Generator -->|Uses| Storage
+Computation -->|Uses| Storage
+Translator -->|Uses| Storage
+
+```
+
 ---
 
-## Technologies
+# Technologies
+
+* FastAPI
+* MongoDB
+* React
+* Obsidian
+* Mermaid
+* Unity unit tests
+* Pytest
+
 
 ---
 
-### Languages
----
+# Languages
 
+* C
+* C++
+* Python
+
+---
+<!--
 ### Runners
 ---
 
@@ -649,7 +776,11 @@ A vertical sum of two Montesinos tangles.
 ### API
 ---
 
-### WebTech
+ -->
+# WebTech
+
+{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png" width="auto" >}}
+
 
 ---
 
