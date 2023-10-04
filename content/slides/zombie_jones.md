@@ -1,5 +1,5 @@
 ---
-title: "Zombies and the Jones Polynomial"
+title: "Constructing the Jones polynomial to save the world"
 date: "2022-02-06"
 summary: "In this talk we give a construction of the Jones Polynomial via the Kauffman bracket. The concepts are introduced in a pseudo-application of fighting a zombie apocalypse."
 tags: [
@@ -23,9 +23,107 @@ slides:
 {{< mathjax_preamble >}}
 
 
+# Constructing the Jones polynomial to save the world
+
+---
+
+# Knots
+
+---
+
+> "A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ )."
+
+{{% slides/citations  %}}
+Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
+{{% /slides/citations %}}
+
+---
 
 
-# Lets build some knot polynomials
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg" width="15rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/Alex_Poly/alg/Alg_1.svg" width="15rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/mathday23/tknot_35.svg" width="20rem">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/mathday23/star.svg" width="30rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+
+{{% slides/citations  %}}
+[https://www.knotplot.com/](https://www.knotplot.com/)
+{{% /slides/citations %}}
+
+---
+
+# Knot Equivalence
+
+---
+
+# reidemeister moves
+
+---
+## Type I
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/type1/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type1/2a.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+## Type II
+
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/type2/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type2/6a.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+## Type III
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/type3/1.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type3/6.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+# Knotted DNA (Real application)
+
+---
+
+# DNA 
+
+
 
 ---
 
