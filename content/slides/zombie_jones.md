@@ -27,6 +27,69 @@ slides:
 
 ---
 
+
+# Zombies
+
+---
+
+## Day 0: 
+
+Set the stage for the activity 
+ 
+---
+
+
+Deoxyribonucleic acid (abbreviated DNA) is the molecule that carries genetic information for the development and functioning of an organism. 
+
+DNA is made of two linked strands that wind around each other to resemble a twisted ladder — a shape known as a double helix. 
+
+{{% slides/citations %}}
+Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023 
+{{% /slides/citations %}}
+
+---
+
+Each strand has a backbone attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine. 
+
+
+#@@@TODO: Picture ATCG
+
+{{% slides/citations %}}
+Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023 
+{{% /slides/citations %}}
+
+---
+
+# Macro Structure (supercoiled)
+
+---
+
+## Circular DNA
+
+Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-stranded DNA of the polyoma virus exists in a closed circular form.
+
+#@@@TODO: Picture Circular dna
+
+{{% slides/citations %}}
+Vologodskii, A. V. (n.d.). Circular DNA. In Cyclic Polymers (pp. 47–83). Kluwer Academic Publishers. https://doi.org/10.1007/0-306-47117-5_2
+{{% /slides/citations %}}
+
+---
+
+## Supercoiling 
+
+@@@TODO: supercoil picture
+
+---
+
+https://www.universal-sci.com/headlines/2018/9/4/math-shows-how-dna-twists-turns-and-unzips
+
+{{% slides/citations %}}
+{{% /slides/citations %}}
+
+
+---
+
 # Knots
 
 ---
@@ -118,12 +181,6 @@ $\to$
 ---
 
 # Knotted DNA (Real application)
-
----
-
-# DNA 
-
-
 
 ---
 
