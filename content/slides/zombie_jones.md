@@ -1,6 +1,6 @@
 ---
 title: "Constructing the Jones polynomial to save the world"
-date: "2022-02-06"
+date: "2023-10-02"
 summary: "In this talk we give a construction of the Jones Polynomial via the Kauffman bracket. The concepts are introduced in a pseudo-application of fighting a zombie apocalypse."
 tags: [
     "index",
@@ -22,45 +22,58 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-
+<!--
 # Constructing the Jones polynomial to save the world
 
 ---
 
+# Note
 
-# Zombies
+Real biology vs fantasy indicated by a "real watermark"
+
 
 ---
 
-## Day 0: 
+# Day 0:
 
-Set the stage for the activity 
- 
+Set the stage for the activity
+
 ---
 
+# Day 4:
 
-Deoxyribonucleic acid (abbreviated DNA) is the molecule that carries genetic information for the development and functioning of an organism. 
+CDC is imaging the DNA of the virus
 
-DNA is made of two linked strands that wind around each other to resemble a twisted ladder — a shape known as a double helix. 
+
+
+---
+
+# DNA
+
+---
+
+Deoxyribonucleic acid (abbreviated DNA) is the molecule that carries genetic information for the development and functioning of an organism.
+
+DNA is made of two linked strands that wind around each other to resemble a twisted ladder — a shape known as a double helix.
 
 {{% slides/citations %}}
-Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023 
+Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023
 {{% /slides/citations %}}
 
 ---
 
-Each strand has a backbone attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine. 
+Each strand has a backbone attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine.
 
 
 #@@@TODO: Picture ATCG
 
 {{% slides/citations %}}
-Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023 
+Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023
 {{% /slides/citations %}}
 
 ---
 
-# Macro Structure (supercoiled)
+# Macro Structure
 
 ---
 
@@ -71,26 +84,34 @@ Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-str
 #@@@TODO: Picture Circular dna
 
 {{% slides/citations %}}
-Vologodskii, A. V. (n.d.). Circular DNA. In Cyclic Polymers (pp. 47–83). Kluwer Academic Publishers. https://doi.org/10.1007/0-306-47117-5_2
+Vologodskii, A. V. (n.d.). Circular DNA. In Cyclic Polymers (pp. 47-83). Kluwer Academic Publishers. https://doi.org/10.1007/0-306-47117-5_2
 {{% /slides/citations %}}
 
 ---
 
-## Supercoiling 
+## Supercoiling
 
 @@@TODO: supercoil picture
 
 ---
 
-https://www.universal-sci.com/headlines/2018/9/4/math-shows-how-dna-twists-turns-and-unzips
+{{< centerimg src="/presentations/dna/dna_trefoil.png" height="40rem" >}}
+
 
 {{% slides/citations %}}
+DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
 {{% /slides/citations %}}
 
 
 ---
 
-# Knots
+# Day 7:
+
+Constructing an anti-virus.
+
+---
+
+# Mathematical Knots
 
 ---
 
@@ -99,6 +120,10 @@ https://www.universal-sci.com/headlines/2018/9/4/math-shows-how-dna-twists-turns
 {{% slides/citations  %}}
 Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
 {{% /slides/citations %}}
+
+---
+
+# Knot Diagrams
 
 ---
 
@@ -122,6 +147,28 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 {{% slides/citations  %}}
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
+
+---
+
+# Diagrams for knotted dna
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/dna/dna_trefoil.png" height="15rem" >}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$$\to$$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg" width="15rem">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+
+{{% slides/citations %}}
+DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
+{{% /slides/citations %}}
+
 
 ---
 
@@ -180,22 +227,9 @@ $\to$
 
 ---
 
-# Knotted DNA (Real application)
+# Playing with diagrams
 
----
-
-## Skein Relation
-
-$$\Huge{\begin{matrix}
-\img{/presentations/kauf_bkt/crossing/crossing_un.svg}
-&\quad\img{/presentations/kauf_bkt/type2/6a.svg}
-&\quad\img{/presentations/kauf_bkt/type2/6b.svg}\\\\
-+
-&\quad 0
-&\quad\infty\\\\
-\end{matrix}}$$
-
-$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+What's the important information inside a knot diagram?
 
 ---
 
@@ -203,34 +237,79 @@ $$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{
 
 ---
 
-## Link Diagrams
+# Clockwise
 
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/crossing/crossing_un.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type2/6a.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
 
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-{{<centerimg "/presentations/Alex_Poly/links/link_1.svg" 500>}}
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;">
-{{<centerimg "/presentations/Alex_Poly/alg/Alg_1.svg" 500>}}
-</div>
-</div>
+---
+# anti-clockwise
+
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/kauf_bkt/crossing/crossing_un.svg" width="auto">}}
+{{% /slides/col%}}
+{{% slides/col%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col%}}
+{{< centerimg src="/presentations/kauf_bkt/type2/6b.svg" width="auto">}}
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 
 ---
 
-## We want a knot invariant. How can we get one?
+# Polynomial
+
+---
+
+$$\Huge{\begin{matrix}
+\ &\left.CW\right.&
+&  \left.CCW\right.&\\\\
+\ &\left.\img{/presentations/kauf_bkt/crossing/crossing_un.svg}\right.&
+&\left.\img{/presentations/kauf_bkt/crossing/crossing_un.svg}\right.&\\\\
+\ &\left.\downarrow \right.&
+&\left.  \downarrow \right.&\\\\
+\ A&\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA&+B&\LA \img{/presentations/kauf_bkt/type2/6b.svg}\RA&
+\end{matrix}}$$
+
+---
+
+# Skein Relation
+
+
+$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+
+---
+
+
+## What are we looking for?
+
+We want to use our bracket to build a polynomial that can tell two knots apart.
+In particular we want to tell a knot and it's "anti-knot" apart.
+
+---
+
+# "knowledge check"
+
+- How can we tell two knots apart?
+- How can we use that and our bracket to build our polynomial?
 
 ---
 
 ## Check what happens under Reidemeister moves
 
+If our bracket "respects" reidemeister moves it respects knot "equivalence".
 
 ---
 
@@ -241,10 +320,10 @@ $$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/k
 ---
 
 
-**$$\{\small\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$**
+**$$\small{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$**
 
 <div class="mediummath ">
-$$
+$$\huge
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/type2/1.svg}
 &=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+B\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
@@ -255,12 +334,15 @@ $$
 $$
 </div>
 
+---
+
+## A problem
 
 ---
 
 
 <div class="bigmath ">
-$$B\bkt{/presentations/kauf_bkt/type2/4.svg}$$
+$$\huge{B\bkt{/presentations/kauf_bkt/type2/4.svg}}$$
 </div>
 
 ---
@@ -271,15 +353,24 @@ $$\huge
 2.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=C\LA D\RA}
 \end{aligned}$$
 
-<!-- \LP-B^{2}-A^2\RP -->
 
 ---
 
-$$\large\begin{aligned}
+# Back to computing
+
+---
+
+
+$$\Large\begin{aligned}
 A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP
 &+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
 &=A\LP A\bkt{/presentations/kauf_bkt/type2/6a.svg}+BC\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
 &+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
+\end{aligned}$$
+
+---
+
+$$\Large\begin{aligned}
 &=A^2\bkt{/presentations/kauf_bkt/type2/6a.svg}+ABC\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
 &+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}+B^2\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
 &=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
@@ -287,6 +378,25 @@ A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/t
 \end{aligned}$$
 
 ---
+
+
+### What we wanted
+
+$$\Large{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+
+### What we have
+
+$$\Large\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}$$
+
+### So we need
+
+$$\Large\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$$
+
+---
+
+# "knowledge check"
+
+What do we need $A,\ B$ and $C$ to be to get this equality?
 
 $$\Large\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$$
 
@@ -320,41 +430,86 @@ $$\large
 
 ---
 
+# Exercise
 ### Type 3
 
 $$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$$
 
 ---
+# Type 1
 
-## What about Type 1?
-
----
-
-## More later.
+$$\Huge\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA$$
 
 ---
 
-## Kauffman Bracket
 
-The Kauffman Bracket is a function from **unoriented link diagrams** to **Laurent polynomials with integer coefficients** in an indeterminate $A$.
+$$\huge\begin{aligned}
+\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=
+A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA+A^{-1}\LA\img{/presentations/kauf_bkt/type1/2b.svg}\RA\\\\
+&=A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
+&+A^{-1}\LP -A^{-2}-A^2\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
+\end{aligned}$$
 
-The Kauffman Bracket maps a diagram $D$ to $$\large{\LA D \RA\in \Z\LB A^{-1},\ A\RB}$$
-and is characterized by our three relations
+---
 
-<!--
-$$\huge
+$$\huge\begin{aligned}
+\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
+&+A^{-1}\LP -A^{-2}-A^2\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
+&=\LP A-A^{-3}-A\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
+\end{aligned}$$
+
+---
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+
+---
+
+## Why is this a problem?
+
+$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+
+---
+
+# What do we have so far?
+
+For Type II and III everything "works" with the rules:
+$$\large
 \begin{aligned}
 1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
 2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
 3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
-\end{aligned}$$ -->
-
+\end{aligned}$$
+but Type I is "broken":
+$$\large{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
 
 ---
 
+
+## What we've defined:
+
+### Kauffman Bracket
+
+The Kauffman Bracket is a function from __unoriented__ **link diagrams** to **Laurent polynomials with integer coefficients** in an indeterminate $A$.
+
+
+@@@Uncomment {{ slides/admonition type="Note" title="Laurent Polynomial Definition" }}
+
+A **Polynomial**:
+$$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
+
+A **Laurent** Polynomial:
+$$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-1}+\cdots+a_{-n}x^{-n}$$
+
+@@@Uncomment {{ /slides/admonition }}
+
+
+---
+-->
 ## Exercise
 
-{{<centerimg "/presentations/kauf_bkt/trefoil/trefoil.svg" 500>}}
+<div class="bigmath ">
+$$\Huge\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
+</div>
 
 ---
 
@@ -476,8 +631,6 @@ $$
 
 
 ---
-
-$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
 
 ---
 ## Writhe
