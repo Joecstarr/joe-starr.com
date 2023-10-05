@@ -322,7 +322,7 @@ $$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/k
 
 **$$\small{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$**
 
-<div class="mediummath ">
+
 $$\huge
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/type2/1.svg}
@@ -332,7 +332,7 @@ $$\huge
 &+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
 \end{aligned}
 $$
-</div>
+
 
 ---
 
@@ -341,9 +341,9 @@ $$
 ---
 
 
-<div class="bigmath ">
+
 $$\huge{B\bkt{/presentations/kauf_bkt/type2/4.svg}}$$
-</div>
+
 
 ---
 
@@ -492,7 +492,7 @@ $$\large{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presen
 The Kauffman Bracket is a function from __unoriented__ **link diagrams** to **Laurent polynomials with integer coefficients** in an indeterminate $A$.
 
 
-@@@Uncomment {{ slides/admonition type="Note" title="Laurent Polynomial Definition" }}
+{{% slides/admonition type="Note" %}}
 
 A **Polynomial**:
 $$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
@@ -500,21 +500,21 @@ $$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
 A **Laurent** Polynomial:
 $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-1}+\cdots+a_{-n}x^{-n}$$
 
-@@@Uncomment {{ /slides/admonition }}
+{{% /slides/admonition %}}
 
 
 ---
 -->
 ## Exercise
 
-<div class="bigmath ">
+
 $$\Huge\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
-</div>
+
 
 ---
 
 
-<div class="bigmath ">
+
 $$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
@@ -522,7 +522,7 @@ $$
 +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
 \end{aligned}
 $$
-</div>
+
 
 ---
 
@@ -553,7 +553,7 @@ $$
 
 ---
 
-<div class="bigmath ">
+
 $$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
@@ -563,7 +563,7 @@ $$
 -A^3-A^{-5}\\
 \end{aligned}
 $$
-</div>
+
 
 ---
 
@@ -604,7 +604,7 @@ $$
 
 ---
 
-<div class="bigmath ">
+
 $$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
@@ -613,12 +613,12 @@ $$
 &= A^7-A^3-A^{-5}
 \end{aligned}
 $$
-</div>
+
 
 
 ---
 
-<div class="mediummath ">
+
 $$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/type1/1.svg}
@@ -627,7 +627,7 @@ $$
 &=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
 \end{aligned}
 $$
-</div>
+
 
 
 ---
@@ -648,15 +648,15 @@ min-width:50% !important;
 ">
 1. Positive $+1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_+.svg" 200>}}
 
-</div>
+
 <div class="slidecolumn" style="
 align-items: left;
 font-size: x-large;
 min-width:50% !important;">
 2. Negative $-1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg" 200>}}
 
-</div>
-</div>
+
+
 
 ---
 
@@ -698,7 +698,7 @@ where $D$ is any oriented diagram for $\mathscr{L}$.
 
 ---
 
-<div class="mediummath ">
+
 $$
 \begin{aligned}
 -A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
@@ -706,18 +706,18 @@ $$
 &=-A^{16}+A^{12}+A^{-4}\\
 \end{aligned}
 $$
-</div>
+
 
 ---
 
-<div class="mediummath ">
+
 $$
 \begin{aligned}
 &\LP-A^{16}+A^{12}+A^{4}\RP_{t^{1/2}=A^{-2}}\\
 &=-t^{-4}+t^{-3}+t^{-1}
 \end{aligned}
 $$
-</div>
+
 
 ---
 
@@ -748,7 +748,7 @@ margin-right: auto !important;
 max-width:200px !important;
 "
 src="/presentations/Alex_Poly/trefoil/left.svg"/>
-</div>
+
 <div style="
 margin: 0;
 position: relative;
@@ -770,7 +770,7 @@ margin-left: auto !important;
 margin-right: auto !important;
 max-width:200px !important;"
 src="/presentations/Alex_Poly/trefoil/right.svg"/>
-</div>
+
 
 <div style="
 margin: 0;
@@ -783,7 +783,7 @@ grid-row: 2;
 ">
 
 $$-A^{16}+A^{12}+A^{4}$$
-</div>
+
 <div style="
 margin: 0;
 position: relative;
@@ -795,7 +795,7 @@ grid-row: 2;
 ">
 
 $$-A^{-16}+A^{-12}+A^{-4}$$
-</div>
+
 
 <div style="
 margin: 0;
@@ -807,7 +807,7 @@ grid-column: 1 / 2;
 grid-row: 3;
 ">
 $$-t^{-4}+t^{-3}+t^{-1}$$
-</div>
+
 <div style="
 margin: 0;
 position: relative;
@@ -819,8 +819,8 @@ grid-row: 3;
 ">
 $$-t^{4}+t^{3}+t$$
 
-</div>
-</div>
+
+
 
 ---
 
@@ -837,7 +837,7 @@ font-size: medium;
 <li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0</li>
 <li>Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.</li>
 </ol>
-</div>
+
 
 
 
