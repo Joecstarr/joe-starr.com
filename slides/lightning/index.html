@@ -5,7 +5,6 @@
   
   
   
-  
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -256,18 +255,17 @@ Mathematics Department at The University of Iowa<p>
 <h3 id="architecture">Architecture</h3>
 <div class="sliderow  " style="">
 <div class="slidecolumn    " style="   max-width: none !important; width:100% !important;  ">
-<div class="mermaid">%%{init: {"securityLevel": "loose"}}%%
+<div class="mermaid">%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
 flowchart
-    Runner      -->|Runs| Generator
-    Runner      -->|Runs| Computation
-    Runner      -->|Runs| Translator
-    Translator  -->|Uses| Notation
-    Generator   -->|Uses| Notation
-    Computation -->|Uses| Notation
-    Generator   -->|Uses| Storage
-    Computation -->|Uses| Storage
-    Translator  -->|Uses| Storage
-</div>
+    Runner      --&gt;|Runs| Generator
+    Runner      --&gt;|Runs| Computation
+    Runner      --&gt;|Runs| Translator
+    Translator  --&gt;|Uses| Notation
+    Generator   --&gt;|Uses| Notation
+    Computation --&gt;|Uses| Notation
+    Generator   --&gt;|Uses| Storage
+    Computation --&gt;|Uses| Storage
+    Translator  --&gt;|Uses| Storage</div>
 </div>
 </div>
 
@@ -281,7 +279,7 @@ flowchart
     
       
 <h2 id="sources">Sources</h2>
-<div style="font-size: .9rem;">
+<div style="font-size: .9rem;text-align:left;color:var(--r-Highlight);margin-top:auto">
 <ul>
 <li>Dror Bar-Natan <a href="http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf" target="_blank" rel="noopener">The Most Important Missing Infrastructure Project in Knot Theory</a></li>
 <li>Kauffman, L. H., and S. Lambropoulou. &ldquo;From Tangle Fractions to DNA.&rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. <a href="https://doi.org/10.1007/978-3-540-49858-2_5" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-540-49858-2_5</a>.</li>
@@ -907,7 +905,7 @@ MI, 1998. Thesis (Ph.D.)–The University of British Columbia (Canada). URL: htt
 
   
   
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js" crossorigin="anonymous" title="mermaid"></script>
   
 
   

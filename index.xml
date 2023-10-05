@@ -1103,7 +1103,7 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;A &lt;strong&gt;knot&lt;/strong&gt; is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ ).&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div style=&#34;font-size: .9rem; text-align:left;;margin-top:auto;&#34;&gt;
+&lt;div style=&#34;font-size: .9rem;margin-top:auto;text-align: left;color:var(--r-Highlight);&#34;&gt;
 &lt;p&gt;Jablan, S., &amp;amp; Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. &lt;a href=&#34;https://doi.org/10.1142/6623&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1142/6623&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -1121,7 +1121,7 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;img class=&#34;centerImg&#34; style=&#34; width:30rem;   &#34; src=&#34; /presentations/mathday23/star.svg&#34;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&#34;font-size: .9rem; text-align:left;;margin-top:auto;&#34;&gt;
+&lt;div style=&#34;font-size: .9rem;margin-top:auto;text-align: left;color:var(--r-Highlight);&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.knotplot.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.knotplot.com/&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -1192,7 +1192,7 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;We define a &lt;strong&gt;tangle&lt;/strong&gt; as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div style=&#34;font-size: .9rem; text-align:left;;margin-top:auto;&#34;&gt;
+&lt;div style=&#34;font-size: .9rem;margin-top:auto;text-align: left;color:var(--r-Highlight);&#34;&gt;
 &lt;p&gt;Conway, J.H. &amp;ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&amp;rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. &lt;a href=&#34;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1016/B978-0-08-012975-4.50034-5&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -1540,7 +1540,7 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;h2 id=&#34;questions&#34;&gt;Questions?&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
-&lt;div style=&#34;font-size: .9rem;&#34;&gt;
+&lt;div style=&#34;font-size: .9rem;text-align:left;color:var(--r-Highlight);margin-top:auto&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;Dror Bar-Natan &lt;a href=&#34;http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Most Important Missing Infrastructure Project in Knot Theory&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Kauffman, L. H., and S. Lambropoulou. &amp;ldquo;From Tangle Fractions to DNA.&amp;rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. &lt;a href=&#34;https://doi.org/10.1007/978-3-540-49858-2_5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1007/978-3-540-49858-2_5&lt;/a&gt;.&lt;/li&gt;
@@ -1738,23 +1738,22 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 &lt;h3 id=&#34;architecture&#34;&gt;Architecture&lt;/h3&gt;
 &lt;div class=&#34;sliderow  &#34; style=&#34;&#34;&gt;
 &lt;div class=&#34;slidecolumn    &#34; style=&#34;   max-width: none !important; width:100% !important;  &#34;&gt;
-&lt;div class=&#34;mermaid&#34;&gt;%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
+&lt;div class=&#34;mermaid&#34;&gt;%%{init: {&amp;#34;securityLevel&amp;#34;: &amp;#34;loose&amp;#34;}}%%
 flowchart
-    Runner      --&gt;|Runs| Generator
-    Runner      --&gt;|Runs| Computation
-    Runner      --&gt;|Runs| Translator
-    Translator  --&gt;|Uses| Notation
-    Generator   --&gt;|Uses| Notation
-    Computation --&gt;|Uses| Notation
-    Generator   --&gt;|Uses| Storage
-    Computation --&gt;|Uses| Storage
-    Translator  --&gt;|Uses| Storage
-&lt;/div&gt;
+    Runner      --&amp;gt;|Runs| Generator
+    Runner      --&amp;gt;|Runs| Computation
+    Runner      --&amp;gt;|Runs| Translator
+    Translator  --&amp;gt;|Uses| Notation
+    Generator   --&amp;gt;|Uses| Notation
+    Computation --&amp;gt;|Uses| Notation
+    Generator   --&amp;gt;|Uses| Storage
+    Computation --&amp;gt;|Uses| Storage
+    Translator  --&amp;gt;|Uses| Storage&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
-&lt;div style=&#34;font-size: .9rem;&#34;&gt;
+&lt;div style=&#34;font-size: .9rem;text-align:left;color:var(--r-Highlight);margin-top:auto&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;Dror Bar-Natan &lt;a href=&#34;http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Most Important Missing Infrastructure Project in Knot Theory&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Kauffman, L. H., and S. Lambropoulou. &amp;ldquo;From Tangle Fractions to DNA.&amp;rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. &lt;a href=&#34;https://doi.org/10.1007/978-3-540-49858-2_5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1007/978-3-540-49858-2_5&lt;/a&gt;.&lt;/li&gt;

@@ -58,12 +58,11 @@
       let indices = Reveal.getIndices();
       let pageno = `${indices.h}-${indices.v}`;
       mermaidDivs.forEach(function(mermaidDiv, i) {
-        let insertSvg = function(svgCode) {
-          mermaidDiv.innerHTML = svgCode;
-          mermaidDiv.classList.add("done");
-        };
         let graphDefinition = mermaidDiv.textContent;
-        mermaid.mermaidAPI.render(`mermaid${pageno}-${i}`, graphDefinition, insertSvg);
+        mermaid.render(`mermaid${pageno}-${i}`, graphDefinition).then((obj) => {
+          mermaidDiv.innerHTML = obj.svg;
+          mermaidDiv.classList.add("done");
+        });
       });
       Reveal.layout();
     };
