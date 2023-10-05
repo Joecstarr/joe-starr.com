@@ -5,7 +5,7 @@ summary: "In this talk we give a construction of the Jones Polynomial via the Ka
 tags: [
     "index",
 ]
-draft: false
+draft: true
 slides:
   highlight_style: dracula
   diagram: true
