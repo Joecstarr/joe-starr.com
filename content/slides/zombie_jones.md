@@ -536,27 +536,27 @@ $$
 
 ---
 
+{{% slides/row style="height:70vh;"%}}
+{{% slides/col style="align-self:center;text-align:center;height:100%;font-size: 10vh;" %}}
+
 $$
-\LARGE\begin{aligned}
+\begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}
 &=A\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
 +A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\\\
-&=A\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_baa.svg}+
-A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bab.svg}\RP\\\\
-&+A^{-1}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_bba.svg}+
-A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bbb.svg}\RP\\\\
+&=A\LP -A^{-3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\\\
+&+A^{-1}\LP -A^{-3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\\\
 \end{aligned}
 $$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 ---
 
 $$
 \LARGE\begin{aligned}
-&=A\LP A\LP-A^{-2}-A^2\RP+
-A^{-1}\RP\\\\
-&+A^{-1}\LP A+
-A^{-1}\LP-A^{-2}-A^2\RP\RP\\\\
-&=-A^4-A^{-4}\\\\
+
+
 \end{aligned}
 $$
 
