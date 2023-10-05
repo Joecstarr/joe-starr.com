@@ -68,12 +68,12 @@ section.has-light-background h6 {
 /*********************************************
  * HEADERS
  *********************************************/
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: var(--r-heading-margin);
     color: var(--r-heading-color);
     font-family: var(--r-heading-font);
@@ -87,6 +87,7 @@ section.has-light-background h6 {
 
 .reveal h1 {
     font-size: var(--r-heading1-size);
+    color: var(--r-Blue);
 }
 
 .reveal h2 {
