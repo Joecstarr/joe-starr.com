@@ -504,17 +504,25 @@ $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-
 
 
 ---
--->
-## Exercise
 
 
-$$\Huge\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
+{{% slides/admonition type="Exercise" title="Exercise" %}}
+
+{{% slides/row style="height:70vh;"%}}
+{{% slides/col style="align-self:center;text-align:center;height:100%;font-size: 15vh;" %}}
+$\Huge\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$
+{{% /slides/col%}}
+{{% /slides/row %}}
+{{% /slides/admonition %}}
 
 
 ---
+-->
 
 
 
+{{% slides/row style="height:70vh;"%}}
+{{% slides/col style="align-self:center;text-align:center;height:100%;font-size: 15vh;" %}}
 $$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
@@ -522,6 +530,8 @@ $$
 +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
 \end{aligned}
 $$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 
 ---
