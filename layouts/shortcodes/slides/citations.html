@@ -1,7 +1,7 @@
 {{ if .IsNamedParams }}
-<div style="font-size: .9rem;{{ with .Get "align"}} text-align:{{ . | safeCSS }};{{ end }};margin-top:auto;">
+<div style="font-size: .9rem;margin-top:auto;text-align:{{if (.Get "align")}}{{ with .Get "align"}} {{ . | safeCSS }}{{ end }}{{else}}left{{ end }};color:{{if (.Get "color")}}{{ with .Get "color"}} {{ . | safeCSS }}{{ end }}{{else}}var(--r-Highlight){{ end }};">
 {{else}}
-<div style="font-size: .9rem;">
+<div style="font-size: .9rem;text-align:left;color:var(--r-Highlight);margin-top:auto">
 {{end}}
     {{ .Inner }}
 </div>

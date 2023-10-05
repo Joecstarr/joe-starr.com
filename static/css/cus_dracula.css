@@ -9,6 +9,7 @@
  */
 
 @import "slides_themes/dracula.css";
+@import "admonitions.css";
 
 .segment-purple {
     color: var(--r-Purple);
@@ -391,3 +392,10 @@ h6 {
     counter-increment: li;
 }
 
+.reveal section:has(.uncenter){
+    top: 0 !important;
+}
+
+.label foreignObject {
+    overflow: visible;
+}

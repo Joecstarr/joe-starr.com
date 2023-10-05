@@ -4,8 +4,7 @@
 
   {{/* Asset versions */}}
   {{ $cdn_url_reveal := "https://cdn.jsdelivr.net/npm/reveal.js@4.3.1" }}
-  {{ $mermaid_version := "9.1.3" }}
-  {{ $mermaid_sri := "sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" }}
+  {{ $mermaid_version := "10.4.0" }}
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,7 +68,7 @@
 
   {{/* Load Mermaid. */}}
   {{ if $.Param "slides.diagram" | default false}}
-    {{ printf "<script src=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\" title=\"mermaid\"></script>" (printf "https://cdn.jsdelivr.net/npm/mermaid@%s/dist/mermaid.min.js" $mermaid_version) $mermaid_sri | safeHTML }}
+    {{ printf "<script src=\"%s\" crossorigin=\"anonymous\" title=\"mermaid\"></script>" (printf "https://cdn.jsdelivr.net/npm/mermaid@%s/dist/mermaid.min.js" $mermaid_version) | safeHTML }}
   {{ end }}
 
   {{/* Initialize slides. */}}
