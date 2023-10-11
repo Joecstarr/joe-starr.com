@@ -92,18 +92,22 @@ h6 {
 
 .reveal h2 {
     font-size: var(--r-heading2-size);
+    color: var(--r-Blue);
 }
 
 .reveal h3 {
     font-size: var(--r-heading3-size);
+    color: var(--r-Blue);
 }
 
 .reveal h4 {
     font-size: var(--r-heading4-size);
+    color: var(--r-Blue);
 }
 
 .reveal h1 {
     text-shadow: var(--r-heading1-text-shadow);
+    color: var(--r-Blue);
 }
 
 /*********************************************

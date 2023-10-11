@@ -15,14 +15,14 @@ slides:
             fontSize: 17
   reveal_options:
     theme: "none"
-    # center: false
+    center: true
     transition: "none"
 ---
 
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-<!--
+
 # Constructing the Jones polynomial to save the world
 
 ---
@@ -440,10 +440,10 @@ $$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/k
 
 
 {{% slides/row style="height:70vh;" %}}
-{{% slides/col style="height:100%;font-size: 10vh;" %}}
+{{% slides/col style="font-size: 10vh;" %}}
 $$\Huge\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA$$
 {{% /slides/col %}}
-{{% slides/col style="height:100%;font-size: 10vh;" %}}
+{{% slides/col style="font-size: 10vh;" %}}
 $$\Huge\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA$$
 {{% /slides/col %}}
 {{% /slides/row %}}
@@ -508,8 +508,8 @@ $$\Huge{\begin{aligned}
 For Type II and III everything "works" with the rules:
 $$\large
 \begin{aligned}
-1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
-2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
 3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
 \end{aligned}$$
 but Type I is "broken":
@@ -637,12 +637,14 @@ $$
 
 ---
 
--->
+
+
+{{% slides/uncenter %}}
 
 # How can we fix Type I
 
 {{% slides/row style="height:70vh;" %}}
-{{% slides/col style="height:100%;font-size: 15vh;" %}}
+{{% slides/col style="font-size: 15vh;" %}}
 $$
 \begin{aligned}
 \LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
@@ -653,15 +655,21 @@ $$
 
 ---
 
-### Orientation of a crossing
+
+{{% slides/uncenter %}}
+
+## Orientation of a crossing
 
 
 {{% slides/row %}}
-{{% slides/col %}}
-$1.$ Positive $+1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_+.svg" 200>}}
+{{% slides/col style="font-size: 8vh;" %}}
+$1.$ Positive {{<centerimg "/presentations/kauf_bkt/crossing/crossing_+.svg" >}}
 {{% /slides/col%}}
-{{% slides/col%}}
-$2.$ Negative $-1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg" 200>}}
+{{% slides/col style="font-size: 8vh;" %}}
+$\quad$
+{{% /slides/col%}}
+{{% slides/col style="font-size: 8vh;" %}}
+$2.$ Negative  {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg" >}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -670,164 +678,158 @@ $2.$ Negative $-1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg
 
 ---
 
-### Writhe of a knot
+{{% slides/uncenter %}}
 
+## Writhe of a knot
+
+{{% slides/row %}}
+{{% slides/col style="font-size: 6vh;" %}}
 The writhe $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
 signs of the crossings of $ D $.
+{{% /slides/col%}}
+{{% /slides/row %}}
 
-$$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
+{{% slides/row style="justify-content:flex-start;margin-left:-12vw;margin-top:5vh" %}}
+{{% slides/col style="font-size: 15vh;" %}}
+${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+
+
+{{% slides/admonition type="Exercise" title="Exercise" %}}
+
+{{% slides/row style="height:70vh;"%}}
+{{% slides/col style="align-self:center;text-align:center;height:100%;font-size: 30vh;" %}}
+$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$
+{{% /slides/col%}}
+{{% /slides/row %}}
+{{% /slides/admonition %}}
+
 
 ---
 
 
+## Fixing Type I
 
-
-{{<centerimg "/presentations/kauf_bkt/trefoil/trefoil.svg" 500>}}
-
----
-
-## Consider
-
-$$\Huge -A^{-3w\LP D\RP}\LA D\RA$$
-
----
-
-$$\Large -A^{-3w\LP D\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=\large -A^{-3\LP-1\RP}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA=\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
+{{% slides/row style="height:70vh;"%}}
+{{% slides/col style="font-size: 25vh;margin-left:-12vw;margin-top:10vh" %}}
 $$
+-A^{-3w\LP \img{/presentations/kauf_bkt/type1/1b.svg}\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA
+$$
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+## Fixing Type I
+
+
+{{% slides/row style="height:70vh;"%}}
+{{% slides/col style="align-self:center;text-align:center;height:100%;font-size: 10vh;" %}}
+$
+\begin{aligned}
+     -A^{-3w\LP \img{/presentations/kauf_bkt/type1/1b.svg}\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA
+     &= -A^{-3\LP-1\RP}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
+     &= -A^{3}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
+     &=\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
+\end{aligned}
+$
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+---
+
+# What do we have?
+
+For Type I, II, and III everything "works" with the rules:
+$$\Large
+\begin{aligned}
+1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
+3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}\\\\
+4.\quad&-A^{-3w\LP D\RP}\LA D\RA
+\end{aligned}$$
 
 
 ---
+
+{{% slides/uncenter %}}
 
 ## Definition of the Jones Polynomial
 
-The Jones Polynomial $V\LP \mathscr{L}\RP$ of an oriented link $\mathscr{L}$
-is the Laurent polynomial in $t^{1/2}$, with integer coefficients, defined by
-$$ V\LP \mathscr{L}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
-where $D$ is any oriented diagram for $\mathscr{L}$.
+{{% slides/row %}}
+{{% slides/col style="font-size: 2.5rem;text-align:left" %}}
 
+The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
+is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
+
+{{% /slides/col%}}
+{{% /slides/row %}}
+
+{{% slides/row %}}
+{{% slides/col style="font-size: 2.5rem;text-align:left" %}}
+Defined by
+$$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
+where $D$ is any oriented diagram for $\mathscr{K}$.
+{{% /slides/row %}}
 
 ---
 
 
-$$
+
+{{% slides/row style="height:70vh;"%}}
+{{% slides/col style="align-self:center;text-align:center;height:100%;font-size: 9vh;" %}}
+$
 \begin{aligned}
--A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
-&= -A^{9}\LP A^7-A^3-A^{-5}\RP\\
-&=-A^{16}+A^{12}+A^{-4}\\
+ V\LP \mathscr{K}\RP&=
+\LP-A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\\\
+&=\LP-A^{-3\cdot-3} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\\\
+&=\LP-A^{9}\LP A^7-A^3-A^{-5}\RP\RP _{t^{1/2}=A^{-2}}\\\\
+&=\LP-A^{16}+A^{12}+A^{-4}\RP _{t^{1/2}=A^{-2}}\\\\
+&=-t^{-4}+t^{-3}+t^{-1}\\\\
 \end{aligned}
-$$
+$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 
 ---
+## Anti-Virus
 
 
-$$
-\begin{aligned}
-&\LP-A^{16}+A^{12}+A^{4}\RP_{t^{1/2}=A^{-2}}\\
-&=-t^{-4}+t^{-3}+t^{-1}
-\end{aligned}
-$$
+{{% slides/row %}}
 
 
----
+{{% slides/col %}}
 
-## Detects mirrors
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg"  >}}
+$$\Large{-t^{-4}+t^{-3}+t^{-1}}$$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
+{{% /slides/col%}}
 
-<div>
-<div style="
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 10px;
-grid-auto-rows: minmax(100px, auto);">
-
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 1 / 2;
-grid-row: 1;
-">
-<img style="
-height:auto !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-max-width:200px !important;
-"
-src="/presentations/Alex_Poly/trefoil/left.svg"/>
-
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 2 / 2;
-grid-row: 1;
-">
-<img style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-height:auto !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-max-width:200px !important;"
-src="/presentations/Alex_Poly/trefoil/right.svg"/>
+{{% slides/col style="font-size: 2.5rem;text-align:left" %}}
+$\quad$
+{{% /slides/col%}}
 
 
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 1 / 2;
-grid-row: 2;
-">
+{{% slides/col  %}}
 
-$$-A^{16}+A^{12}+A^{4}$$
+{{% slides/row %}}
+{{% slides/col %}}
+{{< centerimg src="/presentations/Alex_Poly/trefoil/right.svg"  >}}
+$$\Large{-t^{4}+t^{3}+t^{1}}$$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 2 / 2;
-grid-row: 2;
-">
-
-$$-A^{-16}+A^{-12}+A^{-4}$$
-
-
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 1 / 2;
-grid-row: 3;
-">
-$$-t^{-4}+t^{-3}+t^{-1}$$
-
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 2 / 2;
-grid-row: 3;
-">
-$$-t^{4}+t^{3}+t$$
+{{% /slides/col%}}
+{{% /slides/row %}}
 
 
 
@@ -838,16 +840,19 @@ $$-t^{4}+t^{3}+t$$
 
 ---
 
+
 ## Sources
-<div style="
-font-size: medium;
-">
-<ol>
-<li>Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239</li>
-<li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0</li>
-<li>Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.</li>
-</ol>
+
+{{% slides/citations %}}
+
+1. Livingston, C. (1993). Knot Theory. Mathematical Association of America. [https://doi.org/10.5948/UPO9781614440239](https://doi.org/10.5948/UPO9781614440239)
+2. Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.
+3. Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor, MI, 1998. Thesis Ph.D. The University of British Columbia (Canada). URL: [https://www.knotplot.com/](https://www.knotplot.com/).
+{{% /slides/citations %}}
 
 
 
+{{% slides/footer %}}
+
+{{% /slides/footer %}}
 
