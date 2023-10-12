@@ -373,12 +373,8 @@ h6 {
     color: var(--r-inline-code-color);
 }
 
-.reveal ul {
-    list-style: none;
-}
 
 .reveal ol {
-    list-style: none;
     counter-reset: li;
 }
 
