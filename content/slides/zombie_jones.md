@@ -150,20 +150,19 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
-# Diagrams for knotted dna
+## Diagrams for knotted dna
 
 {{% slides/row %}}
-{{% slides/col %}}
+{{% slides/col style="width=60%"%}}
 {{< centerimg src="/presentations/dna/dna_trefoil.png"  >}}
 {{% /slides/col%}}
-{{% slides/col%}}
+{{% slides/col style="width=20%"%}}
 $\to$
 {{% /slides/col%}}
-{{% slides/col%}}
+{{% slides/col style="max-width=20%;width=20%"%}}
 {{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg" >}}
 {{% /slides/col%}}
 {{% /slides/row %}}
-
 
 {{% slides/citations %}}
 DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
@@ -282,7 +281,7 @@ $\bkt{/presentations/kauf_bkt/crossing/crossing_un.svg}$
 # Skein Relation
 
 {{% slides/row %}}
-{{% slides/col style="align-self:center;font-size: 5rem;" %}}
+{{% slides/col style="align-self:center;font-size: 4rem;" %}}
 ${\begin{matrix}
 \ &\left.CW\right.&
 &  \left.CCW\right.&\\\\
@@ -382,7 +381,7 @@ $\begin{aligned}
 
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;" %}}
+{{% slides/col style="font-size: 3rem;" %}}
 $\begin{aligned}
 A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP
 &+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
@@ -648,7 +647,6 @@ $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-
 
 ---
 
-{{% slides/uncenter %}}
 
 {{% slides/admonition type="Exercise" title="Exercise" %}}
 
@@ -665,7 +663,7 @@ $$\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
 
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 6rem;" %}}
+{{% slides/col style="font-size: 5rem;" %}}
 $
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
@@ -716,7 +714,7 @@ $
 ---
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 4rem;" %}}
+{{% slides/col style="font-size: 5rem;" %}}
 
 $
 \begin{aligned}
@@ -804,7 +802,6 @@ $${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP
 ---
 
 
-{{% slides/uncenter %}}
 
 {{% slides/admonition type="Exercise" title="Exercise" %}}
 
@@ -893,7 +890,7 @@ where $D$ is any oriented diagram for $\mathscr{K}$.
 
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 3rem;" %}}
+{{% slides/col style="font-size: 4rem;" %}}
 $
 \begin{aligned}
  V\LP \mathscr{K}\RP&=
