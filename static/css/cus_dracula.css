@@ -378,15 +378,6 @@ h6 {
     counter-reset: li;
 }
 
-.reveal ol li::before {
-    content: counter(li) ".";
-    color: var(--r-list-bullet-color);
-    display: inline-block;
-    width: 2em;
-    margin-left: -2.5em;
-    margin-right: 0.5em;
-    text-align: right;
-}
 
 .reveal ol li {
     counter-increment: li;

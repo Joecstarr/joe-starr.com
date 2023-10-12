@@ -271,7 +271,7 @@ $\to$
 
 # Polynomial
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="text-align:center;font-size: 16rem;" %}}
 $\bkt{/presentations/kauf_bkt/crossing/crossing_un.svg}$
 {{% /slides/col  %}}
@@ -281,8 +281,8 @@ $\bkt{/presentations/kauf_bkt/crossing/crossing_un.svg}$
 
 # Skein Relation
 
-{{% slides/row style="height:90vh;"%}}
-{{% slides/col style="align-self:center;font-size: 5rem;margin-top: -10vh;" %}}
+{{% slides/row %}}
+{{% slides/col style="align-self:center;font-size: 5rem;" %}}
 ${\begin{matrix}
 \ &\left.CW\right.&
 &  \left.CCW\right.&\\\\
@@ -319,8 +319,8 @@ If our bracket "respects" reidemeister moves it respects knot "equivalence".
 
 # Type 2
 
-{{% slides/row style="height:90vh;"%}}
-{{% slides/col style="font-size: 13rem;margin-top: -10vh;margin-left:-15vw;" %}}
+{{% slides/row %}}
+{{% slides/col style="font-size: 10rem;" %}}
 ${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
 {{% /slides/col  %}}
 {{% /slides/row  %}}
@@ -357,7 +357,7 @@ $\begin{aligned}
 # A problem
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 15rem;margin-top:8vh;" %}}
+{{% slides/col style="font-size: 15rem;" %}}
 ${B\bkt{/presentations/kauf_bkt/type2/4.svg}}$
 {{% /slides/col  %}}
 {{% /slides/row  %}}
@@ -439,7 +439,7 @@ $\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentati
 How can we arrange $A,\ B$, and $C$ to get equality?
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;margin-left:-10vw;" %}}
+{{% slides/col style="font-size: 3rem;" %}}
 $\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$
 {{% /slides/col  %}}
 {{% /slides/row  %}}
@@ -447,15 +447,14 @@ $\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentati
 
 ---
 
-{{% slides/uncenter %}}
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;margin-left:-10vw;" %}}
+{{% slides/col style="font-size: 3.5rem;" %}}
 $B=\inv{A}$
 {{% /slides/col  %}}
 {{% /slides/row  %}}
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;margin-left:-10vw;" %}}
+{{% slides/col style="font-size: 3.5rem;" %}}
 $\begin{aligned}
 \LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
 \LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
@@ -465,15 +464,14 @@ $\begin{aligned}
 
 ---
 
-{{% slides/uncenter %}}
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;margin-left:-10vw;" %}}
+{{% slides/col style="font-size: 3.5rem;" %}}
 $C=-A^{-2}-A^2$
 {{% /slides/col  %}}
 {{% /slides/row  %}}
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;margin-left:-10vw;" %}}
+{{% slides/col style="font-size: 3.5rem;" %}}
 $\begin{aligned}
 \LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
 \bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
@@ -487,14 +485,14 @@ $\begin{aligned}
 
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;margin-left:-10vw;" %}}
+{{% slides/col style="font-size: 3.5rem;" %}}
 ${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
 {{% /slides/col  %}}
 {{% /slides/row  %}}
 
 
 {{% slides/row %}}
-{{% slides/col style="font-size: 3.5rem;margin-left:-10vw;" %}}
+{{% slides/col style="font-size: 3.5rem;" %}}
 $
 \begin{aligned}
 1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
@@ -510,7 +508,7 @@ $
 {{% slides/admonition type="Exercise" title="Exercise" %}}
 
 # Type III
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 8rem;" %}}
 ${\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$
 {{% /slides/col%}}
@@ -523,7 +521,7 @@ ${\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bk
 # Type I
 
 
-{{% slides/row style="height:70vh;" %}}
+{{% slides/row  %}}
 {{% slides/col style="font-size: 10rem;" %}}
 $\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA$
 {{% /slides/col %}}
@@ -535,9 +533,8 @@ $\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA$
 ---
 
 
-{{% slides/uncenter %}}
-{{% slides/row style="height:90vh;" %}}
-{{% slides/col style="font-size: 4rem;margin-top:10vh;" %}}
+{{% slides/row  %}}
+{{% slides/col style="font-size: 4rem;" %}}
 $\begin{aligned}
 \LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=
 A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA+A^{-1}\LA\img{/presentations/kauf_bkt/type1/2b.svg}\RA\\\\
@@ -549,9 +546,8 @@ A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA+A^{-1}\LA\img{/presentations/k
 
 ---
 
-{{% slides/uncenter %}}
-{{% slides/row style="height:90vh;" %}}
-{{% slides/col style="font-size: 4rem;margin-top:10vh;" %}}
+{{% slides/row  %}}
+{{% slides/col style="font-size: 4rem;" %}}
 $\begin{aligned}
 \LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
 &+A^{-1}\LP -A^{-2}-A^2\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
@@ -563,10 +559,9 @@ $\begin{aligned}
 ---
 
 
-{{% slides/uncenter %}}
-{{% slides/row style="height:90vh;" %}}
-{{% slides/col style="font-size: 8.5rem;margin-top:10vh;margin-left:-12vw" %}}
-${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
+{{% slides/row  %}}
+{{% slides/col style="font-size: 7rem;" %}}
+$${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
 {{% /slides/col %}}
 {{% /slides/row %}}
 
@@ -574,7 +569,7 @@ ${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations
 
 {{% slides/admonition type="Exercise" title="Exercise" %}}
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 8rem;" %}}
 ${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=?\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
 {{% /slides/col%}}
@@ -585,7 +580,7 @@ ${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=?\LA\img{/presentations/kauf_b
 
 {{% slides/admonition type="Exercise" title="Exercise" %}}
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 7rem;" %}}
 ${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
 {{% /slides/col%}}
@@ -598,7 +593,7 @@ ${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=-A^{3}\LA\img{/presentations/k
 # Why is this a problem?
 
 
-{{% slides/row style="height:70vh;" %}}
+{{% slides/row  %}}
 {{% slides/col style="font-size: 7rem;" %}}
 ${\begin{aligned}
 \LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
@@ -653,11 +648,12 @@ $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-
 
 ---
 
+{{% slides/uncenter %}}
 
 {{% slides/admonition type="Exercise" title="Exercise" %}}
 
-{{% slides/row style="height:70vh;"%}}
-{{% slides/col style="font-size: 15rem;" %}}
+{{% slides/row %}}
+{{% slides/col style="font-size: 10rem;" %}}
 $$\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
 {{% /slides/col%}}
 {{% /slides/row %}}
@@ -668,7 +664,7 @@ $$\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
 
 
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 6rem;" %}}
 $
 \begin{aligned}
@@ -684,7 +680,7 @@ $
 ---
 
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 6rem;" %}}
 $
 \begin{aligned}
@@ -703,7 +699,7 @@ $
 
 
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 6rem;" %}}
 $
 \begin{aligned}
@@ -719,7 +715,7 @@ $
 
 ---
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 4rem;" %}}
 
 $
@@ -737,7 +733,7 @@ $
 
 ---
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 6rem;" %}}
 $
 \begin{aligned}
@@ -758,7 +754,7 @@ $
 
 # How can we fix Type I
 
-{{% slides/row style="height:70vh;" %}}
+{{% slides/row  %}}
 {{% slides/col style="font-size: 7rem;" %}}
 $
 \begin{aligned}
@@ -799,20 +795,21 @@ $2.$ Negative  {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg" >}
 The writhe $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
 signs of the crossings of $ D $.
 
-{{% slides/row style="justify-content:flex-start;margin-left:-12vw;margin-top:5vh" %}}
-{{% slides/col style="font-size: 6rem;" %}}
-${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$
+{{% slides/row  %}}
+{{% slides/col style="font-size: 5rem;" %}}
+$${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
 {{% /slides/col%}}
 {{% /slides/row %}}
 
 ---
 
 
+{{% slides/uncenter %}}
 
 {{% slides/admonition type="Exercise" title="Exercise" %}}
 
-{{% slides/row style="height:70vh;"%}}
-{{% slides/col style="font-size: 9rem;" %}}
+{{% slides/row %}}
+{{% slides/col style="font-size: 10rem;" %}}
 $$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$$
 {{% /slides/col%}}
 {{% /slides/row %}}
@@ -824,7 +821,7 @@ $$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$$
 
 # Fixing Type I
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 7rem;" %}}
 $
 -A^{-3w\LP \img{/presentations/kauf_bkt/type1/1b.svg}\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA
@@ -835,7 +832,7 @@ $
 ---
 
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 4rem;" %}}
 $
 \begin{aligned}
@@ -854,7 +851,7 @@ $
 
 For Type I, II, and III everything "works" with the rules:
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 3rem;" %}}
 $
 \begin{aligned}
@@ -888,13 +885,14 @@ is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
 Defined by
 $ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
 where $D$ is any oriented diagram for $\mathscr{K}$.
+{{% /slides/col%}}
 {{% /slides/row %}}
 
 ---
 
 
 
-{{% slides/row style="height:70vh;"%}}
+{{% slides/row %}}
 {{% slides/col style="font-size: 3rem;" %}}
 $
 \begin{aligned}
@@ -916,9 +914,7 @@ $
 
 {{% slides/row %}}
 
-
 {{% slides/col style="width:40%;"%}}
-
 {{% slides/row %}}
 {{% slides/col %}}
 {{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg"  >}}
@@ -929,16 +925,11 @@ $
 ${-t^{-4}+t^{-3}+t^{-1}}$
 {{% /slides/col%}}
 {{% /slides/row %}}
-
 {{% /slides/col%}}
-
 {{% slides/col style="font-size: 2.5rem;text-align:left;width:20%;" %}}
 $\quad$
 {{% /slides/col%}}
-
-
 {{% slides/col style="width:40%;" %}}
-
 {{% slides/row %}}
 {{% slides/col %}}
 {{< centerimg src="/presentations/Alex_Poly/trefoil/right.svg"  >}}
@@ -949,7 +940,6 @@ $\quad$
 ${-t^{4}+t^{3}+t^{1}}$
 {{% /slides/col%}}
 {{% /slides/row %}}
-
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -966,10 +956,7 @@ ${-t^{4}+t^{3}+t^{1}}$
 ---
 
 
-# Sources
-
 {{% slides/citations %}}
-
 1. Livingston, C. (1993). Knot Theory. Mathematical Association of America. [https://doi.org/10.5948/UPO9781614440239](https://doi.org/10.5948/UPO9781614440239)
 2. Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.
 3. Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor, MI, 1998. Thesis Ph.D. The University of British Columbia (Canada). URL: [https://www.knotplot.com/](https://www.knotplot.com/).
