@@ -10,7 +10,7 @@ li {
     text-align: left !important;
 }
 
-.mjx-n > img {
+.mjx-n > img,svg {
     vertical-align: middle !important;
 }
 
