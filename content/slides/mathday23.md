@@ -21,6 +21,7 @@ slides:
     transition: "none"
 ---
 
+{{< slides/theme >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 

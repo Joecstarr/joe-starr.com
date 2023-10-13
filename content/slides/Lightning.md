@@ -47,6 +47,7 @@ slides:
 </style>
 
 
+{{< slides/theme >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 

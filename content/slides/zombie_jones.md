@@ -19,6 +19,9 @@ slides:
     transition: "none"
 ---
 
+
+
+{{< slides/theme is="zombie.css" >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
@@ -156,7 +159,13 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 {{% slides/col style="width=60%"%}}
 {{< centerimg src="/presentations/dna/dna_trefoil.png"  >}}
 {{% /slides/col%}}
-{{% slides/col style="width=20%"%}}
+{{% slides/col style="width=10%"%}}
+$\to$
+{{% /slides/col%}}
+{{% slides/col style="max-width=20%;width=20%"%}}
+{{< centerimg src="/presentations/dna/dna_left.svg"  >}}
+{{% /slides/col%}}
+{{% slides/col style="width=10%"%}}
 $\to$
 {{% /slides/col%}}
 {{% slides/col style="max-width=20%;width=20%"%}}

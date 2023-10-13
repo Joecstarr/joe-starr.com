@@ -1,0 +1,15 @@
+
+
+{{ if .IsNamedParams }}
+<embed class="centerImg" style="{{ with .Get "width"}} width:{{ . | safeCSS }};{{ end }} {{ with .Get "height"}} height:{{ . | safeCSS }};{{ end }} {{ with .Get "max-width"}} max-width:{{ . | safeCSS }};{{ end }} {{ with .Get "style"}} {{ . | safeCSS }} {{ end }}" src="{{ with .Get "src"}} {{ . }}{{ end }}"/>
+
+{{else}}
+
+<embed class="centerImg" style="
+max-width:{{ index .Params 1 }}px !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+height:auto !important;" src="{{ index .Params 0 }}"/>
+
+{{end}}
