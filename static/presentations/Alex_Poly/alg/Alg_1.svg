@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg   stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000"   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <link rel="stylesheet" href="cus_dracula.css" type="text/css" />
 
 <defs/>
 <clipPath id="ArtboardFrame">
-<rect height="1000" width="1000" x="0" y="0"/>
+<rect   width="1000" x="0" y="0"/>
 </clipPath>
 <g id="Layer-1" vectornator:layerName="Layer 1">
 <path d="M481.208 461.703C534.075 409.643 607.545 241.199 707.159 195.176C752.257 174.34 828.002 138.903 959.554 333.001C994.73 384.901 929.646 454.377 902.784 487.044" fill="none" opacity="1" stroke="#bd93f9"  stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
