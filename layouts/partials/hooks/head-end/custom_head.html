@@ -32,14 +32,14 @@
                     document.querySelectorAll("mjx-container img").forEach((element) => {
                         var src = element.getAttribute("src");
                         fetch(src)
-                        .then(res => res.text())
-                        .then(res => {
-                            const holder = document.createElement('div')
-                            holder.style.width="1em";
-                            holder.style.height="1em";
-                            holder.innerHTML = res
-                            element.replaceWith(holder)
-                        })
+                            .then(res => res.text())
+                            .then(res => {
+                                const holder = document.createElement('div')
+                                holder.style.width = "1em";
+                                holder.style.height = "1em";
+                                holder.innerHTML = res
+                                element.replaceWith(holder)
+                            })
                     });
 
                     console.log("End startup promise");
@@ -47,5 +47,5 @@
             }
         };
     }
-
+    var reveal_init_callbacks = []
 </script>

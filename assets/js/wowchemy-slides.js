@@ -66,7 +66,11 @@ if (pluginOptions.menu_enabled) {
 
 pluginOptions['plugins'] = enabledPlugins;
 
-Reveal.initialize(pluginOptions);
+Reveal.initialize(pluginOptions).then( () => {
+    reveal_init_callbacks.forEach((element) => {
+        element();
+    })
+  } );
 // Reveal.initialize({
 
 // });

@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    function inser_backgrounds() {
+        // reveal.js is ready
+        console.log("Start background")
+        const matches = document.querySelectorAll(".slide-background-content");
+        matches.forEach((element) => {
+            console.log("asdfasdfd")
+            var r = Math.floor(Math.random() * 102) + 1;
+            const holder = document.createElement('img')
+            holder.src = "/presentations/zombies/zombie_" + r + ".png";
+            element.appendChild(holder)
+        });
+        console.log("End background")
+    }
+
+    reveal_init_callbacks.push(inser_backgrounds);
+</script>
