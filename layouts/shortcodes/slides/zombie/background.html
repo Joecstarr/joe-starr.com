@@ -1,17 +1,50 @@
 <script type="text/javascript">
-    function inser_backgrounds() {
+    function insert_backgrounds() {
         // reveal.js is ready
         console.log("Start background")
         const matches = document.querySelectorAll(".slide-background-content");
         matches.forEach((element) => {
-            console.log("asdfasdfd")
-            var r = Math.floor(Math.random() * 102) + 1;
-            const holder = document.createElement('img')
-            holder.src = "/presentations/zombies/zombie_" + r + ".png";
-            element.appendChild(holder)
+            var body = document.body,
+                html = document.documentElement;
+            var height = .8 * Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight);
+            var width = .075 * Math.max(body.scrollWidth, body.offsetWidth,
+                html.clientWidth, html.scrollWidth, html.offsetWidth);
+            var x_loc = 0;
+            var y_loc = 0;
+            var lr = 0;
+            var tb = 0;
+            for (let i = 0; i < (Math.floor(Math.random() * 6) + 3); i++) {
+                var theta = -1 * Math.random() * (Math.PI / 4);
+                var r = Math.floor(Math.random() * 102) + 1;
+                x_loc = Math.random() * width;
+                y_loc = Math.random() * height;
+                lr = Math.random() < 0.5;
+                tb = Math.random() < 0.5;
+                const holder = document.createElement('img')
+                holder.style.width = "13vw";
+                holder.style.height = "auto";
+                holder.style.position = "absolute";
+                if (lr) {
+                    holder.style.left = `${x_loc}px`;
+                }
+                else {
+                    holder.style.right = `${x_loc}px`;
+                }
+                if (tb) {
+                    holder.style.top = `${y_loc}px`;
+                }
+                else {
+                    holder.style.bottom = `${y_loc}px`;
+                }
+                holder.style.transform = `rotate(${theta}rad)`;
+                holder.src = "/presentations/zombies/zombie_" + r + ".png";
+
+                element.appendChild(holder)
+            }
         });
         console.log("End background")
     }
 
-    reveal_init_callbacks.push(inser_backgrounds);
+    reveal_init_callbacks.push(insert_backgrounds);
 </script>
