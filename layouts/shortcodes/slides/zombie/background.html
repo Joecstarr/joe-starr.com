@@ -14,7 +14,7 @@
             var y_loc = 0;
             var lr = 0;
             var tb = 0;
-            for (let i = 0; i < (Math.floor(Math.random() * 6) + 3); i++) {
+            for (let i = 0; i < (Math.floor(Math.random() * 2) + 3); i++) {
                 var theta = -1 * Math.random() * (Math.PI / 4);
                 var r = Math.floor(Math.random() * 102) + 1;
                 x_loc = Math.random() * width;
@@ -22,7 +22,7 @@
                 lr = Math.random() < 0.5;
                 tb = Math.random() < 0.5;
                 const holder = document.createElement('img')
-                holder.style.width = "13vw";
+                holder.style.width = "15vw";
                 holder.style.height = "auto";
                 holder.style.position = "absolute";
                 if (lr) {
