@@ -1,7 +1,23 @@
 
 
 {{ if .IsNamedParams }}
-<div class="centerImg" style="{{ with .Get "width"}} width:{{ . | safeCSS }};{{ end }} {{ with .Get "height"}} height:{{ . | safeCSS }};{{ end }} {{ with .Get "max-width"}} max-width:{{ . | safeCSS }};{{ end }} {{ with .Get "style"}} {{ . | safeCSS }} {{ end }}" >
-    {{ with .Get "src"}} {{ . | readFile | safeHTML }}{{ end }}
+<div class="centerImg" style="
+{{if (.Get "style")}}
+{{ with .Get "style"}}
+{{ . | safeCSS }}
+{{ end }}
+{{else}}
+width:
+{{if (.Get "width")}}
+{{ with .Get "width"}} {{ . | safeCSS }}{{ end }}
+{{else}}
+100%
+{{ end }};
+{{ with .Get "height"}} height:{{ . | safeCSS }};{{ end }} {{ with .Get "max-width"}} max-width:{{ . | safeCSS }};{{ end }}
+{{ end }}
+" >
+{{ with .Get "src"}}
+{{ (print "/static" .) | readFile | safeHTML }}
+{{ end }}
 </div>
 {{end}}

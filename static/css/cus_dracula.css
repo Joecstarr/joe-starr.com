@@ -389,3 +389,7 @@ h6 {
 .label foreignObject {
     overflow: visible;
 }
+
+.centerImg > svg{
+    width: auto;
+}

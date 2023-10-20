@@ -1,4 +1,17 @@
 <script type="text/javascript">
+    function dist(x, y) {
+        return Math.sqrt((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2);
+    }
+    function dist_check(l, y, rad) {
+        var is_good = true;
+        l.forEach((element) => {
+            if (dist(element, y) < rad) {
+                is_good = false;
+            }
+        })
+        return is_good;
+
+    }
     function insert_backgrounds() {
         // reveal.js is ready
         console.log("Start background")
@@ -6,37 +19,38 @@
         matches.forEach((element) => {
             var body = document.body,
                 html = document.documentElement;
-            var height = .8 * Math.max(body.scrollHeight, body.offsetHeight,
+            var height = Math.max(body.scrollHeight, body.offsetHeight,
                 html.clientHeight, html.scrollHeight, html.offsetHeight);
-            var width = .075 * Math.max(body.scrollWidth, body.offsetWidth,
+            var width = Math.max(body.scrollWidth, body.offsetWidth,
                 html.clientWidth, html.scrollWidth, html.offsetWidth);
             var x_loc = 0;
             var y_loc = 0;
             var lr = 0;
             var tb = 0;
-            for (let i = 0; i < (Math.floor(Math.random() * 2) + 3); i++) {
-                var theta = -1 * Math.random() * (Math.PI / 4);
+            var list = []
+            for (let i = 0; i < 4; i++) {
+                var theta = Math.floor(Math.random() * 3 - 1) * (Math.PI / 4);
                 var r = Math.floor(Math.random() * 102) + 1;
-                x_loc = Math.random() * width;
-                y_loc = Math.random() * height;
-                lr = Math.random() < 0.5;
-                tb = Math.random() < 0.5;
-                const holder = document.createElement('img')
+                do {
+
+                    x_loc = Math.random() * .1 * width;
+                    y_loc = Math.random() * .3 * height;
+
+                    if (Math.random() < 0.5) {
+                        x_loc = width * (1 - .09) - x_loc;
+                    }
+                    if (Math.random() < 0.5) {
+                        y_loc = height * (1 - .2) - y_loc;
+                    }
+
+                } while (!dist_check(list, [x_loc, y_loc], height * .15))
+                list.push([x_loc, y_loc]);
+                const holder = document.createElement('img');
                 holder.style.width = "15vw";
                 holder.style.height = "auto";
                 holder.style.position = "absolute";
-                if (lr) {
-                    holder.style.left = `${x_loc}px`;
-                }
-                else {
-                    holder.style.right = `${x_loc}px`;
-                }
-                if (tb) {
-                    holder.style.top = `${y_loc}px`;
-                }
-                else {
-                    holder.style.bottom = `${y_loc}px`;
-                }
+                holder.style.left = `${x_loc}px`;
+                holder.style.top = `${y_loc}px`;
                 holder.style.transform = `rotate(${theta}rad)`;
                 holder.src = "/presentations/zombies/zombie_" + r + ".png";
 

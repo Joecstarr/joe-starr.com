@@ -235,7 +235,11 @@ What's the important information inside a knot diagram?
 
 ---
 
-{{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" >}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_un.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 
