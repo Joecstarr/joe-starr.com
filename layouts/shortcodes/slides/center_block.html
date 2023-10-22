@@ -1,0 +1,5 @@
+<div class="sliderow " style="height:100%;align-items:center;">
+    <div class="slidecolumn" style="flex-grow: 0;{{ if .IsNamedParams }} {{ with .Get "style"}} {{ . | safeCSS }}{{ end }} {{ end }}">
+        {{ .Inner }}
+    </div>
+</div>

@@ -2,12 +2,10 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 
 <svg
-
    stroke-miterlimit="10"
    style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
    version="1.1"
    viewBox="0 0 530 527.18835"
-
    xml:space="preserve"
    id="svg5"
    sodipodi:docname="crossing_un.svg"
@@ -16,7 +14,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:vectornator="http://vectornator.io"><sodipodi:namedview
+   xmlns:vectornator="http://vectornator.io">&#10;    <sodipodi:namedview
    id="namedview5"
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -25,38 +23,38 @@
    inkscape:pageopacity="0.0"
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="1.1741488"
-   inkscape:cx="272.9637"
-   inkscape:cy="312.9927"
+   inkscape:zoom="0.10378107"
+   inkscape:cx="-1426.0789"
+   inkscape:cy="187.89553"
    inkscape:window-width="1920"
    inkscape:window-height="1120"
    inkscape:window-x="-11"
    inkscape:window-y="-11"
    inkscape:window-maximized="1"
    inkscape:current-layer="svg5" />&#10;<defs
-   id="defs1"><inkscape:path-effect
-     effect="knot"
-     id="path-effect5"
-     is_visible="true"
-     lpeversion="1"
-     switcher_size="15"
-     interruption_width="5.4"
-     prop_to_stroke_width="true"
-     add_stroke_width="inkscape_1.0_and_up"
-     both="false"
-     inverse_width="false"
-     add_other_stroke_width="inkscape_1.0_and_up"
-     crossing_points_vector="" /></defs>&#10;&#10;&#10;&#10;<g
+   id="defs1">&#10;        <inkscape:path-effect
+   effect="knot"
+   id="path-effect5"
+   is_visible="true"
+   lpeversion="1"
+   switcher_size="15"
+   interruption_width="5.4"
+   prop_to_stroke_width="true"
+   add_stroke_width="inkscape_1.0_and_up"
+   both="false"
+   inverse_width="false"
+   add_other_stroke_width="inkscape_1.0_and_up"
+   crossing_points_vector="" />&#10;    </defs>&#10;&#10;&#10;&#10;<g
    clip-path="url(#ArtboardFrame)"
    id="Layer-2"
    vectornator:layerName="Layer 2"
    transform="translate(15,13.353374)">&#10;<clipPath
-   id="ClipPath_2">&#10;<path
+   id="ClipPath_2">&#10;&#10;            <path
    d="M 450.763,-0.268002 240.638,199.31 291.75,253.261 260.899,300.621 200.396,239.551 -30.7388,480.423 72.9236,631.959 518.627,613.32 610.18,500.386 605.246,189.545 594.281,-13.2963 530.139,-73.6005 Z"
-   id="path4" />&#10;</clipPath>&#10;<g
+   id="path4" />&#10;&#10;        </clipPath>&#10;<g
    clip-path="url(#ClipPath_2)"
-   id="g5">&#10;&#10;</g>&#10;<path
-   d="M 678.0836,34.874447 C 662.04323,97.322323 640.64489,164.43756 613.27355,236.37311 1389.4047,1314.7575 -165.83917,707.25626 -14.211801,515.43825 L 194.59266,306.93957 M 309.23065,192.46947 514.12526,-12.125079 C 931.84688,-159.09927 950.23573,210.74349 833.81535,433.82077 M 717.1368,568.27327 C 654.51222,604.44209 583.09577,596.43472 516.23861,510.75853 L -13.511338,-12.431955 C -384.45856,-223.48181 -296.3149,547.40539 -94.53657,260.22017 -122.57223,180.16037 -138.84129,104.25993 -145.2484,32.992498 m 2.84271,-163.907478 c 80.882972,-616.18266 946.35037,-759.16322 851.66289,4.93794"
+   id="g5">&#10;&#10;</g>&#10;&#10;        <path
+   d="M 308.76356,192.00816 514.12526,-12.125079 C 613.41465,-109.02234 1460.4002,-944.95954 1521.0209,-911.89375 1688.2837,-820.65962 1751.2134,695.29353 1408.512,1095.3106 1213.3734,1323.0855 603.46696,622.54001 516.23861,510.75853 L -13.511338,-12.431955 -545.41558,-565.79628 C -312.37086,-241.99562 -789.86369,1155.7733 -647.0112,1030.0429 -490.77662,892.53434 -128.32579,628.7855 -15,513.83498 L 193.86423,306.22016"
    fill="none"
    opacity="1"
    stroke="#ffb86c"
@@ -65,6 +63,6 @@
    stroke-width="30"
    id="path5"
    style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
-   sodipodi:nodetypes="ccccccc"
+   sodipodi:nodetypes="ccsscccsc"
    inkscape:path-effect="#path-effect5"
-   inkscape:original-d="M -14.211801,515.43825 514.12526,-12.125079 c 683.32214,-240.424991 298.052,902.123389 2.11335,522.883609 L -13.511338,-12.431955 C -384.45856,-223.48181 -296.3149,547.40539 -94.53657,260.22017 -454.5322,-767.79851 1125.571,-1110.0132 613.27355,236.37311 1389.4047,1314.7575 -165.83917,707.25626 -14.211801,515.43825 Z" /></g>&#10;</svg>
+   inkscape:original-d="M -15,513.83498 514.12526,-12.125079 C 613.41465,-109.02234 1460.4002,-944.95954 1521.0209,-911.89375 1688.2837,-820.65962 1751.2134,695.29353 1408.512,1095.3106 1213.3734,1323.0855 603.46696,622.54001 516.23861,510.75853 L -13.511338,-12.431955 -545.41558,-565.79628 C -312.37086,-241.99562 -789.86369,1155.7733 -647.0112,1030.0429 -490.77662,892.53434 -128.32579,628.7855 -15,513.83498 Z" />&#10;    </g>&#10;&#10;</svg>

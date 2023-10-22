@@ -126,11 +126,29 @@ li {
 .sliderow {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-evenly;
+    max-height: calc(var(--slide-height));
+    max-width: calc(var(--slide-width));
 }
 
 .slidecolumn {
     padding: 0;
+    max-height: calc(var(--slide-height));
+    max-width: calc(var(--slide-width));
+    flex-basis: 0;
     flex-grow: 1;
+}
+
+.centerImg *{
+    max-height: calc(var(--slide-height));
+    max-width: calc(var(--slide-width));
+    width: auto;
+}
+
+.centerImg {
+    max-height: calc(var(--slide-height));
+    max-width: calc(var(--slide-width));
+    width: auto;
 }
