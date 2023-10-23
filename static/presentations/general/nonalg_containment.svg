@@ -66,7 +66,7 @@
    stroke-width="10"
    vectornator:layerName="Oval 1"
    id="path9224"
-   style="stroke:#ff5555;stroke-opacity:1" />
+   class="stroke-red" style="stroke:#ff5555;stroke-opacity:1" />
 <g
    opacity="1"
    vectornator:layerName="Group 1"
@@ -2199,7 +2199,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9620"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M298.253 113.821C303.076 124.792 241.615 134.745 278.428 141.421"
    fill="none"
@@ -2210,7 +2210,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9622"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M350.514 82.8208C371.776 93.989 351.54 96.6074 330.287 102.668C319.283 105.805 301.819 98.1404 300.142 112.866"
    fill="none"
@@ -2221,7 +2221,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9624"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M246.96 241.467C235.204 233.144 228.646 215.195 237.507 204.524"
    fill="none"
@@ -2232,7 +2232,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9626"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M270.143 315.18C277.986 293.519 244.906 276.977 255.149 265.148M318.027 68.7104C296.893 51.4953 176.632 120.735 166.977 163.054C145.27 258.192 259.492 359.953 269.464 316.139"
    fill="none"
@@ -2243,7 +2243,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9628"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M375.544 271.381C366.755 266.24 317.885 306.086 317.999 280.533M344.257 62.1604C368.011 39.9218 415.338 185.307 416.905 234.199C417.573 255.033 392.518 277.847 378.128 271.631"
    fill="none"
@@ -2254,7 +2254,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9630"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M310.707 256.412C298.465 245.134 288.003 258.013 280.554 251.518"
    fill="none"
@@ -2265,7 +2265,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9632"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M271.419 232.194C273.009 222.437 295.211 232.682 303.004 222.39"
    fill="none"
@@ -2276,7 +2276,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9634"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M294.801 198.515C285.506 186.048 273.686 194.649 261.612 190.861"
    fill="none"
@@ -2287,7 +2287,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9636"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M251.819 172.941C256.177 163.439 274.362 177.105 287.272 166.202"
    fill="none"
@@ -2298,7 +2298,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9638"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M334.563 249.704C334.563 249.704 344.626 220.667 328.254 208.425"
    fill="none"
@@ -2309,7 +2309,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9640"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M318.177 190.634C318.177 190.634 331.542 162.521 311.625 151.889"
    fill="none"
@@ -2320,7 +2320,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9642"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 <path
    d="M343.351 266.653C355.639 272.094 359.507 248.77 360.462 240.966C358.928 223.894 358.443 204.209 354.131 186.536C349.838 168.934 341.735 153.336 331.399 140.884C310.685 115.93 303.392 131.825 303.392 131.825"
    fill="none"
@@ -2331,7 +2331,7 @@
    stroke-width="2.9639"
    vectornator:layerName="path"
    id="path9644"
-   style="stroke:#ffb86c;stroke-opacity:1" />
+   class="stroke-orange" style="stroke:#ffb86c;stroke-opacity:1" />
 </g>
 <g
    opacity="1"

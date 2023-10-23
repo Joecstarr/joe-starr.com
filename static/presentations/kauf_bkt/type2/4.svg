@@ -57,7 +57,7 @@
    stroke-linejoin="round"
    stroke-width="30"
    id="path3" />&#10;&#10;</g>&#10;<ellipse
-   style="fill:none;stroke:#ffb86c;stroke-width:29.0671;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+   class="stroke-orange" style="fill:none;stroke:#ffb86c;stroke-width:29.0671;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
    id="path4"
    cx="250"
    cy="250"
