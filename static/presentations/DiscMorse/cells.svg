@@ -188,7 +188,7 @@
        id="path1848-6-9"
        transform="matrix(-0.99990884,-0.01350232,0.05196722,-0.99864879,0,0)"
        d="m -650.16222,-717.69633 a 178.74921,28.823664 0 0 1 -175.16999,28.46805 178.74921,28.823664 0 0 1 -182.07329,-27.31858" /><circle
-       style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:4.72076;stroke-dasharray:none"
+       class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:4.72076;stroke-dasharray:none"
        id="path1534"
        cx="257.11066"
        cy="221.31352"

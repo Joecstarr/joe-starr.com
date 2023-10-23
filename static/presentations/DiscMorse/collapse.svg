@@ -581,17 +581,17 @@
          x="-1027.2146"
          y="32.806927"
          transform="matrix(-0.49138185,-0.87094425,-0.87094425,0.49138185,0,0)" /><circle
-         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
+         class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
          id="path1534-3-5-6"
          cx="66.651566"
          cy="902.02185"
          r="27.071392" /><circle
-         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
+         class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
          id="path1534-3-5-5-2"
          cx="260.32059"
          cy="558.41852"
          r="27.071392" /><circle
-         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
+         class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
          id="path1534-3-6-3-1"
          cx="461.03711"
          cy="904.45984"
@@ -615,19 +615,19 @@
        y="-678.07196"
        transform="matrix(-0.48332466,-0.87544119,-0.87544119,0.48332466,0,0)" /><circle
        transform="rotate(0.52867961)"
-       style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.98371;stroke-dasharray:none"
+       class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.98371;stroke-dasharray:none"
        id="path1534-3-5-6-9"
        cx="661.83783"
        cy="339.61465"
        r="20.629526" /><circle
        transform="rotate(0.52867961)"
-       style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.98371;stroke-dasharray:none"
+       class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.98371;stroke-dasharray:none"
        id="path1534-3-5-5-2-0"
        cx="809.42169"
        cy="77.774635"
        r="20.629526" /><circle
        transform="rotate(0.52867961)"
-       style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.98371;stroke-dasharray:none"
+       class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.98371;stroke-dasharray:none"
        id="path1534-3-6-3-1-9"
        cx="962.37604"
        cy="341.4725"

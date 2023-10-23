@@ -51,7 +51,7 @@
        id="path4719-3"
        sodipodi:nodetypes="cc" />
     <circle
-       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill;fill-opacity:1"
+       class="fill-orange" style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill;fill-opacity:1"
        id="path4663"
        cx="104.13462"
        cy="104.69405"

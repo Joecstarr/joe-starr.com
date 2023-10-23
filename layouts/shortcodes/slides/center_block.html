@@ -1,7 +1,15 @@
+{{ $markdown := .Get "markdownify" | default "false" }}
+
+
 <!-- Start Center Block -->
 <div class="sliderow " style="height:100%;align-items:center;">
     <div class="slidecolumn" style="flex-grow: 0;{{ if .IsNamedParams }} {{ with .Get "style"}} {{ . | safeCSS }}{{ end }} {{ end }}">
-        {{ .Inner }}
+
+        {{ if eq $markdown "true" }}
+        {{ .Inner | markdownify | emojify }}
+        {{ else }}
+        {{ .Inner  }}
+        {{ end }}
     </div>
 </div>
-<!-- emd Center Block -->
+<!-- end Center Block -->

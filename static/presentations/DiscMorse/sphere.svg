@@ -203,7 +203,7 @@
        cy="373.64789"
        cx="186.58586"
        id="path1534"
-       style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:4.72076;stroke-dasharray:none" /><circle
+       class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:4.72076;stroke-dasharray:none" /><circle
        r="174.54871"
        cy="217.52309"
        cx="532.78326"
@@ -227,7 +227,7 @@
        sodipodi:type="arc"
        style="fill:none;fill-opacity:0.23137255;stroke:#ff5555;stroke-width:5.59379005;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:44.7503;stroke-opacity:1;paint-order:stroke markers fill"
        id="path1848-6" /><circle
-       style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.56041;stroke-dasharray:none"
+       class="fill-orange" style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.56041;stroke-dasharray:none"
        id="path1534-1"
        cx="578.89832"
        cy="709.32202"

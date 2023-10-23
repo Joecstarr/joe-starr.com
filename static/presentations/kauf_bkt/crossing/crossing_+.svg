@@ -36,7 +36,7 @@
    transform="translate(9.7336426,19.536404)"><path
      d="M 500,949.543 C 500,864.05 500,0 500,0"
      fill="none"
-     stroke="#ffb86c"
+     class="stroke-orange" stroke="#ffb86c"
      stroke-linecap="butt"
      stroke-linejoin="miter"
      stroke-width="39.0728"
@@ -47,7 +47,7 @@
      id="path3"
      style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" /></g><path
    id="rect8"
-   style="fill:#ffffff;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+   class="fill-background" style="fill:#ffffff;stroke-dashoffset:130.744;paint-order:stroke markers fill"
    d="M 405.19714,396.32147 H 614.27013 V 623.14594 H 405.19714 Z" /><g
    id="g7"
    transform="translate(-0.0690475,9.7337036)"><path
@@ -57,7 +57,7 @@
      style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" /><path
      d="M 50.4571,500 C 135.95,500 1000,500 1000,500"
      fill="none"
-     stroke="#ffb86c"
+     class="stroke-orange" stroke="#ffb86c"
      stroke-linecap="butt"
      stroke-linejoin="miter"
      stroke-width="39.0728"

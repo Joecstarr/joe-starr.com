@@ -826,20 +826,15 @@ $
 
 ---
 
-{{% slides/uncenter %}}
 
 # Definition of the Jones Polynomial
 
-{{% slides/center_block style="font-size: 2.5rem;text-align:left"  %}}
 The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
 is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
-{{% /slides/center_block %}}
 
-{{% slides/center_block style="font-size: 2.5rem;text-align:left"  %}}
 Defined by
 $ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
 where $D$ is any oriented diagram for $\mathscr{K}$.
-{{% /slides/center_block %}}
 
 ---
 

@@ -42,7 +42,7 @@
    d="M -0.0779426,-0.467192 C 282.282,239.189 0.254223,500.393 0.254223,500.393"
    fill="none"
    opacity="1"
-   stroke="#ffb86c"
+   class="stroke-orange" stroke="#ffb86c"
    stroke-linecap="round"
    stroke-linejoin="round"
    stroke-width="30"
