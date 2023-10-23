@@ -38,7 +38,7 @@
 <defs
    id="defs9219" />
 <clipPath
-   id="ArtboardFrame">
+   id="ArtboardFrame_50">
 <rect
    height="1000"
    width="1000"
@@ -47,7 +47,7 @@
    id="rect9221" />
 </clipPath>
 <g
-   clip-path="url(#ArtboardFrame)"
+   clip-path="url(#ArtboardFrame_50)"
    id="Layer-1"
    vectornator:layerName="Layer 1">
 <g

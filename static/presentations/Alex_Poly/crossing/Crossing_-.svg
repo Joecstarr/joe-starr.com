@@ -3,10 +3,10 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 <svg   stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000"   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
-<clipPath id="ArtboardFrame">
+<clipPath id="ArtboardFrame_15">
 <rect height="1000" width="1000" x="0" y="0"/>
 </clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<g clip-path="url(#ArtboardFrame_15)" id="Layer-1" vectornator:layerName="Layer 1">
 <g opacity="1">
 <path d="M500 949.543C500 864.05 500-2.13163e-14 500-2.13163e-14" fill="none" stroke="#8be9fd" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="39.0728"/>
 <g fill="#8be9fd" stroke="none">
@@ -17,7 +17,7 @@
 <g id="Layer-4" vectornator:layerName="Layer 4">
 <path d="M402.242 500C402.242 446.512 446.01 403.152 500 403.152C553.99 403.152 597.758 446.512 597.758 500C597.758 553.488 553.99 596.848 500 596.848C446.01 596.848 402.242 553.488 402.242 500Z" fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none"/>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-2" vectornator:layerName="Layer 2">
+<g clip-path="url(#ArtboardFrame_15)" id="Layer-2" vectornator:layerName="Layer 2">
 <g opacity="1">
 <path d="M949.543 500C864.05 500-2.13163e-14 500-2.13163e-14 500" fill="none" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="60"/>
 <g fill="#ffb86c" stroke="none">

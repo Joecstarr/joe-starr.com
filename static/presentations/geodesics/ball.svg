@@ -3,10 +3,10 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 <svg   stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000"   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
-<clipPath id="ArtboardFrame">
+<clipPath id="ArtboardFrame_53">
 <rect height="1000" width="1000" x="0" y="0"/>
 </clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<g clip-path="url(#ArtboardFrame_53)" id="Layer-1" vectornator:layerName="Layer 1">
 <path d="M23.5377 603.769C220.092 554.834 363.846 290.627 251.184 77.8" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter" stroke-width="12" vectornator:layerName="Curve 1"/>
 <path d="M489.224 10.2092C488.176 209.677 485.211 852.489 484.078 987.642" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter" stroke-width="12" vectornator:layerName="Curve 2"/>
 <path d="M649.972 965.351C593.598 748.735 757.646 469.441 988.284 467.947" fill="none" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter" stroke-width="12" vectornator:layerName="Curve 4"/>

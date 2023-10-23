@@ -10,13 +10,13 @@
 <feDropShadow dx="5.89749" dy="-9.43925" flood-color="#282a36" flood-opacity="0.9" in="SourceGraphic" result="Shadow" stdDeviation="4.25342"/>
 </filter>
 </defs>
-<clipPath id="ArtboardFrame">
+<clipPath id="ArtboardFrame_17">
 <rect height="820" width="1000" x="0" y="0"/>
 </clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1" visibility="hidden">
+<g clip-path="url(#ArtboardFrame_17)" id="Layer-1" vectornator:layerName="Layer 1" visibility="hidden">
 <path d="M-110.735-138.315L1054.77-138.315L1054.77 1059.06L-110.735 1059.06L-110.735-138.315Z" fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none"/>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-2" vectornator:layerName="Layer 2">
+<g clip-path="url(#ArtboardFrame_17)" id="Layer-2" vectornator:layerName="Layer 2">
 <g opacity="1">
 <clipPath id="ClipPath">
 <path d="M-6.69646 684.607C-16.1712 625.683 36.4566 573.606 36.4566 573.606L44.7422 589.476L82.3647 573.223L77.0399 559.128L117.769 549.946L119.813 565.998L170.327 562.436L167.686 541.141C167.686 541.141 190.338 539.495 198.136 539.167C199.724 539.1 203.816 560.999 203.816 560.999L248.844 559.883C248.844 559.883 245.063 537.309 247.454 537.228C262.049 536.728 295.108 532.782 295.108 532.782L305.581 532.344L335.672 544.507L336.552 531.886C336.552 531.886 352.148 531.003 358.511 530.93C361.844 530.892 361.605 547.044 361.605 547.044L397.917 544.095C397.917 544.095 395.709 522.156 399.657 522.103C424.327 521.773 523.881 512.996 523.881 512.996C523.881 512.996 470.419 562.149 483.708 542.488C496.997 522.828 511.762 540.582 511.762 540.582L534.911 542.481L572.901 523.389C572.901 523.389 594.023 523.713 613.383 525.57C616.969 525.914 617.175 539.113 617.175 539.113L643.178 542.805L655.041 524.976L828.984 530.056L805.724 550.35L845.676 551.536L854.673 536.799L880.518 541.943L885.473 552.381L912.781 559.05C912.781 559.05 919.262 544.144 919.724 544.298C1017.45 576.702 1006.45 630.163 1006.45 684.607C1006.45 739.284 1023.85 776.9 925.402 809.303C894.481 819.481 151.255 834.291 74.3556 809.303C-25.344 776.906 2.77828 743.532-6.69646 684.607Z"/>
@@ -67,7 +67,7 @@
 </g>
 </g>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-3" vectornator:layerName="Layer 3">
+<g clip-path="url(#ArtboardFrame_17)" id="Layer-3" vectornator:layerName="Layer 3">
 <g opacity="1">
 <clipPath id="ClipPath_6">
 <path d="M522.798 319.157C503.424 300.734 361.474 311.664 379.317 292.901C397.16 274.137 284.636 596.887 304.011 615.311C323.385 633.734 601.742 350.367 583.899 369.131C566.056 387.895 542.173 337.581 522.798 319.157Z"/>
@@ -100,7 +100,7 @@
 </g>
 </g>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-4" vectornator:layerName="Layer 4">
+<g clip-path="url(#ArtboardFrame_17)" id="Layer-4" vectornator:layerName="Layer 4">
 <g opacity="1">
 <clipPath id="ClipPath_9">
 <path d="M640.463 319.157C621.088 300.734 479.138 311.664 496.981 292.901C514.824 274.137 402.301 596.887 421.675 615.311C441.049 633.734 719.407 350.367 701.564 369.131C683.721 387.895 659.837 337.581 640.463 319.157Z"/>
@@ -133,7 +133,7 @@
 </g>
 </g>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-6" vectornator:layerName="Layer 6">
+<g clip-path="url(#ArtboardFrame_17)" id="Layer-6" vectornator:layerName="Layer 6">
 <g opacity="1">
 <clipPath id="ClipPath_12">
 <path d="M752.413 322.769C733.039 304.345 591.088 315.276 608.931 296.512C626.774 277.748 514.251 600.499 533.625 618.922C553 637.346 831.357 353.979 813.514 372.743C795.671 391.507 771.787 341.192 752.413 322.769Z"/>
@@ -166,7 +166,7 @@
 </g>
 </g>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-5" vectornator:layerName="Layer 5">
+<g clip-path="url(#ArtboardFrame_17)" id="Layer-5" vectornator:layerName="Layer 5">
 <g opacity="1">
 <path d="M223.585 407.178C228.216 399.29 250.477 392.951 254.083 402.945C257.688 412.939 241.244 422.879 237.357 426.119C234.911 428.157 212.678 431.983 207.244 422.407C202.559 414.152 213.21 424.85 223.585 407.178Z" fill="#8be9fd" fill-rule="nonzero" filter="url(#Filter)" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="9.83584" vectornator:shadowAngle="2.09486" vectornator:shadowColor="#282a36" vectornator:shadowOffset="7.19178" vectornator:shadowOpacity="0.9" vectornator:shadowRadius="8.50685"/>
 <path d="M223.585 407.178C228.216 399.29 250.477 392.951 254.083 402.945C257.688 412.939 241.244 422.879 237.357 426.119C234.911 428.157 212.678 431.983 207.244 422.407C202.559 414.152 213.21 424.85 223.585 407.178Z" fill="#8be9fd" fill-rule="nonzero" filter="url(#Filter_2)" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="9.83584" vectornator:shadowAngle="-1.01235" vectornator:shadowColor="#282a36" vectornator:shadowOffset="11.1301" vectornator:shadowOpacity="0.9" vectornator:shadowRadius="8.50685"/>

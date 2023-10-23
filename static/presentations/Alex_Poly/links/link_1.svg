@@ -3,10 +3,10 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 <svg   stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 610 480"   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
-<clipPath id="ArtboardFrame">
+<clipPath id="ArtboardFrame_16">
 <rect height="480" width="610" x="0" y="0"/>
 </clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<g clip-path="url(#ArtboardFrame_16)" id="Layer-1" vectornator:layerName="Layer 1">
 <g opacity="1">
 <clipPath id="ClipPath">
 <path d="M246.109 605.992L189.912 484.121L310.718 406.472L283.141 337.462L347.927 306.806L420.465 412.132L333.226 564.192L246.109 605.992Z"/>
@@ -54,7 +54,7 @@
 </g>
 </g>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-3" vectornator:layerName="Layer 3">
+<g clip-path="url(#ArtboardFrame_16)" id="Layer-3" vectornator:layerName="Layer 3">
 <g opacity="1">
 <clipPath id="ClipPath_5">
 <path d="M388.951 425.473L272.189 484.775L561.942 641.005L676.636-17.4133L291.159 23.7991L315.014 53.8623L388.951 425.473Z"/>

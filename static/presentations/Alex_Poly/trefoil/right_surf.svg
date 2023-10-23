@@ -10,13 +10,13 @@
 <feDropShadow dx="-3.91032" dy="3.33137" flood-color="#282a36" flood-opacity="0.9" in="SourceGraphic" result="Shadow" stdDeviation="4.25342"/>
 </filter>
 </defs>
-<clipPath id="ArtboardFrame">
+<clipPath id="ArtboardFrame_27">
 <rect height="440" width="815" x="0" y="0"/>
 </clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer-2" vectornator:layerName="Layer 2">
+<g clip-path="url(#ArtboardFrame_27)" id="Layer-2" vectornator:layerName="Layer 2">
 <path d="M4.28133 312.108C4.28133 259.312-4.52779 219.878 73.8005 188.697C118.397 170.944 444.818 173.853 626.509 180.58C693.192 183.049 740.38 186.032 746.987 188.697C824.287 219.882 811.1 256.304 811.1 308.697C811.1 361.315 824.859 397.514 746.987 428.697C722.527 438.492 134.629 452.744 73.8005 428.697C-5.06289 397.52 4.28133 365.113 4.28133 312.108Z" fill="#8be9fd" fill-rule="nonzero" opacity="1" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.86072"/>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-9" vectornator:layerName="Layer 9">
+<g clip-path="url(#ArtboardFrame_27)" id="Layer-9" vectornator:layerName="Layer 9">
 <g opacity="1">
 <path d="M674.428 108.642C644.725 104.434 610.016 56.573 580.312 52.3642L580.313 52.3555C550.61 48.1466 525.766 82.7677 475.775 85.7745C453.393 87.1207 362.22 161.38 343.654 176.681C341.519 178.441 340.344 179.421 340.344 179.421L294.289 178.917C294.289 178.917 420.775 20.7745 480.775 40.7745C516.783 52.7771 480.986 40.7745 480.986 40.7745C505.591 44.2609 533.631 77.7002 559.415 91.4689C564.758 94.3219 570.004 96.3303 575.102 97.0527L575.101 97.0614C604.804 101.27 640.03 59.006 680.03 64.006C764.374 74.549 729.613 155.893 722.113 190.893L683.202 187.959C683.202 187.959 714.966 128.925 674.966 108.925" fill="#8be9fd" fill-rule="nonzero" opacity="1" stroke="none"/>
 <clipPath id="ClipPath">
@@ -42,7 +42,7 @@
 </g>
 </g>
 </g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-3" vectornator:layerName="Layer 3">
+<g clip-path="url(#ArtboardFrame_27)" id="Layer-3" vectornator:layerName="Layer 3">
 <g opacity="1">
 <path d="M432.246 54.7984L392.347 81.1233L412.091 118.348L451.784 90.7895L432.246 54.7984Z" fill="#ff5555" fill-rule="nonzero" filter="url(#Filter)" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4.86072" vectornator:shadowAngle="-0.534885" vectornator:shadowColor="#282a36" vectornator:shadowOffset="6.16438" vectornator:shadowOpacity="0.9" vectornator:shadowRadius="8.50685"/>
 <path d="M432.246 54.7984L392.347 81.1233L412.091 118.348L451.784 90.7895L432.246 54.7984Z" fill="#ff5555" fill-rule="nonzero" filter="url(#Filter_2)" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4.86072" vectornator:shadowAngle="2.43597" vectornator:shadowColor="#282a36" vectornator:shadowOffset="5.13699" vectornator:shadowOpacity="0.9" vectornator:shadowRadius="8.50685"/>
