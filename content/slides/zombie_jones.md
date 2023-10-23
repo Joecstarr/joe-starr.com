@@ -350,7 +350,7 @@ If our bracket "respects" reidemeister moves it respects knot "equivalence".
 
 ---
 
-# Type 2
+# Type II
 
 {{< slides/center_block style="font-size:10rem" >}}
 ${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
@@ -362,11 +362,11 @@ ${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bk
 {{% slides/uncenter %}}
 
 
-{{< slides/center_block style="font-size:4rem" >}}
-**$\small{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$**
+{{< slides/center_block style="font-size:4rem;color:var(--r-Orange);margin-bottom:10vh" >}}
+$ \small{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
 {{< /slides/center_block >}}
 
-{{< slides/center_block style="font-size:4rem" >}}
+{{< slides/center_block style="font-size:4.5rem" >}}
 $\begin{aligned}
 \bkt{/presentations/kauf_bkt/type2/1.svg}
 &=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+B\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
@@ -404,7 +404,7 @@ $\begin{aligned}
 ---
 
 
-{{< slides/center_block style="font-size:4rem" >}}
+{{< slides/center_block style="font-size:3rem" >}}
 $\begin{aligned}
 A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP
 &+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
@@ -435,7 +435,7 @@ ${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bk
 
 ### What we have
 
-{{< slides/center_block style="font-size:10rem" >}}
+{{< slides/center_block style="font-size:3rem" >}}
 $\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}$
 {{< /slides/center_block >}}
 
@@ -458,7 +458,7 @@ $\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentati
 
 ---
 
-{{< slides/center_block style="font-size:3rem" >}}
+{{< slides/center_block style="font-size:3rem;color:var(--r-Green);margin-bottom:10vh" >}}
 $B=\inv{A}$
 {{< /slides/center_block >}}
 
@@ -471,7 +471,7 @@ $\begin{aligned}
 
 ---
 
-{{< slides/center_block style="font-size:3rem" >}}
+{{< slides/center_block style="font-size:3rem;color:var(--r-Green);margin-bottom:10vh" >}}
 $C=-A^{-2}-A^2$
 {{< /slides/center_block >}}
 
@@ -484,7 +484,7 @@ $\begin{aligned}
 
 ---
 
-# Type 2
+# Type II
 
 
 {{< slides/center_block style="font-size:3rem" >}}
@@ -504,14 +504,13 @@ $
 
 ---
 
-{{% slides/admonition type="Exercise" title="Exercise" %}}
+{{< slides/admonition type="Exercise" title="Exercise: Type III" >}}
 
-# Type III
-
-{{< slides/center_block style="font-size:3rem" >}}
-${\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$
+{{< slides/center_block style="font-size:9rem" >}}
+$$\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA$$
 {{< /slides/center_block >}}
-{{% /slides/admonition %}}
+
+{{< /slides/admonition >}}
 
 
 
@@ -519,7 +518,7 @@ ${\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bk
 # Type I
 
 
-{{< slides/row   >}}5
+{{< slides/row   >}}
 {{< slides/col style="font-size: 10rem;"  >}}
 $\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA$
 {{< /slides/col  >}}
@@ -559,22 +558,20 @@ $${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentation
 
 ---
 
-{{% slides/admonition type="Exercise" title="Exercise" %}}
+{{< slides/admonition type="Exercise" title="Exercise Type I Left" >}}
 
 {{< slides/center_block style="font-size:6rem" >}}
-${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=?\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
+$${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=?\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
 {{< /slides/center_block >}}
-{{% /slides/admonition %}}
+{{< /slides/admonition >}}
 
 ---
 
-{{% slides/admonition type="Exercise" title="Exercise" %}}
 
 {{< slides/center_block style="font-size:7rem" >}}
 ${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
 {{< /slides/center_block >}}
 
-{{% /slides/admonition %}}
 
 
 ---
@@ -619,7 +616,7 @@ ${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations
 The Kauffman Bracket is a function from __unoriented__ **link diagrams** to **Laurent polynomials** with **integer coefficients** in an indeterminate $A$. Important to note that the Kauffman Bracket isn't an "invariant" for knot diagrams.
 
 
-{{% slides/admonition type="Note" %}}
+{{< slides/admonition type="Note" markdownify="true" >}}
 
 A **Polynomial**:
 $$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
@@ -627,18 +624,18 @@ $$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
 A **Laurent** Polynomial:
 $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-1}+\cdots+a_{-n}x^{-n}$$
 
-{{% /slides/admonition %}}
+{{< /slides/admonition >}}
 
 
 ---
 
 
-{{% slides/admonition type="Exercise" title="Exercise" %}}
+{{< slides/admonition type="Exercise" title="Exercise" >}}
 
 {{< slides/center_block style="font-size:10rem" >}}
 $$\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
 {{< /slides/center_block >}}
-{{% /slides/admonition %}}
+{{< /slides/admonition >}}
 
 
 ---
@@ -735,20 +732,25 @@ $
 ---
 
 
-{{% slides/uncenter %}}
 
 # Orientation of a crossing
 
 
 {{< slides/row >}}
-{{< slides/col style="font-size: 5rem;"  >}}
-$1.$ Positive {{<centerimg "/presentations/kauf_bkt/crossing/crossing_+.svg" >}}
+{{< slides/col style="font-size: 3rem;"  >}}
+$1.$ Positive
+{{< slides/center_block style="flex-grow:1">}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_+.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col style="font-size: 5rem;"  >}}
 $\quad$
 {{< /slides/col >}}
-{{< slides/col style="font-size: 5rem;"  >}}
-$2.$ Negative  {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg" >}}
+{{< slides/col style="font-size: 3rem;"  >}}
+$2.$ Negative
+{{< slides/center_block style="flex-grow:1">}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_-.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 
@@ -771,12 +773,12 @@ $${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP
 
 
 
-{{% slides/admonition type="Exercise" title="Exercise" %}}
+{{< slides/admonition type="Exercise" title="Exercise" >}}
 
 {{< slides/center_block style="font-size:10rem" >}}
 $$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$$
 {{< /slides/center_block >}}
-{{% /slides/admonition %}}
+{{< /slides/admonition >}}
 
 
 ---
@@ -793,7 +795,7 @@ $
 ---
 
 
-{{< slides/center_block style="font-size:7rem" >}}
+{{< slides/center_block style="font-size:4rem" >}}
 $
 \begin{aligned}
      -A^{-3w\LP \img{/presentations/kauf_bkt/type1/1b.svg}\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA
@@ -828,16 +830,16 @@ $
 
 # Definition of the Jones Polynomial
 
-{{< slides/center_block style="font-size: 2.5rem;text-align:left"  >}}
+{{% slides/center_block style="font-size: 2.5rem;text-align:left"  %}}
 The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
 is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
-{{< /slides/center_block >}}
+{{% /slides/center_block %}}
 
-{{< slides/center_block style="font-size: 2.5rem;text-align:left"  >}}
+{{% slides/center_block style="font-size: 2.5rem;text-align:left"  %}}
 Defined by
 $ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
 where $D$ is any oriented diagram for $\mathscr{K}$.
-{{< /slides/center_block >}}
+{{% /slides/center_block %}}
 
 ---
 
