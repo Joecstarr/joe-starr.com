@@ -40,7 +40,7 @@
         <rect height="565" width="1000" x="0" y="0" />
     </clipPath>
     <g clip-path="url(#ArtboardFrame_8)" id="Layer-1" vectornator:layerName="Layer 1" visibility="hidden">
-        <path d="M-110.735-138.315L1054.77-138.315L1054.77 1059.06L-110.735 1059.06L-110.735-138.315Z" fill="#282a36"
+        <path d="M-110.735-138.315L1054.77-138.315L1054.77 1059.06L-110.735 1059.06L-110.735-138.315Z" class="fill-background"
             fill-rule="nonzero" opacity="1" stroke="none" />
     </g>
     <g clip-path="url(#ArtboardFrame_8)" id="Layer-2" vectornator:layerName="Layer 2">
@@ -154,7 +154,7 @@
             stroke-width="4.86072" />
         <path
             d="M458.497 34.4153C459.079 30.3142 463.983 27.6176 469.451 28.3924C474.919 29.1673 478.881 33.12 478.3 37.2212C477.719 41.3224 472.815 44.0189 467.346 43.2441C461.878 42.4693 457.916 38.5165 458.497 34.4153Z"
-            fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none" />
+            class="fill-background" fill-rule="nonzero" opacity="1" stroke="none" />
         <path d="M515.859 63.9666C486.155 59.7577 451.446 11.8972 421.743 7.68839" fill="none" opacity="1"
             class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
             stroke-width="4.86072" />
@@ -163,7 +163,7 @@
             stroke-width="4.86072" />
         <path
             d="M557.824 46.005C558.405 41.9038 563.309 39.2073 568.777 39.9821C574.245 40.7569 578.207 44.7097 577.626 48.8109C577.045 52.912 572.141 55.6086 566.672 54.8337C561.204 54.0589 557.242 50.1062 557.824 46.005Z"
-            fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none" />
+            class="fill-background" fill-rule="nonzero" opacity="1" stroke="none" />
         <path d="M615.185 75.5562C585.482 71.3474 550.772 23.4869 521.069 19.2781" fill="none" opacity="1"
             class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
             stroke-width="4.86072" />
@@ -223,7 +223,7 @@
             stroke-width="4.86072" />
         <path
             d="M707.741 185.501C708.322 181.4 713.226 178.704 718.694 179.479C724.162 180.253 728.124 184.206 727.543 188.307C726.962 192.408 722.058 195.105 716.59 194.33C711.121 193.555 707.16 189.603 707.741 185.501Z"
-            fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none" />
+            class="fill-background" fill-rule="nonzero" opacity="1" stroke="none" />
         <path d="M765.102 215.053C735.399 210.844 700.69 162.983 670.986 158.774" fill="none" opacity="1"
             class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
             stroke-width="4.86072" />
@@ -232,7 +232,7 @@
             stroke-width="4.86072" />
         <path
             d="M807.067 197.091C807.648 192.99 812.552 190.293 818.02 191.068C823.488 191.843 827.45 195.796 826.869 199.897C826.288 203.998 821.384 206.695 815.916 205.92C810.447 205.145 806.486 201.192 807.067 197.091Z"
-            fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none" />
+            class="fill-background" fill-rule="nonzero" opacity="1" stroke="none" />
         <path d="M864.428 226.642C834.725 222.434 800.016 174.573 770.312 170.364" fill="none" opacity="1"
             class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
             stroke-width="4.86072" />

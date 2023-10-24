@@ -23,7 +23,7 @@
     <g id="Layer-4" vectornator:layerName="Layer 4">
         <path
             d="M402.242 500C402.242 446.512 446.01 403.152 500 403.152C553.99 403.152 597.758 446.512 597.758 500C597.758 553.488 553.99 596.848 500 596.848C446.01 596.848 402.242 553.488 402.242 500Z"
-            fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none" />
+            class="fill-background" fill-rule="nonzero" opacity="1" stroke="none" />
     </g>
     <g clip-path="url(#ArtboardFrame_14)" id="Layer-2" vectornator:layerName="Layer 2">
         <g opacity="1">
