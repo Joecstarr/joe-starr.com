@@ -1,4 +1,7 @@
 <script type="text/javascript">
+
+    reveal_init_callbacks.push(insert_backgrounds);
+
     function dist(x, y) {
         return Math.sqrt((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2);
     }
@@ -60,5 +63,4 @@
         console.log("End background")
     }
 
-    reveal_init_callbacks.push(insert_backgrounds);
 </script>
