@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg   stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000"   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<clipPath id="ArtboardFrame_14">
-<rect height="1000" width="1000" x="0" y="0"/>
-</clipPath>
+<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+    version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs />
+    <clipPath id="ArtboardFrame_14">
+        <rect height="1000" width="1000" x="0" y="0" />
+    </clipPath>
 
-<g clip-path="url(#ArtboardFrame_14)" id="Layer-1" vectornator:layerName="Layer 1">
-<g opacity="1">
-<path d="M500 50.4571C500 135.95 500 1000 500 1000" fill="none" class="stroke-blue" stroke="#8be9fd" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="39.0728"/>
-<g class="fill-blue" fill="#8be9fd" stroke="none">
-<path d="M632.339 161.817L515.12 18.5495L500 0.0690475L484.88 18.5495L367.661 161.817C360.829 170.167 362.06 182.476 370.41 189.308C378.761 196.14 391.069 194.91 397.902 186.559L515.12 43.2919L484.88 43.2919L602.098 186.559C608.931 194.91 621.239 196.14 629.59 189.308C637.94 182.476 639.171 170.167 632.339 161.817Z" class="fill-blue" fill="#8be9fd"/>
-</g>
-</g>
-</g>
-<g id="Layer-4" vectornator:layerName="Layer 4">
-<path d="M402.242 500C402.242 446.512 446.01 403.152 500 403.152C553.99 403.152 597.758 446.512 597.758 500C597.758 553.488 553.99 596.848 500 596.848C446.01 596.848 402.242 553.488 402.242 500Z" fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none"/>
-</g>
-<g clip-path="url(#ArtboardFrame_14)" id="Layer-2" vectornator:layerName="Layer 2">
-<g opacity="1">
-<path d="M949.543 500C864.05 500-2.13163e-14 500-2.13163e-14 500" fill="none" class="stroke-orange" class="stroke-orange" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="60"/>
-<g class="fill-orange" fill="#ffb86c" stroke="none">
-<path d="M838.183 632.339L981.451 515.12L999.931 500L981.451 484.88L838.183 367.661C829.833 360.829 817.524 362.06 810.692 370.41C803.86 378.761 805.09 391.069 813.441 397.902L956.708 515.12L956.708 484.88L813.441 602.098C805.09 608.931 803.86 621.239 810.692 629.59C817.524 637.94 829.833 639.171 838.183 632.339Z" class="fill-orange" fill="#ffb86c"/>
-</g>
-</g>
-</g>
+    <g clip-path="url(#ArtboardFrame_14)" id="Layer-1" vectornator:layerName="Layer 1">
+        <g opacity="1">
+            <path d="M500 50.4571C500 135.95 500 1000 500 1000" fill="none" class="stroke-blue" stroke="#8be9fd"
+                stroke-linecap="butt" stroke-linejoin="miter" stroke-width="39.0728" />
+            <g class="fill-blue" fill="#8be9fd" stroke="none">
+                <path
+                    d="M632.339 161.817L515.12 18.5495L500 0.0690475L484.88 18.5495L367.661 161.817C360.829 170.167 362.06 182.476 370.41 189.308C378.761 196.14 391.069 194.91 397.902 186.559L515.12 43.2919L484.88 43.2919L602.098 186.559C608.931 194.91 621.239 196.14 629.59 189.308C637.94 182.476 639.171 170.167 632.339 161.817Z"
+                    class="fill-blue" fill="#8be9fd" />
+            </g>
+        </g>
+    </g>
+    <g id="Layer-4" vectornator:layerName="Layer 4">
+        <path
+            d="M402.242 500C402.242 446.512 446.01 403.152 500 403.152C553.99 403.152 597.758 446.512 597.758 500C597.758 553.488 553.99 596.848 500 596.848C446.01 596.848 402.242 553.488 402.242 500Z"
+            fill="#282a36" fill-rule="nonzero" opacity="1" stroke="none" />
+    </g>
+    <g clip-path="url(#ArtboardFrame_14)" id="Layer-2" vectornator:layerName="Layer 2">
+        <g opacity="1">
+            <path d="M949.543 500C864.05 500-2.13163e-14 500-2.13163e-14 500" fill="none"
+                class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="miter"
+                stroke-width="60" />
+            <g class="fill-orange" fill="#ffb86c" stroke="none">
+                <path
+                    d="M838.183 632.339L981.451 515.12L999.931 500L981.451 484.88L838.183 367.661C829.833 360.829 817.524 362.06 810.692 370.41C803.86 378.761 805.09 391.069 813.441 397.902L956.708 515.12L956.708 484.88L813.441 602.098C805.09 608.931 803.86 621.239 810.692 629.59C817.524 637.94 829.833 639.171 838.183 632.339Z"
+                    class="fill-orange" fill="#ffb86c" />
+            </g>
+        </g>
+    </g>
 </svg>
