@@ -859,7 +859,7 @@ $
 
 {{< slides/row >}}
 {{< slides/col style="width:40%;" >}}
-{{< slides/row >}}
+{{< slides/row style="margin-bottom:2rem;">}}
 {{< slides/col  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg"  >}}
 {{< /slides/col >}}
@@ -874,7 +874,7 @@ ${-t^{-4}+t^{-3}+t^{-1}}$
 $\quad$
 {{< /slides/col >}}
 {{< slides/col style="width:40%;"  >}}
-{{< slides/row >}}
+{{< slides/row  style="margin-bottom:2rem;">}}
 {{< slides/col  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/trefoil/right.svg"  >}}
 {{< /slides/col >}}

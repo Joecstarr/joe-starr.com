@@ -5,7 +5,7 @@
 <defs/>
 
 <g clip-path="url(#ArtboardFrame_89)" id="Layer-1" vectornator:layerName="Layer 1">
-<path d="M1.13687e-13 500C295.052 478.769 292.496 23.0733-5.68434e-14 7.21515e-14" fill="none" opacity="1" class="stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+<path d="M1.13687e-13 500C295.052 478.769 292.496 23.0733-5.68434e-14 7.21515e-14" fill="none" opacity="1" class="stroke-orange" class="stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
 </g>
 <g clip-path="url(#ArtboardFrame_89)" id="Layer-3" vectornator:layerName="Layer 3">
 <g opacity="1">
@@ -13,11 +13,11 @@
 <path d="M339.612 106.804L313.473 161.954L274.078 150.971L308.529 85.0874L87.7577 92.7597L200.031 97.724L224.587 144.325L184.391 163.76L157.804 101.753L-77.6484 254.031L-51.0794 327.445L82.465 315.559L309.001 346.323L471.911 334.437L573.992 205.088L339.612 106.804Z"/>
 </clipPath>
 <g clip-path="url(#ClipPath)">
-<path d="M0 250C79.1912 78.833 421.151 80.0499 500 250" fill="none" opacity="1" class="stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+<path d="M0 250C79.1912 78.833 421.151 80.0499 500 250" fill="none" opacity="1" class="stroke-orange" class="stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
 </g>
 </g>
 </g>
 <g clip-path="url(#ArtboardFrame_89)" id="Layer-2" vectornator:layerName="Layer 2">
-<path d="M500 500C203.989 478.769 206.552 23.0733 500-7.21515e-14" fill="none" opacity="1" class="stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+<path d="M500 500C203.989 478.769 206.552 23.0733 500-7.21515e-14" fill="none" opacity="1" class="stroke-orange" class="stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
 </g>
 </svg>

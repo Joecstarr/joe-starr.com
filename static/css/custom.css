@@ -152,3 +152,18 @@ li {
     max-width: calc(var(--slide-width));
     width: auto;
 }
+
+.stroke-blue{stroke: var(--r-Blue) !important ;}
+.stroke-green{stroke: var(--r-Green) !important ;}
+.stroke-orange{stroke: var(--r-Orange) !important ;}
+.stroke-pink{stroke: var(--r-Pink) !important ;}
+.stroke-purple{stroke: var(--r-Purple) !important ;}
+.stroke-red{stroke: var(--r-Red) !important ;}
+.stroke-yellow{stroke: var(--r-Yellow) !important ;}
+.fill-blue{fill: var(--r-Blue) !important ;}
+.fill-green{fill: var(--r-Green) !important ;}
+.fill-orange{fill: var(--r-Orange) !important ;}
+.fill-pink{fill: var(--r-Pink) !important ;}
+.fill-purple{fill: var(--r-Purple) !important ;}
+.fill-red{fill: var(--r-Red) !important ;}
+.fill-yellow{fill: var(--r-Yellow) !important ;}

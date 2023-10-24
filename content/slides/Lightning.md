@@ -229,7 +229,7 @@ flowchart
     <defs>
         <rect id="p" width="8" height="8"/>
     </defs>
-    <g fill="#f8f8f2">
+    <g class="fill-foreground" fill="#f8f8f2">
         <use xlink:href="#p" x="32" y="32"/>
         <use xlink:href="#p" x="32" y="40"/>
         <use xlink:href="#p" x="32" y="48"/>
