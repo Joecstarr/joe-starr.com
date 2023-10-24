@@ -2,8 +2,8 @@
 
 
 <!-- Start Center Block -->
-<div class="sliderow " style="height:100%;align-items:center;">
-    <div class="slidecolumn" style="flex-grow: 0;{{ if .IsNamedParams }} {{ with .Get "style"}} {{ . | safeCSS }}{{ end }} {{ end }}">
+<div class="sliderow " style="align-items:center;height:{{if (.Get "height")}} {{ with .Get "height"}} {{ . | safeCSS }}{{ end }}{{else}} 100% {{ end }};">
+    <div class="slidecolumn" style="flex-grow: {{if (.Get "grow")}} {{ with .Get "grow"}} {{ . | safeCSS }}{{ end }}{{else}} 0 {{ end }};{{ with .Get "style"}} {{ . | safeCSS }}{{ end }}">
 
         {{ if eq $markdown "true" }}
         {{ .Inner | markdownify | emojify }}

@@ -25,6 +25,11 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
+
+
+
+
+
 # Constructing the Jones polynomial to save the world
 
 ---
@@ -64,13 +69,26 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 
 ---
 
+{{< slides/row style="height:calc(var(--slide-height)*.8);" >}}
+{{< slides/col style="flex-grow 3;color:var(--r-Foreground);" >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/dna/DNA_chemical_structure.svg" width="auto" heigh="auto">}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 1;text-align:left;"  >}}
+{{< slides/center_block grow="1" >}}
 Each strand has a backbone attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine.
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 
-#@@@TODO: Picture ATCG
 
 {{% slides/citations %}}
 Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023
+{{% /slides/citations %}}
+{{% slides/citations %}}
+Photo by Madprime (talk · contribs) - This vector image was created with Inkscape ., CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=1848174](https://commons.wikimedia.org/w/index.php?curid=1848174)
 {{% /slides/citations %}}
 
 ---
@@ -83,11 +101,58 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 
 Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-stranded DNA of the polyoma virus exists in a closed circular form.
 
-#@@@TODO: Picture Circular dna
+
+{{< slides/center_block >}}
+{{< slides/centersvg src="/presentations/dna/dna_circle.svg" width="20rem">}}
+{{< /slides/center_block >}}
 
 {{% slides/citations %}}
 Vologodskii, A. V. (n.d.). Circular DNA. In Cyclic Polymers (pp. 47-83). Kluwer Academic Publishers. https://doi.org/10.1007/0-306-47117-5_2
 {{% /slides/citations %}}
+
+---
+
+
+# "Supercoiled" DNA
+
+Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965) discover that double-stranded DNA can "supercoil".
+
+
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/dna/dna_supercoil.svg" width="auto" heigh="auto"  >}}
+{{< /slides/center_block >}}
+
+
+{{% slides/citations %}}
+Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The twisted circular form of polyoma viral DNA. In Proceedings of the National Academy of Sciences (Vol. 53, Issue 5, pp. 1104-1111). Proceedings of the National Academy of Sciences. https://doi.org/10.1073/pnas.53.5.1104
+{{% /slides/citations %}}
+
+---
+
+
+{{< slides/row style="height:calc(var(--slide-height)*.8);">}}
+{{< slides/col   >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/dna/dna_supercoil_unknot.svg"   >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+
+
+# "Supercoiled" DNA knots
+
+
+{{< slides/row style="height:calc(var(--slide-height)*.8);">}}
+{{< slides/col   >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/dna/dna_supercoil_knot.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
 
 ---
 
@@ -908,6 +973,8 @@ ${-t^{4}+t^{3}+t^{1}}$
 5. Vaughan Jones. The Jones polynomial for dummies. [https://math.berkeley.edu/~vfr/jonesakl.pdf](https://math.berkeley.edu/~vfr/jonesakl.pdf) [WebArchive](https://web.archive.org/web/20231012192337/https://math.berkeley.edu/~vfr/jonesakl.pdf)
 6. Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023
 7. DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
+8. Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The twisted circular form of polyoma viral DNA. In Proceedings of the National Academy of Sciences (Vol. 53, Issue 5, pp. 1104-1111). Proceedings of the National Academy of Sciences. [https://doi.org/10.1073/pnas.53.5.1104](https://doi.org/10.1073/pnas.53.5.1104)
+9. Photo by Madprime (talk · contribs) - This vector image was created with Inkscape ., CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=1848174](https://commons.wikimedia.org/w/index.php?curid=1848174)
 {{% /slides/citations %}}
 
 
@@ -916,5 +983,5 @@ ${-t^{4}+t^{3}+t^{1}}$
 
 {{% /slides/footer %}}
 
-<!-- {{% slides/zombie/background %}} -->
+{{% slides/zombie/background %}}
 
