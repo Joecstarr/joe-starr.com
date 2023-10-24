@@ -210,66 +210,66 @@
 
     <path
         d="m 231.25034,205.41271 c 25.03493,58.96752 63.73701,9.75996 74.41749,101.8194 M 795.11395,141.42857 C 766.40154,171.07711 109.65396,-69.42177 231.93685,208.6417"
-        fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round"
+        fill="none" opacity="1"  stroke="#ff5555" stroke-linecap="round"
         stroke-linejoin="round" stroke-width="11.8186" id="path10" clip-path="none" sodipodi:nodetypes="cccc"
-        class="stroke-orange" style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
+        style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path d="m 670.06847,188.44865 c -1.86673,47.75427 -239.57782,-23.87156 -119.25878,64.33496" fill="none" opacity="1"
-        class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+         stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path12" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path
         d="m 911.54682,168.5602 c 56.72533,77.16009 -20.39174,51.21638 -107.1662,35.83555 -44.92456,-7.96292 -94.15114,-65.93367 -125.87384,-16.06929"
-        fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round"
+        fill="none" opacity="1"  stroke="#ff5555" stroke-linecap="round"
         stroke-linejoin="round" stroke-width="11.8186" id="path12-7" clip-path="none" sodipodi:nodetypes="csc"
         class="stroke-orange"
         style="clip-rule:evenodd;fill:none;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round;stroke:#ffb86c;stroke-opacity:1" />
     <path d="M 263.32314,556.50083 C 235.70855,506.14121 243.53544,430.34458 293.93443,407.56097" fill="none"
-        opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+        opacity="1"  stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path14" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path
         d="m 217.73375,861.23655 c 65.93563,-63.95926 -23.7733,-181.01776 33.60206,-205.5407 M 819.71636,61.25403 C 774.00974,-37.359242 221.99078,0.896122 113.48982,135.74923 -130.43472,438.91692 101.38236,1003.1518 213.62648,863.49031"
-        fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round"
+        fill="none" opacity="1"  stroke="#ff5555" stroke-linecap="round"
         stroke-linejoin="round" stroke-width="11.8186" id="path16" clip-path="none" sodipodi:nodetypes="cccsc"
         class="stroke-orange" style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path
         d="M 672.06286,888.24086 C 649.53065,854.46825 404.76763,911.99013 449.78888,820.58135 M 925.18733,83.569421 C 1049.1698,45.316763 965.00355,649.14813 885.2603,827.16177 851.27976,903.01773 721.62492,941.05965 680.89117,893.65114"
-        fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round"
+        fill="none" opacity="1"  stroke="#ff5555" stroke-linecap="round"
         stroke-linejoin="round" stroke-width="11.8186" id="path18" clip-path="none" sodipodi:nodetypes="cccsc"
         class="stroke-orange" style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path d="M 465.76048,721.37944 C 441.56185,659.57391 381.5721,687.47696 366.20575,651.18849" fill="none" opacity="1"
-        class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+         stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path20" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path d="m 367.19767,565.9621 c 22.73444,-32.20126 84.44063,43.29083 130.34779,19.99819" fill="none" opacity="1"
-        class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+         stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path22" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path d="M 509.8229,486.04685 C 498.26708,425.12496 440.87627,435.3249 404.20436,400.66181" fill="none" opacity="1"
-        class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+         stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path24" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path d="m 400.38454,319.32275 c 32.21342,-26.45405 73.54514,54.28419 138.86401,37.73838" fill="none" opacity="1"
-        class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+         stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path26" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path d="m 562.99445,738.98118 c 0,0 86.77185,-86.52952 49.45292,-159.00003" fill="none" opacity="1"
-        class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+         stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path28" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path d="m 607.38627,498.60785 c 0,0 96.99409,-77.44781 44.15548,-150.33798" fill="none" opacity="1"
-        class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
+         stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="11.8186" id="path30" clip-path="none" sodipodi:nodetypes="cc" class="stroke-orange"
         style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <path
         d="m 564.90854,815.08543 c 34.55209,40.95882 89.14167,-35.90279 106.19063,-62.21106 24.30384,-63.88078 56.93657,-135.30044 72.33536,-206.18348 15.33886,-70.59923 13.5234,-140.66303 -1.79145,-203.34937 -30.69046,-125.62646 -84.58486,-81.37313 -84.58486,-81.37313"
-        fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round"
+        fill="none" opacity="1"  stroke="#ff5555" stroke-linecap="round"
         stroke-linejoin="round" stroke-width="11.8186" id="path32" clip-path="none" sodipodi:nodetypes="ccccc"
         class="stroke-orange" style="fill:none;stroke:#ffb86c;stroke-opacity:1" />
     <g opacity="1" id="g49" transform="translate(161.79477,30.246175)">
         <path
             d="m 358.212,281.455 c 0,-42.065 34.101,-76.165 76.166,-76.165 42.065,0 76.166,34.1 76.166,76.165 0,42.066 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.1 -76.166,-76.166 z"
-            class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+            class="fill-orange stroke-orange stroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
             stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path47"
             style="fill:#44475a;fill-opacity:1;stroke:#44475a;stroke-opacity:1" />
     </g>
@@ -723,8 +723,8 @@
             <g opacity="1" id="g45">
                 <path
                     d="m 599.55,281.455 c 0,-42.065 34.101,-76.165 76.166,-76.165 42.065,0 76.166,34.1 76.166,76.165 0,42.066 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.1 -76.166,-76.166 z"
-                    class="fill-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
-                    class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round"
+                    class="fill-orange stroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                    stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round"
                     stroke-width="0.1" id="path43"
                     style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
             </g>
@@ -1215,7 +1215,7 @@
         <g opacity="1" id="g37" transform="translate(-43.008475,81.567797)">
             <path
                 d="m 466.2,511.976 c 0,-42.065 34.1,-76.166 76.166,-76.166 42.065,0 76.165,34.101 76.165,76.166 0,42.065 -34.1,76.165 -76.165,76.165 -42.066,0 -76.166,-34.1 -76.166,-76.165 z"
-                class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                class="fill-orange stroke-orange stroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
                 stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path35"
                 style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
         </g>
@@ -1706,7 +1706,7 @@
         <g opacity="1" id="g41" transform="translate(-43.008475,81.567797)">
             <path
                 d="m 709.828,513.009 c 0,-42.065 34.101,-76.166 76.166,-76.166 42.065,0 76.166,34.101 76.166,76.166 0,42.065 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.101 -76.166,-76.166 z"
-                class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                class="fill-orange stroke-orange stroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
                 stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path39"
                 style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
         </g>
@@ -2191,7 +2191,7 @@
         <g opacity="1" id="g59" transform="translate(-43.008475,81.567797)">
             <path
                 d="m 222.571,513.009 c 0,-42.065 34.101,-76.166 76.166,-76.166 42.065,0 76.166,34.101 76.166,76.166 0,42.065 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.101 -76.166,-76.166 z"
-                class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                class="fill-orange stroke-orange stroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
                 stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path57"
                 style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
         </g>
@@ -2681,7 +2681,7 @@
     <g opacity="1" id="g55" transform="translate(669.23816,-170.8292)">
         <path
             d="m 116.13,289.717 c 0,-42.065 34.101,-76.166 76.166,-76.166 42.065,0 76.166,34.101 76.166,76.166 0,42.065 -34.101,76.165 -76.166,76.165 -42.065,0 -76.166,-34.1 -76.166,-76.165 z"
-            class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+            class="fill-orange stroke-orange stroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
             stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path51"
             style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
 

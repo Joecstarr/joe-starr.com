@@ -9,14 +9,14 @@ headless: true
 # Order that this section appears on the page.
 weight: 80
 
-title: 'Recent Talks'
+title: 'Talks Archive'
 subtitle:
 
 content:
   # Page type to display. E.g. post, event, publication...
   page_type: slides
   # Choose how many pages you would like to display (0 = all pages)
-  count: 5
+  count: 0
   # Filter on criteria
   filters:
     author: ''
@@ -30,10 +30,6 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
-  archive:
-    enable: true
-    text: See all past talks
-    link: slides/landing
 
 design:
   # Choose a view for the listings:
