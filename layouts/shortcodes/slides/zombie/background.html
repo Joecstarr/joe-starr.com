@@ -15,6 +15,26 @@
         return is_good;
 
     }
+
+    function getRnd_x() {
+
+        if (Math.random() < 0.5) {
+            return (Math.floor(Math.random() * (7 - 0)) + 0) ;
+        }
+        else {
+            return (Math.floor(Math.random() * (90 - 85)) + 85) ;
+        }
+    }
+    function getRnd_y() {
+
+        if (Math.random() < 0.5) {
+            return (Math.floor(Math.random() * (20 - 0)) + 0) ;
+        }
+        else {
+            return (Math.floor(Math.random() * (70 - 65)) + 65) ;
+        }
+        <!-- return (Math.floor(Math.random() * (80 - 0)) + 0); -->
+    }
     function insert_backgrounds() {
         // reveal.js is ready
         console.log("Start background")
@@ -36,24 +56,16 @@
                 var r = Math.floor(Math.random() * 102) + 1;
                 do {
 
-                    x_loc = Math.random() * .1 * width;
-                    y_loc = Math.random() * .2 * height;
-
-                    if (Math.random() < 0.5) {
-                        x_loc = width * (1 - .09) - x_loc;
-                    }
-                    if (Math.random() < 0.5) {
-                        y_loc = height * (1 - .2) - y_loc;
-                    }
-
-                } while (!dist_check(list, [x_loc, y_loc], height * .15))
+                    x_loc = getRnd_x();
+                    y_loc = getRnd_y();
+                } while (!dist_check(list, [x_loc, y_loc], 20))
                 list.push([x_loc, y_loc]);
                 const holder = document.createElement('img');
                 holder.style.width = "15vw";
                 holder.style.height = "auto";
                 holder.style.position = "absolute";
-                holder.style.left = `${x_loc}px`;
-                holder.style.top = `${y_loc}px`;
+                holder.style.left = `${x_loc}%`;
+                holder.style.top = `${y_loc}%`;
                 holder.style.transform = `rotate(${theta}rad)`;
                 holder.src = "/presentations/zombies/zombie_" + r + ".png";
 

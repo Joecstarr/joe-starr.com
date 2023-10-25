@@ -393,6 +393,9 @@ h6 {
 .reveal section:has(.uncenter) {
     top: 0 !important;
 }
+.reveal section:has(.hidebackground) *{
+    background: var(--r-Background) !important;
+}
 
 .label foreignObject {
     overflow: visible;

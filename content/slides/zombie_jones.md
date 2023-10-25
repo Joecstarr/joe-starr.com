@@ -17,6 +17,7 @@ slides:
     theme: "none"
     center: true
     transition: "none"
+    self-contained: true
 ---
 
 
@@ -113,6 +114,8 @@ Vologodskii, A. V. (n.d.). Circular DNA. In Cyclic Polymers (pp. 47-83). Kluwer 
 ---
 
 
+{{< slides/zombie/hide_background  >}}
+
 # "Supercoiled" DNA
 
 Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965) discover that double-stranded DNA can "supercoil".
@@ -127,7 +130,10 @@ Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965) discove
 Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The twisted circular form of polyoma viral DNA. In Proceedings of the National Academy of Sciences (Vol. 53, Issue 5, pp. 1104-1111). Proceedings of the National Academy of Sciences. https://doi.org/10.1073/pnas.53.5.1104
 {{% /slides/citations %}}
 
+
 ---
+
+{{< slides/zombie/hide_background  >}}
 
 
 {{< slides/row style="height:calc(var(--slide-height)*.8);">}}
@@ -139,6 +145,8 @@ Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The tw
 {{< /slides/row >}}
 
 ---
+
+{{< slides/zombie/hide_background  >}}
 
 
 # "Supercoiled" DNA knots
@@ -188,6 +196,7 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
+{{< slides/zombie/hide_background  >}}
 
 {{< slides/row >}}
 {{< slides/col  >}}
@@ -216,6 +225,7 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 {{% slides/citations  %}}
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
+
 
 ---
 
