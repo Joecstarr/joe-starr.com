@@ -31,27 +31,30 @@ slides:
 
 
 
-# Constructing the Jones polynomial to save the world
+# Zombies and knots
+## Constructing the Jones polynomial to save the world
 
 ---
 
-# Note
+# Day 0: smalltowns-ville, IA:
 
-Real biology vs fantasy indicated by a "real watermark"
+A man picks up his daily slice of breakfast pizza from his local gas station. What he doesn't know is that it's his last. My mid-day he feels terrible, by the time he's ready to go home for dinner he's already feasting on brains.
+
+---
+
+# Day 4: CDC Headquarters
+
+The spread of the Z-virus has spread midwest wide. You're working at the CDC as an expert in microscopy. You're working frantically to get any information on the Z-virus you can. You decide to image the DNA of the Z-Virus.
 
 
 ---
 
-# Day 0:
+{{< centerimg src="/presentations/dna/dna_trefoil.png" height="40rem" >}}
 
-Set the stage for the activity
 
----
-
-# Day 4:
-
-CDC is imaging the DNA of the virus
-
+{{% slides/citations %}}
+DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
+{{% /slides/citations %}}
 
 
 ---
@@ -160,23 +163,15 @@ Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The tw
 {{< /slides/col >}}
 {{< /slides/row >}}
 
-
-
 ---
 
-{{< centerimg src="/presentations/dna/dna_trefoil.png" height="40rem" >}}
+# Day 7: CDC Headquarters
 
+The spread is now nation wide but still under some control.
 
-{{% slides/citations %}}
-DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
-{{% /slides/citations %}}
+You've successfully imaged the DNA of the Z-virus and found DNA with a knot. Your CDC coworkers are useing your findings to construct an anti-Z-virus. The anti-virus is the mirror of the DNA knot you've found. This will allow the human body to build anti-bodies for the Z-virus.
 
-
----
-
-# Day 7:
-
-Constructing an anti-virus.
+The CDC now needs you to verify that the DNA knot they've produced truly is the mirror of the Z-virus.
 
 ---
 
@@ -198,26 +193,18 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 {{< slides/zombie/hide_background  >}}
 
-{{< slides/row >}}
-{{< slides/col  >}}
-{{< slides/center_block >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg" width="15rem">}}
-{{< /slides/center_block >}}
+{{< slides/row style="">}}
+{{< slides/col style="flex-grow 1;" >}}
+{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
 {{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" width="15rem">}}
-{{< /slides/center_block >}}
+{{< slides/col style="flex-grow 1;">}}
+{{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" >}}
 {{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block >}}
-{{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" width="20rem">}}
-{{< /slides/center_block >}}
+{{< slides/col style="flex-grow 2;" >}}
+{{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
 {{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block >}}
-{{< slides/centersvg src="/presentations/mathday23/star.svg" width="30rem">}}
-{{< /slides/center_block >}}
+{{< slides/col style="flex-grow 3;" >}}
+{{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 
@@ -441,7 +428,7 @@ ${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bk
 $ \small{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
 {{< /slides/center_block >}}
 
-{{< slides/center_block style="font-size:4.5rem" >}}
+{{< slides/center_block style="font-size:4rem" >}}
 $\begin{aligned}
 \bkt{/presentations/kauf_bkt/type2/1.svg}
 &=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+B\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
@@ -490,7 +477,7 @@ A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/t
 
 ---
 
-{{< slides/center_block style="font-size:3.5rem" >}}
+{{< slides/center_block style="font-size:3rem" >}}
 $\begin{aligned}
 &=A^2\bkt{/presentations/kauf_bkt/type2/6a.svg}+ABC\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
 &+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}+B^2\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
@@ -704,6 +691,11 @@ $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-
 
 ---
 
+# Day 53
+
+Time is running out. With your preliminary results in hand the vaccine is being produced. The world is now on your shoulders waiting for your results.
+
+---
 
 {{< slides/admonition type="Exercise" title="Exercise" >}}
 
@@ -945,7 +937,7 @@ ${-t^{-4}+t^{-3}+t^{-1}}$
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/col >}}
-{{< slides/col style="font-size: 2.5rem;text-align:left;width:20%;"  >}}
+{{< slides/col style="font-size: 2rem;text-align:left;width:20%;"  >}}
 $\quad$
 {{< /slides/col >}}
 {{< slides/col style="width:40%;"  >}}
@@ -965,10 +957,18 @@ ${-t^{4}+t^{3}+t^{1}}$
 
 ---
 
-# save the day
+# Day 121
 
+With the successful completion of your work the vaccine is being administer world wide. The president congratulates you for your work and the world is optimistic.
 
 ---
+
+# Day 300
+
+The virus is completely controlled and you win every prize in every field imaginable.
+
+---
+
 
 [Worksheet](/presentations/kauf_bkt/worksheet/worksheet.pdf)
 
