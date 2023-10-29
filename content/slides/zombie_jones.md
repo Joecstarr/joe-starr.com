@@ -36,7 +36,7 @@ slides:
 
 ---
 
-# Day 0: smalltowns-ville, IA:
+## Day 0: smalltowns-ville, IA:
 
 A man picks up his daily slice of breakfast pizza from his local gas station. What he doesn't know is that it's his last. My mid-day he feels terrible, by the time he's ready to go home for dinner he's already feasting on brains.
 
@@ -378,7 +378,7 @@ $\bkt{/presentations/kauf_bkt/crossing/crossing_un.svg}$
 
 # Skein Relation
 
-{{< slides/center_block style="font-size:4rem;" >}}
+{{< slides/center_block style="font-size:3.5rem;" >}}
 ${\begin{matrix}
 \ &\left.CW\right.&
 &  \left.CCW\right.&\\
@@ -466,7 +466,7 @@ $\begin{aligned}
 ---
 
 
-{{< slides/center_block style="font-size:3rem" >}}
+{{< slides/center_block style="font-size:2.5rem" >}}
 $\begin{aligned}
 A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP
 &+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\

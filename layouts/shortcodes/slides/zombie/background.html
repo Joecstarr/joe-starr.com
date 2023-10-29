@@ -1,6 +1,7 @@
 <script type="text/javascript">
 
     reveal_init_callbacks.push(insert_backgrounds);
+    reveal_resize_callbacks.push(insert_backgrounds);
 
     function dist(x, y) {
         return Math.sqrt((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2);
@@ -51,6 +52,7 @@
             var lr = 0;
             var tb = 0;
             var list = []
+            const holder = document.createElement('div');
             for (let i = 0; i < 4; i++) {
                 var theta = Math.floor(Math.random() * 3 - 1) * (Math.PI / 4);
                 var r = Math.floor(Math.random() * 102) + 1;
@@ -60,17 +62,19 @@
                     y_loc = getRnd_y();
                 } while (!dist_check(list, [x_loc, y_loc], 20))
                 list.push([x_loc, y_loc]);
-                const holder = document.createElement('img');
-                holder.style.width = "15vw";
-                holder.style.height = "auto";
-                holder.style.position = "absolute";
-                holder.style.left = `${x_loc}%`;
-                holder.style.top = `${y_loc}%`;
-                holder.style.transform = `rotate(${theta}rad)`;
-                holder.src = "/presentations/zombies/zombie_" + r + ".png";
-
-                element.appendChild(holder)
+                const img = document.createElement('img');
+                img.style.width = "15vw";
+                img.style.height = "auto";
+                img.style.position = "absolute";
+                img.style.left = `${x_loc}%`;
+                img.style.top = `${y_loc}%`;
+                img.style.transform = `rotate(${theta}rad)`;
+                img.src = "/presentations/zombies/zombie_" + r + ".png";
+                holder.appendChild(img);
             }
+            holder.classList.add("slide-background-content");
+            holder.classList.add("replaced");
+            element.replaceWith(holder);
         });
         console.log("End background")
     }
