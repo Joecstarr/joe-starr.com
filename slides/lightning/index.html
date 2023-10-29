@@ -57,14 +57,38 @@
                 skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
             }
         };
+        MathJax.startup = {
+            ready() {
+                MathJax.startup.defaultReady();
+                MathJax.startup.promise.then(() => {
+                    console.log("Start startup promise");
 
-        window.addEventListener('load', (event) => {
-            document.querySelectorAll("mjx-container").forEach(function (x) {
-                x.parentElement.classList += 'has-jax'
-            })
-        });
+                    document.querySelectorAll("mjx-container").forEach(function (x) {
+                        x.parentElement.classList += 'has-jax'
+                    })
+
+                    document.querySelectorAll("mjx-container img").forEach((element) => {
+                        var src = element.getAttribute("src");
+                        fetch(src)
+                            .then(res => res.text())
+                            .then(res => {
+                                const holder = document.createElement('div')
+                                holder.style.width = "1em";
+                                holder.style.height = "1em";
+                                holder.innerHTML = res
+                                element.replaceWith(holder)
+                            })
+                    });
+
+                    console.log("End startup promise");
+                });
+            }
+        };
     }
-
+    var reveal_init_callbacks = []
+    var reveal_slidechange_callbacks  = []
+    var reveal_slidetransitionend_callbacks  = []
+    var reveal_resize_callbacks  = []
 </script>
 
 </head>
@@ -116,7 +140,8 @@
 }
 
 </style>
-<p><link rel="stylesheet" href="/css/custom.css" />
+<p><link rel="stylesheet" href="/css/slides_themes/dracula.css" />
+<link rel="stylesheet" href="/css/custom.css" />
 <link rel="stylesheet" href="/css/cus_dracula.css" />
 
 
@@ -322,7 +347,7 @@ MI, 1998. Thesis (Ph.D.)–The University of British Columbia (Canada). URL: htt
     <defs>
         <rect id="p" width="8" height="8"/>
     </defs>
-    <g fill="#f8f8f2">
+    <g class="fill-foreground" fill="#f8f8f2">
         <use xlink:href="#p" x="32" y="32"/>
         <use xlink:href="#p" x="32" y="40"/>
         <use xlink:href="#p" x="32" y="48"/>

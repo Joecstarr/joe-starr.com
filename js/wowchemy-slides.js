@@ -41,7 +41,9 @@
     enabledPlugins.push(RevealMenu);
   }
   pluginOptions["plugins"] = enabledPlugins;
-  Reveal.initialize(pluginOptions);
+  pluginOptions["backgroundTransition"] = "none";
+  Reveal.initialize(pluginOptions).then(() => {
+  });
   if (typeof slides.diagram === "undefined") {
     slides.diagram = false;
   }
@@ -68,6 +70,27 @@
     };
     Reveal.on("ready", (event) => renderMermaidDiagrams(event));
     Reveal.on("slidechanged", (event) => renderMermaidDiagrams(event));
+    Reveal.on("ready", (event) => {
+      reveal_init_callbacks.forEach((element) => {
+        element(event);
+      });
+    });
+    Reveal.on("slidechanged", (event) => {
+      reveal_slidechange_callbacks.forEach((element) => {
+        element(event);
+      });
+    });
+    Reveal.on("resize", (event) => {
+      reveal_resize_callbacks.forEach((element) => {
+        element(event);
+      });
+    });
+    Reveal.on("slidetransitionend", (event) => {
+      console.log("slidetransitionend");
+      reveal_slidetransitionend_callbacks.forEach((element) => {
+        element(event);
+      });
+    });
   }
   var mermaidOptions;
 })();

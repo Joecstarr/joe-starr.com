@@ -1065,7 +1065,8 @@ Import the deck into anki desktop to review with ankiweb.&lt;/p&gt;
       <link>https://joe-starr.com/slides/mathday23/</link>
       <pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/mathday23/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/slides_themes/dracula.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
 
@@ -1626,7 +1627,8 @@ Mathematics Department at The University of Iowa&lt;p&gt;
 }
 
 &lt;/style&gt;
-&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/slides_themes/dracula.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
 
@@ -1796,7 +1798,7 @@ MI, 1998. Thesis (Ph.D.)–The University of British Columbia (Canada). URL: htt
     &lt;defs&gt;
         &lt;rect id=&#34;p&#34; width=&#34;8&#34; height=&#34;8&#34;/&gt;
     &lt;/defs&gt;
-    &lt;g fill=&#34;#f8f8f2&#34;&gt;
+    &lt;g class=&#34;fill-foreground&#34; fill=&#34;#f8f8f2&#34;&gt;
         &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;32&#34;/&gt;
         &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;40&#34;/&gt;
         &lt;use xlink:href=&#34;#p&#34; x=&#34;32&#34; y=&#34;48&#34;/&gt;
@@ -2359,7 +2361,8 @@ MI, 1998. Thesis (Ph.D.)–The University of British Columbia (Canada). URL: htt
       <link>https://joe-starr.com/slides/alexander_polynomail/</link>
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/alexander_polynomail/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/slides_themes/dracula.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
 
@@ -2995,7 +2998,8 @@ font-size: medium;
       <link>https://joe-starr.com/slides/legendrian_knots/</link>
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/legendrian_knots/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/slides_themes/dracula.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
 
@@ -3132,7 +3136,8 @@ font-size: medium;
       <link>https://joe-starr.com/slides/discrete_morse_theory/</link>
       <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/discrete_morse_theory/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/slides_themes/dracula.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
 
@@ -3727,7 +3732,8 @@ is a combinitorial sphere.&lt;/p&gt;
       <link>https://joe-starr.com/slides/kauf-jones/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://joe-starr.com/slides/kauf-jones/</guid>
-      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/slides_themes/dracula.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/custom.css&#34; /&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://joe-starr.com/css/cus_dracula.css&#34; /&gt;
 
 
