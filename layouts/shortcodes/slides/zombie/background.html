@@ -2,6 +2,7 @@
 
     reveal_init_callbacks.push(insert_backgrounds);
     reveal_resize_callbacks.push(insert_backgrounds);
+    reveal_slidechange_callbacks.push(remove_backgrounds);
 
     function dist(x, y) {
         return Math.sqrt((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2);
@@ -36,6 +37,21 @@
         }
         <!-- return (Math.floor(Math.random() * (80 - 0)) + 0); -->
     }
+
+    function remove_backgrounds() {
+        const remove = document.querySelector(".slides .present .hidebackground" );
+        console.log("Start remove background")
+        if(remove != null)
+        {
+            setTimeout(function(){
+                const match = document.querySelector(".slide-background.present .slide-background-content");
+                const holder = document.createElement('div');
+                holder.classList.add("slide-background-content");
+                match.replaceWith(holder);
+            }, 20);
+        }
+    }
+
     function insert_backgrounds() {
         // reveal.js is ready
         console.log("Start background")

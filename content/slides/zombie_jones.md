@@ -17,6 +17,7 @@ slides:
     theme: "none"
     center: true
     transition: "none"
+    backgroundTransition: "none"
     self-contained: true
 ---
 
@@ -72,6 +73,7 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 {{% /slides/citations %}}
 
 ---
+{{< slides/zombie/hide_background  >}}
 
 {{< slides/row style="height:calc(var(--slide-height)*.8);" >}}
 {{< slides/col style="flex-grow 3;color:var(--r-Foreground);" >}}
@@ -488,6 +490,7 @@ $\begin{aligned}
 
 ---
 
+{{< slides/zombie/hide_background  >}}
 
 ### What we wanted
 
@@ -565,6 +568,7 @@ $
 
 
 ---
+{{< slides/zombie/hide_background  >}}
 
 {{< slides/admonition type="Exercise" title="Exercise: Type III" >}}
 
@@ -619,6 +623,7 @@ $${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentation
 {{< /slides/center_block >}}
 
 ---
+{{< slides/zombie/hide_background  >}}
 
 {{< slides/admonition type="Exercise" title="Exercise Type I Left" >}}
 
@@ -696,8 +701,10 @@ $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-
 Time is running out. With your preliminary results in hand the vaccine is being produced. The world is now on your shoulders waiting for your results.
 
 ---
+{{< slides/zombie/hide_background  >}}
 
-{{< slides/admonition type="Exercise" title="Exercise" >}}
+
+{{< slides/admonition type="Exercise" title="Compute the bracket:" >}}
 
 {{< slides/center_block style="font-size:10rem" >}}
 $$\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
@@ -838,9 +845,10 @@ $${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP
 
 ---
 
+{{< slides/zombie/hide_background  >}}
 
 
-{{< slides/admonition type="Exercise" title="Exercise" >}}
+{{< slides/admonition type="Exercise" title="Compute the writhe" >}}
 
 {{< slides/center_block style="font-size:10rem" >}}
 $$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$$
@@ -904,6 +912,7 @@ $ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
 where $D$ is any oriented diagram for $\mathscr{K}$.
 
 ---
+{{< slides/zombie/hide_background  >}}
 
 
 {{< slides/center_block style="font-size:4rem" >}}
@@ -921,6 +930,9 @@ $
 
 
 ---
+{{< slides/zombie/hide_background  >}}
+
+
 # Anti-Knot
 
 

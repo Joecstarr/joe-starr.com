@@ -65,6 +65,7 @@ if (pluginOptions.menu_enabled) {
 }
 
 pluginOptions['plugins'] = enabledPlugins;
+pluginOptions['backgroundTransition'] = "none";
 
 Reveal.initialize(pluginOptions).then(() => {
 });
