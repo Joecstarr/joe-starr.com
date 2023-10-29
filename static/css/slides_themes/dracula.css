@@ -1,15 +1,4 @@
 :root {
-    --r-background-color: #282a36;
-    --r-main-color: #f8f8f2;
-    --r-link-color: #ff79c6;
-    --r-link-color-dark: #ff2da5;
-    --r-link-color-hover: #8be9fd;
-    --r-selection-background-color: #44475a;
-    --r-selection-color: #f8f8f2;
-    --r-bold-color: #ffb86c;
-    --r-italic-color: #f1fa8c;
-    --r-inline-code-color: #50fa7b;
-    --r-list-bullet-color: #8be9fd;
     --r-Background: #282a36;
     --r-Selection: #44475a;
     --r-Foreground: #f8f8f2;

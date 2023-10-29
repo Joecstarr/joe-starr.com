@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-<link rel="stylesheet" href="cus_dracula.css" type="text/css" />
+<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+    version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link rel="stylesheet" href="cus_dracula.css" type="text/css" />
 
-<defs/>
-<clipPath id="ArtboardFrame">
-<rect height="1000" width="1000" x="0" y="0"/>
-</clipPath>
-<g id="Layer-1" vectornator:layerName="Layer 1">
-<path d="M481.208 461.703C534.075 409.643 607.545 241.199 707.159 195.176C752.257 174.34 828.002 138.903 959.554 333.001C994.73 384.901 929.646 454.377 902.784 487.044" fill="none" opacity="1" stroke="#bd93f9"  stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-<path d="M926.155 188.38C1012.82 128.996 928.579 61.9328 751.885 61.7792C627.89 61.6714 213.595 50.3545 118.111 100.78C-1.40794 163.899 51.7497 279.141 62.4071 297.718C91.8715 349.078 200.833 395.191 223.717 449.969C234.914 476.771 255.744 516.539 204.583 560.079" fill="none" opacity="1" stroke="#bd93f9"  stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-<path d="M846.155 287.954C792.463 348.561 776.262 340.781 763.705 406.783C768.278 497.579 905.907 527.913 949.59 605.918C970.418 673.062 935.474 691.877 884.703 730.86" fill="none" opacity="1" stroke="#bd93f9"  stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-<path d="M840.358 569.111C840.358 569.111 786.854 619.864 786.141 649.418C785.515 675.373 837.717 738.482 874.679 785.9C898.782 816.821 957.874 849.57 927.872 899.059C884.259 970.999 335.444 935.527 154.792 848.178C85.0503 814.456 70.996 705.333 125.967 647.604" fill="none" opacity="1" stroke="#bd93f9"  stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-<path d="M805.791 785.983C656.619 887.322 318.266 221.308 170.52 329.957" fill="none" opacity="1" stroke="#bd93f9"  stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-<path d="M400.468 550.956C371.68 574.267 316.222 683.549 237.919 654.966C159.615 626.383 24.2615 484.906 97.3319 398.333" fill="none" opacity="1" stroke="#bd93f9"  stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-</g>
+    <defs />
+    <clipPath id="ArtboardFrame_0">
+        <rect width="1000" x="0" y="0" />
+    </clipPath>
+    <g id="Layer-1" vectornator:layerName="Layer 1">
+        <path
+            d="M481.208 461.703C534.075 409.643 607.545 241.199 707.159 195.176C752.257 174.34 828.002 138.903 959.554 333.001C994.73 384.901 929.646 454.377 902.784 487.044"
+            fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round"
+            stroke-linejoin="miter" stroke-width="24.4437" />
+        <path
+            d="M926.155 188.38C1012.82 128.996 928.579 61.9328 751.885 61.7792C627.89 61.6714 213.595 50.3545 118.111 100.78C-1.40794 163.899 51.7497 279.141 62.4071 297.718C91.8715 349.078 200.833 395.191 223.717 449.969C234.914 476.771 255.744 516.539 204.583 560.079"
+            fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round"
+            stroke-linejoin="miter" stroke-width="24.4437" />
+        <path
+            d="M846.155 287.954C792.463 348.561 776.262 340.781 763.705 406.783C768.278 497.579 905.907 527.913 949.59 605.918C970.418 673.062 935.474 691.877 884.703 730.86"
+            fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round"
+            stroke-linejoin="miter" stroke-width="24.4437" />
+        <path
+            d="M840.358 569.111C840.358 569.111 786.854 619.864 786.141 649.418C785.515 675.373 837.717 738.482 874.679 785.9C898.782 816.821 957.874 849.57 927.872 899.059C884.259 970.999 335.444 935.527 154.792 848.178C85.0503 814.456 70.996 705.333 125.967 647.604"
+            fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round"
+            stroke-linejoin="miter" stroke-width="24.4437" />
+        <path d="M805.791 785.983C656.619 887.322 318.266 221.308 170.52 329.957" fill="none" opacity="1"
+            class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter"
+            stroke-width="24.4437" />
+        <path
+            d="M400.468 550.956C371.68 574.267 316.222 683.549 237.919 654.966C159.615 626.383 24.2615 484.906 97.3319 398.333"
+            fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round"
+            stroke-linejoin="miter" stroke-width="24.4437" />
+    </g>
 </svg>

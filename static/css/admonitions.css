@@ -4,6 +4,7 @@
     margin-bottom: 21px;
     border-left: 10px solid transparent;
     text-align: left;
+    height: 100%;
 }
 
 .admonition .title {
@@ -39,6 +40,21 @@
     text-align: left;
 }
 .admonition.example .content {
+    color: var(--r-Foreground);
+    text-align: left;
+}
+/* Exercise */
+.admonition.exercise {
+    border-color: var(--r-Red);
+    background-color: var(--r-background-color);
+    text-align: left;
+}
+
+.admonition.exercise .title {
+    color: var(--r-Red);
+    text-align: left;
+}
+.admonition.exercise .content {
     color: var(--r-Foreground);
     text-align: left;
 }

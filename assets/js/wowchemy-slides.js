@@ -65,8 +65,10 @@ if (pluginOptions.menu_enabled) {
 }
 
 pluginOptions['plugins'] = enabledPlugins;
+pluginOptions['backgroundTransition'] = "none";
 
-Reveal.initialize(pluginOptions);
+Reveal.initialize(pluginOptions).then(() => {
+});
 // Reveal.initialize({
 
 // });
@@ -104,13 +106,36 @@ if (params.slides.diagram) {
             let graphDefinition = mermaidDiv.textContent;
             // mermaid.mermaidAPI.render(`mermaid${pageno}-${i}`, graphDefinition, insertSvg);
             mermaid.render(`mermaid${pageno}-${i}`, graphDefinition).then((obj) => {
-            mermaidDiv.innerHTML = obj.svg;
-            mermaidDiv.classList.add('done');
-              });
+                mermaidDiv.innerHTML = obj.svg;
+                mermaidDiv.classList.add('done');
+            });
         });
         Reveal.layout();
     };
 
     Reveal.on('ready', event => renderMermaidDiagrams(event));
     Reveal.on('slidechanged', event => renderMermaidDiagrams(event));
+
+    Reveal.on('ready', event => {
+        reveal_init_callbacks.forEach((element) => {
+            element(event);
+        })
+    });
+    Reveal.on('slidechanged', event => {
+        reveal_slidechange_callbacks.forEach((element) => {
+            element(event);
+        })
+    });
+    Reveal.on('resize', event => {
+        reveal_resize_callbacks.forEach((element) => {
+            element(event);
+        })
+    });
+
+    Reveal.on('slidetransitionend', event => {
+        console.log("slidetransitionend")
+        reveal_slidetransitionend_callbacks.forEach((element) => {
+            element(event);
+        })
+    });
 }
