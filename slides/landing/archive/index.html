@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://joe-starr.com/slides/landing/archive/">
+
+  <title>Talks Archive | Joe Starr</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    if (typeof MathJax === 'undefined') {
+        MathJax = {
+            loader: {
+                load: ['[img]/img.min.js', '[tex]/color', '[tex]/amscd'],
+                paths: { img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3' }
+            },
+            tex: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+                processEscapes: true,
+                processEnvironments: true,
+                extensions: ["autoload-all.js", "AMSmath.js", "AMSsymbols.js", "AMScd.js"],
+                packages: { '[+]': ['img', 'color', 'amscd'] }
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+        MathJax.startup = {
+            ready() {
+                MathJax.startup.defaultReady();
+                MathJax.startup.promise.then(() => {
+                    console.log("Start startup promise");
+
+                    document.querySelectorAll("mjx-container").forEach(function (x) {
+                        x.parentElement.classList += 'has-jax'
+                    })
+
+                    document.querySelectorAll("mjx-container img").forEach((element) => {
+                        var src = element.getAttribute("src");
+                        fetch(src)
+                            .then(res => res.text())
+                            .then(res => {
+                                const holder = document.createElement('div')
+                                holder.style.width = "1em";
+                                holder.style.height = "1em";
+                                holder.innerHTML = res
+                                element.replaceWith(holder)
+                            })
+                    });
+
+                    console.log("End startup promise");
+                });
+            }
+        };
+    }
+    var reveal_init_callbacks = []
+    var reveal_slidechange_callbacks  = []
+    var reveal_slidetransitionend_callbacks  = []
+    var reveal_resize_callbacks  = []
+</script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+  
+
+</body>
+</html>
