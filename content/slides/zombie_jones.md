@@ -15,35 +15,47 @@ slides:
             fontSize: 17
   reveal_options:
     theme: "none"
-    # center: false
+    center: true
     transition: "none"
+    backgroundTransition: "none"
+    self-contained: true
 ---
 
+
+
+{{< slides/theme is="zombie.css" >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-<!--
-# Constructing the Jones polynomial to save the world
+
+
+
+
+
+# Zombies and knots
+## Constructing the Jones polynomial to save the world
 
 ---
 
-# Note
+## Day 0: smalltowns-ville, IA:
 
-Real biology vs fantasy indicated by a "real watermark"
+A man picks up his daily slice of breakfast pizza from his local gas station. What he doesn't know is that it's his last. My mid-day he feels terrible, by the time he's ready to go home for dinner he's already feasting on brains.
+
+---
+
+# Day 4: CDC Headquarters
+
+The spread of the Z-virus has spread midwest wide. You're working at the CDC as an expert in microscopy. You're working frantically to get any information on the Z-virus you can. You decide to image the DNA of the Z-Virus.
 
 
 ---
 
-# Day 0:
+{{< centerimg src="/presentations/dna/dna_trefoil.png" height="40rem" >}}
 
-Set the stage for the activity
 
----
-
-# Day 4:
-
-CDC is imaging the DNA of the virus
-
+{{% slides/citations %}}
+DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
+{{% /slides/citations %}}
 
 
 ---
@@ -61,14 +73,28 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 {{% /slides/citations %}}
 
 ---
+{{< slides/zombie/hide_background  >}}
 
+{{< slides/row style="height:calc(var(--slide-height)*.8);" >}}
+{{< slides/col style="flex-grow 3;color:var(--r-Foreground);" >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/dna/DNA_chemical_structure.svg" width="auto" heigh="auto">}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 1;text-align:left;"  >}}
+{{< slides/center_block grow="1" >}}
 Each strand has a backbone attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine.
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 
-#@@@TODO: Picture ATCG
 
 {{% slides/citations %}}
 Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023
+{{% /slides/citations %}}
+{{% slides/citations %}}
+Photo by Madprime (talk · contribs) - This vector image was created with Inkscape ., CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=1848174](https://commons.wikimedia.org/w/index.php?curid=1848174)
 {{% /slides/citations %}}
 
 ---
@@ -77,11 +103,14 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 
 ---
 
-## Circular DNA
+# Circular DNA
 
 Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-stranded DNA of the polyoma virus exists in a closed circular form.
 
-#@@@TODO: Picture Circular dna
+
+{{< slides/center_block >}}
+{{< slides/centersvg src="/presentations/dna/dna_circle.svg" width="20rem">}}
+{{< /slides/center_block >}}
 
 {{% slides/citations %}}
 Vologodskii, A. V. (n.d.). Circular DNA. In Cyclic Polymers (pp. 47-83). Kluwer Academic Publishers. https://doi.org/10.1007/0-306-47117-5_2
@@ -89,25 +118,62 @@ Vologodskii, A. V. (n.d.). Circular DNA. In Cyclic Polymers (pp. 47-83). Kluwer 
 
 ---
 
-## Supercoiling
 
-@@@TODO: supercoil picture
+{{< slides/zombie/hide_background  >}}
 
----
+# "Supercoiled" DNA
 
-{{< centerimg src="/presentations/dna/dna_trefoil.png" height="40rem" >}}
+Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965) discover that double-stranded DNA can "supercoil".
+
+
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/dna/dna_supercoil.svg" width="auto" heigh="auto"  >}}
+{{< /slides/center_block >}}
 
 
 {{% slides/citations %}}
-DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
+Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The twisted circular form of polyoma viral DNA. In Proceedings of the National Academy of Sciences (Vol. 53, Issue 5, pp. 1104-1111). Proceedings of the National Academy of Sciences. https://doi.org/10.1073/pnas.53.5.1104
 {{% /slides/citations %}}
 
 
 ---
 
-# Day 7:
+{{< slides/zombie/hide_background  >}}
 
-Constructing an anti-virus.
+
+{{< slides/row style="height:calc(var(--slide-height)*.8);">}}
+{{< slides/col   >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/dna/dna_supercoil_unknot.svg"   >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+
+{{< slides/zombie/hide_background  >}}
+
+
+# "Supercoiled" DNA knots
+
+
+{{< slides/row style="height:calc(var(--slide-height)*.8);">}}
+{{< slides/col   >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/dna/dna_supercoil_knot.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+
+# Day 7: CDC Headquarters
+
+The spread is now nation wide but still under some control.
+
+You've successfully imaged the DNA of the Z-virus and found DNA with a knot. Your CDC coworkers are useing your findings to construct an anti-Z-virus. The anti-virus is the mirror of the DNA knot you've found. This will allow the human body to build anti-bodies for the Z-virus.
+
+The CDC now needs you to verify that the DNA knot they've produced truly is the mirror of the Z-virus.
 
 ---
 
@@ -127,48 +193,60 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
+{{< slides/zombie/hide_background  >}}
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg" width="15rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/Alex_Poly/alg/Alg_1.svg" width="15rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/mathday23/tknot_35.svg" width="20rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/mathday23/star.svg" width="30rem">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/row style="">}}
+{{< slides/col style="flex-grow 1;" >}}
+{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 1;">}}
+{{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 2;" >}}
+{{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 3;" >}}
+{{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 
 {{% slides/citations  %}}
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
 
+
 ---
 
-# Diagrams for knotted dna
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/dna/dna_trefoil.png" height="15rem" >}}
-{{% /slides/col%}}
-{{% slides/col%}}
-$$\to$$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg" width="15rem">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+## Diagrams for knotted dna
 
+
+{{< slides/row style="">}}
+{{< slides/col style="flex-grow: 3;" >}}
+{{< centerimg src="/presentations/dna/dna_trefoil.png" >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow: 0;" >}}
+{{< slides/center_block >}}
+$\to$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow: 3;" >}}
+{{< slides/centersvg src="/presentations/dna/dna_left.svg"  >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow: 0;" >}}
+{{< slides/center_block >}}
+$\to$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow: 3;" >}}
+{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 {{% slides/citations %}}
 DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
 {{% /slides/citations %}}
-
 
 ---
 
@@ -179,51 +257,57 @@ DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, 
 # reidemeister moves
 
 ---
-## Type I
+# Type I
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/type1/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type1/1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type1/2a.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type1/2a.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
-## Type II
+# Type II
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/type2/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type2/1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type2/6a.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type2/6b.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
-## Type III
+# Type III
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/type3/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type3/1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type3/6.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type3/6.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 
@@ -233,125 +317,148 @@ What's the important information inside a knot diagram?
 
 ---
 
-{{<centerimg "/presentations/kauf_bkt/crossing/crossing_un.svg" 500>}}
+{{< slides/row >}}
+{{< slides/col >}}
+$\,$
+{{< /slides/col >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_un.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+$\ $
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 
 # Clockwise
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/crossing/crossing_un.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_un.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type2/6a.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type2/6a.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 # anti-clockwise
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/crossing/crossing_un.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_un.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type2/6b.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type2/6b.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 
 ---
 
 # Polynomial
 
----
+{{< slides/center_block style="font-size:16rem;" >}}
+$\bkt{/presentations/kauf_bkt/crossing/crossing_un.svg}$
+{{< /slides/center_block >}}
 
-$$\Huge{\begin{matrix}
-\ &\left.CW\right.&
-&  \left.CCW\right.&\\\\
-\ &\left.\img{/presentations/kauf_bkt/crossing/crossing_un.svg}\right.&
-&\left.\img{/presentations/kauf_bkt/crossing/crossing_un.svg}\right.&\\\\
-\ &\left.\downarrow \right.&
-&\left.  \downarrow \right.&\\\\
-\ A&\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA&+B&\LA \img{/presentations/kauf_bkt/type2/6b.svg}\RA&
-\end{matrix}}$$
 
 ---
+
+{{% slides/uncenter %}}
 
 # Skein Relation
 
-
-$$\Huge{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+{{< slides/center_block style="font-size:3.5rem;" >}}
+${\begin{matrix}
+\ &\left.CW\right.&
+&  \left.CCW\right.&\\
+\ &\left.\img{/presentations/kauf_bkt/crossing/crossing_un.svg}\right.&
+&\left.\img{/presentations/kauf_bkt/crossing/crossing_un.svg}\right.&\\
+\ &\left.\downarrow \right.&
+&\left.  \downarrow \right.&\\
+\bkt{/presentations/kauf_bkt/crossing/crossing_un.svg}=\ A&\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA&+B&\LA \img{/presentations/kauf_bkt/type2/6b.svg}\RA&
+\end{matrix}}$
+{{< /slides/center_block >}}
 
 ---
 
-
-## What are we looking for?
+# What are we looking for?
 
 We want to use our bracket to build a polynomial that can tell two knots apart.
 In particular we want to tell a knot and it's "anti-knot" apart.
 
 ---
 
-# "knowledge check"
+# Putting pieces together
 
-- How can we tell two knots apart?
-- How can we use that and our bracket to build our polynomial?
+* How can we tell two knots apart?
+* How can we use that and our bracket to build our polynomial?
 
 ---
 
-## Check what happens under Reidemeister moves
+# Check what happens under Reidemeister moves
 
 If our bracket "respects" reidemeister moves it respects knot "equivalence".
 
 ---
 
-### Type 2
+# Type II
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+{{< slides/center_block style="font-size:10rem" >}}
+${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
+{{< /slides/center_block >}}
+
 
 ---
 
+{{% slides/uncenter %}}
 
-**$$\small{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$**
 
-<div class="mediummath ">
-$$\huge
-\begin{aligned}
+{{< slides/center_block style="font-size:4rem;color:var(--r-Orange);margin-bottom:10vh" >}}
+$ \small{\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+B\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
+{{< /slides/center_block >}}
+
+{{< slides/center_block style="font-size:4rem" >}}
+$\begin{aligned}
 \bkt{/presentations/kauf_bkt/type2/1.svg}
 &=A\bkt{/presentations/kauf_bkt/type2/2a.svg}+B\bkt{/presentations/kauf_bkt/type2/2b.svg}\\
 &=A
 \LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP\\
 &+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
-\end{aligned}
-$$
-</div>
+\end{aligned}$
+{{< /slides/center_block >}}
+
 
 ---
 
-## A problem
+{{% slides/uncenter %}}
+
+# A problem
+
+{{< slides/center_block style="font-size:15rem" >}}
+${B\bkt{/presentations/kauf_bkt/type2/4.svg}}$
+{{< /slides/center_block >}}
 
 ---
 
-
-<div class="bigmath ">
-$$\huge{B\bkt{/presentations/kauf_bkt/type2/4.svg}}$$
-</div>
-
----
-
-$$\huge
-\begin{aligned}
-1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+{{< slides/center_block style="font-size:4rem" >}}
+$\begin{aligned}
+1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
 2.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=C\LA D\RA}
-\end{aligned}$$
+\end{aligned}$
+{{< /slides/center_block >}}
 
 
 ---
@@ -361,126 +468,210 @@ $$\huge
 ---
 
 
-$$\Large\begin{aligned}
+{{< slides/center_block style="font-size:2.5rem" >}}
+$\begin{aligned}
 A\LP A\bkt{/presentations/kauf_bkt/type2/3a.svg}+B\bkt{/presentations/kauf_bkt/type2/4.svg}\RP
-&+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
-&=A\LP A\bkt{/presentations/kauf_bkt/type2/6a.svg}+BC\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
-&+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\\\
-\end{aligned}$$
+&+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
+&=A\LP A\bkt{/presentations/kauf_bkt/type2/6a.svg}+BC\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
+&+B\LP A\bkt{/presentations/kauf_bkt/type2/6b.svg}+B\bkt{/presentations/kauf_bkt/type2/6a.svg}\RP\\
+\end{aligned}$
+{{< /slides/center_block >}}
 
 ---
 
-$$\Large\begin{aligned}
-&=A^2\bkt{/presentations/kauf_bkt/type2/6a.svg}+ABC\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
-&+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}+B^2\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
-&=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}\\\\
+{{< slides/center_block style="font-size:3rem" >}}
+$\begin{aligned}
+&=A^2\bkt{/presentations/kauf_bkt/type2/6a.svg}+ABC\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
+&+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}+B^2\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
+&=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}\\
 &+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}
-\end{aligned}$$
+\end{aligned}$
+{{< /slides/center_block >}}
 
 ---
 
+{{< slides/zombie/hide_background  >}}
 
 ### What we wanted
 
-$$\Large{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
+{{< slides/center_block style="font-size:3rem" >}}
+${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
+{{< /slides/center_block >}}
 
 ### What we have
 
-$$\Large\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}$$
+{{< slides/center_block style="font-size:3rem" >}}
+$\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}$
+{{< /slides/center_block >}}
 
 ### So we need
 
-$$\Large\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$$
+{{< slides/center_block style="font-size:3rem" >}}
+$\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$
+{{< /slides/center_block >}}
 
 ---
 
-# "knowledge check"
+# Putting pieces together
 
-What do we need $A,\ B$ and $C$ to be to get this equality?
+How can we arrange $A,\ B$, and $C$ to get equality?
 
-$$\Large\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$$
+{{< slides/center_block style="font-size:3rem" >}}
+$\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$
+{{< /slides/center_block >}}
 
----
-
-$$B=\inv{A}$$
-$$\Large\begin{aligned}
-\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
-\LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
-\end{aligned}$$
 
 ---
 
-$$C=-A^{-2}-A^2$$
-$$\Large\begin{aligned}
-\LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
-\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
-\end{aligned}$$
+{{< slides/center_block style="font-size:3rem;color:var(--r-Green);margin-bottom:10vh" >}}
+$B=\inv{A}$
+{{< /slides/center_block >}}
+
+{{< slides/center_block style="font-size:3rem" >}}
+$\begin{aligned}
+\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
+\LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
+\end{aligned}$
+{{< /slides/center_block >}}
 
 ---
 
-### Type 2
+{{< slides/center_block style="font-size:3rem;color:var(--r-Green);margin-bottom:10vh" >}}
+$C=-A^{-2}-A^2$
+{{< /slides/center_block >}}
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$$
-$$\large
+{{< slides/center_block style="font-size:3rem" >}}
+$\begin{aligned}
+\LP A^2+C+A^{-2}\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
+\bkt{/presentations/kauf_bkt/type2/6b.svg}&=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
+\end{aligned}$
+{{< /slides/center_block >}}
+
+---
+
+# Type II
+
+
+{{< slides/center_block style="font-size:3rem" >}}
+${\LA\img{/presentations/kauf_bkt/type2/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA}$
+{{< /slides/center_block >}}
+
+
+{{< slides/center_block style="font-size:3rem" >}}
+$
 \begin{aligned}
-1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
-2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
+2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
 3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
-\end{aligned}$$
+\end{aligned}$
+{{< /slides/center_block >}}
+
+
+---
+{{< slides/zombie/hide_background  >}}
+
+{{< slides/admonition type="Exercise" title="Exercise: Type III" >}}
+
+{{< slides/center_block style="font-size:9rem" >}}
+$$\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA$$
+{{< /slides/center_block >}}
+
+{{< /slides/admonition >}}
+
+
+
+---
+# Type I
+
+
+{{< slides/row   >}}
+{{< slides/col style="font-size: 10rem;"  >}}
+$\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA$
+{{< /slides/col  >}}
+{{< slides/col style="font-size: 10rem;"  >}}
+$\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA$
+{{< /slides/col  >}}
+{{< /slides/row >}}
 
 ---
 
-# Exercise
-### Type 3
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA}$$
-
----
-# Type 1
-
-$$\Huge\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA$$
-
----
-
-
-$$\huge\begin{aligned}
+{{< slides/center_block style="font-size:4rem" >}}
+$\begin{aligned}
 \LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=
-A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA+A^{-1}\LA\img{/presentations/kauf_bkt/type1/2b.svg}\RA\\\\
-&=A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
-&+A^{-1}\LP -A^{-2}-A^2\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
-\end{aligned}$$
+A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA+A^{-1}\LA\img{/presentations/kauf_bkt/type1/2b.svg}\RA\\
+&=A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+&+A^{-1}\LP -A^{-2}-A^2\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+\end{aligned}$
+{{< /slides/center_block >}}
 
 ---
 
-$$\huge\begin{aligned}
-\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
-&+A^{-1}\LP -A^{-2}-A^2\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
-&=\LP A-A^{-3}-A\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\\\
-\end{aligned}$$
+{{< slides/center_block style="font-size:4rem" >}}
+$\begin{aligned}
+\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=A\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+&+A^{-1}\LP -A^{-2}-A^2\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+&=\LP A-A^{-3}-A\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+\end{aligned}$
+{{< /slides/center_block >}}
 
 ---
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+
+{{< slides/center_block style="font-size:4rem" >}}
+$${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+{{< /slides/center_block >}}
+
+---
+{{< slides/zombie/hide_background  >}}
+
+{{< slides/admonition type="Exercise" title="Exercise Type I Left" >}}
+
+{{< slides/center_block style="font-size:6rem" >}}
+$${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=?\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+{{< /slides/center_block >}}
+{{< /slides/admonition >}}
 
 ---
 
-## Why is this a problem?
 
-$$\Huge{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+{{< slides/center_block style="font-size:7rem" >}}
+${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
+{{< /slides/center_block >}}
+
+
 
 ---
 
+# Why is this a problem?
+
+
+{{< slides/center_block style="font-size:7rem" >}}
+${\begin{aligned}
+\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA&=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
+\end{aligned} }  $
+{{< /slides/center_block >}}
+
+---
 # What do we have so far?
 
 For Type II and III everything "works" with the rules:
-$$\large
+
+{{< slides/center_block style="font-size:3rem" >}}
+$
 \begin{aligned}
-1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\\\
-2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\\\
+1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
+2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
 3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
-\end{aligned}$$
+\end{aligned}$
+{{< /slides/center_block >}}
 but Type I is "broken":
-$$\large{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+
+
+{{< slides/center_block style="font-size:3rem" >}}
+${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\quad\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
+{{< /slides/center_block >}}
 
 ---
 
@@ -489,10 +680,10 @@ $$\large{\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presen
 
 ### Kauffman Bracket
 
-The Kauffman Bracket is a function from __unoriented__ **link diagrams** to **Laurent polynomials with integer coefficients** in an indeterminate $A$.
+The Kauffman Bracket is a function from __unoriented__ **link diagrams** to **Laurent polynomials** with **integer coefficients** in an indeterminate $A$. Important to note that the Kauffman Bracket isn't an "invariant" for knot diagrams.
 
 
-@@@Uncomment {{ slides/admonition type="Note" title="Laurent Polynomial Definition" }}
+{{< slides/admonition type="Note" markdownify="true" >}}
 
 A **Polynomial**:
 $$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
@@ -500,344 +691,319 @@ $$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
 A **Laurent** Polynomial:
 $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-1}+\cdots+a_{-n}x^{-n}$$
 
-@@@Uncomment {{ /slides/admonition }}
+{{< /slides/admonition >}}
 
 
 ---
--->
-## Exercise
 
-<div class="bigmath ">
-$$\Huge\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
-</div>
+# Day 53
+
+Time is running out. With your preliminary results in hand the vaccine is being produced. The world is now on your shoulders waiting for your results.
+
+---
+{{< slides/zombie/hide_background  >}}
+
+
+{{< slides/admonition type="Exercise" title="Compute the bracket:" >}}
+
+{{< slides/center_block style="font-size:10rem" >}}
+$$\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
+{{< /slides/center_block >}}
+{{< /slides/admonition >}}
+
 
 ---
 
 
-<div class="bigmath ">
-$$
+
+{{< slides/center_block style="font-size:5rem" >}}
+$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
 &= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
 +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
 \end{aligned}
-$$
-</div>
+$
+{{< /slides/center_block >}}
+
 
 ---
 
-$$
-\LARGE\begin{aligned}
+
+{{< slides/center_block style="font-size:6rem" >}}
+$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
+&=-A^{3}\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
+&=-A^{3}\LP-A^{3}\RP\bkt{/presentations/kauf_bkt/unknot.svg}\\
+&=A^{6}\\
+\end{aligned}
+$
+{{< /slides/center_block >}}
+
+
+---
+
+
+
+
+{{< slides/center_block style="font-size:6rem" >}}
+$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
+&= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
+&= A\LP A^6\RP
++\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
+\end{aligned}
+$
+{{< /slides/center_block >}}
+
+---
+
+{{< slides/center_block style="font-size:5rem" >}}
+$
+\begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}
 &=A\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
-+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\\\
-&=A\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_baa.svg}+
-A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bab.svg}\RP\\\\
-&+A^{-1}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_bba.svg}+
-A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bbb.svg}\RP\\\\
++A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\
+&=A\LP -A^{3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\
+&+A^{-1}\LP -A^{-3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\
+&=-A^{4}-A^{-4}\\
 \end{aligned}
-$$
+$
+{{< /slides/center_block >}}
 
 ---
 
-$$
-\LARGE\begin{aligned}
-&=A\LP A\LP-A^{-2}-A^2\RP+
-A^{-1}\RP\\\\
-&+A^{-1}\LP A+
-A^{-1}\LP-A^{-2}-A^2\RP\RP\\\\
-&=-A^4-A^{-4}\\\\
-\end{aligned}
-$$
-
-
----
-
-<div class="bigmath ">
-$$
+{{< slides/center_block style="font-size:6rem" >}}
+$
 \begin{aligned}
 \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
-&= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
-+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
-&= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
--A^3-A^{-5}\\
+&= A\LP A^6\RP\\
+&+\inv{A}\LP-A^{4}-A^{-4}\RP\\
+&= A^7-A^{3}-A^{-5}\\
 \end{aligned}
-$$
-</div>
+$
+{{< /slides/center_block >}}
 
 ---
 
-<ol style="
-align-items: left;">
-<li>$\small\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+A^{-1}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$</li>
-<li>$\small\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1$</li>
-<li>$\small
-\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA$</li>
-</ol></br>
-<div>
-$\Huge{A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}}$
 
----
 
-$$
-\LARGE\begin{aligned}
-\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
-&=A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aa.svg}
-+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\\\
-&=A\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aaa.svg}+
-A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_aab.svg}\RP\\\\
-&+A^{-1}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_aba.svg}+
-A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_abb.svg}\RP\\\\
-\end{aligned}
-$$
+{{% slides/uncenter %}}
 
----
+# How can we fix Type I
 
-$$
-\Large\begin{aligned}
-&=A\LP A\LP A\LP-A^{-2}-A^2\RP^2\RP\right.\\\\
-&\left.+A^{-1}\LP A\LP-A^{-2}-A^2\RP\RP\RP\\\\
-&+A^{-1}\LP A\LP A\LP-A^{-2}-A^2\RP+A^{-1}\RP\RP\\\\
-&=A^6
-\end{aligned}
-$$
-
----
-
-<div class="bigmath ">
-$$
+{{< slides/center_block style="font-size:7rem" >}}
+$
 \begin{aligned}
-\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
-&= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
-+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
-&= A^7-A^3-A^{-5}
-\end{aligned}
-$$
-</div>
+\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA&=-A^{-3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA&=-A^{3}\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
+\end{aligned}$
+{{< /slides/center_block >}}
+
+---
+
+
+
+# Orientation of a crossing
+
+
+{{< slides/row >}}
+{{< slides/col style="font-size: 3rem;"  >}}
+$1.$ Positive
+{{< slides/center_block style="flex-grow:1">}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_+.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="font-size: 5rem;"  >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="font-size: 3rem;"  >}}
+$2.$ Negative
+{{< slides/center_block style="flex-grow:1">}}
+{{< slides/centersvg src="/presentations/kauf_bkt/crossing/crossing_-.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
 
 
 ---
 
-<div class="mediummath ">
-$$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/type1/1.svg}
-&=A\bkt{/presentations/kauf_bkt/type1/2a.svg}+
-\inv{A}\LP-A^{-2}-A^2\RP\bkt{/presentations/kauf_bkt/type1/2a.svg}\\\\
-&=-A^{3}\bkt{/presentations/kauf_bkt/type1/2a.svg}
-\end{aligned}
-$$
-</div>
+# Writhe of a knot
 
-
----
-
----
-## Writhe
-
----
-
-### Orientation of a crossing
-
-
-<div class="sliderow">
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;
-">
-1. Positive $+1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_+.svg" 200>}}
-
-</div>
-<div class="slidecolumn" style="
-align-items: left;
-font-size: x-large;
-min-width:50% !important;">
-2. Negative $-1$ {{<centerimg "/presentations/kauf_bkt/crossing/crossing_-.svg" 200>}}
-
-</div>
-</div>
-
----
-
-### Writhe of a knot
 
 The writhe $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
 signs of the crossings of $ D $.
 
-$$\Huge{w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
+{{< slides/center_block style="font-size:5rem" >}}
+$${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
+{{< /slides/center_block >}}
+
+---
+
+{{< slides/zombie/hide_background  >}}
+
+
+{{< slides/admonition type="Exercise" title="Compute the writhe" >}}
+
+{{< slides/center_block style="font-size:10rem" >}}
+$$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$$
+{{< /slides/center_block >}}
+{{< /slides/admonition >}}
+
 
 ---
 
 
+# Fixing Type I
 
-
-{{<centerimg "/presentations/kauf_bkt/trefoil/trefoil.svg" 500>}}
-
----
-
-## Consider
-
-$$\Huge -A^{-3w\LP D\RP}\LA D\RA$$
+{{< slides/center_block style="font-size:7rem" >}}
+$
+-A^{-3w\LP \img{/presentations/kauf_bkt/type1/1b.svg}\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA
+$
+{{< /slides/center_block >}}
 
 ---
 
-$$\Large -A^{-3w\LP D\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=\large -A^{-3\LP-1\RP}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA=\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
-$$
 
-
----
-
-## Definition of the Jones Polynomial
-
-The Jones Polynomial $V\LP \mathscr{L}\RP$ of an oriented link $\mathscr{L}$
-is the Laurent polynomial in $t^{1/2}$, with integer coefficients, defined by
-$$ V\LP \mathscr{L}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $$
-where $D$ is any oriented diagram for $\mathscr{L}$.
-
-
----
-
-<div class="mediummath ">
-$$
+{{< slides/center_block style="font-size:4rem" >}}
+$
 \begin{aligned}
--A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
-&= -A^{9}\LP A^7-A^3-A^{-5}\RP\\
-&=-A^{16}+A^{12}+A^{-4}\\
+     -A^{-3w\LP \img{/presentations/kauf_bkt/type1/1b.svg}\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA
+     &= -A^{-3\LP-1\RP}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+     &= -A^{3}\LP-A^{-3}\RP\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA\\
+     &=\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA
 \end{aligned}
-$$
-</div>
+$
+{{< /slides/center_block >}}
 
 ---
 
-<div class="mediummath ">
-$$
+# What do we have?
+
+For Type I, II, and III everything "works" with the rules:
+
+{{< slides/center_block style="font-size:3rem" >}}
+$
 \begin{aligned}
-&\LP-A^{16}+A^{12}+A^{4}\RP_{t^{1/2}=A^{-2}}\\
-&=-t^{-4}+t^{-3}+t^{-1}
+1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
+2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
+3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}\\
+4.\quad&-A^{-3w\LP D\RP}\LA D\RA
+\end{aligned}$
+{{< /slides/center_block >}}
+
+
+
+---
+
+
+# Definition of the Jones Polynomial
+
+The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
+is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
+
+Defined by
+$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
+where $D$ is any oriented diagram for $\mathscr{K}$.
+
+---
+{{< slides/zombie/hide_background  >}}
+
+
+{{< slides/center_block style="font-size:4rem" >}}
+$
+\begin{aligned}
+ V\LP \mathscr{K}\RP&=
+\LP-A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\
+&=\LP-A^{-3\cdot-3} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\
+&=\LP-A^{9}\LP A^7-A^3-A^{-5}\RP\RP _{t^{1/2}=A^{-2}}\\
+&=\LP-A^{16}+A^{12}+A^{-4}\RP _{t^{1/2}=A^{-2}}\\
+&=-t^{-4}+t^{-3}+t^{-1}\\
 \end{aligned}
-$$
-</div>
+$
+{{< /slides/center_block >}}
+
+
+---
+{{< slides/zombie/hide_background  >}}
+
+
+# Anti-Knot
+
+
+{{< slides/row >}}
+{{< slides/col style="width:40%;" >}}
+{{< slides/row style="margin-bottom:2rem;">}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< slides/row >}}
+{{< slides/col style="font-size: 4rem;"  >}}
+${-t^{-4}+t^{-3}+t^{-1}}$
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< slides/col style="font-size: 2rem;text-align:left;width:20%;"  >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="width:40%;"  >}}
+{{< slides/row  style="margin-bottom:2rem;">}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/right.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< slides/row >}}
+{{< slides/col style="font-size: 4rem;"  >}}
+${-t^{4}+t^{3}+t^{1}}$
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
 
 ---
 
-## Detects mirrors
+# Day 121
 
-
-<div>
-<div style="
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 10px;
-grid-auto-rows: minmax(100px, auto);">
-
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 1 / 2;
-grid-row: 1;
-">
-<img style="
-height:auto !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-max-width:200px !important;
-"
-src="/presentations/Alex_Poly/trefoil/left.svg"/>
-</div>
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 2 / 2;
-grid-row: 1;
-">
-<img style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-height:auto !important;
-display: block;
-margin-left: auto !important;
-margin-right: auto !important;
-max-width:200px !important;"
-src="/presentations/Alex_Poly/trefoil/right.svg"/>
-</div>
-
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 1 / 2;
-grid-row: 2;
-">
-
-$$-A^{16}+A^{12}+A^{4}$$
-</div>
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 2 / 2;
-grid-row: 2;
-">
-
-$$-A^{-16}+A^{-12}+A^{-4}$$
-</div>
-
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 1 / 2;
-grid-row: 3;
-">
-$$-t^{-4}+t^{-3}+t^{-1}$$
-</div>
-<div style="
-margin: 0;
-position: relative;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-grid-column: 2 / 2;
-grid-row: 3;
-">
-$$-t^{4}+t^{3}+t$$
-
-</div>
-</div>
+With the successful completion of your work the vaccine is being administer world wide. The president congratulates you for your work and the world is optimistic.
 
 ---
+
+# Day 300
+
+The virus is completely controlled and you win every prize in every field imaginable.
+
+---
+
 
 [Worksheet](/presentations/kauf_bkt/worksheet/worksheet.pdf)
 
 ---
 
-## Sources
-<div style="
-font-size: medium;
-">
-<ol>
-<li>Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239</li>
-<li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0</li>
-<li>Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.</li>
-</ol>
-</div>
+
+{{% slides/citations %}}
+1. Livingston, C. (1993). Knot Theory. Mathematical Association of America. [https://doi.org/10.5948/UPO9781614440239](https://doi.org/10.5948/UPO9781614440239)
+2. Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.
+3. Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor, MI, 1998. Thesis Ph.D. The University of British Columbia (Canada). URL: [https://www.knotplot.com/](https://www.knotplot.com/).
+4. Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
+5. Vaughan Jones. The Jones polynomial for dummies. [https://math.berkeley.edu/~vfr/jonesakl.pdf](https://math.berkeley.edu/~vfr/jonesakl.pdf) [WebArchive](https://web.archive.org/web/20231012192337/https://math.berkeley.edu/~vfr/jonesakl.pdf)
+6. Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.](https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid.) Accessed 3 October 2023
+7. DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, [CC BY-ND](https://creativecommons.org/licenses/by-nd/4.0/)
+8. Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The twisted circular form of polyoma viral DNA. In Proceedings of the National Academy of Sciences (Vol. 53, Issue 5, pp. 1104-1111). Proceedings of the National Academy of Sciences. [https://doi.org/10.1073/pnas.53.5.1104](https://doi.org/10.1073/pnas.53.5.1104)
+9. Photo by Madprime (talk · contribs) - This vector image was created with Inkscape ., CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=1848174](https://commons.wikimedia.org/w/index.php?curid=1848174)
+{{% /slides/citations %}}
 
 
+
+{{% slides/footer %}}
+
+{{% /slides/footer %}}
+
+{{% slides/zombie/background %}}
 

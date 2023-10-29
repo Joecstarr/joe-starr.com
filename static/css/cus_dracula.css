@@ -8,11 +8,20 @@
  * https://draculatheme.com/contribute
  */
 
-@import "slides_themes/dracula.css";
 @import "admonitions.css";
 
-.segment-purple {
-    color: var(--r-Purple);
+:root {
+    --r-background-color: var(--r-Background);
+    --r-main-color: var(--r-Foreground);
+    --r-link-color: var(--r-Pink);
+    --r-link-color-dark: var(--r-Pink);
+    --r-link-color-hover: var(--r-Blue);
+    --r-selection-background-color: var(--r-Selection);
+    --r-selection-color: var(--r-Foreground);
+    --r-bold-color: var(--r-Orange);
+    --r-italic-color: var(--r-Yellow);
+    --r-inline-code-color: var(--r-Green);
+    --r-list-bullet-color: var(--r-Blue);
 }
 
 html * {
@@ -92,18 +101,22 @@ h6 {
 
 .reveal h2 {
     font-size: var(--r-heading2-size);
+    color: var(--r-Blue);
 }
 
 .reveal h3 {
     font-size: var(--r-heading3-size);
+    color: var(--r-Blue);
 }
 
 .reveal h4 {
     font-size: var(--r-heading4-size);
+    color: var(--r-Blue);
 }
 
 .reveal h1 {
     text-shadow: var(--r-heading1-text-shadow);
+    color: var(--r-Blue);
 }
 
 /*********************************************
@@ -369,31 +382,19 @@ h6 {
     color: var(--r-inline-code-color);
 }
 
-.reveal ul {
-    list-style: none;
-}
-
 .reveal ol {
-    list-style: none;
     counter-reset: li;
-}
-
-.reveal ol li::before {
-    content: counter(li) ".";
-    color: var(--r-list-bullet-color);
-    display: inline-block;
-    width: 2em;
-    margin-left: -2.5em;
-    margin-right: 0.5em;
-    text-align: right;
 }
 
 .reveal ol li {
     counter-increment: li;
 }
 
-.reveal section:has(.uncenter){
+.reveal section:has(.uncenter) {
     top: 0 !important;
+}
+.reveal section:has(.hidebackground) *{
+    background: var(--r-Background) !important;
 }
 
 .label foreignObject {

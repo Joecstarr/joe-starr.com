@@ -1,43 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 620 565" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<clipPath id="ArtboardFrame">
-<rect height="565" width="620" x="0" y="0"/>
-</clipPath>
-<g clip-path="url(#ArtboardFrame)" id="Layer-2" vectornator:layerName="Layer 2">
-<clipPath id="ClipPath">
-<path d="M260.125 164.287L253.396 159.932L231.624 131.233L274.028 82.7343L255.015 46.3614L103.736 49.668L-32.6622 148.867L-12.8224 316.679L81.4166 516.73L348.427 542.356L415.386 441.504L453.494 328.983L313.071 138.318L297.568 112.567L260.125 164.287Z"/>
-</clipPath>
-<g clip-path="url(#ClipPath)">
-<path d="M38.6307 290.872C28.8439 183.218 86.1766 110.48 184.958 94.016C265.789 80.5442 341.208 167.568 376.404 263.893" fill="none" opacity="1" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.99607"/>
-</g>
-</g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-10" vectornator:layerName="Layer 10">
-<clipPath id="ClipPath_2">
-<path d="M274.109 523.587L280.352 529.22L239.494 515.98L208.6 490.832L155.294 208.243L277.321 29.0559L548.349 12.3574L633.768 135.669C633.768 135.669 663.954 398.991 663.312 409.909C662.67 420.827 606.152 580.747 603.583 589.739C601.014 598.73 482.198 657.817 482.198 657.817L315.213 607.722L274.109 523.587Z"/>
-</clipPath>
-<g clip-path="url(#ClipPath_2)">
-<g opacity="1">
-<path d="M234.325 433.69C249.303 457.482 286.282 512.468 314.263 522.961C374.719 545.632 466.123 535.561 516.37 503.586C557.975 477.11 570.928 437.484 581.091 381.527C600.45 274.929 578.351 132.559 504.985 73.8662C437.683 20.0249 337.926 50.2906 277.841 108.934C245.1 140.889 232.517 185.879 224.073 219.656C210.236 275.004 210.299 325.068 214.591 380.855C216.502 405.702 227.591 422.691 227.591 422.691" fill="none" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.99459"/>
-<g fill="#ffb86c" stroke="none">
-<path d="M278.069 440.308L233.362 424.71L227.595 422.698L226.764 428.749L220.328 475.659C219.953 478.393 221.866 480.914 224.6 481.289C227.334 481.665 229.855 479.752 230.23 477.018L236.666 430.107L230.069 434.146L274.776 449.744C277.382 450.653 280.232 449.278 281.141 446.672C282.05 444.066 280.674 441.217 278.069 440.308Z" fill="#ffb86c"/>
-</g>
-</g>
-</g>
-</g>
-<g clip-path="url(#ArtboardFrame)" id="Layer-5" vectornator:layerName="Layer 5">
-<clipPath id="ClipPath_3">
-<path d="M291.855 474.079L328.162 514.16L283.811 528.467L254.417 492.635L231.624 131.233L274.028 82.7343L255.015 46.3614L103.736 49.668L-32.6622 148.867L-12.8224 316.679L81.4166 516.73L348.427 542.356L415.386 441.504L453.494 328.983L313.071 138.318L297.568 112.567L291.855 474.079Z"/>
-</clipPath>
-<g clip-path="url(#ClipPath_3)">
-<g opacity="1">
-<path d="M41.4366 301.753C50.2024 363.099 82.4313 459.084 82.4313 459.084C82.4313 459.084 109.112 498.141 175.932 503.179C242.753 508.216 296.807 512.3 349.713 479.233C407.19 443.31 407.829 349.894 376.404 263.893" fill="none" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.99607"/>
-<g fill="#8be9fd" stroke="none">
-<path d="M78.4176 326.049L44.3149 293.191L39.9159 288.952L36.6324 294.103L11.1774 334.037C9.69371 336.365 10.3779 339.455 12.7055 340.938C15.0332 342.422 18.1229 341.738 19.6067 339.41L45.0617 299.476L37.3791 300.389L71.4818 333.248C73.4696 335.163 76.6336 335.104 78.5489 333.116C80.4641 331.129 80.4053 327.965 78.4176 326.049Z" fill="#8be9fd"/>
-</g>
-</g>
-</g>
-</g>
+<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+    version="1.1" viewBox="0 0 620 565" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs />
+    <clipPath id="ArtboardFrame_11">
+        <rect height="565" width="620" x="0" y="0" />
+    </clipPath>
+    <g clip-path="url(#ArtboardFrame_11)" id="Layer-2" vectornator:layerName="Layer 2">
+        <clipPath id="ClipPath">
+            <path
+                d="M260.125 164.287L253.396 159.932L231.624 131.233L274.028 82.7343L255.015 46.3614L103.736 49.668L-32.6622 148.867L-12.8224 316.679L81.4166 516.73L348.427 542.356L415.386 441.504L453.494 328.983L313.071 138.318L297.568 112.567L260.125 164.287Z" />
+        </clipPath>
+        <g clip-path="url(#ClipPath)">
+            <path
+                d="M38.6307 290.872C28.8439 183.218 86.1766 110.48 184.958 94.016C265.789 80.5442 341.208 167.568 376.404 263.893"
+                fill="none" opacity="1" class="stroke-blue" stroke="#8be9fd" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="9.99607" />
+        </g>
+    </g>
+    <g clip-path="url(#ArtboardFrame_11)" id="Layer-10" vectornator:layerName="Layer 10">
+        <clipPath id="ClipPath_2">
+            <path
+                d="M274.109 523.587L280.352 529.22L239.494 515.98L208.6 490.832L155.294 208.243L277.321 29.0559L548.349 12.3574L633.768 135.669C633.768 135.669 663.954 398.991 663.312 409.909C662.67 420.827 606.152 580.747 603.583 589.739C601.014 598.73 482.198 657.817 482.198 657.817L315.213 607.722L274.109 523.587Z" />
+        </clipPath>
+        <g clip-path="url(#ClipPath_2)">
+            <g opacity="1">
+                <path
+                    d="M234.325 433.69C249.303 457.482 286.282 512.468 314.263 522.961C374.719 545.632 466.123 535.561 516.37 503.586C557.975 477.11 570.928 437.484 581.091 381.527C600.45 274.929 578.351 132.559 504.985 73.8662C437.683 20.0249 337.926 50.2906 277.841 108.934C245.1 140.889 232.517 185.879 224.073 219.656C210.236 275.004 210.299 325.068 214.591 380.855C216.502 405.702 227.591 422.691 227.591 422.691"
+                    fill="none" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="9.99459" />
+                <g class="fill-orange" fill="#ffb86c" stroke="none">
+                    <path
+                        d="M278.069 440.308L233.362 424.71L227.595 422.698L226.764 428.749L220.328 475.659C219.953 478.393 221.866 480.914 224.6 481.289C227.334 481.665 229.855 479.752 230.23 477.018L236.666 430.107L230.069 434.146L274.776 449.744C277.382 450.653 280.232 449.278 281.141 446.672C282.05 444.066 280.674 441.217 278.069 440.308Z"
+                        class="fill-orange" fill="#ffb86c" />
+                </g>
+            </g>
+        </g>
+    </g>
+    <g clip-path="url(#ArtboardFrame_11)" id="Layer-5" vectornator:layerName="Layer 5">
+        <clipPath id="ClipPath_3">
+            <path
+                d="M291.855 474.079L328.162 514.16L283.811 528.467L254.417 492.635L231.624 131.233L274.028 82.7343L255.015 46.3614L103.736 49.668L-32.6622 148.867L-12.8224 316.679L81.4166 516.73L348.427 542.356L415.386 441.504L453.494 328.983L313.071 138.318L297.568 112.567L291.855 474.079Z" />
+        </clipPath>
+        <g clip-path="url(#ClipPath_3)">
+            <g opacity="1">
+                <path
+                    d="M41.4366 301.753C50.2024 363.099 82.4313 459.084 82.4313 459.084C82.4313 459.084 109.112 498.141 175.932 503.179C242.753 508.216 296.807 512.3 349.713 479.233C407.19 443.31 407.829 349.894 376.404 263.893"
+                    fill="none" class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="9.99607" />
+                <g class="fill-blue" fill="#8be9fd" stroke="none">
+                    <path
+                        d="M78.4176 326.049L44.3149 293.191L39.9159 288.952L36.6324 294.103L11.1774 334.037C9.69371 336.365 10.3779 339.455 12.7055 340.938C15.0332 342.422 18.1229 341.738 19.6067 339.41L45.0617 299.476L37.3791 300.389L71.4818 333.248C73.4696 335.163 76.6336 335.104 78.5489 333.116C80.4641 331.129 80.4053 327.965 78.4176 326.049Z"
+                        class="fill-blue" fill="#8be9fd" />
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

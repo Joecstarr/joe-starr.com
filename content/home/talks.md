@@ -30,6 +30,10 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+  archive:
+    enable: true
+    text: See all past talks
+    link: slides/landing
 
 design:
   # Choose a view for the listings:
