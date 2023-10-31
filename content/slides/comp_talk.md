@@ -602,20 +602,22 @@ stateDiagram-v2
 The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction that is:
 $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
 
-{{%  slides/admonition type="Example" title="Twist Vector to rational number" %}}
+{{<  slides/admonition type="Example" title="Twist Vector to rational number" >}}
 
-{{% slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;" %}}
-{{% slides/col %}}
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;" >}}
+{{< slides/col >}}
 {{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"height="15rem" >}}
-{{% /slides/col%}}
-{{% slides/col %}}
-$=\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/col >}}
+{{< slides/col  >}}
+{{< slides/center_block grow="1" >}}
+$$\ =\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 
 
-{{%  /slides/admonition %}}
+{{<  /slides/admonition >}}
 
 {{% slides/citations %}}
 Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
@@ -687,46 +689,59 @@ Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic co
 
 ---
 
-
-
-{{% slides/row %}}
-{{% slides/col %}}
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"   >}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $+$
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"   >}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $=$
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:7;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  >}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block   >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 
 
-{{% slides/row %}}
-{{% slides/col%}}
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  >}}
-{{% /slides/col%}}
-{{% slides/col%}}
-$=$
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+{{< slides/center_block   >}}
+$$\ =\ $$
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/general/rat_plus_rat_1.svg"  >}}
-{{% /slides/col%}}
-{{% slides/col%}}
-$=$
-{{% /slides/col%}}
-{{% slides/col%}}
-$[3\  2\  2] + [3\  2\  2]$
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+$$=[3\  2\  2] + [3\  2\  2]$$
+{{< /slides/center_block   >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 
