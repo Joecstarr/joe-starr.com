@@ -158,7 +158,7 @@ $\to$
 
 {{< slides/row >}}
 {{< slides/col >}}
-{{< centerimg src="/presentations/mathday23/lord_kelvin.jpg" width="30rem">}}
+{{< centerimg src="/presentations/mathday23/lord_kelvin.jpg" >}}
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/center_block markdownify="true" grow="1" >}}Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æther.
@@ -459,6 +459,7 @@ $\ $
 {{< slides/centersvg src="/presentations/lightning/Rational.svg" height="auto">}}
 
 ---
+
 {{% slides/uncenter %}}
 
 {{< slides/center_block grow="1" >}}
@@ -627,7 +628,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 To play with twist vectors and continued fractions visit
 
-{{< slides/centersvg src="/qr_codes/TV_tool.svg" width="30%">}}
+{{< slides/centersvg src="/qr_codes/TV_tool.svg" >}}
 
 <p style="text-align:center !important;">https://joe-starr.com/resources/cont_frac_convert/</p>
 
@@ -669,6 +670,13 @@ To play with twist vectors and continued fractions visit
 # Montesinos
 
 ---
+
+
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/lightning/Mont.svg" height="auto">}}
+
+---
 ## Existence of canonical diagrams for Montesinos tangles
 
 Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying one of the following constructions for horizontal and vertical Montesinos tangles, respectively.
@@ -679,13 +687,6 @@ Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying o
 {{% slides/citations %}}
 Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
 {{% /slides/citations %}}
-
----
-
-
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/Mont.svg" height="auto">}}
 
 ---
 
@@ -751,18 +752,18 @@ The Montesinos tangles of crossing number $N$ have a slightly simpler generation
 
 We again generate stencils (twist vectors ) but require that each entry satisfies $2\leq e < \N$.
 
-{{%  slides/admonition type="Example" title="Stencils for $N=5$" %}}
+{{<  slides/admonition type="Example" title="Stencils for $N=5$" >}}
 \begin{array}{|l|l|l|l|}
 \hline
 [2\ 3]\ &\ [3\ 2]\\\hline
 \end{array}
-{{% /slides/admonition %}}
+{{< /slides/admonition >}}
 
 ---
 
 Now for each entry $e_i$ of the stencil we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
 
-{{%  slides/admonition type="Example" title="Montesinos tangles for $N=5$" %}}
+{{<  slides/admonition type="Example" title="Montesinos tangles for $N=5$" >}}
 \begin{array}{|l|l|}
 \hline
 \color{#bd93f9}\text{Stencil:}[3\ 2]\ &\ \\\hline
@@ -770,7 +771,7 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
 \color{#bd93f9}\text{Stencil:}[2\ 3]\\\hline
 \color{#f8f8f2}[1\ 1\ 0] + [1\ 2\ 0]\ &\ [1\ 1\ 0] + [2\ 1\ 0]\\\hline
 \end{array}
-{{% /slides/admonition %}}
+{{< /slides/admonition >}}
 
 <!--
 ---
@@ -784,29 +785,31 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
  -->
 
 ---
+# Generalized Montesinos
+---
+{{% slides/uncenter %}}
 
-## Generalized Montesinos
-
-
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/lightning/GenMont.svg" width="35rem">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/centersvg src="/presentations/lightning/GenMont.svg" height="auto">}}
 
 ---
 
 ### Operation $\circ$
 
-
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/lightning/annotated/GenMont.svg" width="35rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/center_block grow="1" >}}
+{{< slides/row  style=" ">}}
+{{< slides/col  style="flex-grow:3;" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/GenMont.svg" >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col  style="flex-grow:1;" >}}
+{{< slides/center_block grow="1" >}}
 $= \color{#bd93f9}([3\  0] + [3\  0] + [2\  0]) \color{#f8f8f2}\circ \color{#ff5555}[1\  2]$
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/center_block >}}
 
 ---
 
@@ -819,19 +822,19 @@ We just need to take our lists of Montesinos and rational and glue them together
 ---
 
 # Into the future
-
 ---
 
 ## Algebraic
 
+---
 
-{{< slides/centersvg src="/presentations/general/alg_containment.svg" width="35rem">}}
+{{< slides/centersvg src="/presentations/general/alg_containment.svg" height="auto" >}}
 
 ---
 
 All possible tangles made from $+$ and $\vee$
 
-{{%  slides/admonition type="Example" title="Algebraic" %}}
+{{<  slides/admonition type="Example" title="Algebraic" >}}
 
 {{% slides/row %}}
 {{% slides/col %}}
@@ -844,7 +847,7 @@ A vertical sum of two Montesinos tangles.
 {{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg" >}}
 {{% /slides/col%}}
 {{% /slides/row %}}
-{{%  /slides/admonition %}}
+{{<  /slides/admonition >}}
 
 ---
 # Generation
@@ -872,9 +875,9 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 
 
 ---
-## Non-algebraic/Polygonal
-
-{{< slides/centersvg src="/presentations/general/nonalg_containment.svg" width="35rem">}}
+# Non-algebraic/Polygonal
+---
+{{< slides/centersvg src="/presentations/general/nonalg_containment.svg" height="auto" >}}
 
 ---
 
@@ -882,20 +885,29 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/general/1star.svg" width="15rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/6star.svg" width="30rem">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/row  >}}
+{{< slides/col  style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1star.svg"  >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/6star.svg"  >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
 
 ---
 
-### 4-valent planar graph insertions
+# 4-valent planar graph insertions
 
-{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" width="37rem">}}
+---
+
+{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
 
 ---
 
