@@ -49,26 +49,26 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
-
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/Alex_Poly/trefoil/left.svg" width="15rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/Alex_Poly/alg/Alg_1.svg" width="15rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/mathday23/tknot_35.svg" width="20rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/mathday23/star.svg" width="30rem">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/row style="">}}
+{{< slides/col style="flex-grow 1;" >}}
+{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 1;">}}
+{{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 2;" >}}
+{{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow 3;" >}}
+{{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 
 {{% slides/citations  %}}
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
+
 
 ---
 
@@ -79,51 +79,57 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 # reidemeister moves
 
 ---
-## Type I
+# Type I
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/type1/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type1/1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type1/2a.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type1/2a.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
-## Type II
+# Type II
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/type2/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type2/1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type2/6a.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type2/6b.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
-## Type III
+# Type III
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< centerimg src="/presentations/kauf_bkt/type3/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type3/1.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 $\to$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< centerimg src="/presentations/kauf_bkt/type3/6.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/type3/6.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 
@@ -134,16 +140,15 @@ $\to$
 
 ---
 
-{{% slides/row %}}
-{{% slides/col %}}
+{{< slides/row >}}
+{{< slides/col >}}
 {{< centerimg src="/presentations/mathday23/lord_kelvin.jpg" width="30rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-
-Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æther.
-
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block markdownify="true" grow="1" >}}Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æther.
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 
@@ -196,13 +201,13 @@ Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Pro
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/mathday23/cc_1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/mathday23/cc_1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/mathday23/cc_2.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/mathday23/cc_2.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/Rational.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/lightning/Rational.svg" width="auto">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -212,16 +217,16 @@ ___
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/m1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/m1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/0.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/0.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/inf.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/inf.svg" width="auto">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -236,25 +241,25 @@ ___
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $+$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/1_plus_1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1_plus_1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/1_plus_1_1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1_plus_1_1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
@@ -272,25 +277,25 @@ $2$
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $\vee$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/1_vee_1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1_vee_1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/1_vee_1_1.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/general/1_vee_1_1.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
@@ -311,22 +316,22 @@ $\frac{1}{2}$
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/general/1.svg" width="12rem">}}
+{{< slides/centersvg src="/presentations/general/1.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/Rational.svg" width="12rem">}}
+{{< slides/centersvg src="/presentations/lightning/Rational.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/Mont.svg" width="12rem">}}
+{{< slides/centersvg src="/presentations/lightning/Mont.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/GenMont.svg" width="12rem">}}
+{{< slides/centersvg src="/presentations/lightning/GenMont.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/Alg.svg" width="12rem">}}
+{{< slides/centersvg src="/presentations/lightning/Alg.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/Non-Alg.svg" width="12rem">}}
+{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" width="12rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -352,14 +357,14 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 {{% slides/uncenter %}}
 
-{{< centerimg src="/presentations/lightning/Rational.svg" height="auto">}}
+{{< slides/centersvg src="/presentations/lightning/Rational.svg" height="auto">}}
 
 ---
 {{% slides/uncenter %}}
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="80%" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"  width="80%" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 
@@ -494,7 +499,7 @@ $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
 
 {{% slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;" %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg"height="15rem" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"height="15rem" >}}
 {{% /slides/col%}}
 {{% slides/col %}}
 $=\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$
@@ -513,7 +518,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 To play with twist vectors and continued fractions visit
 
-{{< centerimg src="/qr_codes/TV_tool.svg" width="30%">}}
+{{< slides/centersvg src="/qr_codes/TV_tool.svg" width="30%">}}
 
 <p style="text-align:center !important;">https://joe-starr.com/resources/cont_frac_convert/</p>
 
@@ -571,7 +576,7 @@ Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic co
 
 {{% slides/uncenter %}}
 
-{{< centerimg src="/presentations/lightning/Mont.svg" height="auto">}}
+{{< slides/centersvg src="/presentations/lightning/Mont.svg" height="auto">}}
 
 ---
 
@@ -579,19 +584,19 @@ Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic co
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $+$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
+{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -600,13 +605,13 @@ $=$
 
 {{% slides/row %}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
+{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/rat_plus_rat_1.svg"  width="auto">}}
+{{< slides/centersvg src="/presentations/general/rat_plus_rat_1.svg"  width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
@@ -663,7 +668,7 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/GenMont.svg" width="35rem">}}
+{{< slides/centersvg src="/presentations/lightning/GenMont.svg" width="35rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -674,7 +679,7 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/annotated/GenMont.svg" width="35rem">}}
+{{< slides/centersvg src="/presentations/lightning/annotated/GenMont.svg" width="35rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $= \color{#bd93f9}([3\  0] + [3\  0] + [2\  0]) \color{#f8f8f2}\circ \color{#ff5555}[1\  2]$
@@ -698,7 +703,7 @@ We just need to take our lists of Montesinos and rational and glue them together
 ## Algebraic
 
 
-{{< centerimg src="/presentations/general/alg_containment.svg" width="35rem">}}
+{{< slides/centersvg src="/presentations/general/alg_containment.svg" width="35rem">}}
 
 ---
 
@@ -708,13 +713,13 @@ All possible tangles made from $+$ and $\vee$
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/lightning/Alg.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/lightning/Alg.svg" width="auto">}}
 {{% /slides/col%}}
 {{% slides/col%}}
 A vertical sum of two Montesinos tangles.
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/lightning/annotated/Alg.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg" width="auto">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 {{%  /slides/admonition %}}
@@ -747,7 +752,7 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 ---
 ## Non-algebraic/Polygonal
 
-{{< centerimg src="/presentations/general/nonalg_containment.svg" width="35rem">}}
+{{< slides/centersvg src="/presentations/general/nonalg_containment.svg" width="35rem">}}
 
 ---
 
@@ -757,10 +762,10 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< centerimg src="/presentations/general/1star.svg" width="15rem">}}
+{{< slides/centersvg src="/presentations/general/1star.svg" width="15rem">}}
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< centerimg src="/presentations/general/6star.svg" width="30rem">}}
+{{< slides/centersvg src="/presentations/general/6star.svg" width="30rem">}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -768,7 +773,7 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 
 ### 4-valent planar graph insertions
 
-{{< centerimg src="/presentations/lightning/Non-Alg.svg" width="37rem">}}
+{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" width="37rem">}}
 
 ---
 

@@ -1,9 +1,8 @@
 {{ $markdown := .Get "markdownify" | default "false" }}
 
 
-<!-- Start Center Block -->
 <div class="sliderow " style="align-items:center;height:{{if (.Get "height")}} {{ with .Get "height"}} {{ . | safeCSS }}{{ end }}{{else}} 100% {{ end }};">
-    <div class="slidecolumn" style="flex-grow: {{if (.Get "grow")}} {{ with .Get "grow"}} {{ . | safeCSS }}{{ end }}{{else}} 0 {{ end }};{{ with .Get "style"}} {{ . | safeCSS }}{{ end }}">
+    <div class="slidecolumn" style="flex-grow:{{if (.Get "grow")}} {{ with .Get "grow"}} {{ . | safeCSS }}{{ end }}{{else}} 0 {{ end }};{{ with .Get "style"}} {{ . | safeCSS }}{{ end }}">
 
         {{ if eq $markdown "true" }}
         {{ .Inner | markdownify | emojify }}
@@ -12,4 +11,3 @@
         {{ end }}
     </div>
 </div>
-<!-- end Center Block -->
