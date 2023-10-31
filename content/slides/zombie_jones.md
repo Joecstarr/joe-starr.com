@@ -76,12 +76,12 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 {{< slides/zombie/hide_background  >}}
 
 {{< slides/row style="height:calc(var(--slide-height)*.8);" >}}
-{{< slides/col style="flex-grow 3;color:var(--r-Foreground);" >}}
+{{< slides/col style="flex-grow:3;color:var(--r-Foreground);" >}}
 {{< slides/center_block grow="1" >}}
 {{< slides/centersvg src="/presentations/dna/DNA_chemical_structure.svg" width="auto" heigh="auto">}}
 {{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow 1;text-align:left;"  >}}
+{{< slides/col style="flex-grow:1;text-align:left;"  >}}
 {{< slides/center_block grow="1" >}}
 Each strand has a backbone attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine.
 {{< /slides/center_block >}}
@@ -196,17 +196,34 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 {{< slides/zombie/hide_background  >}}
 
 {{< slides/row style="">}}
-{{< slides/col style="flex-grow 1;" >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow 1;">}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;">}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow 2;" >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow 3;" >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 

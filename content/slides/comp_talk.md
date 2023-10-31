@@ -24,7 +24,6 @@ slides:
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
-
 # The Tanglenomicon
 
 
@@ -50,17 +49,34 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 ---
 
 {{< slides/row style="">}}
-{{< slides/col style="flex-grow 1;" >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow 1;">}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;">}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow 2;" >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow 3;" >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;" >}}
+{{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
+{{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 
@@ -179,7 +195,7 @@ $\to$
 ### KnotInfo
 
 
-{{< centerimg src="/presentations/mathday23/knotinfo_ss.png" width="auto" >}}
+{{< centerimg src="/presentations/mathday23/knotinfo_ss.png"  >}}
 
 ---
 
@@ -199,36 +215,57 @@ Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Pro
 
 ---
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/mathday23/cc_1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/mathday23/cc_2.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/Rational.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:2;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/mathday23/cc_1.svg"  >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/mathday23/cc_2.svg"  >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:2;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/lightning/Rational.svg"  >}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
 
 ___
 
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/m1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/0.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/inf.svg" width="auto">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/row style="" >}}
+{{< slides/col  style="flex-grow:1;" >}}
+{{< slides/centersvg src="/presentations/general/1.svg" >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/centersvg src="/presentations/general/m1.svg" >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/centersvg src="/presentations/general/0.svg" >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/centersvg src="/presentations/general/inf.svg" >}}
+{{< /slides/col>}}
+{{< /slides/row >}}
 
 ---
 
@@ -239,35 +276,53 @@ ___
 ## Operation $+$
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $+$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $=$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/1_plus_1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:7;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1_plus_1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $=$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/1_plus_1_1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1_plus_1_1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $=$
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $2$
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< /slides/row >}}
 
 
 ---
@@ -275,35 +330,54 @@ $2$
 ## Operation $\vee$
 
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $\vee$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $=$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/1_vee_1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1_vee_1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $=$
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/1_vee_1_1.svg" width="auto">}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1_vee_1_1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
 $=$
-{{% /slides/col%}}
-{{% slides/col%}}
-$\frac{1}{2}$
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+$2$
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< /slides/row >}}
 
 ---
 
@@ -312,28 +386,62 @@ $\frac{1}{2}$
 
 ---
 
+{{% slides/uncenter %}}
+
 ## Building up
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/general/1.svg" width="12rem">}}
-{{% /slides/col%}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/lightning/Rational.svg" width="12rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/Mont.svg" width="12rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/GenMont.svg" width="12rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/Alg.svg" width="12rem">}}
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" width="12rem">}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/row >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/general/1.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/lightning/Rational.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/lightning/Mont.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< /slides/row >}}
+{{< /slides/center_block >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/row >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/lightning/GenMont.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/lightning/Alg.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;color:var(--r-Orange);" >}}
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
+{{< /slides/center_block >}}
+{{< /slides/col>}}
+{{< /slides/row >}}
+
+{{< /slides/center_block >}}
+
 
 ---
 
@@ -342,16 +450,7 @@ $\frac{1}{2}$
 ---
 
 
-## Rational Tangles
-
-Let $t$ be a pair of unoriented arcs properly embedded in a 3 -ball $B$. A 2-tangle is rational if there exists an orientation preserving homeomorphism of pairs: $$ g:(B, t) \longrightarrow\left(D^2 \times I,\{x, y\} \times I\right) \quad(\text { a trivial tangle })$$
-
-<!-- @@@TODO: Picture -->
-
-
-{{% slides/citations %}}
-Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
-{{% /slides/citations %}}
+# Rational Tangles
 
 ---
 
@@ -362,18 +461,22 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 ---
 {{% slides/uncenter %}}
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"  width="80%" >}}
-{{% /slides/col%}}
-{{% slides/col%}}
-
-{{% /slides/col%}}
-{{% slides/col%}}
-$\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\\\&\\\\
+{{< slides/center_block grow="1" >}}
+{{< slides/row  style=" ">}}
+{{< slides/col  style="flex-grow:3;" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"   >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col  style="flex-grow:1;" >}}
+{{< slides/center_block grow="1" >}}
+$\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\&\\
 \to&\ [3\ 2\ 2]\end{aligned}$
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/center_block >}}
 
 ---
 
@@ -400,15 +503,17 @@ letting us generate twist vectors by simply counting from $0\to 2^{N-1}$.
 ---
 
 
-{{%  slides/admonition type="Example" title="Twist Vectors for $N=5$" %}}
-\begin{array}{|l|l|l|l|}
+{{<  slides/admonition type="Example" title="Twist Vectors for $N=5$" >}}
+
+$$\begin{array}{|l|l|l|l|}
 \hline
-[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1]\ &\ [1\ 2\ 1\ 1]\ &\ [1\ 1\ 2\ 1]\\\\\hline
-[1\ 1\ 1\ 2]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\\\hline
-[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2]\\\\\hline
-[2\ 3]\ &\ [4\ 1]\ &\ [1\ 4]\ &\ [5]\\\\\hline
-\end{array}
-{{% /slides/admonition %}}
+[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1]\ &\ [1\ 2\ 1\ 1]\ &\ [1\ 1\ 2\ 1]\\\hline
+[1\ 1\ 1\ 2]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\hline
+[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2]\\\hline
+[2\ 3]\ &\ [4\ 1]\ &\ [1\ 4]\ &\ [5]\\\hline
+\end{array}$$
+
+{{< /slides/admonition >}}
 
 ---
 
@@ -422,15 +527,17 @@ We can write a *canonical twist vector* by taking the odd length vectors, append
 
 ---
 
-{{%  slides/admonition type="Example" title="Compositions of $N=5$" %}}
+{{<  slides/admonition type="Example" title="Compositions of $N=5$" >}}
+$$
 \begin{array}{|c|c|c|c|}
 \hline
-[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1\ 0]\ &\ [1\ 2\ 1\ 1\ 0]\ &\ [1\ 1\ 2\ 1\ 0]\\\\\hline
-[1\ 1\ 1\ 2\ 0]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\\\hline
-[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2\ 0]\\\\\hline
-[2\ 3\ 0]\ &\ [4\ 1\ 0]\ &\ [1\ 4\ 0]\ &\ [5]\\\\\hline
+[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1\ 0]\ &\ [1\ 2\ 1\ 1\ 0]\ &\ [1\ 1\ 2\ 1\ 0]\\\hline
+[1\ 1\ 1\ 2\ 0]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\hline
+[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2\ 0]\\\hline
+[2\ 3\ 0]\ &\ [4\ 1\ 0]\ &\ [1\ 4\ 0]\ &\ [5]\\\hline
 \end{array}
-{{% /slides/admonition %}}
+$$
+{{< /slides/admonition >}}
 
 
 ---
@@ -537,7 +644,7 @@ To play with twist vectors and continued fractions visit
 {{% slides/row %}}
 {{% slides/col %}}
 ### Numerator
-{{< centerimg src="/presentations/mathday23/cc_2.svg" width="auto">}}
+{{< centerimg src="/presentations/mathday23/cc_2.svg" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 ### Denominator
@@ -584,19 +691,19 @@ Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic co
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"   >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $+$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"  width="auto" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"   >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
+{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  >}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 
@@ -605,13 +712,13 @@ $=$
 
 {{% slides/row %}}
 {{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  width="auto">}}
+{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< slides/centersvg src="/presentations/general/rat_plus_rat_1.svg"  width="auto">}}
+{{< slides/centersvg src="/presentations/general/rat_plus_rat_1.svg"  >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 $=$
@@ -632,7 +739,7 @@ We again generate stencils (twist vectors ) but require that each entry satisfie
 {{%  slides/admonition type="Example" title="Stencils for $N=5$" %}}
 \begin{array}{|l|l|l|l|}
 \hline
-[2\ 3]\ &\ [3\ 2]\\\\\hline
+[2\ 3]\ &\ [3\ 2]\\\hline
 \end{array}
 {{% /slides/admonition %}}
 
@@ -643,10 +750,10 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
 {{%  slides/admonition type="Example" title="Montesinos tangles for $N=5$" %}}
 \begin{array}{|l|l|}
 \hline
-\color{#bd93f9}\text{Stencil:}[3\ 2]\ &\ \\\\\hline
-\color{#f8f8f2}[1\ 2\ 0] + [1\ 1\ 0]\ &\ [2\ 1\ 0] + [1\ 1\ 0]\\\\\hline
-\color{#bd93f9}\text{Stencil:}[2\ 3]\\\\\hline
-\color{#f8f8f2}[1\ 1\ 0] + [1\ 2\ 0]\ &\ [1\ 1\ 0] + [2\ 1\ 0]\\\\\hline
+\color{#bd93f9}\text{Stencil:}[3\ 2]\ &\ \\\hline
+\color{#f8f8f2}[1\ 2\ 0] + [1\ 1\ 0]\ &\ [2\ 1\ 0] + [1\ 1\ 0]\\\hline
+\color{#bd93f9}\text{Stencil:}[2\ 3]\\\hline
+\color{#f8f8f2}[1\ 1\ 0] + [1\ 2\ 0]\ &\ [1\ 1\ 0] + [2\ 1\ 0]\\\hline
 \end{array}
 {{% /slides/admonition %}}
 
@@ -713,13 +820,13 @@ All possible tangles made from $+$ and $\vee$
 
 {{% slides/row %}}
 {{% slides/col %}}
-{{< slides/centersvg src="/presentations/lightning/Alg.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/lightning/Alg.svg" >}}
 {{% /slides/col%}}
 {{% slides/col%}}
 A vertical sum of two Montesinos tangles.
 {{% /slides/col%}}
 {{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg" width="auto">}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg" >}}
 {{% /slides/col%}}
 {{% /slides/row %}}
 {{%  /slides/admonition %}}
@@ -848,7 +955,7 @@ Translator -->|Uses| Storage
  -->
 # WebTech
 
-{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png" width="auto" >}}
+{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
 
 
 ---

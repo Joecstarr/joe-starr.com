@@ -163,6 +163,7 @@ li {
 .stroke-background{stroke: var(--r-Background) !important ;}
 .stroke-forground{stroke: var(--r-Forground) !important ;}
 .stroke-highlight{stroke: var(--r-Highlight) !important ;}
+.stroke-selection{stroke: var(--r-Selection) !important ;}
 .fill-blue{fill: var(--r-Blue) !important ;}
 .fill-green{fill: var(--r-Green) !important ;}
 .fill-orange{fill: var(--r-Orange) !important ;}
@@ -173,3 +174,4 @@ li {
 .fill-background{fill: var(--r-Background) !important ;}
 .fill-forground{fill: var(--r-Forground) !important ;}
 .fill-highlight{fill: var(--r-Highlight) !important ;}
+.fill-selection{fill: var(--r-Selection) !important ;}
