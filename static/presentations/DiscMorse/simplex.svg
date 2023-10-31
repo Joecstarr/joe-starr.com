@@ -80,7 +80,7 @@
     <g inkscape:groupmode="layer" id="layer4" inkscape:label="3 cells" />
     <g inkscape:groupmode="layer" id="layer2" inkscape:label="1cells" />
     <g inkscape:label="0cells" inkscape:groupmode="layer" id="layer1">
-        <circle class="fill-orange fill-orange stroke-orange"
+        <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:4.72076;stroke-dasharray:none" id="path1534"
             cx="281.56342" cy="208.15675" r="32.639622" />
         <g id="g10055" transform="rotate(30,704.96269,293.47135)">
@@ -88,10 +88,10 @@
                 <rect class="fill-highlight stroke-highlight"
                     style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1"
                     id="rect1825" width="412.3356" height="23.733389" x="558.7605" y="149.76324" />
-                <circle class="fill-orange fill-orange stroke-orange"
+                <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                     style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                     id="path1534-3" cx="554.55267" cy="161.62994" r="27.071392" />
-                <circle class="fill-orange fill-orange stroke-orange"
+                <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                     style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                     id="path1534-3-6" cx="970.82635" cy="161.62994" r="27.071392" />
             </g>
@@ -111,13 +111,13 @@
                 style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1"
                 id="rect1825-7-6-2" width="412.3356" height="23.733389" x="-1027.2146" y="32.806927"
                 transform="matrix(-0.49138185,-0.87094425,-0.87094425,0.49138185,0,0)" />
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                 id="path1534-3-5" cx="66.651566" cy="902.02185" r="27.071392" />
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                 id="path1534-3-5-5" cx="260.32059" cy="558.41852" r="27.071392" />
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                 id="path1534-3-6-3" cx="461.03711" cy="904.45984" r="27.071392" />
         </g>
@@ -146,16 +146,16 @@
                     d="M 5.0992988,30.243001 28.634331,30.500156" class="stroke-highlight"
                     style="fill:none;fill-opacity:1;stroke:#6272a4;stroke-width:0.480665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.44199, 0.480665;stroke-dashoffset:0;stroke-opacity:1" />
             </g>
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.2263;stroke-dasharray:none"
                 id="path1534-3-6-3-1" cx="773.7973" cy="978.1123" r="15.392784" />
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:1.76312;stroke-dasharray:none"
                 id="path1534-3-6-3-1-2" cx="621.56036" cy="877.41589" r="12.190316" />
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:1.76312;stroke-dasharray:none"
                 id="path1534-3-6-3-1-2-7" cx="988.47229" cy="886.18848" r="12.190316" />
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:1.76312;stroke-dasharray:none"
                 id="path1534-3-6-3-1-2-7-0" cx="809.85815" cy="477.80801" r="12.190316" />
         </g>

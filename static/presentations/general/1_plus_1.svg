@@ -29,7 +29,8 @@
             <path class="stroke-orange"
                 style="fill:none;stroke:#ffb86c;stroke-width:17.0079;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
                 d="M 98.961866,471.06993 441.03815,68.930084" id="path5612" />
-            <ellipse
+            <ellipse                    class="fill-background"
+
                 style="fill:#282a36;fill-opacity:1;stroke:none;stroke-width:23.0763;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:130.744;paint-order:stroke markers fill"
                 id="path5666" cx="270" cy="-270" transform="scale(1,-1)" rx="34.322037" ry="38.612289" />
             <path class="stroke-orange"
@@ -47,7 +48,8 @@
             <path class="stroke-orange"
                 style="fill:none;stroke:#ffb86c;stroke-width:17.0079;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
                 d="M 98.961866,471.06993 441.03815,68.930084" id="path5612-0" />
-            <ellipse
+            <ellipse                    class="fill-background"
+
                 style="fill:#282a36;fill-opacity:1;stroke:none;stroke-width:23.0763;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:130.744;paint-order:stroke markers fill"
                 id="path5666-9" cx="270" cy="-270" transform="scale(1,-1)" rx="34.322037" ry="38.612289" />
             <path class="stroke-orange"

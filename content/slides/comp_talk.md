@@ -20,7 +20,7 @@ slides:
         transition: "none"
 ---
 
-{{< slides/theme >}}
+{{< slides/theme is="highcontrast.css" >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
@@ -766,10 +766,10 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
 {{<  slides/admonition type="Example" title="Montesinos tangles for $N=5$" >}}
 \begin{array}{|l|l|}
 \hline
-\color{#bd93f9}\text{Stencil:}[3\ 2]\ &\ \\\hline
-\color{#f8f8f2}[1\ 2\ 0] + [1\ 1\ 0]\ &\ [2\ 1\ 0] + [1\ 1\ 0]\\\hline
-\color{#bd93f9}\text{Stencil:}[2\ 3]\\\hline
-\color{#f8f8f2}[1\ 1\ 0] + [1\ 2\ 0]\ &\ [1\ 1\ 0] + [2\ 1\ 0]\\\hline
+\color{var(--r-Purple)}\text{Stencil:}[3\ 2]\ &\ \\\hline
+\color{var(--r-Foreground)}[1\ 2\ 0] + [1\ 1\ 0]\ &\ [2\ 1\ 0] + [1\ 1\ 0]\\\hline
+\color{var(--r-Purple)}\text{Stencil:}[2\ 3]\\\hline
+\color{var(--r-Foreground)}[1\ 1\ 0] + [1\ 2\ 0]\ &\ [1\ 1\ 0] + [2\ 1\ 0]\\\hline
 \end{array}
 {{< /slides/admonition >}}
 
@@ -805,7 +805,7 @@ $\ $
 {{< /slides/col >}}
 {{< slides/col  style="flex-grow:1;" >}}
 {{< slides/center_block grow="1" >}}
-$= \color{#bd93f9}([3\  0] + [3\  0] + [2\  0]) \color{#f8f8f2}\circ \color{#ff5555}[1\  2]$
+$= \color{var(--r-Purple)}([3\  0] + [3\  0] + [2\  0]) \color{var(--r-Foreground)}\circ \color{var(--r-Red)}[1\  2]$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}

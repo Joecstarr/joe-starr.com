@@ -22,9 +22,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.1575135"
-     inkscape:cx="134.18224"
-     inkscape:cy="107.76294"
+     inkscape:zoom="8.630054"
+     inkscape:cx="18.597798"
+     inkscape:cy="64.831576"
      inkscape:window-width="1920"
      inkscape:window-height="1120"
      inkscape:window-x="-11"
@@ -111,47 +111,35 @@
        d="m 174.47856,116.50688 c -4.43854,17.02626 10.85626,7.51101 13.39707,28.69623"
        id="path4719-3-8-00"
        sodipodi:nodetypes="cc" />
-    <circle
-       class="fill-orange fill-orange"
-       style="fill:#ffb86c;fill-opacity:1;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+    <path
        id="path4663"
-       cx="94.691841"
-       cy="104.1811"
-       r="20" />
-    <circle
-       class="fill-orange fill-orange"
-       style="fill:#ffb86c;fill-opacity:1;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       class="fill-orange  fill-orange stroke-orange "
+       d="m 114.69184,104.1811 a 20,20 0 0 1 -19.999999,20 20,20 0 0 1 -20,-20 20,20 0 0 1 20,-20.000001 20,20 0 0 1 19.999999,20.000001 z" />
+    <path
        id="path4663-3"
-       cx="194.14758"
-       cy="161.81883"
-       r="20" />
-    <circle
-       class="fill-orange fill-orange"
-       style="fill:#ffb86c;fill-opacity:1;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       class="fill-orange  fill-orange stroke-orange "
+       d="m 214.14758,161.81883 a 20,20 0 0 1 -20,20 20,20 0 0 1 -20,-20 20,20 0 0 1 20,-20 20,20 0 0 1 20,20 z" />
+    <path
        id="path4663-8"
-       cx="124.12388"
-       cy="161.81883"
-       r="20" />
-    <circle
-       class="fill-orange fill-orange"
-       style="fill:#ffb86c;fill-opacity:1;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       class="fill-orange  fill-orange stroke-orange "
+       d="m 144.12388,161.81883 a 20,20 0 0 1 -20,20 20,20 0 0 1 -20,-20 20,20 0 0 1 20,-20 20,20 0 0 1 20,20 z" />
+    <path
        id="path4663-0"
-       cx="54.10017"
-       cy="161.81883"
-       r="20" />
-    <circle
-       class="fill-orange fill-orange"
-       style="fill:#ffb86c;fill-opacity:1;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       class="fill-orange  fill-orange stroke-orange "
+       d="m 74.10017,161.81883 a 20,20 0 0 1 -20,20 20,20 0 0 1 -20,-20 20,20 0 0 1 20,-20 20,20 0 0 1 20,20 z" />
+    <path
        id="path4663-9"
-       cx="27.611347"
-       cy="104.1811"
-       r="20" />
-    <circle
-       class="fill-orange fill-orange"
-       style="fill:#ffb86c;fill-opacity:1;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       class="fill-orange  fill-orange stroke-orange "
+       d="m 47.611347,104.1811 a 20,20 0 0 1 -20,20 20,20 0 0 1 -19.9999998,-20 20,20 0 0 1 19.9999998,-20.000001 20,20 0 0 1 20,20.000001 z" />
+    <path
        id="path4663-7"
-       cx="161.77234"
-       cy="104.1811"
-       r="20" />
+       style="fill:#ffb86c;stroke-width:4.23111;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:130.744;paint-order:stroke markers fill"
+       class="fill-orange  fill-orange stroke-orange "
+       d="m 181.77234,104.1811 a 20,20 0 0 1 -20,20 20,20 0 0 1 -20,-20 20,20 0 0 1 20,-20.000001 20,20 0 0 1 20,20.000001 z" />
   </g>
 </svg>

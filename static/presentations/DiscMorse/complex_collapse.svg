@@ -261,7 +261,7 @@
                         style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1"
                         id="rect1825-7-6-2-2" width="412.3356" height="23.733389" x="-1027.2146" y="32.806927"
                         transform="matrix(-0.49138185,-0.87094425,-0.87094425,0.49138185,0,0)" />
-                    <circle class="fill-orange fill-orange stroke-orange"
+                    <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                         id="path1534-3-6-3-8" cx="461.03711" cy="904.45984" r="27.071392" />
                 </g>
@@ -270,7 +270,7 @@
                         style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1"
                         id="rect1825-7-6-2-2-2" width="412.3356" height="23.733389" x="-1027.2146" y="32.806927"
                         transform="matrix(-0.49138185,-0.87094425,-0.87094425,0.49138185,0,0)" />
-                    <circle class="fill-orange fill-orange stroke-orange"
+                    <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                         id="path1534-3-6-3-8-0" cx="461.03711" cy="904.45984" r="27.071392" />
                 </g>
@@ -289,13 +289,13 @@
                         style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1"
                         id="rect1825-7-6-2" width="412.3356" height="23.733389" x="-1027.2146" y="32.806927"
                         transform="matrix(-0.49138185,-0.87094425,-0.87094425,0.49138185,0,0)" />
-                    <circle class="fill-orange fill-orange stroke-orange"
+                    <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                         id="path1534-3-5" cx="66.651566" cy="902.02185" r="27.071392" />
-                    <circle class="fill-orange fill-orange stroke-orange"
+                    <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                         id="path1534-3-5-5" cx="260.32059" cy="558.41852" r="27.071392" />
-                    <circle class="fill-orange fill-orange stroke-orange"
+                    <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                         style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                         id="path1534-3-6-3" cx="461.03711" cy="904.45984" r="27.071392" />
                 </g>
@@ -409,7 +409,7 @@
                 height="23.733389" width="412.3356" id="rect1825-7-6-2-2-6" class="fill-highlight stroke-highlight"
                 style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1" />
             <circle r="27.071392" cy="904.45984" cx="461.03711" id="path1534-3-6-3-8-5"
-                class="fill-orange fill-orange stroke-orange"
+                class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none" />
         </g>
         <g transform="matrix(0.53076824,0.10472123,-0.10472123,0.53076824,683.87475,-211.72234)" id="g8353-5">
@@ -425,13 +425,13 @@
                 height="23.733389" width="412.3356" id="rect1825-7-6-2-1" class="fill-highlight stroke-highlight"
                 style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1" />
             <circle r="27.071392" cy="902.02185" cx="66.651566" id="path1534-3-5-6"
-                class="fill-orange fill-orange stroke-orange"
+                class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none" />
             <circle r="27.071392" cy="558.41852" cx="260.32059" id="path1534-3-5-5-2"
-                class="fill-orange fill-orange stroke-orange"
+                class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none" />
             <circle r="27.071392" cy="904.45984" cx="461.03711" id="path1534-3-6-3-1"
-                class="fill-orange fill-orange stroke-orange"
+                class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none" />
         </g><text xml:space="preserve" class="fill-foreground"
             style="font-style:normal;font-weight:normal;font-size:25.6029px;line-height:1.25;font-family:sans-serif;fill:#f8f8f2;fill-opacity:1;stroke:none;stroke-width:0.480054"
@@ -523,7 +523,7 @@
                 style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1"
                 id="rect1825-7-6-2-2-6-0" width="412.3356" height="23.733389" x="-1027.2146" y="32.806927"
                 transform="matrix(-0.49138185,-0.87094425,-0.87094425,0.49138185,0,0)" />
-            <circle class="fill-orange fill-orange stroke-orange"
+            <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none"
                 id="path1534-3-6-3-8-5-1" cx="461.03711" cy="904.45984" r="27.071392" />
         </g>
@@ -534,13 +534,13 @@
             id="rect1825-7-6-4-9" class="fill-highlight stroke-highlight"
             style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:2.61466;stroke-dasharray:none;stroke-opacity:1" />
         <circle transform="rotate(11.161175)" r="14.645635" cy="741.17023" cx="338.25787" id="path1534-3-5-6-8"
-            class="fill-orange fill-orange stroke-orange"
+            class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.11824;stroke-dasharray:none" />
         <circle transform="rotate(11.161175)" r="14.645635" cy="555.28064" cx="443.0329" id="path1534-3-5-5-2-7"
-            class="fill-orange fill-orange stroke-orange"
+            class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.11824;stroke-dasharray:none" />
         <circle transform="rotate(11.161175)" r="14.645635" cy="742.48914" cx="551.62061" id="path1534-3-6-3-1-5"
-            class="fill-orange fill-orange stroke-orange"
+            class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.11824;stroke-dasharray:none" /><text
             id="text16880-9-5" y="593.42389" x="80.715256" class="fill-foreground"
             style="font-style:normal;font-weight:normal;font-size:25.6029px;line-height:1.25;font-family:sans-serif;fill:#f8f8f2;fill-opacity:1;stroke:none;stroke-width:0.480054"
@@ -619,17 +619,17 @@
                 height="23.733389" width="412.3356" id="rect1825-7-6-2-2-6-0-8" class="fill-highlight stroke-highlight"
                 style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:4.833;stroke-dasharray:none;stroke-opacity:1" />
             <circle r="27.071392" cy="904.45984" cx="461.03711" id="path1534-3-6-3-8-5-1-4"
-                class="fill-orange fill-orange stroke-orange"
+                class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
                 style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.91541;stroke-dasharray:none" />
         </g>
         <rect class="fill-highlight stroke-highlight"
             style="fill:#6272a4;fill-opacity:1;stroke:#6272a4;stroke-width:2.61466;stroke-dasharray:none;stroke-opacity:1"
             id="rect1825-7-6-4-9-4" width="223.07373" height="12.839773" x="-155.09846" y="1080.9585"
             transform="rotate(-49.407378)" />
-        <circle class="fill-orange fill-orange stroke-orange"
+        <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.11824;stroke-dasharray:none"
             id="path1534-3-5-6-8-8" cx="877.89154" cy="661.92303" r="14.645635" transform="rotate(11.161175)" />
-        <circle class="fill-orange fill-orange stroke-orange"
+        <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.11824;stroke-dasharray:none"
             id="path1534-3-5-5-2-7-2" cx="982.66656" cy="476.03351" r="14.645635" transform="rotate(11.161175)" /><text
             xml:space="preserve" class="fill-foreground"
@@ -685,7 +685,7 @@
             class="fill-yellow"
             style="fill:#f1fa8c;fill-opacity:1;stroke:#f1fa8c;stroke-width:3.23748;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInL-8-3-4-7)" />
         <circle transform="rotate(-168.83882)" r="14.645635" cy="-851.70166" cx="-676.03552"
-            id="path1534-3-6-3-8-5-1-4-3" class="fill-orange fill-orange stroke-orange"
+            id="path1534-3-6-3-8-5-1-4-3" class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.11824;stroke-dasharray:none" />
         <path id="path5838" d="m 368,184 187,-5" class="stroke-foreground"
             style="fill:none;stroke:#f8f8f2;stroke-width:3.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend);stroke-miterlimit:4;stroke-dasharray:none" />
