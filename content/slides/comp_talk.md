@@ -20,9 +20,18 @@ slides:
         transition: "none"
 ---
 
-{{< slides/theme is="highcontrast.css" >}}
+{{< slides/theme >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
+
+
+<style>
+#qr svg{
+    width:35rem;
+    height:35rem;
+}
+
+</style>
 
 # The Tanglenomicon
 
@@ -628,7 +637,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 To play with twist vectors and continued fractions visit
 
-{{< slides/centersvg src="/qr_codes/TV_tool.svg" >}}
+{{< slides/centersvg src="/qr_codes/contfrac.svg" direct="true" id="qr" >}}
 
 <p style="text-align:center !important;">https://joe-starr.com/resources/cont_frac_convert/</p>
 
@@ -881,23 +890,23 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 
 ---
 
+
+
+
+
 ## 4-valent planar graphs
 
 
 
 {{< slides/row  >}}
 {{< slides/col  style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/1star.svg"  >}}
-{{< /slides/center_block >}}
+{{< slides/centersvg src="/presentations/general/1star.svg" block="true" >}}
 {{< /slides/col >}}
 {{< slides/col style="flex-grow:0;" >}}
 $\quad$
 {{< /slides/col >}}
 {{< slides/col style="flex-grow:3;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/6star.svg"  >}}
-{{< /slides/center_block >}}
+{{< slides/centersvg src="/presentations/general/6star.svg"  block="true" >}}
 {{< /slides/col >}}
 {{< /slides/row  >}}
 
