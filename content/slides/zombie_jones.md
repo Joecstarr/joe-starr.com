@@ -715,7 +715,7 @@ $$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-
 
 # Day 53
 
-Time is running out. With your preliminary results in hand the vaccine is being produced. The world is now on your shoulders waiting for your results.
+Time is running out. With your preliminary results in hand the vaccine is being produced. The future of the world is now on your shoulders waiting for your results.
 
 ---
 {{< slides/zombie/hide_background  >}}
@@ -988,13 +988,13 @@ ${-t^{4}+t^{3}+t^{1}}$
 
 # Day 121
 
-With the successful completion of your work the vaccine is being administer world wide. The president congratulates you for your work and the world is optimistic.
+With the successful completion of your work the vaccine is being administer world wide. The President congratulates you for your work and the world is optimistic.
 
 ---
 
 # Day 300
 
-The virus is completely controlled and you win every prize in every field imaginable.
+The virus is completely controlled and you win every prize in every field imaginable!
 
 ---
 
