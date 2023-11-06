@@ -39,13 +39,13 @@ slides:
 
 ## Day 0: smalltowns-ville, IA:
 
-A man picks up his daily slice of breakfast pizza from his local gas station. What he doesn't know is that it's his last. My mid-day he feels terrible, by the time he's ready to go home for dinner he's already feasting on brains.
+A man picks up his daily slice of breakfast pizza from his local gas station. What he doesn't know is that it's his last. By mid-day he feels terrible, by the time he's ready to go home for dinner he's already feasting on brains.
 
 ---
 
 # Day 4: CDC Headquarters
 
-The spread of the Z-virus has spread midwest wide. You're working at the CDC as an expert in microscopy. You're working frantically to get any information on the Z-virus you can. You decide to image the DNA of the Z-Virus.
+The Z-virus has spread midwest-wide. You're working at the CDC as an expert in microscopy. You're working frantically to get any information on the Z-virus you can. You decide to image the DNA of the Z-Virus.
 
 
 ---
@@ -83,7 +83,7 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 {{< /slides/col >}}
 {{< slides/col style="flex-grow:1;text-align:left;"  >}}
 {{< slides/center_block grow="1" >}}
-Each strand has a backbone attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine.
+Each strand has a backbone. Attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine.
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
@@ -171,7 +171,7 @@ Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The tw
 
 The spread is now nation wide but still under some control.
 
-You've successfully imaged the DNA of the Z-virus and found DNA with a knot. Your CDC coworkers are useing your findings to construct an anti-Z-virus. The anti-virus is the mirror of the DNA knot you've found. This will allow the human body to build anti-bodies for the Z-virus.
+You've successfully imaged the DNA of the Z-virus and found DNA with a knot. Your CDC coworkers are using your findings to construct an anti-Z-virus. The anti-virus is the mirror of the DNA knot you've found. This will allow the human body to build anti-bodies for the Z-virus.
 
 The CDC now needs you to verify that the DNA knot they've produced truly is the mirror of the Z-virus.
 
@@ -271,7 +271,7 @@ DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, 
 
 ---
 
-# reidemeister moves
+# Reidemeister moves
 
 ---
 # Type I
@@ -414,7 +414,7 @@ ${\begin{matrix}
 # What are we looking for?
 
 We want to use our bracket to build a polynomial that can tell two knots apart.
-In particular we want to tell a knot and it's "anti-knot" apart.
+In particular, we want to differentiate a knot and its "anti-knot"(mirror).
 
 ---
 
@@ -427,7 +427,7 @@ In particular we want to tell a knot and it's "anti-knot" apart.
 
 # Check what happens under Reidemeister moves
 
-If our bracket "respects" reidemeister moves it respects knot "equivalence".
+If our bracket "respects" Reidemeister moves it respects knot "equivalence".
 
 ---
 
