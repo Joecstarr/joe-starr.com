@@ -91,6 +91,7 @@ if (params.slides.diagram) {
     // `startOnLoad` must be false since diagrams are lazily rendered.
     mermaidOptions['startOnLoad'] = false;
     mermaidOptions['securityLevel'] = "loose";
+    mermaidOptions['useMaxWidth'] = false;
 
     mermaid.initialize(mermaidOptions);
 
@@ -98,16 +99,17 @@ if (params.slides.diagram) {
     // See: https://github.com/hakimel/reveal.js/issues/2863#issuecomment-1107444425
     let renderMermaidDiagrams = function renderMermaidDiagrams(event) {
 
-        let mermaidDivs = event.currentSlide.querySelectorAll('.mermaid:not(.done)');
+        let mermaidDivs = event.currentSlide.querySelectorAll('.mermaid:not(.mermaid-done)');
         let indices = Reveal.getIndices();
         let pageno = `${indices.h}-${indices.v}`
-
+        let cnt = 0;
         mermaidDivs.forEach(function (mermaidDiv, i) {
             let graphDefinition = mermaidDiv.textContent;
+            cnt++;
             // mermaid.mermaidAPI.render(`mermaid${pageno}-${i}`, graphDefinition, insertSvg);
-            mermaid.render(`mermaid${pageno}-${i}`, graphDefinition).then((obj) => {
+            mermaid.render(`mermaid-${cnt}`, graphDefinition).then((obj) => {
                 mermaidDiv.innerHTML = obj.svg;
-                mermaidDiv.classList.add('done');
+                mermaidDiv.classList.add('mermaid-done');
             });
         });
         Reveal.layout();

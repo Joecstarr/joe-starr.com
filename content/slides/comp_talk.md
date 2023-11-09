@@ -12,8 +12,6 @@ slides:
   diagram: true
   diagram_options:
         theme: "dark"
-        themeVariables:
-                fontSize: 30
   reveal_options:
         theme: "none"
         center: true
@@ -44,7 +42,16 @@ slides:
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+#mermaid-0{
+    width:60vw;
+}
+#mermaid-1{
+    width:47vw;
+}
+
 </style>
+
 
 
 # The Tanglenomicon
@@ -574,18 +581,41 @@ $$
 
 
 ---
+{{% slides/uncenter %}}
 
-# Programmatic Description
+##### Programmatic Description
 
----
 
 ```mermaid
 stateDiagram-v2
     direction LR
+
     state if_done <<choice>>
     State_i: i=0
     State_ipp: i++
-    state "Construct TV from i as a bitfield" as tv_calc
+    state "Construct TV from i as a bitfield" as tv_calc{
+        state "tmp=i;j=0;cnt=N" as State_temp
+        State_jpp: j++
+        State_cntmm: cnt--
+        State_sum_tv: TV[j]++
+        State_rsh: tmp=tmp>>1
+        state if_lsb <<choice>>
+        state if_cnteo <<choice>>
+        State_store_tv: Store TV
+
+        [*] --> State_temp
+        State_temp --> if_cnteo
+        if_cnteo--> State_cntmm
+        if_cnteo--> State_store_tv: if cnt==0
+        State_store_tv --> [*]
+
+        State_cntmm -->if_lsb
+        if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
+        State_sum_tv --> State_rsh
+        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
+        State_jpp --> State_rsh
+        State_rsh --> if_cnteo
+    }
     [*] --> State_i
     State_i --> if_done
     if_done --> tv_calc: if i < 2**(N-1)
@@ -593,36 +623,8 @@ stateDiagram-v2
     State_ipp --> if_done
     if_done --> [*]: if i > 2**(N-1)
 
-```
----
-
-## Construct TV from i as a bitfield
-
-```mermaid
-stateDiagram-v2
-    direction LR
-
-        state "tmp=i;j=0" as State_temp
-        State_jpp: j++
-        State_sum_tv: TV[j]++
-        State_rsh: tmp=tmp>>1
-        state if_lsb <<choice>>
-        state if_teo <<choice>>
-        State_store_tv: Store TV
-
-        [*] --> State_temp
-        State_temp --> if_lsb
-        if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
-        State_sum_tv --> if_teo
-        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
-        State_jpp --> State_rsh
-        if_teo--> State_rsh: if tmp>0
-        State_rsh -->if_lsb
-        if_teo--> State_store_tv: if tmp<0
-        State_store_tv --> [*]
 
 ```
-
 ---
 
 # Computations

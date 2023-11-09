@@ -153,6 +153,24 @@ li {
     width: auto;
 }
 
+.mermaid-done{
+    max-height: calc(var(--slide-height)) !important;
+    max-width: calc(var(--slide-width)) !important;
+    width: auto;
+}
+
+.mermaid-done svg{
+    max-height: calc(var(--slide-height)) !important;
+    max-width: calc(var(--slide-width)) !important;
+    width: auto;
+}
+
+.mermaid *{
+    line-height: .9;
+}
+
+
+
 .stroke-blue{stroke: var(--r-Blue) !important ;}
 .stroke-green{stroke: var(--r-Green) !important ;}
 .stroke-orange{stroke: var(--r-Orange) !important ;}
