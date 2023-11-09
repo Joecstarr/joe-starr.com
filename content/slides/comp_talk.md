@@ -33,8 +33,8 @@ slides:
     margin-right: auto !important;
 }
 #tech_img {
-    width:40rem;
-    height:40rem;
+    width:45rem;
+    height:auto;
     margin-left: auto !important;
     margin-right: auto !important;
 }
@@ -766,10 +766,13 @@ Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational K
 ---
 ## Existence of canonical diagrams for Montesinos tangles
 
+{{<  slides/admonition type="Note" title="Theorem Montesinos" >}}
 Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying one of the following constructions for horizontal and vertical Montesinos tangles, respectively.
-
+<br/>
 1. $T \cong L_1+\cdots+L_m+\frac{k}{1}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
+<br/>
 2. $T \cong L_1 * \cdots * L_m * \frac{1}{k}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $-\infty<\frac{p_i}{q_i}<-1$, and $\frac{1}{k}$ is a vertical integer subtangle.
+{{<  /slides/admonition >}}
 
 {{% slides/citations %}}
 Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
@@ -998,8 +1001,15 @@ There exist tables of 4 valent graphs. We can use those with insertions from our
 # Tooling
 
 ---
+{{% slides/uncenter %}}
 
-# Design Goals
+### Design Goals
+
+The design for The Tanglenomicon project prioritizes flexibility and extensibility. We want a feature, maybe "calculate Jones polynomial," to be runnable in a jupyter notebook or on a university cluster. We're aiming for a "write once deployanywhere" design.
+
+To that end we've decoupled functionality wherever feasible, taking a layered
+approach for system design.
+
 
 ```mermaid
 flowchart LR
@@ -1025,7 +1035,45 @@ Translator -->|Uses| Storage
 
 ```
 
+
+
 ---
+### Runners
+
+A runner is a human/machine interface layer. This abstracts the routines in lower layers for a user to interact with. This could be a CLI, python binding, a Mathematica wrapper, or a web API.
+
+---
+
+## Runnables
+
+*Generators*
+
+Generators create new data. A generator might look like a module to create rational tangles. They may use one or more Computations, Notations, or Translators.
+
+*Computation*
+
+Computations compute a value for a given data. A computation might look like a module for computing a Jones polynomial of a link, or a computing the writhe of a tangle.
+
+*Translators*
+
+Translators define a conversion between two Notations. A translator might look like a module for converting from PD notation to Conway notation and back again.
+
+---
+
+## Data Wranglers
+
+*Notations*
+
+Notations define a notational convention for a link/tangle. They describe a method for converting to and from a string representation of a link/tangle and data structure describing that link/tangle.
+
+
+*Storage*
+
+A storage module defines a storage interface for the application. The main inter-module type is string and the calling module is responsible for en/decoding the string with a notation module.
+
+
+---
+
 {{% slides/uncenter %}}
 
 # Technologies
@@ -1033,20 +1081,9 @@ Translator -->|Uses| Storage
 {{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
 
 
-
-
----
-<!--
-### Runners
 ---
 
-### Database
----
 
-### API
----
-
- -->
 # WebTech
 
 {{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
