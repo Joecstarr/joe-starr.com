@@ -26,12 +26,26 @@ slides:
 
 
 <style>
-#qr svg{
+#qr {
     width:35rem;
     height:35rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
-
+#tech_img {
+    width:40rem;
+    height:40rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+#parity_1,#parity_2,#parity_3,#parity_4{
+    width:18rem;
+    height:18rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 </style>
+
 
 # The Tanglenomicon
 
@@ -527,13 +541,22 @@ $$\begin{array}{|l|l|l|l|}
 
 ---
 
-<!-- {{% slides/uncenter %}} -->
-
 ## Canonical Twist Vectors
 
-We can write a *canonical twist vector* by taking the odd length vectors, appending $0$ where needed.
+We can write a *canonical twist vector* by taking the odd length vectors (appending $0$ where needed).
 
-<!-- @@@TODO: Pictures -->
+{{<  slides/admonition type="Example" title="Canonical Twist Vectors for $N=5$" >}}
+
+$$\begin{array}{|l|l|l|l|}
+\hline
+[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1\ 0]\ &\ [1\ 2\ 1\ 1\ 0]\ &\ [1\ 1\ 2\ 1\ 0]\\\hline
+[1\ 1\ 1\ 2\ 0]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\hline
+[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2\ 0]\\\hline
+[2\ 3\ 0]\ &\ [4\ 1\ 0]\ &\ [1\ 4\ 0]\ &\ [5]\\\hline
+\end{array}$$
+
+{{< /slides/admonition >}}
+
 
 ---
 
@@ -643,34 +666,89 @@ To play with twist vectors and continued fractions visit
 
 
 ---
-<!--
 
 ## Parity
 
-@@@TODO
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/321.svg"  direct="true" id="parity_1"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_2" >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/312.svg" direct="true" id="parity_3"   >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/inf.svg"  direct="true" id="parity_4"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
 
+---
+
+## Computing Parity
+
+If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for Parity
+
+
+{{<  slides/admonition type="Example" title="" >}}
+
+$$\begin{array}{|c|c|c|}
+\hline
+p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
+0 &0&N/A\\ \hline
+0 &1& 0 \\ \hline
+1 &0&\infty\\ \hline
+1 &1& 1\\ \hline
+\end{array}$$
+
+{{<  /slides/admonition  >}}
 
 ---
 ## Closures
 
-{{% slides/row %}}
-{{% slides/col %}}
-### Numerator
-{{< centerimg src="/presentations/mathday23/cc_2.svg" >}}
-{{% /slides/col%}}
-{{% slides/col%}}
-### Denominator
-@@@TODO
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:2;">}}
+{{< slides/centersvg src="/presentations/mathday23/cc_2.svg" block="true" >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;">}}
+$\ $
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;">}}
+{{< slides/centersvg src="/presentations/general/cc_2.svg"  block="true" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 
 ---
 ## Closure Equivlance and pivoting to knots
 
-@@@TODO
+{{<  slides/admonition type="Note" title="Theorem Schubert, 1956" >}}
+
+ Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
+<br/>
+(1) $p=p^{\prime}$
+<br/>
+(2) either $q \equiv q^{\prime}(\bmod p)$ or $q q^{\prime} \equiv 1(\bmod p)$.
+
+{{<  /slides/admonition  >}}
+
+{{% slides/citations  %}}
+Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational Knots," 2002. [https://doi.org/10.48550/ARXIV.MATH/0212011](https://doi.org/10.48550/ARXIV.MATH/0212011)
+{{% /slides/citations  %}}
 
 ---
- -->
 
 # Where we're going
 
@@ -782,17 +860,6 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
 \end{array}
 {{< /slides/admonition >}}
 
-<!--
----
-# Data
-
----
-## Internal Loops
-
-@@@TODO:
-
- -->
-
 ---
 # Generalized Montesinos
 ---
@@ -845,17 +912,19 @@ All possible tangles made from $+$ and $\vee$
 
 {{<  slides/admonition type="Example" title="Algebraic" >}}
 
-{{% slides/row %}}
-{{% slides/col %}}
-{{< slides/centersvg src="/presentations/lightning/Alg.svg" >}}
-{{% /slides/col%}}
-{{% slides/col%}}
+{{< slides/row  >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/lightning/Alg.svg"  >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/center_block >}}
 A vertical sum of two Montesinos tangles.
-{{% /slides/col%}}
-{{% slides/col%}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg" >}}
-{{% /slides/col%}}
-{{% /slides/row %}}
+{{< /slides/center_block  >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
 {{<  /slides/admonition >}}
 
 ---
@@ -957,25 +1026,14 @@ Translator -->|Uses| Storage
 ```
 
 ---
+{{% slides/uncenter %}}
 
 # Technologies
 
-* FastAPI
-* MongoDB
-* React
-* Obsidian
-* Mermaid
-* Unity unit tests
-* Pytest
+{{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
 
 
----
 
-# Languages
-
-* C
-* C++
-* Python
 
 ---
 <!--
