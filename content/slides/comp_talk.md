@@ -43,11 +43,11 @@ slides:
     margin-right: auto !important;
 }
 
-#mermaid-0{
-    width:60vw;
+#mermaid-0 svg{
+    width:52rem;
 }
-#mermaid-1{
-    width:47vw;
+#mermaid-1 svg{
+    width:36rem;
 }
 
 </style>
@@ -886,7 +886,7 @@ $\ $
 {{< /slides/col >}}
 {{< slides/col  style="flex-grow:1;" >}}
 {{< slides/center_block grow="1" >}}
-$= \color{var(--r-Purple)}([3\  0] + [3\  0] + [2\  0]) \color{var(--r-Foreground)}\circ \color{var(--r-Red)}[1\  2]$
+$= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-Foreground)}\circ \color{var(--r-Red)}[1\  2]$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
