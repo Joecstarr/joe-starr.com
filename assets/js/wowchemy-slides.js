@@ -78,6 +78,7 @@ if (typeof params.slides.diagram === 'undefined') {
     params.slides.diagram = false;
 }
 
+
 // Configure Mermaid only if diagrams are enabled.
 if (params.slides.diagram) {
     //mermaid options
@@ -91,23 +92,29 @@ if (params.slides.diagram) {
     // `startOnLoad` must be false since diagrams are lazily rendered.
     mermaidOptions['startOnLoad'] = false;
     mermaidOptions['securityLevel'] = "loose";
+    mermaidOptions['useMaxWidth'] = false;
 
     mermaid.initialize(mermaidOptions);
+
+
+    let mermaidDivs = document.querySelectorAll('.mermaid:not(.mermaid-done)');
+    mermaidDivs.forEach((diagram,i) => {
+        diagram.setAttribute("id",`mermaid-${i}`)
+    })
 
     // Lazily render Mermaid diagrams within Reveal.JS slides
     // See: https://github.com/hakimel/reveal.js/issues/2863#issuecomment-1107444425
     let renderMermaidDiagrams = function renderMermaidDiagrams(event) {
 
-        let mermaidDivs = event.currentSlide.querySelectorAll('.mermaid:not(.done)');
+        let mermaidDivs = event.currentSlide.querySelectorAll('.mermaid:not(.mermaid-done)');
         let indices = Reveal.getIndices();
         let pageno = `${indices.h}-${indices.v}`
-
         mermaidDivs.forEach(function (mermaidDiv, i) {
             let graphDefinition = mermaidDiv.textContent;
             // mermaid.mermaidAPI.render(`mermaid${pageno}-${i}`, graphDefinition, insertSvg);
-            mermaid.render(`mermaid${pageno}-${i}`, graphDefinition).then((obj) => {
+            mermaid.render(`mermaid-${pageno}-${i}`, graphDefinition).then((obj) => {
                 mermaidDiv.innerHTML = obj.svg;
-                mermaidDiv.classList.add('done');
+                mermaidDiv.classList.add('mermaid-done');
             });
         });
         Reveal.layout();

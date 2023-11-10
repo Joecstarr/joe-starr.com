@@ -153,6 +153,24 @@ li {
     width: auto;
 }
 
+.mermaid-done{
+    max-height: calc(var(--slide-height)) !important;
+    max-width: calc(var(--slide-width)) !important;
+    width: auto;
+}
+
+.mermaid-done svg{
+    max-height: calc(var(--slide-height)) !important;
+    max-width: calc(var(--slide-width)) !important;
+    width: auto;
+}
+
+.mermaid *{
+    line-height: .9;
+}
+
+
+
 .stroke-blue{stroke: var(--r-Blue) !important ;}
 .stroke-green{stroke: var(--r-Green) !important ;}
 .stroke-orange{stroke: var(--r-Orange) !important ;}
@@ -163,6 +181,7 @@ li {
 .stroke-background{stroke: var(--r-Background) !important ;}
 .stroke-forground{stroke: var(--r-Forground) !important ;}
 .stroke-highlight{stroke: var(--r-Highlight) !important ;}
+.stroke-selection{stroke: var(--r-Selection) !important ;}
 .fill-blue{fill: var(--r-Blue) !important ;}
 .fill-green{fill: var(--r-Green) !important ;}
 .fill-orange{fill: var(--r-Orange) !important ;}
@@ -173,3 +192,4 @@ li {
 .fill-background{fill: var(--r-Background) !important ;}
 .fill-forground{fill: var(--r-Forground) !important ;}
 .fill-highlight{fill: var(--r-Highlight) !important ;}
+.fill-selection{fill: var(--r-Selection) !important ;}

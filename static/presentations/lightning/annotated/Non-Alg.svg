@@ -269,7 +269,7 @@
     <g opacity="1" id="g49" transform="translate(161.79477,30.246175)">
         <path
             d="m 358.212,281.455 c 0,-42.065 34.101,-76.165 76.166,-76.165 42.065,0 76.166,34.1 76.166,76.165 0,42.066 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.1 -76.166,-76.166 z"
-            class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+            class="fill-orange stroke-orangestroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
             stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path47"
             style="fill:#44475a;fill-opacity:1;stroke:#44475a;stroke-opacity:1" />
     </g>
@@ -723,7 +723,7 @@
             <g opacity="1" id="g45">
                 <path
                     d="m 599.55,281.455 c 0,-42.065 34.101,-76.165 76.166,-76.165 42.065,0 76.166,34.1 76.166,76.165 0,42.066 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.1 -76.166,-76.166 z"
-                    class="fill-orange stroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                    class="fill-orange stroke-orangestroke-orange" fill="#ffb86c" fill-rule="nonzero" opacity="1"
                      stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round"
                     stroke-width="0.1" id="path43"
                     style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
@@ -1215,7 +1215,7 @@
         <g opacity="1" id="g37" transform="translate(-43.008475,81.567797)">
             <path
                 d="m 466.2,511.976 c 0,-42.065 34.1,-76.166 76.166,-76.166 42.065,0 76.165,34.101 76.165,76.166 0,42.065 -34.1,76.165 -76.165,76.165 -42.066,0 -76.166,-34.1 -76.166,-76.165 z"
-                class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                class="fill-orange stroke-orangestroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
                 stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path35"
                 style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
         </g>
@@ -1706,7 +1706,7 @@
         <g opacity="1" id="g41" transform="translate(-43.008475,81.567797)">
             <path
                 d="m 709.828,513.009 c 0,-42.065 34.101,-76.166 76.166,-76.166 42.065,0 76.166,34.101 76.166,76.166 0,42.065 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.101 -76.166,-76.166 z"
-                class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                class="fill-orange stroke-orangestroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
                 stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path39"
                 style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
         </g>
@@ -2191,7 +2191,7 @@
         <g opacity="1" id="g59" transform="translate(-43.008475,81.567797)">
             <path
                 d="m 222.571,513.009 c 0,-42.065 34.101,-76.166 76.166,-76.166 42.065,0 76.166,34.101 76.166,76.166 0,42.065 -34.101,76.166 -76.166,76.166 -42.065,0 -76.166,-34.101 -76.166,-76.166 z"
-                class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+                class="fill-orange stroke-orangestroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
                 stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path57"
                 style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
         </g>
@@ -2681,7 +2681,7 @@
     <g opacity="1" id="g55" transform="translate(669.23816,-170.8292)">
         <path
             d="m 116.13,289.717 c 0,-42.065 34.101,-76.166 76.166,-76.166 42.065,0 76.166,34.101 76.166,76.166 0,42.065 -34.101,76.165 -76.166,76.165 -42.065,0 -76.166,-34.1 -76.166,-76.165 z"
-            class="fill-orange stroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
+            class="fill-orange stroke-orangestroke-orange stroke-orange"  fill="#ffb86c" fill-rule="nonzero" opacity="1"
             stroke="#ffb86c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.1" id="path51"
             style="stroke:#44475a;stroke-opacity:1;fill:#44475a;fill-opacity:1" />
 
