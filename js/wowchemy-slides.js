@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var slides = null;
+  var slides = { diagram: true, diagram_options: { theme: "dark", themevariables: { fontsize: 17 } }, highlight_style: "dracula", reveal_options: { theme: "none", transition: "none" } };
 
   // <stdin>
   var enabledPlugins = [RevealMarkdown, RevealSearch, RevealNotes, RevealZoom];
@@ -54,16 +54,21 @@
     }
     mermaidOptions["startOnLoad"] = false;
     mermaidOptions["securityLevel"] = "loose";
+    mermaidOptions["useMaxWidth"] = false;
     mermaid.initialize(mermaidOptions);
+    let mermaidDivs = document.querySelectorAll(".mermaid:not(.mermaid-done)");
+    mermaidDivs.forEach((diagram, i) => {
+      diagram.setAttribute("id", `mermaid-${i}`);
+    });
     let renderMermaidDiagrams = function renderMermaidDiagrams2(event) {
-      let mermaidDivs = event.currentSlide.querySelectorAll(".mermaid:not(.done)");
+      let mermaidDivs2 = event.currentSlide.querySelectorAll(".mermaid:not(.mermaid-done)");
       let indices = Reveal.getIndices();
       let pageno = `${indices.h}-${indices.v}`;
-      mermaidDivs.forEach(function(mermaidDiv, i) {
+      mermaidDivs2.forEach(function(mermaidDiv, i) {
         let graphDefinition = mermaidDiv.textContent;
-        mermaid.render(`mermaid${pageno}-${i}`, graphDefinition).then((obj) => {
+        mermaid.render(`mermaid-${pageno}-${i}`, graphDefinition).then((obj) => {
           mermaidDiv.innerHTML = obj.svg;
-          mermaidDiv.classList.add("done");
+          mermaidDiv.classList.add("mermaid-done");
         });
       });
       Reveal.layout();

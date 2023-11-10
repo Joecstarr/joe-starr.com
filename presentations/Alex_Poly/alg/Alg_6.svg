@@ -65,7 +65,7 @@
             stroke="#bd93f9" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7.49235" />
         <path
             d="M507.829 373.992C507.829 373.992 651.531 200.764 744.545 180.201C768.356 174.936 801.337 167.522 840.399 198.978C865.593 219.268 873.468 251.783 848.792 288.057C824.256 324.126 792.415 303.39 762.389 371.797C758.593 402.002 768.303 441.21 786.973 466.815C819.841 511.888 806.225 546.173 781.738 560.588C779.886 561.678 745.706 582.596 740.401 609.267C738.421 619.22 742.177 637.927 752.039 658.69C774.643 706.278 762.87 732.86 735.631 737.391C636.085 753.952 589.64 624.204 519.767 504.542C511.543 490.459 503.661 476.583 496.232 463.193C472.589 420.584 507.829 373.992 507.829 373.992Z"
-            class="fill-orange stroke-purple" fill="#ffb86c" fill-opacity="0.466216" fill-rule="nonzero"
+            class="fill-orange stroke-orangestroke-purple" fill="#ffb86c" fill-opacity="0.466216" fill-rule="nonzero"
             filter="url(#Filter)" stroke="#bd93f9" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="7.49235"
             vectornator:shadowAngle="1.24926" vectornator:shadowColor="#282a36" vectornator:shadowOffset="49.1438"
             vectornator:shadowOpacity="0.79054" vectornator:shadowRadius="2" />

@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://joe-starr.com/slides/landing/archive/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://joe-starr.com/resources/cont_frac_convert/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -91,6 +88,10 @@
     <lastmod>2020-01-07T17:09:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://joe-starr.com/slides/landing/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://joe-starr.com/publication-type/1/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -108,9 +109,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/admin/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/slides/landing/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/categories/</loc>

@@ -1,13 +1,14 @@
 :root {
   --r-Background  :#000000;
-  --r-Selection   :#d0d3d4;
+  --r-Selection   :#b90570;
   --r-Foreground  :#FFFFFF;
-  --r-Highlight   :#7da1c4;
-  --r-Blue        :#1d4289;
-  --r-Green       :#007a78;
-  --r-Orange      :#dc582a;
-  --r-Pink        :#e56db1;
-  --r-Purple      :#5d3754;
-  --r-Red         :#d3273e;
-  --r-Yellow      :#ffc845;
+  --r-Highlight   :#114c4c;
+  --r-Blue        :#a7e2ff;
+  --r-Green       :#ecc503;
+  --r-Orange      :#f2c06a;
+  --r-Pink        :#fdb5df;
+  --r-Purple      :#00a77b;
+  --r-Red         :#fe5d26;
+  --r-Yellow      :#d4f19f;
+  --r-main-font-size: 30px;
 }
