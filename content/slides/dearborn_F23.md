@@ -1,6 +1,6 @@
 ---
 title: "Dearborn Colloquium Talk Fall23"
-date: "2023-09-22"
+date: "2023-11-15"
 summary: "Talk given at the U of M - Dearborn Colloquium on 11/15/23."
 tags: [
     "Talks",
@@ -42,6 +42,12 @@ slides:
     margin-left: auto !important;
     margin-right: auto !important;
 }
+#parity_calc_1,#parity_calc_2{
+    width :12rem;
+    height:12rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 
 #mermaid-0 svg{
     width:52rem;
@@ -52,7 +58,7 @@ slides:
 
 </style>
 
-
+## U of M - Dearborn Colloquium (11/15/23)
 
 # The Tanglenomicon
 
@@ -61,8 +67,8 @@ slides:
 Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 <p>
 
-<p style="font-size:.6em; text-align:center !important">
-Mathematics Department at The University of Iowa<p>
+<p style="font-size:.6em; text-align:center !important"> Mathematics Department at The University of Iowa<p>
+
 
 ---
 
@@ -134,7 +140,7 @@ $\quad$
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/center_block >}}
-$\to$
+$\leftrightarrow$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col >}}
@@ -152,7 +158,7 @@ $\to$
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/center_block >}}
-$\to$
+$\leftrightarrow$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col >}}
@@ -169,7 +175,7 @@ $\to$
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/center_block >}}
-$\to$
+$\leftrightarrow$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col >}}
@@ -264,7 +270,7 @@ $\quad$
 {{< /slides/col >}}
 {{< slides/col style="flex-grow:2;" >}}
 {{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/lightning/Rational.svg"  >}}
+{{< slides/centersvg src="/presentations/general/cc_3.svg"  >}}
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row  >}}
@@ -566,21 +572,6 @@ $$\begin{array}{|l|l|l|l|}
 
 
 ---
-
-{{<  slides/admonition type="Example" title="Compositions of $N=5$" >}}
-$$
-\begin{array}{|c|c|c|c|}
-\hline
-[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1\ 0]\ &\ [1\ 2\ 1\ 1\ 0]\ &\ [1\ 1\ 2\ 1\ 0]\\\hline
-[1\ 1\ 1\ 2\ 0]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\hline
-[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2\ 0]\\\hline
-[2\ 3\ 0]\ &\ [4\ 1\ 0]\ &\ [1\ 4\ 0]\ &\ [5]\\\hline
-\end{array}
-$$
-{{< /slides/admonition >}}
-
-
----
 {{% slides/uncenter %}}
 
 ##### Programmatic Description
@@ -605,7 +596,7 @@ stateDiagram-v2
 
         [*] --> State_temp
         State_temp --> if_cnteo
-        if_cnteo--> State_cntmm
+        if_cnteo--> State_cntmm: if cnt>0
         if_cnteo--> State_store_tv: if cnt==0
         State_store_tv --> [*]
 
@@ -621,7 +612,7 @@ stateDiagram-v2
     if_done --> tv_calc: if i < 2**(N-1)
     tv_calc --> State_ipp
     State_ipp --> if_done
-    if_done --> [*]: if i > 2**(N-1)
+    if_done --> [*]: if i == 2**(N-1)
 
 
 ```
@@ -639,9 +630,9 @@ $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
 
 {{<  slides/admonition type="Example" title="Twist Vector to rational number" >}}
 
-{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;" >}}
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;margin-top:1rem;" >}}
 {{< slides/col >}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"height="15rem" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg" height="15rem" >}}
 {{< /slides/col >}}
 {{< slides/col  >}}
 {{< slides/center_block grow="1" >}}
@@ -704,8 +695,7 @@ To play with twist vectors and continued fractions visit
 
 If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for Parity
 
-
-{{<  slides/admonition type="Example" title="" >}}
+{{<  slides/admonition type="Note" title="Parity Table" >}}
 
 $$\begin{array}{|c|c|c|}
 \hline
@@ -719,6 +709,49 @@ p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
 {{<  /slides/admonition  >}}
 
 ---
+
+
+
+{{<  slides/admonition type="Example" title="" >}}
+
+
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:90%;margin-left:2rem;margin-top:2rem;" >}}
+{{< slides/col >}}
+{{< slides/row  >}}
+{{< slides/col >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/comp/321.svg" direct="true" id="parity_calc_1"  >}}
+{{< /slides/center_block>}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
+{{< slides/row  >}}
+{{< slides/col  >}}
+{{< slides/center_block grow="1" >}}
+$$\ =[3\ 2\ 1]=1+\frac{1}{2+\frac{1}{3}}=\frac{10}{7}\to\text{ Parity: 0 }$$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
+{{< slides/row  >}}
+{{< slides/col >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_calc_1"  >}}
+{{< /slides/center_block>}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
+
+
+
+{{<  /slides/admonition  >}}
+
+
+
+
+---
+
 ## Closures
 
 {{< slides/row style="" >}}
@@ -736,7 +769,7 @@ $\ $
 ---
 ## Closure Equivlance and pivoting to knots
 
-{{<  slides/admonition type="Note" title="Theorem Schubert, 1956" >}}
+{{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
 
  Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
 <br/>
@@ -768,12 +801,10 @@ Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational K
 ---
 ## Existence of canonical diagrams for Montesinos tangles
 
-{{<  slides/admonition type="Note" title="Theorem Montesinos" >}}
+{{<  slides/admonition type="Note" title="Theorem (Montesinos)" >}}
 Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying one of the following constructions for horizontal and vertical Montesinos tangles, respectively.
 <br/>
-1. $T \cong L_1+\cdots+L_m+\frac{k}{1}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
-<br/>
-2. $T \cong L_1 * \cdots * L_m * \frac{1}{k}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $-\infty<\frac{p_i}{q_i}<-1$, and $\frac{1}{k}$ is a vertical integer subtangle.
+$T \cong L_1+\cdots+L_m+\frac{k}{1}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
 {{<  /slides/admonition >}}
 
 {{% slides/citations %}}
@@ -840,22 +871,38 @@ $$=[3\  2\  2] + [3\  2\  2]$$
 
 # Generation
 
-The Montesinos tangles of crossing number $N$ have a slightly simpler generation strategy compared to rational tangles.
-
-We again generate stencils (twist vectors ) but require that each entry satisfies $2\leq e < \N$.
+The Montesinos tangles of crossing number $N$ have a slightly simpler generation strategy compared to rational tangles. We again generate twist vectors but require that each entry $e$ of the twist vector  satisfies $2\leq e < N$. We call these restricted set of twist vectors *stencils*.
 
 {{<  slides/admonition type="Example" title="Stencils for $N=5$" >}}
-\begin{array}{|l|l|l|l|}
+$$\begin{array}{|l|l|l|l|}
 \hline
-[2\ 3]\ &\ [3\ 2]\\\hline
-\end{array}
+[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1]\ &\ [1\ 2\ 1\ 1]\ &\ [1\ 1\ 2\ 1]\\\hline
+[1\ 1\ 1\ 2]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\hline
+[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2]\\\hline
+[2\ 3]\ &\ [4\ 1]\ &\ [1\ 4]\ &\ [5]\\\hline
+\end{array}$$
 {{< /slides/admonition >}}
 
 ---
 
+
 Now for each entry $e_i$ of the stencil we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
 
 {{<  slides/admonition type="Example" title="Montesinos tangles for $N=5$" >}}
+{{< slides/row  style="margin:2rem;font-size:1.5rem">}}
+{{< slides/col  style="flex-grow:1;" >}}
+\begin{array}{|l|}
+\hline
+\text{Rational Tangles CN: }3  \\\hline
+[1\ 1\ 0]=\frac{1}{2},\ [2]=\frac{2}{1}  \ \\\hline
+\text{Rational Tangles CN: }3\\\hline
+[1\ 2\ 0]=\frac{1}{3},\ [2\ 1\ 0]=\frac{2}{3},\ [3]=\frac{3}{1}\\\hline
+\end{array}
+{{< /slides/col   >}}
+{{< slides/col  style="flex-grow:0;" >}}
+$\quad$
+{{< /slides/col   >}}
+{{< slides/col  style="flex-grow:2;" >}}
 \begin{array}{|l|l|}
 \hline
 \color{var(--r-Purple)}\text{Stencil:}[3\ 2]\ &\ \\\hline
@@ -863,7 +910,10 @@ Now for each entry $e_i$ of the stencil we generate a list of rational tangles o
 \color{var(--r-Purple)}\text{Stencil:}[2\ 3]\\\hline
 \color{var(--r-Foreground)}[1\ 1\ 0] + [1\ 2\ 0]\ &\ [1\ 1\ 0] + [2\ 1\ 0]\\\hline
 \end{array}
+{{< /slides/col   >}}
+{{< /slides/row   >}}
 {{< /slides/admonition >}}
+
 
 ---
 # Generalized Montesinos
@@ -943,7 +993,7 @@ To generate all possible rational tangles we can generate all possible algebraic
 
 This boils down to all binary trees on $N$ leaves. With nodes labeled with combinations of $\vee$ and $+$ and leaves labeled with all combinations of trivial tangles.
 
-These binary trees are call Caudron Trees.
+These binary trees are called *Caudron Trees*.
 
 {{% slides/citations %}}
 Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.

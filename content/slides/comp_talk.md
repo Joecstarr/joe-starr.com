@@ -705,7 +705,7 @@ To play with twist vectors and continued fractions visit
 If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for Parity
 
 
-{{<  slides/admonition type="Example" title="" >}}
+{{<  slides/admonition type="Note" title="Parity Table" >}}
 
 $$\begin{array}{|c|c|c|}
 \hline

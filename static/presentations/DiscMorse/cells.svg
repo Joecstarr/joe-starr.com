@@ -109,7 +109,7 @@
             style="fill:none;fill-opacity:0.231373;stroke:#f1fa84;stroke-width:5.38798;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:5.38798, 5.38797999999999977;stroke-dashoffset:43.1039;stroke-opacity:1;paint-order:stroke markers fill"
             id="path1848-6-9" transform="matrix(-0.99990884,-0.01350232,0.05196722,-0.99864879,0,0)"
             d="m -650.16222,-717.69633 a 178.74921,28.823664 0 0 1 -175.16999,28.46805 178.74921,28.823664 0 0 1 -182.07329,-27.31858" />
-        <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
+        <circle class=" fill-orange  stroke-orange  "
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:4.72076;stroke-dasharray:none" id="path1534"
             cx="257.11066" cy="221.31352" r="32.639622" />
         <circle class="fill-red"

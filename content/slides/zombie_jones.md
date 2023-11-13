@@ -1,6 +1,6 @@
 ---
 title: "Constructing the Jones polynomial to save the world"
-date: "2023-10-02"
+date: "2023-11-17"
 summary: "In this talk we give a construction of the Jones Polynomial via the Kauffman bracket. The concepts are introduced in a pseudo-application of fighting a zombie apocalypse."
 tags: [
     "index",
