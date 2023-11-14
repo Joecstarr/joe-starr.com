@@ -243,7 +243,9 @@ $\leftrightarrow$
 
 ## Conway
 
+{{< slides/center_block grow="1"  >}}
 How did Conway compute 25 years of work in "a few hours"?
+{{< /slides/center_block >}}
 
 ---
 
@@ -779,7 +781,7 @@ $\ $
 {{< /slides/row >}}
 
 ---
-## Closure Equivlance and pivoting to knots
+## Closure Equivalence and pivoting to knots
 
 {{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
 
@@ -895,7 +897,7 @@ $$=[3\  2\  2] + [3\  2\  2]$$
 
 # Generation
 
-The Montesinos tangles of crossing number $N$ have a slightly simpler generation strategy compared to rational tangles. We again generate twist vectors but require that each entry $e$ of the twist vector  satisfies $2\leq e < N$. We call these restricted set of twist vectors *stencils*.
+The Montesinos tangles of crossing number $N$ have a slightly simpler generation strategy compared to rational tangles. We again generate twist vectors but require that each entry $e$ of the twist vector  satisfies $2\leq e < N.$ We call these restricted set of twist vectors *stencils*.
 
 {{<  slides/admonition type="Example" title="Stencils for $N=5$" >}}
 $$\begin{array}{|l|l|l|l|}
@@ -910,7 +912,7 @@ $$\begin{array}{|l|l|l|l|}
 ---
 
 
-Now for each entry $e_i$ of the stencil we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
+Now for each entry $e_i$ of the stencil, we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
 
 {{<  slides/admonition type="Example" title="Montesinos tangles for $N=5$" >}}
 {{< slides/row  style="margin:2rem;font-size:1.5rem">}}
@@ -1115,7 +1117,7 @@ There exist tables of 4 valent graphs. We can use those with insertions from our
 
 ### Design Goals
 
-The design for The Tanglenomicon project prioritizes flexibility and extensibility. We want a feature, maybe "calculate Jones polynomial," to be runnable in a jupyter notebook or on a university cluster. We're aiming for a "write once deployanywhere" design.
+The design for The Tanglenomicon project prioritizes flexibility and extensibility. We want a feature, maybe "calculate Jones polynomial," to be runnable in a jupyter notebook or on a university cluster. We're aiming for a "write once deploy anywhere" design.
 
 To that end we've decoupled functionality wherever feasible, taking a layered
 approach for system design.
