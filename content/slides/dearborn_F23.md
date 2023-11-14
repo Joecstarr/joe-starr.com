@@ -495,15 +495,16 @@ $\ $
 # Rational Tangles
 
 ---
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/general/rational_containment.svg" height="auto">}}
+
+---
 
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/lightning/Rational.svg" height="auto">}}
 
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/rational_containment.svg" height="auto">}}
 
 ---
 
@@ -809,16 +810,17 @@ Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational K
 # Montesinos
 
 ---
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/general/mont_containment.svg" height="auto">}}
+
+---
 
 
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/lightning/Mont.svg" height="auto">}}
 
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/mont_containment.svg" height="auto">}}
 
 ---
 ## Existence of canonical diagrams for Montesinos tangles
@@ -939,15 +941,17 @@ $\quad$
 
 ---
 # Generalized Montesinos
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/GenMont.svg" height="auto">}}
 
 ---
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/general/genmont_containment.svg" height="auto">}}
+
+---
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/lightning/GenMont.svg" height="auto">}}
+
 
 ---
 
@@ -985,15 +989,16 @@ We just need to take our lists of Montesinos and rational and glue them together
 ## Algebraic
 
 ---
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/Alg.svg" height="auto" >}}
-
----
 
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/general/alg_containment.svg" height="auto" >}}
+
+---
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/lightning/Alg.svg" height="auto" >}}
+
 
 ---
 
@@ -1047,13 +1052,13 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 
 {{% slides/uncenter %}}
 
-{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
+{{< slides/centersvg src="/presentations/general/nonalg_containment.svg" height="auto" >}}
 
 ---
 
 {{% slides/uncenter %}}
 
-{{< slides/centersvg src="/presentations/general/nonalg_containment.svg" height="auto" >}}
+{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
 
 ---
 
