@@ -48,6 +48,12 @@ slides:
     margin-left: auto !important;
     margin-right: auto !important;
 }
+#non_alg{
+    width :35rem;
+    height:35rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 
 #mermaid-0 svg{
     width:52rem;
@@ -790,6 +796,12 @@ Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational K
 
 ---
 
+
+
+{{< slides/centersvg src="/presentations/general/close_eq.svg" height="auto">}}
+
+---
+
 # Where we're going
 
 ---
@@ -1021,12 +1033,11 @@ These binary trees are called *Caudron Trees*.
 Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
 {{% /slides/citations %}}
 
-<!--
-
 ---
-## Generation
-@@@TODO:
- -->
+
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/general/alg_trees.svg" >}}
 
 
 ---
@@ -1045,10 +1056,6 @@ Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publica
 {{< slides/centersvg src="/presentations/general/nonalg_containment.svg" height="auto" >}}
 
 ---
-
-
-
-
 
 ## 4-valent planar graphs
 
@@ -1072,7 +1079,23 @@ $\quad$
 
 ---
 
-{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
+
+{{< slides/center_block grow="1" >}}
+{{< slides/row  style=" ">}}
+{{< slides/col  style="flex-grow:1;" >}}
+{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" direct="true" id="non_alg" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< slides/row  style=" ">}}
+{{< slides/col  style="flex-grow:1;" >}}
+{{< slides/center_block grow="1" >}}
+$6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1]$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/center_block >}}
+
+
 
 ---
 
