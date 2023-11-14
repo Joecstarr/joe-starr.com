@@ -1,40 +1,160 @@
+{{ $theme := .Page.Params.poster.theme | default "dracula.css" }}
+{{ $down_svg := .Page.Params.poster.download.svg | default "false" }}
+{{ $down_pdf := .Page.Params.poster.download.pdf | default "false" }}
+
+
 <!DOCTYPE html>
 <html lang="{{ site.LanguageCode | default " en-us" }}">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/poster.css">
-  <meta name="viewport" content="height=36in, width=48in, initial-scale=1">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
-    rel="stylesheet">
-  {{ partial "hooks/head-end/custom_head.html" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=42in, width=56in, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    {{ partial "hooks/head-end/custom_head.html" . }}
+    <link rel="stylesheet" href="/css/slides_themes/{{$theme}}" />
+    <style>
+        /* CSS */
+        .back_btn {
+            align-items: center;
+            background-clip: padding-box;
+            background-color: var(--r-Pink);
+            ;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-sizing: border-box;
+            color: var(--r-Foreground);
+            ;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        .back_btn:hover,
+        .back_btn:focus {
+            background-color: var(--r-Pink);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+        }
+
+        .back_btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .back_btn:active {
+            background-color: var(--r-Pink);
+            box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+            transform: translateY(0);
+        }
+
+        :root {
+            --r-background-color: var(--r-Background);
+            --r-main-color: var(--r-Foreground);
+            --r-link-color: var(--r-Pink);
+            --r-link-color-dark: var(--r-Pink);
+            --r-link-color-hover: var(--r-Blue);
+            --r-selection-background-color: var(--r-Selection);
+            --r-selection-color: var(--r-Foreground);
+            --r-bold-color: var(--r-Orange);
+            --r-italic-color: var(--r-Yellow);
+            --r-inline-code-color: var(--r-Green);
+            --r-list-bullet-color: var(--r-Blue);
+        }
+
+        html * {
+            color-profile: sRGB;
+            rendering-intent: auto;
+        }
+
+        body {
+            background-color: var(--r-Background);
+        }
+
+        .svg_container {
+            width: auto;
+            height: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .column {
+            padding: 0;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .btn {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+        }
+    </style>
 </head>
+<!-- {{ .Page.Params.Poster.Subtitle }} -->
 
 <body>
-  <div class="banner_head">
-    <h1 class="headline">{{ .Title }} </h1>
-    <h2 class="subHeadline">{{ .Page.Params.Poster.Subtitle }} </h2>
-    <div class="address">
-      {{ range $author := .Page.Params.Poster.authors }}
-      <p>
-        <a class="authors"> {{ $author }} </a>
-      </p>
-      {{ end }}
+    <div class="svg_container row">
+        <div class="column">
+            <button onclick="history.back()" class="back_btn btn">Go Back</button>
+        </div>
+        <div class="column">
+            {{ if ne $down_svg "false" }}
+            <form method="get" class="btn" action="{{ .Page.Params.poster.src }}">
+                <button class="back_btn btn" type="submit"> Download SVG</button>
+            </form>
+            {{end}}
+        </div>
+        <div class="column">
+            {{ if ne $down_pdf "false" }}
+            <form method="get" class="btn" action="{{ .Page.Params.poster.download.pdf }}">
+                <button class="back_btn btn" type="submit"> Download PDF</button>
+            </form>
+            {{end}}
+        </div>
     </div>
-  </div>
-
-  <div class="mainBody">
-
-    {{ block "main" . }}{{ end }}
-
-    <div class="figure" style="flex-grow: 9999999">
+    <div class="svg_container row">
+        <div class="column">
+            <div id="poster_svg"> </div>
+        </div>
     </div>
-  </div>
-
-  <div class="banner_foot">
-
-  </div>
 </body>
+<footer>
+    <script type="text/javascript">
+        function codeAddress() {
+            var element = document.querySelector("#poster_svg");
+            var src = {{ .Page.Params.poster.src }};
+        if (src.endsWith('.svg') == true) {
+            fetch(src)
+                .then(res => res.text())
+                .then(res => {
+                    const holder = document.createElement('div')
+                    holder.innerHTML = res
+                    element.replaceWith(holder)
+                })
+        }
+        }
+        window.onload = codeAddress;
+
+    </script>
+</footer>
 
 </html>
