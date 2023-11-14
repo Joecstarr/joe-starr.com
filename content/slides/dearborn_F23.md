@@ -1028,9 +1028,7 @@ A vertical sum of two Montesinos tangles.
 
 ## Caudron Trees
 
-To generate all possible rational tangles we can generate all possible algebraic expressions on the trivial tangles.
-
-This boils down to all binary trees on $N$ leaves. With nodes labeled with combinations of $\vee$ and $+$ and leaves labeled with all combinations of trivial tangles.
+To generate all possible algebraic tangles, we can generate all possible algebraic expressions on the trivial tangles. Equivalently, all full binary trees with $N$ leaves. Where the tree's internal nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled with all combinations of trivial tangles.
 
 These binary trees are called *Caudron Trees*.
 
