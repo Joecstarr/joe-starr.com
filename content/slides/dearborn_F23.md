@@ -543,9 +543,6 @@ this gives $N-1$ choices between '$+$' and space
 $$[1\square 1\square 1\square\cdots\square1]$$
 letting us generate twist vectors by simply counting from $0\to 2^{N-1}$.
 
----
-
-
 {{<  slides/admonition type="Example" title="Twist Vectors for $N=5$" >}}
 
 $$\begin{array}{|l|l|l|l|}
@@ -609,7 +606,7 @@ stateDiagram-v2
         State_cntmm -->if_lsb
         if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
         State_sum_tv --> State_rsh
-        if_lsb -->St2ate_jpp: if (tmp & 0x01u)==0u
+        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
         State_jpp --> State_rsh
         State_rsh --> if_cnteo
     }
@@ -699,7 +696,7 @@ To play with twist vectors and continued fractions visit
 
 ## Computing Parity
 
-If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for Parity
+If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for parity
 
 {{<  slides/admonition type="Note" title="Parity Table" >}}
 
@@ -791,14 +788,18 @@ Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956
 
 ---
 
-{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
-
-
----
-
 
 
 {{< slides/centersvg src="/presentations/general/close_eq.svg" height="auto">}}
+
+---
+
+# Using The Tanglenomicon
+
+---
+
+{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
+
 
 ---
 
