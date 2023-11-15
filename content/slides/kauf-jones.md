@@ -5,7 +5,7 @@ summary: "Defintion of the Jones Polynomial"
 tags: [
     "index",
 ]
-draft: false
+draft: true
 slides:
   highlight_style: dracula
   diagram: true

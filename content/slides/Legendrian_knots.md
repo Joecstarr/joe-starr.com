@@ -5,7 +5,7 @@ summary: "Brief overview of Legendrian knots"
 tags: [
     "Talks",
 ]
-draft: false
+draft: true
 slides:
   highlight_style: dracula
   diagram: true

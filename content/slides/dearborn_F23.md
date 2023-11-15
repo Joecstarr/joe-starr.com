@@ -82,16 +82,11 @@ Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 
 ---
 
+
 > "A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ )."
 
-{{% slides/citations  %}}
-Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
-{{% /slides/citations %}}
-
----
-
 {{< slides/row style="">}}
-{{< slides/col style="flex-grow:1;" >}}
+{{< slides/col style="flex-grow:2;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
 {{< /slides/center_block >}}
@@ -107,7 +102,7 @@ $\quad$
 {{< slides/col style="flex-grow:0;" >}}
 $\quad$
 {{< /slides/col >}}
-{{< slides/col style="flex-grow:2;" >}}
+{{< slides/col style="flex-grow:3;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
 {{< /slides/center_block >}}
@@ -115,7 +110,7 @@ $\quad$
 {{< slides/col style="flex-grow:0;" >}}
 $\quad$
 {{< /slides/col >}}
-{{< slides/col style="flex-grow:2;" >}}
+{{< slides/col style="flex-grow:4;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
 {{< /slides/center_block >}}
@@ -124,6 +119,8 @@ $\quad$
 
 
 {{% slides/citations  %}}
+Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
+
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
 
@@ -418,7 +415,7 @@ $=$
 {{< /slides/col>}}
 {{< slides/col style="flex-grow:1;" >}}
 {{< slides/center_block grow="1"  >}}
-$2$
+$\frac{1}{2}$
 {{< /slides/center_block >}}
 {{< /slides/col>}}
 {{< /slides/row >}}
@@ -495,11 +492,6 @@ $\ $
 
 
 # Rational Tangles
-
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/rational_containment.svg" height="auto">}}
 
 ---
 
@@ -617,7 +609,7 @@ stateDiagram-v2
         State_cntmm -->if_lsb
         if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
         State_sum_tv --> State_rsh
-        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
+        if_lsb -->St2ate_jpp: if (tmp & 0x01u)==0u
         State_jpp --> State_rsh
         State_rsh --> if_cnteo
     }
@@ -785,7 +777,7 @@ $\ $
 
 {{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
 
- Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
+ Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( p$ and $q$ are relatively prime and $0<p$. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
 <br/>
 (1) $p=p^{\prime}$
 <br/>
@@ -794,8 +786,13 @@ $\ $
 {{<  /slides/admonition  >}}
 
 {{% slides/citations  %}}
-Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational Knots," 2002. [https://doi.org/10.48550/ARXIV.MATH/0212011](https://doi.org/10.48550/ARXIV.MATH/0212011)
+Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
 {{% /slides/citations  %}}
+
+---
+
+{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
+
 
 ---
 
@@ -827,14 +824,13 @@ Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational K
 ---
 ## Existence of canonical diagrams for Montesinos tangles
 
-{{<  slides/admonition type="Note" title="Theorem (Montesinos)" >}}
-Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying one of the following constructions for horizontal and vertical Montesinos tangles, respectively.
-<br/>
-$T \cong L_1+\cdots+L_m+\frac{k}{1}$, where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
+{{<  slides/admonition type="Note" title="Theorem (Bonahon and Siebenmann)" >}}
+Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying the following construction:
+$$T \cong L_1+\cdots+L_m+\frac{k}{1}$$ where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
 {{<  /slides/admonition >}}
 
 {{% slides/citations %}}
-Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
+F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
 {{% /slides/citations %}}
 
 ---
@@ -919,7 +915,7 @@ Now for each entry $e_i$ of the stencil, we generate a list of rational tangles 
 {{< slides/col  style="flex-grow:1;" >}}
 \begin{array}{|l|}
 \hline
-\text{Rational Tangles CN: }3  \\\hline
+\text{Rational Tangles CN: }2  \\\hline
 [1\ 1\ 0]=\frac{1}{2},\ [2]=\frac{2}{1}  \ \\\hline
 \text{Rational Tangles CN: }3\\\hline
 [1\ 2\ 0]=\frac{1}{3},\ [2\ 1\ 0]=\frac{2}{3},\ [3]=\frac{3}{1}\\\hline
@@ -981,7 +977,7 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 
 ---
 
-We just need to take our lists of Montesinos and rational and glue them together with $\circ$.
+We just need to take our lists of Montesinos and rational tangles and glue them together with $\circ$.
 
 ---
 
@@ -1193,13 +1189,6 @@ A storage module defines a storage interface for the application. The main inter
 {{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
 
 
----
-
-
-# WebTech
-
-{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
-
 
 ---
 
@@ -1219,6 +1208,9 @@ A storage module defines a storage interface for the application. The main inter
 10. Hoste, J., Thistlethwaite, M., & Weeks, J. (1998). The first 1,701,936 knots. In The Mathematical Intelligencer (Vol. 20, Issue 4, pp. 33-48). Springer Science and Business Media LLC. [https://doi.org/10.1007/bf03025227](https://doi.org/10.1007/bf03025227)
 11. Burton, B. A. (2020). The Next 350 Million Knots. Schloss Dagstuhl - Leibniz-Zentrum Für Informatik. [https://doi.org/10.4230/LIPICS.SOCG.2020.25](https://doi.org/10.4230/LIPICS.SOCG.2020.25)
 12.  C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants, knotinfo.math.indiana.edu, today's date (eg. August 24, 2023).
+13.  Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
+14. Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
+15. F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
 {{% /slides/citations %}}
 
 
