@@ -118,7 +118,7 @@
             sodipodi:type="arc" sodipodi:cx="-798.93237" sodipodi:cy="-706.02313" sodipodi:rx="178.74921"
             sodipodi:ry="28.823664" sodipodi:start="0.012138833" sodipodi:end="3.0895512" sodipodi:open="true"
             sodipodi:arc-type="arc" />
-        <circle r="32.639622" cy="373.64789" cx="186.58586" id="path1534" class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
+        <circle r="32.639622" cy="373.64789" cx="186.58586" id="path1534" class=" fill-orange  stroke-orange  "
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:4.72076;stroke-dasharray:none" />
         <circle r="174.54871" cy="217.52309" cx="532.78326" id="path1848" class="fill-red"
             style="fill:#ff5555;fill-opacity:0.231373;stroke:#ff5554;stroke-width:16.103;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:16.103, 16.103;stroke-dashoffset:128.824;stroke-opacity:1;paint-order:stroke markers fill" />
@@ -132,7 +132,7 @@
             sodipodi:type="arc" class="stroke-red"
             style="fill:none;fill-opacity:0.23137255;stroke:#ff5555;stroke-width:5.59379005;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:44.7503;stroke-opacity:1;paint-order:stroke markers fill"
             id="path1848-6" />
-        <circle class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
+        <circle class=" fill-orange  stroke-orange  "
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:2.56041;stroke-dasharray:none"
             id="path1534-1" cx="578.89832" cy="709.32202" r="17.702847" />
         <path sodipodi:nodetypes="czzc" id="path1081"
