@@ -5,7 +5,7 @@ summary: "Talk given at the U of M - Dearborn Colloquium on 11/15/23."
 tags: [
     "Talks",
 ]
-draft: true
+draft: false
 
 slides:
   highlight_style: dracula
