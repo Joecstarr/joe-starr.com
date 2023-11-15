@@ -20,7 +20,7 @@
 
   <link rel="canonical" href="https://joe-starr.com/slides/lightning/">
 
-  <title>Tangled in Knot Theory | Joe Starr</title>
+  <title>Tangled in Knot Theory Summer 2023 | Joe Starr</title>
 
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
@@ -69,7 +69,8 @@
 
                     document.querySelectorAll("mjx-container img").forEach((element) => {
                         var src = element.getAttribute("src");
-                        fetch(src)
+                        if (src.endsWith('.svg') == true) {
+                            fetch(src)
                             .then(res => res.text())
                             .then(res => {
                                 const holder = document.createElement('div')
@@ -78,6 +79,7 @@
                                 holder.innerHTML = res
                                 element.replaceWith(holder)
                             })
+                        }
                     });
 
                     console.log("End startup promise");
@@ -86,9 +88,9 @@
         };
     }
     var reveal_init_callbacks = []
-    var reveal_slidechange_callbacks  = []
-    var reveal_slidetransitionend_callbacks  = []
-    var reveal_resize_callbacks  = []
+    var reveal_slidechange_callbacks = []
+    var reveal_slidetransitionend_callbacks = []
+    var reveal_resize_callbacks = []
 </script>
 
 </head>
@@ -124,8 +126,6 @@
   .tangrow {
     border: 2px solid var(--r-Red);
     border-radius: 12px;
-    margin:auto;
-    padding:1rem;
 
   }
 .qr_Code{
@@ -214,7 +214,11 @@ Mathematics Department at The University of Iowa<p>
 <p>[3 2 2]</p>
 </div>
 <div class="slidecolumn    " style="  flex-grow: 0; ">
-<p>$$\to$$</p>
+<div class="sliderow    " style="  align-items:center;height:100% ">
+    <div class="slidecolumn    " style="  flex-grow: 0; ">
+<p>$\to$</p>
+</div>
+</div>
 </div>
 <div class="slidecolumn   tangrow  " style="  padding: 1rem; ">
 <p>$+$</p>
@@ -225,7 +229,11 @@ Mathematics Department at The University of Iowa<p>
 </p>
 </div>
 <div class="slidecolumn    " style="  flex-grow: 0; ">
-<p>$$\to$$</p>
+<div class="sliderow    " style="  align-items:center;height:100% ">
+    <div class="slidecolumn    " style="  flex-grow: 0; ">
+<p>$\to$</p>
+</div>
+</div>
 </div>
 <div class="slidecolumn   tangrow  " style="  padding: 1rem; ">
 <p>$\circ$</p>
@@ -257,7 +265,11 @@ Mathematics Department at The University of Iowa<p>
 </p>
 </div>
 <div class="slidecolumn    " style="  flex-grow: 0; ">
-<p>$$\to$$</p>
+<div class="sliderow    " style="  align-items:center;height:100% ">
+    <div class="slidecolumn    " style="  flex-grow: 0; ">
+<p>$\to$</p>
+</div>
+</div>
 </div>
 <div class="slidecolumn   tangrow  " style="  padding: 1rem; ">
 <p>Non-Algebraic Tangles</p>
@@ -277,45 +289,25 @@ Mathematics Department at The University of Iowa<p>
     <section>
     
       
-<h3 id="architecture">Architecture</h3>
-<div class="sliderow  " style="">
-<div class="slidecolumn    " style="   max-width: none !important; width:100% !important;  ">
-<div class="mermaid">%%{init: {&#34;securityLevel&#34;: &#34;loose&#34;}}%%
-flowchart
-    Runner      --&gt;|Runs| Generator
-    Runner      --&gt;|Runs| Computation
-    Runner      --&gt;|Runs| Translator
-    Translator  --&gt;|Uses| Notation
-    Generator   --&gt;|Uses| Notation
-    Computation --&gt;|Uses| Notation
-    Generator   --&gt;|Uses| Storage
-    Computation --&gt;|Uses| Storage
-    Translator  --&gt;|Uses| Storage</div>
-</div>
-</div>
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-<h2 id="sources">Sources</h2>
+<h3 id="sources">Sources</h3>
 <div style="font-size: .9rem;text-align:left;color:var(--r-Highlight);margin-top:auto">
-<ul>
+<ol>
 <li>Dror Bar-Natan <a href="http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf" target="_blank" rel="noopener">The Most Important Missing Infrastructure Project in Knot Theory</a></li>
 <li>Kauffman, L. H., and S. Lambropoulou. &ldquo;From Tangle Fractions to DNA.&rdquo; In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. <a href="https://doi.org/10.1007/978-3-540-49858-2_5" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-540-49858-2_5</a>.</li>
 <li>Moon, Hyeyoung, and Isabel K. Darcy. &ldquo;Tangle Equations Involving Montesinos Links.&rdquo; Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. <a href="https://doi.org/10.1142/S0218216521500607" target="_blank" rel="noopener">https://doi.org/10.1142/S0218216521500607</a>.</li>
 <li>Conway, J.H. &ldquo;An Enumeration of Knots and Links, and Some of Their Algebraic Properties.&rdquo; In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. <a href="https://doi.org/10.1016/B978-0-08-012975-4.50034-5" target="_blank" rel="noopener">https://doi.org/10.1016/B978-0-08-012975-4.50034-5</a>.</li>
 <li>Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001</li>
 <li>Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d&rsquo;Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.</li>
-<li>Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor,
-MI, 1998. Thesis (Ph.D.)–The University of British Columbia (Canada). URL: https:
-//www.knotplot.com/.</li>
-</ul>
+<li>Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor, MI, 1998. Thesis (Ph.D. The University of British Columbia (Canada). URL: <a href="https://www.knotplot.com/" target="_blank" rel="noopener">https://www.knotplot.com/</a>.</li>
+<li>Jablan, S., &amp; Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. <a href="https://doi.org/10.1142/6623" target="_blank" rel="noopener">https://doi.org/10.1142/6623</a></li>
+<li>Dowker, C. H., &amp; Thistlethwaite, M. B. (1983). Classification of knot projections. In Topology and its Applications (Vol. 16, Issue 1, pp. 19-31). Elsevier BV. <a href="https://doi.org/10.1016/0166-8641%2883%2990004-4" target="_blank" rel="noopener">https://doi.org/10.1016/0166-8641(83)90004-4</a></li>
+<li>Hoste, J., Thistlethwaite, M., &amp; Weeks, J. (1998). The first 1,701,936 knots. In The Mathematical Intelligencer (Vol. 20, Issue 4, pp. 33-48). Springer Science and Business Media LLC. <a href="https://doi.org/10.1007/bf03025227" target="_blank" rel="noopener">https://doi.org/10.1007/bf03025227</a></li>
+<li>Burton, B. A. (2020). The Next 350 Million Knots. Schloss Dagstuhl - Leibniz-Zentrum Für Informatik. <a href="https://doi.org/10.4230/LIPICS.SOCG.2020.25" target="_blank" rel="noopener">https://doi.org/10.4230/LIPICS.SOCG.2020.25</a></li>
+<li>C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants, knotinfo.math.indiana.edu, today&rsquo;s date (eg. August 24, 2023).</li>
+<li>Schubert, Horst. &ldquo;Knoten mit zwei Brücken..&rdquo; Mathematische Zeitschrift 65 (1956): 133-170. <a href="http://eudml.org/doc/169591" target="_blank" rel="noopener">http://eudml.org/doc/169591</a>.</li>
+<li>Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.</li>
+<li>F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, <a href="http://www-bcf.usc.edu/~fbonahon/Research/Publications.html" target="_blank" rel="noopener">http://www-bcf.usc.edu/~fbonahon/Research/Publications.html</a></li>
+</ol>
 </div>
 <style type="text/css">
      

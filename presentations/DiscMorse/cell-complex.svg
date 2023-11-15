@@ -144,13 +144,13 @@
     </g>
     <g inkscape:groupmode="layer" id="layer2" inkscape:label="1cells" />
     <g inkscape:label="0cells" inkscape:groupmode="layer" id="layer1">
-        <path class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
+        <path class=" fill-orange  stroke-orange  "
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:3.90125;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:130.744;stroke-opacity:1;paint-order:stroke markers fill"
             id="path1930" sodipodi:type="arc" sodipodi:cx="737.53082" sodipodi:cy="618.87567" sodipodi:rx="14.959284"
             sodipodi:ry="14.959369" sodipodi:start="3.0896866" sodipodi:end="3.0843633" sodipodi:open="true"
             sodipodi:arc-type="arc"
             d="m 722.59169,619.6518 a 14.959284,14.959369 0 0 1 14.14312,-15.7143 14.959284,14.959369 0 0 1 15.73303,14.12228 14.959284,14.959369 0 0 1 -14.10125,15.75189 14.959284,14.959369 0 0 1 -15.77056,-14.08035" />
-        <path class="fill-orange  fill-orange stroke-orange  stroke-orangestroke-orange"
+        <path class=" fill-orange  stroke-orange  "
             style="fill:#ffb86c;fill-opacity:1;stroke:#ffb86c;stroke-width:5.24572;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:130.744;stroke-opacity:1;paint-order:stroke markers fill"
             id="path1932" sodipodi:type="arc" sodipodi:cx="122.51572" sodipodi:cy="180.76245" sodipodi:rx="22.376513"
             sodipodi:ry="22.376789" sodipodi:start="3.0896866" sodipodi:end="3.0843633" sodipodi:open="true"

@@ -33,14 +33,26 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://joe-starr.com/</loc>
-    <lastmod>2023-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://joe-starr.com/slides/</loc>
-    <lastmod>2023-08-22T00:00:00+00:00</lastmod>
+    <loc>https://joe-starr.com/posters/9mwagt/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/tag/posters/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/posters/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/tags/</loc>
+    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/slides/</loc>
     <lastmod>2023-08-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -58,26 +70,6 @@
   </url><url>
     <loc>https://joe-starr.com/slides/lightning/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/slides/alexander_polynomail/</loc>
-    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/slides/legendrian_knots/</loc>
-    <lastmod>2022-11-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/slides/discrete_morse_theory/</loc>
-    <lastmod>2022-10-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/tag/index/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://joe-starr.com/slides/kauf-jones/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/tag/ta/</loc>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: November 10, 2023 --><html lang="en-us" >
+<!-- Last Published: November 15, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -329,7 +329,7 @@
 <meta property="og:description" content="Graduate Teaching Assistant" /><meta property="og:image" content="https://joe-starr.com/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
-    <meta property="og:updated_time" content="2023-08-22T00:00:00&#43;00:00" />
+    <meta property="og:updated_time" content="2023-11-10T00:00:00&#43;00:00" />
   
 
 
@@ -418,7 +418,8 @@
 
                     document.querySelectorAll("mjx-container img").forEach((element) => {
                         var src = element.getAttribute("src");
-                        fetch(src)
+                        if (src.endsWith('.svg') == true) {
+                            fetch(src)
                             .then(res => res.text())
                             .then(res => {
                                 const holder = document.createElement('div')
@@ -427,6 +428,7 @@
                                 holder.innerHTML = res
                                 element.replaceWith(holder)
                             })
+                        }
                     });
 
                     console.log("End startup promise");
@@ -435,9 +437,9 @@
         };
     }
     var reveal_init_callbacks = []
-    var reveal_slidechange_callbacks  = []
-    var reveal_slidetransitionend_callbacks  = []
-    var reveal_resize_callbacks  = []
+    var reveal_slidechange_callbacks = []
+    var reveal_slidetransitionend_callbacks = []
+    var reveal_resize_callbacks = []
 </script>
       
     
@@ -1954,6 +1956,80 @@ Lead undergraduates as a primary instructor.</div>
   
 
   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/posters/9mwagt/" >9th Mexican Workshop on Applied Geometry and Topology </a>
+    </div>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 10, 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
 
   
   
@@ -2225,7 +2301,7 @@ Lead undergraduates as a primary instructor.</div>
   <div class="media-body">
 
     <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/slides/lightning/" >Tangled in Knot Theory</a>
+      <a href="/slides/lightning/" >Tangled in Knot Theory Summer 2023</a>
     </div>
 
     
@@ -2256,348 +2332,6 @@ Lead undergraduates as a primary instructor.</div>
       
     
     May 10, 2023
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/slides/alexander_polynomail/" >Alexander Polynomial</a>
-    </div>
-
-    
-    <a href="/slides/alexander_polynomail/"  class="summary-link">
-      <div class="article-style">
-        Define the Alexander Polynomial
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Feb 20, 2023
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/slides/legendrian_knots/" >Legendrian knots</a>
-    </div>
-
-    
-    <a href="/slides/legendrian_knots/"  class="summary-link">
-      <div class="article-style">
-        Brief overview of Legendrian knots
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Nov 29, 2022
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/slides/discrete_morse_theory/" >Discrete Morse Theory</a>
-    </div>
-
-    
-    <a href="/slides/discrete_morse_theory/"  class="summary-link">
-      <div class="article-style">
-        Brief overview of Discrete Morse Theory
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Oct 4, 2022
   </span>
   
 
