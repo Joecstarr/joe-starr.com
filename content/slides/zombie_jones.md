@@ -76,13 +76,13 @@ Deoxyribonucleic acid (DNA). (n.d.). Genome.gov. [https://www.genome.gov/genetic
 {{< slides/zombie/hide_background  >}}
 
 {{< slides/row style="height:calc(var(--slide-height)*.8);" >}}
-{{< slides/col style="flex-grow:3;color:var(--r-Foreground);" >}}
+{{< slides/col style="flex-grow:1;color:var(--r-Foreground);" >}}
 {{< slides/center_block grow="1" >}}
 {{< slides/centersvg src="/presentations/dna/DNA_chemical_structure.svg" width="auto" heigh="auto">}}
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col style="flex-grow:1;text-align:left;"  >}}
-{{< slides/center_block grow="1" >}}
+{{< slides/center_block grow="2" >}}
 Each strand has a backbone. Attached to each sugar is one of four bases: adenine (A), cytosine (C), guanine (G) or thymine (T). The two strands are connected by chemical bonds between the bases: adenine bonds with thymine, and cytosine bonds with guanine.
 {{< /slides/center_block >}}
 {{< /slides/col >}}
@@ -154,9 +154,6 @@ Vinograd, J., Lebowitz, J., Radloff, R., Watson, R., & Laipis, P. (1965). The tw
 {{< slides/zombie/hide_background  >}}
 
 
-# "Supercoiled" DNA knots
-
-
 {{< slides/row style="height:calc(var(--slide-height)*.8);">}}
 {{< slides/col   >}}
 {{< slides/center_block grow="1" >}}
@@ -181,22 +178,11 @@ The CDC now needs you to verify that the DNA knot they've produced truly is the 
 
 ---
 
+
 > "A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ )."
 
-{{% slides/citations  %}}
-Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
-{{% /slides/citations %}}
-
----
-
-# Knot Diagrams
-
----
-
-{{< slides/zombie/hide_background  >}}
-
 {{< slides/row style="">}}
-{{< slides/col style="flex-grow:1;" >}}
+{{< slides/col style="flex-grow:2;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
 {{< /slides/center_block >}}
@@ -212,7 +198,7 @@ $\quad$
 {{< slides/col style="flex-grow:0;" >}}
 $\quad$
 {{< /slides/col >}}
-{{< slides/col style="flex-grow:2;" >}}
+{{< slides/col style="flex-grow:3;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
 {{< /slides/center_block >}}
@@ -220,7 +206,7 @@ $\quad$
 {{< slides/col style="flex-grow:0;" >}}
 $\quad$
 {{< /slides/col >}}
-{{< slides/col style="flex-grow:2;" >}}
+{{< slides/col style="flex-grow:4;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
 {{< /slides/center_block >}}
@@ -229,6 +215,8 @@ $\quad$
 
 
 {{% slides/citations  %}}
+Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
+
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
 
@@ -283,7 +271,7 @@ DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, 
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/center_block >}}
-$\to$
+$\leftrightarrow$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col >}}
@@ -301,7 +289,7 @@ $\to$
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/center_block >}}
-$\to$
+$\leftrightarrow$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col >}}
@@ -318,7 +306,7 @@ $\to$
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/center_block >}}
-$\to$
+$\leftrightarrow$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< slides/col >}}
@@ -425,7 +413,7 @@ In particular, we want to differentiate a knot and its "anti-knot"(mirror).
 
 ---
 
-# Check what happens under Reidemeister moves
+#### Check what happens under Reidemeister moves
 
 If our bracket "respects" Reidemeister moves it respects knot "equivalence".
 
@@ -589,8 +577,8 @@ $
 
 {{< slides/admonition type="Exercise" title="Exercise: Type III" >}}
 
-{{< slides/center_block style="font-size:9rem" >}}
-$$\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA$$
+{{< slides/center_block style="font-size:9rem;margin-top:1rem" >}}
+$\LA\img{/presentations/kauf_bkt/type3/1.svg}\RA=\LA\img{/presentations/kauf_bkt/type3/6.svg}\RA$
 {{< /slides/center_block >}}
 
 {{< /slides/admonition >}}
@@ -642,10 +630,10 @@ $${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentation
 ---
 {{< slides/zombie/hide_background  >}}
 
-{{< slides/admonition type="Exercise" title="Exercise Type I Left" >}}
+{{< slides/admonition type="Exercise" title="Exercise: Compute bracket for the other Type I" >}}
 
-{{< slides/center_block style="font-size:6rem" >}}
-$${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=?\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$$
+{{< slides/center_block style="font-size:6rem;margin-top:1rem" >}}
+${\LA\img{/presentations/kauf_bkt/type1/1.svg}\RA=?\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA}$
 {{< /slides/center_block >}}
 {{< /slides/admonition >}}
 
@@ -671,6 +659,9 @@ ${\begin{aligned}
 {{< /slides/center_block >}}
 
 ---
+
+{{< slides/zombie/hide_background  >}}
+
 # What do we have so far?
 
 For Type II and III everything "works" with the rules:
@@ -692,121 +683,11 @@ ${\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA=-A^{-3}\LA\img{/presentations
 
 ---
 
-
-## What we've defined:
-
-### Kauffman Bracket
-
-The Kauffman Bracket is a function from __unoriented__ **link diagrams** to **Laurent polynomials** with **integer coefficients** in an indeterminate $A$. Important to note that the Kauffman Bracket isn't an "invariant" for knot diagrams.
-
-
-{{< slides/admonition type="Note" markdownify="true" >}}
-
-A **Polynomial**:
-$$p\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}$$
-
-A **Laurent** Polynomial:
-$$\ell\LP x \RP = a_nx^n+a_{n-1}x^{n-1}+\cdots +a_{1}x^{1}+a_{0}x^{0}+a_{-1}x^{-1}+\cdots+a_{-n}x^{-n}$$
-
-{{< /slides/admonition >}}
-
-
----
-
 # Day 53
 
 Time is running out. With your preliminary results in hand the vaccine is being produced. The future of the world is now on your shoulders waiting for your results.
 
 ---
-{{< slides/zombie/hide_background  >}}
-
-
-{{< slides/admonition type="Exercise" title="Compute the bracket:" >}}
-
-{{< slides/center_block style="font-size:10rem" >}}
-$$\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$$
-{{< /slides/center_block >}}
-{{< /slides/admonition >}}
-
-
----
-
-
-
-{{< slides/center_block style="font-size:5rem" >}}
-$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
-&= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
-+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
-\end{aligned}
-$
-{{< /slides/center_block >}}
-
-
----
-
-
-{{< slides/center_block style="font-size:6rem" >}}
-$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
-&=-A^{3}\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
-&=-A^{3}\LP-A^{3}\RP\bkt{/presentations/kauf_bkt/unknot.svg}\\
-&=A^{6}\\
-\end{aligned}
-$
-{{< /slides/center_block >}}
-
-
----
-
-
-
-
-{{< slides/center_block style="font-size:6rem" >}}
-$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
-&= A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
-+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
-&= A\LP A^6\RP
-+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\\
-\end{aligned}
-$
-{{< /slides/center_block >}}
-
----
-
-{{< slides/center_block style="font-size:5rem" >}}
-$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}
-&=A\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
-+A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\
-&=A\LP -A^{3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\
-&+A^{-1}\LP -A^{-3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\
-&=-A^{4}-A^{-4}\\
-\end{aligned}
-$
-{{< /slides/center_block >}}
-
----
-
-{{< slides/center_block style="font-size:6rem" >}}
-$
-\begin{aligned}
-\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}
-&= A\LP A^6\RP\\
-&+\inv{A}\LP-A^{4}-A^{-4}\RP\\
-&= A^7-A^{3}-A^{-5}\\
-\end{aligned}
-$
-{{< /slides/center_block >}}
-
----
-
-
 
 {{% slides/uncenter %}}
 
@@ -865,10 +746,10 @@ $${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP
 {{< slides/zombie/hide_background  >}}
 
 
-{{< slides/admonition type="Exercise" title="Compute the writhe" >}}
+{{< slides/admonition type="Exercise" title="Exercise: Compute the writhe" >}}
 
-{{< slides/center_block style="font-size:10rem" >}}
-$$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$$
+{{< slides/center_block style="font-size:10rem;margin-top:1rem" >}}
+$w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP$
 {{< /slides/center_block >}}
 {{< /slides/admonition >}}
 
@@ -887,7 +768,7 @@ $
 ---
 
 
-{{< slides/center_block style="font-size:4rem" >}}
+{{< slides/center_block style="font-size:3rem" >}}
 $
 \begin{aligned}
      -A^{-3w\LP \img{/presentations/kauf_bkt/type1/1b.svg}\RP}\LA\img{/presentations/kauf_bkt/type1/1b.svg}\RA
@@ -899,6 +780,19 @@ $
 {{< /slides/center_block >}}
 
 ---
+
+{{< slides/zombie/hide_background  >}}
+
+
+{{< slides/admonition type="Exercise" title="Exercise: Verify the other type I move" >}}
+{{< slides/center_block style="font-size:7rem;margin-top:1rem" >}}
+
+$-A^{-3w\LP \img{/presentations/kauf_bkt/type1/1.svg}\RP}=\LA\img{/presentations/kauf_bkt/type1/2a.svg}\RA$
+{{< /slides/center_block  >}}
+{{< /slides/admonition >}}
+
+---
+
 
 # What do we have?
 
@@ -918,32 +812,112 @@ $
 
 ---
 
+## We can now compute
 
-# Definition of the Jones Polynomial
-
-The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
-is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
-
-Defined by
-$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
-where $D$ is any oriented diagram for $\mathscr{K}$.
+{{< slides/center_block style="font-size:7rem" >}}
+$-A^{-3w\LP \img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP}\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$
+{{< /slides/center_block >}}
 
 ---
-{{< slides/zombie/hide_background  >}}
 
+{{% slides/uncenter %}}
+
+<br/>
+{{< slides/center_block style="font-size:3rem;color:var(--r-Orange);" >}}
+$-A^{-3w\LP \img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP}\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$
+{{< /slides/center_block >}}
+<br/>
 
 {{< slides/center_block style="font-size:4rem" >}}
 $
 \begin{aligned}
- V\LP \mathscr{K}\RP&=
-\LP-A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\
-&=\LP-A^{-3\cdot-3} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\
-&=\LP-A^{9}\LP A^7-A^3-A^{-5}\RP\RP _{t^{1/2}=A^{-2}}\\
-&=\LP-A^{16}+A^{12}+A^{-4}\RP _{t^{1/2}=A^{-2}}\\
-&=-t^{-4}+t^{-3}+t^{-1}\\
+&=-A^{-3\cdot -3}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg} +\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\RP\\
+&=-A^{9}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\RP\\
 \end{aligned}
 $
 {{< /slides/center_block >}}
+
+
+---
+
+
+{{< slides/center_block style="font-size:4.5rem" >}}
+$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}
+&=-A^{3}\bkt{/presentations/kauf_bkt/trefoil/trefoil_ab.svg}\\
+&=-A^{3}\LP-A^{3}\RP\bkt{/presentations/kauf_bkt/unknot.svg}\\
+&=A^{6}\\
+\end{aligned}
+$
+{{< /slides/center_block >}}
+
+
+---
+
+{{% slides/uncenter %}}
+
+<br/>
+{{< slides/center_block style="font-size:3rem;color:var(--r-Orange);" >}}
+$-A^{-3w\LP \img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP}\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$
+{{< /slides/center_block >}}
+<br/>
+
+{{< slides/center_block style="font-size:3.5rem" >}}
+$
+\begin{aligned}
+&-A^{9}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\RP\\
+&= -A^{9}\LP A\LP A^6\RP+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\RP\\
+\end{aligned}
+$
+{{< /slides/center_block >}}
+
+
+---
+
+{{< slides/center_block style="font-size:4rem" >}}
+$
+\begin{aligned}
+\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}
+&=A\bkt{/presentations/kauf_bkt/trefoil/trefoil_ba.svg}
++A^{-1}\bkt{/presentations/kauf_bkt/trefoil/trefoil_bb.svg}\\
+&=A\LP -A^{3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\
+&+A^{-1}\LP -A^{-3}\bkt{/presentations/kauf_bkt/unknot.svg}\RP\\
+&=-A^{4}-A^{-4}\\
+\end{aligned}
+$
+{{< /slides/center_block >}}
+
+---
+{{< slides/zombie/hide_background  >}}
+
+{{< slides/center_block style="font-size:3.4rem" >}}
+$
+\begin{aligned}
+
+&-A^{-3w\LP \img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP}\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\\
+&=-A^{9}\LP A\bkt{/presentations/kauf_bkt/trefoil/trefoil_a.svg}+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\RP\\
+&= -A^{9}\LP A\LP A^6\RP+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\RP\\
+&= -A^{9}\LP A\LP A^6\RP+\inv{A}\LP-A^{4}-A^{-4}\RP\RP\\
+&= -A^{9}\LP A^7-A^{3}-A^{-5}\RP\\
+&= -A^{16}+A^{12}+A^{-4}\\
+\end{aligned}
+$
+{{< /slides/center_block >}}
+
+---
+
+
+
+{{< slides/zombie/hide_background  >}}
+
+
+{{< slides/admonition type="Exercise" title="Exercise: Compute the bracket on the anti-knot" >}}
+{{< slides/center_block style="font-size:7rem;margin-top:1rem" >}}
+
+$-A^{-3w\LP \img{/presentations/dna/dna_right.svg}\RP}\LA\img{/presentations/dna/dna_right.svg}\RA$
+{{< /slides/center_block  >}}
+{{< /slides/admonition >}}
 
 
 ---
@@ -957,12 +931,12 @@ $
 {{< slides/col style="width:40%;" >}}
 {{< slides/row style="margin-bottom:2rem;">}}
 {{< slides/col  >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg"  >}}
+{{< slides/centersvg src="/presentations/dna/dna_left.svg"  >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< slides/row >}}
-{{< slides/col style="font-size: 4rem;"  >}}
-${-t^{-4}+t^{-3}+t^{-1}}$
+{{< slides/col style="font-size: 3rem;"  >}}
+${ -A^{16}+A^{12}+A^{-4}}$
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/col >}}
@@ -972,17 +946,46 @@ $\quad$
 {{< slides/col style="width:40%;"  >}}
 {{< slides/row  style="margin-bottom:2rem;">}}
 {{< slides/col  >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/right.svg"  >}}
+{{< slides/centersvg src="/presentations/dna/dna_right.svg"  >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< slides/row >}}
-{{< slides/col style="font-size: 4rem;"  >}}
-${-t^{4}+t^{3}+t^{1}}$
+{{< slides/col style="font-size: 3rem;"  >}}
+${ -A^{-16}+A^{-12}+A^{4}}$
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 
+---
+
+{{< slides/zombie/hide_background  >}}
+
+## The Jones Polynomial
+
+The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
+is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
+
+Defined by
+$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
+where $D$ is any oriented diagram for $\mathscr{K}$.
+
+---
+{{< slides/zombie/hide_background  >}}
+
+
+{{< slides/center_block style="font-size:3.5rem" >}}
+$
+\begin{aligned}
+ V\LP \mathscr{K}\RP&=
+\LP-A^{-3 w\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\
+&=\LP-A^{-3\cdot-3} \bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP _{t^{1/2}=A^{-2}}\\
+&=\LP-A^{9}\LP A^7-A^3-A^{-5}\RP\RP _{t^{1/2}=A^{-2}}\\
+&=\LP-A^{16}+A^{12}+A^{-4}\RP _{t^{1/2}=A^{-2}}\\
+&=-t^{-4}+t^{-3}+t^{-1}\\
+\end{aligned}
+$
+{{< /slides/center_block >}}
 
 ---
 

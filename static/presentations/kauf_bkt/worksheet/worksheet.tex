@@ -62,7 +62,7 @@
 \newcommand{\m}{\scalebox{0.5}[1.0]{$-$}}
 \newcommand{\img}[1]{\begin{aligned}
     &\quad\\
-    &\includesvg[scale=.04]{#1}\\
+    &\includesvg[width=.5cm]{#1}\\
     &\quad
 \end{aligned}}
 \newcommand{\bkt}[1]{\LA\img{#1}\RA}
@@ -86,32 +86,58 @@
 
 \pagenumbering{gobble}
 \fancyhead{}
-
-Show that:
-\vspace{-4cm}
+\begin{enumerate}
+\item{
+Using what we discoverd about the type II move deduce that:
+\vspace{-2cm}
 \begin{center}
-    \scalebox{2}[2]{
-        $\bkt{1.svg}=\bkt{6.svg}$
-        }
-    \end{center}
+\scalebox{2}[2]{
+$\bkt{1.svg}=\bkt{6.svg}$
+}
+\end{center}
+}
+\vspace{5cm}
 
-\vspace{2in}
-
-    Compute:
-    \vspace{-5cm}
-    \begin{center}
-        \scalebox{2}[2]{
-            $\bkt{trefoil_a.svg}$
-            }
-    \end{center}
-
-\vspace{2in}
-
-Compute the writhe:
-\vspace{-6cm}
+\item{
+Compute for the other type one move:
+\vspace{-2cm}
 \begin{center}
-    \scalebox{3}[3]{
+\scalebox{2}[2]{
+    ${\LA\img{t1.svg}\RA=?\LA\img{t1_2.svg}\RA}$
+    }
+\end{center}
+}
+\newpage
+
+
+\item{
+Compute the writhe of:
+\vspace{-2cm}
+\begin{center}
+    \scalebox{4}[4]{
         $\img{trefoil.svg}$
         }
-\end{center}
+\end{center}}
+
+\vspace{2cm}
+\item{
+Verify that our rule works for the other type I move:
+\vspace{-6cm}
+\begin{center}
+    \scalebox{2}[2]{
+        $-A^{-3w\LP \img{t1.svg}\RP}=\LA\img{t1_2.svg}\RA$
+        }
+\end{center}}
+\newpage
+\item{
+Compute the bracket for our anti-knot:
+\vspace{-2cm}
+\begin{center}
+    \scalebox{2}[2]{
+        $-A^{-3w\LP \img{right.svg}\RP}\LA\img{right.svg}\RA$
+        }
+\end{center}}
+
+
+\end{enumerate}
 \end{document}
