@@ -1,5 +1,5 @@
 \documentclass[14pt]{extarticle}
-\usepackage[margin=1cm]{geometry}
+\usepackage[margin=.75in]{geometry}
 
 \usepackage{svg}
 \usepackage{amsmath, amssymb, amsthm, amsfonts, mathrsfs}
@@ -61,9 +61,9 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\m}{\scalebox{0.5}[1.0]{$-$}}
 \newcommand{\img}[1]{\begin{aligned}
-    &\quad\\
+    &\ \\
     &\includesvg[width=.5cm]{#1}\\
-    &\quad
+    &\
 \end{aligned}}
 \newcommand{\bkt}[1]{\LA\img{#1}\RA}
 
@@ -79,13 +79,17 @@
 % --------------------------------------------------------------
 %                         Renew Commands
 % --------------------------------------------------------------
-\renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\headrulewidth}{0pt}
 
 
 \begin{document}
 
-\pagenumbering{gobble}
-\fancyhead{}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Starr}
+
+\rhead{Constructing the Jones polynomial to save the world}
+
 \begin{enumerate}
 \item{
 Using what we discoverd about the type II move deduce that:
@@ -99,7 +103,7 @@ $\bkt{1.svg}=\bkt{6.svg}$
 \vspace{5cm}
 
 \item{
-Compute for the other type one move:
+Compute bracket for the other type one move:
 \vspace{-2cm}
 \begin{center}
 \scalebox{2}[2]{
@@ -112,32 +116,37 @@ Compute for the other type one move:
 
 \item{
 Compute the writhe of:
-\vspace{-2cm}
 \begin{center}
-    \scalebox{4}[4]{
-        $\img{trefoil.svg}$
+    \scalebox{1}[1]{
+        $\includesvg[width=4cm]{trefoil.svg}$
         }
 \end{center}}
 
-\vspace{2cm}
+\vspace{5cm}
 \item{
 Verify that our rule works for the other type I move:
-\vspace{-6cm}
+\vspace{-1cm}
 \begin{center}
     \scalebox{2}[2]{
-        $-A^{-3w\LP \img{t1.svg}\RP}=\LA\img{t1_2.svg}\RA$
+        $-A^{-3w\LP \includesvg[width=.3cm]{t1.svg}\RP}\LA\img{t1.svg}\RA=\LA\img{t1_2.svg}\RA$
         }
 \end{center}}
 \newpage
 \item{
 Compute the bracket for our anti-knot:
-\vspace{-2cm}
+\vspace{-3cm}
 \begin{center}
-    \scalebox{2}[2]{
-        $-A^{-3w\LP \img{right.svg}\RP}\LA\img{right.svg}\RA$
+    \scalebox{3}[3]{
+        $-A^{-3w\LP \includesvg[width=.3cm]{right.svg}\RP}\LA\img{right.svg}\RA$
         }
 \end{center}}
-
-
+\end{enumerate}
+\newpage
+\section*{Reference:}
+\begin{enumerate}
+        \item{ \scalebox{1.5}[1.5]{${\LA \img{unknot.svg} \RA=1}$}\vspace{-2cm}}
+        \item{ \scalebox{1.5}[1.5]{$\LA \img{crossing_un.svg}\RA=A\LA \img{6a.svg} \RA+A^{-1}\LA\img{6b.svg}\RA$}\vspace{-2cm}}
+        \item{ \scalebox{1.5}[1.5]{${\LA D \sqcup \img{unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}$}\vspace{-1cm}}
+        \item{ \scalebox{1.5}[1.5]{$-A^{-3w\LP D\RP}\LA D\RA$}}
 \end{enumerate}
 \end{document}
