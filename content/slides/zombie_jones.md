@@ -900,7 +900,7 @@ $
 &= -A^{9}\LP A\LP A^6\RP+\inv{A}\bkt{/presentations/kauf_bkt/trefoil/trefoil_b.svg}\RP\\
 &= -A^{9}\LP A\LP A^6\RP+\inv{A}\LP-A^{4}-A^{-4}\RP\RP\\
 &= -A^{9}\LP A^7-A^{3}-A^{-5}\RP\\
-&= -A^{16}+A^{12}+A^{-4}\\
+&= -A^{16}+A^{12}+A^{4}\\
 \end{aligned}
 $
 {{< /slides/center_block >}}
@@ -936,7 +936,7 @@ $-A^{-3w\LP \img{/presentations/dna/dna_right.svg}\RP}\LA\img{/presentations/dna
 {{< /slides/row >}}
 {{< slides/row >}}
 {{< slides/col style="font-size: 3rem;"  >}}
-${ -A^{16}+A^{12}+A^{-4}}$
+${ -A^{16}+A^{12}+A^{4}}$
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/col >}}
@@ -951,7 +951,7 @@ $\quad$
 {{< /slides/row >}}
 {{< slides/row >}}
 {{< slides/col style="font-size: 3rem;"  >}}
-${ -A^{-16}+A^{-12}+A^{4}}$
+${ -A^{-16}+A^{-12}+A^{-4}}$
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/col >}}
