@@ -514,7 +514,7 @@ ${B\bkt{/presentations/kauf_bkt/type2/4.svg}}$
 {{< slides/center_block style="font-size:4rem" >}}
 $\begin{aligned}
 1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
-2.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=C\LA D\RA}
+2.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=C\LA P\RA}
 \end{aligned}$
 {{< /slides/center_block >}}
 
@@ -620,7 +620,7 @@ $
 \begin{aligned}
 1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
 2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
-3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
+3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA P\RA}
 \end{aligned}$
 {{< /slides/center_block >}}
 
@@ -724,7 +724,7 @@ $
 \begin{aligned}
 1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
 2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
-3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
+3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA P\RA}
 \end{aligned}$
 {{< /slides/center_block >}}
 but Type I is "broken":
@@ -792,11 +792,18 @@ $2.$ Negative
 # Writhe of a knot
 
 
-The writhe $w\LP D\RP$ of a diagram $D$ of an oriented link is the sum of the
-signs of the crossings of $ D $.
+The writhe $w\LP P\RP$ of a diagram $P$ of an oriented link is the sum of the
+signs of the crossings of $ P $.
 
 {{< slides/center_block style="font-size:5rem" >}}
-$${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
+$${w\LP P\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
+{{< /slides/center_block >}}
+
+---
+{{< slides/zombie/hide_background  >}}
+
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/orientation/5.1_unor.svg" width="auto" heigh="auto"  >}}
 {{< /slides/center_block >}}
 
 ---
@@ -861,15 +868,14 @@ $-A^{-3w\LP \img{/presentations/kauf_bkt/type1/1.svg}\RP}=\LA\img{/presentations
 
 # What do we have?
 
-For Type I, II, and III everything "works" with the rules:
+For Type I, II, and III everything "works" for  the polynomial $$V\LP P\RP=-A^{-3w\LP P\RP}\LA P\RA$$ with the rules:
 
-{{< slides/center_block style="font-size:3rem" >}}
+{{< slides/center_block style="font-size:2.5rem" >}}
 $
 \begin{aligned}
 1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
 2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
-3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}\\
-4.\quad&-A^{-3w\LP D\RP}\LA D\RA
+3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA P\RA}
 \end{aligned}$
 {{< /slides/center_block >}}
 
@@ -879,8 +885,8 @@ $
 
 ## We can now compute
 
-{{< slides/center_block style="font-size:7rem" >}}
-$-A^{-3w\LP \img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP}\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$
+{{< slides/center_block style="font-size:5rem" >}}
+$V\LP\img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP=-A^{-3w\LP \img{/presentations/kauf_bkt/trefoil/trefoil.svg}\RP}\bkt{/presentations/kauf_bkt/trefoil/trefoil.svg}$
 {{< /slides/center_block >}}
 
 ---
@@ -1024,6 +1030,19 @@ ${ -A^{-16}+A^{-12}+A^{-4}}$
 
 ---
 
+# Day 121
+
+With the successful completion of your work the vaccine is being administer world wide. The President congratulates you for your work and the world is optimistic.
+
+---
+
+# Day 300
+
+The virus is completely controlled and you win every prize in every field imaginable!
+
+
+---
+
 {{< slides/zombie/hide_background  >}}
 
 ## The Jones Polynomial
@@ -1032,8 +1051,8 @@ The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
 is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
 
 Defined by
-$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA P\RA\RP _{t^{1/2}=A^{-2}} $
-where $D$ is any oriented diagram for $\mathscr{K}$.
+$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(P)}\LA P\RA\RP _{t^{1/2}=A^{-2}} $
+where $P$ is any oriented diagram for $\mathscr{K}$.
 
 ---
 {{< slides/zombie/hide_background  >}}
@@ -1052,17 +1071,6 @@ $
 $
 {{< /slides/center_block >}}
 
----
-
-# Day 121
-
-With the successful completion of your work the vaccine is being administer world wide. The President congratulates you for your work and the world is optimistic.
-
----
-
-# Day 300
-
-The virus is completely controlled and you win every prize in every field imaginable!
 
 ---
 
