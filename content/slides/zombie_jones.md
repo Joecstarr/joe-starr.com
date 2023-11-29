@@ -29,9 +29,6 @@ slides:
 
 
 
-
-
-
 # Zombies and knots
 ## Constructing the Jones polynomial to save the world
 
@@ -60,9 +57,7 @@ DNA knot as seen under the electron microscope. - Image Credit: Javier Arsuaga, 
 
 ---
 
-# DNA
-
----
+## DNA
 
 Deoxyribonucleic acid (abbreviated DNA) is the molecule that carries genetic information for the development and functioning of an organism.
 
@@ -173,6 +168,36 @@ You've successfully imaged the DNA of the Z-virus and found DNA with a knot. You
 The CDC now needs you to verify that the DNA knot they've produced truly is the mirror of the Z-virus.
 
 ---
+
+{{< slides/zombie/hide_background  >}}
+
+
+# Anti-Knot
+
+
+{{< slides/row >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/row style="margin-bottom:2rem;">}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/dna/dna_left.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< slides/col style="font-size: 2rem;text-align:left;flex-grow:0;"  >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col style=""  >}}
+{{< slides/row  style="margin-bottom:2rem;flex-grow:1;">}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/dna/dna_right.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+
+
 
 # Mathematical Knots
 
@@ -315,6 +340,34 @@ $\leftrightarrow$
 {{< /slides/row >}}
 
 ---
+{{< slides/zombie/hide_background  >}}
+
+
+# Equal?
+
+
+{{< slides/row >}}
+{{< slides/col style="flex-grow:1;" >}}
+{{< slides/row style="margin-bottom:2rem;">}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/general/guessknot_trefoil.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< slides/col style="font-size: 2rem;text-align:left;flex-grow:0;"  >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col style=""  >}}
+{{< slides/row  style="margin-bottom:2rem;flex-grow:1;">}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/general/guessknot_unknot.svg"  >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
+---
 
 # Playing with diagrams
 
@@ -372,7 +425,7 @@ $\to$
 
 ---
 
-# Polynomial
+# Pictures are hard lets leverage algebra
 
 {{< slides/center_block style="font-size:16rem;" >}}
 $\bkt{/presentations/kauf_bkt/crossing/crossing_un.svg}$
@@ -461,7 +514,7 @@ ${B\bkt{/presentations/kauf_bkt/type2/4.svg}}$
 {{< slides/center_block style="font-size:4rem" >}}
 $\begin{aligned}
 1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
-2.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=C\LA D\RA}
+2.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=C\LA D\RA}
 \end{aligned}$
 {{< /slides/center_block >}}
 
@@ -519,7 +572,7 @@ $\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentati
 
 # Putting pieces together
 
-How can we arrange $A,\ B$, and $C$ to get equality?
+How can we select $A,\ B$, and $C$ to get equality?
 
 {{< slides/center_block style="font-size:3rem" >}}
 $\LP A^2+ABC+B^2\RP\bkt{/presentations/kauf_bkt/type2/6a.svg}+BA\bkt{/presentations/kauf_bkt/type2/6b.svg}=\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA$
@@ -567,7 +620,7 @@ $
 \begin{aligned}
 1.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
 2.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
-3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
+3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
 \end{aligned}$
 {{< /slides/center_block >}}
 
@@ -671,7 +724,7 @@ $
 \begin{aligned}
 1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
 2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
-3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
+3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}
 \end{aligned}$
 {{< /slides/center_block >}}
 but Type I is "broken":
@@ -727,7 +780,12 @@ $2.$ Negative
 {{< /slides/row >}}
 
 
+---
+{{< slides/zombie/hide_background  >}}
 
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/orientation/5.1.svg" width="auto" heigh="auto"  >}}
+{{< /slides/center_block >}}
 
 ---
 
@@ -739,6 +797,13 @@ signs of the crossings of $ D $.
 
 {{< slides/center_block style="font-size:5rem" >}}
 $${w\LP D\RP=\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_+.svg}\RP-\text{#}\LP\img{/presentations/kauf_bkt/crossing/crossing_-.svg}\RP}$$
+{{< /slides/center_block >}}
+
+---
+{{< slides/zombie/hide_background  >}}
+
+{{< slides/center_block grow="1"  >}}
+{{< slides/centersvg src="/presentations/kauf_bkt/orientation/5.1.svg" width="auto" heigh="auto"  >}}
 {{< /slides/center_block >}}
 
 ---
@@ -803,7 +868,7 @@ $
 \begin{aligned}
 1.\quad&{\LA \img{/presentations/kauf_bkt/unknot.svg} \RA=1}\\
 2.\quad&\LA \img{/presentations/kauf_bkt/crossing/crossing_un.svg}\RA=A\LA \img{/presentations/kauf_bkt/type2/6a.svg} \RA+\inv{A}\LA\img{/presentations/kauf_bkt/type2/6b.svg}\RA\\
-3.\quad&{\LA D \sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}\\
+3.\quad&{\LA P\sqcup \img{/presentations/kauf_bkt/unknot.svg} \RA=\LP-A^{-2}-A^2\RP\LA D\RA}\\
 4.\quad&-A^{-3w\LP D\RP}\LA D\RA
 \end{aligned}$
 {{< /slides/center_block >}}
@@ -967,7 +1032,7 @@ The Jones Polynomial $V\LP \mathscr{K}\RP$ of an oriented knot $\mathscr{K}$
 is the **Laurent polynomial**  with integer coefficients in $t^{1/2}$.
 
 Defined by
-$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA D \RA\RP _{t^{1/2}=A^{-2}} $
+$ V\LP \mathscr{K}\RP=\LP\LP-A\RP^{-3w(D)}\LA P\RA\RP _{t^{1/2}=A^{-2}} $
 where $D$ is any oriented diagram for $\mathscr{K}$.
 
 ---
