@@ -781,13 +781,6 @@ $2.$ Negative
 
 
 ---
-{{< slides/zombie/hide_background  >}}
-
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/kauf_bkt/orientation/5.1.svg" width="auto" heigh="auto"  >}}
-{{< /slides/center_block >}}
-
----
 
 # Writhe of a knot
 
