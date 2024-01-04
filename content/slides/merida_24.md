@@ -59,6 +59,13 @@ slides:
     width:52rem;
 }
 #mermaid-1 svg{
+    margin-top: -3rem !important;
+    width:60rem;
+}
+#mermaid-2 svg{
+    width:100rem;
+}
+#mermaid-3 svg{
     width:36rem;
 }
 
@@ -939,6 +946,34 @@ $\quad$
 
 
 ---
+{{% slides/uncenter %}}
+
+## Parallelization
+
+
+```mermaid
+sequenceDiagram
+
+    participant DB
+    participant Server
+    participant Client 1
+    participant Client 2
+
+    Server->>+Client 1: Dispatch job 1 for stencil starting from TV idx<br/>[0,0,0,...]
+    Server-->>DB: Mark job 1 as dispatched
+    Server->>+Client 2: Dispatch job 2 for stencil starting from TV idx<br/>[100,0,0,...]
+    Server-->>DB: Mark job 2 as dispatched
+    Client 1-->>-Server: job complete
+    Server-->>DB: store job 1 results and mark complete
+    Server->>+Client 1: Dispatch job 3 for stencil starting from TV idx<br/>[0,100,0,...]
+    Server-->>DB: Mark job 3 as dispatched
+    Client 2-->>-Server: job complete
+    Server-->>DB: store job 2 results and mark complete
+    Client 1-->>-Server: job complete
+    Server-->>DB: store job 3 results and mark complete
+
+```
+---
 # Generalized Montesinos
 
 ---
@@ -1025,14 +1060,17 @@ A vertical sum of two Montesinos tangles.
 
 ---
 
-## Caudron Trees
+## Algebraic Tangle Trees
 
 To generate all possible algebraic tangles, we can generate all possible algebraic expressions on the trivial tangles. Equivalently, all full binary trees with $N$ leaves. Where the tree's internal nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled with all combinations of trivial tangles.
 
-These binary trees are called *Caudron Trees*.
+These binary trees are called *Algebraic Tangle Trees*.
 
 {{% slides/citations %}}
 Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
+{{% /slides/citations %}}
+{{% slides/citations %}}
+Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
 {{% /slides/citations %}}
 
 ---
@@ -1212,6 +1250,7 @@ A storage module defines a storage interface for the application. The main inter
 13.  Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
 14. Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
 15. F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+16. Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
 {{% /slides/citations %}}
 
 
