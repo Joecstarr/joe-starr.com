@@ -71,7 +71,7 @@ slides:
 
 </style>
 
-## GEOTOP-A International Conference (1/11/23)
+## GEOTOP-A International Conference (1/11/24)
 
 # The Tanglenomicon
 
@@ -134,68 +134,9 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
-# Knot Equivalence
-
----
-
-# reidemeister moves
-
----
-# Type I
-
-
-{{< slides/row >}}
-{{< slides/col  >}}
-{{< slides/centersvg src="/presentations/kauf_bkt/type1/1.svg" >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block >}}
-$\leftrightarrow$
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/centersvg src="/presentations/kauf_bkt/type1/2a.svg"  >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
-# Type II
-
-
-{{< slides/row >}}
-{{< slides/col  >}}
-{{< slides/centersvg src="/presentations/kauf_bkt/type2/1.svg" >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block >}}
-$\leftrightarrow$
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/centersvg src="/presentations/kauf_bkt/type2/6b.svg" >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
-# Type III
-
-{{< slides/row >}}
-{{< slides/col  >}}
-{{< slides/centersvg src="/presentations/kauf_bkt/type3/1.svg" >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block >}}
-$\leftrightarrow$
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/centersvg src="/presentations/kauf_bkt/type3/6.svg" >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
-
 # The natural question
+
+## How many knots?
 
 ---
 # Knot Tables
