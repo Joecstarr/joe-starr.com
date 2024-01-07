@@ -36,7 +36,7 @@ slides:
     margin-left: auto !important;
     margin-right: auto !important;
 }
-#parity_1,#parity_2,#parity_3,#parity_4{
+#parity_1,#parity_2,#parity_3,#parity_4,#parity_5,#parity_6{
     width:18rem;
     height:18rem;
     margin-left: auto !important;
@@ -632,6 +632,18 @@ To play with twist vectors and continued fractions visit
         {{< slides/row style="" >}}
             {{< slides/col >}}
                 {{< slides/centersvg src="/presentations/comp/inf.svg"  direct="true" id="parity_4"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/322.svg" direct="true" id="parity_5"   >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/parity_1.svg"  direct="true" id="parity_6"  >}}
             {{< /slides/col>}}
         {{< /slides/row >}}
     {{< /slides/col>}}
