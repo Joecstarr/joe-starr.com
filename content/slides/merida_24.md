@@ -1,6 +1,6 @@
 ---
 title: "GEOTOP-A International Conference Applications of Geometry and Topology"
-date: "2024-1-1"
+date: "2024-01-01"
 summary: "Talk given at the GEOTOP-A International Conference on 1/11/24."
 tags: [
     "Talks",
@@ -63,10 +63,7 @@ slides:
     width:60rem;
 }
 #mermaid-2 svg{
-    width:100rem;
-}
-#mermaid-3 svg{
-    width:36rem;
+    width:37rem;
 }
 
 </style>
@@ -477,7 +474,7 @@ $\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\&\\
 
 For any $N$ an obvious twist vector is the twist vector of all $1$s
 $$[1\ 1\ 1\ \cdots\ 1]$$
-Noting that when we write this sequence we have $N-1$ spaces.
+Noting that when we write this sequence, we have $N-1$ spaces.
 
 ---
 
@@ -885,6 +882,15 @@ $\quad$
 {{< /slides/row   >}}
 {{< /slides/admonition >}}
 
+---
+
+## What about the 'k'?
+
+The construction for the canonical Montesinos tangles includes a trailing $\frac{k}{1}$ tangle. Our generation strategy seems to miss these.
+
+What we're actually generating with this algorithm is equivalent to allowing the boundary components of the tangle to move. To recover fixed boundary tangles we can append a $k$ term to each lower crossing Montesinos tangle.
+
+This allows users to choose datasets for fixed or non-fixed boundary tangles.
 
 ---
 {{% slides/uncenter %}}
