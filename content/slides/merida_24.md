@@ -134,26 +134,12 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
-# The natural question
+# A natural question
 
 ## How many knots?
 
 ---
 # Knot Tables
-
----
-
-{{< slides/row >}}
-{{< slides/col >}}
-{{< centerimg src="/presentations/mathday23/lord_kelvin.jpg" >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block markdownify="true" grow="1" >}}Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æther.
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
 
 * 1860's Tait computes knots up to 7 crossing
    * 15 knots
@@ -372,6 +358,7 @@ $\frac{1}{2}$
 
 # The Tanglenomicon
 
+## The table of two string tanlges
 
 ---
 
@@ -521,52 +508,6 @@ $$\begin{array}{|l|l|l|l|}
 
 {{< /slides/admonition >}}
 
-
----
-{{% slides/uncenter %}}
-
-##### Programmatic Description
-
-
-```mermaid
-stateDiagram-v2
-    direction LR
-
-    state if_done <<choice>>
-    State_i: i=0
-    State_ipp: i++
-    state "Construct TV from i as a bitfield" as tv_calc{
-        state "tmp=i;j=0;cnt=N" as State_temp
-        State_jpp: j++
-        State_cntmm: cnt--
-        State_sum_tv: TV[j]++
-        State_rsh: tmp=tmp>>1
-        state if_lsb <<choice>>
-        state if_cnteo <<choice>>
-        State_store_tv: Store TV
-
-        [*] --> State_temp
-        State_temp --> if_cnteo
-        if_cnteo--> State_cntmm: if cnt>0
-        if_cnteo--> State_store_tv: if cnt==0
-        State_store_tv --> [*]
-
-        State_cntmm -->if_lsb
-        if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
-        State_sum_tv --> State_rsh
-        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
-        State_jpp --> State_rsh
-        State_rsh --> if_cnteo
-    }
-    [*] --> State_i
-    State_i --> if_done
-    if_done --> tv_calc: if i < 2**(N-1)
-    tv_calc --> State_ipp
-    State_ipp --> if_done
-    if_done --> [*]: if i == 2**(N-1)
-
-
-```
 ---
 
 # Computations
@@ -599,158 +540,6 @@ $$\ =\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$$
 {{% slides/citations %}}
 Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
 {{% /slides/citations %}}
-
----
-
-To play with twist vectors and continued fractions visit
-
-{{< slides/centersvg src="/qr_codes/contfrac.svg" direct="true" id="qr" >}}
-
-<p style="text-align:center !important;">https://joe-starr.com/resources/cont_frac_convert/</p>
-
-
----
-
-## Parity
-
-{{< slides/row style="" >}}
-    {{< slides/col style="flex-grow:1;">}}
-        {{< slides/row style="margin-bottom:2rem;" >}}
-            {{< slides/col >}}
-                {{< slides/centersvg src="/presentations/comp/321.svg"  direct="true" id="parity_1"  >}}
-            {{< /slides/col>}}
-        {{< /slides/row >}}
-        {{< slides/row style="" >}}
-            {{< slides/col >}}
-                {{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_2" >}}
-            {{< /slides/col>}}
-        {{< /slides/row >}}
-    {{< /slides/col>}}
-    {{< slides/col style="flex-grow:1;">}}
-        {{< slides/row style="margin-bottom:2rem;" >}}
-            {{< slides/col >}}
-                {{< slides/centersvg src="/presentations/comp/312.svg" direct="true" id="parity_3"   >}}
-            {{< /slides/col>}}
-        {{< /slides/row >}}
-        {{< slides/row style="" >}}
-            {{< slides/col >}}
-                {{< slides/centersvg src="/presentations/comp/inf.svg"  direct="true" id="parity_4"  >}}
-            {{< /slides/col>}}
-        {{< /slides/row >}}
-    {{< /slides/col>}}
-    {{< slides/col style="flex-grow:1;">}}
-        {{< slides/row style="margin-bottom:2rem;" >}}
-            {{< slides/col >}}
-                {{< slides/centersvg src="/presentations/comp/322.svg" direct="true" id="parity_5"   >}}
-            {{< /slides/col>}}
-        {{< /slides/row >}}
-        {{< slides/row style="" >}}
-            {{< slides/col >}}
-                {{< slides/centersvg src="/presentations/comp/parity_1.svg"  direct="true" id="parity_6"  >}}
-            {{< /slides/col>}}
-        {{< /slides/row >}}
-    {{< /slides/col>}}
-{{< /slides/row >}}
-
----
-
-## Computing Parity
-
-If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for parity
-
-{{<  slides/admonition type="Note" title="Parity Table" >}}
-
-$$\begin{array}{|c|c|c|}
-\hline
-p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
-0 &0&N/A\\ \hline
-0 &1& 0 \\ \hline
-1 &0&\infty\\ \hline
-1 &1& 1\\ \hline
-\end{array}$$
-
-{{<  /slides/admonition  >}}
-
----
-
-
-
-{{<  slides/admonition type="Example" title="" >}}
-
-
-{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:90%;margin-left:2rem;margin-top:2rem;" >}}
-{{< slides/col >}}
-{{< slides/row  >}}
-{{< slides/col >}}
-{{< slides/center_block grow="1" >}}
-{{< slides/centersvg src="/presentations/comp/321.svg" direct="true" id="parity_calc_1"  >}}
-{{< /slides/center_block>}}
-{{< /slides/col >}}
-{{< /slides/row  >}}
-{{< slides/row  >}}
-{{< slides/col  >}}
-{{< slides/center_block grow="1" >}}
-$$\ =[3\ 2\ 1]=1+\frac{1}{2+\frac{1}{3}}=\frac{10}{7}\to\text{ Parity: 0 }$$
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row  >}}
-{{< slides/row  >}}
-{{< slides/col >}}
-{{< slides/center_block grow="1" >}}
-{{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_calc_1"  >}}
-{{< /slides/center_block>}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
-
-
-
-
-{{<  /slides/admonition  >}}
-
-
-
-
----
-
-## Closures
-
-{{< slides/row style="" >}}
-{{< slides/col style="flex-grow:2;">}}
-{{< slides/centersvg src="/presentations/mathday23/cc_2.svg" block="true" >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:0;">}}
-$\ $
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:3;">}}
-{{< slides/centersvg src="/presentations/general/cc_2.svg"  block="true" >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
-## Closure Equivalence and pivoting to knots
-
-{{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
-
- Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0$<$p$. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
-<br/>
-(1) $p=p^{\prime}$
-<br/>
-(2) either $q \equiv q^{\prime}(\bmod p)$ or $q q^{\prime} \equiv 1(\bmod p)$.
-
-{{<  /slides/admonition  >}}
-
-{{% slides/citations  %}}
-Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
-{{% /slides/citations  %}}
-
----
-
-
-
-{{< slides/centersvg src="/presentations/general/close_eq.svg" height="auto">}}
 
 ---
 
@@ -908,34 +697,6 @@ What we're actually generating with this algorithm is equivalent to allowing the
 This allows users to choose datasets for fixed or non-fixed boundary tangles.
 
 ---
-{{% slides/uncenter %}}
-
-## Parallelization
-
-
-```mermaid
-sequenceDiagram
-
-    participant DB
-    participant Server
-    participant Client 1
-    participant Client 2
-
-    Server->>+Client 1: Dispatch job 1 for stencil starting from TV idx<br/>[0,0,0,...]
-    Server-->>DB: Mark job 1 as dispatched
-    Server->>+Client 2: Dispatch job 2 for stencil starting from TV idx<br/>[100,0,0,...]
-    Server-->>DB: Mark job 2 as dispatched
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 1 results and mark complete
-    Server->>+Client 1: Dispatch job 3 for stencil starting from TV idx<br/>[0,100,0,...]
-    Server-->>DB: Mark job 3 as dispatched
-    Client 2-->>-Server: job complete
-    Server-->>DB: store job 2 results and mark complete
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 3 results and mark complete
-
-```
----
 # Generalized Montesinos
 
 ---
@@ -968,6 +729,11 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/center_block >}}
+
+
+{{% slides/citations %}}
+Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
+{{% /slides/citations %}}
 
 ---
 
@@ -1097,8 +863,6 @@ $6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2
 {{< /slides/row >}}
 {{< /slides/center_block >}}
 
-
-
 ---
 
 # Generation
@@ -1107,89 +871,11 @@ There exist tables of 4 valent graphs. We can use those with insertions from our
 
 ---
 
-# Tooling
-
----
-{{% slides/uncenter %}}
-
-### Design Goals
-
-The design for The Tanglenomicon project prioritizes flexibility and extensibility. We want a feature, maybe "calculate Jones polynomial," to be runnable in a jupyter notebook or on a university cluster. We're aiming for a "write once deploy anywhere" design.
-
-To that end we've decoupled functionality wherever feasible, taking a layered
-approach for system design.
-
-
-```mermaid
-flowchart LR
-    Runner
-subgraph "Runnables"
-    Generator
-    Translator
-    Computation
-end
-subgraph "Data Wranglers"
-    Notation
-    Storage
-end
-Runner -->|Runs| Generator
-Runner -->|Runs| Computation
-Runner -->|Runs| Translator
-Translator -->|Uses| Notation
-Generator -->|Uses| Notation
-Computation -->|Uses| Notation
-Generator -->|Uses| Storage
-Computation -->|Uses| Storage
-Translator -->|Uses| Storage
-
-```
-
-
-
----
-### Runners
-
-A runner is a human/machine interface layer. This abstracts the routines in lower layers for a user to interact with. This could be a CLI, python binding, a Mathematica wrapper, or a web API.
-
----
-
-## Runnables
-
-*Generators*
-
-Generators create new data. A generator might look like a module to create rational tangles. They may use one or more Computations, Notations, or Translators.
-
-*Computation*
-
-Computations compute a value for a given data. A computation might look like a module for computing a Jones polynomial of a link, or a computing the writhe of a tangle.
-
-*Translators*
-
-Translators define a conversion between two Notations. A translator might look like a module for converting from PD notation to Conway notation and back again.
-
----
-
-## Data Wranglers
-
-*Notations*
-
-Notations define a notational convention for a link/tangle. They describe a method for converting to and from a string representation of a link/tangle and data structure describing that link/tangle.
-
-
-*Storage*
-
-A storage module defines a storage interface for the application. The main inter-module type is string and the calling module is responsible for en/decoding the string with a notation module.
-
-
----
-
 {{% slides/uncenter %}}
 
 # Technologies
 
 {{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
-
-
 
 ---
 
