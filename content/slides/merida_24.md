@@ -62,6 +62,9 @@ slides:
     margin-top: -3rem !important;
     width:60rem;
 }
+#mermaid-1 svg *{
+    font-size:125% !important;
+}
 #mermaid-2 svg{
     width:37rem;
 }
@@ -825,7 +828,7 @@ $=$
 
 
 {{< slides/row style="" >}}
-{{< slides/col style="flex-grow:1;" >}}
+{{< slides/col style="flex-grow:3;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  >}}
 {{< /slides/center_block >}}
@@ -835,7 +838,7 @@ $=$
 $$\ =\ $$
 {{< /slides/center_block >}}
 {{< /slides/col>}}
-{{< slides/col style="flex-grow:1;" >}}
+{{< slides/col style="flex-grow:2;" >}}
 {{< slides/center_block grow="1"  >}}
 {{< slides/centersvg src="/presentations/general/rat_plus_rat_1.svg"  >}}
 {{< /slides/center_block >}}
