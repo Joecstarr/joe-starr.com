@@ -1,14 +1,14 @@
 :root {
-    --r-Background  :#000000;
-    --r-Selection   :#d0d3d4;
-    --r-Foreground  :#FFFFFF;
-    --r-Highlight   :#7da1c4;
-    --r-Blue        :#1d4289;
-    --r-Green       :#007a78;
-    --r-Orange      :#dc582a;
+    --r-Background  :#FFFFFF;
+    --r-Selection   :#7da1c4;
+    --r-Foreground  :#000000;
+    --r-Highlight   :#82372b;
+    --r-Blue        :#4769ff;
+    --r-Green       :#0a8a0a;
+    --r-Orange      :#eb7d00;
     --r-Pink        :#e56db1;
-    --r-Purple      :#5d3754;
+    --r-Purple      :#b70fff;
     --r-Red         :#d3273e;
-    --r-Yellow      :#ffc845;
+    --r-Yellow      :#268097;
     --r-main-font-size: 30px;
   }

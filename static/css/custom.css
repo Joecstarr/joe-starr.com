@@ -179,7 +179,7 @@ li {
 .stroke-red{stroke: var(--r-Red) !important ;}
 .stroke-yellow{stroke: var(--r-Yellow) !important ;}
 .stroke-background{stroke: var(--r-Background) !important ;}
-.stroke-forground{stroke: var(--r-Forground) !important ;}
+.stroke-foreground{stroke: var(--r-Foreground) !important ;}
 .stroke-highlight{stroke: var(--r-Highlight) !important ;}
 .stroke-selection{stroke: var(--r-Selection) !important ;}
 .fill-blue{fill: var(--r-Blue) !important ;}
@@ -190,6 +190,6 @@ li {
 .fill-red{fill: var(--r-Red) !important ;}
 .fill-yellow{fill: var(--r-Yellow) !important ;}
 .fill-background{fill: var(--r-Background) !important ;}
-.fill-forground{fill: var(--r-Forground) !important ;}
+.fill-foreground{fill: var(--r-Foreground) !important ;}
 .fill-highlight{fill: var(--r-Highlight) !important ;}
 .fill-selection{fill: var(--r-Selection) !important ;}
