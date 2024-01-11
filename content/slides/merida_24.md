@@ -1,6 +1,6 @@
 ---
 title: "GEOTOP-A International Conference Applications of Geometry and Topology"
-date: "2024-01-01"
+date: "2024-01-11"
 summary: "Talk given at the GEOTOP-A International Conference on 1/11/24."
 tags: [
     "Talks",
@@ -16,7 +16,11 @@ slides:
         theme: "none"
         center: true
         transition: "none"
+qr:
+    src: "https://raw.githubusercontent.com/Joecstarr/posters/master/qr_httpsjoe-starr.svg"
+
 ---
+
 
 {{< slides/theme >}}
 {{< dracula_css >}}
@@ -58,14 +62,14 @@ slides:
 #mermaid-0 svg{
     width:52rem;
 }
-#mermaid-1 svg{
+#mermaid-2 svg{
     margin-top: -3rem !important;
     width:60rem;
 }
-#mermaid-1 svg *{
+#mermaid-2 svg *{
     font-size:125% !important;
 }
-#mermaid-2 svg{
+#mermaid-1 svg{
     width:37rem;
 }
 
@@ -84,74 +88,7 @@ Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 
 
 ---
-
-# Knots
-
----
-
-
-> "A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ )."
-
-{{< slides/row style="">}}
-{{< slides/col style="flex-grow:2;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:2;">}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:3;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:4;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
-
-{{% slides/citations  %}}
-Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
-
-[https://www.knotplot.com/](https://www.knotplot.com/)
-{{% /slides/citations %}}
-
-
----
-
-# The natural question
-
-## How many knots?
-
----
 # Knot Tables
-
----
-
-{{< slides/row >}}
-{{< slides/col >}}
-{{< centerimg src="/presentations/mathday23/lord_kelvin.jpg" >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block markdownify="true" grow="1" >}}Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æther.
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
 
 ---
 
@@ -177,6 +114,7 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ### KnotInfo
@@ -372,9 +310,12 @@ $\frac{1}{2}$
 
 # The Tanglenomicon
 
+## The table of two string tangles
 
 ---
 
+
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ## Building up
@@ -521,6 +462,39 @@ $$\begin{array}{|l|l|l|l|}
 
 {{< /slides/admonition >}}
 
+---
+
+# Computations
+
+---
+
+{{< slides/hide_qr  >}}
+## Rational Number (continued fraction)
+
+
+The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction that is:
+$$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
+
+{{<  slides/admonition type="Example" title="Twist Vector to rational number" >}}
+
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;margin-top:1rem;" >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg" height="15rem" >}}
+{{< /slides/col >}}
+{{< slides/col  >}}
+{{< slides/center_block grow="1" >}}
+$$\ =\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
+
+{{<  /slides/admonition >}}
+
+{{% slides/citations %}}
+Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+{{% /slides/citations %}}
 
 ---
 
@@ -528,6 +502,7 @@ $$\begin{array}{|l|l|l|l|}
 
 ---
 
+{{< slides/hide_qr  >}}
 {{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
 
 
@@ -553,6 +528,10 @@ $$\begin{array}{|l|l|l|l|}
 
 
 ---
+
+{{< slides/hide_qr  >}}
+
+
 ## Existence of canonical diagrams for Montesinos tangles
 
 {{<  slides/admonition type="Note" title="Theorem (Bonahon and Siebenmann)" >}}
@@ -621,6 +600,7 @@ $$=[3\  2\ 0] + [3\  2\  0]$$
 {{< /slides/row >}}
 
 ---
+{{< slides/hide_qr  >}}
 
 # Generation
 
@@ -638,6 +618,7 @@ $$\begin{array}{|l|l|l|l|}
 
 ---
 
+{{< slides/hide_qr  >}}
 
 Now for each entry $e_i$ of the stencil, we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
 
@@ -673,38 +654,10 @@ $\quad$
 
 The construction for the canonical Montesinos tangles includes a trailing $\frac{k}{1}$ tangle. Our generation strategy seems to miss these.
 
-What we're actually generating with this algorithm is equivalent to allowing the boundary components of the tangle to move. To recover fixed boundary tangles we can append a $k$ term to each lower crossing Montesinos tangle.
+What we're actually generating with this algorithm is equivalent to allowing the boundary components of the tangle to move. To recover fixed boundary tangles we need to generate the next larger class of tangles.
 
-This allows users to choose datasets for fixed or non-fixed boundary tangles.
+We can note which stage a tangle was generated at to allow users to choose datasets for fixed or non-fixed boundary tangles.
 
----
-{{% slides/uncenter %}}
-
-## Parallelization
-
-
-```mermaid
-sequenceDiagram
-
-    participant DB
-    participant Server
-    participant Client 1
-    participant Client 2
-
-    Server->>+Client 1: Dispatch job 1 for stencil starting from TV idx<br/>[0,0,0,...]
-    Server-->>DB: Mark job 1 as dispatched
-    Server->>+Client 2: Dispatch job 2 for stencil starting from TV idx<br/>[100,0,0,...]
-    Server-->>DB: Mark job 2 as dispatched
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 1 results and mark complete
-    Server->>+Client 1: Dispatch job 3 for stencil starting from TV idx<br/>[0,100,0,...]
-    Server-->>DB: Mark job 3 as dispatched
-    Client 2-->>-Server: job complete
-    Server-->>DB: store job 2 results and mark complete
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 3 results and mark complete
-
-```
 ---
 # Generalized Montesinos
 
@@ -738,6 +691,11 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/center_block >}}
+
+
+{{% slides/citations %}}
+Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
+{{% /slides/citations %}}
 
 ---
 
@@ -807,6 +765,7 @@ Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astro
 
 ---
 
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/general/alg_trees.svg" >}}
@@ -823,6 +782,7 @@ Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astro
 
 ---
 
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
@@ -867,8 +827,6 @@ $6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2
 {{< /slides/row >}}
 {{< /slides/center_block >}}
 
-
-
 ---
 
 # Generation
@@ -876,10 +834,294 @@ $6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2
 There exist tables of 4 valent graphs. We can use those with insertions from our list of algebraic tangles to generate all polygonal tangles.
 
 ---
+{{< slides/hide_qr  >}}
 
+{{% slides/uncenter %}}
+
+# Technologies
+
+{{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
+
+---
+
+{{< slides/hide_qr  >}}
+### Sources
+
+{{% slides/citations %}}
+
+1. Dror Bar-Natan [The Most Important Missing Infrastructure Project in Knot Theory](http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf)
+2. Kauffman, L. H., and S. Lambropoulou. "From Tangle Fractions to DNA." In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. [https://doi.org/10.1007/978-3-540-49858-2_5](https://doi.org/10.1007/978-3-540-49858-2_5).
+3. Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
+4. Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
+5. Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+6. Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
+7. Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor, MI, 1998. Thesis (Ph.D. The University of British Columbia (Canada). URL: [https://www.knotplot.com/](https://www.knotplot.com/).
+8. Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
+9. Dowker, C. H., & Thistlethwaite, M. B. (1983). Classification of knot projections. In Topology and its Applications (Vol. 16, Issue 1, pp. 19-31). Elsevier BV. [https://doi.org/10.1016/0166-8641(83)90004-4](https://doi.org/10.1016/0166-8641(83)90004-4)
+10. Hoste, J., Thistlethwaite, M., & Weeks, J. (1998). The first 1,701,936 knots. In The Mathematical Intelligencer (Vol. 20, Issue 4, pp. 33-48). Springer Science and Business Media LLC. [https://doi.org/10.1007/bf03025227](https://doi.org/10.1007/bf03025227)
+11. Burton, B. A. (2020). The Next 350 Million Knots. Schloss Dagstuhl - Leibniz-Zentrum Für Informatik. [https://doi.org/10.4230/LIPICS.SOCG.2020.25](https://doi.org/10.4230/LIPICS.SOCG.2020.25)
+12.  C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants, knotinfo.math.indiana.edu, today's date (eg. August 24, 2023).
+13.  Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
+14. Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
+15. F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+16. Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
+{{% /slides/citations %}}
+
+---
+
+{{< slides/hide_qr  >}}
+{{< slides/centersvg src="https://raw.githubusercontent.com/Joecstarr/posters/master/qr_httpsjoe-starr.svg" external="true" id="qr" >}}
+
+---
+
+{{< slides/hide_qr  >}}
+{{% slides/uncenter %}}
+
+##### Programmatic Description
+
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    state if_done <<choice>>
+    State_i: i=0
+    State_ipp: i++
+    state "Construct TV from i as a bitfield" as tv_calc{
+        state "tmp=i;j=0;cnt=N" as State_temp
+        State_jpp: j++
+        State_cntmm: cnt--
+        State_sum_tv: TV[j]++
+        State_rsh: tmp=tmp>>1
+        state if_lsb <<choice>>
+        state if_cnteo <<choice>>
+        State_store_tv: Store TV
+
+        [*] --> State_temp
+        State_temp --> if_cnteo
+        if_cnteo--> State_cntmm: if cnt>0
+        if_cnteo--> State_store_tv: if cnt==0
+        State_store_tv --> [*]
+
+        State_cntmm -->if_lsb
+        if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
+        State_sum_tv --> State_rsh
+        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
+        State_jpp --> State_rsh
+        State_rsh --> if_cnteo
+    }
+    [*] --> State_i
+    State_i --> if_done
+    if_done --> tv_calc: if i < 2**(N-1)
+    tv_calc --> State_ipp
+    State_ipp --> if_done
+    if_done --> [*]: if i == 2**(N-1)
+
+
+```
+---
+
+# Computations
+
+---
+
+{{< slides/hide_qr  >}}
+## Rational Number (continued fraction)
+
+
+The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction that is:
+$$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
+
+{{<  slides/admonition type="Example" title="Twist Vector to rational number" >}}
+
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;margin-top:1rem;" >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg" height="15rem" >}}
+{{< /slides/col >}}
+{{< slides/col  >}}
+{{< slides/center_block grow="1" >}}
+$$\ =\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
+
+{{<  /slides/admonition >}}
+
+{{% slides/citations %}}
+Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+{{% /slides/citations %}}
+
+---
+
+{{< slides/hide_qr  >}}
+To play with twist vectors and continued fractions visit
+
+{{< slides/centersvg src="/qr_codes/contfrac.svg" direct="true" id="qr" >}}
+
+<p style="text-align:center !important;">https://joe-starr.com/resources/cont_frac_convert/</p>
+
+
+---
+
+{{< slides/hide_qr  >}}
+## Parity
+
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/321.svg"  direct="true" id="parity_1"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_2" >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/312.svg" direct="true" id="parity_3"   >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/inf.svg"  direct="true" id="parity_4"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/322.svg" direct="true" id="parity_5"   >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/parity_1.svg"  direct="true" id="parity_6"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+---
+
+{{< slides/hide_qr  >}}
+## Computing Parity
+
+If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for parity
+
+{{<  slides/admonition type="Note" title="Parity Table" >}}
+
+$$\begin{array}{|c|c|c|}
+\hline
+p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
+0 &0&N/A\\ \hline
+0 &1& 0 \\ \hline
+1 &0&\infty\\ \hline
+1 &1& 1\\ \hline
+\end{array}$$
+
+{{<  /slides/admonition  >}}
+
+---
+
+
+
+{{< slides/hide_qr  >}}
+{{<  slides/admonition type="Example" title="" >}}
+
+
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:90%;margin-left:2rem;margin-top:2rem;" >}}
+{{< slides/col >}}
+{{< slides/row  >}}
+{{< slides/col >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/comp/321.svg" direct="true" id="parity_calc_1"  >}}
+{{< /slides/center_block>}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
+{{< slides/row  >}}
+{{< slides/col  >}}
+{{< slides/center_block grow="1" >}}
+$$\ =[3\ 2\ 1]=1+\frac{1}{2+\frac{1}{3}}=\frac{10}{7}\to\text{ Parity: 0 }$$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
+{{< slides/row  >}}
+{{< slides/col >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_calc_1"  >}}
+{{< /slides/center_block>}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
+
+
+
+{{<  /slides/admonition  >}}
+
+
+
+
+---
+
+{{< slides/hide_qr  >}}
+## Closures
+
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:2;">}}
+{{< slides/centersvg src="/presentations/mathday23/cc_2.svg" block="true" >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;">}}
+$\ $
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;">}}
+{{< slides/centersvg src="/presentations/general/cc_2.svg"  block="true" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+
+{{< slides/hide_qr  >}}
+## Closure Equivalence and pivoting to knots
+
+{{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
+
+ Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0$<$p$. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
+<br/>
+(1) $p=p^{\prime}$
+<br/>
+(2) either $q \equiv q^{\prime}(\bmod p)$ or $q q^{\prime} \equiv 1(\bmod p)$.
+
+{{<  /slides/admonition  >}}
+
+{{% slides/citations  %}}
+Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
+{{% /slides/citations  %}}
+
+---
+
+
+
+{{< slides/centersvg src="/presentations/general/close_eq.svg" height="auto">}}
+
+---
+
+
+
+{{< slides/hide_qr  >}}
 # Tooling
 
 ---
+
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ### Design Goals
@@ -923,6 +1165,7 @@ A runner is a human/machine interface layer. This abstracts the routines in lowe
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Runnables
 
 *Generators*
@@ -939,6 +1182,7 @@ Translators define a conversion between two Notations. A translator might look l
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Data Wranglers
 
 *Notations*
@@ -953,43 +1197,31 @@ A storage module defines a storage interface for the application. The main inter
 
 ---
 
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
-# Technologies
-
-{{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
+## Parallelization
 
 
+```mermaid
+sequenceDiagram
 
----
+    participant DB
+    participant Server
+    participant Client 1
+    participant Client 2
 
-### Sources
+    Server->>+Client 1: Dispatch job 1 for stencil starting from TV idx<br/>[0,0,0,...]
+    Server-->>DB: Mark job 1 as dispatched
+    Server->>+Client 2: Dispatch job 2 for stencil starting from TV idx<br/>[100,0,0,...]
+    Server-->>DB: Mark job 2 as dispatched
+    Client 1-->>-Server: job complete
+    Server-->>DB: store job 1 results and mark complete
+    Server->>+Client 1: Dispatch job 3 for stencil starting from TV idx<br/>[0,100,0,...]
+    Server-->>DB: Mark job 3 as dispatched
+    Client 2-->>-Server: job complete
+    Server-->>DB: store job 2 results and mark complete
+    Client 1-->>-Server: job complete
+    Server-->>DB: store job 3 results and mark complete
 
-{{% slides/citations %}}
-
-1. Dror Bar-Natan [The Most Important Missing Infrastructure Project in Knot Theory](http://drorbn.net/AcademicPensieve/2012-01/one/The_Most_Important_Missing_Infrastructure_Project_in_Knot_Theory.pdf)
-2. Kauffman, L. H., and S. Lambropoulou. "From Tangle Fractions to DNA." In Topology in Molecular Biology, edited by Michail Ilych Monastyrsky, 69-110. Biological and Medical Physics, Biomedical Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2007. [https://doi.org/10.1007/978-3-540-49858-2_5](https://doi.org/10.1007/978-3-540-49858-2_5).
-3. Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
-4. Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
-5. Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
-6. Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
-7. Robert Glenn Scharein. Interactive topological drawing. ProQuest LLC, Ann Arbor, MI, 1998. Thesis (Ph.D. The University of British Columbia (Canada). URL: [https://www.knotplot.com/](https://www.knotplot.com/).
-8. Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
-9. Dowker, C. H., & Thistlethwaite, M. B. (1983). Classification of knot projections. In Topology and its Applications (Vol. 16, Issue 1, pp. 19-31). Elsevier BV. [https://doi.org/10.1016/0166-8641(83)90004-4](https://doi.org/10.1016/0166-8641(83)90004-4)
-10. Hoste, J., Thistlethwaite, M., & Weeks, J. (1998). The first 1,701,936 knots. In The Mathematical Intelligencer (Vol. 20, Issue 4, pp. 33-48). Springer Science and Business Media LLC. [https://doi.org/10.1007/bf03025227](https://doi.org/10.1007/bf03025227)
-11. Burton, B. A. (2020). The Next 350 Million Knots. Schloss Dagstuhl - Leibniz-Zentrum Für Informatik. [https://doi.org/10.4230/LIPICS.SOCG.2020.25](https://doi.org/10.4230/LIPICS.SOCG.2020.25)
-12.  C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants, knotinfo.math.indiana.edu, today's date (eg. August 24, 2023).
-13.  Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
-14. Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
-15. F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
-16. Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
-{{% /slides/citations %}}
-
-
-{{% slides/footer %}}
-
-{{% /slides/footer %}}
-
-
-
-
+```
