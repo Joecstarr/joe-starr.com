@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: November 30, 2023 --><html lang="en-us" >
+<!-- Last Published: January 11, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -423,6 +423,33 @@
     var reveal_slidetransitionend_callbacks = []
     var reveal_resize_callbacks = []
 </script>
+
+<script>
+    function svgAddress(src,id) {
+        var element = document.querySelector(id);
+        if (src.endsWith('.svg') == true) {
+            fetch(src)
+                .then(res => res.text())
+                .then(res => {
+                    const holder = document.createElement('div')
+                    holder.innerHTML = res
+                    element.appendChild(holder)
+                })
+        }
+    }
+    function remove_qr() {
+        const match = document.querySelector(".slides .present .hide_qr");
+        var qr = document.querySelector("#header-right");
+        if(match != null)
+        {
+            qr.style.display = "none";
+        }else{
+            qr.style.display = "block";
+        }
+    }
+    reveal_slidechange_callbacks.push(remove_qr)
+</script>
+
       
     
   
@@ -951,6 +978,234 @@
   <div class="media-body">
 
     <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/slides/merida_24/" >GEOTOP-A International Conference Applications of Geometry and Topology</a>
+    </div>
+
+    
+    <a href="/slides/merida_24/"  class="summary-link">
+      <div class="article-style">
+        Talk given at the GEOTOP-A International Conference on 1/11/24.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 11, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/slides/comp_talk/" >GEOTOP-A International Conference Applications of Geometry and Topology</a>
+    </div>
+
+    
+    <a href="/slides/comp_talk/"  class="summary-link">
+      <div class="article-style">
+        Talk given at the GEOTOP-A International Conference on 1/11/24.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/slides/zombie_jones/" >Constructing the Jones polynomial to save the world</a>
     </div>
 
@@ -1427,6 +1682,9 @@
     
       
       
+
+
+
       
     
   

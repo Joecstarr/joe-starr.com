@@ -1596,7 +1596,7 @@
        sodipodi:role="line"
        id="tspan8"
        x="-120.93303"
-       y="600.21576">+</tspan></text><text
+       y="600.21576"class=" fill-foreground">+</tspan></text><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#f8f8f2;fill-opacity:1;stroke:none"
      x="408.65707"
@@ -1605,7 +1605,7 @@
        sodipodi:role="line"
        id="tspan8-4"
        x="408.65707"
-       y="600.91736">+</tspan></text><text
+       y="600.91736"class=" fill-foreground">+</tspan></text><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';fill:#f8f8f2;fill-opacity:1;stroke:none"
      x="133.81523"
@@ -1615,7 +1615,7 @@
        id="tspan8-4-3"
        x="133.81523"
        y="465.75351"
-       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64px;font-family:Arial;-inkscape-font-specification:'Arial Heavy'">∨</tspan></text></g><g
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64px;font-family:Arial;-inkscape-font-specification:'Arial Heavy'"class=" fill-foreground">∨</tspan></text></g><g
    id="g9"
    transform="translate(-402.20213,146.08927)"><text
      xml:space="preserve" class="fill-red"
@@ -1686,7 +1686,7 @@
        sodipodi:role="line"
        id="tspan8-8"
        x="800.59973"
-       y="595.58124">+</tspan></text><text
+       y="595.58124"class=" fill-foreground">+</tspan></text><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#f8f8f2;fill-opacity:1;stroke:none"
      x="960.70764"
@@ -1695,7 +1695,7 @@
        sodipodi:role="line"
        id="tspan8-8-8"
        x="960.70764"
-       y="720.48767">+</tspan></text><text
+       y="720.48767"class=" fill-foreground">+</tspan></text><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#f8f8f2;fill-opacity:1;stroke:none"
      x="1338.8915"
@@ -1704,7 +1704,7 @@
        sodipodi:role="line"
        id="tspan8-4-7"
        x="1338.8915"
-       y="597.58124">+</tspan></text><text
+       y="597.58124"class=" fill-foreground">+</tspan></text><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Heavy';fill:#f8f8f2;fill-opacity:1;stroke:none"
      x="1060.793"
@@ -1714,4 +1714,4 @@
        id="tspan8-4-3-3"
        x="1060.793"
        y="464.77817"
-       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64px;font-family:Arial;-inkscape-font-specification:'Arial Heavy'">∨</tspan></text></g></g>&#10;</svg>
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64px;font-family:Arial;-inkscape-font-specification:'Arial Heavy'"class=" fill-foreground">∨</tspan></text></g></g>&#10;</svg>
