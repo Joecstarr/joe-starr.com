@@ -1,8 +1,69 @@
-<!-- <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({
-        startOnLoad: true,
-        securityLevel: 'loose',
-        theme: 'dark',
-    });
-</script> -->
+{{ $qr := $.Param "qr.src" | default "false" }}
+
+
+{{ if not (eq $qr "false") }}
+
+    <style type="text/css">
+        /* 1. Style header/footer <div> so they are positioned as desired. */
+        #header-left {
+            position: absolute;
+            top: 0%;
+            left: 3%;
+        }
+        #header-right {
+            position: absolute;
+            top: 0%;
+            right: 3%;
+        }
+        #footer-left {
+            position: absolute;
+            bottom: 0%;
+            left: 3%;
+        }
+        #qr_code_header svg {
+            height: 20vh;
+        }
+    </style>
+
+    <!-- 2. Create hidden header/footer <div> -->
+    <div id="hidden" style="display:none;">
+        <div id="header">
+            <div id="header-right"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+        var header = $('#header').html();
+        if ( window.location.search.match( /print-pdf/gi ) ) {
+            Reveal.addEventListener( 'ready', function( event ) {
+                $('.slide-background').append(header);
+            });
+        }
+        else {
+            $('div.reveal').append(header);
+    }
+    </script>
+
+    <script type="text/javascript">
+        function codeAddress() {
+            var element = document.querySelector("#header-right");
+            var src = {{ $qr }};
+            if (src.endsWith('.svg') == true) {
+                fetch(src)
+                    .then(res => res.text())
+                    .then(res => {
+                        const holder = document.createElement('div')
+                        holder.innerHTML = res
+                        holder.setAttribute("id", "qr_code_header");
+                        element.appendChild(holder)
+                    })
+            }
+        }
+
+        window.onload = codeAddress;
+
+    </script>
+
+{{ end }}

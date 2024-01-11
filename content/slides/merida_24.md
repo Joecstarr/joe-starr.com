@@ -16,10 +16,13 @@ slides:
         theme: "none"
         center: true
         transition: "none"
+qr:
+    src: "https://raw.githubusercontent.com/Joecstarr/posters/master/qr_httpsjoe-starr.svg"
+
 ---
 
 
-{{< slides/theme is="light.css" >}}
+{{< slides/theme >}}
 {{< dracula_css >}}
 {{< mathjax_preamble >}}
 
@@ -111,6 +114,7 @@ Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 
 ---
 
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ### KnotInfo
@@ -310,6 +314,8 @@ $\frac{1}{2}$
 
 ---
 
+
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ## Building up
@@ -462,6 +468,7 @@ $$\begin{array}{|l|l|l|l|}
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Rational Number (continued fraction)
 
 
@@ -495,6 +502,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 ---
 
+{{< slides/hide_qr  >}}
 {{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
 
 
@@ -520,6 +528,10 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 
 ---
+
+{{< slides/hide_qr  >}}
+
+
 ## Existence of canonical diagrams for Montesinos tangles
 
 {{<  slides/admonition type="Note" title="Theorem (Bonahon and Siebenmann)" >}}
@@ -588,6 +600,7 @@ $$=[3\  2\ 0] + [3\  2\  0]$$
 {{< /slides/row >}}
 
 ---
+{{< slides/hide_qr  >}}
 
 # Generation
 
@@ -605,6 +618,7 @@ $$\begin{array}{|l|l|l|l|}
 
 ---
 
+{{< slides/hide_qr  >}}
 
 Now for each entry $e_i$ of the stencil, we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
 
@@ -751,6 +765,7 @@ Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astro
 
 ---
 
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/general/alg_trees.svg" >}}
@@ -767,6 +782,7 @@ Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astro
 
 ---
 
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 {{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
@@ -818,6 +834,7 @@ $6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2
 There exist tables of 4 valent graphs. We can use those with insertions from our list of algebraic tangles to generate all polygonal tangles.
 
 ---
+{{< slides/hide_qr  >}}
 
 {{% slides/uncenter %}}
 
@@ -827,6 +844,7 @@ There exist tables of 4 valent graphs. We can use those with insertions from our
 
 ---
 
+{{< slides/hide_qr  >}}
 ### Sources
 
 {{% slides/citations %}}
@@ -851,8 +869,12 @@ There exist tables of 4 valent graphs. We can use those with insertions from our
 
 ---
 
+{{< slides/hide_qr  >}}
+{{< slides/centersvg src="https://raw.githubusercontent.com/Joecstarr/posters/master/qr_httpsjoe-starr.svg" external="true" id="qr" >}}
 
 ---
+
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ##### Programmatic Description
@@ -903,6 +925,7 @@ stateDiagram-v2
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Rational Number (continued fraction)
 
 
@@ -932,6 +955,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 ---
 
+{{< slides/hide_qr  >}}
 To play with twist vectors and continued fractions visit
 
 {{< slides/centersvg src="/qr_codes/contfrac.svg" direct="true" id="qr" >}}
@@ -941,6 +965,7 @@ To play with twist vectors and continued fractions visit
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Parity
 
 {{< slides/row style="" >}}
@@ -984,6 +1009,7 @@ To play with twist vectors and continued fractions visit
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Computing Parity
 
 If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for parity
@@ -1005,6 +1031,7 @@ p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
 
 
 
+{{< slides/hide_qr  >}}
 {{<  slides/admonition type="Example" title="" >}}
 
 
@@ -1045,6 +1072,7 @@ $$\ =[3\ 2\ 1]=1+\frac{1}{2+\frac{1}{3}}=\frac{10}{7}\to\text{ Parity: 0 }$$
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Closures
 
 {{< slides/row style="" >}}
@@ -1060,6 +1088,8 @@ $\ $
 {{< /slides/row >}}
 
 ---
+
+{{< slides/hide_qr  >}}
 ## Closure Equivalence and pivoting to knots
 
 {{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
@@ -1086,9 +1116,12 @@ Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956
 
 
 
+{{< slides/hide_qr  >}}
 # Tooling
 
 ---
+
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ### Design Goals
@@ -1132,6 +1165,7 @@ A runner is a human/machine interface layer. This abstracts the routines in lowe
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Runnables
 
 *Generators*
@@ -1148,6 +1182,7 @@ Translators define a conversion between two Notations. A translator might look l
 
 ---
 
+{{< slides/hide_qr  >}}
 ## Data Wranglers
 
 *Notations*
@@ -1161,6 +1196,8 @@ A storage module defines a storage interface for the application. The main inter
 
 
 ---
+
+{{< slides/hide_qr  >}}
 {{% slides/uncenter %}}
 
 ## Parallelization
@@ -1188,10 +1225,3 @@ sequenceDiagram
     Server-->>DB: store job 3 results and mark complete
 
 ```
-
-{{% slides/footer %}}
-
-{{% /slides/footer %}}
-
-
-

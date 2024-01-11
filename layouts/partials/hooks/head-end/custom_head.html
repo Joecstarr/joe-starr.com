@@ -54,3 +54,29 @@
     var reveal_slidetransitionend_callbacks = []
     var reveal_resize_callbacks = []
 </script>
+
+<script>
+    function svgAddress(src,id) {
+        var element = document.querySelector(id);
+        if (src.endsWith('.svg') == true) {
+            fetch(src)
+                .then(res => res.text())
+                .then(res => {
+                    const holder = document.createElement('div')
+                    holder.innerHTML = res
+                    element.appendChild(holder)
+                })
+        }
+    }
+    function remove_qr() {
+        const match = document.querySelector(".slides .present .hide_qr");
+        var qr = document.querySelector("#header-right");
+        if(match != null)
+        {
+            qr.style.display = "none";
+        }else{
+            qr.style.display = "block";
+        }
+    }
+    reveal_slidechange_callbacks.push(remove_qr)
+</script>
