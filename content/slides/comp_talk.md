@@ -1,11 +1,11 @@
 ---
-title: "GEOTOP-A International Conference Applications of Geometry and Topology"
-date: "2024-01-01"
-summary: "Talk given at the GEOTOP-A International Conference on 1/11/24."
+title: "Comprehensive Exam Talk "
+date: "2023-09-22"
+summary: "Talk for my comprehensive exam on tangle tabulation."
 tags: [
     "Talks",
 ]
-draft: false
+draft: true
 
 slides:
   highlight_style: dracula
