@@ -3,7 +3,7 @@ title: "Jones Polynomial"
 date: "2022-02-06"
 summary: "Defintion of the Jones Polynomial"
 tags: [
-    "index",
+    "index",'research talks'
 ]
 draft: true
 slides:

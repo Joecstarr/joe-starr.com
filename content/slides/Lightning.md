@@ -4,7 +4,7 @@ title: "Tangled in Knot Theory Summer 2023"
 date: "2023-05-10"
 summary: "Lightning talk for Tangled in Knot Theory"
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: false
 

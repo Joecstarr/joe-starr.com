@@ -3,7 +3,7 @@ title: "Geodesics"
 date: "2023-09-06"
 summary: "Geodesics"
 tags: [
-    "index",
+    "index",'research talks'
 ]
 draft: true
 slides:

@@ -4,7 +4,7 @@ title: "University of Iowa Fall23 Math Day"
 date: "2023-08-22"
 summary: "Talk given at the Fall23 University of Iowa Math Day"
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: false
 

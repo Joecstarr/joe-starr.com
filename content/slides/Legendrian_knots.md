@@ -3,7 +3,7 @@ title: "Legendrian knots"
 date: "2022-11-29"
 summary: "Brief overview of Legendrian knots"
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: true
 slides:

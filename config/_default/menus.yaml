@@ -16,8 +16,11 @@ main:
   - name: Resources
     url: '#resources'
     weight: 60
-  - name: Talks
+  - name: Research Talks
     url: '#talks'
+    weight: 70
+  - name: General Audience Talks
+    url: '#gen_talks'
     weight: 70
   - name: Posters
     url: '#posters'

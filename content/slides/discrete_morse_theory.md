@@ -3,7 +3,7 @@ title: "UIowa Topology seminar - Discrete Morse Theory"
 date: "2022-10-04"
 summary: "Brief overview of Discrete Morse Theory"
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: true
 slides:
