@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 80
 
-title: 'Research Talks Archive'
+title: 'General Audience Talks Archive'
 subtitle:
 
 content:
@@ -21,7 +21,7 @@ content:
   filters:
     author: ''
     category: ''
-    tag: 'research talks'
+    tag: 'General Audience'
     exclude_featured: false
     exclude_future: false
     exclude_past: false

@@ -4,7 +4,7 @@ title: "Alexander Polynomial"
 date: "2023-02-20"
 summary: "Define the Alexander Polynomial"
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: true
 

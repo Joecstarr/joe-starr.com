@@ -3,7 +3,7 @@ title: "Comprehensive Exam Talk "
 date: "2023-09-22"
 summary: "Talk for my comprehensive exam on tangle tabulation."
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: true
 

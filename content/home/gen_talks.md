@@ -9,19 +9,19 @@ headless: true
 # Order that this section appears on the page.
 weight: 80
 
-title: 'Research Talks Archive'
+title: 'Recent General Audience Talks'
 subtitle:
 
 content:
   # Page type to display. E.g. post, event, publication...
   page_type: slides
   # Choose how many pages you would like to display (0 = all pages)
-  count: 0
+  count: 5
   # Filter on criteria
   filters:
     author: ''
     category: ''
-    tag: 'research talks'
+    tag: 'General Audience'
     exclude_featured: false
     exclude_future: false
     exclude_past: false
@@ -30,6 +30,10 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+  archive:
+    enable: true
+    text: See all past talks
+    link: slides/landing_gen
 
 design:
   # Choose a view for the listings:

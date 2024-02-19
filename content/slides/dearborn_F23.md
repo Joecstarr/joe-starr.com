@@ -3,7 +3,7 @@ title: "Dearborn Colloquium Talk Fall23"
 date: "2023-11-15"
 summary: "Talk given at the U of M - Dearborn Colloquium on 11/15/23."
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: false
 

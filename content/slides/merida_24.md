@@ -3,7 +3,7 @@ title: "GEOTOP-A International Conference Applications of Geometry and Topology"
 date: "2024-01-11"
 summary: "Talk given at the GEOTOP-A International Conference on 1/11/24."
 tags: [
-    "Talks",
+    "Talks",'research talks'
 ]
 draft: false
 
