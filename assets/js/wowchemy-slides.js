@@ -98,9 +98,9 @@ if (params.slides.diagram) {
 
 
     let mermaidDivs = document.querySelectorAll('.mermaid:not(.mermaid-done)');
-    mermaidDivs.forEach((diagram,i) => {
-        diagram.setAttribute("id",`mermaid-${i}`)
-    })
+    mermaidDivs.forEach((diagram, i) => {
+        diagram.setAttribute("id", `mermaid-${i}`);
+    });
 
     // Lazily render Mermaid diagrams within Reveal.JS slides
     // See: https://github.com/hakimel/reveal.js/issues/2863#issuecomment-1107444425
