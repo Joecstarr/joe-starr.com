@@ -112,6 +112,12 @@ sections:
             name: '[2023 Research in Undergraduate Mathematics Education Conference](https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php)'
           - dates: 'Nov 2022'
             name: "[8th Mexican Workshop on Applied Geometry and Topology](https://8mwgeometrytopology.eventos.cimat.mx/home_8mwtopology)"
+    - title: Invited Research Talks
+      icon: fa-solid fa-users
+      subsections:
+          - dates: 'Nov 2023'
+            name: 'University of Michigan - Dearborn Colloquia'
+            summary: "[The Tanglenomicon: Tabulation of two string tangles](https://www.dropbox.com/scl/fi/mxetfathb0gby0nfp7t9k/2023-11-15_Colloquium_Starr.pdf?rlkey=cl07qn56q0saos0hzauxo6758&e=1&dl=0)"
     - title: Service
       icon: fa-solid fa-handshake
       subsections:
