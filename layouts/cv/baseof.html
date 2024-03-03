@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+{{  $cv_data := .Site.Data.cv }}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>
+
+    <title>{{ $cv_data.header.name | markdownify }} - CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asul:wght@700&family=Open+Sans&display=swap');
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        :root {
+            --text-color: {{ $cv_data.color.textColor | default "#343a40" }};
+            --text-secondary-color: {{ $cv_data.color.secondaryTextColor | default "#6c757d" }};
+            --background-color: {{ $cv_data.color.backgroundColor | default "#eaedf0" }};
+            --secondary-background-color: {{ $cv_data.color.secondaryBackgroundColor | default "#64ffda1a" }};
+            --primary-color: {{ $cv_data.color.primaryColor | default "#007bff" }};
+            --secondary-color: {{ $cv_data.color.secondaryColor | default "#f8f9fa" }};
+            }
+
+
+        @media print {
+            @page{
+                size: letter;
+                color: #000000;
+                background-color: #ffffff;
+                font-size: 12pt;
+            }
+            body {
+                margin: .5in .5in .5in .5in;
+            }
+
+        }
+
+        html{
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        .head .icon{
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin-left:10px;
+            margin-right:10px;
+        }
+        .icon{
+            margin-left:10px;
+            margin-right:10px;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+
+        section:first-of-type {
+            position: relative;
+            bottom: 0;
+        }
+
+        section:nth-of-type(2) {
+            break-before: always;
+        }
+
+        section {
+            break-inside: avoid;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Asul', sans-serif;
+            padding: 0;
+            margin: .25vh;
+        }
+        h1{
+            color: var(--primary-color);
+        }
+
+        .section_title{
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            display: inline-block;
+            padding: .5vw;
+            margin: .25vh;
+            text-transform: uppercase;
+            font-size: 1.5vh;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .left {
+            min-width: 15vw;
+        }
+
+        .right p:first-of-type,
+        .right h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .right p:first-of-type {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="head">
+        <h1>{{ $cv_data.header.name | markdownify }}</h1>
+        <h2>{{ $cv_data.header.title | markdownify }}</h2>
+        <p>
+            {{ range $cv_data.header.contact }}
+
+            <a href="{{.address}}"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.text | markdownify }}</a>
+             {{ end}}
+        </p>
+        <p>
+            {{ $cv_data.header.summary | markdownify }}
+        </p>
+    </div>
+
+    {{ range $cv_data.sections }}
+    <section>
+
+        <h2 class="section_title"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.title | markdownify }}</h2>
+        {{ range .subsections }}
+            <div class="flex">
+                <div class="left">{{.dates | markdownify}}</div>
+                <div class="right">
+                    <h3>{{.name | markdownify}}</h3>
+                    <h4>{{.subheader | markdownify}}</h4>
+                    <p>
+                        {{.summary | markdownify}}
+                    </p>
+                </div>
+            </div>
+        {{ end }}
+    </section>
+    {{ end }}
+
+</body>
+
+</html>

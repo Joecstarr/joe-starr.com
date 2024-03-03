@@ -1,0 +1,85 @@
+color:
+    textColor: "#000000"
+    secondaryTextColor: "#000000"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#8811ee1a"
+    primaryColor: "#8811ee"
+    secondaryColor: "#8811ee1e"
+
+
+
+header:
+    name: Joseph Starr
+    title: Graduate Teaching Assistant
+    contact:
+        - address: mailto:joe@joe-starr.com
+          text: joe@joe-starr.com
+          icon: fa-regular fa-envelope
+        - address: https://github.com/Joecstarr/
+          text: Joecstarr
+          icon: fa-brands fa-github
+        - address: https://www.linkedin.com/in/joseph-c-starr/
+          text: joseph-c-starr
+          icon: fa-brands fa-linkedin
+    summary: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vitae turpis purus. Praesent justo turpis, commodo ac efficitur vel,
+          consectetur sit amet urna. Nullam tellus lacus, congue a tellus consequat,
+          tempus elementum erat. Curabitur luctus, velit finibus accumsan tincidunt,
+          libero nunc vehicula erat, in aliquet quam leo sit amet urna. Pellentesque
+          venenatis libero id porttitor efficitur. Ut lacus turpis, semper id neque
+          eu, tincidunt accumsan massa. In dapibus ornare purus, a efficitur erat
+          cursus in. Sed interdum ligula at tristique bibendum. Fusce rutrum
+          fermentum feugiat. In augue urna, posuere iaculis condimentum nec,
+          auctor in risus. Nulla id convallis nisl. Mauris varius metus nec magna
+          malesuada lobortis. Nulla facilisi. Etiam vehicula tempus justo, hendrerit
+          tempor massa suscipit a. Vivamus viverra pretium arcu, eu lacinia purus
+          lobortis at. Pellentesque dapibus libero metus, eu posuere ante dictum
+          sit amet.
+
+sections:
+    - title: Education
+      icon: fa-solid fa-school
+      subsections:
+          - name: asdfasdf
+            subheader: asfasd
+            summary: |-
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vitae turpis purus. Praesent justo turpis, commodo ac efficitur vel,
+                  consectetur sit amet urna. Nullam tellus lacus, congue a tellus consequat,
+                  tempus elementum erat. Curabitur luctus, velit finibus accumsan tincidunt,
+                  libero nunc vehicula erat, in aliquet quam leo sit amet urna. Pellentesque
+                  venenatis libero id porttitor efficitur. Ut lacus turpis, semper id neque
+                  eu, tincidunt accumsan massa. In dapibus ornare purus, a efficitur erat
+                  cursus in. Sed interdum ligula at tristique bibendum. Fusce rutrum
+                  fermentum feugiat. In augue urna, posuere iaculis condimentum nec,
+                  auctor in risus. Nulla id convallis nisl. Mauris varius metus nec magna
+                  malesuada lobortis. Nulla facilisi. Etiam vehicula tempus justo, hendrerit
+                  tempor massa suscipit a. Vivamus viverra pretium arcu, eu lacinia purus
+                  lobortis at. Pellentesque dapibus libero metus, eu posuere ante dictum
+                  sit amet.
+            dates: 1029-30-23
+    - title: Experience
+      icon: fa-solid fa-briefcase
+      subsections:
+          - name: asdfasdf
+            summary:  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            dates: 1029-30-23
+    - title: Teaching
+      icon: fa-solid fa-briefcase
+      subsections:
+          - name: asdfasdf
+            summary:  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            dates: 1029-30-23
+    - title: Conference Attendance
+      icon: fa-solid fa-briefcase
+      subsections:
+          - name: asdfasdf
+            summary:  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            dates: 1029-30-23
+    - title: Service
+      icon: fa-solid fa-briefcase
+      subsections:
+          - name: asdfasdf
+            summary:  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            dates: 1029-30-23
