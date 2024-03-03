@@ -27,17 +27,26 @@
                 size: letter;
                 color: #000000;
                 background-color: #ffffff;
-                font-size: 12pt;
             }
             body {
                 margin: .5in .5in .5in .5in;
+                font-size: 10pt;
             }
-
+            .section_title{
+                background-color: var(--primary-color);
+                color: var(--background-color);
+                display: inline-block;
+                padding: .5vw;
+                margin: .125vh;
+                text-transform: uppercase;
+                font-size: 11pt;
+            }
         }
 
         html{
             color: var(--text-color);
             background-color: var(--background-color);
+            font-size: 10pt;
         }
         .head .icon{
             color: var(--text-color);
@@ -54,38 +63,33 @@
             text-align: center;
         }
 
-
-        section:first-of-type {
-            position: relative;
-            bottom: 0;
-        }
-
-        section:nth-of-type(2) {
-            break-before: always;
-        }
-
         section {
             break-inside: avoid;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3,
+    h4, h5, h6  {
             font-family: 'Asul', sans-serif;
             padding: 0;
-            margin: .25vh;
+            margin: .125vh;
+        }
+       h6  {
+            font-family: 'Asul', sans-serif;
+            padding: 0;
+            margin: 0;
         }
         h1{
             color: var(--primary-color);
         }
-
+        ul{
+            margin: 0;
+        }
         .section_title{
             background-color: var(--primary-color);
             color: var(--background-color);
             display: inline-block;
             padding: .5vw;
-            margin: .25vh;
+            margin: .125vh;
             text-transform: uppercase;
             font-size: 1.5vh;
         }
@@ -96,18 +100,21 @@
 
         .flex {
             display: flex;
+            justify-content: space-between;
+            margin-bottom: .5vh;
         }
 
-        .left {
-            min-width: 15vw;
+        .right {
+            float: right;
+            min-width: 17vw;
         }
 
-        .right p:first-of-type,
-        .right h3:first-of-type {
+        .left p:first-of-type,
+        .left h3:first-of-type {
             margin-top: 0;
         }
 
-        .right p:first-of-type {
+        .left p:first-of-type {
             margin-bottom: 0;
         }
     </style>
@@ -138,13 +145,15 @@
         <h2 class="section_title"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.title | markdownify }}</h2>
         {{ range .subsections }}
             <div class="flex">
-                <div class="left">{{.dates | markdownify}}</div>
-                <div class="right">
-                    <h3>{{.name | markdownify}}</h3>
-                    <h4>{{.subheader | markdownify}}</h4>
+                <div class="left">
+                    <h4>{{.name | markdownify}}</h4>
+                    <h5>{{.subheader | markdownify}}</h5>
                     <p>
                         {{.summary | markdownify}}
                     </p>
+                </div>
+                <div class="right">
+                    {{.dates | markdownify}}
                 </div>
             </div>
         {{ end }}
