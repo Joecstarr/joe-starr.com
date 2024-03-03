@@ -107,7 +107,10 @@
         .flex {
             display: flex;
             justify-content: space-between;
-            margin-bottom: .5vh;
+            margin: 0;
+        }
+        .summary {
+            margin: .5vh;
         }
 
         .right {
@@ -155,14 +158,14 @@
                 <div class="left">
                     <h4>{{.name | markdownify}}</h4>
                     <h5>{{.subheader | markdownify}}</h5>
-                    <p>
-                        {{.summary | markdownify}}
-                    </p>
                 </div>
                 <div class="right">
                     {{.dates | markdownify}}
                 </div>
             </div>
+            <p class="summary">
+                {{.summary | markdownify}}
+            </p>
         {{ end }}
     </section>
     {{ end }}
