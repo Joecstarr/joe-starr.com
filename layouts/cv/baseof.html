@@ -25,29 +25,31 @@
         @media print {
             @page{
                 size: letter;
-                color: #000000;
-                background-color: #ffffff;
-            }
-            body {
-                margin: .5in .5in .5in .5in;
-                font-size: 10pt;
             }
             .section_title{
                 background-color: var(--primary-color);
-                color: var(--background-color);
-                display: inline-block;
-                padding: .5vw;
-                margin: .125vh;
-                text-transform: uppercase;
-                font-size: 11pt;
+                color: #ffffff;
+                font-size: 12pt;
             }
-        }
+            html{
+                font-size: 11pt;
+                color: #000000;
+                background-color: #ffffff;
+            }
 
+        }
+        @media screen {
         html{
             color: var(--text-color);
             background-color: var(--background-color);
-            font-size: 10pt;
         }
+
+        .section_title{
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            font-size: 1.5vh;
+        }
+    }
         .head .icon{
             color: var(--text-color);
             background-color: var(--background-color);
@@ -63,9 +65,6 @@
             text-align: center;
         }
 
-        section {
-            break-inside: avoid;
-        }
 
         h1, h2, h3,
     h4, h5, h6  {
@@ -84,14 +83,21 @@
         ul{
             margin: 0;
         }
-        .section_title{
+        .hr{
             background-color: var(--primary-color);
-            color: var(--background-color);
+            border-color: var(--primary-color);
+            height: .5vh;
+            padding: 0;
+            margin-top: 0;
+        }
+        .section_title{
             display: inline-block;
             padding: .5vw;
             margin: .125vh;
+            margin-left: 0;
+            margin-bottom: 0;
             text-transform: uppercase;
-            font-size: 1.5vh;
+            margin-bottom: 0;
         }
 
         body {
@@ -143,6 +149,7 @@
     <section>
 
         <h2 class="section_title"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.title | markdownify }}</h2>
+        <div class="hr"></div>
         {{ range .subsections }}
             <div class="flex">
                 <div class="left">

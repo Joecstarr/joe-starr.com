@@ -77,15 +77,22 @@ sections:
       subsections:
           - name: MATH:1005
             subheader: Primary Instructor
-            summary:  "[Course Listing](https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&q.courseNumber=1005&showResults=1)"
+            summary:  "Algebraic techniques, equations and inequalities, functions and graphs, exponential and logarithmic functions, systems of equations and inequalities.  [Course Listing](https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&q.courseNumber=1005&showResults=1)"
             dates: Fall 2022, Fall 2023
           - name: MATH:1350
             subheader: Discussion Section
-            summary:  "[Course Listing](https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&q.courseNumber=1350&showResults=1)"
+            summary: |-
+                Algebraic techniques and modeling; quantitative methods for treating
+                problems that arise in management and economic sciences; topics include algebra
+                techniques, functions and functional models, exponential and logarithmic functions
+                and models, and a thorough introduction to differential calculus; examples
+                and applications from management, economic sciences, and related areas; for
+                students planning to major in business.
+                [Course Listing](https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&q.courseNumber=1350&showResults=1)
             dates: Fall 2021, Spring 2022, Spring 2024
           - name: MATH:5760
             subheader: Graduate Assistant
-            summary:  "[Course Listing](https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&q.courseNumber=5760&showResults=1)"
+            summary:  "Topics in mathematical biology; canonical mathematical modeling and analysis of problems in the biological sciences; second of a two-semester sequence. [Course Listing](https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&q.courseNumber=5760&showResults=1)"
             dates: Spring 2024
     - title: Conference Attendance
       icon: fa-solid fa-users
