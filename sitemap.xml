@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://joe-starr.com/what_is/</loc>
+    <lastmod>2020-01-07T17:09:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://joe-starr.com/resources/cont_frac_convert/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -18,6 +22,11 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://joe-starr.com/resources/analysis_prepsheet/</loc>
+    <lastmod>2020-01-07T17:09:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://joe-starr.com/what_is/tangle_generation/</loc>
     <lastmod>2020-01-07T17:09:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -102,6 +111,10 @@
   </url><url>
     <loc>https://joe-starr.com/teaching/</loc>
     <lastmod>2020-01-07T17:09:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/resources/landing/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/slides/landing/</loc>
