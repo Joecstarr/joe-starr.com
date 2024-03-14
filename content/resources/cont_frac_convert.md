@@ -1,8 +1,8 @@
 ---
 title: Continued Fraction and Twist Vector Converter
 date: 2023-07-15
-featured: true
-summary:
+featured: false
+summary: A tool that computes continued fractions from twist vectors.
 weight: 500
 sitemap:
   priority: 0.8

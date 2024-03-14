@@ -1,7 +1,7 @@
 ---
 title: Analysis Prepsheet
 date: 2020-01-07T17:09:26.037Z
-featured: true
+featured: false
 summary:
 weight: 500
 sitemap:

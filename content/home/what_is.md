@@ -9,12 +9,12 @@ headless: true
 # Order that this section appears on the page.
 weight: 70
 
-title: 'Resources'
+title: 'What is?'
 subtitle:
 
 content:
   # Page type to display. E.g. post, event, publication...
-  page_type: resources
+  page_type: what_is
   # Choose how many pages you would like to display (0 = all pages)
   count: 0
   # Filter on criteria
@@ -29,10 +29,6 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
-  archive:
-    enable: true
-    text: See all resources
-    link: resources/landing
 
 design:
   # Choose a view for the listings:

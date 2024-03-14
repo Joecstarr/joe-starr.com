@@ -1,7 +1,7 @@
 ---
 title: Grid Diagram to Front Projection
 date: 2023-05-30T17:09:26.037Z
-featured: true
+featured: false
 summary:
 weight: 500
 sitemap:

@@ -7,9 +7,9 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 70
+weight: 80
 
-title: 'Resources'
+title: 'Resources Archive'
 subtitle:
 
 content:
@@ -21,6 +21,7 @@ content:
   filters:
     author: ''
     category: ''
+    tag: ''
     exclude_featured: false
     exclude_future: false
     exclude_past: false
@@ -29,10 +30,6 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
-  archive:
-    enable: true
-    text: See all resources
-    link: resources/landing
 
 design:
   # Choose a view for the listings:
