@@ -1,6 +1,6 @@
 ---
-title: Analysis Prepsheet
-date: 2020-01-07T17:09:26.037Z
+title: Tangle Tabulation
+date: 2024-03-13
 featured: false
 summary:
 weight: 500
