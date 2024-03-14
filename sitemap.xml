@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://joe-starr.com/what_is/</loc>
-    <lastmod>2020-01-07T17:09:26+00:00</lastmod>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/what_is/tangle_tabulation/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url><url>
     <loc>https://joe-starr.com/resources/cont_frac_convert/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
@@ -26,11 +31,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://joe-starr.com/what_is/tangle_generation/</loc>
-    <lastmod>2020-01-07T17:09:26+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://joe-starr.com/teaching/math1005/</loc>
     <lastmod>2020-01-07T17:09:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -42,7 +42,7 @@
     <priority>0.8</priority>
   </url><url>
     <loc>https://joe-starr.com/</loc>
-    <lastmod>2024-01-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://joe-starr.com/slides/merida_24/</loc>

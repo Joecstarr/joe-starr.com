@@ -5,7 +5,7 @@
     <link>https://joe-starr.com/what_is/</link>
       <atom:link href="https://joe-starr.com/what_is/index.xml" rel="self" type="application/rss+xml" />
     <description>What is? Archive</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://joe-starr.com/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_512x512_fill_lanczos_center_3.png</url>
       <title>What is? Archive</title>
@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Analysis Prepsheet</title>
-      <link>https://joe-starr.com/what_is/tangle_generation/</link>
-      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
-      <guid>https://joe-starr.com/what_is/tangle_generation/</guid>
+      <title>Tangle Tabulation</title>
+      <link>https://joe-starr.com/what_is/tangle_tabulation/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://joe-starr.com/what_is/tangle_tabulation/</guid>
       <description></description>
     </item>
     
