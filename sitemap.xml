@@ -131,7 +131,13 @@
     <loc>https://joe-starr.com/admin/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://joe-starr.com/cv/joe-starr/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://joe-starr.com/categories/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://joe-starr.com/cv/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
