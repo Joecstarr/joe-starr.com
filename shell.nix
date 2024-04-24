@@ -1,13 +1,19 @@
-with import <nixpkgs> {};
+{ pkgs ? import <nixpkgs> { } }:
+pkgs.mkShell {
+  nativeBuildInputs = with pkgs; [
+    autoPatchelfHook
+  ];
 
-stdenv.mkDerivation {
-    name = "node";
-    buildInputs = [
-        nodejs
-        hugo
-        just
-    ];
-    shellHook = ''
-        export PATH="$PWD/node_modules/.bin/:$PATH"
-    '';
+  buildInputs = with pkgs; [
+    jq
+    nodejs
+    hugo
+    just
+  ];
+
+  shellHook = ''
+    export PATH="$PWD/node_modules/.bin/:$PATH"
+    alias scripts='jq ".scripts" package.json'
+    export PUPPETEER_EXECUTABLE_PATH="${pkgs.chromium.outPath}/bin/chromium"
+  '';
 }
