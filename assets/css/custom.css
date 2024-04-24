@@ -1,0 +1,61 @@
+
+
+.pdf-block .pdf-canvas {
+    border: 1px solid #282a36;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.pdf-block .paginator {
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pdf-block .loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+}
+
+.pdf-block .loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f8f8f2;
+    border-radius: 50%;
+    border-top-color: #282a36;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+/* Style buttons */
+.pdf-block .btn {
+    background-color: #bd93f9;
+    border: none;
+    color: #282a36;
+    padding: 12px 30px;
+    margin: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.pdf-block .btn:hover {
+    background-color: #bd93f9;
+}
+
+.pdf-block @keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+.pdf-block @-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
