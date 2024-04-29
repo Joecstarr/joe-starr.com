@@ -8,6 +8,12 @@ tags: [
 ]
 draft: true
 
+
+showHeadingAnchors: false
+
+layout: 'slides'
+type: 'slides'
+section: 'slides'
 slides:
   highlight_style: dracula
   diagram: true

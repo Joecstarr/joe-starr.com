@@ -1,9 +1,10 @@
 ---
 summary: ""
-title: What is?
+title: Resources
 author: Joe Starr
 groupByYear: true
 tags:
   - index
-type: What is?
+type: resources
 ---
+

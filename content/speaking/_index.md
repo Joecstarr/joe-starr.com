@@ -1,9 +1,10 @@
 ---
 summary: ""
-title: What is?
+title: Slides
 author: Joe Starr
 groupByYear: true
 tags:
   - index
-type: What is?
 ---
+
+sdsd

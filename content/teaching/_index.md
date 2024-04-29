@@ -1,9 +1,9 @@
 ---
 summary: ""
-title: What is?
+title: Teaching
 author: Joe Starr
 groupByYear: true
 tags:
   - index
-type: What is?
+type: teaching
 ---

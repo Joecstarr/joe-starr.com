@@ -26,18 +26,13 @@ weight = 50
 
 [[main]]
 name = "Resources"
-url = "#resources"
+pageRef = "resources"
 weight = 60
 
 [[main]]
 name = "What is?"
-url = "#resources"
+pageRef = "what_is"
 weight = 65
-
-[[main]]
-name = "What is?"
-url = "#resources"
-weight = 67
 
 [[main]]
 name = "Speaking"
@@ -46,19 +41,19 @@ weight = 70
 [[main]]
 name = "Research Talks"
 parent = "Speaking"
-url = "#talks"
+pageRefrl = "slides/research"
 weight = 60
 
 [[main]]
 name = "General Audience Talks"
 parent = "Speaking"
-url = "#gen_talks"
+pageRefrl = "slides/general_audience"
 weight = 70
 
 [[main]]
 name = "Posters"
 parent = "Speaking"
-url = "#posters"
+url = "posters"
 weight = 80
 
 #[[main]]
