@@ -1,3 +1,6 @@
-+++
-author = "Hugo Authors"
-+++
+---
+# Display name
+title: Joe Starr
+
+---
+

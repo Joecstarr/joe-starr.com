@@ -41,5 +41,6 @@
     "titleBar.inactiveForeground": "#15202b99",
     "tab.activeBorder": "#d399bf"
 },
-"peacock.color": "#c376a8"
+"peacock.color": "#c376a8",
+"nixEnvSelector.nixFile": "${workspaceFolder}/shell.nix"
 }
