@@ -9,10 +9,10 @@
 # By default the menu is ordered alphabetically. This can be
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
-[[main]]
-name = "Home"
-pageRef = "home"
-weight = 10
+# [[main]]
+# name = "Home"
+# pageRef = "."
+# weight = 10
 
 # [[main]]
 # name = "Experience"
@@ -21,7 +21,7 @@ weight = 10
 
 [[main]]
 name = "Teaching"
-pageRef = "#teaching"
+pageRef = "teaching"
 weight = 50
 
 [[main]]
@@ -41,19 +41,19 @@ weight = 70
 [[main]]
 name = "Research Talks"
 parent = "Speaking"
-pageRefrl = "slides/research"
+pageRef = "speaking/research"
 weight = 60
 
 [[main]]
 name = "General Audience Talks"
 parent = "Speaking"
-pageRefrl = "slides/general_audience"
+pageRef = "speaking/general_audience"
 weight = 70
 
 [[main]]
 name = "Posters"
 parent = "Speaking"
-url = "posters"
+pageRef = "speaking/posters"
 weight = 80
 
 #[[main]]

@@ -11,9 +11,7 @@ draft: false
 
 showHeadingAnchors: false
 
-layout: 'slides'
 type: 'slides'
-section: 'slides'
 slides:
   highlight_style: dracula
   diagram: true

@@ -7,12 +7,9 @@ tags: [
 ]
 draft: false
 
-
 showHeadingAnchors: false
 
-layout: 'slides'
-type: 'slides'
-section: 'slides'
+Type: 'slides'
 slides:
   highlight_style: dracula
   diagram: true

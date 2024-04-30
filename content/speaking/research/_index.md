@@ -1,12 +1,5 @@
 ---
-summary: ""
-title: Slides
+title: Research
 author: Joe Starr
 groupByYear: true
-tags:
-  - index
-layout: resources
-type: resources
 ---
-
-sdsd

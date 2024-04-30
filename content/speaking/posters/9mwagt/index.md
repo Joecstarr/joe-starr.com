@@ -6,9 +6,8 @@ tags: [
     "Posters",
 ]
 
-layout: 'posters'
 type: 'posters'
-section: 'posters'
+
 draft: false
 poster:
     src: "https://raw.githubusercontent.com/Joecstarr/posters/master/23/9thmex/poster.svg"
