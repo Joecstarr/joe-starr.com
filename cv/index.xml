@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cvs | Joe Starr</title>
+    <title>Cvs on Joe Starr</title>
     <link>https://joe-starr.com/cv/</link>
-      <atom:link href="https://joe-starr.com/cv/index.xml" rel="self" type="application/rss+xml" />
-    <description>Cvs</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <description>Recent content in Cvs on Joe Starr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Joe Starr</copyright>
+    <atom:link href="https://joe-starr.com/cv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://joe-starr.com/cv/joe-starr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://joe-starr.com/cv/joe-starr/</guid>
       <description></description>
+      
     </item>
     
   </channel>

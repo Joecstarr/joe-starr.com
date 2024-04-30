@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TA on Joe Starr</title>
+    <link>https://joe-starr.com/tags/ta/</link>
+    <description>Recent content in TA on Joe Starr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Joe Starr</copyright>
+    <lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/ta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MATH:1005 College Algebra</title>
+      <link>https://joe-starr.com/teaching/math1005/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/teaching/math1005/</guid>
+      <description>College Algebra</description>
+      
+    </item>
+    
+    <item>
+      <title>MATH:1350 Quantitative Reasoning for Business</title>
+      <link>https://joe-starr.com/teaching/math1350/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/teaching/math1350/</guid>
+      <description>Mathematics and Reasoning for business students</description>
+      
+    </item>
+    
+  </channel>
+</rss>

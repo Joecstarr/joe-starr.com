@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>What is? Archive | Joe Starr</title>
+    <title>What is? on Joe Starr</title>
     <link>https://joe-starr.com/what_is/</link>
-      <atom:link href="https://joe-starr.com/what_is/index.xml" rel="self" type="application/rss+xml" />
-    <description>What is? Archive</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://joe-starr.com/media/icon_hubb9e4d6729925a02fb40aa473c1767df_20618_512x512_fill_lanczos_center_3.png</url>
-      <title>What is? Archive</title>
-      <link>https://joe-starr.com/what_is/</link>
-    </image>
-    
+    <description>Recent content in What is? on Joe Starr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Joe Starr</copyright>
+    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/what_is/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tangle Tabulation</title>
       <link>https://joe-starr.com/what_is/tangle_tabulation/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      
       <guid>https://joe-starr.com/what_is/tangle_tabulation/</guid>
       <description></description>
+      
     </item>
     
   </channel>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General Audience on Joe Starr</title>
+    <link>https://joe-starr.com/speaking/general_audience/</link>
+    <description>Recent content in General Audience on Joe Starr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Joe Starr</copyright>
+    <lastBuildDate>Fri, 17 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/speaking/general_audience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constructing the Jones polynomial to save the world</title>
+      <link>https://joe-starr.com/speaking/general_audience/zombie_jones/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/general_audience/zombie_jones/</guid>
+      <description>In this talk we give a construction of the Jones Polynomial via the Kauffman bracket. The concepts are introduced in a pseudo-application of fighting a zombie apocalypse.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research Talks on Joe Starr</title>
+    <link>https://joe-starr.com/tags/research-talks/</link>
+    <description>Recent content in Research Talks on Joe Starr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Joe Starr</copyright>
+    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/research-talks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GEOTOP-A International Conference Applications of Geometry and Topology</title>
+      <link>https://joe-starr.com/speaking/research/merida_24/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/research/merida_24/</guid>
+      <description>Talk given at the GEOTOP-A International Conference on 1/11/24.</description>
+      
+    </item>
+    
+    <item>
+      <title>Dearborn Colloquium Talk Fall23</title>
+      <link>https://joe-starr.com/speaking/research/dearborn_f23/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/research/dearborn_f23/</guid>
+      <description>Talk given at the U of M - Dearborn Colloquium on 11/15/23.</description>
+      
+    </item>
+    
+    <item>
+      <title>University of Iowa Fall23 Math Day</title>
+      <link>https://joe-starr.com/speaking/research/mathday23/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/research/mathday23/</guid>
+      <description>Talk given at the Fall23 University of Iowa Math Day</description>
+      
+    </item>
+    
+    <item>
+      <title>Tangled in Knot Theory Summer 2023</title>
+      <link>https://joe-starr.com/speaking/research/lightning/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/research/lightning/</guid>
+      <description>Lightning talk for Tangled in Knot Theory</description>
+      
+    </item>
+    
+  </channel>
+</rss>

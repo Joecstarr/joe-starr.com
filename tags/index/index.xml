@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index on Joe Starr</title>
+    <link>https://joe-starr.com/tags/index/</link>
+    <description>Recent content in Index on Joe Starr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Joe Starr</copyright>
+    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is?</title>
+      <link>https://joe-starr.com/what_is/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/what_is/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Constructing the Jones polynomial to save the world</title>
+      <link>https://joe-starr.com/speaking/general_audience/zombie_jones/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/general_audience/zombie_jones/</guid>
+      <description>In this talk we give a construction of the Jones Polynomial via the Kauffman bracket. The concepts are introduced in a pseudo-application of fighting a zombie apocalypse.</description>
+      
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://joe-starr.com/resources/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/resources/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://joe-starr.com/teaching/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/teaching/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
