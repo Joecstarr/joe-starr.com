@@ -1089,8 +1089,7 @@
 
 
     document.querySelector('.convert').addEventListener('click', () => {
-
-        svg = document.querySelectorAll('#svg-container')
+        svg = document.getElementById('svg-container')
         svg.innerHTML = "";
         drawer = new Drawer('#svg-container', '.table tr')
         drawer.generate()
