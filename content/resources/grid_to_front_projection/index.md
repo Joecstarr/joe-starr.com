@@ -26,4 +26,40 @@ share: false
 
 ---
 
+## Sample images
+
+
+|o| | |x| |
+|-|-|-|-|-|
+| | |x| |o|
+| |x| |o| |
+|x| |o| | |
+| |o| | |x|
+
+
+<img  style="width:400px;height:auto" src="https://raw.githubusercontent.com/Joecstarr/grid2fp/main/test/trefoil.svg"/>
+
+
+|x| |o|
+|-|-|-|
+|‎| | |
+|o| |x|
+
+<img  style="width:400px;height:auto" src="https://raw.githubusercontent.com/Joecstarr/grid2fp/main/test/un.svg"/>
+
+
+|‎| |o| | |x| |
+|-|-|-|-|-|-|-|
+| | | | |o| |x|
+| |x| | | |o| |
+|o| |x| | | | |
+| | | |x| | |o|
+| |o| | |x| | |
+|x| | |o| | | |
+
+<img  style="width:400px;height:auto" src="https://raw.githubusercontent.com/Joecstarr/grid2fp/main/test/fig1_from_paper.svg"/>
+
+
+---
+
 A python library for this code can be found at [grid2fp](https://pypi.org/project/grid2fp/)
