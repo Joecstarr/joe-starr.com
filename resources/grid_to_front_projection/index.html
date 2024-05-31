@@ -103,7 +103,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "98"
+    "wordCount": "131"
   }]
   </script>
 
@@ -156,6 +156,61 @@
 
 
   
+  
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    if (typeof MathJax === 'undefined') {
+        MathJax = {
+            loader: {
+                load: ['[img]/img.min.js', '[tex]/color', '[tex]/amscd'],
+                paths: { img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3' }
+            },
+            tex: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+                processEscapes: true,
+                processEnvironments: true,
+                extensions: ["autoload-all.js", "AMSmath.js", "AMSsymbols.js", "AMScd.js"],
+                packages: { '[+]': ['img', 'color', 'amscd'] }
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+        MathJax.startup = {
+            ready() {
+                MathJax.startup.defaultReady();
+                MathJax.startup.promise.then(() => {
+                    console.log("Start startup promise");
+
+                    document.querySelectorAll("mjx-container").forEach(function (x) {
+                        x.parentElement.classList += ' has-jax '
+                    })
+
+                    document.querySelectorAll("mjx-container img").forEach((element) => {
+                        var src = element.getAttribute("src");
+                        if (src.endsWith('.svg') == true) {
+                            fetch(src)
+                            .then(res => res.text())
+                            .then(res => {
+                                const holder = document.createElement('div')
+                                holder.style.width = "1em";
+                                holder.style.height = "1em";
+                                holder.innerHTML = res
+                                element.replaceWith(holder)
+                            })
+                        }
+                    });
+
+                    console.log("End startup promise");
+                });
+            }
+        };
+    }
+
+</script>
+
   
   <meta name="theme-color"/>
   
@@ -633,7 +688,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-05-30 17:09:26.037 &#43;0000 UTC">30 May 2023</time><span class="px-2 text-primary-500">&middot;</span><span>98 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <time datetime="2023-05-30 17:09:26.037 &#43;0000 UTC">30 May 2023</time><span class="px-2 text-primary-500">&middot;</span><span>131 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
   
 
   
@@ -718,9 +773,6 @@
 </ol>
 <hr>
 <style>
-    body {
-        font-family: 'Verdana';
-    }
 
     .generator {
         display: flex;
@@ -733,14 +785,13 @@
         display: block;
     }
 
-    table,
     th,
     td {
         border: 1px solid #6272a4;
         border-collapse: collapse;
     }
 
-    table {
+    table-container table {
         margin: 20px auto;
         padding: 0;
         background-color: #44475a;
@@ -748,7 +799,7 @@
     }
 
 
-    td {
+    table-container td {
         padding: 15px;
         text-align: center;
         color: #ffb86c;
@@ -806,21 +857,20 @@
         }
     }
 
-    &__item {
+    table-container &__item {
         max-width: 150px;
         width: 100%;
         height: 36px;
+        body {
+            font-family: 'Verdana';
+        }
         margin: 2px;
         background: #44475a;
         border-radius: 5px;
     }
 
-    svg {
-        width: 100% !important;
-        height: auto !important;
-    }
 
-    #svg-container {
+    table-container c {
         width: 100% !important;
         height: auto !important;
         max-width: 30vw;
@@ -1056,6 +1106,153 @@
         element.remove();
     });
 </script>
+<hr>
+
+
+<h2 class="relative group">Sample images 
+    <div id="sample-images" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sample-images" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<table>
+<thead>
+<tr>
+<th>o</th>
+<th></th>
+<th></th>
+<th>x</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td>o</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td></td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>x</td>
+<td></td>
+<td>o</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>o</td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<img  style="width:400px;height:auto" src="https://raw.githubusercontent.com/Joecstarr/grid2fp/main/test/trefoil.svg"/>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th></th>
+<th>o</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>‎</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>o</td>
+<td></td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<img  style="width:400px;height:auto" src="https://raw.githubusercontent.com/Joecstarr/grid2fp/main/test/un.svg"/>
+<table>
+<thead>
+<tr>
+<th>‎</th>
+<th></th>
+<th>o</th>
+<th></th>
+<th></th>
+<th>x</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>o</td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>o</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>o</td>
+</tr>
+<tr>
+<td></td>
+<td>o</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>x</td>
+<td></td>
+<td></td>
+<td>o</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<img  style="width:400px;height:auto" src="https://raw.githubusercontent.com/Joecstarr/grid2fp/main/test/fig1_from_paper.svg"/>
 <hr>
 <p>A python library for this code can be found at <a href="https://pypi.org/project/grid2fp/"   target="_blank">
     grid2fp</a></p>
