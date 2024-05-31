@@ -41,7 +41,38 @@
     {{ $style := slice $css_custom | resources.Concat "css/reveal_custom.css" | resources.Minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   {{ end }}
-  {{ partial "hooks/head-end/custom_head.html" . }}
+  {{ partial "extend-head.html" . }}
+
+  <script>
+    var reveal_init_callbacks = []
+    var reveal_slidechange_callbacks = []
+    var reveal_slidetransitionend_callbacks = []
+    var reveal_resize_callbacks = []
+    function svgAddress(src,id) {
+        var element = document.querySelector(id);
+        if (src.endsWith('.svg') == true) {
+            fetch(src)
+                .then(res => res.text())
+                .then(res => {
+                    const holder = document.createElement('div')
+                    holder.innerHTML = res
+                    element.appendChild(holder)
+                })
+        }
+    }
+    function remove_qr() {
+        const match = document.querySelector(".slides .present .hide_qr");
+        var qr = document.querySelector("#header-right");
+        if(match != null)
+        {
+            qr.style.display = "none";
+        }else{
+            qr.style.display = "block";
+        }
+    }
+    reveal_slidechange_callbacks.push(remove_qr)
+</script>
+
 
 </head>
 <body>
@@ -71,7 +102,75 @@
   {{/* Initialize slides. */}}
   {{ $slidejs := resources.Get "js/wowchemy-slides.js" | js.Build (dict "params" (dict "slides" $.Params.slides )) }}
   <script src="{{ $slidejs.RelPermalink }}"></script>
-  {{ partial "hooks/footer-start/custom_foot.html" . }}
+  {{ partial "extend-foot.html" . }}
+  {{ $qr := $.Param "qr.src" | default "false" }}
 
+
+  {{ if not (eq $qr "false") }}
+
+      <style type="text/css">
+          /* 1. Style header/footer <div> so they are positioned as desired. */
+          #header-left {
+              position: absolute;
+              top: 0%;
+              left: 3%;
+          }
+          #header-right {
+              position: absolute;
+              top: 0%;
+              right: 3%;
+          }
+          #footer-left {
+              position: absolute;
+              bottom: 0%;
+              left: 3%;
+          }
+          #qr_code_header svg {
+              height: 20vh;
+          }
+      </style>
+
+      <!-- 2. Create hidden header/footer <div> -->
+      <div id="hidden" style="display:none;">
+          <div id="header">
+              <div id="header-right"></div>
+          </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript">
+          // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+          var header = $('#header').html();
+          if ( window.location.search.match( /print-pdf/gi ) ) {
+              Reveal.addEventListener( 'ready', function( event ) {
+                  $('.slide-background').append(header);
+              });
+          }
+          else {
+              $('div.reveal').append(header);
+      }
+      </script>
+
+      <script type="text/javascript">
+          function codeAddress() {
+              var element = document.querySelector("#header-right");
+              var src = {{ $qr }};
+              if (src.endsWith('.svg') == true) {
+                  fetch(src)
+                      .then(res => res.text())
+                      .then(res => {
+                          const holder = document.createElement('div')
+                          holder.innerHTML = res
+                          holder.setAttribute("id", "qr_code_header");
+                          element.appendChild(holder)
+                      })
+              }
+          }
+
+          window.onload = codeAddress;
+
+      </script>
+
+  {{ end }}
 </body>
 </html>
