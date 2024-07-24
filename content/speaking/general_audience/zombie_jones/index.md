@@ -104,7 +104,7 @@ Photo by Madprime (talk · contribs) - This vector image was created with Inksca
 
 # Circular DNA
 
-Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-stranded DNA of the polyoma virus exists in a closed circular form.
+Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-stranded DNA of the polyoma virus is circular. Rather than the more common open-ended double-stranded DNA
 
 
 {{< slides/center_block >}}
