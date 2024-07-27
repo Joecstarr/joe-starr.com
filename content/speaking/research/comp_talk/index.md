@@ -14,11 +14,18 @@ slides:
   highlight_style: dracula
   diagram: true
   diagram_options:
-        theme: "dark"
+    theme: "dark"
+    themeVariables:
+            fontSize: 17
   reveal_options:
-        theme: "none"
-        center: true
-        transition: "none"
+    theme: "none"
+    center: true
+    transition: "none"
+    backgroundTransition: "none"
+    self-contained: true
+    progress: true
+    hash: true
+
 ---
 
 {{< slides/theme >}}
@@ -74,7 +81,7 @@ slides:
 
 </style>
 
-## GEOTOP-A International Conference (1/11/24)
+## Comprehensive Exam (8/??/24)
 
 # The Tanglenomicon
 
@@ -146,12 +153,15 @@ Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything
 
 ---
 
+### Lord Kelvin's vortex theory of the atom
+
 {{< slides/row >}}
 {{< slides/col >}}
 {{< centerimg src="/presentations/mathday23/lord_kelvin.jpg" >}}
 {{< /slides/col >}}
 {{< slides/col >}}
-{{< slides/center_block markdownify="true" grow="1" >}}Lord Kelvin's vortex theory of the atom. Atoms are knotted vortices in the æther.
+{{< slides/center_block markdownify="true" grow="1" >}}
+Atoms are knotted vortices in the æther.
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
@@ -507,6 +517,51 @@ $$\begin{array}{|l|l|l|l|}
 {{< /slides/admonition >}}
 
 ---
+{{% slides/uncenter %}}
+
+##### Programmatic Description
+
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    state if_done <<choice>>
+    State_i: i=0
+    State_ipp: i++
+    state "Construct TV from i as a bitfield" as tv_calc{
+        state "tmp=i;j=0;cnt=N" as State_temp
+        State_jpp: j++
+        State_cntmm: cnt--
+        State_sum_tv: TV[j]++
+        State_rsh: tmp=tmp>>1
+        state if_lsb <<choice>>
+        state if_cnteo <<choice>>
+        State_store_tv: Store TV
+
+        [*] --> State_temp
+        State_temp --> if_cnteo
+        if_cnteo--> State_cntmm: if cnt>0
+        if_cnteo--> State_store_tv: if cnt==0
+        State_store_tv --> [*]
+
+        State_cntmm -->if_lsb
+        if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
+        State_sum_tv --> State_rsh
+        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
+        State_jpp --> State_rsh
+        State_rsh --> if_cnteo
+    }
+    [*] --> State_i
+    State_i --> if_done
+    if_done --> tv_calc: if i < 2**(N-1)
+    tv_calc --> State_ipp
+    State_ipp --> if_done
+    if_done --> [*]: if i == 2**(N-1)
+
+
+```
+---
 
 ## Canonical Twist Vectors
 
@@ -527,16 +582,178 @@ $$\begin{array}{|l|l|l|l|}
 
 ---
 
-# Using The Tanglenomicon
+# Computations
 
 ---
 
-{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png"  >}}
+## Rational Number (continued fraction)
+
+
+The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction that is:
+$$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
+
+{{<  slides/admonition type="Example" title="Twist Vector to rational number" >}}
+
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:70%;margin-top:1rem;" >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg" height="15rem" >}}
+{{< /slides/col >}}
+{{< slides/col  >}}
+{{< slides/center_block grow="1" >}}
+$$\ =\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
+
+{{<  /slides/admonition >}}
+
+{{% slides/citations %}}
+Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+{{% /slides/citations %}}
+
+---
+
+To play with twist vectors and continued fractions visit
+
+{{< slides/centersvg src="/qr_codes/contfrac.svg" direct="true" id="qr" >}}
+
+<p style="text-align:center !important;">https://joe-starr.com/resources/cont_frac_convert/</p>
 
 
 ---
 
-# Where we're going
+## Parity
+
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/321.svg"  direct="true" id="parity_1"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_2" >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/312.svg" direct="true" id="parity_3"   >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/inf.svg"  direct="true" id="parity_4"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+---
+
+## Computing Parity
+
+If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for parity
+
+{{<  slides/admonition type="Example" title="Parity Table" >}}
+
+$$\begin{array}{|c|c|c|}
+\hline
+p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
+0 &0&N/A\\ \hline
+0 &1& 0 \\ \hline
+1 &0&\infty\\ \hline
+1 &1& 1\\ \hline
+\end{array}$$
+
+{{<  /slides/admonition  >}}
+
+---
+
+
+
+{{<  slides/admonition type="Example" title="Example" >}}
+
+
+{{< slides/row style="justify-content:flex-left;align-content:flex-start;width:90%;margin-left:2rem;margin-top:2rem;" >}}
+{{< slides/col >}}
+{{< slides/row  >}}
+{{< slides/col >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/comp/321.svg" direct="true" id="parity_calc_1"  >}}
+{{< /slides/center_block>}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
+{{< slides/row  >}}
+{{< slides/col  >}}
+{{< slides/center_block grow="1" >}}
+$$\ =[3\ 2\ 1]=1+\frac{1}{2+\frac{1}{3}}=\frac{10}{7}\to\text{ Parity: 0 }$$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
+{{< slides/row  >}}
+{{< slides/col >}}
+{{< slides/center_block grow="1" >}}
+{{< slides/centersvg src="/presentations/comp/0.svg" direct="true" id="parity_calc_1"  >}}
+{{< /slides/center_block>}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+
+
+
+
+{{<  /slides/admonition  >}}
+
+
+
+
+---
+
+## Closures
+
+{{< slides/row style="" >}}
+{{< slides/col style="flex-grow:2;">}}
+{{< slides/centersvg src="/presentations/mathday23/cc_2.svg" block="true" >}}
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:0;">}}
+$\ $
+{{< /slides/col>}}
+{{< slides/col style="flex-grow:3;">}}
+{{< slides/centersvg src="/presentations/general/cc_2.svg"  block="true" >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+## Closure Equivalence and pivoting to knots
+
+{{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
+
+ Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0$<$p$. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
+<br/>
+(1) $p=p^{\prime}$
+<br/>
+(2) either $q \equiv q^{\prime}(\bmod p)$ or $q q^{\prime} \equiv 1(\bmod p)$.
+
+{{<  /slides/admonition  >}}
+
+{{% slides/citations  %}}
+Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956): 133-170. [http://eudml.org/doc/169591](http://eudml.org/doc/169591).
+{{% /slides/citations  %}}
+
+---
+
+
+
+{{< slides/centersvg src="/presentations/general/close_eq.svg" height="auto">}}
+
+
 
 ---
 
@@ -678,36 +895,22 @@ The construction for the canonical Montesinos tangles includes a trailing $\frac
 
 What we're actually generating with this algorithm is equivalent to allowing the boundary components of the tangle to move. To recover fixed boundary tangles we can append a $k$ term to each lower crossing Montesinos tangle.
 
-This allows users to choose datasets for fixed or non-fixed boundary tangles.
+Similarly, Montesinos tangles generated via the $\vee$ operation are recovered
+by appending $[1, -1, 1 ]$.
+
 
 ---
-{{% slides/uncenter %}}
 
-## Parallelization
+# Using The Tanglenomicon
 
+---
 
-```mermaid
-sequenceDiagram
+{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png" >}}
 
-    participant DB
-    participant Server
-    participant Client 1
-    participant Client 2
+---
 
-    Server->>+Client 1: Dispatch job 1 for stencil starting from TV idx<br/>[0,0,0,...]
-    Server-->>DB: Mark job 1 as dispatched
-    Server->>+Client 2: Dispatch job 2 for stencil starting from TV idx<br/>[100,0,0,...]
-    Server-->>DB: Mark job 2 as dispatched
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 1 results and mark complete
-    Server->>+Client 1: Dispatch job 3 for stencil starting from TV idx<br/>[0,100,0,...]
-    Server-->>DB: Mark job 3 as dispatched
-    Client 2-->>-Server: job complete
-    Server-->>DB: store job 2 results and mark complete
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 3 results and mark complete
+# Where we're going
 
-```
 ---
 # Generalized Montesinos
 
@@ -736,7 +939,7 @@ $\ $
 {{< /slides/col >}}
 {{< slides/col  style="flex-grow:1;" >}}
 {{< slides/center_block grow="1" >}}
-$= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-Foreground)}\circ \color{var(--r-Red)}[1\  2]$
+$= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-Foreground)}\circ \color{var(--r-Red)}[2\  2]$
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
@@ -748,11 +951,30 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 
 ---
 
-We just need to take our lists of Montesinos and rational tangles and glue them together with $\circ$.
+## Algebraic Tangle Trees
+
+To generate all possible algebraic tangles, we can generate all possible algebraic expressions on the trivial tangles. Equivalently, all full binary trees with $N$ leaves. Where the tree's internal nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled with all combinations of trivial tangles.
+
+These binary trees are called *Algebraic Tangle Trees*.
+
+{{% slides/citations %}}
+Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
+{{% /slides/citations %}}
+{{% slides/citations %}}
+Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
+{{% /slides/citations %}}
+
 
 ---
 
-# Into the future
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/general/gen_mont_att.svg" >}}
+
+---
+
+We just need to take our lists of Montesinos and rational tangles and glue them together with $\circ$.
+
 ---
 
 ## Algebraic
@@ -790,23 +1012,9 @@ A vertical sum of two Montesinos tangles.
 {{< /slides/row >}}
 {{<  /slides/admonition >}}
 
+
 ---
 # Generation
-
----
-
-## Algebraic Tangle Trees
-
-To generate all possible algebraic tangles, we can generate all possible algebraic expressions on the trivial tangles. Equivalently, all full binary trees with $N$ leaves. Where the tree's internal nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled with all combinations of trivial tangles.
-
-These binary trees are called *Algebraic Tangle Trees*.
-
-{{% slides/citations %}}
-Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
-{{% /slides/citations %}}
-{{% slides/citations %}}
-Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
-{{% /slides/citations %}}
 
 ---
 
@@ -814,8 +1022,12 @@ Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astro
 
 {{< slides/centersvg src="/presentations/general/alg_trees.svg" >}}
 
+---
+
+# Into the future
 
 ---
+
 # Non-algebraic/Polygonal
 
 ---
@@ -996,3 +1208,32 @@ A storage module defines a storage interface for the application. The main inter
 
 
 
+
+---
+{{% slides/uncenter %}}
+
+## Parallelization
+
+
+```mermaid
+sequenceDiagram
+
+    participant DB
+    participant Server
+    participant Client 1
+    participant Client 2
+
+    Server->>+Client 1: Dispatch job 1 for stencil starting from TV idx<br/>[0,0,0,...]
+    Server-->>DB: Mark job 1 as dispatched
+    Server->>+Client 2: Dispatch job 2 for stencil starting from TV idx<br/>[100,0,0,...]
+    Server-->>DB: Mark job 2 as dispatched
+    Client 1-->>-Server: job complete
+    Server-->>DB: store job 1 results and mark complete
+    Server->>+Client 1: Dispatch job 3 for stencil starting from TV idx<br/>[0,100,0,...]
+    Server-->>DB: Mark job 3 as dispatched
+    Client 2-->>-Server: job complete
+    Server-->>DB: store job 2 results and mark complete
+    Client 1-->>-Server: job complete
+    Server-->>DB: store job 3 results and mark complete
+
+```
