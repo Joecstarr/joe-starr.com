@@ -6,7 +6,7 @@ summary: "Define the Alexander Polynomial"
 tags: [
     "Talks",'research talks'
 ]
-draft: true
+draft: false
 
 
 showHeadingAnchors: false
