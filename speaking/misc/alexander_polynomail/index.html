@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy  for Hugo">
+
+  
+
+  <link rel="canonical" href="https://joe-starr.com/speaking/misc/alexander_polynomail/">
+
+  <title>Alexander Polynomial | Joe Starr</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    if (typeof MathJax === 'undefined') {
+        MathJax = {
+            loader: {
+                load: ['[img]/img.min.js', '[tex]/color', '[tex]/amscd'],
+                paths: { img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3' }
+            },
+            tex: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+                processEscapes: true,
+                processEnvironments: true,
+                extensions: ["autoload-all.js", "AMSmath.js", "AMSsymbols.js", "AMScd.js"],
+                packages: { '[+]': ['img', 'color', 'amscd'] }
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+        MathJax.startup = {
+            ready() {
+                MathJax.startup.defaultReady();
+                MathJax.startup.promise.then(() => {
+                    console.log("Start startup promise");
+
+                    document.querySelectorAll("mjx-container").forEach(function (x) {
+                        x.parentElement.classList += ' has-jax '
+                    })
+
+                    document.querySelectorAll("mjx-container img").forEach((element) => {
+                        var src = element.getAttribute("src");
+                        if (src.endsWith('.svg') == true) {
+                            fetch(src)
+                            .then(res => res.text())
+                            .then(res => {
+                                const holder = document.createElement('div')
+                                holder.style.width = "1em";
+                                holder.style.height = "1em";
+                                holder.innerHTML = res
+                                element.replaceWith(holder)
+                            })
+                        }
+                    });
+
+                    console.log("End startup promise");
+                });
+            }
+        };
+    }
+
+</script>
+
+
+  <script>
+    var reveal_init_callbacks = []
+    var reveal_slidechange_callbacks = []
+    var reveal_slidetransitionend_callbacks = []
+    var reveal_resize_callbacks = []
+    function svgAddress(src,id) {
+        var element = document.querySelector(id);
+        if (src.endsWith('.svg') == true) {
+            fetch(src)
+                .then(res => res.text())
+                .then(res => {
+                    const holder = document.createElement('div')
+                    holder.innerHTML = res
+                    element.appendChild(holder)
+                })
+        }
+    }
+    function remove_qr() {
+        const match = document.querySelector(".slides .present .hide_qr");
+        var qr = document.querySelector("#header-right");
+        if(match != null)
+        {
+            qr.style.display = "none";
+        }else{
+            qr.style.display = "block";
+        }
+    }
+    reveal_slidechange_callbacks.push(remove_qr)
+</script>
+
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <p><link rel="stylesheet" href="/css/slides_themes/dracula.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/cus_dracula.css" />
+
+
+<p hidden>
+  `$\newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\LP}{\left(}
+  \newcommand{\RP}{\right)}
+  \newcommand{\LS}{\left\lbrace}
+  \newcommand{\RS}{\right\rbrace}
+  \newcommand{\LA}{\left\langle}
+  \newcommand{\RA}{\right\rangle}
+  \newcommand{\LB}{\left[}
+  \newcommand{\RB}{\right]}
+  \newcommand{\MM}{\ \middle|\ }
+  \newcommand{\exp}{\text{exp}}
+  \newcommand{\abs}[1]{\left\vert#1\right\vert}
+  \newcommand{\msr}[1]{m\left(#1\right)}
+  \newcommand{\inv}[1]{#1^{-1}}
+  \newcommand{\bkt}[1]{\LA \img{#1}\RA}
+  \require{color}$`s
+  </p>
+</p>
+<style type="text/css">
+     
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 3%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 3%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 0%;
+        left: 3%;
+    }
+</style>
+<div id="hidden" style="display:none;">
+    <div id="header">
+        <div id="header-right">
+</div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+</script>
+
+
+<h1 class="relative group">Alexander Polynomial 
+    <div id="alexander-polynomial" class="anchor"></div>
+    
+</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Seifert surfaces 
+    <div id="seifert-surfaces" class="anchor"></div>
+    
+</h2>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h3 class="relative group">Examples 
+    <div id="examples" class="anchor"></div>
+    
+</h3>
+<div class="sliderow  " style="">
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/Band.svg"/>
+</div>
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_7.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Definition 
+    <div id="definition" class="anchor"></div>
+    
+</h2>
+<p>A Seifert surface for an oriented link in $S^3$ is a compact
+connected oriented surface smoothly embedded in $S^3$ with
+oriented boundary equal to the link.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Existence 
+    <div id="existence" class="anchor"></div>
+    
+</h2>
+<p>Existence can be shown by an algorithm to construct a Seifert surface from a
+given link projection.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h3 class="relative group">Remove crossings 
+    <div id="remove-crossings" class="anchor"></div>
+    
+</h3>
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_1.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h3 class="relative group">Close curves 
+    <div id="close-curves" class="anchor"></div>
+    
+</h3>
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_2.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h3 class="relative group">Collection of disks 
+    <div id="collection-of-disks" class="anchor"></div>
+    
+</h3>
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_3.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h3 class="relative group">Attaching bands 
+    <div id="attaching-bands" class="anchor"></div>
+    
+</h3>
+<div class="sliderow  " style="">
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_4.svg"/>
+</div>
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_5.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_6.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Construction 
+    <div id="construction" class="anchor"></div>
+    
+</h2>
+<ol>
+<li>Remove crossings.</li>
+<li>Connect strands following orientation without creating new crossings.</li>
+<li>Fill interior of resulting disks.</li>
+<li>Connect disks with &ldquo;twists&rdquo; matching crossing orientation.</li>
+</ol>
+<!-- 5) Push disks into bands. -->
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h3 class="relative group">SeifertView of $6_{2}$ 
+    <div id="seifertview-of-6_2" class="anchor"></div>
+    
+</h3>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Bands 
+    <div id="bands" class="anchor"></div>
+    
+</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_7.svg"/>
+</div>
+<div class="slidecolumn    " style="  flex-grow: 0; ">
+<p>$$\to$$</p>
+</div>
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/Band.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:700px; " src=" /presentations/Alex_Poly/slide/slide_1.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:700px; " src=" /presentations/Alex_Poly/slide/slide_2.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:700px; " src=" /presentations/Alex_Poly/slide/slide_3.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:700px; " src=" /presentations/Alex_Poly/slide/slide_4.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:700px; " src=" /presentations/Alex_Poly/slide/slide_5.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:700px; " src=" /presentations/Alex_Poly/slide/slide_6.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:700px; " src=" /presentations/Alex_Poly/slide/slide_7.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Genus of a Seifert surface 
+    <div id="genus-of-a-seifert-surface" class="anchor"></div>
+    
+</h2>
+<p>We have then that as an abstract surface, a Seifert surface for a link is a disc with a number of
+&ldquo;handles&rdquo;</p>
+<p>($D^1\times D^1$) added. That number is its genus.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Genus of a Link 
+    <div id="genus-of-a-link" class="anchor"></div>
+    
+</h2>
+<p>We take the smallest genus of possible Seifert surfaces for a link as <strong>the
+genus of the link</strong>.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h3 class="relative group">Computing the genus of a surface 
+    <div id="computing-the-genus-of-a-surface" class="anchor"></div>
+    
+</h3>
+<div class="sliderow  " style="">
+<div class="slidecolumn    " style="  flex-grow: 0; font-size: 2rem;} ">
+<!-- style="
+font-size: 150% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;" -->
+<p>$2g=2-s-n+c$</p>
+<ol>
+<li>$g$: Genus</li>
+<li>$s$: Number of Seifert circles</li>
+<li>$n$: Number of components</li>
+<li>$c$: Number of Crossings</li>
+</ol>
+</div>
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/alg/Alg_7.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h1 class="relative group">Seifert Matrix 
+    <div id="seifert-matrix" class="anchor"></div>
+    
+</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Link Crossings 
+    <div id="link-crossings" class="anchor"></div>
+    
+</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/crossing/Crossing_&#43;.svg"/>
+</div>
+<div class="slidecolumn    " style="   align-items: left; font-size: x-large; min-width:50% !important; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/crossing/Crossing_-.svg"/>
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Linking number 
+    <div id="linking-number" class="anchor"></div>
+    
+</h2>
+<p><span style="
+font-size: 200% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\text{Lk}\LP \mathscr{L}\RP=\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_+.svg}-\text{#} \img{/presentations/Alex_Poly/crossing/Crossing_-.svg}$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/links/link_1.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Links on a surface 
+    <div id="links-on-a-surface" class="anchor"></div>
+    
+</h2>
+<p>We can put oriented simple closed curves through each of the bands.</p>
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/Band_SCC.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>A Seifert surface is oriented, it has a top side and bottom side.
+We can take a push off of each of the curves in the &ldquo;up&rdquo; (blue) direction</p>
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/push_off_1.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>We can take an $\LP i,j\RP$ pair and compute
+<span style="
+font-size: 200% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$a_{i,j}=\text{Lk}\LP f_i,\ f_j^+\RP$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/ij_loops.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/ji_loops.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/push_off_2.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+
+
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/ii_loops.svg"/>
+
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>This populates a matrix:</p>
+<p>$$\begin{bmatrix}
+\text{Lk}\LP f_1,\ f_1^+\RP &amp; \text{Lk}\LP f_1,\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_1,\ f_{2g}^+\RP\\
+\text{Lk}\LP f_2,\ f_1^+\RP &amp; \text{Lk}\LP f_2,\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_2,\ f_{2g}^+\RP\\
+\text{Lk}\LP f_3,\ f_1^+\RP &amp; \text{Lk}\LP f_3,\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_3,\ f_{2g}^+\RP\\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+\text{Lk}\LP f_{2g},\ f_1^+\RP &amp; \text{Lk}\LP f_{2g},\ f_2^+\RP &amp; \cdots &amp; \text{Lk}\LP f_{2g},\ f_{2g}^+\RP\\
+\end{bmatrix}$$</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Example 
+    <div id="example" class="anchor"></div>
+    
+</h2>
+<div class="sliderow  " style="">
+<div class="slidecolumn    " style="  padding: 1rem; ">
+<img class="centerImg" style="   max-width:500px; " src=" /presentations/Alex_Poly/bands/Band.svg"/>
+</div>
+<div class="slidecolumn    " style="  flex-grow: 0; ">
+<p>$$\to$$</p>
+</div>
+<div class="slidecolumn    " style="  flex-grow: 0; ">
+<!-- A_{rc} -->
+<!--
+
+11 & 12 &  13 & 14
+21 & 22 &  23 & 24
+31 & 32 &  33 & 34
+41 & 42 &  43 & 44
+-->
+<p>$$\begin{bmatrix}
+-1 &amp;  1 &amp; 0 &amp; 0\\
+0 &amp;  1 &amp; 0 &amp; 0\\
+0 &amp;  0 &amp; 1 &amp; 1\\
+0 &amp; -1 &amp; 0 &amp; 1\\
+\end{bmatrix}
+$$</p>
+</div>
+</div>
+<!-- $$1-3t+3t^2-3t^3+t^4$$
+$$-t^4+3 t^3-3 t^2+3 t-1$$ -->
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Alexander Polynomial 
+    <div id="alexander-polynomial-1" class="anchor"></div>
+    
+</h2>
+<p>For an oriented link $\mathscr{L}$ and it&rsquo;s associated Seifert matrix $S$ we define the <em>Alexander polynomial</em> of $\mathscr{L}$ as
+<span style="
+font-size: 150% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\Delta_\mathscr{L}\LP t\RP=\text{det}\LP t^{\frac{1}{2}}S-t^{-\frac{1}{2}}S^T\RP$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p><span style="
+font-size: 50% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\operatorname{det}\LP t^{\frac{1}{2}}\begin{bmatrix}
+-1 &amp;  1 &amp; 0 &amp; 0\\
+0 &amp;  1 &amp; 0 &amp; 0\\
+0 &amp;  0 &amp; 1 &amp; 1\\
+0 &amp; -1 &amp; 0 &amp; 1\\
+\end{bmatrix}-t^{\frac{-1}{2}}\begin{bmatrix}
+-1 &amp;  1 &amp; 0 &amp; 0\\
+0 &amp;  1 &amp; 0 &amp; 0\\
+0 &amp;  0 &amp; 1 &amp; 1\\
+0 &amp; -1 &amp; 0 &amp; 1\\
+\end{bmatrix}^T\RP=-t^4+3 t^3-3 t^2+3 t-1
+$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<div>
+<div style="
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+grid-auto-rows: minmax(100px, auto);">
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+ grid-column: 1 / 2;
+  grid-row: 1;
+">
+<img style="
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:300px !important;
+"
+src="/presentations/Alex_Poly/alg/Alg_1.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+  grid-row: 1;
+">
+<img style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:400px !important;"
+src="/presentations/Alex_Poly/bands/Band.svg"/>
+</div>
+<div class="slidecolumn" style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+flex: 25%;
+padding: 3%;
+grid-column: 1 / 2;
+  grid-row: 2;
+font-size: 70% !important;
+">
+$\begin{bmatrix}
+-1 &  1 & 0 & 0\\
+0 &  1 & 0 & 0\\
+0 &  0 & 1 & 1\\
+0 & -1 & 0 & 1\\
+\end{bmatrix}
+$
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+flex: 25%;
+padding: 3%;
+grid-column: 2 / 2;
+grid-row: 2;
+">
+$$-t^4+3 t^3-3 t^2+3 t-1$$
+</div>
+</div>
+<div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Invariant 
+    <div id="invariant" class="anchor"></div>
+    
+</h2>
+<p>$\Delta_\mathscr{L}\LP t\RP$ is unique up to <strong>stabilization</strong>, a method for adding bands to the surface. Results in $\Delta_\mathscr{L}\LP t\RP$ being unique up to a $\pm t^k$.</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Limitations: Example 
+    <div id="limitations-example" class="anchor"></div>
+    
+</h2>
+<div>
+<div style="
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+grid-auto-rows: minmax(100px, auto);">
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 1;
+">
+<img style="
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:200px !important;
+"
+src="/presentations/Alex_Poly/trefoil/left.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 1;
+">
+<img style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:200px !important;"
+src="/presentations/Alex_Poly/trefoil/right.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 2;
+">
+<img style="
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:300px !important;
+"
+src="/presentations/Alex_Poly/trefoil/left_surf.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 2;
+">
+<img style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+height:auto !important;
+display: block;
+margin-left: auto !important;
+margin-right: auto !important;
+max-width:300px !important;"
+src="/presentations/Alex_Poly/trefoil/right_surf.svg"/>
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 1 / 2;
+grid-row: 3;
+">
+$$1-t+t^2$$
+</div>
+<div style="
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+grid-column: 2 / 2;
+grid-row: 3;
+">
+$$1-t+t^2$$
+</div>
+</div>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Bound on genus 
+    <div id="bound-on-genus" class="anchor"></div>
+    
+</h2>
+<p><span style="
+font-size: 200% !important;
+align-items: center;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;">
+$\operatorname{deg}\LP\Delta_\mathscr{L}\LP t\RP\RP\leq 2\large g$
+</span></p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+
+<h2 class="relative group">Sources 
+    <div id="sources" class="anchor"></div>
+    
+</h2>
+<div style="
+font-size: medium;
+">
+<ol>
+<li>Livingston, C. (1993). Knot Theory. Mathematical Association of America. https://doi.org/10.5948/UPO9781614440239</li>
+<li>Lickorish, W. B. R. (1997). An Introduction to Knot Theory. In Graduate Texts in Mathematics. Springer New York. https://doi.org/10.1007/978-1-4612-0691-0</li>
+<li>Saveliev, N. (2011). Lectures on the Topology of 3-Manifolds. DE GRUYTER. https://doi.org/10.1515/9783110250367</li>
+<li>Dale Rolfsen, Knots and links, Mathematics Lecture Series, vol. 7, Publish or Perish, Inc., Houston, TX, 1990, Corrected reprint of the 1976 original.</li>
+<li>van Wijk, J. J., & Cohen, A. M. (2006). Visualization of Seifert surfaces. In IEEE Transactions on Visualization and Computer Graphics (Vol. 12, Issue 4, pp. 485-496). Institute of Electrical and Electronics Engineers (IEEE). https://doi.org/10.1109/tvcg.2006.83</li>
+<li>van Wijk, J. J., & Cohen, A. M. (n.d.). Visualization of the Genus of Knots. In VIS 05. IEEE Visualization, 2005. VIS 05. IEEE Visualization, 2005. IEEE. https://doi.org/10.1109/visual.2005.1532843</li>
+</ol>
+</div>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js" crossorigin="anonymous" title="mermaid"></script>
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+  
+
+
+
+  
+
+
+  
+</body>
+</html>
