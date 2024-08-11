@@ -81,7 +81,7 @@ slides:
 
 </style>
 
-## Comprehensive Exam (8/??/24)
+## Comprehensive Exam (8/19/24)
 
 # The Tanglenomicon
 
@@ -98,9 +98,6 @@ Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Ethan Rooke, Joseph Starr*
 # Knots
 
 ---
-
-
-> "A **knot** is a smooth embedding of a circle $S^1$ into Euclidean 3-dimensional space $\R^3$ (or the 3-dimensional sphere $S^3$ )."
 
 {{< slides/row style="">}}
 {{< slides/col style="flex-grow:2;" >}}
@@ -134,10 +131,6 @@ $\quad$
 {{< /slides/col >}}
 {{< /slides/row >}}
 
-
-{{% slides/citations  %}}
-Jablan, S., & Sazdanović, R. (2007). Linknot. In Series on Knots and Everything. WORLD SCIENTIFIC. [https://doi.org/10.1142/6623](https://doi.org/10.1142/6623)
-
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
 
@@ -168,6 +161,8 @@ Atoms are knotted vortices in the æther.
 
 ---
 
+# By Hand
+
 * 1860's Tait computes knots up to 7 crossing
    * 15 knots
 * 1870's Tait, Kirkman, and Little compute knots up to 10 crossing
@@ -178,6 +173,8 @@ Atoms are knotted vortices in the æther.
    * 802 knots
 
 ---
+
+# By Computer 
 
 * 1980's Dowker and Thistlethwaite compute up to 13 crossings
     * First using a computer
@@ -898,7 +895,129 @@ What we're actually generating with this algorithm is equivalent to allowing the
 Similarly, Montesinos tangles generated via the $\vee$ operation are recovered
 by appending $[1, -1, 1 ]$.
 
+---
+# Computer Description 
 
+---
+
+When building the Montesinos tangle we need only the four basic tanlges and the two operations $+$ and $\vee$. With this in mind we can describe tangles as a string of operations (in polish notation) 
+
+@@@Example 
+
+---
+
+## Algebraic Tangle Trees
+
+Equivalently, all full binary trees with $N$ leaves. Where the tree's internal nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled with all combinations of trivial tangles.
+
+These binary trees are called *Algebraic Tangle Trees*.
+
+{{% slides/citations %}}
+Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
+{{% /slides/citations %}}
+{{% slides/citations %}}
+Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
+{{% /slides/citations %}}
+
+
+---
+
+{{% slides/uncenter %}}
+
+{{< slides/centersvg src="/presentations/general/gen_mont_att.svg" >}}
+
+
+
+---
+# Stencil Generation
+
+We can generate Montesinos stencils by same algorithm we used for rational knots, with the additional filtering step to ensure $2<e<N$, for $e$ an entry in the stencil and $N$ a crossing number. 
+
+
+---
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    state "For each stencil" as sten_loop{
+        state "Process stencil" as proc
+        [*]-->proc
+        proc --> [*]
+    }
+    [*]--> sten_loop
+    sten_loop --> [*]
+```
+---
+# Processing Stencil
+
+```mermaid
+stateDiagram-v2
+    
+    
+    state "while overflow false" as sten_loop{
+        direction LR
+        state "For each array entry" as entry_loop{
+            direction LR
+            state "Set overflow as false" as set_flw
+            state "Increment entry" as inc_entry
+            state "Set overflow as true" as over_true
+            state "Set entry to zero" as zero_entry
+            state "Break" as brk
+            state overflow <<choice>>
+            [*] --> set_flw
+            set_flw --> inc_entry
+            inc_entry --> overflow
+            overflow --> zero_entry : if entry >= stencil entry
+            overflow --> brk : if entry < stencil
+            zero_entry --> over_true
+            brk --> [*]
+            over_true --> [*]
+        }
+        state "Get rational tangle\nfor each array entry" as proc
+        [*]-->proc
+        proc --> entry_loop
+        entry_loop --> [*]
+    }
+    state "Create len(stencil) array of all 0" as mk_ary
+    state "Create overflow flag as false" as mk_flg
+    [*]--> mk_ary
+    mk_ary --> mk_flg
+    mk_flg --> sten_loop
+    sten_loop --> [*]
+```
+
+---
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    state "For each stencil" as sten_loop{
+        state "Process stencil 1" as proc1
+        state "Process stencil 2" as proc2
+        state "Process stencil 3" as proc3
+        state "..." as proc4
+        state "Process stencil n" as proc5
+        state join_state <<join>>
+
+        
+        [*]-->proc1
+        [*]-->proc2
+        [*]-->proc3
+        [*]-->proc4
+        [*]-->proc5
+        proc1-->join_state
+        proc2-->join_state
+        proc3-->join_state
+        proc4-->join_state
+        proc5-->join_state
+
+        join_state --> [*]
+    }
+    [*]--> sten_loop
+    sten_loop --> [*]
+```
 ---
 
 # Using The Tanglenomicon
@@ -948,28 +1067,6 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 ---
 
 # Generation
-
----
-
-## Algebraic Tangle Trees
-
-To generate all possible algebraic tangles, we can generate all possible algebraic expressions on the trivial tangles. Equivalently, all full binary trees with $N$ leaves. Where the tree's internal nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled with all combinations of trivial tangles.
-
-These binary trees are called *Algebraic Tangle Trees*.
-
-{{% slides/citations %}}
-Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
-{{% /slides/citations %}}
-{{% slides/citations %}}
-Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
-{{% /slides/citations %}}
-
-
----
-
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/gen_mont_att.svg" >}}
 
 ---
 
