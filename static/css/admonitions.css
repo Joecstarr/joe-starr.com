@@ -28,6 +28,18 @@
     border-color: var(--r-Blue);
     text-align: left;
 }
+/* Theorem */
+.admonition.theorem {
+    border-color: var(--r-Green);
+    background-color: var(--r-background-color);
+    text-align: left;
+}
+
+.admonition.theorem .title {
+    color: var(--r-Green);
+    border-color: var(--r-Green);
+    text-align: left;
+}
 /* Example */
 .admonition.example {
     border-color: var(--r-Yellow);

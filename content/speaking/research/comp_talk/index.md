@@ -1,6 +1,6 @@
 ---
 title: "Comprehensive Exam Talk "
-date: "2023-09-22"
+date: "2024-08-19"
 summary: "Talk for my comprehensive exam on tangle tabulation."
 tags:
    - "Talks"
@@ -64,19 +64,31 @@ slides:
     margin-left: auto !important;
     margin-right: auto !important;
 }
-
+#alg_trees_nonunique{
+    width :40vw;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+#band_sum_1,#band_sum_2{
+    width:40vw;
+    margin-bottom: 5vh;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 #mermaid-0 svg{
-    width:52rem;
+    width:90vw;
 }
 #mermaid-1 svg{
-    margin-top: -3rem !important;
-    width:60rem;
-}
-#mermaid-1 svg *{
-    font-size:125% !important;
+    width:90vw;
 }
 #mermaid-2 svg{
-    width:37rem;
+    width:90vw;
+}
+#mermaid-3 svg{
+    width:90vw;
+}
+#mermaid-4 svg{
+    width:30vw;
 }
 
 </style>
@@ -131,6 +143,7 @@ $\quad$
 {{< /slides/col >}}
 {{< /slides/row >}}
 
+{{% slides/citations %}}
 [https://www.knotplot.com/](https://www.knotplot.com/)
 {{% /slides/citations %}}
 
@@ -174,7 +187,7 @@ Atoms are knotted vortices in the æther.
 
 ---
 
-# By Computer 
+# By Computer
 
 * 1980's Dowker and Thistlethwaite compute up to 13 crossings
     * First using a computer
@@ -730,7 +743,7 @@ $\ $
 ---
 ## Closure Equivalence and pivoting to knots
 
-{{<  slides/admonition type="Note" title="Theorem (Schubert)" >}}
+{{<  slides/admonition type="theorem" title="Theorem (Schubert)" >}}
 
  Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0$<$p$. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
 <br/>
@@ -772,9 +785,13 @@ Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956
 ---
 ## Existence of canonical diagrams for Montesinos tangles
 
-{{<  slides/admonition type="Note" title="Theorem (Bonahon and Siebenmann)" >}}
+{{<  slides/admonition type="theorem" title="Theorem (Bonahon and Siebenmann)" >}}
 Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying the following construction:
 $$T \cong L_1+\cdots+L_m+\frac{k}{1}$$ where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
+{{<  /slides/admonition >}}
+
+{{<  slides/admonition type="Note" >}}
+A similar result exists for the $\vee$ operation.
 {{<  /slides/admonition >}}
 
 {{% slides/citations %}}
@@ -886,56 +903,27 @@ $\quad$
 
 ---
 
-## What about the 'k'?
+## What about the 'k' and $\vee$?
 
 The construction for the canonical Montesinos tangles includes a trailing $\frac{k}{1}$ tangle. Our generation strategy seems to miss these.
 
-What we're actually generating with this algorithm is equivalent to allowing the boundary components of the tangle to move. To recover fixed boundary tangles we can append a $k$ term to each lower crossing Montesinos tangle.
+What we're actually generating with this algorithm is Montesinos tangles up to
+moveable boundary components of the tangle. To recover fixed boundary tangles we
+can append a $k$ term to each lower crossing Montesinos tangle.
 
 Similarly, Montesinos tangles generated via the $\vee$ operation are recovered
 by appending $[1, -1, 1 ]$.
 
 ---
-# Computer Description 
-
----
-
-When building the Montesinos tangle we need only the four basic tanlges and the two operations $+$ and $\vee$. With this in mind we can describe tangles as a string of operations (in polish notation) 
-
-@@@Example 
-
----
-
-## Algebraic Tangle Trees
-
-Equivalently, all full binary trees with $N$ leaves. Where the tree's internal nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled with all combinations of trivial tangles.
-
-These binary trees are called *Algebraic Tangle Trees*.
-
-{{% slides/citations %}}
-Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
-{{% /slides/citations %}}
-{{% slides/citations %}}
-Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
-{{% /slides/citations %}}
-
-
----
-
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/gen_mont_att.svg" >}}
-
-
+# Programmatic Description
 
 ---
 # Stencil Generation
 
-We can generate Montesinos stencils by same algorithm we used for rational knots, with the additional filtering step to ensure $2<e<N$, for $e$ an entry in the stencil and $N$ a crossing number. 
+We can generate Montesinos stencils by same algorithm we used for rational knots, with the additional filtering step to ensure $2<e<N$, for $e$ an entry in the stencil and $N$ a crossing number.
 
 
 ---
-
 ```mermaid
 stateDiagram-v2
     direction LR
@@ -949,12 +937,12 @@ stateDiagram-v2
     sten_loop --> [*]
 ```
 ---
-# Processing Stencil
+### Processing Stencil
 
 ```mermaid
 stateDiagram-v2
-    
-    
+
+
     state "while overflow false" as sten_loop{
         direction LR
         state "For each array entry" as entry_loop{
@@ -1001,7 +989,7 @@ stateDiagram-v2
         state "Process stencil n" as proc5
         state join_state <<join>>
 
-        
+
         [*]-->proc1
         [*]-->proc2
         [*]-->proc3
@@ -1068,7 +1056,6 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 
 # Generation
 
----
 
 We just need to take our lists of Montesinos and rational tangles and glue them together with $\circ$.
 
@@ -1107,17 +1094,115 @@ A vertical sum of two Montesinos tangles.
 {{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg"  >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
+
+{{< slides/row  >}}
+{{< slides/col >}}
+$$\LP\color{var(--r-Purple)}\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\color{var(--r-Foreground)}\RP\vee\LP\color{var(--r-Purple)}\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\color{var(--r-Foreground)}\RP$$
+{{< /slides/col >}}
+{{< /slides/row >}}
 {{<  /slides/admonition >}}
 
 
 ---
 # Generation
+## A tale of two strate-trees
+
+---
+
+## Algebraic Tangle Trees
+
+As we saw we can linearize any algebraic tangle with $),\ (\ ,\ +,\ $ and $\vee$
+
+$$\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP\vee\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP$$
+
+How do we programmatically generate tangles from this?
 
 ---
 
 {{% slides/uncenter %}}
 
+$$\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP\vee\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP$$
 {{< slides/centersvg src="/presentations/general/alg_trees.svg" >}}
+
+---
+
+We can generate all possible algebraic expressions on the basic tangles or the
+twist vector of rational tangles.
+
+Equivalently, all full binary trees with $N$ leaves. Where the tree's internal
+nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled
+with all combinations of basic tangles or the twist vector of rational tangles.
+
+These binary trees are called *Algebraic Tangle Trees*.
+
+{{% slides/citations %}}
+Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
+{{% /slides/citations %}}
+{{% slides/citations %}}
+Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
+{{% /slides/citations %}}
+
+---
+# A problem
+
+{{< slides/centersvg src="/presentations/general/alg_trees_nonunique.svg" direct="true" id="alg_trees_nonunique">}}
+
+
+---
+
+## Arborescent Tangles
+
+Bonahon and Siebenmann describe a classification for what they call *Arborescent Tangles*. Their *Arborescent Tangles* can be translated into our algebraic tangles.
+
+These *Arborescent Tangles* are constructed by Murasugi sums of collections of twisted bands described by a weighted tree.
+
+{{% slides/citations %}}
+F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+{{% /slides/citations %}}
+
+---
+
+{{< slides/centersvg src="/presentations/bands/bnd_sum_1.svg" direct="true" id="band_sum_1">}}
+{{< slides/centersvg src="/presentations/bands/bnd_sum_2.svg" direct="true" id="band_sum_2">}}
+
+---
+
+{{< slides/centersvg src="/presentations/bands/bnd_sum_flip.svg" direct="true"  id="band_sum_flip">}}
+
+
+---
+
+{{< slides/row  >}}
+{{< slides/col  >}}
+{{< slides/centersvg src="/presentations/bands/bnd_sum_sum.svg" >}}
+{{< /slides/col >}}
+{{< slides/col >}}
+{{< slides/centersvg src="/presentations/bands/bnd_sum_patch.svg" >}}
+{{< /slides/col >}}
+{{< /slides/row  >}}
+
+---
+
+{{< slides/centersvg src="/presentations/bands/arbor_graph.svg"  direct="true"  id="arbor_graph">}}
+
+
+---
+
+{{< slides/centersvg src="/presentations/bands/arbor_bands.svg"  direct="true"  id="arbor_bands">}}
+
+
+---
+
+{{< slides/centersvg src="/presentations/bands/arbor_bound.svg"  direct="true"  id="arbor_bound">}}
+
+
+---
+
+# Arborescent Tangles
+
+---
+
+{{< slides/centersvg src="/presentations/bands/arbor_tangle.svg"  direct="true"  id="arbor_tangle">}}
 
 ---
 
@@ -1305,32 +1390,3 @@ A storage module defines a storage interface for the application. The main inter
 
 
 
-
----
-{{% slides/uncenter %}}
-
-## Parallelization
-
-
-```mermaid
-sequenceDiagram
-
-    participant DB
-    participant Server
-    participant Client 1
-    participant Client 2
-
-    Server->>+Client 1: Dispatch job 1 for stencil starting from TV idx<br/>[0,0,0,...]
-    Server-->>DB: Mark job 1 as dispatched
-    Server->>+Client 2: Dispatch job 2 for stencil starting from TV idx<br/>[100,0,0,...]
-    Server-->>DB: Mark job 2 as dispatched
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 1 results and mark complete
-    Server->>+Client 1: Dispatch job 3 for stencil starting from TV idx<br/>[0,100,0,...]
-    Server-->>DB: Mark job 3 as dispatched
-    Client 2-->>-Server: job complete
-    Server-->>DB: store job 2 results and mark complete
-    Client 1-->>-Server: job complete
-    Server-->>DB: store job 3 results and mark complete
-
-```
