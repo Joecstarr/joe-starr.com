@@ -41,7 +41,7 @@ slides:
     margin-right: auto !important;
 }
 #tech_img {
-    width:45rem;
+    width:30vw;
     height:auto;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -75,14 +75,29 @@ slides:
     margin-left: auto !important;
     margin-right: auto !important;
 }
+#mermaid-0{
+    width:auto !important;
+    height:auto !important;
+    max-width:80vw !important;
+    max-height:60vh !important;
+}
 #mermaid-0 svg{
-    width:90vw;
+    max-width:80vw !important;
+    max-height:60vh !important;
 }
 #mermaid-1 svg{
-    width:90vw;
+    width:30vw;
+}
+#mermaid-2 {
+    max-width:none !important;
+    max-height:none !important;
+    margin-left:-8rem;
 }
 #mermaid-2 svg{
-    width:90vw;
+    width:65vw !important;
+    height:65vh !important;
+    max-width:none !important;
+    max-height:none !important;
 }
 #mermaid-3 svg{
     width:90vw;
@@ -176,9 +191,9 @@ Atoms are knotted vortices in the æther.
 
 # By Hand
 
-* 1860's Tait computes knots up to 7 crossing
+* 1860's Tait computes knots up to 7 crossings
    * 15 knots
-* 1870's Tait, Kirkman, and Little compute knots up to 10 crossing
+* 1870's Tait, Kirkman, and Little compute knots up to 10 crossings
    * Takes about 25 years
    * 250 knots
 * 1960's Conway computes knots up to 11 crossings
@@ -191,12 +206,12 @@ Atoms are knotted vortices in the æther.
 
 * 1980's Dowker and Thistlethwaite compute up to 13 crossings
     * First using a computer
-    * 12,966
+    * 12,966 knots
 * 1990's Hoste, Thistlethwaite, and Weeks compute up to 16 crossings
     * Computer runtime on the order of weeks
-    * 1,701,936
+    * 1,701,936 knots
 * 2020's Burton computes up to 19 crossings
-    * 350 Million
+    * 350 Million knots
 
 ---
 
@@ -219,7 +234,7 @@ How did Conway compute 25 years of work in "a few hours"?
 
 ## Tangles
 
-> "We define a **tangle** as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE."
+> "We define a **tangle** as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE." - Conway, J.H.
 
 {{% slides/citations  %}}
 Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5)
@@ -527,10 +542,11 @@ $$\begin{array}{|l|l|l|l|}
 {{< /slides/admonition >}}
 
 ---
+
+# Programmatic Description
+
+---
 {{% slides/uncenter %}}
-
-##### Programmatic Description
-
 
 ```mermaid
 stateDiagram-v2
@@ -599,7 +615,7 @@ $$\begin{array}{|l|l|l|l|}
 ## Rational Number (continued fraction)
 
 
-The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction that is:
+The rational number for a twist vector is computed by taking the twist vector as a finite continued fraction, that is:
 $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
 
 {{<  slides/admonition type="Example" title="Twist Vector to rational number" >}}
@@ -625,7 +641,7 @@ Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knot
 
 ---
 
-To play with twist vectors and continued fractions visit
+To play with twist vectors and continued fractions, visit:
 
 {{< slides/centersvg src="/qr_codes/contfrac.svg" direct="true" id="qr" >}}
 
@@ -745,7 +761,7 @@ $\ $
 
 {{<  slides/admonition type="theorem" title="Theorem (Schubert)" >}}
 
- Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0$<$p$. Similarly for $p^{\prime}$ and $q^{\prime}$.) If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
+ Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0&lt;p$. Similarly for $p^{\prime}$ and $q^{\prime}$). If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
 <br/>
 (1) $p=p^{\prime}$
 <br/>
@@ -858,9 +874,13 @@ $$=[3\  2\ 0] + [3\  2\  0]$$
 
 # Generation
 
-The Montesinos tangles of crossing number $N$ have a slightly simpler generation strategy compared to rational tangles. We again generate twist vectors but require that each entry $e$ of the twist vector  satisfies $2\leq e < N.$ We call these restricted set of twist vectors *stencils*.
+For Montesinos tangles of crossing number $N$ we start by again generating
+twist vectors, however we require that each entry $e$ of the twist vector
+satisfies $2\leq e < N.$
 
-{{<  slides/admonition type="Example" title="Stencils for $N=5$" >}}
+We call these restricted set of twist vectors *stencils*.
+
+{{<  slides/admonition type="Example" title="Finding stencils for $N=5$" >}}
 $$\begin{array}{|l|l|l|l|}
 \hline
 [1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1]\ &\ [1\ 2\ 1\ 1]\ &\ [1\ 1\ 2\ 1]\\\hline
@@ -873,7 +893,9 @@ $$\begin{array}{|l|l|l|l|}
 ---
 
 
-Now for each entry $e_i$ of the stencil, we generate a list of rational tangles of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$. We then take all combinations of elements of these lists.
+Now for each entry $e_i$ of the stencil, we generate a list of rational tangles
+of crossing number equal to $e_i$, with the restriction $0<\frac{p_i}{q_i}<1$.
+We then take all combinations of elements of these lists.
 
 {{<  slides/admonition type="Example" title="Montesinos tangles for $N=5$" >}}
 {{< slides/row  style="margin:2rem;font-size:1.5rem">}}
@@ -905,25 +927,22 @@ $\quad$
 
 ## What about the 'k' and $\vee$?
 
-The construction for the canonical Montesinos tangles includes a trailing $\frac{k}{1}$ tangle. Our generation strategy seems to miss these.
+The construction for the canonical Montesinos tangles includes a trailing
+$\frac{k}{1}$ tangle. Our generation strategy seems to miss these.
 
 What we're actually generating with this algorithm is Montesinos tangles up to
 moveable boundary components of the tangle. To recover fixed boundary tangles we
-can append a $k$ term to each lower crossing Montesinos tangle.
+can append an integral $k$ summand to each lower crossing Montesinos tangle.
 
 Similarly, Montesinos tangles generated via the $\vee$ operation are recovered
-by appending $[1, -1, 1 ]$.
+by appending a $[1, -1, 1 ]$ with a circle product (more to come).
 
 ---
+
+{{% slides/uncenter %}}
+
 # Programmatic Description
 
----
-# Stencil Generation
-
-We can generate Montesinos stencils by same algorithm we used for rational knots, with the additional filtering step to ensure $2<e<N$, for $e$ an entry in the stencil and $N$ a crossing number.
-
-
----
 ```mermaid
 stateDiagram-v2
     direction LR
@@ -937,7 +956,8 @@ stateDiagram-v2
     sten_loop --> [*]
 ```
 ---
-### Processing Stencil
+
+{{% slides/uncenter %}}
 
 ```mermaid
 stateDiagram-v2
@@ -1009,10 +1029,26 @@ stateDiagram-v2
 ---
 
 # Using The Tanglenomicon
+## Alpha
 
 ---
 
-{{< centerimg src="/presentations/mathday23/tanglenomicon_ss.png" >}}
+{{< centerimg src="/presentations/web_ui/main_table.png" >}}
+
+---
+
+{{< centerimg src="/presentations/web_ui/details.png" >}}
+
+---
+
+{{< centerimg src="/presentations/web_ui/details.png" >}}
+
+---
+
+To play with a live version, visit::
+{{< slides/centersvg src="/qr_codes/tanglenomicon.svg" direct="true" id="qr" >}}
+
+<p style="text-align:center !important;">https://tanglenomicon.com</p>
 
 ---
 
@@ -1077,18 +1113,16 @@ We just need to take our lists of Montesinos and rational tangles and glue them 
 
 ---
 
-All possible tangles made from $+$ and $\vee$
+All possible tangles made from $+$ and $\vee$ on basic tangles
 
 {{<  slides/admonition type="Example" title="Algebraic" >}}
 
-{{< slides/row  >}}
+{{< slides/row  style="align-items:baseline;">}}
 {{< slides/col  >}}
 {{< slides/centersvg src="/presentations/lightning/Alg.svg"  >}}
 {{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block >}}
-A vertical sum of two Montesinos tangles.
-{{< /slides/center_block  >}}
+{{< slides/col style="text-align:center;">}}
+A $\vee$ and $+$ of some rational tangles.
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg"  >}}
@@ -1097,7 +1131,7 @@ A vertical sum of two Montesinos tangles.
 
 {{< slides/row  >}}
 {{< slides/col >}}
-$$\LP\color{var(--r-Purple)}\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\color{var(--r-Foreground)}\RP\vee\LP\color{var(--r-Purple)}\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\color{var(--r-Foreground)}\RP$$
+$$\LP\color{var(--r-Purple)}\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\color{var(--r-Foreground)}\RP\vee\LP\color{var(--r-Purple)}\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\color{var(--r-Foreground)}\RP$$
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{<  /slides/admonition >}}
@@ -1109,11 +1143,13 @@ $$\LP\color{var(--r-Purple)}\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\color{var(--r-Foreground
 
 ---
 
+# Strategy 1
 ## Algebraic Tangle Trees
+---
 
-As we saw we can linearize any algebraic tangle with $),\ (\ ,\ +,\ $ and $\vee$
+As we saw, we can linearize any algebraic tangle as:
 
-$$\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP\vee\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP$$
+$$\LP\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\RP\vee\LP\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\RP$$
 
 How do we programmatically generate tangles from this?
 
@@ -1121,19 +1157,19 @@ How do we programmatically generate tangles from this?
 
 {{% slides/uncenter %}}
 
-$$\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP\vee\LP\LB3\ 2\ 2\RB+\LB3\ 2\ 2\RB\RP$$
+$$\LP\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\RP\vee\LP\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\RP$$
 {{< slides/centersvg src="/presentations/general/alg_trees.svg" >}}
 
 ---
 
-We can generate all possible algebraic expressions on the basic tangles or the
-twist vector of rational tangles.
+We can generate all possible algebraic expressions involving the basic tangles
+and twist vector of rational tangles.
 
 Equivalently, all full binary trees with $N$ leaves. Where the tree's internal
 nodes are labeled with combinations of $\vee$ and $+$ and leaves are labeled
 with all combinations of basic tangles or the twist vector of rational tangles.
 
-These binary trees are called *Algebraic Tangle Trees*.
+We call these binary trees *Algebraic Tangle Trees*.
 
 {{% slides/citations %}}
 Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
@@ -1150,11 +1186,13 @@ Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astro
 
 ---
 
+# Strategy 2
 ## Arborescent Tangles
+---
 
 Bonahon and Siebenmann describe a classification for what they call *Arborescent Tangles*. Their *Arborescent Tangles* can be translated into our algebraic tangles.
 
-These *Arborescent Tangles* are constructed by Murasugi sums of collections of twisted bands described by a weighted tree.
+These *Arborescent Tangles* are constructed by taking a collection of twisted bands described by a weighted tree and connecting them with successive Murasugi sums.
 
 {{% slides/citations %}}
 F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
@@ -1204,6 +1242,13 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 
 {{< slides/centersvg src="/presentations/bands/arbor_tangle.svg"  direct="true"  id="arbor_tangle">}}
 
+---
+
+# Generation
+
+---
+
+## ???
 ---
 
 # Into the future
@@ -1316,7 +1361,7 @@ Translator -->|Uses| Storage
 ---
 ### Runners
 
-A runner is a human/machine interface layer. This abstracts the routines in lower layers for a user to interact with. This could be a CLI, python binding, a Mathematica wrapper, or a web API.
+A runner is a human/machine interface layer. This abstracts the routines in lower layers for a user to interact with. This could be a CLI, Python binding, a Mathematica wrapper, or a web API.
 
 ---
 
@@ -1328,7 +1373,7 @@ Generators create new data. A generator might look like a module to create ratio
 
 *Computation*
 
-Computations compute a value for a given data. A computation might look like a module for computing a Jones polynomial of a link, or a computing the writhe of a tangle.
+Computations compute a value for a given data. A computation might look like a module for computing a Jones polynomial of a link, or computing the writhe of a tangle.
 
 *Translators*
 
@@ -1356,8 +1401,70 @@ A storage module defines a storage interface for the application. The main inter
 
 {{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
 
+---
 
+### core libraries
 
+```
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+C/C++ Header                    21           4036           5209          21747
+C                               13            526            849           3559
+C++                              7            107            222            912
+Markdown                        21            418              0            794
+SVG                              5              5              5            322
+CMake                           43             76             21            240
+TeX                              1              1              0             92
+Cython                           1             21              2             83
+JSON                             2              1              0             78
+Python                           3             37             79             68
+YAML                             3             17              9             64
+Nix                              1             17             56             37
+Text                             1              0              0              7
+-------------------------------------------------------------------------------
+SUM:                           122           5262           6452          28003
+-------------------------------------------------------------------------------
+```
+
+---
+
+### Web API
+
+```
+┏━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━┓
+┃ Language      ┃ Files ┃     % ┃ Code ┃    % ┃ Comment ┃    % ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━┩
+│ Python        │    27 │  30.7 │ 1818 │ 53.9 │     766 │ 22.7 │
+│ Markdown      │    56 │  63.6 │ 1473 │ 34.1 │       0 │  0.0 │
+│ YAML          │     4 │   4.5 │   89 │ 93.7 │       6 │  6.3 │
+│ __duplicate__ │     1 │   1.1 │    0 │  0.0 │       0 │  0.0 │
+├───────────────┼───────┼───────┼──────┼──────┼─────────┼──────┤
+│ Sum           │    88 │ 100.0 │ 3380 │ 43.4 │     772 │  9.9 │
+└───────────────┴───────┴───────┴──────┴──────┴─────────┴──────┘
+```
+
+---
+
+### Web frontend
+```
+| language             | files |  code | comment | blank | total |
+|----------------------|-------|-------|---------|-------|-------|
+| JSON                 |     2 | 3,119 |       0 |     2 | 3,121 |
+| SVG                  |     1 | 1,489 |       1 |     2 | 1,492 |
+| JavaScript JSX       |     6 |   398 |       9 |    43 |   450 |
+| source.markdown.math |     2 |   161 |       0 |    62 |   223 |
+| TypeScript JSX       |     2 |   143 |       1 |    13 |   157 |
+| JavaScript           |     7 |   141 |       2 |    14 |   157 |
+| XML                  |     5 |    56 |       0 |     0 |    56 |
+| JSON with Comments   |     1 |    37 |       0 |     1 |    38 |
+| TypeScript           |     1 |    20 |       0 |     4 |    24 |
+| CSS                  |     3 |    18 |       0 |     4 |    22 |
+| Nix                  |     1 |    16 |       0 |     3 |    19 |
+| HTML                 |     1 |    13 |       0 |     1 |    14 |
+| Docker               |     1 |    12 |       1 |    11 |    24 |
+| Properties           |     1 |     9 |       1 |     2 |    12 |
+```
 ---
 
 ### Sources
@@ -1380,6 +1487,26 @@ A storage module defines a storage interface for the application. The main inter
 14. Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
 15. F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
 16. Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
+{{% /slides/citations %}}
+
+---
+
+### Sources
+
+{{% slides/citations %}}
+17. <a href="https://commons.wikimedia.org/wiki/File:React-icon.svg">Facebook</a>, Public domain, via Wikimedia Commons
+18. <a href="https://github.com/fastapi/fastapi">FastAPI</a> The MIT License (MIT)
+18. <a href="https://commons.wikimedia.org/wiki/File:WebAssembly_Logo.svg">Carlos Baraza</a>, CC0, via Wikimedia Commons
+18. <a href="https://commons.wikimedia.org/wiki/File:C_Logo.png">Qq1040058283</a>, Public domain, via Wikimedia Commons
+18. <a href="https://commons.wikimedia.org/wiki/File:ISO_C%2B%2B_Logo.svg">Jeremy Kratz</a>, Public domain, via Wikimedia Commons
+18. <a href="https://commons.wikimedia.org/wiki/File:Cython_logo.svg">Cython and Python</a>, <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>, via Wikimedia Commons
+18. <a href="https://github.com/mermaid-js/mermaid">mermaidjs</a>
+18. <a href="https://commons.wikimedia.org/wiki/File:Python-logo-notext.svg">www.python.org</a>, <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>, via Wikimedia Commons
+18. <a href="https://www.mongodb.com/company/newsroom/brand-resources">Mongodb</a>
+18. <a href="https://commons.wikimedia.org/wiki/File:Node.js_logo.svg">Ryan Dahl</a>, <a href="http://opensource.org/licenses/mit-license.php">MIT</a>, via Wikimedia Commons
+18. <a href="https://commons.wikimedia.org/wiki/File:Pytest_logo.svg">Holger Krekel</a>, <a href="https://creativecommons.org/licenses/by/2.5">CC BY 2.5</a>, via Wikimedia Commons
+18. <a href="https://commons.wikimedia.org/wiki/File:Emscripten_logo.svg">Alon Zakai</a>, <a href="http://opensource.org/licenses/mit-license.php">MIT</a>, via Wikimedia Commons
+18. <a href="https://commons.wikimedia.org/wiki/File:Cmake.svg">Cmake team. The original uploader was Francesco Betti Sorbelli at Italian Wikipedia.. Vectorized by Magasjukur2</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
 {{% /slides/citations %}}
 
 
