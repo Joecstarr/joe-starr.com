@@ -34,6 +34,14 @@ slides:
 
 
 <style>
+
+.mjx-n div svg{
+    width:4.8 rem;
+    height:auto;
+    margin-left:-.5rem;
+    margin-top:-1rem;
+}
+
 #qr {
     width:35rem;
     height:35rem;
@@ -104,6 +112,9 @@ slides:
 }
 #mermaid-4 svg{
     width:30vw;
+}
+a.lowercase {
+  text-transform: lowercase;
 }
 
 </style>
@@ -221,6 +232,10 @@ Atoms are knotted vortices in the æther.
 
 
 {{< centerimg src="/presentations/mathday23/knotinfo_ss.png"  >}}
+
+{{% slides/citations %}}
+ C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants, [https://knotinfo.math.indiana.edu/](https://knotinfo.math.indiana.edu/), today's date (eg. August 24, 2023)
+{{% /slides/citations %}}
 
 ---
 
@@ -409,6 +424,8 @@ $\frac{1}{2}$
 ---
 
 # The Tanglenomicon
+## A table of two string tangles
+### (up to fixed boundary)
 
 
 ---
@@ -533,10 +550,22 @@ letting us generate twist vectors by simply counting from $0\to 2^{N-1}$.
 
 $$\begin{array}{|l|l|l|l|}
 \hline
-[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1]\ &\ [1\ 2\ 1\ 1]\ &\ [1\ 1\ 2\ 1]\\\hline
-[1\ 1\ 1\ 2]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\hline
-[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2]\\\hline
-[2\ 3]\ &\ [4\ 1]\ &\ [1\ 4]\ &\ [5]\\\hline
+[1\ 1\ 1\ 1\ 1]\ &\
+[1\ 1\ 1\ 2]\ &\
+[1\ 1\ 2\ 1]\ &\
+[1\ 1\ 3]\\\hline
+[1\ 2\ 1\ 1]\ &\
+[1\ 2\ 2]\ &\
+[1\ 3\ 1]\ &\
+[1\ 4]\\\hline
+[2\ 1\ 1\ 1]\ &\
+[2\ 1\ 2]\ &\
+[2\ 2\ 1]\ &\
+[2\ 3]\\\hline
+[3\ 1\ 1]\ &\
+[3\ 2]\ &\
+[4\ 1]\ &\
+[5]\\\hline
 \end{array}$$
 
 {{< /slides/admonition >}}
@@ -597,10 +626,22 @@ We can write a *canonical twist vector* by taking the odd length vectors (append
 
 $$\begin{array}{|l|l|l|l|}
 \hline
-[1\ 1\ 1\ 1\ 1]\ &\ [2\ 1\ 1\ 1\ 0]\ &\ [1\ 2\ 1\ 1\ 0]\ &\ [1\ 1\ 2\ 1\ 0]\\\hline
-[1\ 1\ 1\ 2\ 0]\ &\ [3\ 1\ 1]\ &\ [1\ 3\ 1]\ &\ [1\ 1\ 3]\\\hline
-[2\ 2\ 1]\ &\ [2\ 1\ 2]\ &\ [1\ 2\ 2]\ &\ [3\ 2\ 0]\\\hline
-[2\ 3\ 0]\ &\ [4\ 1\ 0]\ &\ [1\ 4\ 0]\ &\ [5]\\\hline
+[1\ 1\ 1\ 1\ 1]\ &\
+[1\ 1\ 1\ 2]\ &\
+[1\ 1\ 2\ 1]\ &\
+[1\ 1\ 3]\\\hline
+[1\ 2\ 1\ 1]\ &\
+[1\ 2\ 2]\ &\
+[1\ 3\ 1]\ &\
+[1\ 4]\\\hline
+[2\ 1\ 1\ 1]\ &\
+[2\ 1\ 2]\ &\
+[2\ 2\ 1]\ &\
+[2\ 3]\\\hline
+[3\ 1\ 1]\ &\
+[3\ 2]\ &\
+[4\ 1]\ &\
+[5]\\\hline
 \end{array}$$
 
 {{< /slides/admonition >}}
@@ -635,8 +676,10 @@ $$\ =\LB 3\ 2\ 2\RB=2+\frac{1}{2+\frac{1}{3}}=\frac{17}{7}$$
 
 {{<  /slides/admonition >}}
 
-{{% slides/citations %}}
-Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+{{% slides/citations font-size=".7rem" %}}
+* J.R. Goldman, L.H. Kauffman, Rational Tangles, Advances in Applied Math., 18 (1997), 300-332.
+* Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5)
+
 {{% /slides/citations %}}
 
 ---
@@ -677,6 +720,18 @@ To play with twist vectors and continued fractions, visit:
             {{< /slides/col>}}
         {{< /slides/row >}}
     {{< /slides/col>}}
+    {{< slides/col style="flex-grow:1;">}}
+        {{< slides/row style="margin-bottom:2rem;" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/322.svg" direct="true" id="parity_3"   >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+        {{< slides/row style="" >}}
+            {{< slides/col >}}
+                {{< slides/centersvg src="/presentations/comp/parity_1.svg"  direct="true" id="parity_4"  >}}
+            {{< /slides/col>}}
+        {{< /slides/row >}}
+    {{< /slides/col>}}
 {{< /slides/row >}}
 
 ---
@@ -686,16 +741,18 @@ To play with twist vectors and continued fractions, visit:
 If we take the rational number $\frac{p}{q}$ associated with the rational tangle we get the following correspondence for parity
 
 {{<  slides/admonition type="Example" title="Parity Table" >}}
+{{< slides/center_block style="font-size:3rem;" >}}
 
-$$\begin{array}{|c|c|c|}
+$\begin{array}{|c|c|c|c|}
 \hline
 p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
-0 &0&N/A\\ \hline
-0 &1& 0 \\ \hline
-1 &0&\infty\\ \hline
-1 &1& 1\\ \hline
-\end{array}$$
+0 &0&N/A&\\ \hline
+0 &1& 0 & \img{/presentations/comp/0.svg}\\ \hline
+1 &0&\infty& \img{/presentations/comp/inf.svg}\\ \hline
+1 &1& 1& \img{/presentations/comp/parity_1.svg}\\ \hline
+\end{array}$
 
+{{< /slides/center_block >}}
 {{<  /slides/admonition  >}}
 
 ---
@@ -761,7 +818,7 @@ $\ $
 
 {{<  slides/admonition type="theorem" title="Theorem (Schubert)" >}}
 
- Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0&lt;p$. Similarly for $p^{\prime}$ and $q^{\prime}$). If $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $K\left(\frac{p}{q}\right)$ and $K\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
+ Suppose that rational tangles with fractions $\frac{p}{q}$ and $\frac{p^{\prime}}{q^{\prime}}$ are given ( $p$ and $q$ are relatively prime and $0&lt;p$. Similarly for $p^{\prime}$ and $q^{\prime}$). If $N\left(\frac{p}{q}\right)$ and $N\left(\frac{p^{\prime}}{q^{\prime}}\right)$ denote the corresponding rational knots obtained by taking numerator closures of these tangles, then $N\left(\frac{p}{q}\right)$ and $N\left(\frac{p^{\prime}}{q^{\prime}}\right)$ are topologically equivalent if and only if
 <br/>
 (1) $p=p^{\prime}$
 <br/>
@@ -925,7 +982,7 @@ $\quad$
 
 ---
 
-## What about the 'k' and $\vee$?
+## What about the '<a class="lowercase" style="color:var(--r-Blue)">k</a>' and $\vee$?
 
 The construction for the canonical Montesinos tangles includes a trailing
 $\frac{k}{1}$ tangle. Our generation strategy seems to miss these.
@@ -1041,11 +1098,7 @@ stateDiagram-v2
 
 ---
 
-{{< centerimg src="/presentations/web_ui/details.png" >}}
-
----
-
-To play with a live version, visit::
+To play with a live version, visit:
 {{< slides/centersvg src="/qr_codes/tanglenomicon.svg" direct="true" id="qr" >}}
 
 <p style="text-align:center !important;">https://tanglenomicon.com</p>
@@ -1095,6 +1148,22 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 
 We just need to take our lists of Montesinos and rational tangles and glue them together with $\circ$.
 
+{{< slides/center_block grow="1" >}}
+{{< slides/row  style=" ">}}
+{{< slides/col  style="flex-grow:3;" >}}
+{{< slides/centersvg src="/presentations/lightning/annotated/GenMont.svg" >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:0;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col  style="flex-grow:1;" >}}
+{{< slides/center_block grow="1" >}}
+$= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-Foreground)}\circ \color{var(--r-Red)}[2\  2]$
+{{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+{{< /slides/center_block >}}
+
 ---
 
 ## Algebraic
@@ -1122,7 +1191,7 @@ All possible tangles made from $+$ and $\vee$ on basic tangles
 {{< slides/centersvg src="/presentations/lightning/Alg.svg"  >}}
 {{< /slides/col >}}
 {{< slides/col style="text-align:center;">}}
-A $\vee$ and $+$ of some rational tangles.
+A tangle build from $\vee$ and $+$ on some rational tangles.
 {{< /slides/col >}}
 {{< slides/col >}}
 {{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg"  >}}
@@ -1143,7 +1212,7 @@ $$\LP\color{var(--r-Purple)}\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\color{var(--r-Foreground
 
 ---
 
-# Strategy 1
+# strate-tree 1
 ## Algebraic Tangle Trees
 ---
 
@@ -1186,7 +1255,7 @@ Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astro
 
 ---
 
-# Strategy 2
+# strate-tree 2
 ## Arborescent Tangles
 ---
 
@@ -1393,13 +1462,6 @@ Notations define a notational convention for a link/tangle. They describe a meth
 A storage module defines a storage interface for the application. The main inter-module type is string and the calling module is responsible for en/decoding the string with a notation module.
 
 
----
-
-{{% slides/uncenter %}}
-
-# Technologies
-
-{{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
 
 ---
 
@@ -1465,6 +1527,15 @@ SUM:                           122           5262           6452          28003
 | Docker               |     1 |    12 |       1 |    11 |    24 |
 | Properties           |     1 |     9 |       1 |     2 |    12 |
 ```
+
+---
+
+{{% slides/uncenter %}}
+
+# Technologies
+
+{{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
+
 ---
 
 ### Sources
