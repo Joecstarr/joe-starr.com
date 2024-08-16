@@ -10,3 +10,6 @@
 /assets/jsconfig.json
 **/build_dir/**/*
 static/presentations/kauf_bkt/worksheet/.vscode/**/*
+package-lock.json
+package.json
+**/*_presentation_*.pdf
