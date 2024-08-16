@@ -12,6 +12,12 @@ autoSwitchAppearance = false
 enableSearch = true
 enableCodeCopy = true
 
+pygmentsCodefences = true
+pygmentsStyle = "dracula"
+
+[markup.highlight]
+noClasses = false
+
 # mainSections = ["section1", "section2"]
 # robots = ""
 

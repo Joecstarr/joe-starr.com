@@ -5,7 +5,7 @@ summary: "Talk for my comprehensive exam on tangle tabulation."
 tags:
    - "Talks"
    - "research talks"
-draft: true
+draft: false
 
 showHeadingAnchors: false
 
@@ -526,6 +526,33 @@ $\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\&\\
 
 ---
 
+
+{{< slides/row  >}}
+{{< slides/col  style="flex-grow:3;" >}}
+    {{< slides/centersvg src="/presentations/comp/131.svg"   >}}
+{{< /slides/col >}}
+{{< slides/col  style="flex-grow:1;" >}}
+    {{< slides/center_block grow="1" >}}
+    $\begin{aligned}\to&\ \LP 1 \vee \frac{1}{3}\RP + 1\\&\\
+    \to&\ [1\ 3\ 1]\end{aligned}$
+    {{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< slides/col style="flex-grow:1;" >}}
+$\ $
+{{< /slides/col >}}
+{{< slides/col  style="flex-grow:3;" >}}
+    {{< slides/centersvg src="/presentations/comp/41.svg"   >}}
+{{< /slides/col >}}
+{{< slides/col  style="flex-grow:1;" >}}
+    {{< slides/center_block grow="1" >}}
+    $\begin{aligned}\to& \frac{1}{4} + 1\,\,\\&\\
+    \to&\ [4\ 1]\end{aligned}$
+    {{< /slides/center_block >}}
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+
 # Generation
 
 ---
@@ -575,7 +602,9 @@ $$\begin{array}{|l|l|l|l|}
 # Programmatic Description
 
 ---
-{{% slides/uncenter %}}
+
+{{< slides/row >}}
+{{< slides/col markdownify="true" style="flex-grow:7;">}}
 
 ```mermaid
 stateDiagram-v2
@@ -585,11 +614,11 @@ stateDiagram-v2
     State_i: i=0
     State_ipp: i++
     state "Construct TV from i as a bitfield" as tv_calc{
-        state "tmp=i;j=0;cnt=N" as State_temp
+        state "tmplt=i;j=0;cnt=N" as State_temp
         State_jpp: j++
         State_cntmm: cnt--
         State_sum_tv: TV[j]++
-        State_rsh: tmp=tmp>>1
+        State_rsh: tmplt=tmplt>>1
         state if_lsb <<choice>>
         state if_cnteo <<choice>>
         State_store_tv: Store TV
@@ -601,9 +630,9 @@ stateDiagram-v2
         State_store_tv --> [*]
 
         State_cntmm -->if_lsb
-        if_lsb -->State_sum_tv: if (tmp & 0x01u)==1u
+        if_lsb -->State_sum_tv: if (tmplt & 0x01u)==1u
         State_sum_tv --> State_rsh
-        if_lsb -->State_jpp: if (tmp & 0x01u)==0u
+        if_lsb -->State_jpp: if (tmplt & 0x01u)==0u
         State_jpp --> State_rsh
         State_rsh --> if_cnteo
     }
@@ -613,9 +642,88 @@ stateDiagram-v2
     tv_calc --> State_ipp
     State_ipp --> if_done
     if_done --> [*]: if i == 2**(N-1)
-
-
 ```
+{{< /slides/col >}}
+
+{{< slides/col markdownify="true" style="flex-grow:1;font-size:.7rem;text-align:center;">}}
+|      i      |     tmplt  |     cnt    |      j     |     tv      |
+| ----------- | ---------- | ---------- | ---------- | ----------- |
+|      0      |   0000     |     5      |      0     | [1,1,1,1,1] |
+|      0      |   0000     |     4      |      1     | [1,1,1,1,1] |
+|      0      |   0000     |     3      |      2     | [1,1,1,1,1] |
+|      0      |   0000     |     2      |      3     | [1,1,1,1,1] |
+|      0      |   0000     |     1      |      4     | [1,1,1,1,1] |
+|      0      |   0000     |     0      |      4     | [1,1,1,1,1] |
+
+|      i      |     tmplt  |     cnt    |      j     |     tv      |
+| ----------- | ---------- | ---------- | ---------- | ----------- |
+|      6      |   0110     |     5      |      4     | [1,1,1,1,1] |
+|      6      |   0011     |     4      |      1     | [1,1,1,1,1] |
+|      6      |   0001     |     3      |      1     | [1,2,1,1,1] |
+|      6      |   0000     |     2      |      1     | [1,3,1,1,1] |
+|      6      |   0000     |     1      |      2     | [1,3,1,1,1] |
+|      6      |   0000     |     0      |      2     | [1,3,1,1,1] |
+
+|      i      |     tmplt  |     cnt    |      j     |     tv      |
+| ----------- | ---------- | ---------- | ---------- | ----------- |
+|      7      |   0111     |     5      |      0     | [1,1,1,1,1] |
+|      7      |   0011     |     4      |      0     | [2,1,1,1,1] |
+|      7      |   0001     |     3      |      0     | [3,1,1,1,1] |
+|      7      |   0000     |     2      |      0     | [4,1,1,1,1] |
+|      7      |   0000     |     1      |      1     | [4,1,1,1,1] |
+|      7      |   0000     |     0      |      1     | [4,1,1,1,1] |
+
+{{< /slides/col >}}
+{{< /slides/row >}}
+
+---
+
+```C
+/* A left shift multiplies the value of an integer by 2. */
+size_t count_lim = 0x01u << (crossingNumber - 1);
+for (size_t i = 0u; i < count_lim; i++)
+{
+    gen_rational_proc_template(i);
+}
+```
+
+---
+
+{{< slides/row >}}
+{{< slides/col markdownify="true" style="font-size:1.35rem;">}}
+```c
+void proc_tmp(size_t template)
+{
+    uint8_t counter = crossingNumber;
+    size_t tv_length = 0;
+    uint8_t twist_vector[UTIL_TANG_DEFS_MAX_CROSSINGNUM]={1};
+
+    while (counter > 0u)
+    {
+        counter--;
+        if ((template & 0x01u) == 0)
+        {
+            tv_length++;
+        }
+        else
+        {
+            twist_vector[tv_length]++;
+        }
+        template = template >> 0x01u;
+    }
+    if (tv_length % 2 == 0)
+    {
+        evenperm_shift_write();
+    }
+    else
+    {
+        write();
+    }
+}
+```
+{{< /slides/col >}}
+{{< /slides/row >}}
+
 ---
 
 ## Canonical Twist Vectors
@@ -627,20 +735,20 @@ We can write a *canonical twist vector* by taking the odd length vectors (append
 $$\begin{array}{|l|l|l|l|}
 \hline
 [1\ 1\ 1\ 1\ 1]\ &\
-[1\ 1\ 1\ 2]\ &\
-[1\ 1\ 2\ 1]\ &\
+[1\ 1\ 1\ 2\ 0]\ &\
+[1\ 1\ 2\ 1\ 0]\ &\
 [1\ 1\ 3]\\\hline
-[1\ 2\ 1\ 1]\ &\
+[1\ 2\ 1\ 1\ 0]\ &\
 [1\ 2\ 2]\ &\
 [1\ 3\ 1]\ &\
-[1\ 4]\\\hline
-[2\ 1\ 1\ 1]\ &\
+[1\ 4\ 0]\\\hline
+[2\ 1\ 1\ 1\ 0]\ &\
 [2\ 1\ 2]\ &\
 [2\ 2\ 1]\ &\
-[2\ 3]\\\hline
+[2\ 3\ 0]\\\hline
 [3\ 1\ 1]\ &\
-[3\ 2]\ &\
-[4\ 1]\ &\
+[3\ 2\ 0]\ &\
+[4\ 1\ 0]\ &\
 [5]\\\hline
 \end{array}$$
 
@@ -755,6 +863,10 @@ p\ \%\ 2 &q\ \%\ 2&\text{Parity}\\ \hline
 {{< /slides/center_block >}}
 {{<  /slides/admonition  >}}
 
+{{% slides/citations %}}
+Louis H. Kauffman and Sofia Lambropoulou. Classifying and applying rational knots and rational tangles. In DeTurck, editor, Contemporary Mathematics, volume 304, pages 223-259, 2001
+{{% /slides/citations %}}
+
 ---
 
 
@@ -861,10 +973,6 @@ Schubert, Horst. "Knoten mit zwei Brücken.." Mathematische Zeitschrift 65 (1956
 {{<  slides/admonition type="theorem" title="Theorem (Bonahon and Siebenmann)" >}}
 Every non-rational Montesinos tangle $T$ admits a canonical diagram satisfying the following construction:
 $$T \cong L_1+\cdots+L_m+\frac{k}{1}$$ where each $L_i \cong \frac{p_i}{q_i}$ is a rational subtangle in canonical form with fraction satisfying $0<\frac{p_i}{q_i}<1$, and $\frac{k}{1}$ is a horizontal integer subtangle.
-{{<  /slides/admonition >}}
-
-{{<  slides/admonition type="Note" >}}
-A similar result exists for the $\vee$ operation.
 {{<  /slides/admonition >}}
 
 {{% slides/citations %}}
@@ -982,17 +1090,15 @@ $\quad$
 
 ---
 
-## What about the '<a class="lowercase" style="color:var(--r-Blue)">k</a>' and $\vee$?
+## What about the '<a class="lowercase" style="color:var(--r-Blue)">k</a>'?
 
 The construction for the canonical Montesinos tangles includes a trailing
 $\frac{k}{1}$ tangle. Our generation strategy seems to miss these.
 
 What we're actually generating with this algorithm is Montesinos tangles up to
 moveable boundary components of the tangle. To recover fixed boundary tangles we
-can append an integral $k$ summand to each lower crossing Montesinos tangle.
-
-Similarly, Montesinos tangles generated via the $\vee$ operation are recovered
-by appending a $[1, -1, 1 ]$ with a circle product (more to come).
+can append an integral $k$ summand to each lower crossing Montesinos tangle with
+a circle product (more to come).
 
 ---
 
@@ -1141,6 +1247,11 @@ $= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-F
 {{< /slides/row >}}
 {{< /slides/center_block >}}
 
+
+{{% slides/citations %}}
+Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
+{{% /slides/citations %}}
+
 ---
 
 # Generation
@@ -1241,10 +1352,8 @@ with all combinations of basic tangles or the twist vector of rational tangles.
 We call these binary trees *Algebraic Tangle Trees*.
 
 {{% slides/citations %}}
-Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
-{{% /slides/citations %}}
-{{% slides/citations %}}
-Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
+* Alain Caudron. Classification des nœuds et des enlacements, volume 4 of Publications Math ́ematiques d'Orsay 82 [Mathematical Publications of Orsay 82]. Universit ́e de ParisSud, D ́epartement de Mathe  ́matique, Orsay, 1982.
+* Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
 {{% /slides/citations %}}
 
 ---
@@ -1471,21 +1580,21 @@ A storage module defines a storage interface for the application. The main inter
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-C/C++ Header                    21           4036           5209          21747
-C                               13            526            849           3559
+C                               13            516            834           3563
+C/C++ Header                    18            408            967           1939
 C++                              7            107            222            912
 Markdown                        21            418              0            794
 SVG                              5              5              5            322
-CMake                           43             76             21            240
+CMake                           41             74             21            236
 TeX                              1              1              0             92
 Cython                           1             21              2             83
 JSON                             2              1              0             78
 Python                           3             37             79             68
 YAML                             3             17              9             64
-Nix                              1             17             56             37
+Nix                              1             17             56             38
 Text                             1              0              0              7
 -------------------------------------------------------------------------------
-SUM:                           122           5262           6452          28003
+SUM:                           117           1622           2195           8196
 -------------------------------------------------------------------------------
 ```
 

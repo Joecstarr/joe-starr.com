@@ -1,7 +1,7 @@
 {{ if .IsNamedParams }}
-<div style="font-size: {{if (.Get "font-size")}}{{ with .Get "font-size"}} {{ . | safeCSS }}{{ end }}{{else}}.9rem{{ end }};;margin-top:auto;text-align:{{if (.Get "align")}}{{ with .Get "align"}} {{ . | safeCSS }}{{ end }}{{else}}left{{ end }};color:{{if (.Get "color")}}{{ with .Get "color"}} {{ . | safeCSS }}{{ end }}{{else}}var(--r-Highlight){{ end }};">
+<div style="font-size: {{if (.Get "font-size")}}{{ with .Get "font-size"}} {{ . | safeCSS }}{{ end }}{{else}}.9rem{{ end }};;margin-top:auto;text-align:{{if (.Get "align")}}{{ with .Get "align"}} {{ . | safeCSS }}{{ end }}{{else}}left{{ end }};color:{{if (.Get "color")}}{{ with .Get "color"}} {{ . | safeCSS }}{{ end }}{{else}}var(--r-Foreground){{ end }};">
 {{else}}
-<div style="font-size: .9rem;text-align:left;color:var(--r-Highlight);margin-top:auto">
+<div style="font-size: .9rem;text-align:left;color:var(--r-Foreground);margin-top:auto">
 {{end}}
     {{ .Inner }}
 </div>
