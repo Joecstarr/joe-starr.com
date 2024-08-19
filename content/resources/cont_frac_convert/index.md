@@ -30,7 +30,7 @@ A rational number here is "/" seperating two integers.
 
 ---
 
-# Cite
+# Sources
 
 1. Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In _Computational Problems in Abstract Algebra_, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5).
-2. Kauffman, Louis H., and Sofia Lambropoulou. "On the Classification of Rational Knots," 2002. [https://doi.org/10.48550/ARXIV.MATH/0212011](https://doi.org/10.48550/ARXIV.MATH/0212011).
+2. J.R. Goldman, L.H. Kauffman, Rational Tangles, Advances in Applied Math., 18 (1997), 300-332.
