@@ -10,10 +10,10 @@
     <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continued Fraction and Twist Vector Converter</title>
-      <link>https://joe-starr.com/resources/continued_fraction/</link>
+      <link>https://joe-starr.com/resources/cont_frac_convert/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://joe-starr.com/resources/continued_fraction/</guid>
+      <guid>https://joe-starr.com/resources/cont_frac_convert/</guid>
       <description>A tool that computes continued fractions from twist vectors.</description>
       
     </item>

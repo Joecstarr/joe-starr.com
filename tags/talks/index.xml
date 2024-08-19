@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Joe Starr</copyright>
-    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comprehensive Exam Talk </title>
+      <link>https://joe-starr.com/speaking/research/comp_talk/</link>
+      <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/research/comp_talk/</guid>
+      <description>Talk for my comprehensive exam on tangle tabulation.</description>
+      
+    </item>
+    
     <item>
       <title>GEOTOP-A International Conference Applications of Geometry and Topology</title>
       <link>https://joe-starr.com/speaking/research/merida_24/</link>

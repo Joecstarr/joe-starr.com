@@ -20,10 +20,10 @@
     
     <item>
       <title>Continued Fraction and Twist Vector Converter</title>
-      <link>https://joe-starr.com/resources/continued_fraction/</link>
+      <link>https://joe-starr.com/resources/cont_frac_convert/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://joe-starr.com/resources/continued_fraction/</guid>
+      <guid>https://joe-starr.com/resources/cont_frac_convert/</guid>
       <description>A tool that computes continued fractions from twist vectors.</description>
       
     </item>
@@ -75,6 +75,16 @@
       
       <guid>https://joe-starr.com/teaching/math1350/</guid>
       <description>Mathematics and Reasoning for business students</description>
+      
+    </item>
+    
+    <item>
+      <title>Comprehensive Exam Talk </title>
+      <link>https://joe-starr.com/speaking/research/comp_talk/</link>
+      <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/research/comp_talk/</guid>
+      <description>Talk for my comprehensive exam on tangle tabulation.</description>
       
     </item>
     
