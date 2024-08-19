@@ -46,7 +46,8 @@ A man picks up his daily slice of breakfast pizza from his local gas station. Wh
 
 # Day 4: CDC Headquarters
 
-The Z-virus has spread midwest-wide. You're working at the CDC as an expert in microscopy. You're working frantically to get any information on the Z-virus you can. You decide to image the DNA of the Z-Virus.
+The Z-virus has spread midwest-wide. You're working at the CDC as an expert in microscopy. You're working frantically to get any information on the Z-virus you can. In furtherance of
+that goal, you decide to image the DNA of the Z-Virus.
 
 
 ---
@@ -104,7 +105,7 @@ Photo by Madprime (talk · contribs) - This vector image was created with Inksca
 
 # Circular DNA
 
-Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-stranded DNA of the polyoma virus is circular. Rather than the more common open-ended double-stranded DNA
+Dulbecco and Vogt (1963) and Weil and Vinograd (1963) discovered that double-stranded DNA of the polyoma virus is circular.
 
 
 {{< slides/center_block >}}

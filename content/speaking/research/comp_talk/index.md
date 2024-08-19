@@ -678,53 +678,6 @@ stateDiagram-v2
 
 ---
 
-```C
-/* A left shift multiplies the value of an integer by 2. */
-size_t count_lim = 0x01u << (crossingNumber - 1);
-for (size_t i = 0u; i < count_lim; i++)
-{
-    gen_rational_proc_template(i);
-}
-```
-
----
-
-{{< slides/row >}}
-{{< slides/col markdownify="true" style="font-size:1.35rem;">}}
-```c
-void proc_tmp(size_t template)
-{
-    uint8_t counter = crossingNumber;
-    size_t tv_length = 0;
-    uint8_t twist_vector[UTIL_TANG_DEFS_MAX_CROSSINGNUM]={1};
-
-    while (counter > 0u)
-    {
-        counter--;
-        if ((template & 0x01u) == 0)
-        {
-            tv_length++;
-        }
-        else
-        {
-            twist_vector[tv_length]++;
-        }
-        template = template >> 0x01u;
-    }
-    if (tv_length % 2 == 0)
-    {
-        evenperm_shift_write();
-    }
-    else
-    {
-        write();
-    }
-}
-```
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
 
 ## Canonical Twist Vectors
 
@@ -1688,6 +1641,55 @@ SUM:                           117           1622           2195           8196
 18. <a href="https://commons.wikimedia.org/wiki/File:Emscripten_logo.svg">Alon Zakai</a>, <a href="http://opensource.org/licenses/mit-license.php">MIT</a>, via Wikimedia Commons
 18. <a href="https://commons.wikimedia.org/wiki/File:Cmake.svg">Cmake team. The original uploader was Francesco Betti Sorbelli at Italian Wikipedia.. Vectorized by Magasjukur2</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
 {{% /slides/citations %}}
+
+---
+
+```C
+/* A left shift multiplies the value of an integer by 2. */
+size_t count_lim = 0x01u << (crossingNumber - 1);
+for (size_t i = 0u; i < count_lim; i++)
+{
+    gen_rational_proc_template(i);
+}
+```
+
+---
+
+{{< slides/row >}}
+{{< slides/col markdownify="true" style="font-size:1.35rem;">}}
+```c
+void proc_tmp(size_t template)
+{
+    uint8_t counter = crossingNumber;
+    size_t tv_length = 0;
+    uint8_t twist_vector[UTIL_TANG_DEFS_MAX_CROSSINGNUM]={1};
+
+    while (counter > 0u)
+    {
+        counter--;
+        if ((template & 0x01u) == 0)
+        {
+            tv_length++;
+        }
+        else
+        {
+            twist_vector[tv_length]++;
+        }
+        template = template >> 0x01u;
+    }
+    if (tv_length % 2 == 0)
+    {
+        evenperm_shift_write();
+    }
+    else
+    {
+        write();
+    }
+}
+```
+{{< /slides/col >}}
+{{< /slides/row >}}
+
 
 
 {{% slides/footer %}}
