@@ -7,50 +7,38 @@
 {{ $src := .Get "src" | default "" }}
 
 {{ if .IsNamedParams }}
-    {{ if eq $direct "true" }}
-        <div id="{{ $id  | safeCSS }}">
-            {{ with .Get "src"}}
-            {{ (print "/static" .) | readFile | safeHTML }}
-            {{ end }}
-        </div>
+{{ if eq $direct "true" }}
+<div id="{{ $id  | safeCSS }}">
+{{ with .Get "src"}}
+{{ (print "/static" .) | readFile | safeHTML }}
+{{ end }}
+</div>
 
-    {{else if eq $external "true" }}
-    <div id="{{ $id  | safeCSS }}">
-        <script>
-            window.onload = svgAddress({{ $src }},"#{{ $id | safeJS}}");
-        </script>
-    </div>
-    {{else if eq $block "true" }}
+{{else if eq $external "true" }}
+<div id="{{ $id  | safeCSS }}">
+<script>
+window.onload = svgAddress({{ $src }},"#{{ $id | safeJS}}");
+</script>
+</div>
+{{else if eq $block "true" }}
 
-        <div class="sliderow " style="align-items:center;height:{{if (.Get "height")}} {{ with .Get "height"}} {{ . | safeCSS }}{{ end }}{{else}} 100% {{ end }};{{ with .Get "rstyle"}} {{ . | safeCSS }}{{ end }}">
-        <div class="slidecolumn " style="flex-grow:{{if (.Get "grow")}} {{ with .Get "grow"}} {{ . | safeCSS }}{{ end }}{{else}} 1 {{ end }};flex-shrink:{{if (.Get "shrink")}} {{ with .Get "shrink"}} {{ . | safeCSS }}{{ end }}{{else}} 0 {{ end }};{{ with .Get "style"}} {{ . | safeCSS }}{{ end }}">
-        <div class="centerImg">
-            {{ with .Get "src"}}
-            {{ (print "/static" .) | readFile | safeHTML }}
-            {{ end }}
-        </div>
-        </div>
-        </div>
+<div class="sliderow " style="align-items:center;height:{{if (.Get "height")}} {{ with .Get "height"}} {{ . | safeCSS }}{{ end }}{{else}} 100% {{ end }};{{ with .Get "rstyle"}} {{ . | safeCSS }}{{ end }}">
+<div class="slidecolumn " style="flex-grow:{{if (.Get "grow")}} {{ with .Get "grow"}} {{ . | safeCSS }}{{ end }}{{else}} 1 {{ end }};flex-shrink:{{if (.Get "shrink")}} {{ with .Get "shrink"}} {{ . | safeCSS }}{{ end }}{{else}} 0 {{ end }};{{ with .Get "style"}} {{ . | safeCSS }}{{ end }}">
+<div class="centerImg">
+{{ with .Get "src"}}
+{{ (print "/static" .) | readFile | safeHTML }}
+{{ end }}
+</div>
+</div>
+</div>
 
-    {{else}}
-        <div class="centerImg" style="
-        {{if (.Get "style")}}
-        {{ with .Get "style"}}
-        {{ . | safeCSS }}
-        {{ end }}
-        {{else}}
-        width:
-        {{if (.Get "width")}}
-        {{ with .Get "width"}} {{ . | safeCSS }}{{ end }}
-        {{else}}
-        100%
-        {{ end }};
-        {{ with .Get "height"}} height:{{ . | safeCSS }};{{ end }} {{ with .Get "max-width"}} max-width:{{ . | safeCSS }};{{ end }}
-        {{ end }}
-        " >
-        {{ with .Get "src"}}
-        {{ (print "/static" .) | readFile | safeHTML }}
-        {{ end }}
-        </div>
-    {{end}}
+{{else}}
+
+<div class="centerImg" style="{{if (.Get "style")}}{{ with .Get "style"}}{{ . | safeCSS }}{{ end }}{{else}}width:{{if (.Get "width")}}{{ with .Get "width"}} {{ . | safeCSS }}{{ end }}{{else}}100%{{ end }};{{ with .Get "height"}} height:{{ . | safeCSS }};{{ end }} {{ with .Get "max-width"}} max-width:{{ . | safeCSS }};{{ end }}{{ end }}" >
+{{ with .Get "src"}}
+{{ (print "/static" .) | readFile | safeHTML }}
+{{ end }}
+</div>
+
+{{end}}
 {{end}}
