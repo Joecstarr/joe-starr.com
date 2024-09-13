@@ -1,10 +1,11 @@
 ---
 summary: ""
-title: Printable Docs
+title: Printable Documents
 author: Joe Starr
+draft: true
 groupByYear: true
 tags:
   - index
-type: resources
+type: printable_doc
 ---
 
