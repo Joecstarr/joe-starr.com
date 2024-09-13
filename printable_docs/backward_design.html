@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+    <title>Backward Design Template</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asul:wght@700&family=Open+Sans&display=swap');
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        :root {
+            --text-color: #000000;
+            --text-secondary-color: #000000;
+            --background-color: #eaedf0;
+            --secondary-background-color: #8811ee1a;
+            --primary-color: #8811ee;
+            --secondary-color: #8811ee1e;
+        }
+
+
+        @media print {
+            @page {
+                size: letter;
+            }
+
+            .section_title {
+                background-color: var(--primary-color);
+                color: #ffffff;
+                font-size: 12pt;
+            }
+
+            html {
+                font-size: 11pt;
+                color: #000000;
+                background-color: #ffffff;
+            }
+
+        }
+
+        @media screen {
+            html {
+                color: var(--text-color);
+                background-color: var(--background-color);
+            }
+
+            .section_title {
+                background-color: var(--primary-color);
+                color: var(--background-color);
+                font-size: 1.5vh;
+            }
+        }
+
+        .head .icon {
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .icon {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Asul', sans-serif;
+            padding: 0;
+            margin: .125vh;
+        }
+
+        h6 {
+            font-family: 'Asul', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h3,
+        h2 {
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        p {
+            display: block;
+            margin-block-start: 0.1rem;
+            margin-block-end: 0.1rem;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        .hr {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            height: .5vh;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .hrlite {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            height: .1vh;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .section_title {
+            padding: .5vw;
+            margin: .125vh;
+            margin-left: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .row,
+        .flex-col {
+            border-style: solid;
+        }
+
+        .summary {
+            margin-top: .5vh;
+            margin-bottom: .5vh;
+        }
+
+        .right {
+            float: right;
+            min-width: 17vw;
+            font-weight: bold;
+        }
+
+
+
+        .left p:first-of-type {
+            margin-bottom: 0;
+        }
+
+
+        .grid-container>.grid-container,
+        .grid-container>.grid-container-vert {
+
+            background-color: var(--text-color);
+            padding: 0px;
+            gap:0px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header'
+                'left left right right';
+            background-color: var(--primary-color);
+            gap: 5px;
+            padding: 5px;
+        }
+
+        .grid-container-vert {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'top '
+                'bottom ';
+        }
+
+        .grid-container>div {
+            text-align: center;
+            background-color: var(--background-color);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="grid-container">
+        <div style="grid-area: header;">
+            <h2 class="section_title">Stage 1 - Desired Results
+            </h2>
+        </div>
+        <div style="grid-area: left;">
+            <h3>Established Goals
+            </h3>
+
+        </div>
+        <div style="grid-area: right;">
+            <div class="grid-container">
+                <div style="grid-area: header;">
+                    <h3>Transfer
+                    </h3>
+                </div>
+                <div style="grid-area: left;">
+                    <h4>UNDERSTANDINGS
+                    </h4>
+
+                </div>
+                <div style="grid-area: right;">
+                    <h4>ESSENTIAL QUESTIONS
+                    </h4>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div style="grid-area: header;">
+                    <h3>Acquisition
+                    </h3>
+                </div>
+                <div style="grid-area: left;">
+                    <h4>Students will know…
+                    </h4>
+
+                </div>
+                <div style="grid-area: right;">
+                    <h4>Students will be skilled at…
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid-container">
+        <div style="grid-area: header;">
+            <h2 class="section_title">Stage 2 - Evidence and Assessment
+            </h2>
+        </div>
+        <div style="grid-area: left;">
+            <h3>Evaluative Criteria
+            </h3>
+
+        </div>
+        <div style="grid-area: right;">
+            <div class="grid-container-vert">
+                <div style="grid-area: header;">
+                    <h3>Assessment Evidence
+                    </h3>
+                </div>
+
+                <div style="grid-area: top;">
+                    <div class="grid-container">
+                        <div style="grid-area: header;">
+                            <h4>PERFORMANCE TASK(S):
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div style="grid-area: bottom;">
+                    <div class="grid-container">
+                        <div style="grid-area: header;">
+                            <h4>OTHER EVIDENCE:
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="grid-container">
+        <div style="grid-area: header;">
+            <h2 class="section_title">Stage 3 - Learning Plan
+            </h2>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

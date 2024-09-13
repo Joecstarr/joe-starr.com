@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Joe Starr</copyright>
-    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Printable Docs</title>
+      <link>https://joe-starr.com/resources/printable_docs/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/resources/printable_docs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://joe-starr.com/resources/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/resources/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>What is?</title>
       <link>https://joe-starr.com/what_is/</link>
@@ -25,16 +45,6 @@
       
       <guid>https://joe-starr.com/speaking/general_audience/zombie_jones/</guid>
       <description>In this talk we give a construction of the Jones Polynomial via the Kauffman bracket. The concepts are introduced in a pseudo-application of fighting a zombie apocalypse.</description>
-      
-    </item>
-    
-    <item>
-      <title>Resources</title>
-      <link>https://joe-starr.com/resources/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://joe-starr.com/resources/</guid>
-      <description></description>
       
     </item>
     
