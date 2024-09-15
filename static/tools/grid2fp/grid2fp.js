@@ -18,12 +18,12 @@ class Segment {
     };
 }
 class Drawer {
-    constructor(imgSelector, tableSelector) {
+    constructor(imgSelector, tableSelector, string_color, crossing_color) {
         this.tableObj = document.querySelectorAll(tableSelector);
         SVG().clear(imgSelector);
         this.eccentricity = 0.6;
-        this.crossing_color = "#ffffff";
-        this.string_color = "#000000";
+        this.crossing_color = crossing_color;
+        this.string_color = string_color;
         this.diagram = [];
         this.scale = 100;
         this.stroke_width = 0.1 * this.scale;
@@ -178,18 +178,12 @@ class Drawer {
         }
 
         group.transform({
+            origin: { x: this.diagram.length * this.scale * .5, y: this.diagram.length * this.scale * .5 },
             rotate: '45'
         })
-
-
-
-        this.draw.size(
-            Math.sqrt(2) * this.diagram.length * this.scale,
-            Math.sqrt(2) * this.diagram.length * this.scale
-        );
         this.draw.viewbox({
-            x: -200,
-            y: -200,
+            x: -Math.sqrt(2) *this.diagram.length * this.scale*.5,
+            y: -Math.sqrt(2) *this.diagram.length * this.scale*.1,
             width: Math.sqrt(2) * this.diagram.length * this.scale,
             height: Math.sqrt(2) * this.diagram.length * this.scale,
         });
