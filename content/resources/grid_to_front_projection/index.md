@@ -16,12 +16,14 @@ share: false
 
 # Instructions
 
-1. Create a $n\times n$ table with the supplied button.
+1. Create a $n\times n$ table by setting the size and pressing the button.
 2. Select the colors for your knot.
-3. Fill in the table with the grid diagram.
+4. Select the scale, size of the strands, for your knot.
+5. Select the eccentricity, how much the control points pull, for your knot.
+6. Fill in the table with the grid diagram. For info on using grid diagrams to define Legendrian knots see [10.48550/arXiv.1903.12256](http://dx.doi.org/10.48550/arXiv.1903.12256) or [10.2140/agt.2010.10.293](http://dx.doi.org/10.2140/agt.2010.10.293).
    1. Note there is no error handling so if something goes wrong refresh the page and try again
-4. Click generate to get the image.
-5. Click "Download" to download the image.
+7. Click generate to get the image.
+    1. Click "Download" to download a copy of the image.
 
 ---
 
@@ -30,6 +32,31 @@ share: false
 ---
 
 ## Sample images
+
+
+|x|o| | | |
+|-|-|-|-|-|
+| |x|o| | |
+| | |x|o| |
+| | | |x|o|
+|o| | | |x|
+
+
+
+{{< slides/centersvg src="/tools/grid2fp/examples/squig.svg" height="auto">}}
+
+| |o| | | |
+|-|-|-|-|-|
+| |x|o| | |
+| | |x|o| |
+| | | |x|o|
+| | | | |x|
+
+
+
+{{< slides/centersvg src="/tools/grid2fp/examples/squig_knot.svg" height="auto">}}
+
+
 
 
 | |o| | |x|

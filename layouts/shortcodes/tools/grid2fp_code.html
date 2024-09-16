@@ -34,20 +34,8 @@
         color: #ffb86c;
         font-family: monospace;
     }
-
-    input {
-        width: 70px;
-        padding: 5px;
-        margin: 10px;
-        font-size: 16px;
-        background: #44475a !important;
-        border: none;
-        border-radius: 5px;
-    }
-
     .example {
         flex-shrink: 0;
-        width: 300px;
         margin-bottom: 30px;
     }
 
@@ -55,6 +43,10 @@
         display: inline-block;
         position: relative;
         color: transparent;
+    }
+    .field {
+        display: inline-block;
+        position: relative;
     }
 
     .full .clr-field button {
@@ -64,6 +56,10 @@
     }
 
     .clr-field input {
+        margin: 0;
+        direction: ltr;
+    }
+    .field input {
         margin: 0;
         direction: ltr;
     }
@@ -78,6 +74,7 @@
         font-size: inherit;
         font-weight: inherit;
         box-sizing: border-box;
+        background: #44475a !important;
     }
 
     .button,
@@ -153,23 +150,37 @@
         <div>
             <label>
                 Size :
-                <input class="size" type="number" min="3" value="3">
+                <input id="tblsize" class="size" type="number" min="3" value="3">
             </label>
-            <button class="button">Create table</button>
+            <button id="createtbl" class="button">Create table</button>
         </div>
     </section>
-    <div class=" flex">
-        <div class="example">
+    <div class=" flex flex-wrap">
+        <div class="example shrink grow">
             <p>Foreground color:</p>
-            <div class="clr-field" style="color: green; " data-darkreader-inline-color=""><button type="button"
-                    aria-labelledby="clr-open-label"></button><input type="text" value="green" id="fcolordata"
+            <div class="clr-field" style="color: MediumSlateBlue; " data-darkreader-inline-color=""><button type="button"
+                    aria-labelledby="clr-open-label"></button><input type="text" value="MediumSlateBlue" id="fcolordata"
                     data-coloris=""></div>
         </div>
-        <div class="example">
+        <div class="example shrink grow">
             <p>Background color:</p>
             <div class="clr-field " style="color: #ffffff; " data-darkreader-inline-color=""><button type="button"
                     aria-labelledby="clr-open-label"></button><input type="text" id="bcolordata" value="#ffffff"
                     data-coloris=""></div>
+        </div>
+        <div class="example shrink grow">
+            <p>
+                Eccentricity :</p>
+            <div class="field ">
+                <input class="size" type="number"  id="eccentricitydata" min="1" value="40">
+            </div>
+        </div>
+        <div class="example shrink grow">
+            <p>
+                Scale :</p>
+            <div class="field ">
+                <input class="size" type="number"  id="scaledata"  min="1" value="10">
+            </div>
         </div>
     </div>
 
@@ -214,9 +225,9 @@
 
     }
 
-    const table = new Table('.table', '.size')
+    const table = new Table('.table', '#tblsize')
 
-    document.querySelector('.button').addEventListener('click', () => {
+    document.getElementById("createtbl").addEventListener('click', () => {
         table.generate()
     });
 
@@ -231,8 +242,10 @@
         svg = document.getElementById('svg-container')
         fcolor = document.getElementById('fcolordata').value
         bcolor = document.getElementById('bcolordata').value
+        eccentricity = document.getElementById('eccentricitydata').value/100
+        scale = document.getElementById('scaledata').value/100
         svg.innerHTML = "";
-        drawer = new Drawer('#svg-container', '.table tr', fcolor, bcolor)
+        drawer = new Drawer('#svg-container', '.table tr', fcolor, bcolor, eccentricity, scale)
         drawer.generate()
     });
 

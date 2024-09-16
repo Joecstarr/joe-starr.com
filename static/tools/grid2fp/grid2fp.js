@@ -18,15 +18,15 @@ class Segment {
     };
 }
 class Drawer {
-    constructor(imgSelector, tableSelector, string_color, crossing_color) {
+    constructor(imgSelector, tableSelector, string_color, crossing_color, eccentricity, scale) {
         this.tableObj = document.querySelectorAll(tableSelector);
         SVG().clear(imgSelector);
-        this.eccentricity = 0.6;
+        this.eccentricity = eccentricity;
         this.crossing_color = crossing_color;
         this.string_color = string_color;
         this.diagram = [];
         this.scale = 100;
-        this.stroke_width = 0.1 * this.scale;
+        this.stroke_width = scale * this.scale;
         this.__parse_table();
         this.draw = SVG().addTo(imgSelector);
         this.segments_vert = [];
@@ -121,20 +121,20 @@ class Drawer {
         let ctr2 = this.__get_crtl_pt(snk, -1 * dir, delta);
 
         var path = "M";
-        path += src[0] + "," + src[1];
+        path += src[1] + "," + src[0];
         path += " C";
         path +=
-            ctr1[0] +
-            "," +
             ctr1[1] +
             "," +
-            ctr2[0] +
+            ctr1[0] +
             "," +
             ctr2[1] +
             "," +
-            snk[0] +
+            ctr2[0] +
             "," +
-            snk[1];
+            snk[1] +
+            "," +
+            snk[0];
         return path;
     };
     __draw_segment_hor = (step) => {
@@ -182,8 +182,8 @@ class Drawer {
             rotate: '45'
         })
         this.draw.viewbox({
-            x: -Math.sqrt(2) *this.diagram.length * this.scale*.5,
-            y: -Math.sqrt(2) *this.diagram.length * this.scale*.1,
+            x: -Math.sqrt(2) * this.diagram.length * this.scale * .5,
+            y: -Math.sqrt(2) * this.diagram.length * this.scale * .1,
             width: Math.sqrt(2) * this.diagram.length * this.scale,
             height: Math.sqrt(2) * this.diagram.length * this.scale,
         });
