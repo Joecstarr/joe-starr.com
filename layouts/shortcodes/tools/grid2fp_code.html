@@ -1,5 +1,8 @@
+<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+<script src="/tools/grid2fp/grid2fp.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
 <style>
-
     .generator {
         display: flex;
         justify-content: space-around;
@@ -31,15 +34,47 @@
         color: #ffb86c;
         font-family: monospace;
     }
+    .example {
+        flex-shrink: 0;
+        margin-bottom: 30px;
+    }
+
+    .clr-field {
+        display: inline-block;
+        position: relative;
+        color: transparent;
+    }
+    .field {
+        display: inline-block;
+        position: relative;
+    }
+
+    .full .clr-field button {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .clr-field input {
+        margin: 0;
+        direction: ltr;
+    }
+    .field input {
+        margin: 0;
+        direction: ltr;
+    }
 
     input {
-        width: 70px;
-        padding: 5px;
-        margin: 10px;
-        font-size: 16px;
-        background: #44475a !important;
-        border: none;
+        width: 150px;
+        height: 32px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
         border-radius: 5px;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        box-sizing: border-box;
+        background: #44475a !important;
     }
 
     .button,
@@ -83,7 +118,7 @@
         }
     }
 
-     &__item {
+    &__item {
         max-width: 150px;
         width: 100%;
         height: 36px;
@@ -100,7 +135,7 @@
         max-height: 30vh;
     }
 
-    #svg-container svg{
+    #svg-container svg {
         width: 100% !important;
         height: auto !important;
     }
@@ -110,16 +145,49 @@
 
 
 <div id="table-container">
-    <section class="controls">
-        <label>
-            Size :
-            <input class="size" type="number" min="3" value="3">
-        </label>
-        <button class="button">Create table</button>
-    </section>
-    <table class="table" border="0" cellpadding="" cellspacing="" contenteditable="true"></table>
 
+    <section class="controls">
+        <div>
+            <label>
+                Size :
+                <input id="tblsize" class="size" type="number" min="3" value="3">
+            </label>
+            <button id="createtbl" class="button">Create table</button>
+        </div>
+    </section>
+    <div class=" flex flex-wrap">
+        <div class="example shrink grow">
+            <p>Foreground color:</p>
+            <div class="clr-field" style="color: MediumSlateBlue; " data-darkreader-inline-color=""><button type="button"
+                    aria-labelledby="clr-open-label"></button><input type="text" value="MediumSlateBlue" id="fcolordata"
+                    data-coloris=""></div>
+        </div>
+        <div class="example shrink grow">
+            <p>Background color:</p>
+            <div class="clr-field " style="color: #ffffff; " data-darkreader-inline-color=""><button type="button"
+                    aria-labelledby="clr-open-label"></button><input type="text" id="bcolordata" value="#ffffff"
+                    data-coloris=""></div>
+        </div>
+        <div class="example shrink grow">
+            <p>
+                Eccentricity :</p>
+            <div class="field ">
+                <input class="size" type="number"  id="eccentricitydata" min="1" value="40">
+            </div>
+        </div>
+        <div class="example shrink grow">
+            <p>
+                Scale :</p>
+            <div class="field ">
+                <input class="size" type="number"  id="scaledata"  min="1" value="10">
+            </div>
+        </div>
+    </div>
+
+    <table class="table" border="0" cellpadding="" cellspacing="" contenteditable="true">
+    </table>
 </div>
+
 <button class="convert">Convert table</button>
 <div id="svg-container"></div>
 <button class="download">Download</button>
@@ -143,12 +211,7 @@
 
                 for (let j = 1; j <= sizeNumber; j++) {
 
-                    // if (i === 1 || j === 1) {
-                    //   td = `<th class="header">${cellContent}</th>`;
-                    // }
-                    // else {
-                    td = `<td>.</td>`;
-                    // }
+                    td = `<td>&ensp;</td>`;
 
                     tr += td
                 }
@@ -162,9 +225,9 @@
 
     }
 
-    const table = new Table('.table', '.size')
+    const table = new Table('.table', '#tblsize')
 
-    document.querySelector('.button').addEventListener('click', () => {
+    document.getElementById("createtbl").addEventListener('click', () => {
         table.generate()
     });
 
@@ -172,155 +235,19 @@
 
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
 <script type="text/javascript">
-    class Segment {
-        constructor() {
-            this.source = [null, null]
-            this.sink = [null, null]
-        }
-        isNull = () => {
-            for (var i = 0; i < this.source.length; i++) {
-                if (this.source[i] == null) {
-                    return true
-                }
-            }
-            for (var i = 0; i < this.sink.length; i++) {
-                if (this.sink[i] == null) {
-                    return true
-                }
-            }
-            return false
-        }
-
-    }
-    class Drawer {
-        constructor(imgSelector, tableSelector) {
-            this.tableObj = document.querySelectorAll(tableSelector)
-            SVG().clear(imgSelector)
-            this.eccentricity = 0.9
-            this.crossing_color = "#ffffff"
-            this.string_color = "#000000"
-            this.diagram = []
-            this.stroke_width = 0.1
-            this.__parse_table()
-            this.draw = SVG().addTo(imgSelector)
-            // this.draw.viewbox(10 * this.diagram.length, 10 * this.diagram.length)
-            this.draw.viewbox({
-                x: 0, y: 0,
-                width: 2 * Math.sqrt(2) * this.diagram.length,
-                height: 2 * Math.sqrt(2) * this.diagram.length
-            })
-            this.draw.size(200, 200)
-            // this.draw.size(10 * this.diagram.length, 10 * this.diagram.length)
-            this.segments = []
-            this.__get_segments()
-        }
-        __parse_table = () => {
-            this.diagram = Array.prototype.map.call(this.tableObj, function (tr) {
-                return Array.prototype.map.call(tr.querySelectorAll('td'), function (td) {
-                    return td.innerHTML.trim().replace(/(<br ?\/?>)*/g, "");;
-                });
-            });
-        }
-        __get_segments = () => {
-            this.__get_segments_horizontal();
-            this.__get_segments_vertical();
-        }
-        __get_segments_horizontal = () => {
-            var segs = []
-            for (var i = 0; i < this.diagram.length; i++) {
-                var seg = new Segment()
-                for (var j = 0; j < this.diagram.length; j++) {
-                    if (this.diagram[i][j] != ".") {
-                        if (this.diagram[i][j].trim() != "") {
-                            if (this.diagram[i][j].trim().toLowerCase() == "x") {
-                                seg.sink[0] = j
-                                seg.sink[1] = i
-                            }
-                            if (this.diagram[i][j].trim().toLowerCase() == "o") {
-                                seg.source[0] = j
-                                seg.source[1] = i
-                            }
-                        }
-                    }
-                }
-                if (!seg.isNull()) { this.segments.push(seg) }
-            }
-        }
-        __get_segments_vertical = () => {
-
-            var segs = []
-            for (var j = 0; j < this.diagram.length; j++) {
-                var seg = new Segment()
-                for (var i = 0; i < this.diagram.length; i++) {
-                    if (this.diagram[j][i] != ".") {
-                        if (this.diagram[j][i].trim() != "") {
-                            if (this.diagram[j][i].trim().toLowerCase() == "x") {
-                                seg.source[0] = j
-                                seg.source[1] = i
-                            }
-                            if (this.diagram[j][i].trim().toLowerCase() == "o") {
-                                seg.sink[0] = j
-                                seg.sink[1] = i
-                            }
-                        }
-                    }
-                }
-                if (!seg.isNull()) { this.segments.push(seg) }
-            }
-        }
-        __draw_segment = (step) => {
-            var rot_src = this.__rotate(step.source[0], step.source[1])
-            var rot_snk = this.__rotate(step.sink[0], step.sink[1])
-            var delta_x = rot_snk[0] - rot_src[0]
-            var x_ctr1 = rot_src[0] + (this.eccentricity * delta_x)
-            var x_ctr2 = rot_snk[0] - (this.eccentricity * delta_x)
-
-            var path = "M"
-            path += rot_src[0] + "," + rot_src[1]
-            path += " C"
-            path += x_ctr1 + "," + rot_src[1] + "," + x_ctr2 + "," + rot_snk[1] + "," + rot_snk[0] + "," + rot_snk[1]
-
-            return path
-        }
-        __rotate = (x, y) => {
-            var r = 1 / Math.sqrt(2)
-            return [(-x * r - y * r), (-x * r + y * r)]
-        }
-        generate = () => {
-            var group = this.draw.group().addClass('my-group' + i)
-            group.transform({
-                rotate: 0,
-                translateX: Math.sqrt(2) * this.diagram.length,
-                translateY: Math.sqrt(2) * this.diagram.length / 2
-            })
-            group.attr('fill', "none")
-            group.attr('stroke-width', this.stroke_width)
-            group.attr('stroke', this.string_color)
-
-            for (var i = this.segments.length-1; i >= 0; i--) {
-                var inner_group = group.group().addClass('my-group' + i)
-                var path_str = this.__draw_segment(this.segments[i])
-                var path = inner_group.path(path_str)
-                path.stroke({ color: this.crossing_color, width: this.stroke_width * 2 })
-                path.plot()
-                var path = inner_group.path(path_str)
-                path.plot()
-            }
-        }
-
-    }
 
 
     document.querySelector('.convert').addEventListener('click', () => {
         svg = document.getElementById('svg-container')
+        fcolor = document.getElementById('fcolordata').value
+        bcolor = document.getElementById('bcolordata').value
+        eccentricity = document.getElementById('eccentricitydata').value/100
+        scale = document.getElementById('scaledata').value/100
         svg.innerHTML = "";
-        drawer = new Drawer('#svg-container', '.table tr')
+        drawer = new Drawer('#svg-container', '.table tr', fcolor, bcolor, eccentricity, scale)
         drawer.generate()
     });
-</script>
-<script type="text/javascript">
 
     document.querySelector('.download').addEventListener('click', () => {
         function uuidv4() {
