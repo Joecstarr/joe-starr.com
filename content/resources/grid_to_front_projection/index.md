@@ -42,10 +42,10 @@ share: false
 |o| | | |x|
 
 
+{{< slides/centersvg src="/tools/grid2fp/examples/squig_knot.svg" height="auto">}}
 
-{{< slides/centersvg src="/tools/grid2fp/examples/squig.svg" height="auto">}}
 
-| |o| | | |
+|x|o| | | |
 |-|-|-|-|-|
 | |x|o| | |
 | | |x|o| |
@@ -54,7 +54,7 @@ share: false
 
 
 
-{{< slides/centersvg src="/tools/grid2fp/examples/squig_knot.svg" height="auto">}}
+{{< slides/centersvg src="/tools/grid2fp/examples/squig.svg" height="auto">}}
 
 
 
