@@ -152,9 +152,9 @@ class Drawer {
         group.attr("stroke-width", this.stroke_width);
         group.attr("stroke", this.string_color);
 
-        for (var i = 0; i < this.segments_vert.length; i++) {
+        for (var i = 0; i < this.segments_hor.length; i++) {
             var inner_group = group.group().addClass("my-group" + i);
-            var path_str = this.__draw_segment_vert(this.segments_vert[i]);
+            var path_str = this.__draw_segment_hor(this.segments_hor[i]);
             var path = inner_group.path(path_str);
             path.stroke({
                 color: this.crossing_color,
@@ -164,9 +164,9 @@ class Drawer {
             var path = inner_group.path(path_str);
             path.plot();
         }
-        for (var i = 0; i < this.segments_hor.length; i++) {
+        for (var i = 0; i < this.segments_vert.length; i++) {
             var inner_group = group.group().addClass("my-group" + i);
-            var path_str = this.__draw_segment_hor(this.segments_hor[i]);
+            var path_str = this.__draw_segment_vert(this.segments_vert[i]);
             var path = inner_group.path(path_str);
             path.stroke({
                 color: this.crossing_color,
