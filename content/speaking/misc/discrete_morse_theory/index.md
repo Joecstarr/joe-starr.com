@@ -204,6 +204,8 @@ align-items: left;
 font-size: x-large;
 min-width:50% !important;
 ">
+
+{{< slides/center_block >}}
 <ol>
   <li>
   \(\#\LS \alpha^n<\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)
@@ -213,6 +215,8 @@ min-width:50% !important;
   </li>
 </ol>
 </div>
+
+{{< /slides/center_block >}}
 <div class="slidecolumn">
 {{<centerimg "/presentations/DiscMorse/Complex_f.png" 500>}}
 </div>
@@ -226,6 +230,8 @@ align-items: left;
 font-size: x-large;
 min-width:50% !important;
 ">
+{{< slides/center_block >}}
+
 <ol>
 <li>
 \(\#\LS \alpha^n<\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS\leq 1\)
@@ -234,6 +240,8 @@ min-width:50% !important;
 \(\#\LS \alpha^n>\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS\leq 1\)
 </li>
 </ol>
+{{< /slides/center_block >}}
+
 </div>
 <div class="slidecolumn">
 {{<centerimg "/presentations/DiscMorse/Complex_f_Not_Morse.png" 500>}}
@@ -261,6 +269,8 @@ align-items: left;
 font-size: x-large;
 min-width:50% !important;
 ">
+
+{{< slides/center_block >}}
 <ol>
 <li>
 \(\#\LS \alpha^n<\beta^{n+1} \MM f\LP\beta^{n+1}\RP\leq f\LP\alpha^n\RP\RS=0\)
@@ -269,6 +279,7 @@ min-width:50% !important;
 \(\#\LS \alpha^n>\gamma^{n-1} \MM f\LP\gamma^{n-1}\RP\geq f\LP\alpha^n\RP\RS=0\)
 </li>
 </ol>
+{{< /slides/center_block >}}
 </div>
 <div class="slidecolumn">
 {{<centerimg "/presentations/DiscMorse/Complex_crit.png" 500>}}
