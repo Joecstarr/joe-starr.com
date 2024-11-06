@@ -5,7 +5,7 @@ summary: "Brief overview of Discrete Morse Theory"
 tags: [
     "Talks",'research talks'
 ]
-draft: true
+draft: false
 
 showHeadingAnchors: false
 
