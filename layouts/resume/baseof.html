@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+{{  $cv_data := .Site.Data.resume }}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>
+
+    <title>{{ $cv_data.header.name | markdownify }} - CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asul:wght@700&family=Open+Sans&display=swap');
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        :root {
+            --text-color: {{ $cv_data.color.textColor | default "#343a40" }};
+            --text-secondary-color: {{ $cv_data.color.secondaryTextColor | default "#6c757d" }};
+            --background-color: {{ $cv_data.color.backgroundColor | default "#eaedf0" }};
+            --secondary-background-color: {{ $cv_data.color.secondaryBackgroundColor | default "#64ffda1a" }};
+            --primary-color: {{ $cv_data.color.primaryColor | default "#007bff" }};
+            --secondary-color: {{ $cv_data.color.secondaryColor | default "#f8f9fa" }};
+            }
+
+
+        @media print {
+            @page{
+                size: letter;
+            }
+            .section_title{
+                background-color: var(--primary-color);
+                color: #ffffff;
+                font-size: 12pt;
+            }
+            html{
+                font-size: 11pt;
+                color: #000000;
+                background-color: #ffffff;
+            }
+
+        }
+        @media screen {
+        html{
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .section_title{
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            font-size: 1.5vh;
+        }
+    }
+        .head .icon{
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin-left:10px;
+            margin-right:10px;
+        }
+        .icon{
+            margin-left:10px;
+            margin-right:10px;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+
+        h1, h2, h3,
+    h4, h5, h6  {
+            font-family: 'Asul', sans-serif;
+            padding: 0;
+            margin: .125vh;
+        }
+       h6  {
+            font-family: 'Asul', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            color: var(--primary-color);
+        }
+        p{
+            display: block;
+            margin-block-start: 0.1rem;
+            margin-block-end: 0.1rem;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
+        }
+        ul{
+            margin: 0;
+        }
+        .hr{
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            height: .5vh;
+            padding: 0;
+            margin-top: 0;
+        }
+        .hrlite{
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            height: .1vh;
+            padding: 0;
+            margin-top: 0;
+        }
+        .section_title{
+            display: inline-block;
+            padding: .5vw;
+            margin: .125vh;
+            margin-left: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
+        .summary {
+            margin-top: .5vh;
+            margin-bottom: .5vh;
+        }
+
+        .right {
+            float: right;
+            min-width: 17vw;
+            font-weight: bold;
+        }
+
+
+        .left p:first-of-type,
+        .left h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .left p:first-of-type {
+            margin-bottom: 0;
+        }
+        .dot {
+            height: .75em;
+            width: .75em;
+            border-radius: 50%;
+            border-color: var(--foreground-color);
+            border-width: .01em;
+            border-style: solid;
+            display: inline-block;
+          }
+        .dot_fill {
+            background-color: var(--primary-color);
+          }
+        .skills{
+            flex-flow: wrap;
+            justify-content: space-evenly;
+        }
+        .skill{
+            margin:.25em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="head">
+        <h1>{{ $cv_data.header.name | markdownify }}</h1>
+        <h2>{{ $cv_data.header.title | markdownify }}</h2>
+        <p>
+            {{ range $cv_data.header.contact }}
+
+            <a href="{{.address}}"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.text | markdownify }}</a>
+             {{ end}}
+        </p>
+        <p>
+            {{ $cv_data.header.summary | markdownify }}
+        </p>
+    </div>
+
+    {{ range $cv_data.sections }}
+    <section>
+
+        <h2 class="section_title"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.title | markdownify }}</h2>
+        <div class="hr"></div>
+        <div class="flex skills">
+            {{ range .bullets }}
+                <div class="flex">
+                    <h5 class="skill"> ‣ {{.name | markdownify}}</h5>
+                    {{with .level}}
+                    <div class="skill">
+                    {{if  gt .  1}}
+                        <div class="dot dot_fill"></div>
+                    {{else}}
+                        <div class="dot"></div>
+                    {{end}}
+                    {{if gt .  2}}
+                        <div class="dot dot_fill"></div>
+                    {{else}}
+                        <div class="dot"></div>
+                    {{end}}
+                    {{if gt .  3}}
+                        <div class="dot dot_fill"></div>
+                    {{else}}
+                        <div class="dot"></div>
+                    {{end}}
+                    {{if gt .  4}}
+                        <div class="dot dot_fill"></div>
+                    {{else}}
+                        <div class="dot"></div>
+                    {{end}}
+                    {{if ge .  5}}
+                        <div class="dot dot_fill"></div>
+                    {{else}}
+                        <div class="dot"></div>
+                    {{end}}
+                    </div>
+                    {{end}}
+            </div>
+            {{ end }}
+        </div>
+        {{ range .subsections }}
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4>{{.name | markdownify}}</h4>
+                    <h5>{{.subheader | markdownify}}</h5>
+                </div>
+                <div class="right">
+                    {{.dates | markdownify}}
+                </div>
+            </div>
+            <p class="summary">
+                {{.summary | markdownify}}
+            </p>
+        {{ end }}
+    </section>
+    {{ end }}
+
+</body>
+
+</html>
