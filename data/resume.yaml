@@ -40,10 +40,18 @@ sections:
           - name: Teaching Assistant
             subheader: "[University of Iowa](https://uiowa.edu)"
             dates: "Fall 2021 - Present"
+            summary: |-
+                * Lead undergraduate students as instructor of record.
+                * Lead undergraduate and graduate students as discussion leader.
+                * Tutor undergraduate and graduate students in math tutorial lab.
           - name: Software Engineer
             subheader: "[Western Diversified Plastics](https://westerndp.com/)"
             dates: "Dec 2020 - Aug 2021"
-            summary: Process tooling and AUTOSAR development
+            summary: |-
+                * ASPICE process tooling including tooling for customer
+                requirements parsing and tracing.
+                * Standing up of product prototypes.
+                * General AUTOSAR development.
           - name: Project Engineer
             subheader: "[Vector North America](https://Vector.com)"
             dates: "Jan 2017 - Dec 2020"
@@ -65,7 +73,7 @@ sections:
       subsections:
           - name: PhD in Mathematics
             subheader: University of Iowa
-            dates: Fall 2021 - Present
+            dates: Fall 2021 - Present (Expected Summer 2025)
           - name: MS in Mathematics
             subheader: University of Iowa
             dates: Fall 2021 - Spring 2023
@@ -77,13 +85,15 @@ sections:
             dates: Fall 2013 - Fall 2016
     # ##############################################################################
     # ##############################################################################
-    - title: Tools
+    - title: Tools/Frameworks
       icon: fa-solid fa-school
       bullets:
           - name: C
             level: 5
           - name: Python
             level: 5
+          - name: cmake
+            level: 4
           - name: CI/CD (Jenkins)
             level: 4
           - name: git
@@ -95,11 +105,17 @@ sections:
           - name: Vector CANoe
             level: 3
           - name: Vector DaVinci Configurator
-            level: 5
+            level: 4
           - name: Vector DaVinci Developer
-            level: 5
+            level: 4
           - name: Vector vTESTstudio
             level: 3
+          - name: Vector VectorCAST
+            level: 2
+          - name: Vector MICROSAR Classic
+            level: 4
+          - name: Vector Flash-Bootloader (pre 2021)
+            level: 5
     # ##############################################################################
     # ##############################################################################
     - title: Technologies/Standards
@@ -109,6 +125,14 @@ sections:
             level: 2
           - name: ASPICE
             level: 4
+          - name: AUTOSAR (classic)
+            level: 3
+          - name: SPI
+            level: 4
+          - name: CAN
+            level: 4
+          - name: TJA1145A
+            level: 3
     - title: Platforms
       icon: fa-solid fa-school
       bullets:
