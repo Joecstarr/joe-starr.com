@@ -193,3 +193,21 @@ li {
 .fill-foreground{fill: var(--r-Foreground) !important ;}
 .fill-highlight{fill: var(--r-Highlight) !important ;}
 .fill-selection{fill: var(--r-Selection) !important ;}
+
+
+
+.svgContainer.halfHeight > svg{
+    max-height:50vh;
+}
+.svgContainer.quarterHeight > svg{
+    max-height:25vh;
+}
+.svgContainer.thirdHeight > svg{
+    max-height:33vh;
+}
+.svgContainer.twothirdHeight > svg{
+    max-height:66vh;
+}
+.svgContainer.threequarterHeight > svg{
+    max-height:75vh;
+}
