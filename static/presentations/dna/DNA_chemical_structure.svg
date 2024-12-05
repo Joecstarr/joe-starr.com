@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1500 1750" font-family="Arial Rounded MT Bold">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 1750" font-family="Arial Rounded MT Bold">
 <defs>
 <radialGradient id="rgWhite">
 <stop stop-color="#FFF"/>
@@ -81,10 +79,10 @@
 <rect width="338" height="52" x="30.17" y="1026" fill="url(#lgGrey)"/>
 <g font-size="56">
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" systemLanguage="ru" id="trsvg99"><tspan id="trsvg1">&#x444;&#x43E;&#x441;&#x444;&#x430;&#x442;</tspan><tspan x="35.38" dy="70" id="trsvg2">&#x434;&#x435;&#x437;&#x43E;&#x43A;&#x441;&#x438;&#x440;&#x438;&#x431;&#x43E;&#x437;&#x430;</tspan><tspan x="35.38" dy="70" id="trsvg3">&#x43E;&#x441;&#x43D;&#x43E;&#x432;&#x43D;&#x430;&#x44F; &#x446;&#x435;&#x43F;&#x44C;</tspan></text>
-<text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" systemLanguage="de" id="trsvg100"><tspan id="trsvg4">Phosphat-</tspan><tspan x="35.38" dy="70" id="trsvg5">Deoxyribose</tspan><tspan x="35.38" dy="70" id="trsvg6">r&#xFC;ckgrat</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" systemLanguage="ru" id="trsvg99"><tspan id="trsvg1">&#1092;&#1086;&#1089;&#1092;&#1072;&#1090;</tspan><tspan x="35.38" dy="70" id="trsvg2">&#1076;&#1077;&#1079;&#1086;&#1082;&#1089;&#1080;&#1088;&#1080;&#1073;&#1086;&#1079;&#1072;</tspan><tspan x="35.38" dy="70" id="trsvg3">&#1086;&#1089;&#1085;&#1086;&#1074;&#1085;&#1072;&#1103; &#1094;&#1077;&#1087;&#1100;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" systemLanguage="de" id="trsvg100"><tspan id="trsvg4">Phosphat-</tspan><tspan x="35.38" dy="70" id="trsvg5">Deoxyribose</tspan><tspan x="35.38" dy="70" id="trsvg6">r&#252;ckgrat</tspan></text>
 
-<text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" id="trsvg101-vi" systemLanguage="vi"><tspan id="trsvg7-vi">Khung x&#x1B0;&#x1A1;ng</tspan><tspan x="35.38" dy="70" id="trsvg8-vi">Phosphat-</tspan><tspan x="35.38" dy="70" id="trsvg9-vi">deoxyribose</tspan></text><text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" id="trsvg101"><tspan id="trsvg7">Phosphate-</tspan><tspan x="35.38" dy="70" id="trsvg8">deoxyribose</tspan><tspan x="35.38" dy="70" id="trsvg9">backbone</tspan></text></switch>
+<text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" id="trsvg101-vi" systemLanguage="vi"><tspan id="trsvg7-vi">Khung x&#432;&#417;ng</tspan><tspan x="35.38" dy="70" id="trsvg8-vi">Phosphat-</tspan><tspan x="35.38" dy="70" id="trsvg9-vi">deoxyribose</tspan></text><text fill="#ffffff" class="fill-highlight" x="35.38" y="929.74" id="trsvg101"><tspan id="trsvg7">Phosphate-</tspan><tspan x="35.38" dy="70" id="trsvg8">deoxyribose</tspan><tspan x="35.38" dy="70" id="trsvg9">backbone</tspan></text></switch>
 </g>
 <rect width="338" height="71.91" x="350.89" y="187.13" fill="url(#lgAdenine)"/>
 <rect width="338" height="65.73" x="688.29" y="133.92" fill="url(#lgThymine)"/>
@@ -92,22 +90,22 @@
 <rect width="322.41" height="60" x="986.4" y="1489.66" fill="url(#lgCytosine)"/>
 <g font-size="72">
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="387.64" y="249.16" systemLanguage="ru" id="trsvg102"><tspan id="trsvg10">&#x410;&#x434;&#x435;&#x43D;&#x438;&#x43D;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="387.64" y="249.16" systemLanguage="ru" id="trsvg102"><tspan id="trsvg10">&#1040;&#1076;&#1077;&#1085;&#1080;&#1085;</tspan></text>
 <text fill="#ffffff" class="fill-highlight" x="387.64" y="249.16" systemLanguage="de" id="trsvg103"><tspan id="trsvg11">Adenin</tspan></text>
 
-<text fill="#ffffff" class="fill-highlight" x="387.64" y="249.16" id="trsvg104-vi" systemLanguage="vi"><tspan id="trsvg12-vi">A&#x111;&#xEA;nin</tspan></text><text fill="#ffffff" class="fill-highlight" x="387.64" y="249.16" id="trsvg104"><tspan id="trsvg12">Adenine</tspan></text></switch>
+<text fill="#ffffff" class="fill-highlight" x="387.64" y="249.16" id="trsvg104-vi" systemLanguage="vi"><tspan id="trsvg12-vi">A&#273;&#234;nin</tspan></text><text fill="#ffffff" class="fill-highlight" x="387.64" y="249.16" id="trsvg104"><tspan id="trsvg12">Adenine</tspan></text></switch>
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="997.56" y="1546.08" systemLanguage="ru" id="trsvg105"><tspan id="trsvg13">&#x426;&#x438;&#x442;&#x43E;&#x437;&#x438;&#x43D;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="997.56" y="1546.08" systemLanguage="ru" id="trsvg105"><tspan id="trsvg13">&#1062;&#1080;&#1090;&#1086;&#1079;&#1080;&#1085;</tspan></text>
 <text fill="#ffffff" class="fill-highlight" x="997.56" y="1546.08" systemLanguage="de" id="trsvg106"><tspan id="trsvg14">Cytosin</tspan></text>
 
-<text fill="#ffffff" class="fill-highlight" x="997.56" y="1546.08" id="trsvg107-vi" systemLanguage="vi"><tspan id="trsvg15-vi">Xit&#xF4;zin</tspan></text><text fill="#ffffff" class="fill-highlight" x="997.56" y="1546.08" id="trsvg107"><tspan id="trsvg15">Cytosine</tspan></text></switch>
+<text fill="#ffffff" class="fill-highlight" x="997.56" y="1546.08" id="trsvg107-vi" systemLanguage="vi"><tspan id="trsvg15-vi">Xit&#244;zin</tspan></text><text fill="#ffffff" class="fill-highlight" x="997.56" y="1546.08" id="trsvg107"><tspan id="trsvg15">Cytosine</tspan></text></switch>
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="695.96" y="1573.39" systemLanguage="ru" id="trsvg108"><tspan id="trsvg16">&#x413;&#x443;&#x430;&#x43D;&#x438;&#x43D;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="695.96" y="1573.39" systemLanguage="ru" id="trsvg108"><tspan id="trsvg16">&#1043;&#1091;&#1072;&#1085;&#1080;&#1085;</tspan></text>
 <text fill="#ffffff" class="fill-highlight" x="695.96" y="1573.39" systemLanguage="de" id="trsvg109"><tspan id="trsvg17">Guanin</tspan></text>
 
 <text fill="#ffffff" class="fill-highlight" x="695.96" y="1573.39" id="trsvg110-vi" systemLanguage="vi"><tspan id="trsvg18-vi">Guanin</tspan></text><text fill="#ffffff" class="fill-highlight" x="695.96" y="1573.39" id="trsvg110"><tspan id="trsvg18">Guanine</tspan></text></switch>
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="702.26" y="189.37" systemLanguage="ru" id="trsvg111"><tspan id="trsvg19">&#x422;&#x438;&#x43C;&#x438;&#x43D;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="702.26" y="189.37" systemLanguage="ru" id="trsvg111"><tspan id="trsvg19">&#1058;&#1080;&#1084;&#1080;&#1085;</tspan></text>
 <text fill="#ffffff" class="fill-highlight" x="702.26" y="189.37" systemLanguage="de" id="trsvg112"><tspan id="trsvg20">Thymin</tspan></text>
 
 <text fill="#ffffff" class="fill-highlight" x="702.26" y="189.37" id="trsvg113-vi" systemLanguage="vi"><tspan id="trsvg21-vi">Timin</tspan></text><text fill="#ffffff" class="fill-highlight" x="702.26" y="189.37" id="trsvg113"><tspan id="trsvg21">Thymine</tspan></text></switch>
@@ -123,10 +121,10 @@
 <switch><text fill="#ffffff" class="fill-highlight" x="202" y="303.6" id="trsvg115"><tspan id="trsvg23">O</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="268" y="318.6" id="trsvg116"><tspan id="trsvg24">P</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="316" y="360.6" id="trsvg117"><tspan id="trsvg25">O</tspan></text></switch>
-<switch><text fill="#ffffff" class="fill-highlight" x="226" y="374.6" id="trsvg118"><tspan id="trsvg26">&#x2212;</tspan><tspan dy="-5" id="trsvg27">O</tspan></text></switch>
+<switch><text fill="#ffffff" class="fill-highlight" x="226" y="374.6" id="trsvg118"><tspan id="trsvg26">&#8722;</tspan><tspan dy="-5" id="trsvg27">O</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="407" y="441.6" id="trsvg119"><tspan id="trsvg28">O</tspan></text></switch>
 </g>
-<switch><text fill="#ffffff" class="fill-highlight" x="330" y="274.59" id="trsvg120"><tspan id="trsvg29">&#x2212;</tspan></text></switch>
+<switch><text fill="#ffffff" class="fill-highlight" x="330" y="274.59" id="trsvg120"><tspan id="trsvg29">&#8722;</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="636" y="1578.6" id="trsvg121"><tspan id="trsvg30">OH</tspan></text></switch>
 <use xlink:href="#pdb1" x="87.51" y="329.79"/>
 <use xlink:href="#pdb1" x="178.34" y="656.75"/>
@@ -139,13 +137,13 @@
 <path class="structure" d="M952 450.59l-26-37 38-52 57 20 2 61-45 16m-87-71 35 26m97 29 47 44-11 45m7 24 28 25m22-4 20-23m-18 35 33 7m0 6-33-7m-15 6-9 35"/>
 <switch><text fill="#ffffff" class="fill-highlight" x="963" y="471.6" id="trsvg122"><tspan id="trsvg31">O</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="1055" y="556.6" id="trsvg123"><tspan id="trsvg32">O</tspan></text></switch>
-<switch><text fill="#ffffff" class="fill-highlight" x="1150" y="549.6" id="trsvg124"><tspan id="trsvg33">O</tspan><tspan dy="5" id="trsvg34">&#x2212;</tspan></text></switch>
+<switch><text fill="#ffffff" class="fill-highlight" x="1150" y="549.6" id="trsvg124"><tspan id="trsvg33">O</tspan><tspan dy="5" id="trsvg34">&#8722;</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="1105" y="597.6" id="trsvg125"><tspan id="trsvg35">P</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="1166" y="610.6" id="trsvg126"><tspan id="trsvg36">O</tspan></text></switch>
 <switch><text fill="#ffffff" class="fill-highlight" x="1090" y="658.6" id="trsvg127"><tspan id="trsvg37">O</tspan></text></switch>
 </g>
 <switch><text fill="#ffffff" class="fill-highlight" x="1015" y="339.6" id="trsvg128"><tspan id="trsvg38">OH</tspan></text></switch>
-<switch><text fill="#ffffff" class="fill-highlight" x="1332" y="1645.59" id="trsvg129"><tspan id="trsvg39">&#x2212;</tspan></text></switch>
+<switch><text fill="#ffffff" class="fill-highlight" x="1332" y="1645.59" id="trsvg129"><tspan id="trsvg39">&#8722;</tspan></text></switch>
 <use xlink:href="#pdb2" x="87.33" y="330.02"/>
 <use xlink:href="#pdb2" x="175.63" y="655.5"/>
 <use xlink:href="#pdb2" x="264.16" y="984.12"/>
@@ -240,24 +238,24 @@
 
 <g font-size="48">
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" systemLanguage="ru" id="trsvg168"><tspan id="trsvg87">3'-&#x43A;&#x43E;&#x43D;&#x435;&#x446;</tspan></text>
-<text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" systemLanguage="de" id="trsvg169"><tspan id="trsvg88">3&#x2032; Ende</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" systemLanguage="ru" id="trsvg168"><tspan id="trsvg87">3'-&#1082;&#1086;&#1085;&#1077;&#1094;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" systemLanguage="de" id="trsvg169"><tspan id="trsvg88">3&#8242; Ende</tspan></text>
 
-<text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" id="trsvg170-vi" systemLanguage="vi"><tspan id="trsvg89-vi">&#x110;&#x1EA7;u 3'</tspan></text><text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" id="trsvg170"><tspan id="trsvg89">3&#x2032; end</tspan></text></switch>
+<text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" id="trsvg170-vi" systemLanguage="vi"><tspan id="trsvg89-vi">&#272;&#7847;u 3'</tspan></text><text fill="#ffffff" class="fill-highlight" x="998.08" y="293.56" id="trsvg170"><tspan id="trsvg89">3&#8242; end</tspan></text></switch>
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" systemLanguage="ru" id="trsvg171"><tspan id="trsvg90">5'-&#x43A;&#x43E;&#x43D;&#x435;&#x446;</tspan></text>
-<text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" systemLanguage="de" id="trsvg172"><tspan id="trsvg91">5&#x2032; Ende</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" systemLanguage="ru" id="trsvg171"><tspan id="trsvg90">5'-&#1082;&#1086;&#1085;&#1077;&#1094;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" systemLanguage="de" id="trsvg172"><tspan id="trsvg91">5&#8242; Ende</tspan></text>
 
-<text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" id="trsvg173-vi" systemLanguage="vi"><tspan id="trsvg92-vi">&#x110;&#x1EA7;u 5'</tspan></text><text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" id="trsvg173"><tspan id="trsvg92">5&#x2032; end</tspan></text></switch>
+<text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" id="trsvg173-vi" systemLanguage="vi"><tspan id="trsvg92-vi">&#272;&#7847;u 5'</tspan></text><text fill="#ffffff" class="fill-highlight" x="1317.45" y="1710.75" id="trsvg173"><tspan id="trsvg92">5&#8242; end</tspan></text></switch>
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" systemLanguage="ru" id="trsvg174"><tspan id="trsvg93">3'-&#x43A;&#x43E;&#x43D;&#x435;&#x446;</tspan></text>
-<text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" systemLanguage="de" id="trsvg175"><tspan id="trsvg94">3&#x2032; Ende</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" systemLanguage="ru" id="trsvg174"><tspan id="trsvg93">3'-&#1082;&#1086;&#1085;&#1077;&#1094;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" systemLanguage="de" id="trsvg175"><tspan id="trsvg94">3&#8242; Ende</tspan></text>
 
-<text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" id="trsvg176-vi" systemLanguage="vi"><tspan id="trsvg95-vi">&#x110;&#x1EA7;u 3'</tspan></text><text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" id="trsvg176"><tspan id="trsvg95">3&#x2032; end</tspan></text></switch>
+<text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" id="trsvg176-vi" systemLanguage="vi"><tspan id="trsvg95-vi">&#272;&#7847;u 3'</tspan></text><text fill="#ffffff" class="fill-highlight" x="571.68" y="1632.95" id="trsvg176"><tspan id="trsvg95">3&#8242; end</tspan></text></switch>
 <switch>
-<text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" systemLanguage="ru" id="trsvg177"><tspan id="trsvg96">5'-&#x43A;&#x43E;&#x43D;&#x435;&#x446;</tspan></text>
-<text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" systemLanguage="de" id="trsvg178"><tspan id="trsvg97">5&#x2032; Ende</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" systemLanguage="ru" id="trsvg177"><tspan id="trsvg96">5'-&#1082;&#1086;&#1085;&#1077;&#1094;</tspan></text>
+<text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" systemLanguage="de" id="trsvg178"><tspan id="trsvg97">5&#8242; Ende</tspan></text>
 
-<text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" id="trsvg179-vi" systemLanguage="vi"><tspan id="trsvg98-vi">&#x110;&#x1EA7;u 5'</tspan></text><text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" id="trsvg179"><tspan id="trsvg98">5&#x2032; end</tspan></text></switch>
+<text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" id="trsvg179-vi" systemLanguage="vi"><tspan id="trsvg98-vi">&#272;&#7847;u 5'</tspan></text><text fill="#ffffff" class="fill-highlight" x="105.68" y="246.76" id="trsvg179"><tspan id="trsvg98">5&#8242; end</tspan></text></switch>
 </g>
 </svg>

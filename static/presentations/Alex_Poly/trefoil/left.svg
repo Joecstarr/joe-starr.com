@@ -1,27 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Vectornator (http://vectornator.io/) -->
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 1002.675 1014.5041" xml:space="preserve" id="svg11" sodipodi:docname="left.svg" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)">
+    <sodipodi:namedview id="namedview13" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false" inkscape:zoom="0.6675088" inkscape:cx="659.91639" inkscape:cy="499.61888" inkscape:window-width="1920" inkscape:window-height="1120" inkscape:window-x="-11" inkscape:window-y="-11" inkscape:window-maximized="1" inkscape:current-layer="svg11"/>
+<defs id="defs2">
+        <inkscape:path-effect effect="knot" id="path-effect399" is_visible="true" lpeversion="1" switcher_size="15" interruption_width="5.6" prop_to_stroke_width="true" add_stroke_width="inkscape_1.0_and_up" both="false" inverse_width="false" add_other_stroke_width="inkscape_1.0_and_up" crossing_points_vector="263.60926 | 339.90967 | 0 | 0 | 0 | 3 | 0.79165275 | 3.5727668 | 1 | 500.5577 | 876.00114 | 0 | 0 | 1 | 4 | 1.5348238 | 4.8162544 | 1 | 726.20509 | 342.12732 | 0 | 0 | 2 | 5 | 2.8394945 | 5.4847435 | 1"/>
+    </defs>
+<g id="Layer-1" vectornator:layerName="Layer 1" transform="translate(1.9821528,7.3313544)">
 
-<svg stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
-    version="1.1" viewBox="0 0 1002.675 1014.5041" xml:space="preserve" id="svg11" sodipodi:docname="left.svg"
-    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
-    xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io">
-    <sodipodi:namedview id="namedview13" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0"
-        inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
-        inkscape:deskcolor="#d1d1d1" showgrid="false" inkscape:zoom="0.6675088" inkscape:cx="659.91639"
-        inkscape:cy="499.61888" inkscape:window-width="1920" inkscape:window-height="1120" inkscape:window-x="-11"
-        inkscape:window-y="-11" inkscape:window-maximized="1" inkscape:current-layer="svg11" />&#10;<defs id="defs2">
-        <inkscape:path-effect effect="knot" id="path-effect399" is_visible="true" lpeversion="1" switcher_size="15"
-            interruption_width="5.6" prop_to_stroke_width="true" add_stroke_width="inkscape_1.0_and_up" both="false"
-            inverse_width="false" add_other_stroke_width="inkscape_1.0_and_up"
-            crossing_points_vector="263.60926 | 339.90967 | 0 | 0 | 0 | 3 | 0.79165275 | 3.5727668 | 1 | 500.5577 | 876.00114 | 0 | 0 | 1 | 4 | 1.5348238 | 4.8162544 | 1 | 726.20509 | 342.12732 | 0 | 0 | 2 | 5 | 2.8394945 | 5.4847435 | 1" />
-    </defs>&#10;<g id="Layer-1" vectornator:layerName="Layer 1" transform="translate(1.9821528,7.3313544)">&#10;
-        <path
-            d="M 747.83067,217.26969 C 723.79524,-113.78877 -77.22422,-107.19766 426.12368,768.65344 M 596.1588,958.09082 C 949.92794,1152.8234 1325.1747,228.70298 388.49477,322.93034 M 140.33999,371.29276 C -236.4218,561.85452 366.23183,1591.7271 692.47951,463.53304"
-            fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="24.5704" id="path4" sodipodi:nodetypes="ccccccc"
-            inkscape:path-effect="#path-effect399"
-            inkscape:original-d="M 738.563,299.681 C 858.22614,-120.39282 -167.87952,-177.95901 472.07297,845.16802 L 525.333,902.819 C 902.086,1290.97 1411.76,171.475 315.101,332.037 l -89.9,13.745 c -551.719,76.794 149.273,1372.658 489.378,36.278 z"
-            style="stroke-width:45;stroke-dasharray:none" />&#10;&#10;&#10;
-    </g>&#10;
+        <path d="M 747.83067,217.26969 C 723.79524,-113.78877 -77.22422,-107.19766 426.12368,768.65344 M 596.1588,958.09082 C 949.92794,1152.8234 1325.1747,228.70298 388.49477,322.93034 M 140.33999,371.29276 C -236.4218,561.85452 366.23183,1591.7271 692.47951,463.53304" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="24.5704" id="path4" sodipodi:nodetypes="ccccccc" inkscape:path-effect="#path-effect399" inkscape:original-d="M 738.563,299.681 C 858.22614,-120.39282 -167.87952,-177.95901 472.07297,845.16802 L 525.333,902.819 C 902.086,1290.97 1411.76,171.475 315.101,332.037 l -89.9,13.745 c -551.719,76.794 149.273,1372.658 489.378,36.278 z" style="stroke-width:45;stroke-dasharray:none"/>
+
+
+
+    </g>
+
 </svg>

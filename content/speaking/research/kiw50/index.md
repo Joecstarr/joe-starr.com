@@ -49,7 +49,7 @@ qr:
     margin-right: auto !important;
 }
 #tech_img {
-    width:30vw;
+    width:40vw;
     height:auto;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -124,7 +124,7 @@ a.lowercase {
 $ $
 {{% /slides/citations %}}
 
-## Knots in Washington (11/15/23)
+## Knots in Washington (12/7/24)
 
 # The Tanglenomicon
 
@@ -136,49 +136,6 @@ Ethan Rooke, Joseph Starr*
 <p style="font-size:.6em; text-align:center !important">
 Mathematics Department at The University of Iowa<p>
 
-
-
----
-
-# Knots
-
----
-d
-{{< slides/row style="">}}
-{{< slides/col style="flex-grow:2;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/trefoil/left.svg">}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:2;">}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/Alex_Poly/alg/Alg_1.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:3;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/mathday23/tknot_35.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:4;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/mathday23/star.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
-{{% slides/citations %}}
-[https://www.knotplot.com/](https://www.knotplot.com/)
-{{% /slides/citations %}}
 
 
 ---
@@ -490,7 +447,6 @@ $\ $
 
 
 # Rational Tangles
-## 8,388,608 up to 23 crossings
 
 ---
 
@@ -524,8 +480,6 @@ $\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\&\\
 
 
 # Montesinos
-## 120,344,744 up to 23 crossings
-### with non-fixed boundary
 
 ---
 {{% slides/uncenter %}}
@@ -595,52 +549,6 @@ $$=[3\  2\ 0] + [3\  2\  0]$$
 {{< /slides/center_block   >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
-
----
-
-# What's Next
-
-
----
-# Generalized Montesinos
-
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/genmont_containment.svg" height="auto">}}
-
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/GenMont.svg" height="auto">}}
-
-
-
----
-
-### Operation $\circ$
-
-{{< slides/center_block grow="1" >}}
-{{< slides/row  style=" ">}}
-{{< slides/col  style="flex-grow:3;" >}}
-{{< slides/centersvg src="/presentations/lightning/annotated/GenMont.svg" >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\ $
-{{< /slides/col >}}
-{{< slides/col  style="flex-grow:1;" >}}
-{{< slides/center_block grow="1" >}}
-$= \color{var(--r-Purple)}([1\ 2\  0] + [1\ 2\ 0] + [1\ 1\  0]) \color{var(--r-Foreground)}\circ \color{var(--r-Red)}[2\  2]$
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-{{< /slides/center_block >}}
-
-
-{{% slides/citations %}}
-Moon, Hyeyoung, and Isabel K. Darcy. "Tangle Equations Involving Montesinos Links." Journal of Knot Theory and Its Ramifications 30, no. 08 (July 2021): 2150060. [https://doi.org/10.1142/S0218216521500607](https://doi.org/10.1142/S0218216521500607).
-{{% /slides/citations %}}
-
 
 ---
 
@@ -767,6 +675,11 @@ $\  $
 {{< /slides/row >}}
 {{< /slides/center_block  >}}
 
+
+{{% slides/citations  %}}
+F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+{{% /slides/citations %}}
+
 ---
 
 {{< slides/row  >}}
@@ -799,16 +712,20 @@ A vertex with ring number $\geq 1$ or valence $\geq 3$ is called an
 {{< /slides/col >}}
 {{< /slides/row >}}
 
+{{% slides/citations  %}}
+F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+{{% /slides/citations %}}
+
 ---
 
 {{< slides/row  >}}
 {{< slides/col style="flex-grow:5;" >}}
 
 
-{{< slides/centersvg src="/presentations/bands/arbor_ring_essential.svg"  direct="true" class="quarterHeight" style="margin-bottom:4vh;">}}
+{{< slides/centersvg src="/presentations/bands/arbor_ring_essential.svg"  direct="true" class="quarterHeight" style="margin-bottom:3vh;">}}
 
 
-{{< slides/centersvg src="/presentations/bands/arbor_ring_noessential.svg"  direct="true" class="quarterHeight"  style="margin-top:4vh;margin-bottom:4vh;" >}}
+{{< slides/centersvg src="/presentations/bands/arbor_ring_noessential.svg"  direct="true" class="quarterHeight"  style="margin-top:3vh;margin-bottom:2vh;" >}}
 
 
 
@@ -828,56 +745,459 @@ are called the *Sticks* of a tree.
 {{< /slides/col >}}
 {{< /slides/row >}}
 
+
+{{% slides/citations  %}}
+F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+{{% /slides/citations %}}
+
+---
+## Linearization of Arborescent tangles
+
+{{< slides/centersvg src="/presentations/bands/watt_walk_tangle.svg"  direct="true" class="threequarterHeight"   >}}
+
+---
+## $\pm$ Abbreviated Canonical Tangle Trees
+
+
+* *Weight Condition* At each vertex of $\Gamma$, at most one weight is non-zero.
+* *Stick Condition* On any stick the weights are non-zero except for end vertices that have a bond free in $\Gamma_0$ and for the case $\Gamma_0=\alpha(0[0])$, $\Gamma_0=\alpha[0]$. The non-zero weights along any stick are of alternating sign. No end vertex of a stick has weight $\pm 1$ unless it has a bond free in $\Gamma_0$, or $\Gamma_0=[\pm 1]$.
+* One of:
+    * *Positivity Condition* There are no sticks in $\Gamma_0$ of the form $[-1],\ [ -2],\ \alpha[-2],\ \alpha[2]\alpha$.
+    * *Negative Condition* There are no sticks in $\Gamma_0$ of the form $[1],\ [ 2],\ \alpha[2],\ \alpha[2]\alpha$
+* *Abbreviation Condition* A vertex of $\Gamma_0$ of ring number $1$ has valence $\geq 2$, and $\Gamma_0$ is not $\alpha\langle 2\ 0\rangle$. Every ring subtree of $\Gamma$ is adjacent to a non-essential vertex.
+
+
+{{% slides/citations  %}}
+F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+{{% /slides/citations %}}
+
 ---
 
-# Rational Tangle Trees
+
+{{<  slides/admonition type="Note" title="Note" markdownify="true" >}}
+
+$\pm$ abbreviated canonical tangle trees do not describe minimal diagrams.
+{{<  /slides/admonition >}}
+
+{{<  slides/admonition type="Definition" title="Definition" markdownify="true" >}}
+We call the crossing number of a $\pm$ abbreviated canonical tangle tree the
+*canonical arborescent crossing number*.
+{{<  /slides/admonition >}}
+
+---
+
+## Rational Tangle Trees
+
+{{< slides/centersvg src="/presentations/bands/watt_rational.svg"  direct="true" >}}
 
 
-{{< slides/row  style="align-items:baseline;">}}
-{{< slides/col  >}}
-{{< slides/centersvg src="/presentations/lightning/Alg.svg"  >}}
-{{< /slides/col >}}
-{{< slides/col style="text-align:center;">}}
-A tangle build from $\vee$ and $+$ on some rational tangles.
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg"  >}}
-{{< /slides/col >}}
+---
+
+## Montesinos Tangle Trees
+
+
+{{< slides/centersvg src="/presentations/bands/watt_montesinos.svg"  direct="true" >}}
+
+
+---
+
+## Constructing an arborescent tangle
+
+---
+## Building a rooted tree
+
+
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree.svg" direct="true" class="quarterHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/ornament.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree_decorated.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+{{< slides/row style="margin-top:4vh;" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex.svg" direct="true" class="quarterHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/double_vertex.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+{{% slides/citations  %}}
+Nakano, S. (2002). Efficient generation of plane trees. In Information Processing Letters (Vol. 84, Issue 3, pp. 167-172). Elsevier BV. [https://doi.org/10.1016/s0020-0190(02)00240-5](https://doi.org/10.1016/s0020-0190(02)00240-5)
+{{% /slides/citations %}}
+
+---
+
+
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree.svg" direct="true" class="quarterHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/ornament.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree_decorated.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+
+{{< slides/row style="margin-top:4vh;" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/double_vertex.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/double_vertex_decorated.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+
+{{% slides/citations  %}}
+Nakano, S. (2002). Efficient generation of plane trees. In Information Processing Letters (Vol. 84, Issue 3, pp. 167-172). Elsevier BV. [https://doi.org/10.1016/s0020-0190(02)00240-5](https://doi.org/10.1016/s0020-0190(02)00240-5)
+{{% /slides/citations %}}
+
+---
+# Building a tangle tree
+
+---
+{{<  slides/admonition type="Example" title="Building Tangles with arborescent crossing number 4" >}}
+
+{{< slides/row style="margin:1vh;" >}}
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg  src="/presentations/bands/tree_building/1_to_3.svg" direct="true" class="halfHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1" style="font-size:2em" >}}
+        Trees with $4$ crossings
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+{{<  /slides/admonition >}}
+
+---
+
+# The integral 4 tangle
+
+{{< slides/center_block grow="1"  >}}
+    {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex_4.svg" direct="true" class="quarterHeight"  >}}
+{{< /slides/center_block  >}}
+
+---
+
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree.svg" direct="true" class="eighthHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/ornament.svg" direct="true" class="eighthHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree_decorated.svg" direct="true" class="eighthHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+
+{{< slides/row style="margin-top:4vh;" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        $2$
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        $2$
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:3;" >}}
+       $4$
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+{{< slides/row style="height:33vh" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/2.svg" direct="true" class="quarterHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/2h.svg" direct="true" class="eighthHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/2+2.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
 {{< /slides/row >}}
 
 ---
 
-# Montesinos Tangle Trees
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree.svg" direct="true" class="eighthHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/ornament.svg" direct="true" class="eighthHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree_decorated.svg" direct="true" class="eighthHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
 
 
-{{< slides/row  style="align-items:baseline;">}}
-{{< slides/col  >}}
-{{< slides/centersvg src="/presentations/lightning/Alg.svg"  >}}
-{{< /slides/col >}}
-{{< slides/col style="text-align:center;">}}
-A tangle build from $\vee$ and $+$ on some rational tangles.
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg"  >}}
-{{< /slides/col >}}
+
+{{< slides/row style="margin-top:4vh;" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        $1$
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        $3$
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:3;" >}}
+       $4$
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+{{< slides/row style="height:33vh" >}}
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/1.svg" direct="true" class="quarterHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:2;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/3h.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/1+3.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+---
+
+{{< slides/row style="" >}}
+    {{< slides/col style="flex-grow:1;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree.svg" direct="true" class="eighthHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;margin-left:2vw;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/ornament.svg" direct="true" class="eighthHeight"  >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/christmas_tree_decorated.svg" direct="true" class="eighthHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+
+{{< slides/row style="margin-top:4vh;" >}}
+    {{< slides/col style="flex-grow:1;" >}}
+        $0$
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;margin-left:2vw;" >}}
+        $4$
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+    {{< slides/col style="flex-grow:3;" >}}
+       $4$
+    {{< /slides/col>}}
+{{< /slides/row >}}
+
+
+{{< slides/row  >}}
+    {{< slides/col style="flex-grow:1;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/0.svg" direct="true" class="quarterHeight"   >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;margin-left:2vw;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/4h.svg" direct="true" class="quarterHeight" >}}
+        {{< /slides/center_block  >}}
+    {{< /slides/col>}}
+
+    {{< slides/col  >}}
+        {{< slides/center_block grow="1"  >}}
+        $\rightarrow$
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
+
+    {{< slides/col style="flex-grow:3;" >}}
+        {{< slides/center_block grow="1"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/0+4.svg" direct="true" class="quarterHeight"  >}}
+        {{< /slides/center_block >}}
+    {{< /slides/col>}}
 {{< /slides/row >}}
 
 ---
 
-# Generalized Montesinos Tangle Trees
+### Tangles of canonical arborescent
+### crossing number up to 4
 
 
-{{< slides/row  style="align-items:baseline;">}}
-{{< slides/col  >}}
-{{< slides/centersvg src="/presentations/lightning/Alg.svg"  >}}
-{{< /slides/col >}}
-{{< slides/col style="text-align:center;">}}
-A tangle build from $\vee$ and $+$ on some rational tangles.
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg"  >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
+{{< slides/centersvg src="/presentations/bands/tree_building/1_to_4.svg" direct="true"  >}}
+
 
 ---
 
@@ -977,6 +1297,7 @@ $6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2
 14. Jos ́e M. Montesinos. Seifert manifolds that are ramified two-sheeted cyclic coverings. Bol. Soc. Mat. Mexicana (2), 18:1-32, 1973.
 15. F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
 16. Connolly, Nicholas. Classification and Tabulation of 2-String Tangles: The Astronomy of Subtangle Decompositions. University of Iowa, 2021, https://doi.org/10.17077/etd.005978.
+17. Nakano, S. (2002). Efficient generation of plane trees. In Information Processing Letters (Vol. 84, Issue 3, pp. 167-172). Elsevier BV. [https://doi.org/10.1016/s0020-0190(02)00240-5](https://doi.org/10.1016/s0020-0190(02)00240-5)
 {{% /slides/citations %}}
 
 ---
@@ -997,4 +1318,6 @@ $6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2
 18. <a href="https://commons.wikimedia.org/wiki/File:Pytest_logo.svg">Holger Krekel</a>, <a href="https://creativecommons.org/licenses/by/2.5">CC BY 2.5</a>, via Wikimedia Commons
 18. <a href="https://commons.wikimedia.org/wiki/File:Emscripten_logo.svg">Alon Zakai</a>, <a href="http://opensource.org/licenses/mit-license.php">MIT</a>, via Wikimedia Commons
 18. <a href="https://commons.wikimedia.org/wiki/File:Cmake.svg">Cmake team. The original uploader was Francesco Betti Sorbelli at Italian Wikipedia.. Vectorized by Magasjukur2</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+19. <a href="https://commons.wikimedia.org/wiki/File:Emojione_1F332.svg">Emoji One</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+20. <a href="https://commons.wikimedia.org/wiki/File:Ornament_-_The_Noun_Project.svg">Matt Brooks</a>, CC0, via Wikimedia Commons
 {{% /slides/citations %}}

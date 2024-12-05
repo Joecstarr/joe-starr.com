@@ -1,31 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    version="1.1" viewBox="0 0 500 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs />
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" xml:space="preserve">
+    <defs/>
 
     <g clip-path="url(#ArtboardFrame_90)" id="Layer-1" vectornator:layerName="Layer 1">
-        <path d="M500.492 500C479.261 204.948 23.5657 207.504 0.492384 500" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="30" />
+        <path d="M500.492 500C479.261 204.948 23.5657 207.504 0.492384 500" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
     </g>
     <g clip-path="url(#ArtboardFrame_90)" id="Layer-2" vectornator:layerName="Layer 2">
-        <path d="M500.492-5.68434e-14C479.261 296.011 23.5657 293.448 0.492384 0" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="30" />
+        <path d="M500.492-5.68434e-14C479.261 296.011 23.5657 293.448 0.492384 0" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
     </g>
     <g clip-path="url(#ArtboardFrame_90)" id="Layer-3" vectornator:layerName="Layer 3">
         <g opacity="1">
             <clipPath id="ClipPath">
-                <path
-                    d="M40.5299 339.135L80.184 298.465L138.565 329.399L69.682 389.813L412.735 407.24L418.144 379.715L378.04 339.517L413.967 300.569L455.493 340.626L578.141 245.969L551.572 172.555L418.027 184.441L191.491 153.677L28.581 165.563L-73.5 294.912L40.5299 339.135Z" />
+                <path d="M40.5299 339.135L80.184 298.465L138.565 329.399L69.682 389.813L412.735 407.24L418.144 379.715L378.04 339.517L413.967 300.569L455.493 340.626L578.141 245.969L551.572 172.555L418.027 184.441L191.491 153.677L28.581 165.563L-73.5 294.912L40.5299 339.135Z"/>
             </clipPath>
             <g clip-path="url(#ClipPath)">
-                <path d="M500.492 250C421.301 421.167 79.3415 419.95 0.492384 250" fill="none" opacity="1"
-                    class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="30" />
+                <path d="M500.492 250C421.301 421.167 79.3415 419.95 0.492384 250" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
             </g>
         </g>
     </g>

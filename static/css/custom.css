@@ -199,6 +199,12 @@ li {
 .svgContainer.halfHeight > svg{
     max-height:50vh;
 }
+.svgContainer.fullHeight > svg{
+    max-height:100vh;
+}
+.svgContainer.eighthHeight > svg{
+    max-height:12.5vh;
+}
 .svgContainer.quarterHeight > svg{
     max-height:25vh;
 }

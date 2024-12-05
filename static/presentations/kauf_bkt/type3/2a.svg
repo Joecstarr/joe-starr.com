@@ -1,30 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    version="1.1" viewBox="0 0 500 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs />
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 500" xml:space="preserve">
+    <defs/>
 
     <g clip-path="url(#ArtboardFrame_88)" id="Layer-1" vectornator:layerName="Layer 1">
-        <path d="M0 0C21.2312 295.052 476.927 292.496 500 0" fill="none" opacity="1" class="stroke-orange stroke-orange"
-            stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" />
+        <path d="M0 0C21.2312 295.052 476.927 292.496 500 0" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
     </g>
     <g clip-path="url(#ArtboardFrame_88)" id="Layer-2" vectornator:layerName="Layer 2">
-        <path d="M0 500C21.2312 203.989 476.927 206.552 500 500" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="30" />
+        <path d="M0 500C21.2312 203.989 476.927 206.552 500 500" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
     </g>
     <g clip-path="url(#ArtboardFrame_88)" id="Layer-3" vectornator:layerName="Layer 3">
         <g opacity="1">
             <clipPath id="ClipPath">
-                <path
-                    d="M459.963 160.865L420.308 201.535L361.928 170.601L430.81 110.187L87.7577 92.7597L82.348 120.285L122.453 160.483L86.5254 199.431L44.9991 159.374L-77.6484 254.031L-51.0794 327.445L82.465 315.559L309.001 346.323L471.911 334.437L573.992 205.088L459.963 160.865Z" />
+                <path d="M459.963 160.865L420.308 201.535L361.928 170.601L430.81 110.187L87.7577 92.7597L82.348 120.285L122.453 160.483L86.5254 199.431L44.9991 159.374L-77.6484 254.031L-51.0794 327.445L82.465 315.559L309.001 346.323L471.911 334.437L573.992 205.088L459.963 160.865Z"/>
             </clipPath>
             <g clip-path="url(#ClipPath)">
-                <path d="M0 250C79.1912 78.833 421.151 80.0499 500 250" fill="none" opacity="1"
-                    class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="30" />
+                <path d="M0 250C79.1912 78.833 421.151 80.0499 500 250" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
             </g>
         </g>
     </g>
