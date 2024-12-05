@@ -1,20 +1,19 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve">
-    <defs/>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 985.70715 994.02521" xml:space="preserve" id="svg8" sodipodi:docname="trefoil_aa.svg"><sodipodi:namedview id="namedview8" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
+    <defs id="defs1"/>
 
-    <g clip-path="url(#ArtboardFrame_63)" id="Layer-1" vectornator:layerName="Layer 1">
-        <path d="M631.197 323.446C662.568 330.202 745.473 303.564 747.986 232.171" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
-        <path d="M136.276 373.688C221.454 331.083 262.905 348.506 283.676 442.876" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
-        <path d="M270.732 219.921C258.227 272.458 282.845 343.079 388.415 322.833" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
-        <path d="M712.229 389.517C728.712 327.209 816.583 376.199 837.35 390.256" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+    <g clip-path="url(#ArtboardFrame_63)" id="Layer-1" vectornator:layerName="Layer 1" transform="translate(-6.4590408,-4.5401177)">
+        <path d="m 631.197,323.446 c 31.371,6.756 114.276,-19.882 116.789,-91.275" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path1"/>
+        <path d="m 136.276,373.688 c 85.178,-42.605 126.629,-25.182 147.4,69.188" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path2"/>
+        <path d="m 270.732,219.921 c -12.505,52.537 12.113,123.158 117.683,102.912" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path3"/>
+        <path d="m 712.229,389.517 c 16.483,-62.308 104.354,-13.318 125.121,0.739" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path4"/>
         <clipPath id="ClipPath">
-            <path d="M678.954 246.428L591.211 395.591L759.035 385.372L950.078 339.435L1240.51 636.005L700.889 1161.58L-96.6902 1127.36L-119.503 232.39L345.254 460.923L430.285 382.074L195.509 155.201L532.865-176.824L1052.97 202.884L678.954 246.428Z"/>
+            <path d="M 678.954,246.428 591.211,395.591 759.035,385.372 950.078,339.435 1240.51,636.005 700.889,1161.58 -96.6902,1127.36 -119.503,232.39 345.254,460.923 430.285,382.074 195.509,155.201 532.865,-176.824 1052.97,202.884 Z" id="path5"/>
         </clipPath>
-        <g clip-path="url(#ClipPath)">
-            <path d="M738.563 299.681C852.762-130.445-154.031-152.399 468.895 846.757" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
-            <path d="M714.579 382.06C374.474 1718.44-326.518 422.576 225.201 345.782" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
-            <path d="M315.101 332.037C1411.76 171.475 902.086 1290.97 525.333 902.819" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+        <g clip-path="url(#ClipPath)" id="g8">
+            <path d="M 738.563,299.681 C 852.762,-130.445 -154.031,-152.399 468.895,846.757" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path6"/>
+            <path d="M 714.579,382.06 C 374.474,1718.44 -326.518,422.576 225.201,345.782" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path7"/>
+            <path d="M 315.101,332.037 C 1411.76,171.475 902.086,1290.97 525.333,902.819" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path8"/>
         </g>
     </g>
 </svg>

@@ -1,18 +1,17 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve">
-    <link rel="stylesheet" href="cus_dracula.css" type="text/css"/>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 952.72467 901.44348" xml:space="preserve" id="svg6" sodipodi:docname="Alg_5.svg"><sodipodi:namedview id="namedview6" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
+    <link rel="stylesheet" href="../../../../../static/presentations/Alex_Poly/alg/cus_dracula.css" type="text/css"/>
 
-    <defs/>
+    <defs id="defs1"/>
     <clipPath id="ArtboardFrame_0">
-        <rect width="1000" x="0" y="0"/>
+        <rect width="1000" x="0" y="0" id="rect1" height="0"/>
     </clipPath>
-    <g id="Layer-1" vectornator:layerName="Layer 1">
-        <path d="M481.208 461.703C534.075 409.643 607.545 241.199 707.159 195.176C752.257 174.34 828.002 138.903 959.554 333.001C994.73 384.901 929.646 454.377 902.784 487.044" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-        <path d="M926.155 188.38C1012.82 128.996 928.579 61.9328 751.885 61.7792C627.89 61.6714 213.595 50.3545 118.111 100.78C-1.40794 163.899 51.7497 279.141 62.4071 297.718C91.8715 349.078 200.833 395.191 223.717 449.969C234.914 476.771 255.744 516.539 204.583 560.079" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-        <path d="M846.155 287.954C792.463 348.561 776.262 340.781 763.705 406.783C768.278 497.579 905.907 527.913 949.59 605.918C970.418 673.062 935.474 691.877 884.703 730.86" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-        <path d="M840.358 569.111C840.358 569.111 786.854 619.864 786.141 649.418C785.515 675.373 837.717 738.482 874.679 785.9C898.782 816.821 957.874 849.57 927.872 899.059C884.259 970.999 335.444 935.527 154.792 848.178C85.0503 814.456 70.996 705.333 125.967 647.604" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-        <path d="M805.791 785.983C656.619 887.322 318.266 221.308 170.52 329.957" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
-        <path d="M400.468 550.956C371.68 574.267 316.222 683.549 237.919 654.966C159.615 626.383 24.2615 484.906 97.3319 398.333" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437"/>
+    <g id="Layer-1" vectornator:layerName="Layer 1" transform="translate(-29.216134,-48.397039)">
+        <path d="m 481.208,461.703 c 52.867,-52.06 126.337,-220.504 225.951,-266.527 45.098,-20.836 120.843,-56.273 252.395,137.825 35.176,51.9 -29.908,121.376 -56.77,154.043" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437" id="path1"/>
+        <path d="M 926.155,188.38 C 1012.82,128.996 928.579,61.9328 751.885,61.7792 627.89,61.6714 213.595,50.3545 118.111,100.78 -1.40794,163.899 51.7497,279.141 62.4071,297.718 c 29.4644,51.36 138.4259,97.473 161.3099,152.251 11.197,26.802 32.027,66.57 -19.134,110.11" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437" id="path2"/>
+        <path d="m 846.155,287.954 c -53.692,60.607 -69.893,52.827 -82.45,118.829 4.573,90.796 142.202,121.13 185.885,199.135 20.828,67.144 -14.116,85.959 -64.887,124.942" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437" id="path3"/>
+        <path d="m 840.358,569.111 c 0,0 -53.504,50.753 -54.217,80.307 -0.626,25.955 51.576,89.064 88.538,136.482 24.103,30.921 83.195,63.67 53.193,113.159 -43.613,71.94 -592.428,36.468 -773.08,-50.881 C 85.0503,814.456 70.996,705.333 125.967,647.604" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437" id="path4"/>
+        <path d="M 805.791,785.983 C 656.619,887.322 318.266,221.308 170.52,329.957" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437" id="path5"/>
+        <path d="M 400.468,550.956 C 371.68,574.267 316.222,683.549 237.919,654.966 159.615,626.383 24.2615,484.906 97.3319,398.333" fill="none" opacity="1" class="stroke-purple" stroke="#bd93f9" stroke-linecap="round" stroke-linejoin="miter" stroke-width="24.4437" id="path6"/>
     </g>
 </svg>

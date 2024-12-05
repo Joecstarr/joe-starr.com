@@ -13,14 +13,14 @@ bootstrap:
     {{ python_exe }} -m pip install --upgrade pip wheel pip-tools
     {{ python_exe }} -m pip install -r requirements.txt
 
-proc-svg-size:
+proc-svg-size: bootstrap
     find ./static/presentations -iname "*.svg" -exec sh -c 'inkscape --actions="page-fit-to-selection" "$1" -o "$1" ' sh {} \;
-
-proc-svg-web: bootstrap
-    {{ python_exe }} ./misc/proc_svg_pallete.py ./static/presentations ./misc/colors.yaml
     {{ python_exe }} ./misc/proc_svg_size.py ./static/presentations
 
-proc-svg: proc-svg-size proc-svg-web
+proc-svg-color: bootstrap
+    {{ python_exe }} ./misc/proc_svg_pallete.py ./static/presentations ./misc/colors.yaml
+
+proc-svg: proc-svg-size proc-svg-color
     echo "processing svg"
 
 clean:

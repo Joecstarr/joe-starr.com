@@ -781,7 +781,7 @@ $\pm$ abbreviated canonical tangle trees do not describe minimal diagrams.
 
 {{<  slides/admonition type="Definition" title="Definition" markdownify="true" >}}
 We call the crossing number of a $\pm$ abbreviated canonical tangle tree the
-*canonical arborescent crossing number*.
+*canonical arborescent crossing number (CACN)*.
 {{<  /slides/admonition >}}
 
 ---
@@ -955,11 +955,45 @@ Nakano, S. (2002). Efficient generation of plane trees. In Information Processin
 
 ---
 
+## Game plan
+
+1. List the integral tangles
+2. Find the trees
+3. Find the ornaments
+3. Hang the ornaments on the trees
+
+---
+
 # The integral 4 tangle
 
 {{< slides/center_block grow="1"  >}}
     {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex_4.svg" direct="true" class="quarterHeight"  >}}
 {{< /slides/center_block  >}}
+
+
+---
+
+We can now split the target CACN into trees $T$
+and ornaments $O$ where $T+O=\text{CACN}$
+{{< slides/center_block grow="1" >}}
+$\small\begin{array}{|c|c|}
+ \hline
+T & O \\ \hline
+\color{#ff5555}4 & \color{#ff5555}0 \\ \hline
+\color{#ff5555}3 & \color{#ff5555}1 \\ \hline
+2 & 2 \\ \hline
+1 & 3 \\ \hline
+0 & 4 \\ \hline
+\end{array}$
+{{< /slides/center_block  >}}
+
+{{<  slides/admonition type="Note" title="Note" markdownify="true" >}}
+When we split the target CACN the ornament
+value must satisfy the stick condition. Meaning:
+* Ornaments can't be CACN $0$ or $1$.
+* Weight positivities may need to be adjusted.
+* Tangles with root that non-essential with weight $0$ are excluded.
+{{<  /slides/admonition >}}
 
 ---
 
@@ -1189,6 +1223,10 @@ Nakano, S. (2002). Efficient generation of plane trees. In Information Processin
         {{< /slides/center_block >}}
     {{< /slides/col>}}
 {{< /slides/row >}}
+
+{{<  slides/admonition type="Note" title="Note" markdownify="true" >}}
+The $\iota\LB 0\ 0 \RB$ tree with any ornament violates the stick condition.
+{{<  /slides/admonition >}}
 
 ---
 
