@@ -126,75 +126,15 @@ $ $
 
 ## Knots in Washington (12/7/24)
 
+
 # The Tanglenomicon
-
-
+## A table of two string tangles
 <p style="font-size:.7em;text-align:center !important">
 Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Paria Karimi Kousalari,
 Ethan Rooke, Joseph Starr*
 <p>
 <p style="font-size:.6em; text-align:center !important">
 Mathematics Department at The University of Iowa<p>
-
-
-
----
-
-# The natural question
-
-## How many knots?
-
----
-# Knot Tables
-
----
-
-### Lord Kelvin's vortex theory of the atom
-
-{{< slides/row >}}
-{{< slides/col >}}
-{{< centerimg src="/presentations/mathday23/lord_kelvin.jpg" >}}
-{{< /slides/col >}}
-{{< slides/col >}}
-{{< slides/center_block markdownify="true" grow="1" >}}
-Atoms are knotted vortices in the æther.
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
-
-# By Hand
-
-* 1860's Tait computes knots up to 7 crossings
-   * 15 knots
-* 1870's Tait, Kirkman, and Little compute knots up to 10 crossings
-   * Takes about 25 years
-   * 250 knots
-* 1960's Conway computes knots up to 11 crossings
-   * "A few hours"
-   * 802 knots
-
----
-
-# By Computer
-
-* 1980's Dowker and Thistlethwaite compute up to 13 crossings
-    * First using a computer
-    * 12,966 knots
-* 1990's Hoste, Thistlethwaite, and Weeks compute up to 16 crossings
-    * Computer runtime on the order of weeks
-    * 1,701,936 knots
-* 2020's Burton computes up to 19 crossings
-    * 350 Million knots
-
----
-
-## Conway
-
-{{< slides/center_block grow="1"  >}}
-How did Conway compute 25 years of work in "a few hours"?
-{{< /slides/center_block >}}
 
 ---
 
@@ -374,193 +314,7 @@ $\frac{1}{2}$
 
 ---
 
-# The Tanglenomicon
-## A table of two string tangles
-### (with fixed boundary)
-
-
----
-
-{{% slides/uncenter %}}
-
-## Building up
-
-{{< slides/center_block grow="1"  >}}
-{{< slides/row >}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/1.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:0;" >}}
-$\ $
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/lightning/Rational.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:0;" >}}
-$\ $
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/lightning/Mont.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< /slides/row >}}
-{{< /slides/center_block >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/row >}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/lightning/GenMont.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:0;" >}}
-$\ $
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/lightning/Alg.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:0;" >}}
-$\ $
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:1;color:var(--r-Orange);" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< /slides/row >}}
-
-{{< /slides/center_block >}}
-
-
----
-
-# Where we are
-
----
-
-
-
-# Rational Tangles
-
----
-
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/Rational.svg" height="auto">}}
-
-
----
-
-{{% slides/uncenter %}}
-
-{{< slides/center_block grow="1" >}}
-{{< slides/row  style=" ">}}
-{{< slides/col  style="flex-grow:3;" >}}
-{{< slides/centersvg src="/presentations/lightning/annotated/Rational.svg"   >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\ $
-{{< /slides/col >}}
-{{< slides/col  style="flex-grow:1;" >}}
-{{< slides/center_block grow="1" >}}
-$\begin{aligned}\to&\ \LP 3 \vee \frac{1}{2}\RP + 2\\&\\
-\to&\ [3\ 2\ 2]\end{aligned}$
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-{{< /slides/center_block >}}
-
----
-
-
-# Montesinos
-
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/mont_containment.svg" height="auto">}}
-
----
-
-
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/Mont.svg" height="auto">}}
-
-
----
-
-{{< slides/row style="" >}}
-{{< slides/col style="flex-grow:3;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/rat_plus.svg"   >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-$+$
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:3;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/rat_plus.svg"   >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-$=$
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:7;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  >}}
-{{< /slides/center_block   >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
-
-
-{{< slides/row style="" >}}
-{{< slides/col style="flex-grow:3;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/rat_plus_rat.svg"  >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:0;" >}}
-{{< slides/center_block   >}}
-$$\ =\ $$
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:2;" >}}
-{{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/rat_plus_rat_1.svg"  >}}
-{{< /slides/center_block >}}
-{{< /slides/col>}}
-{{< slides/col style="flex-grow:1;" >}}
-{{< slides/center_block grow="1"  >}}
-$$=[3\  2\ 0] + [3\  2\  0]$$
-{{< /slides/center_block   >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-
----
-
-# Where we're going
----
-
 ## Algebraic (Arborescent)
-
----
-
-{{% slides/uncenter %}}
-{{< slides/centersvg src="/presentations/general/alg_containment.svg" height="auto" >}}
 
 ---
 {{% slides/uncenter %}}
@@ -594,7 +348,14 @@ $$\LP\color{var(--r-Purple)}\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\color{var(--r-Foreground
 
 ---
 
-*Arborescent Tangles* are constructed by taking a collection of twisted bands described by a weighted tree and connecting them with successive plumbing.
+*Arborescent knots (and tangles)* are constructed by taking a collection of twisted bands described by a weighted tree and connecting them with successive plumbing.
+
+
+{{<  slides/admonition type="Note" title="Note" markdownify="true" style="margin-top:4vh" >}}
+
+Arborescent and Algebraic describe the same family of knots (and tangles), but with slightly different notational strategies.
+
+{{<  /slides/admonition >}}
 
 {{% slides/citations %}}
 F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
@@ -610,6 +371,8 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 {{< slides/centersvg src="/presentations/bands/bnd_sum_flip.svg" direct="true"  id="band_sum_flip">}}
 
 
+
+
 ---
 
 {{< slides/row  >}}
@@ -620,6 +383,11 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 {{< slides/centersvg src="/presentations/bands/bnd_sum_patch.svg" >}}
 {{< /slides/col >}}
 {{< /slides/row  >}}
+
+---
+
+{{< slides/hide_qr  >}}
+{{< slides/centersvg src="/presentations/bands/arbor_graph_split_local_with_band.svg"  direct="true"  >}}
 
 ---
 
@@ -640,6 +408,7 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 {{< slides/centersvg src="/presentations/bands/arbor_tangle.svg"  direct="true"  id="arbor_tangle">}}
 
 ---
+{{< slides/hide_qr  >}}
 
 {{< slides/centersvg src="/presentations/bands/arbor_graph_tangle.svg"  direct="true"  id="arbor_graph_tangle">}}
 
@@ -654,10 +423,10 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 {{< slides/center_block grow="1"  >}}
 {{< slides/row  style="align-items:baseline;">}}
 {{< slides/col  >}}
-{{< slides/centersvg src="/presentations/bands/arbor_graph_ring.svg"  direct="true" class="thirdHeight" >}}
+{{< slides/centersvg src="/presentations/bands/arbor_graph_ring.svg"  direct="true" class="quarterHeight" >}}
 {{< /slides/col >}}
 {{< slides/col   >}}
-{{< slides/centersvg src="/presentations/bands/arbor_ring.svg"  direct="true" class="thirdHeight" >}}
+{{< slides/centersvg src="/presentations/bands/arbor_ring.svg"  direct="true" class="quarterHeight" >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 
@@ -667,10 +436,10 @@ $\  $
 
 {{< slides/row  style="align-items:baseline;">}}
 {{< slides/col   >}}
-{{< slides/centersvg src="/presentations/bands/arbor_ring_no_bnd.svg"  direct="true" class="thirdHeight" >}}
+{{< slides/centersvg src="/presentations/bands/arbor_ring_no_bnd.svg"  direct="true" class="quarterHeight" >}}
 {{< /slides/col >}}
 {{< slides/col   >}}
-{{< slides/centersvg src="/presentations/bands/arbor_ring_tangle.svg"  direct="true" class="thirdHeight" >}}
+{{< slides/centersvg src="/presentations/bands/arbor_ring_tangle.svg"  direct="true" class="quarterHeight" >}}
 {{< /slides/col >}}
 {{< /slides/row >}}
 {{< /slides/center_block  >}}
@@ -682,6 +451,7 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 
 ---
 
+{{< slides/hide_qr  >}}
 {{< slides/row  >}}
 {{< slides/col style="flex-grow:5;" >}}
 
@@ -722,10 +492,10 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 {{< slides/col style="flex-grow:5;" >}}
 
 
-{{< slides/centersvg src="/presentations/bands/arbor_ring_essential.svg"  direct="true" class="quarterHeight" style="margin-bottom:3vh;">}}
+{{< slides/centersvg src="/presentations/bands/arbor_ring_essential.svg"  direct="true" class="eighthHeight" >}}
 
 
-{{< slides/centersvg src="/presentations/bands/arbor_ring_noessential.svg"  direct="true" class="quarterHeight"  style="margin-top:3vh;margin-bottom:2vh;" >}}
+{{< slides/centersvg src="/presentations/bands/arbor_ring_noessential.svg"  direct="true" class="eighthHeight"   >}}
 
 
 
@@ -751,9 +521,13 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 {{% /slides/citations %}}
 
 ---
+
 ## Linearization of Arborescent tangles
 
-{{< slides/centersvg src="/presentations/bands/watt_walk_tangle.svg"  direct="true" class="threequarterHeight"   >}}
+
+{{< slides/center_block height="80vh" grow="1" >}}
+{{< slides/centersvg src="/presentations/bands/watt_walk_tangle.svg"  direct="true" style="max-width:30vw;margin:auto;"   >}}
+{{< /slides/center_block   >}}
 
 ---
 ## $\pm$ Abbreviated Canonical Tangle Trees
@@ -780,8 +554,9 @@ $\pm$ abbreviated canonical tangle trees do not describe minimal diagrams.
 {{<  /slides/admonition >}}
 
 {{<  slides/admonition type="Definition" title="Definition" markdownify="true" >}}
-We call the crossing number of a $\pm$ abbreviated canonical tangle tree the
-*canonical arborescent crossing number (CACN)*.
+We call the crossing number of a the tangle diagram described by a $\pm$ abbreviated canonical tangle tree the
+*canonical arborescent crossing number (CACN)* which is given by:
+$$\text{CACN}=4\cdot\\#(\text{rings in the tree})+\sum |\text{weights}|$$
 {{<  /slides/admonition >}}
 
 ---
@@ -792,6 +567,8 @@ We call the crossing number of a $\pm$ abbreviated canonical tangle tree the
 
 
 ---
+
+{{< slides/hide_qr  >}}
 
 ## Montesinos Tangle Trees
 
@@ -1235,66 +1012,6 @@ The $\iota\LB 0\ 0 \RB$ tree with any ornament violates the stick condition.
 
 
 {{< slides/centersvg src="/presentations/bands/tree_building/1_to_4.svg" direct="true"  >}}
-
-
----
-
-# Into the future
----
-
-# Non-algebraic/Polygonal
-
----
-
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/general/nonalg_containment.svg" height="auto" >}}
-
----
-
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
-
----
-
-## 4-valent planar polygonal graphs
-
-
-
-{{< slides/row  >}}
-{{< slides/col  style="flex-grow:1;" >}}
-{{< slides/centersvg src="/presentations/general/1star.svg" block="true" >}}
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:3;" >}}
-{{< slides/centersvg src="/presentations/general/6star.svg"  block="true" >}}
-{{< /slides/col >}}
-{{< /slides/row  >}}
-
----
-
-# 4-valent planar graph insertions
-
----
-
-
-{{< slides/center_block grow="1" >}}
-{{< slides/row  style=" ">}}
-{{< slides/col  style="flex-grow:1;" >}}
-{{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" direct="true" id="non_alg" >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-{{< slides/row  style=" ">}}
-{{< slides/col  style="flex-grow:1;" >}}
-{{< slides/center_block grow="1" >}}
-$6^*\ *.[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1].[1\ 2\ 2\ 3\ 1]$
-{{< /slides/center_block >}}
-{{< /slides/col >}}
-{{< /slides/row >}}
-{{< /slides/center_block >}}
 
 ---
 
