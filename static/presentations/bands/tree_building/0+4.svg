@@ -22,9 +22,9 @@
      inkscape:deskcolor="#44475a"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="11.375333"
-     inkscape:cx="95.293917"
-     inkscape:cy="114.23842"
+     inkscape:zoom="4.9696147"
+     inkscape:cx="123.75205"
+     inkscape:cy="117.01108"
      inkscape:window-width="1920"
      inkscape:window-height="1119"
      inkscape:window-x="0"
@@ -222,7 +222,7 @@
          id="tspan4-3-2"
          x="260.94907"
          y="3.7805581"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#50fa7b;stroke:#50fa7b">2</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#50fa7b;stroke:#50fa7b">-2</tspan></text>
     <path
        style="display:inline;fill:#50fa7b;stroke:#50fa7b;stroke-width:4.54895;stroke-dasharray:none;stroke-opacity:1"
        d="M 252.48644,-0.03195263 V 39.904146"
@@ -276,7 +276,7 @@
          id="tspan4-8-7-9"
          x="210.91287"
          y="81.402168"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#50fa7b;stroke:#50fa7b">2</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#50fa7b;stroke:#50fa7b">-2</tspan></text>
     <path
        id="path5-19-3-5-2-6-2-29-9-9"
        style="display:inline;fill:#8be9fd;stroke:#8be9fd;stroke-width:0.325699"
@@ -311,7 +311,7 @@
          id="tspan4-1"
          x="212.70955"
          y="2.3179321"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#8be9fd;stroke:#8be9fd">1</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#8be9fd;stroke:#8be9fd">-1</tspan></text>
     <path
        style="display:inline;fill:#f8f8f2;stroke:#f8f8f2;stroke-width:4.54895;stroke-dasharray:none;stroke-opacity:1"
        d="m 203.76196,-79.90415 v 39.936099"
@@ -340,7 +340,7 @@
          id="tspan4-37-1"
          x="161.94467"
          y="42.124706"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#ffb86c;stroke:#ffb86c">-3</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#ffb86c;stroke:#ffb86c">3</tspan></text>
     <path
        style="display:inline;fill:#8be9fd;stroke:#8be9fd;stroke-width:4.54895;stroke-dasharray:none;stroke-opacity:1"
        d="M 154.80798,-39.968053 V -0.03195366"
@@ -360,7 +360,7 @@
          id="tspan4"
          x="163.75558"
          y="2.3179321"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#8be9fd;stroke:#8be9fd">1</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#8be9fd;stroke:#8be9fd">-1</tspan></text>
     <path
        style="display:inline;fill:#f8f8f2;stroke:#f8f8f2;stroke-width:4.54895;stroke-dasharray:none;stroke-opacity:1"
        d="m 154.80799,-79.90415 v 39.936099"
@@ -389,7 +389,7 @@
          id="tspan4-30"
          x="113.30496"
          y="2.3179321"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#ff5555;stroke:#ff5555">4</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#ff5555;stroke:#ff5555">-4</tspan></text>
     <path
        style="display:inline;fill:#f8f8f2;stroke:#f8f8f2;stroke-width:4.54895;stroke-dasharray:none;stroke-opacity:1"
        d="m 104.35736,-79.90415 v 39.936099"
@@ -464,6 +464,6 @@
        y="42.124699"
        id="text1"><tspan
          sodipodi:role="line"
-         id="tspan1"></tspan></text>
+         id="tspan1" /></text>
   </g>
 </svg>
