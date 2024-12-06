@@ -5,7 +5,7 @@ summary: "Brief overview of Legendrian knots"
 tags: [
     "Talks",'research talks'
 ]
-draft: true
+draft: false
 
 showHeadingAnchors: false
 
