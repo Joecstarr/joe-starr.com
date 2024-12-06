@@ -127,8 +127,8 @@ $ $
 ## Knots in Washington (12/7/24)
 
 
-# The Tanglenomicon
-## A table of two string tangles
+## The Tanglenomicon: A table of two string tangles
+### The algebraic tangles
 <p style="font-size:.7em;text-align:center !important">
 Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Paria Karimi Kousalari,
 Ethan Rooke, Joseph Starr*
@@ -387,6 +387,11 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 ---
 
 {{< slides/hide_qr  >}}
+{{< slides/centersvg src="/presentations/bands/arbor_band_with_twist.svg"  direct="true"  >}}
+
+---
+
+{{< slides/hide_qr  >}}
 {{< slides/centersvg src="/presentations/bands/arbor_graph_split_local_with_band.svg"  direct="true"  >}}
 
 ---
@@ -613,13 +618,13 @@ $$\text{CACN}=4\cdot\\#(\text{rings in the tree})+\sum |\text{weights}|$$
 {{< slides/row style="margin-top:4vh;" >}}
     {{< slides/col style="flex-grow:2;" >}}
         {{< slides/center_block grow="1"  >}}
-            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex.svg" direct="true" class="quarterHeight"   >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex_tree.svg" direct="true" class="quarterHeight"   >}}
         {{< /slides/center_block  >}}
     {{< /slides/col>}}
 
     {{< slides/col style="flex-grow:2;" >}}
         {{< slides/center_block grow="1"  >}}
-            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex.svg" direct="true" class="quarterHeight"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex_ornament.svg" direct="true" class="quarterHeight"  >}}
         {{< /slides/center_block  >}}
     {{< /slides/col>}}
 
@@ -631,7 +636,7 @@ $$\text{CACN}=4\cdot\\#(\text{rings in the tree})+\sum |\text{weights}|$$
 
     {{< slides/col style="flex-grow:3;" >}}
         {{< slides/center_block grow="1"  >}}
-            {{< slides/centersvg src="/presentations/bands/tree_building/double_vertex.svg" direct="true" class="quarterHeight"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex_decorated.svg" direct="true" class="quarterHeight"  >}}
         {{< /slides/center_block >}}
     {{< /slides/col>}}
 {{< /slides/row >}}
@@ -675,13 +680,13 @@ Nakano, S. (2002). Efficient generation of plane trees. In Information Processin
 {{< slides/row style="margin-top:4vh;" >}}
     {{< slides/col style="flex-grow:2;" >}}
         {{< slides/center_block grow="1"  >}}
-            {{< slides/centersvg src="/presentations/bands/tree_building/double_vertex.svg" direct="true" class="quarterHeight"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/double_vertex_tree.svg" direct="true" class="quarterHeight"  >}}
         {{< /slides/center_block >}}
     {{< /slides/col>}}
 
     {{< slides/col style="flex-grow:2;" >}}
         {{< slides/center_block grow="1"  >}}
-            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex.svg" direct="true" class="quarterHeight"  >}}
+            {{< slides/centersvg src="/presentations/bands/tree_building/single_vertex_ornament.svg" direct="true" class="quarterHeight"  >}}
         {{< /slides/center_block  >}}
     {{< /slides/col>}}
 

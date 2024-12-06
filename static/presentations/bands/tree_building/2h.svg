@@ -43,15 +43,15 @@
         <text xml:space="preserve" style="font-size:10.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';fill:#8be9fd;stroke:#8be9fd;stroke-width:0.676535;stroke-miterlimit:4.1" x="102.68909" y="163.97081" id="text4-5"><tspan sodipodi:role="line" id="tspan4-0" x="102.68909" y="163.97081" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#8be9fd;stroke:#8be9fd">1</tspan></text>
       </g>
     </g>
-    <g id="g19" style="fill:#50fa7b;stroke:#50fa7b" transform="translate(203.5188,-213.78656)">
-      <g id="g14" transform="translate(-2.08106)" style="fill:#50fa7b;stroke:#50fa7b">
-        <g id="g13" style="fill:#50fa7b;stroke:#50fa7b">
-          <g id="g2-2-9-3" transform="matrix(2.6624067,0,0,2.6624067,-144.68049,236.2673)" style="fill:#50fa7b;stroke:#50fa7b">
-            <path style="display:inline;fill:#50fa7b;stroke:#50fa7b;stroke-width:5.51562;stroke-dasharray:none;stroke-opacity:1" d="M 26.124483,137.05544 60.172657,102.62472" id="path3-5-7-2-5" sodipodi:nodetypes="cc" transform="matrix(-0.22026238,0.21781512,-0.21781512,-0.22026238,110.60698,1.497847)"/>
-            <path id="path5-19-3-5-2-0-2-6" style="display:inline;fill:#50fa7b;stroke:#50fa7b;stroke-width:0.394911" d="m 59.657511,97.03157 a 6.0319862,6.1140947 0 0 1 6.03198,6.11409 6.0319862,6.1140947 0 0 1 -6.03198,6.11409 6.0319862,6.1140947 0 0 1 -6.03199,-6.11409 6.0319862,6.1140947 0 0 1 6.03199,-6.11409 z" transform="matrix(-0.22026238,0.21781512,-0.21781512,-0.22026238,110.60698,1.497847)"/>
+    <g id="g19" style="fill:#ff5555;stroke:#ff5555" transform="translate(203.5188,-213.78656)">
+      <g id="g14" transform="translate(-2.08106)" style="fill:#ff5555;stroke:#ff5555">
+        <g id="g13" style="fill:#ff5555;stroke:#ff5555">
+          <g id="g2-2-9-3" transform="matrix(2.6624067,0,0,2.6624067,-144.68049,236.2673)" style="fill:#ff5555;stroke:#ff5555">
+            <path style="display:inline;fill:#ff5555;stroke:#ff5555;stroke-width:5.51562;stroke-dasharray:none;stroke-opacity:1" d="M 26.124483,137.05544 60.172657,102.62472" id="path3-5-7-2-5" sodipodi:nodetypes="cc" transform="matrix(-0.22026238,0.21781512,-0.21781512,-0.22026238,110.60698,1.497847)"/>
+            <path id="path5-19-3-5-2-0-2-6" style="display:inline;fill:#ff5555;stroke:#ff5555;stroke-width:0.394911" d="m 59.657511,97.03157 a 6.0319862,6.1140947 0 0 1 6.03198,6.11409 6.0319862,6.1140947 0 0 1 -6.03198,6.11409 6.0319862,6.1140947 0 0 1 -6.03199,-6.11409 6.0319862,6.1140947 0 0 1 6.03199,-6.11409 z" transform="matrix(-0.22026238,0.21781512,-0.21781512,-0.22026238,110.60698,1.497847)"/>
           </g>
         </g>
-        <text xml:space="preserve" style="font-size:10.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';fill:#50fa7b;stroke:#50fa7b;stroke-width:0.676535;stroke-miterlimit:4.1" x="63.46262" y="218.78055" id="text4-6"><tspan sodipodi:role="line" id="tspan4-3" x="63.46262" y="218.78055" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#50fa7b;stroke:#50fa7b">2</tspan></text>
+        <text xml:space="preserve" style="font-size:10.6667px;font-family:'TeX Gyre Adventor';-inkscape-font-specification:'TeX Gyre Adventor';fill:#ff5555;stroke:#ff5555;stroke-width:0.676535;stroke-miterlimit:4.1" x="63.46262" y="218.78055" id="text4-6"><tspan sodipodi:role="line" id="tspan4-3" x="63.46262" y="218.78055" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, ';fill:#ff5555;stroke:#ff5555">2</tspan></text>
       </g>
     </g>
     <g id="g20" style="display:none;fill:#ffb86c;stroke:#ffb86c" transform="translate(56.223277,-188.7699)">
