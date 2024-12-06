@@ -2,7 +2,7 @@
 
 title: "Knots in Washington 50"
 date: "2024-12-07"
-summary: "Talk given at the Fall 2024 University of Iowa Math Day"
+summary: "Talk given at the Knots in Washington 50 conference"
 tags: [
     "Talks",'research talks'
 ]
@@ -130,11 +130,11 @@ $ $
 
 
 
-## The Tanglenomicon
+# The Tanglenomicon
 ### A table of two string tangles
 #### The algebraic tangles
 <p style="font-size:.7em;text-align:center !important">
-Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Paria Karimi Kousalari,
+Zachary Bryhtan, Nicholas Connolly, Isabel Darcy, Paria Karimi,
 Ethan Rooke, Joseph Starr*
 <p>
 <p style="font-size:.6em; text-align:center !important">
@@ -320,8 +320,7 @@ $\frac{1}{2}$
 
 ---
 
-## Algebraic
-## (Arborescent)
+# Algebraic Tangles
 
 ---
 {{% slides/uncenter %}}
@@ -355,15 +354,15 @@ $$\LP\color{var(--r-Purple)}\LB3\ 2\ 3\RB+\LB3\ 2\ 3\RB\color{var(--r-Foreground
 
 ---
 
+# But actually arborescent
+
+---
+
 *Arborescent knots (and tangles)* are constructed by taking a collection of twisted bands described by a weighted tree and connecting them with successive plumbing.
 
+It's straight forward to see (__you should see in the example__) that algebraic and arborescent
+constructions describe the same class of object.
 
-{{<  slides/admonition type="Note" title="Note" markdownify="true" style="margin-top:4vh" >}}
-
-The arborescent and algebraic constructions describe the same family of knots (and tangles), but with slightly different strategies.
-
-
-{{<  /slides/admonition >}}
 
 {{% slides/citations %}}
 F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
@@ -394,17 +393,17 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 
 ---
 
-{{< slides/hide_qr  >}}
+
 {{< slides/centersvg src="/presentations/bands/arbor_band_with_twist_full.svg"  direct="true"  >}}
 
 ---
 
-{{< slides/hide_qr  >}}
+
 {{< slides/centersvg src="/presentations/bands/arbor_graph_split_local_with_band.svg"  direct="true"  >}}
 
 ---
 
-{{< slides/hide_qr  >}}
+
 {{< slides/centersvg src="/presentations/bands/arbor_graph.svg"  direct="true"  id="arbor_graph">}}
 
 ---
@@ -421,7 +420,7 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 {{< slides/centersvg src="/presentations/bands/arbor_tangle.svg"  direct="true"  id="arbor_tangle">}}
 
 ---
-{{< slides/hide_qr  >}}
+
 
 {{< slides/centersvg src="/presentations/bands/arbor_graph_tangle.svg"  direct="true"  id="arbor_graph_tangle">}}
 
@@ -464,7 +463,7 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 
 ---
 
-{{< slides/hide_qr  >}}
+
 {{< slides/row  >}}
 {{< slides/col style="flex-grow:5;" >}}
 
@@ -560,16 +559,20 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 
 ---
 {{<  slides/admonition type="Theorem" title="Theorem (Bonahon and Siebenmann)" markdownify="true" >}}
-Consider two $\pm$ canonical abbreviated arborescent tangle trees $\Gamma$ and $\Gamma^\prime$. Plumbing according to $\Gamma$ and $\Gamma^\prime$ gives isomorphic arborescent tangles if and only if $\Gamma$ and $\Gamma^\prime$ can be deduced from each other by a sequence of moves in the calculus of arborescent tangle trees (*happy to talk about the calculus another time*).
+Consider two $\pm$ canonical abbreviated arborescent tangle trees $\Gamma$ and $\Gamma^\prime$. Plumbing according to $\Gamma$ and $\Gamma^\prime$ gives isomorphic arborescent tangles if and only if $\Gamma$ and $\Gamma^\prime$ can be deduced from each other by a sequence of moves in the calculus of arborescent tangle trees (__happy to talk about the calculus another time__).
 {{<  /slides/admonition >}}
 
+{{<  slides/admonition type="" title="Note" markdownify="true" >}}
+Note
+$\pm$ abbreviated canonical tangle trees do not describe minimal diagrams.
+{{<  /slides/admonition >}}
+
+{{% slides/citations  %}}
+F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and the classification and symmetries of arborescent knots, [http://www-bcf.usc.edu/~fbonahon/Research/Publications.html](http://www-bcf.usc.edu/~fbonahon/Research/Publications.html)
+{{% /slides/citations %}}
 
 ---
 
-{{<  slides/admonition type="Note" title="Note" markdownify="true" >}}
-
-$\pm$ abbreviated canonical tangle trees do not describe minimal diagrams.
-{{<  /slides/admonition >}}
 
 {{<  slides/admonition type="Definition" title="Definition" markdownify="true" >}}
 We call the crossing number of a the tangle diagram described by a $\pm$ abbreviated canonical tangle tree the
@@ -586,7 +589,7 @@ $$\text{CACN}=4\cdot\\#(\text{rings in the tree})+\sum |\text{weights}|$$
 
 ---
 
-{{< slides/hide_qr  >}}
+
 
 ## Montesinos Tangle Trees
 
@@ -767,8 +770,10 @@ Nakano, S. (2002). Efficient generation of plane trees. In Information Processin
 
 ---
 
-Call the CACN of a tree $T$ and the CACN of an ornament $O$. For the tangle generated by hanging an ornament to have $\text{CACN}=4$ we need $T+O=4$. Additionally, hanging an ornament must satisfy the stick condition. Meaning:
-* $1<O\leq 4=\text{CACN}$ and $0\geq T<4$
+Call the CACN of a tree $T$ and the CACN of an ornament $O$. For the tangle generated by hanging an ornament to have $\text{CACN}=4$ we need $T+O=4$.
+
+Additionally, hanging an ornament must satisfy the stick condition. Meaning:
+* $1<O\leq 4=\text{CACN}$ and $0\leq T<4$
 * Signs of weights on an ornament may need to be adjusted.$\text{Example: }[1\ -2\ 3]\to [-1\ 2\ -3]$
 * Tangles with root which is weight $0$ and non-essential are excluded, except $\iota[0]$.
 
@@ -1035,7 +1040,7 @@ T & O  \\ \hline
 {{< centerimg src="/presentations/web_ui/details.png" >}}
 
 ---
-{{< slides/hide_qr  >}}
+
 
 To play with a live version, visit:
 {{< slides/centersvg src="/qr_codes/tanglenomicon.svg" direct="true" id="tqr" >}}
@@ -1051,7 +1056,7 @@ To play with a live version, visit:
 {{< slides/centersvg src="/presentations/comp/tech.svg" direct="true" id="tech_img"  >}}
 
 ---
-{{< slides/hide_qr  >}}
+
 
 
 {{< slides/centersvg src="https://raw.githubusercontent.com/Joecstarr/posters/master/qr_httpsjoe-starr.svg" external="true" id="qr" >}}
