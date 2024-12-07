@@ -46,25 +46,31 @@
   </url>
   <url>
     <loc>https://joe-starr.com/</loc>
-    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/speaking/research/kiw50/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/speaking/research/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/speaking/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://joe-starr.com/resources/</loc>
     <lastmod>2024-09-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://joe-starr.com/speaking/research/</loc>
-    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://joe-starr.com/speaking/</loc>
-    <lastmod>2024-09-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -123,6 +129,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://joe-starr.com/resources/text_knots/</loc>
+    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/resources/qr_code_knots/</loc>
+    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://joe-starr.com/speaking/misc/</loc>
     <lastmod>2023-09-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -147,7 +165,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joe-starr.com/speaking/misc/legendrian_knots/</loc>
+    <loc>https://joe-starr.com/resources/legendrian_knots/</loc>
     <lastmod>2022-11-29T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

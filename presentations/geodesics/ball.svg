@@ -1,30 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs />
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 999.28491 999.28491" xml:space="preserve" id="svg5" sodipodi:docname="ball.svg"><sodipodi:namedview id="namedview5" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
+    <defs id="defs1"/>
     <clipPath id="ArtboardFrame_53">
-        <rect height="1000" width="1000" x="0" y="0" />
+        <rect height="1000" width="1000" x="0" y="0" id="rect1"/>
     </clipPath>
-    <g clip-path="url(#ArtboardFrame_53)" id="Layer-1" vectornator:layerName="Layer 1">
-        <path d="M23.5377 603.769C220.092 554.834 363.846 290.627 251.184 77.8" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter"
-            stroke-width="12" vectornator:layerName="Curve 1" />
-        <path d="M489.224 10.2092C488.176 209.677 485.211 852.489 484.078 987.642" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter"
-            stroke-width="12" vectornator:layerName="Curve 2" />
-        <path d="M649.972 965.351C593.598 748.735 757.646 469.441 988.284 467.947" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter"
-            stroke-width="12" vectornator:layerName="Curve 4" />
-        <path d="M929.588 740.478C673.381 567.478 576.623 249.223 636.635 34.5322" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter"
-            stroke-width="12" vectornator:layerName="Curve 5" />
-        <path
-            d="M10.2092 503.397C10.2092 231.017 230.148 10.2092 501.456 10.2092C772.764 10.2092 992.702 231.017 992.702 503.397C992.702 775.777 772.764 996.584 501.456 996.584C230.148 996.584 10.2092 775.777 10.2092 503.397Z"
-            class="fill-purple stroke-purple" fill="#bd93f9" fill-opacity="0" fill-rule="nonzero" opacity="1"
-            stroke="#bd93f9" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="18.9882"
-            vectornator:layerName="Oval 1" />
+    <g clip-path="url(#ArtboardFrame_53)" id="Layer-1" vectornator:layerName="Layer 1" transform="translate(-0.71510038,-0.71510038)">
+        <path d="M 23.5377,603.769 C 220.092,554.834 363.846,290.627 251.184,77.8" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter" stroke-width="12" vectornator:layerName="Curve 1" id="path1"/>
+        <path d="M 489.224,10.2092 C 488.176,209.677 485.211,852.489 484.078,987.642" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter" stroke-width="12" vectornator:layerName="Curve 2" id="path2"/>
+        <path d="M 649.972,965.351 C 593.598,748.735 757.646,469.441 988.284,467.947" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter" stroke-width="12" vectornator:layerName="Curve 4" id="path3"/>
+        <path d="M 929.588,740.478 C 673.381,567.478 576.623,249.223 636.635,34.5322" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="miter" stroke-width="12" vectornator:layerName="Curve 5" id="path4"/>
+        <path d="m 10.2092,503.397 c 0,-272.38 219.9388,-493.1878 491.2468,-493.1878 271.308,0 491.246,220.8078 491.246,493.1878 0,272.38 -219.938,493.187 -491.246,493.187 -271.308,0 -491.2468,-220.807 -491.2468,-493.187 z" class="fill-purple stroke-purple" fill="#bd93f9" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="#bd93f9" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="18.9882" vectornator:layerName="Oval 1" id="path5"/>
     </g>
 </svg>

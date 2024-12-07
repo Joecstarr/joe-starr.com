@@ -7,21 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Joe Starr</copyright>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Index</title>
-      <link>https://joe-starr.com/tags/index/</link>
-      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://joe-starr.com/tags/index/</guid>
-      <description></description>
-      
-    </item>
-    
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Research Talks</title>
       <link>https://joe-starr.com/tags/research-talks/</link>
-      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://joe-starr.com/tags/research-talks/</guid>
       <description></description>
@@ -31,9 +21,19 @@
     <item>
       <title>Talks</title>
       <link>https://joe-starr.com/tags/talks/</link>
-      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://joe-starr.com/tags/talks/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Index</title>
+      <link>https://joe-starr.com/tags/index/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/tags/index/</guid>
       <description></description>
       
     </item>
@@ -54,6 +54,26 @@
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://joe-starr.com/tags/posters/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>https://joe-starr.com/tags/tool/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/tags/tool/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Visualizer</title>
+      <link>https://joe-starr.com/tags/visualizer/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/tags/visualizer/</guid>
       <description></description>
       
     </item>

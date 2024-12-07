@@ -1,82 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Vectornator (http://vectornator.io/) -->
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 529.99957 527.18848" xml:space="preserve" id="svg5" sodipodi:docname="6.svg" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"><sodipodi:namedview id="namedview5" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="0.99136371" inkscape:cx="194.17697" inkscape:cy="198.21182" inkscape:window-width="1920" inkscape:window-height="1120" inkscape:window-x="-11" inkscape:window-y="-11" inkscape:window-maximized="1" inkscape:current-layer="Layer-3"/>
+    <defs id="defs1"><clipPath clipPathUnits="userSpaceOnUse" id="clipPath5"><path d="M 50.1844,500.535 236.7712,321.64174 170.68159,263.41114 274.73762,165.18725 335.50207,230.04553 531.686,19.8445 428.024,-131.692 l -445.7034,18.639 -91.5526,112.933802 4.934,310.841198 10.9642,202.841 64.1418,60.305 z" id="path6" sodipodi:nodetypes="ccccccccccccc"/></clipPath><clipPath clipPathUnits="userSpaceOnUse" id="clipPath6"><path d="m 64.337596,369.77427 52.672334,-58.74247 101.0732,28.52744 -47.85066,74.81983 170.10843,-1.20927 -50.939,-57.82767 92.65337,-47.35403 56.5965,56.4305 L 578.596,246.236 552.027,172.822 418.482,184.708 191.946,153.944 29.0361,165.83 -73.045,295.179 Z" id="path7" sodipodi:nodetypes="ccccccccccccccc"/></clipPath></defs>
 
-<svg
-   stroke-miterlimit="10"
-   style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-   version="1.1"
-   viewBox="0 0 500 500"
-   xml:space="preserve"
-   id="svg5"
-   sodipodi:docname="6.svg"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:vectornator="http://vectornator.io"><sodipodi:namedview
-   id="namedview5"
-   pagecolor="#ffffff"
-   bordercolor="#666666"
-   borderopacity="1.0"
-   inkscape:showpageshadow="2"
-   inkscape:pageopacity="0.0"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="0.99136371"
-   inkscape:cx="194.17697"
-   inkscape:cy="198.21182"
-   inkscape:window-width="1920"
-   inkscape:window-height="1120"
-   inkscape:window-x="-11"
-   inkscape:window-y="-11"
-   inkscape:window-maximized="1"
-   inkscape:current-layer="Layer-3" />&#10;    <defs
-   id="defs1"><clipPath
-     clipPathUnits="userSpaceOnUse"
-     id="clipPath5"><path
-       d="M 50.1844,500.535 236.7712,321.64174 170.68159,263.41114 274.73762,165.18725 335.50207,230.04553 531.686,19.8445 428.024,-131.692 l -445.7034,18.639 -91.5526,112.933802 4.934,310.841198 10.9642,202.841 64.1418,60.305 z"
-       id="path6"
-       sodipodi:nodetypes="ccccccccccccc" /></clipPath><clipPath
-     clipPathUnits="userSpaceOnUse"
-     id="clipPath6"><path
-       d="m 64.337596,369.77427 52.672334,-58.74247 101.0732,28.52744 -47.85066,74.81983 170.10843,-1.20927 -50.939,-57.82767 92.65337,-47.35403 56.5965,56.4305 L 578.596,246.236 552.027,172.822 418.482,184.708 191.946,153.944 29.0361,165.83 -73.045,295.179 Z"
-       id="path7"
-       sodipodi:nodetypes="ccccccccccccccc" /></clipPath></defs>&#10;&#10;    <g
-   clip-path="url(#ArtboardFrame_94)"
-   id="Layer-1"
-   vectornator:layerName="Layer 1">&#10;        <path
-   d="M495.722 496.517L1.7429 1.43232"
-   fill="none"
-   opacity="1"
-   stroke="#000000"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-width="30"
-   id="path1" />&#10;    </g>&#10;    <g
-   clip-path="url(#ArtboardFrame_94)"
-   id="Layer-3"
-   vectornator:layerName="Layer 3">&#10;        &#10;        <g
-   clip-path="url(#clipPath6)"
-   id="g3">&#10;            <path
-   d="M500.947 250.267C421.756 421.434 79.7966 420.217 0.947441 250.267"
-   fill="none"
-   opacity="1"
-   stroke="#000000"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-width="30"
-   id="path3" />&#10;        </g>&#10;            &#10;        &#10;    </g>&#10;    <g
-   clip-path="url(#ArtboardFrame_94)"
-   id="Layer-2"
-   vectornator:layerName="Layer 2">&#10;        &#10;        <g
-   clip-path="url(#clipPath5)"
-   id="g5">&#10;            <path
-   d="M504.087 0.159181L2.15244 503.024"
-   fill="none"
-   opacity="1"
-   stroke="#000000"
-   stroke-linecap="butt"
-   stroke-linejoin="round"
-   stroke-width="30"
-   id="path5" />&#10;        </g>&#10;            &#10;        &#10;    </g>&#10;</svg>
+    <g clip-path="url(#ArtboardFrame_94)" id="Layer-1" vectornator:layerName="Layer 1" transform="translate(14.052559,13.56768)">
+        <path d="M 495.722,496.517 1.7429,1.43232" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" id="path1"/>
+    </g>
+    <g clip-path="url(#ArtboardFrame_94)" id="Layer-3" vectornator:layerName="Layer 3" transform="translate(14.052559,13.56768)">
+        
+        <g clip-path="url(#clipPath6)" id="g3">
+            <path d="m 500.947,250.267 c -79.191,171.167 -421.1504,169.95 -499.999559,0" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" id="path3"/>
+        </g>
+            
+        
+    </g>
+    <g clip-path="url(#ArtboardFrame_94)" id="Layer-2" vectornator:layerName="Layer 2" transform="translate(14.052559,13.56768)">
+        
+        <g clip-path="url(#clipPath5)" id="g5">
+            <path d="M 504.087,0.159181 2.15244,503.024" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="30" id="path5"/>
+        </g>
+            
+        
+    </g>
+</svg>

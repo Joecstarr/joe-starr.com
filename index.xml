@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Joe Starr</copyright>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tangle Tabulation</title>
       <link>https://joe-starr.com/what_is/tangle_tabulation/</link>
@@ -79,6 +79,16 @@
     </item>
     
     <item>
+      <title>Knots in Washington 50</title>
+      <link>https://joe-starr.com/speaking/research/kiw50/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/speaking/research/kiw50/</guid>
+      <description>Talk given at the Knots in Washington 50 conference</description>
+      
+    </item>
+    
+    <item>
       <title>University of Iowa Fall 2024 Math Day</title>
       <link>https://joe-starr.com/speaking/research/mathday24/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
@@ -139,6 +149,26 @@
     </item>
     
     <item>
+      <title>A Knotplot QR Code Generator</title>
+      <link>https://joe-starr.com/resources/text_knots/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/resources/text_knots/</guid>
+      <description>This script uses the knotplot&amp;rsquo;s celtic knot drawing tools to draw &amp;lsquo;LR&amp;rsquo; codes (qr codes but made of links).</description>
+      
+    </item>
+    
+    <item>
+      <title>A Knotplot Text Generator</title>
+      <link>https://joe-starr.com/resources/qr_code_knots/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/resources/qr_code_knots/</guid>
+      <description>This script uses the knotplot&amp;rsquo;s celtic knot drawing tools to draw text.</description>
+      
+    </item>
+    
+    <item>
       <title>University of Iowa Fall23 Math Day</title>
       <link>https://joe-starr.com/speaking/research/mathday23/</link>
       <pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate>
@@ -169,12 +199,12 @@
     </item>
     
     <item>
-      <title>Legendrian knots</title>
-      <link>https://joe-starr.com/speaking/misc/legendrian_knots/</link>
+      <title>Legendrian Unknot Visualization</title>
+      <link>https://joe-starr.com/resources/legendrian_knots/</link>
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://joe-starr.com/speaking/misc/legendrian_knots/</guid>
-      <description>Brief overview of Legendrian knots</description>
+      <guid>https://joe-starr.com/resources/legendrian_knots/</guid>
+      <description>A tool to visualize the Legendrian unknot in the standard contact structure on Rn</description>
       
     </item>
     

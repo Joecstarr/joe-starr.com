@@ -1,102 +1,72 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    version="1.1" viewBox="0 0 610 480" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs />
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 604.30939 467.7164" xml:space="preserve" id="svg21" sodipodi:docname="link_1.svg"><sodipodi:namedview id="namedview21" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
+    <defs id="defs1"/>
     <clipPath id="ArtboardFrame_16">
-        <rect height="480" width="610" x="0" y="0" />
+        <rect height="480" width="610" x="0" y="0" id="rect1"/>
     </clipPath>
-    <g clip-path="url(#ArtboardFrame_16)" id="Layer-1" vectornator:layerName="Layer 1">
-        <g opacity="1">
+    <g clip-path="url(#ArtboardFrame_16)" id="Layer-1" vectornator:layerName="Layer 1" transform="translate(-2.4257112,-10.459743)">
+        <g opacity="1" id="g3">
             <clipPath id="ClipPath">
-                <path
-                    d="M246.109 605.992L189.912 484.121L310.718 406.472L283.141 337.462L347.927 306.806L420.465 412.132L333.226 564.192L246.109 605.992Z" />
+                <path d="m 246.109,605.992 -56.197,-121.871 120.806,-77.649 -27.577,-69.01 64.786,-30.656 72.538,105.326 -87.239,152.06 z" id="path1"/>
             </clipPath>
-            <g clip-path="url(#ClipPath)">
-                <path d="M301.499 314.374C401.141 355.256 400.611 415.254 300.262 454.369" fill="none" opacity="1"
-                    class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="13.0845" />
+            <g clip-path="url(#ClipPath)" id="g2">
+                <path d="m 301.499,314.374 c 99.642,40.882 99.112,100.88 -1.237,139.995" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="13.0845" id="path2"/>
             </g>
         </g>
-        <g opacity="1">
+        <g opacity="1" id="g9">
             <clipPath id="ClipPath_2">
-                <path
-                    d="M230.698 335.335L176.682 186.191L297.488 108.542L294.863 62.3522L363.037 35.2073L428.947 132.295L323.394 283.718L230.698 335.335Z" />
+                <path d="M 230.698,335.335 176.682,186.191 297.488,108.542 294.863,62.3522 363.037,35.2073 428.947,132.295 323.394,283.718 Z" id="path3"/>
             </clipPath>
-            <g clip-path="url(#ClipPath_2)">
-                <path d="M301.499 314.374C201.856 273.492 214.348 208.569 314.698 169.454" fill="none" opacity="1"
-                    class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="13.0845" />
-                <g opacity="1">
-                    <path d="M318.28 167.792C402.845 128.776 398.179 73.037 303.972 34.3852" fill="none"
-                        class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="13.0845" />
-                    <g class="fill-orange" fill="#ffb86c" stroke="none">
-                        <path
-                            d="M335.324 112.438L306.466 167.3L302.744 174.376L310.417 176.624L369.907 194.046C373.375 195.062 377.009 193.074 378.024 189.607C379.04 186.139 377.052 182.505 373.585 181.489L314.095 164.067L318.046 173.391L346.904 118.529C348.586 115.331 347.357 111.375 344.159 109.693C340.962 108.011 337.006 109.24 335.324 112.438Z"
-                            class="fill-orange" fill="#ffb86c" />
+            <g clip-path="url(#ClipPath_2)" id="g8">
+                <path d="M 301.499,314.374 C 201.856,273.492 214.348,208.569 314.698,169.454" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="13.0845" id="path4"/>
+                <g opacity="1" id="g7">
+                    <path d="M 318.28,167.792 C 402.845,128.776 398.179,73.037 303.972,34.3852" fill="none" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="13.0845" id="path5"/>
+                    <g class="fill-orange" fill="#ffb86c" stroke="none" id="g6">
+                        <path d="m 335.324,112.438 -28.858,54.862 -3.722,7.076 7.673,2.248 59.49,17.422 c 3.468,1.016 7.102,-0.972 8.117,-4.439 1.016,-3.468 -0.972,-7.102 -4.439,-8.118 l -59.49,-17.422 3.951,9.324 28.858,-54.862 c 1.682,-3.198 0.453,-7.154 -2.745,-8.836 -3.197,-1.682 -7.153,-0.453 -8.835,2.745 z" class="fill-orange" fill="#ffb86c" id="path6"/>
                     </g>
                 </g>
             </g>
         </g>
     </g>
-    <g id="Layer-2" vectornator:layerName="Layer 2">
-        <g opacity="1">
+    <g id="Layer-2" vectornator:layerName="Layer 2" transform="translate(-2.4257112,-10.459743)">
+        <g opacity="1" id="g15">
             <clipPath id="ClipPath_3">
-                <path
-                    d="M237.163 461.381L188.886 346.003L309.692 268.354L285.303 205.188L343.181 179.315L419.439 274.014L326.226 429.437L237.163 461.381Z" />
+                <path d="m 237.163,461.381 -48.277,-115.378 120.806,-77.649 -24.389,-63.166 57.878,-25.873 76.258,94.699 -93.213,155.423 z" id="path9"/>
             </clipPath>
-            <g clip-path="url(#ClipPath_3)">
-                <path d="M294.935 318.077C395.285 278.962 402.378 215.262 302.735 174.38" fill="none" opacity="1"
-                    class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="7.37512" />
-                <g opacity="1">
-                    <path d="M292.68 317.974C201.208 357.09 203.623 414.72 300.262 454.369" fill="none"
-                        class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="7.37512" />
-                    <g class="fill-blue" fill="#8be9fd" stroke="none">
-                        <path
-                            d="M282.66 349.045L299.335 318.34L301.485 314.38L297.177 313.056L263.779 302.791C261.832 302.193 259.769 303.286 259.171 305.233C258.572 307.18 259.666 309.243 261.612 309.841L295.011 320.105L292.853 314.821L276.179 345.525C275.207 347.315 275.87 349.554 277.66 350.526C279.45 351.498 281.688 350.835 282.66 349.045Z"
-                            class="fill-blue" fill="#8be9fd" />
+            <g clip-path="url(#ClipPath_3)" id="g14">
+                <path d="m 294.935,318.077 c 100.35,-39.115 107.443,-102.815 7.8,-143.697" fill="none" opacity="1" class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512" id="path10"/>
+                <g opacity="1" id="g13">
+                    <path d="m 292.68,317.974 c -91.472,39.116 -89.057,96.746 7.582,136.395" fill="none" class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512" id="path11"/>
+                    <g class="fill-blue" fill="#8be9fd" stroke="none" id="g12">
+                        <path d="m 282.66,349.045 16.675,-30.705 2.15,-3.96 -4.308,-1.324 -33.398,-10.265 c -1.947,-0.598 -4.01,0.495 -4.608,2.442 -0.599,1.947 0.495,4.01 2.441,4.608 l 33.399,10.264 -2.158,-5.284 -16.674,30.704 c -0.972,1.79 -0.309,4.029 1.481,5.001 1.79,0.972 4.028,0.309 5,-1.481 z" class="fill-blue" fill="#8be9fd" id="path12"/>
                     </g>
                 </g>
             </g>
         </g>
-        <g opacity="1">
+        <g opacity="1" id="g17">
             <clipPath id="ClipPath_4">
-                <path
-                    d="M318.927 150.044L253.982 185.071L233.294 150.367L194.868 61.0141L309.832 16.7967L315.014 53.8623L318.927 150.044Z" />
+                <path d="m 318.927,150.044 -64.945,35.027 -20.688,-34.704 -38.426,-89.3529 114.964,-44.2174 5.182,37.0656 z" id="path15"/>
             </clipPath>
-            <g clip-path="url(#ClipPath_4)">
-                <path d="M303.972 34.3852C203.623 73.5002 203.093 133.498 302.735 174.38" fill="none" opacity="1"
-                    class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="7.37512" />
+            <g clip-path="url(#ClipPath_4)" id="g16">
+                <path d="M 303.972,34.3852 C 203.623,73.5002 203.093,133.498 302.735,174.38" fill="none" opacity="1" class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.37512" id="path16"/>
             </g>
         </g>
     </g>
-    <g clip-path="url(#ArtboardFrame_16)" id="Layer-3" vectornator:layerName="Layer 3">
-        <g opacity="1">
+    <g clip-path="url(#ArtboardFrame_16)" id="Layer-3" vectornator:layerName="Layer 3" transform="translate(-2.4257112,-10.459743)">
+        <g opacity="1" id="g19">
             <clipPath id="ClipPath_5">
-                <path
-                    d="M388.951 425.473L272.189 484.775L561.942 641.005L676.636-17.4133L291.159 23.7991L315.014 53.8623L388.951 425.473Z" />
+                <path d="M 388.951,425.473 272.189,484.775 561.942,641.005 676.636,-17.4133 291.159,23.7991 315.014,53.8623 Z" id="path17"/>
             </clipPath>
-            <g clip-path="url(#ClipPath_5)">
-                <path d="M316.615 462.418C710.091 564.555 690.852-98.876 303.957 34.5203" fill="none" opacity="1"
-                    class="stroke-blue" stroke="#8be9fd" stroke-linecap="square" stroke-linejoin="round"
-                    stroke-width="7.37512" />
+            <g clip-path="url(#ClipPath_5)" id="g18">
+                <path d="M 316.615,462.418 C 710.091,564.555 690.852,-98.876 303.957,34.5203" fill="none" opacity="1" class="stroke-blue" stroke="#8be9fd" stroke-linecap="square" stroke-linejoin="round" stroke-width="7.37512" id="path18"/>
             </g>
         </g>
-        <g opacity="1">
+        <g opacity="1" id="g21">
             <clipPath id="ClipPath_6">
-                <path
-                    d="M216.631 62.7226L333.393 3.42052L43.6393-152.809L-71.0545 505.609L314.423 492.031L290.568 434.334L216.631 62.7226Z" />
+                <path d="M 216.631,62.7226 333.393,3.42052 43.6393,-152.809 -71.0545,505.609 314.423,492.031 290.568,434.334 Z" id="path19"/>
             </clipPath>
-            <g clip-path="url(#ClipPath_6)">
-                <path d="M288.967 25.7781C-87.6052-65.7709-85.2703 587.072 301.625 453.676" fill="none" opacity="1"
-                    class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="square" stroke-linejoin="round"
-                    stroke-width="13.0845" />
+            <g clip-path="url(#ClipPath_6)" id="g20">
+                <path d="M 288.967,25.7781 C -87.6052,-65.7709 -85.2703,587.072 301.625,453.676" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="square" stroke-linejoin="round" stroke-width="13.0845" id="path20"/>
             </g>
         </g>
     </g>
