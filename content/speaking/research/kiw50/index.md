@@ -53,7 +53,7 @@ slides:
     margin-right: auto !important;
 }
 #tech_img {
-    width:40vw;
+    width:30vw;
     height:auto;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -121,6 +121,16 @@ a.lowercase {
   text-transform: lowercase;
 }
 
+#title1 > svg{
+    max-width:80% !important;
+}
+#title2 > svg{
+    max-width:80% !important;
+}
+#title3 > svg{
+    max-width:80% !important;
+}
+
 </style>
 
 <!-- This is here to force load mathjax -->
@@ -148,35 +158,27 @@ Mathematics Department at The University of Iowa<p>
 
 > "We define a **tangle** as a portion of a knot diagram from which there emerge just 4 arcs pointing in the compass directions NW, NE, SW, SE." - Conway, J.H.
 
-{{% slides/citations  %}}
-Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5)
-{{% /slides/citations %}}
-
----
-
-{{< slides/row style="" >}}
-{{< slides/col style="flex-grow:2;" >}}
+{{< slides/row >}}
+{{< slides/col style="flex-grow:1;margin-right:2vw;" >}}
 {{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/mathday23/cc_1.svg"  >}}
+{{< slides/centersvg src="/presentations/mathday23/cc_1.svg" direct="true" id="title1" >}}
 {{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:2;" >}}
+{{< slides/col style="flex-grow:1;margin-left:2vw;margin-right:2vw;" >}}
 {{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/mathday23/cc_2.svg"  >}}
+{{< slides/centersvg src="/presentations/mathday23/cc_2.svg"  direct="true" id="title2" >}}
 {{< /slides/center_block >}}
 {{< /slides/col >}}
-{{< slides/col style="flex-grow:0;" >}}
-$\quad$
-{{< /slides/col >}}
-{{< slides/col style="flex-grow:2;" >}}
+{{< slides/col style="flex-grow:1;margin-left:2vw;" >}}
 {{< slides/center_block grow="1"  >}}
-{{< slides/centersvg src="/presentations/general/cc_3.svg"  >}}
+{{< slides/centersvg src="/presentations/general/cc_3.svg"  direct="true" id="title3" >}}
 {{< /slides/center_block >}}
 {{< /slides/col >}}
 {{< /slides/row  >}}
+
+{{% slides/citations  %}}
+Conway, J.H. "An Enumeration of Knots and Links, and Some of Their Algebraic Properties." In Computational Problems in Abstract Algebra, 329-58. Elsevier, 1970. [https://doi.org/10.1016/B978-0-08-012975-4.50034-5](https://doi.org/10.1016/B978-0-08-012975-4.50034-5)
+{{% /slides/citations %}}
 
 ___
 
@@ -321,11 +323,6 @@ $\frac{1}{2}$
 ---
 
 # Algebraic Tangles
-
----
-{{% slides/uncenter %}}
-
-{{< slides/centersvg src="/presentations/lightning/Alg.svg" height="auto" >}}
 
 ---
 
@@ -537,9 +534,7 @@ F. Bonahon and L. Siebenmann, New geometric splittings of classical knots, and t
 ## Linearization of Arborescent tangles
 
 
-{{< slides/center_block height="80vh" grow="1" >}}
-{{< slides/centersvg src="/presentations/bands/watt_walk_tangle.svg"  direct="true" style="max-width:30vw;margin:auto;"   >}}
-{{< /slides/center_block   >}}
+{{< slides/centersvg src="/presentations/bands/watt_walk_tangle.svg" style="max-width:40vw;margin:auto;"   >}}
 
 ---
 ## $\pm$ Abbreviated Canonical Tangle Trees

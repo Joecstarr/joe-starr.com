@@ -124,7 +124,6 @@ $$\rightarrow$$
 {{< /slides/col >}}
 {{< slides/col style="flex-grow:1;" >}}
 {{< slides/center_block grow="1" markdownify="true" >}}
-
 #### Generalized Montesinos Tangles
 
 {{< slides/centersvg src="/presentations/lightning/annotated/GenMont.svg" >}}
@@ -146,7 +145,6 @@ $$([1\ 2\ 0] + [1\ 2\ 0] + [1\ 1\ 0]) \circ (2,2)$$
 {{< slides/row style="justify-content:center;align-items:center;">}}
 {{< slides/col style="flex-grow:1;flex-shrink:1;" >}}
 {{< slides/center_block grow="1" markdownify="true" >}}
-
 #### Algebraic Tangles
 
 {{< slides/centersvg src="/presentations/lightning/annotated/Alg.svg">}}
@@ -166,7 +164,6 @@ $$\rightarrow$$
 {{< /slides/col >}}
 {{< slides/col style="flex-grow:1;flex-shrink:1;" >}}
 {{< slides/center_block grow="1" markdownify="true" >}}
-
 #### Non-Algebraic Tangles
 {{< slides/centersvg src="/presentations/lightning/Non-Alg.svg" >}}
 <div class="classified">

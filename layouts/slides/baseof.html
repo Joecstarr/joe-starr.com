@@ -61,13 +61,16 @@
         }
     }
     function remove_qr() {
-        const match = document.querySelector(".slides .present .hide_qr");
         var qr = document.querySelector("#header-right");
-        if(match != null)
+        if(qr != null)
         {
-            qr.style.display = "none";
-        }else{
-            qr.style.display = "block";
+            const match = document.querySelector(".slides .present .hide_qr");
+            if(match != null)
+            {
+                qr.style.display = "none";
+            }else{
+                qr.style.display = "block";
+            }
         }
     }
     reveal_slidechange_callbacks.push(remove_qr)
