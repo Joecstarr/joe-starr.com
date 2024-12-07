@@ -9,14 +9,13 @@
 
 .admonition .title {
     margin: 0;
-    text-transform: uppercase;
     padding-left: 3px;
     border: 1px solid;
     border-style: hidden hidden solid;
     text-align: left;
 }
-/* Admonitions Types */
-/* Note */
+/****************************** Admonitions Types *****************************/
+/*********************************** Note **********************************/
 .admonition.note {
     border-color: var(--r-Blue);
     background-color: var(--r-background-color);
@@ -28,7 +27,7 @@
     border-color: var(--r-Blue);
     text-align: left;
 }
-/* Theorem */
+/*********************************** Theorem **********************************/
 .admonition.theorem {
     border-color: var(--r-Green);
     background-color: var(--r-background-color);
@@ -40,7 +39,46 @@
     border-color: var(--r-Green);
     text-align: left;
 }
-/* Example */
+/*********************************** Definition **********************************/
+.admonition.definition {
+    border-color: var(--r-Orange);
+    background-color: var(--r-background-color);
+    text-align: left;
+}
+
+.admonition.definition .title {
+    color: var(--r-Orange);
+    border-color: var(--r-Orange);
+    text-align: left;
+}
+/*********************************** Question **********************************/
+.admonition.question {
+    border-color: var(--r-Pink);
+    background-color: var(--r-background-color);
+    text-align: left;
+}
+
+.admonition.question .title {
+    color: var(--r-Pink);
+    border-color: var(--r-Pink);
+    text-align: left;
+}
+/*********************************** Proof **********************************/
+.admonition.proof {
+    border-color: var(--r-Purple);
+    background-color: var(--r-background-color);
+    text-align: left;
+}
+
+.admonition.proof .title {
+    color: var(--r-Purple);
+    text-align: left;
+}
+.admonition.proof .content {
+    color: var(--r-Foreground);
+    text-align: left;
+}
+/*********************************** Example **********************************/
 .admonition.example {
     border-color: var(--r-Yellow);
     background-color: var(--r-background-color);
@@ -55,7 +93,7 @@
     color: var(--r-Foreground);
     text-align: left;
 }
-/* Exercise */
+/*********************************** Exercise *********************************/
 .admonition.exercise {
     border-color: var(--r-Red);
     background-color: var(--r-background-color);

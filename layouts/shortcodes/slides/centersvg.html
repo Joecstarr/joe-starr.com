@@ -4,18 +4,20 @@
 {{ $direct := .Get "direct" | default "false" }}
 {{ $external := .Get "external" | default "false" }}
 {{ $id := .Get "id" | default "" }}
+{{ $class := .Get "class" | default "" }}
+{{ $style := .Get "style" | default "" }}
 {{ $src := .Get "src" | default "" }}
 
 {{ if .IsNamedParams }}
 {{ if eq $direct "true" }}
-<div id="{{ $id  | safeCSS }}">
+<div id="{{ $id  | safeCSS }}" class="svgContainer {{ $class  | safeCSS }}" style="{{ $style  | safeCSS }}">
 {{ with .Get "src"}}
 {{ (print "/static" .) | readFile | safeHTML }}
 {{ end }}
 </div>
 
 {{else if eq $external "true" }}
-<div id="{{ $id  | safeCSS }}">
+<div id="{{ $id  | safeCSS }}"  class="{{ $class  | safeCSS }}">
 <script>
 window.onload = svgAddress({{ $src }},"#{{ $id | safeJS}}");
 </script>

@@ -1,47 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    version="1.1" viewBox="0 0 600 565" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs />
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 576.05212 499.57672" xml:space="preserve" id="svg9" sodipodi:docname="ij_loops.svg"><sodipodi:namedview id="namedview9" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
+    <defs id="defs1"/>
     <clipPath id="ArtboardFrame_10">
-        <rect height="565" width="600" x="0" y="0" />
+        <rect height="565" width="600" x="0" y="0" id="rect1"/>
     </clipPath>
-    <g clip-path="url(#ArtboardFrame_10)" id="Layer-5" vectornator:layerName="Layer 5">
+    <g clip-path="url(#ArtboardFrame_10)" id="Layer-5" vectornator:layerName="Layer 5" transform="translate(-14.992988,-32.828547)">
         <clipPath id="ClipPath">
-            <path
-                d="M260.125 164.287L253.396 159.932L231.624 131.233L274.028 82.7343L255.015 46.3614L103.736 49.668L-32.6622 148.867L-12.8224 316.679L81.4166 516.73L348.427 542.356L415.386 441.504L453.494 328.983L313.071 138.318L297.568 112.567L260.125 164.287Z" />
+            <path d="M 260.125,164.287 253.396,159.932 231.624,131.233 274.028,82.7343 255.015,46.3614 103.736,49.668 -32.6622,148.867 -12.8224,316.679 81.4166,516.73 348.427,542.356 415.386,441.504 453.494,328.983 313.071,138.318 297.568,112.567 Z" id="path1"/>
         </clipPath>
-        <g clip-path="url(#ClipPath)">
-            <g opacity="1">
-                <path
-                    d="M89.3393 460.666C101.877 472.572 128.758 491.746 174.22 495.173C241.04 500.211 295.094 504.294 348 471.228C469.854 395.069 336.245 60.5107 183.246 86.0107C84.4638 102.474 11.0749 173.928 20.8617 281.583C26.2864 341.255 80.7185 451.078 80.7185 451.078"
-                    fill="none" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="9.99607" />
-                <g class="fill-orange" fill="#ffb86c" stroke="none">
-                    <path
-                        d="M133.564 459.215L86.7581 452.01L80.7205 451.08L81.005 457.182L83.2107 504.488C83.3393 507.245 85.6788 509.376 88.4361 509.248C91.1935 509.119 93.3245 506.78 93.196 504.022L90.9902 456.717L85.2372 461.889L132.043 469.095C134.771 469.515 137.323 467.644 137.743 464.915C138.163 462.187 136.292 459.635 133.564 459.215Z"
-                        class="fill-orange" fill="#ffb86c" />
+        <g clip-path="url(#ClipPath)" id="g5">
+            <g opacity="1" id="g4">
+                <path d="m 89.3393,460.666 c 12.5377,11.906 39.4187,31.08 84.8807,34.507 66.82,5.038 120.874,9.121 173.78,-23.945 C 469.854,395.069 336.245,60.5107 183.246,86.0107 84.4638,102.474 11.0749,173.928 20.8617,281.583 c 5.4247,59.672 59.8568,169.495 59.8568,169.495" fill="none" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.99607" id="path2"/>
+                <g class="fill-orange" fill="#ffb86c" stroke="none" id="g3">
+                    <path d="m 133.564,459.215 -46.8059,-7.205 -6.0376,-0.93 0.2845,6.102 2.2057,47.306 c 0.1286,2.757 2.4681,4.888 5.2254,4.76 2.7574,-0.129 4.8884,-2.468 4.7599,-5.226 l -2.2058,-47.305 -5.753,5.172 46.8058,7.206 c 2.728,0.42 5.28,-1.451 5.7,-4.18 0.42,-2.728 -1.451,-5.28 -4.179,-5.7 z" class="fill-orange" fill="#ffb86c" id="path3"/>
                 </g>
             </g>
         </g>
     </g>
-    <g clip-path="url(#ArtboardFrame_10)" id="Layer-10" vectornator:layerName="Layer 10">
+    <g clip-path="url(#ArtboardFrame_10)" id="Layer-10" vectornator:layerName="Layer 10" transform="translate(-14.992988,-32.828547)">
         <clipPath id="ClipPath_2">
-            <path
-                d="M274.109 523.587L329.343 503.035L306.222 476.703L208.6 490.832L155.294 208.243L277.321 29.0559L548.349 12.3574L633.768 135.669C633.768 135.669 663.954 398.991 663.312 409.909C662.67 420.827 606.152 580.747 603.583 589.739C601.014 598.73 482.198 657.817 482.198 657.817L315.213 607.722L274.109 523.587Z" />
+            <path d="M 274.109,523.587 329.343,503.035 306.222,476.703 208.6,490.832 155.294,208.243 277.321,29.0559 548.349,12.3574 633.768,135.669 c 0,0 30.186,263.322 29.544,274.24 -0.642,10.918 -57.16,170.838 -59.729,179.83 -2.569,8.991 -121.385,68.078 -121.385,68.078 L 315.213,607.722 Z" id="path5"/>
         </clipPath>
-        <g clip-path="url(#ClipPath_2)">
-            <g opacity="1">
-                <path
-                    d="M229.948 422.399C245.472 446.816 284.4 504.4 312.55 514.956C373.007 537.627 464.411 527.556 514.657 495.581C556.263 469.104 569.216 429.479 579.378 373.522C598.737 266.924 576.639 124.554 503.272 65.8608C435.971 12.0195 336.213 42.2852 276.128 100.929C243.387 132.884 230.804 177.873 222.36 211.651C208.523 266.998 208.586 317.063 212.878 372.849C214.789 397.697 223.156 411.437 223.156 411.437"
-                    fill="none" class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="9.99459" />
-                <g class="fill-blue" fill="#8be9fd" stroke="none">
-                    <path
-                        d="M273.727 428.782L228.937 413.424L223.16 411.442L222.362 417.498L216.177 464.442C215.816 467.178 217.742 469.689 220.478 470.049C223.215 470.41 225.725 468.484 226.086 465.748L232.271 418.803L225.695 422.878L270.485 438.236C273.096 439.131 275.938 437.741 276.833 435.13C277.728 432.519 276.338 429.677 273.727 428.782Z"
-                        class="fill-blue" fill="#8be9fd" />
+        <g clip-path="url(#ClipPath_2)" id="g9">
+            <g opacity="1" id="g8">
+                <path d="m 229.948,422.399 c 15.524,24.417 54.452,82.001 82.602,92.557 60.457,22.671 151.861,12.6 202.107,-19.375 41.606,-26.477 54.559,-66.102 64.721,-122.059 C 598.737,266.924 576.639,124.554 503.272,65.8608 435.971,12.0195 336.213,42.2852 276.128,100.929 c -32.741,31.955 -45.324,76.944 -53.768,110.722 -13.837,55.347 -13.774,105.412 -9.482,161.198 1.911,24.848 10.278,38.588 10.278,38.588" fill="none" class="stroke-blue" stroke="#8be9fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.99459" id="path6"/>
+                <g class="fill-blue" fill="#8be9fd" stroke="none" id="g7">
+                    <path d="m 273.727,428.782 -44.79,-15.358 -5.777,-1.982 -0.798,6.056 -6.185,46.944 c -0.361,2.736 1.565,5.247 4.301,5.607 2.737,0.361 5.247,-1.565 5.608,-4.301 l 6.185,-46.945 -6.576,4.075 44.79,15.358 c 2.611,0.895 5.453,-0.495 6.348,-3.106 0.895,-2.611 -0.495,-5.453 -3.106,-6.348 z" class="fill-blue" fill="#8be9fd" id="path7"/>
                 </g>
             </g>
         </g>

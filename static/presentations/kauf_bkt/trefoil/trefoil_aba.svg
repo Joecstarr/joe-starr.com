@@ -1,44 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs />
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 985.70715 994.02521" xml:space="preserve" id="svg10" sodipodi:docname="trefoil_aba.svg"><sodipodi:namedview id="namedview10" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
+    <defs id="defs1"/>
 
-    <g clip-path="url(#ArtboardFrame_67)" id="Layer-1" vectornator:layerName="Layer 1">
-        <path d="M553.788 800.313C514.808 860.808 530.169 915.55 563.515 936.801" fill="none" opacity="1"
-            class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="28" />
-        <path d="M440.395 800.338C460.967 830.644 496.016 891.202 463.141 915.578" fill="none" opacity="1"
-            class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="28" />
-        <path d="M387.653 322.947C311.176 330.165 259.019 354.123 284.1 444.149" fill="none" opacity="1"
-            class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="28" />
-        <path d="M631.197 323.446C662.568 330.202 745.473 303.564 747.986 232.171" fill="none" opacity="1"
-            class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="28" />
-        <path d="M270.732 221.336C255.055 272.193 243.027 327.621 144.512 369.175" fill="none" opacity="1"
-            class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="28" />
-        <path d="M712.229 389.517C728.712 327.209 816.583 376.199 837.35 390.256" fill="none" opacity="1"
-            class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="28" />
+    <g clip-path="url(#ArtboardFrame_67)" id="Layer-1" vectornator:layerName="Layer 1" transform="translate(-6.4590408,-4.5401177)">
+        <path d="m 553.788,800.313 c -38.98,60.495 -23.619,115.237 9.727,136.488" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path1"/>
+        <path d="m 440.395,800.338 c 20.572,30.306 55.621,90.864 22.746,115.24" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path2"/>
+        <path d="M 387.653,322.947 C 311.176,330.165 259.019,354.123 284.1,444.149" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path3"/>
+        <path d="m 631.197,323.446 c 31.371,6.756 114.276,-19.882 116.789,-91.275" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path4"/>
+        <path d="m 270.732,221.336 c -15.677,50.857 -27.705,106.285 -126.22,147.839" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path5"/>
+        <path d="m 712.229,389.517 c 16.483,-62.308 104.354,-13.318 125.121,0.739" fill="none" opacity="1" class="stroke-red stroke-red" stroke="#ff5555" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path6"/>
         <clipPath id="ClipPath">
-            <path
-                d="M678.954 246.428L591.211 395.591L759.035 385.372L950.078 339.435L1240.51 636.005L700.889 1161.58L589.849 1004.31C589.849 1004.31 559.986 950.038 545.426 956.157C530.866 962.277 573.652 904.122 573.652 904.122L605.619 850.457L491.549 772.397L414.655 824.722L433.611 879.467L502.396 936.701L530.951 1013.95L-96.6902 1127.36L-119.503 232.39L345.254 460.923L430.285 382.074L195.509 155.201L532.865-176.824L1052.97 202.884L678.954 246.428Z" />
+            <path d="m 678.954,246.428 -87.743,149.163 167.824,-10.219 191.043,-45.937 290.432,296.57 -539.621,525.575 -111.04,-157.27 c 0,0 -29.863,-54.272 -44.423,-48.153 -14.56,6.12 28.226,-52.035 28.226,-52.035 l 31.967,-53.665 -114.07,-78.06 -76.894,52.325 18.956,54.745 68.785,57.234 28.555,77.249 -627.6412,113.41 -22.8128,-894.97 464.757,228.533 85.031,-78.849 -234.776,-226.873 337.356,-332.025 520.105,379.708 z" id="path7"/>
         </clipPath>
-        <g clip-path="url(#ClipPath)">
-            <path d="M738.563 299.681C852.762-130.445-154.031-152.399 468.895 846.757" fill="none" opacity="1"
-                class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="28" />
-            <path d="M714.579 382.06C374.474 1718.44-326.518 422.576 225.201 345.782" fill="none" opacity="1"
-                class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="28" />
-            <path d="M315.101 332.037C1411.76 171.475 902.086 1290.97 525.333 902.819" fill="none" opacity="1"
-                class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="28" />
+        <g clip-path="url(#ClipPath)" id="g10">
+            <path d="M 738.563,299.681 C 852.762,-130.445 -154.031,-152.399 468.895,846.757" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path8"/>
+            <path d="M 714.579,382.06 C 374.474,1718.44 -326.518,422.576 225.201,345.782" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path9"/>
+            <path d="M 315.101,332.037 C 1411.76,171.475 902.086,1290.97 525.333,902.819" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" id="path10"/>
         </g>
     </g>
 </svg>

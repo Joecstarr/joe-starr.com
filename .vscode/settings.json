@@ -1,12 +1,13 @@
 {
     "cSpell.words": [
-    "cus",
-    "cuscss",
-    "funct",
-    "Kauf",
-    "Lial",
-    "slidecollumn"
-  ],
+        "cus",
+        "cuscss",
+        "funct",
+        "Kauf",
+        "Lial",
+        "Linearization",
+        "slidecollumn"
+    ],
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,

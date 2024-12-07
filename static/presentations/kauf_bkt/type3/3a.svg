@@ -1,31 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    version="1.1" viewBox="0 0 500 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-    xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs />
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" stroke-miterlimit="10" style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 529.99963 530" xml:space="preserve" id="svg5" sodipodi:docname="3a.svg"><sodipodi:namedview id="namedview5" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
+    <defs id="defs1"/>
 
-    <g clip-path="url(#ArtboardFrame_90)" id="Layer-1" vectornator:layerName="Layer 1">
-        <path d="M500.492 500C479.261 204.948 23.5657 207.504 0.492384 500" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="30" />
+    <g clip-path="url(#ArtboardFrame_90)" id="Layer-1" vectornator:layerName="Layer 1" transform="translate(14.507616,15)">
+        <path d="M 500.492,500 C 479.261,204.948 23.5657,207.504 0.492384,500" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" id="path1"/>
     </g>
-    <g clip-path="url(#ArtboardFrame_90)" id="Layer-2" vectornator:layerName="Layer 2">
-        <path d="M500.492-5.68434e-14C479.261 296.011 23.5657 293.448 0.492384 0" fill="none" opacity="1"
-            class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="30" />
+    <g clip-path="url(#ArtboardFrame_90)" id="Layer-2" vectornator:layerName="Layer 2" transform="translate(14.507616,15)">
+        <path d="M 500.492,0 C 479.261,296.011 23.5657,293.448 0.492384,0" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" id="path2"/>
     </g>
-    <g clip-path="url(#ArtboardFrame_90)" id="Layer-3" vectornator:layerName="Layer 3">
-        <g opacity="1">
+    <g clip-path="url(#ArtboardFrame_90)" id="Layer-3" vectornator:layerName="Layer 3" transform="translate(14.507616,15)">
+        <g opacity="1" id="g5">
             <clipPath id="ClipPath">
-                <path
-                    d="M40.5299 339.135L80.184 298.465L138.565 329.399L69.682 389.813L412.735 407.24L418.144 379.715L378.04 339.517L413.967 300.569L455.493 340.626L578.141 245.969L551.572 172.555L418.027 184.441L191.491 153.677L28.581 165.563L-73.5 294.912L40.5299 339.135Z" />
+                <path d="m 40.5299,339.135 39.6541,-40.67 58.381,30.934 -68.883,60.414 343.053,17.427 5.409,-27.525 -40.104,-40.198 35.927,-38.948 41.526,40.057 L 578.141,245.969 551.572,172.555 418.027,184.441 191.491,153.677 28.581,165.563 -73.5,294.912 Z" id="path3"/>
             </clipPath>
-            <g clip-path="url(#ClipPath)">
-                <path d="M500.492 250C421.301 421.167 79.3415 419.95 0.492384 250" fill="none" opacity="1"
-                    class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="30" />
+            <g clip-path="url(#ClipPath)" id="g4">
+                <path d="M 500.492,250 C 421.301,421.167 79.3415,419.95 0.492384,250" fill="none" opacity="1" class="stroke-orange stroke-orange" stroke="#ffb86c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" id="path4"/>
             </g>
         </g>
     </g>
