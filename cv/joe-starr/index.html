@@ -25,14 +25,22 @@
             print-color-adjust:exact !important;
             }
 
-
-        @media print {
-            @page{
-                size: a4;
-            }
+        @page{
+                size: A4 portrait;
+                margin-left: 1in;
+                margin-right: 1in;
+                margin-top: 1in;
+                margin-bottom: 1in;
+         }
+        @page  :first {
+                size: A4 portrait;
+                margin-left: 1in;
+                margin-right: 1in;
+                margin-top: .125in;
+                margin-bottom: 1in;
+         }
             html{
-                margin:.7in;
-                font-size: 12pt;
+                font-size: 11pt;
                 color: var(--print-text-color);
             }
             #header,
@@ -40,12 +48,11 @@
             #nav {
                 display: none !important;
             }
-        }
 
         .section_title{
             background-color: var(--primary-color);
             color: var(--background-color);
-            font-size: 1.5vh;
+            font-size: 11pt;
         }
         .head .icon{
             color: var(--text-color);
@@ -67,14 +74,11 @@
     h4, h5, h6  {
             font-family: 'roboto', sans-serif;
             padding: 0;
-            margin: .125vh;
-        }
-       h6  {
-            font-family: 'roboto', sans-serif;
-            padding: 0;
-            margin: 0;
+            font-size: 11pt;
+            margin:0;
         }
         h1{
+            font-size: 20pt;
             color: var(--primary-color);
         }
         p{
@@ -91,21 +95,21 @@
         .hr{
             background-color: var(--primary-color);
             border-color: var(--primary-color);
-            height: .5vh;
+            height: .005in;
             padding: 0;
             margin-top: 0;
         }
         .hrlite{
             background-color: var(--secondary-color);
             border-color: var(--secondary-color);
-            height: .1vh;
+            height: .005in;
             padding: 0;
             margin-top: 0;
         }
         .section_title{
             display: inline-block;
-            padding: .5vw;
-            margin: .125vh;
+            padding: .05in;
+            margin: .025in;
             margin-left: 0;
             margin-bottom: 0;
             text-transform: uppercase;
@@ -122,14 +126,19 @@
             margin: 0;
         }
         .summary {
-            margin-top: .5vh;
-            margin-bottom: .5vh;
+            margin-top: .05in;
+            margin-bottom: .05in;
         }
 
+        .left {
+            max-width:3in;
+        }
         .right {
+            max-width:2in;
             float: right;
-            min-width: 17vw;
-            font-weight: bold;
+            font-size:11pt;
+            min-width: 1in;
+            text-align:right;
         }
 
 
@@ -145,22 +154,16 @@
 </head>
 
 <body>
-    <header>
 
-    </header>
-
-    <div class="head">
+    <div class="head" >
         <h1>Joseph Starr</h1>
         <h2>PhD Candidate / Graduate Assistant</h2>
         <p>
             
-
             <a href="mailto:joe@joe-starr.com"><i class="fa-regular fa-envelope icon" aria-hidden="true"></i><a href="mailto:joe@joe-starr.com">joe@joe-starr.com</a></a>
              
-
             <a href="https://github.com/Joecstarr/"><i class="fa-brands fa-github icon" aria-hidden="true"></i>Joecstarr</a>
              
-
             <a href="https://www.linkedin.com/in/joseph-c-starr/"><i class="fa-brands fa-linkedin icon" aria-hidden="true"></i>joseph-c-starr</a>
              
         </p>
@@ -180,7 +183,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>PhD in Mathematics</h4>
-                    <h5>University of Iowa</h5>
+                    <h6>University of Iowa</h6>
                 </div>
                 <div class="right">
                     Fall 2021 - Present
@@ -196,7 +199,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>MS in Mathematics</h4>
-                    <h5>University of Iowa</h5>
+                    <h6>University of Iowa</h6>
                 </div>
                 <div class="right">
                     Fall 2021 - Spring 2023
@@ -212,7 +215,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Bachelor of Science in Computer Science</h4>
-                    <h5>University of Michigan - Dearborn</h5>
+                    <h6>University of Michigan - Dearborn</h6>
                 </div>
                 <div class="right">
                     Fall 2013 - Fall 2016
@@ -228,7 +231,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Bachelor of Science in CIS Mathematics</h4>
-                    <h5>University of Michigan - Dearborn</h5>
+                    <h6>University of Michigan - Dearborn</h6>
                 </div>
                 <div class="right">
                     Fall 2013 - Fall 2016
@@ -251,7 +254,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>RTG: Geometry and Topology at Iowa Graduate Fellowship</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     Spring 2023, Summer 2023, Summer 2024
@@ -274,7 +277,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Iowa Sciences Academy Graduate Assistant</h4>
-                    <h5><a href="https://isa.uiowa.edu" target="_blank">University of Iowa - Iowa Sciences Academy</a></h5>
+                    <h6><a href="https://isa.uiowa.edu" target="_blank">University of Iowa - Iowa Sciences Academy</a></h6>
                 </div>
                 <div class="right">
                     Fall 2024, Spring 2025
@@ -290,7 +293,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Graduate Fellow</h4>
-                    <h5><a href="https://uiowa.edu" target="_blank">University of Iowa</a></h5>
+                    <h6><a href="https://uiowa.edu" target="_blank">University of Iowa</a></h6>
                 </div>
                 <div class="right">
                     Spring 2023, Summer 2023, Summer 2024
@@ -306,10 +309,10 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Mathematics Teaching Assistant</h4>
-                    <h5><a href="https://uiowa.edu" target="_blank">University of Iowa</a></h5>
+                    <h6><a href="https://uiowa.edu" target="_blank">University of Iowa</a></h6>
                 </div>
                 <div class="right">
-                    Fall 2021, Spring 2022, Fall 2022, Fall 2023, Spring 2024
+                    Fall 2021, Spring 2022, <br/>Fall 2022, Fall 2023, <br/>Spring 2024
                 </div>
             </div>
             <p class="summary">
@@ -322,7 +325,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Software Engineer</h4>
-                    <h5><a href="https://westerndp.com/" target="_blank">Western Diversified Plastics</a></h5>
+                    <h6><a href="https://westerndp.com/" target="_blank">Western Diversified Plastics</a></h6>
                 </div>
                 <div class="right">
                     Dec 2020 - Aug 2021
@@ -338,7 +341,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Project Engineer</h4>
-                    <h5><a href="https://Vector.com" target="_blank">Vector North America</a></h5>
+                    <h6><a href="https://Vector.com" target="_blank">Vector North America</a></h6>
                 </div>
                 <div class="right">
                     Jan 2017 - Dec 2020
@@ -388,14 +391,14 @@
             <div class="flex" >
                 <div class="left">
                     <h4>Engineering CoOp</h4>
-                    <h5><a href="https://zf.com" target="_blank">ZF</a></h5>
+                    <h6><a href="https://zf.com" target="_blank">ZF</a></h6>
                 </div>
                 <div class="right">
                     May 2016 - August 2016
                 </div>
             </div>
             <p class="summary">
-                Bootloader integrations for break systems.
+                Bootloader integrations for break systems.<div style="page-break-after: always;"><div/>
             </p>
         </div>
         
@@ -411,7 +414,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>MATH:1005</h4>
-                    <h5>Primary Instructor</h5>
+                    <h6>Primary Instructor</h6>
                 </div>
                 <div class="right">
                     Fall 2022, Fall 2023
@@ -430,7 +433,7 @@ systems of equations and inequalities.
             <div class="flex" >
                 <div class="left">
                     <h4>MATH:1350</h4>
-                    <h5>Discussion Section Leader</h5>
+                    <h6>Discussion Section Leader</h6>
                 </div>
                 <div class="right">
                     Fall 2021, Spring 2022, Spring 2024
@@ -452,7 +455,7 @@ students planning to major in business.
             <div class="flex" >
                 <div class="left">
                     <h4>MATH:5760</h4>
-                    <h5>Graduate Assistant</h5>
+                    <h6>Graduate Assistant</h6>
                 </div>
                 <div class="right">
                     Spring 2024
@@ -471,7 +474,7 @@ data analysis and introduction to machine learning).
             <div class="flex" >
                 <div class="left">
                     <h4>ISA:4040</h4>
-                    <h5>Primary Instructor</h5>
+                    <h6>Primary Instructor</h6>
                 </div>
                 <div class="right">
                     Fall 2024
@@ -494,7 +497,7 @@ junior or senior standing, and undergraduate research experience.
             <div class="flex" >
                 <div class="left">
                     <h4>ISA:4041</h4>
-                    <h5>Primary Instructor</h5>
+                    <h6>Primary Instructor</h6>
                 </div>
                 <div class="right">
                     Spring 2025
@@ -517,7 +520,7 @@ internships.
             <div class="flex" >
                 <div class="left">
                     <h4>ISA:1040</h4>
-                    <h5>Primary Instructor</h5>
+                    <h6>Primary Instructor</h6>
                 </div>
                 <div class="right">
                     Spring 2025
@@ -529,7 +532,7 @@ research facilities and laboratories on campus; network with
 professors and graduate students; explore different types of
 research environments on campus; learn how to identify and
 contact potential research mentors.
-<a href="https://myui.uiowa.edu/my-ui/courses/details.page?ci=173793&amp;id=1032561" target="_blank">Course Listing</a>
+<a href="https://myui.uiowa.edu/my-ui/courses/details.page?ci=173793&amp;id=1032561" target="_blank">Course Listing</a><div style="page-break-after: always;"><div/>
             </p>
         </div>
         
@@ -545,7 +548,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Joint Math Meetings: AMS Special Session on Results on Curves and Surfaces Inspired by Experiments</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     January 2025
@@ -561,7 +564,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Knots in Washington 50</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     December 2024
@@ -577,7 +580,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>GEOTOP-A International Conference</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     January 2023
@@ -593,7 +596,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>University of Michigan - Dearborn Colloquia</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     November 2023
@@ -609,7 +612,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Tangled in Knot Theory</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     May 2023
@@ -632,10 +635,10 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Andrews University</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
-                    April 2025 (Scheduled)
+                    April 2025 <br/>(Scheduled)
                 </div>
             </div>
             <p class="summary">
@@ -648,10 +651,10 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>St. Ambrose University</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
-                    January 2025 (Planned)
+                    January 2025 <br/>(Planned)
                 </div>
             </div>
             <p class="summary">
@@ -664,7 +667,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Truman State University</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     February 2024
@@ -680,7 +683,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Grinnell College</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     November 2023
@@ -703,10 +706,10 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://sites.google.com/view/rume2025/" target="_blank">2025 Research in Undergraduate Mathematics Education Conference</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
-                    February 2025 (planned)
+                    February 2025 <br/>(planned)
                 </div>
             </div>
             <p class="summary">
@@ -719,7 +722,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://9mwgeometrytopology.eventos.cimat.mx/home_9atd" target="_blank">9th Mexican Workshop on Applied Geometry and Topology</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     November 2023
@@ -742,10 +745,10 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://sites.google.com/view/rume2025/" target="_blank">2025 Research in Undergraduate Mathematics Education Conference</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
-                    February 2025 (planned)
+                    February 2025 <br/>(planned)
                 </div>
             </div>
             <p class="summary">
@@ -758,7 +761,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://jointmathematicsmeetings.org/jmm" target="_blank">Joint Math Meetings</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     January 2025
@@ -774,7 +777,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://blogs.gwu.edu/ccas-knotsinwashington/kiw-50/" target="_blank">Knots in Washington 50</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     December 2024
@@ -790,7 +793,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://applied-topology-school.eventos.cimat.mx" target="_blank">CIMAT-Mérida Applied Topology School (Remote)</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     November 2024
@@ -806,7 +809,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://maa.org/event/mathfest/" target="_blank">2024 MAA Mathfest</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     August 2024
@@ -822,7 +825,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php" target="_blank">2024 Research in Undergraduate Mathematics Education Conference</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     February 2024
@@ -838,7 +841,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://seminargeotop-a.com/merida24" target="_blank">GEOTOP-A International Conference</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     January 2024
@@ -854,7 +857,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://9mwgeometrytopology.eventos.cimat.mx/home_9atd" target="_blank">9th Mexican Workshop on Applied Geometry and Topology</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     November 2023
@@ -870,7 +873,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://www.ams.org/meetings/sectional/2307_special.html" target="_blank">AMS Central Section Meeting: Special Session on Applied Knot Theory</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     October 2023
@@ -886,7 +889,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://icerm.brown.edu/topical_workshops/tw-23-tkt/" target="_blank">Tangled in Knot Theory</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     May 2023
@@ -902,7 +905,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php" target="_blank">2023 Research in Undergraduate Mathematics Education Conference</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     February 2023
@@ -918,7 +921,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4><a href="https://8mwgeometrytopology.eventos.cimat.mx/home_8mwtopology" target="_blank">8th Mexican Workshop on Applied Geometry and Topology</a></h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     November 2022
@@ -941,7 +944,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Webmaster University of Iowa Math Graduate Board</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     Spring 2023 to Fall 2024
@@ -957,7 +960,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Heartland Partnership Talk Organization</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     Fall 2024
@@ -973,7 +976,7 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>Panel Participant STEM Career Panel</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     Feb 2023
@@ -989,10 +992,10 @@ contact potential research mentors.
             <div class="flex" >
                 <div class="left">
                     <h4>University of Iowa Exploring Majors Fair Department Representative</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
-                    Fall 2022, Spring 2023, Fall 2023
+                    Fall 2022, Spring 2023, <br/>Fall 2023
                 </div>
             </div>
             <p class="summary">
@@ -1006,7 +1009,7 @@ undergraduate students with departments of their interest.
             <div class="flex" >
                 <div class="left">
                     <h4>Seminars Organized</h4>
-                    <h5></h5>
+                    <h6></h6>
                 </div>
                 <div class="right">
                     
