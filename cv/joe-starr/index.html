@@ -14,34 +14,32 @@
 
         :root {
             --text-color: #000000;
+            --print-text-color: #000000;
             --text-secondary-color: #000000;
-            --background-color: #eaedf0;
+            --background-color: #ffffff;
             --secondary-background-color: #8811ee1a;
             --primary-color: #8811ee;
             --secondary-color: #8811ee1e;
+            --contrast-text-color: #ffffff;
+            -webkit-print-color-adjust:exact !important;
+            print-color-adjust:exact !important;
             }
 
 
         @media print {
             @page{
-                size: letter;
-            }
-            .section_title{
-                background-color: var(--primary-color);
-                color: #ffffff;
-                font-size: 12pt;
+                size: a4;
             }
             html{
-                font-size: 11pt;
-                color: #000000;
-                background-color: #ffffff;
+                margin:.7in;
+                font-size: 12pt;
+                color: var(--print-text-color);
             }
-
-        }
-        @media screen {
-        html{
-            color: var(--text-color);
-            background-color: var(--background-color);
+            #header,
+            #footer,
+            #nav {
+                display: none !important;
+            }
         }
 
         .section_title{
@@ -49,7 +47,6 @@
             color: var(--background-color);
             font-size: 1.5vh;
         }
-    }
         .head .icon{
             color: var(--text-color);
             background-color: var(--background-color);
@@ -68,12 +65,12 @@
 
         h1, h2, h3,
     h4, h5, h6  {
-            font-family: 'Asul', sans-serif;
+            font-family: 'roboto', sans-serif;
             padding: 0;
             margin: .125vh;
         }
        h6  {
-            font-family: 'Asul', sans-serif;
+            font-family: 'roboto', sans-serif;
             padding: 0;
             margin: 0;
         }
@@ -116,7 +113,7 @@
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'roboto', sans-serif;
         }
 
         .flex {
@@ -436,8 +433,8 @@ students planning to major in business.
             </div>
             <p class="summary">
                 Topics in mathematical biology; canonical mathematical modeling
-and analysis of problems in the biological sciences; second of
-a two-semester sequence.
+and analysis of problems in the biological sciences (
+data analysis and introduction to machine learning).
 <a href="https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&amp;q.courseNumber=5760&amp;showResults=1" target="_blank">Course Listing</a>
             </p>
         
@@ -512,7 +509,7 @@ contact potential research mentors.
         <div class="hrlite"></div>
         <div class="flex">
             <div class="left">
-                    <h4>Joint Math Meetings</h4>
+                    <h4>Joint Math Meetings: AMS Special Session on Results on Curves and Surfaces Inspired by Experiments</h4>
                     <h5></h5>
                 </div>
                 <div class="right">
@@ -520,7 +517,35 @@ contact potential research mentors.
                 </div>
             </div>
             <p class="summary">
-                <a href="https://www.dropbox.com/scl/fi/mxetfathb0gby0nfp7t9k/2023-11-15_Colloquium_Starr.pdf?rlkey=cl07qn56q0saos0hzauxo6758&amp;e=1&amp;dl=0" target="_blank">The Tanglenomicon: Tabulation of two string tangles</a>
+                <a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/40424" target="_blank">JMM AMS Special Session on Results on Curves and Surfaces Inspired by Experiments Program</a>
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4>Knots in Washington 50</h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    December 2024
+                </div>
+            </div>
+            <p class="summary">
+                <a href="https://bpb-us-e1.wpmucdn.com/blogs.gwu.edu/dist/d/4238/files/2024/12/Knots-in-Washington-50-8.pdf" target="_blank">Knots in Washington 50 program</a>
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4>GEOTOP-A International Conference</h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    January 2023
+                </div>
+            </div>
+            <p class="summary">
+                <a href="https://seminargeotop-a.com/merida24/scientific-programme#talk_19" target="_blank">https://seminargeotop-a.com/merida24/scientific-programme#talk_19</a>
             </p>
         
         <div class="hrlite"></div>
@@ -534,132 +559,13 @@ contact potential research mentors.
                 </div>
             </div>
             <p class="summary">
-                <a href="https://www.dropbox.com/scl/fi/mxetfathb0gby0nfp7t9k/2023-11-15_Colloquium_Starr.pdf?rlkey=cl07qn56q0saos0hzauxo6758&amp;e=1&amp;dl=0" target="_blank">The Tanglenomicon: Tabulation of two string tangles</a>
-            </p>
-        
-    </section>
-    
-    <section style="page-break-inside:avoid;">
-
-        <h2 class="section_title"><i class="fa-solid fa-users icon" aria-hidden="true"></i>Conference Attendance</h2>
-        <div class="hr"></div>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://sites.google.com/view/rume2025/" target="_blank">2025 Research in Undergraduate Mathematics Education Conference</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    February 2025 (planned)
-                </div>
-            </div>
-            <p class="summary">
-                Submitted poster on &ldquo;How One GTA Restructured a Course on Teaching Undergraduate Research&rdquo;
+                <a href="https://www.dropbox.com/scl/fi/mxetfathb0gby0nfp7t9k/2023-11-15_Colloquium_Starr.pdf?rlkey=cl07qn56q0saos0hzauxo6758&amp;e=1&amp;dl=0" target="_blank">Dearborn Colloquia: The Tanglenomicon: Tabulation of two string tangles</a>
             </p>
         
         <div class="hrlite"></div>
         <div class="flex">
             <div class="left">
-                    <h4><a href="https://jointmathematicsmeetings.org/jmm" target="_blank">Joint Math Meetings</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    January 2025
-                </div>
-            </div>
-            <p class="summary">
-                Contributed <a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/40424" target="_blank">https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/40424</a>
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://blogs.gwu.edu/ccas-knotsinwashington/kiw-50/" target="_blank">Knots in Washington 50</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    December 2024
-                </div>
-            </div>
-            <p class="summary">
-                Submitted paper on &ldquo;The Tanglenomicon: Tabulation of Two String Tangles&rdquo;
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://applied-topology-school.eventos.cimat.mx" target="_blank">CIMAT-Mérida Applied Topology School (Remote)</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    November 2024
-                </div>
-            </div>
-            <p class="summary">
-                
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://maa.org/event/mathfest/" target="_blank">2024 MAA Mathfest</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    August 2024
-                </div>
-            </div>
-            <p class="summary">
-                
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php" target="_blank">2024 Research in Undergraduate Mathematics Education Conference</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    February 2024
-                </div>
-            </div>
-            <p class="summary">
-                
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://seminargeotop-a.com/merida24" target="_blank">GEOTOP-A International Conference</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    January 2024
-                </div>
-            </div>
-            <p class="summary">
-                Contributed <a href="https://joe-starr.com/speaking/research/merida_24/" target="_blank">https://joe-starr.com/speaking/research/merida_24/</a>
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://9mwgeometrytopology.eventos.cimat.mx/home_9atd" target="_blank">9th Mexican Workshop on Applied Geometry and Topology</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    November 2023
-                </div>
-            </div>
-            <p class="summary">
-                Contributed poster <a href="https://joe-starr.com/speaking/posters/9mwagt/" target="_blank">https://joe-starr.com/speaking/posters/9mwagt/</a>
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://icerm.brown.edu/topical_workshops/tw-23-tkt/" target="_blank">Tangled in Knot Theory</a></h4>
+                    <h4>Tangled in Knot Theory</h4>
                     <h5></h5>
                 </div>
                 <div class="right">
@@ -667,35 +573,7 @@ contact potential research mentors.
                 </div>
             </div>
             <p class="summary">
-                Funded by ICERM and NSF RTG grant DMS-2038103
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php" target="_blank">2023 Research in Undergraduate Mathematics Education Conference</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    February 2023
-                </div>
-            </div>
-            <p class="summary">
-                
-            </p>
-        
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
-                    <h4><a href="https://8mwgeometrytopology.eventos.cimat.mx/home_8mwtopology" target="_blank">8th Mexican Workshop on Applied Geometry and Topology</a></h4>
-                    <h5></h5>
-                </div>
-                <div class="right">
-                    November 2022
-                </div>
-            </div>
-            <p class="summary">
-                
+                <a href="https://icerm.brown.edu/program/topical_workshop/tw-23-tkt#schedule-item-5222" target="_blank">Lightning talk</a>
             </p>
         
     </section>
@@ -765,61 +643,210 @@ contact potential research mentors.
     
     <section style="page-break-inside:avoid;">
 
-        <h2 class="section_title"><i class="fa-solid fa-book icon" aria-hidden="true"></i>Seminars Organized</h2>
+        <h2 class="section_title"><i class="fa-solid fa-users icon" aria-hidden="true"></i>Posters</h2>
         <div class="hr"></div>
         
         <div class="hrlite"></div>
         <div class="flex">
             <div class="left">
-                    <h4>Knots, Tangles, and Computers</h4>
+                    <h4><a href="https://sites.google.com/view/rume2025/" target="_blank">2025 Research in Undergraduate Mathematics Education Conference</a></h4>
                     <h5></h5>
                 </div>
                 <div class="right">
-                    
+                    February 2025 (planned)
                 </div>
             </div>
             <p class="summary">
-                <p>Primary Organizer:</p>
-<ul>
-<li>Fall 2024: On Arborescent Tangles</li>
-<li>Spring 2024: On Software Engineering</li>
-<li>Fall 2023: On Tangle Tabulation</li>
-</ul>
+                Submitted poster on &ldquo;How One GTA Restructured a Course on Teaching Undergraduate Research&rdquo;
             </p>
         
         <div class="hrlite"></div>
         <div class="flex">
             <div class="left">
-                    <h4>Topological Data Visualization</h4>
+                    <h4><a href="https://9mwgeometrytopology.eventos.cimat.mx/home_9atd" target="_blank">9th Mexican Workshop on Applied Geometry and Topology</a></h4>
                     <h5></h5>
                 </div>
                 <div class="right">
-                    
+                    November 2023
                 </div>
             </div>
             <p class="summary">
-                <p>Assisted in Organizing:</p>
-<ul>
-<li>Spring 2024</li>
-<li>Fall 2023</li>
-</ul>
+                <a href="https://joe-starr.com/speaking/posters/9mwagt/" target="_blank">https://joe-starr.com/speaking/posters/9mwagt/</a>
+            </p>
+        
+    </section>
+    
+    <section style="page-break-inside:avoid;">
+
+        <h2 class="section_title"><i class="fa-solid fa-users icon" aria-hidden="true"></i>Conference Attendance</h2>
+        <div class="hr"></div>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://sites.google.com/view/rume2025/" target="_blank">2025 Research in Undergraduate Mathematics Education Conference</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    February 2025 (planned)
+                </div>
+            </div>
+            <p class="summary">
+                
             </p>
         
         <div class="hrlite"></div>
         <div class="flex">
             <div class="left">
-                    <h4>Undergraduate Topology Seminar</h4>
+                    <h4><a href="https://jointmathematicsmeetings.org/jmm" target="_blank">Joint Math Meetings</a></h4>
                     <h5></h5>
                 </div>
                 <div class="right">
-                    
+                    January 2025
                 </div>
             </div>
             <p class="summary">
-                <p>Assisted in Organizing:</p>
-<ul>
-<li>Fall 2024 On 3d printing for visualization (technical support)</li>
-</ul>
+                Funded by AMS Travel Grant
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://blogs.gwu.edu/ccas-knotsinwashington/kiw-50/" target="_blank">Knots in Washington 50</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    December 2024
+                </div>
+            </div>
+            <p class="summary">
+                
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://applied-topology-school.eventos.cimat.mx" target="_blank">CIMAT-Mérida Applied Topology School (Remote)</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    November 2024
+                </div>
+            </div>
+            <p class="summary">
+                
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://maa.org/event/mathfest/" target="_blank">2024 MAA Mathfest</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    August 2024
+                </div>
+            </div>
+            <p class="summary">
+                Funded by NSF RTG grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2038103" target="_blank">DMS-2038103</a>
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php" target="_blank">2024 Research in Undergraduate Mathematics Education Conference</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    February 2024
+                </div>
+            </div>
+            <p class="summary">
+                
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://seminargeotop-a.com/merida24" target="_blank">GEOTOP-A International Conference</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    January 2024
+                </div>
+            </div>
+            <p class="summary">
+                
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://9mwgeometrytopology.eventos.cimat.mx/home_9atd" target="_blank">9th Mexican Workshop on Applied Geometry and Topology</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    November 2023
+                </div>
+            </div>
+            <p class="summary">
+                
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://www.ams.org/meetings/sectional/2307_special.html" target="_blank">AMS Central Section Meeting: Special Session on Applied Knot Theory</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    October 2023
+                </div>
+            </div>
+            <p class="summary">
+                Funded by AMS Travel Grant
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://icerm.brown.edu/topical_workshops/tw-23-tkt/" target="_blank">Tangled in Knot Theory</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    May 2023
+                </div>
+            </div>
+            <p class="summary">
+                Funded by ICERM and NSF RTG grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2038103" target="_blank">DMS-2038103</a>
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php" target="_blank">2023 Research in Undergraduate Mathematics Education Conference</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    February 2023
+                </div>
+            </div>
+            <p class="summary">
+                
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4><a href="https://8mwgeometrytopology.eventos.cimat.mx/home_8mwtopology" target="_blank">8th Mexican Workshop on Applied Geometry and Topology</a></h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    November 2022
+                </div>
+            </div>
+            <p class="summary">
+                
             </p>
         
     </section>
@@ -846,15 +873,15 @@ contact potential research mentors.
         <div class="hrlite"></div>
         <div class="flex">
             <div class="left">
-                    <h4>Heartland Partnership Talks</h4>
+                    <h4>Heartland Partnership Talk Organization</h4>
                     <h5></h5>
                 </div>
                 <div class="right">
-                    Fall 2023, Spring 2024, Spring 2025
+                    Fall 2024
                 </div>
             </div>
             <p class="summary">
-                Speaking series as outreach to midwest colleges. <a href="https://joe-starr.com/speaking/general_audience/zombie_jones/" target="_blank">Constructing the Jones polynomial to save the world</a>
+                Speaking series as outreach to midwest colleges.
             </p>
         
         <div class="hrlite"></div>
@@ -882,8 +909,106 @@ contact potential research mentors.
                 </div>
             </div>
             <p class="summary">
-                &ldquo;The Exploring Majors Fair on each Hawkeye Visit Day connects prospective
-undergraduate students with departments of their interest. &quot;
+                The Exploring Majors Fair on each Hawkeye Visit Day connects prospective
+undergraduate students with departments of their interest.
+            </p>
+        
+        <div class="hrlite"></div>
+        <div class="flex">
+            <div class="left">
+                    <h4>Seminars Organized</h4>
+                    <h5></h5>
+                </div>
+                <div class="right">
+                    
+                </div>
+            </div>
+            <p class="summary">
+                
+
+<h4 class="relative group">Knots, Tangles, and Computers
+    <div id="knots-tangles-and-computers" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#knots-tangles-and-computers" aria-label="Anchor"></a>
+    </span>
+    
+</h4>
+
+
+<h5 class="relative group">Primary Organizer:
+    <div id="primary-organizer" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#primary-organizer" aria-label="Anchor"></a>
+    </span>
+    
+</h5>
+<ul>
+<li>Fall 2024: On Arborescent Tangles</li>
+<li>Spring 2024: On Software Engineering</li>
+<li>Fall 2023: On Tangle Tabulation</li>
+</ul>
+
+
+<h4 class="relative group">Topological Data Visualization
+    <div id="topological-data-visualization" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#topological-data-visualization" aria-label="Anchor"></a>
+    </span>
+    
+</h4>
+
+
+<h5 class="relative group">Assisted in Organizing:
+    <div id="assisted-in-organizing" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#assisted-in-organizing" aria-label="Anchor"></a>
+    </span>
+    
+</h5>
+<ul>
+<li>Spring 2024</li>
+<li>Fall 2023</li>
+</ul>
+
+
+<h4 class="relative group">Undergraduate Topology Seminar
+    <div id="undergraduate-topology-seminar" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#undergraduate-topology-seminar" aria-label="Anchor"></a>
+    </span>
+    
+</h4>
+
+
+<h5 class="relative group">Assisted in Organizing:
+    <div id="assisted-in-organizing-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#assisted-in-organizing-1" aria-label="Anchor"></a>
+    </span>
+    
+</h5>
+<ul>
+<li>Fall 2024 On 3d printing for visualization (technical support)</li>
+</ul>
+
             </p>
         
     </section>
