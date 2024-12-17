@@ -25,13 +25,21 @@
             print-color-adjust:exact !important;
             }
 
-
-        @media print {
-            @page{
-                size: a4;
-            }
+        @page{
+                size: A4 portrait;
+                margin-left: 1in;
+                margin-right: 1in;
+                margin-top: 1in;
+                margin-bottom: 1in;
+         }
+        @page  :first {
+                size: A4 portrait;
+                margin-left: 1in;
+                margin-right: 1in;
+                margin-top: .125in;
+                margin-bottom: 1in;
+         }
             html{
-                margin:.7in;
                 font-size: 12pt;
                 color: var(--print-text-color);
             }
@@ -40,12 +48,11 @@
             #nav {
                 display: none !important;
             }
-        }
 
         .section_title{
             background-color: var(--primary-color);
             color: var(--background-color);
-            font-size: 1.5vh;
+            font-size: 13pt;
         }
         .head .icon{
             color: var(--text-color);
@@ -67,14 +74,11 @@
     h4, h5, h6  {
             font-family: 'roboto', sans-serif;
             padding: 0;
-            margin: .125vh;
-        }
-       h6  {
-            font-family: 'roboto', sans-serif;
-            padding: 0;
-            margin: 0;
+            font-size: 12pt;
+            margin:0;
         }
         h1{
+            font-size: 20pt;
             color: var(--primary-color);
         }
         p{
@@ -91,21 +95,21 @@
         .hr{
             background-color: var(--primary-color);
             border-color: var(--primary-color);
-            height: .5vh;
+            height: .005in;
             padding: 0;
             margin-top: 0;
         }
         .hrlite{
             background-color: var(--secondary-color);
             border-color: var(--secondary-color);
-            height: .1vh;
+            height: .005in;
             padding: 0;
             margin-top: 0;
         }
         .section_title{
             display: inline-block;
-            padding: .5vw;
-            margin: .125vh;
+            padding: .05in;
+            margin: .025in;
             margin-left: 0;
             margin-bottom: 0;
             text-transform: uppercase;
@@ -122,14 +126,15 @@
             margin: 0;
         }
         .summary {
-            margin-top: .5vh;
-            margin-bottom: .5vh;
+            margin-top: .05in;
+            margin-bottom: .05in;
         }
 
         .right {
             float: right;
-            min-width: 17vw;
+            min-width: 1in;
             font-weight: bold;
+            text-align:right;
         }
 
 
@@ -145,16 +150,12 @@
 </head>
 
 <body>
-    <header>
 
-    </header>
-
-    <div class="head">
+    <div class="head" >
         <h1>{{ $cv_data.header.name | markdownify }}</h1>
         <h2>{{ $cv_data.header.title | markdownify }}</h2>
         <p>
             {{ range $cv_data.header.contact }}
-
             <a href="{{.address}}"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.text | markdownify }}</a>
              {{ end}}
         </p>
@@ -174,7 +175,7 @@
             <div class="flex" >
                 <div class="left">
                     <h4>{{.name | markdownify}}</h4>
-                    <h5>{{.subheader | markdownify}}</h5>
+                    <h6>{{.subheader | markdownify}}</h6>
                 </div>
                 <div class="right">
                     {{.dates | markdownify}}
