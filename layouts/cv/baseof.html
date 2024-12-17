@@ -14,34 +14,32 @@
 
         :root {
             --text-color: {{ $cv_data.color.textColor | default "#343a40" }};
+            --print-text-color: {{ $cv_data.color.printTextColor | default "#343a40" }};
             --text-secondary-color: {{ $cv_data.color.secondaryTextColor | default "#6c757d" }};
-            --background-color: {{ $cv_data.color.backgroundColor | default "#eaedf0" }};
+            --background-color: {{ $cv_data.color.backgroundColor | default "#ffffff" }};
             --secondary-background-color: {{ $cv_data.color.secondaryBackgroundColor | default "#64ffda1a" }};
             --primary-color: {{ $cv_data.color.primaryColor | default "#007bff" }};
-            --secondary-color: {{ $cv_data.color.secondaryColor | default "#f8f9fa" }};
+            --secondary-color: {{ $cv_data.color.secondaryColor | default "#ffffff" }};
+            --contrast-text-color: {{ $cv_data.color.contrastTextColor | default "#ffffff" }};
+            -webkit-print-color-adjust:exact !important;
+            print-color-adjust:exact !important;
             }
 
 
         @media print {
             @page{
-                size: letter;
-            }
-            .section_title{
-                background-color: var(--primary-color);
-                color: #ffffff;
-                font-size: 12pt;
+                size: a4;
             }
             html{
-                font-size: 11pt;
-                color: #000000;
-                background-color: #ffffff;
+                margin:.7in;
+                font-size: 12pt;
+                color: var(--print-text-color);
             }
-
-        }
-        @media screen {
-        html{
-            color: var(--text-color);
-            background-color: var(--background-color);
+            #header,
+            #footer,
+            #nav {
+                display: none !important;
+            }
         }
 
         .section_title{
@@ -49,7 +47,6 @@
             color: var(--background-color);
             font-size: 1.5vh;
         }
-    }
         .head .icon{
             color: var(--text-color);
             background-color: var(--background-color);
@@ -68,12 +65,12 @@
 
         h1, h2, h3,
     h4, h5, h6  {
-            font-family: 'Asul', sans-serif;
+            font-family: 'roboto', sans-serif;
             padding: 0;
             margin: .125vh;
         }
        h6  {
-            font-family: 'Asul', sans-serif;
+            font-family: 'roboto', sans-serif;
             padding: 0;
             margin: 0;
         }
@@ -116,7 +113,7 @@
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'roboto', sans-serif;
         }
 
         .flex {
