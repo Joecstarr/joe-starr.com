@@ -184,11 +184,11 @@ sections:
     - title: Invited General Audience Talks
       icon: fa-solid fa-microphone
       subsections:
-          - dates: "April 2025 <br/>(Scheduled)"
-            name: "Andrews University"
+          - dates: "April 2025"
+            name: "Andrews University (Scheduled)"
             summary: "[Constructing the Jones polynomial to save the world](https://joe-starr.com/speaking/general_audience/zombie_jones/)"
-          - dates: "January 2025 <br/>(Planned)"
-            name: "St. Ambrose University"
+          - dates: "January 2025"
+            name: "St. Ambrose University (Planned)"
             summary: "[Constructing the Jones polynomial to save the world](https://joe-starr.com/speaking/general_audience/zombie_jones/)"
           - dates: "February 2024"
             name: "Truman State University"
@@ -202,36 +202,41 @@ sections:
     - title: Posters
       icon: fa-solid fa-users
       subsections:
-        - dates: "February 2025 <br/>(planned)"
-          name: "[2025 Research in Undergraduate Mathematics Education Conference](https://sites.google.com/view/rume2025/)"
+        - dates: "February 2025"
+          name: "[2025 Research in Undergraduate Mathematics Education Conference (planned)](https://sites.google.com/view/rume2025/)"
           summary: 'Submitted poster on "How One GTA Restructured a Course on Teaching Undergraduate Research"'
         - dates: "November 2023"
           name: "[9th Mexican Workshop on Applied Geometry and Topology](https://9mwgeometrytopology.eventos.cimat.mx/home_9atd)"
-          summary: "[https://joe-starr.com/speaking/posters/9mwagt/](https://joe-starr.com/speaking/posters/9mwagt/)"
+          summary: |-
+                     [https://joe-starr.com/speaking/posters/9mwagt/](https://joe-starr.com/speaking/posters/9mwagt/)
+                     <div style="page-break-after: always;"><div/>
     # ##############################################################################
     # ##############################################################################
     # ##############################################################################
     - title: Conference Attendance
       icon: fa-solid fa-users
       subsections:
-          - dates: "February 2025 <br/>(planned)"
-            name: "[2025 Research in Undergraduate Mathematics Education Conference](https://sites.google.com/view/rume2025/)"
+          - dates: "February 2025"
+            name: "[2025 Research in Undergraduate Mathematics Education Conference (planned)](https://sites.google.com/view/rume2025/)"
+            summary: "Funded by NSF RTG grant [DMS-2038103](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2038103)"
           - dates: "January 2025"
             name: "[Joint Math Meetings](https://jointmathematicsmeetings.org/jmm)"
             summary: "Funded by AMS Travel Grant"
           - dates: "December 2024"
             name: "[Knots in Washington 50](https://blogs.gwu.edu/ccas-knotsinwashington/kiw-50/)"
+            summary: "Funded by NSF Knots in Washington Grant and NSF RTG grant [DMS-2038103](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2038103)"
           - dates: "November 2024"
             name: "[CIMAT-Mérida Applied Topology School (Remote)](https://applied-topology-school.eventos.cimat.mx)"
           - dates: "August 2024"
             name: "[2024 MAA Mathfest](https://maa.org/event/mathfest/)"
             summary: "Funded by NSF RTG grant [DMS-2038103](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2038103)"
           - dates: "February 2024"
+            summary: "Funded by The University of Iowa Department of Mathematics"
             name: "[2024 Research in Undergraduate Mathematics Education Conference](https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php)"
           - dates: "January 2024"
             name: "[GEOTOP-A International Conference](https://seminargeotop-a.com/merida24)"
           - dates: "November 2023"
-            name: "[9th Mexican Workshop on Applied Geometry and Topology](https://9mwgeometrytopology.eventos.cimat.mx/home_9atd)"
+            name: "[9th Mexican Workshop on Applied Geometry and Topology (Remote)](https://9mwgeometrytopology.eventos.cimat.mx/home_9atd)"
           - dates: "October 2023"
             name: "[AMS Central Section Meeting: Special Session on Applied Knot Theory](https://www.ams.org/meetings/sectional/2307_special.html)"
             summary: "Funded by AMS Travel Grant"
@@ -239,15 +244,20 @@ sections:
             summary: "Funded by ICERM and NSF RTG grant [DMS-2038103](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2038103)"
             dates: May 2023
           - dates: "February 2023"
-            name: "[2023 Research in Undergraduate Mathematics Education Conference](https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php)"
+            name: "[2023 Research in Undergraduate Mathematics Education Conference (Remote)](https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/conferences/sigmaa-on-rume.php)"
+            summary: "Funded by The University of Iowa Department of Mathematics"
           - dates: "November 2022"
-            name: "[8th Mexican Workshop on Applied Geometry and Topology](https://8mwgeometrytopology.eventos.cimat.mx/home_8mwtopology)"
+            summary: |-
+                     <div style="page-break-after: always;"><div/>
+            name: "[8th Mexican Workshop on Applied Geometry and Topology (Remote)](https://8mwgeometrytopology.eventos.cimat.mx/home_8mwtopology)"
     # ##############################################################################
     # ##############################################################################
     # ##############################################################################
     - title: Service
       icon: fa-solid fa-handshake
       subsections:
+          - name: "[Editor Synthesis a journal of student science communication](https://pubs.lib.uiowa.edu/synthesis/editorialteam/)"
+            dates: Fall 2024, Spring 2025
           - name: Webmaster University of Iowa Math Graduate Board
             dates: Spring 2023 to Fall 2024
           - name: Heartland Partnership Talk Organization
