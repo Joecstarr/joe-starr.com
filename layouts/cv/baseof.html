@@ -164,14 +164,15 @@
     </div>
 
     {{ range $cv_data.sections }}
-    <section style="page-break-inside:avoid;">
+    <section  >
 
-        <h2 class="section_title"><i class="{{.icon}} icon" aria-hidden="true"></i>{{.title | markdownify }}</h2>
+        <h2 class="section_title" ><i class="{{.icon}} icon" aria-hidden="true"></i>{{.title | markdownify }}</h2>
         <div class="hr"></div>
         {{ range .subsections }}
-        <div class="hrlite"></div>
-        <div class="flex">
-            <div class="left">
+        <div style="page-break-inside:avoid;">
+            <div class="hrlite"></div>
+            <div class="flex" >
+                <div class="left">
                     <h4>{{.name | markdownify}}</h4>
                     <h5>{{.subheader | markdownify}}</h5>
                 </div>
@@ -182,6 +183,7 @@
             <p class="summary">
                 {{.summary | markdownify}}
             </p>
+        </div>
         {{ end }}
     </section>
     {{ end }}
