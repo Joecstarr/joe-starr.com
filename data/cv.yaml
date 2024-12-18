@@ -118,8 +118,8 @@ sections:
             subheader: Graduate Assistant
             summary: |-
                 Topics in mathematical biology; canonical mathematical modeling
-                and analysis of problems in the biological sciences (
-                data analysis and introduction to machine learning).
+                and analysis of problems in the biological sciences
+                (data analysis and introduction to machine learning).
                 [Course Listing](https://myui.uiowa.edu/my-ui/courses/dashboard.page?q.courseSubject=MATH&q.courseNumber=5760&showResults=1)
             dates: Spring 2024
           - name: ISA:4040
@@ -284,5 +284,5 @@ sections:
                 * Fall 2023
                 #### Undergraduate Topology Seminar
                 ##### Assisted in Organizing:
-                * Fall 2024 On 3d printing for visualization (technical support)
+                * Fall 2024 On 3D printing for visualization (technical support)
 
