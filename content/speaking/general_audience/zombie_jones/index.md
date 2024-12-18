@@ -35,6 +35,7 @@ slides:
 
 # Zombies and knots
 ## Constructing the Jones polynomial to save the world
+$\ $
 
 ---
 
