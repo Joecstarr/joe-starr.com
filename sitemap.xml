@@ -46,24 +46,30 @@
   </url>
   <url>
     <loc>https://joe-starr.com/</loc>
-    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joe-starr.com/speaking/research/kiw50/</loc>
-    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+    <loc>https://joe-starr.com/speaking/research/jmm_25/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://joe-starr.com/speaking/research/</loc>
-    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://joe-starr.com/speaking/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/speaking/research/kiw50/</loc>
     <lastmod>2024-12-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
