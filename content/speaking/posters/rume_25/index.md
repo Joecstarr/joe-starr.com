@@ -7,10 +7,16 @@ betterposter:
     dimensions:
         height: "36in"
         width: "48in"
-        fontbase: "24pt"
+        fontbase: "26pt"
+        grid:
+            area: ["T H R",
+                   "L H R",
+                   "L H F"] # T: Title, H: Hero, L: Left, R: Right, F: References
+            cols: "1fr 2fr 1fr"
+            rows: "1fr 5fr 1fr"
     colors:
         Background: "#ffffff"
-        Selection: "#202020"
+        Selection: "#7f7d9c"
         Foreground: "#000000"
         Highlight: "#FFCD00"
         HeroText: "#000000"
@@ -32,11 +38,11 @@ betterposter:
         - num: 1
           address: The University of Iowa
     logos:
-        left: "https://brand.uiowa.edu/sites/brand.uiowa.edu/files/styles/widescreen__768_x_432/public/2020-05/Block%20IOWA-black%20on%20gold%402x.png?h=42ab2369&itok=uLS-ijQT"
-        center: ""
+        left: "/misc/isa_logo.png"
+        center: "/misc/iowa_logo.svg"
         right: ""
     qr:
-        src: https://github.com/Joecstarr/MfaCoTUR/releases/latest
+        src: https://joe-starr.com/resources/course_plans/
         # label_top: |-
         #         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu congue lorem.
         label_bottom: |-
@@ -46,18 +52,20 @@ betterposter:
 draft: false
 ---
 
+<!-- Begin Hero -->
 # Preparing **undergraduate researchers** for graduate school by **developing their instruction**.
 
 ---
 
+<!-- Begin Left -->
 ## The course
 
-The course, ISA:4040 _teaching your undergraduate research_ is based on the
+The course, ISA:4040 _Teaching Your Undergraduate Research_ is based on the
 prior work of Hoffmann and Lenoch (Hoffmann & Lenoch, 2013) but reimagined for
 undergraduates engaged in undergraduate research. The course's established goal
 is to provide experience in instructional design and implementation to
 undergraduates whose intention is to continue to graduate school. The course has
-been offered for approximately five years, by The Iowa Sciences Academy a
+been offered for approximately five years by The Iowa Sciences Academy a
 division of The University of Iowa, whose mission is to support the success of
 undergraduate students interested in research and scientific communication. In
 that time the design of the course has primarily been that of a traditional
@@ -81,10 +89,10 @@ The following goals were established to drive the redesign of the course:
 ### The Plan: Gradual Release
 
 The course began with a model lesson presented by the instructor, based on the
-instructors own research. This was followed by a group discussion where the
+instructor's own research. This was followed by a group discussion where the
 design of the model lesson was unpacked giving a practical example for backward
 design in the wild. This was supplemented with specific readings from
-Understanding by design (Wiggins & McTighe, 2008). Students were given more
+Understanding by Design (Wiggins & McTighe, 2008). Students were given more
 agency as the course moved to discussion of assessment. In this
 section of the course, students were given specific sources and
 empowered to select their own specific readings. The readings were
@@ -102,6 +110,7 @@ cycle for course creation for each student.
 
 ---
 
+<!-- Begin Right -->
 ### The Plan: Ungrading
 
 The redesigned course has four deliverables for students combined into a
@@ -134,7 +143,7 @@ objectives.
 ## The Research
 
 As a portion of a more extensive scholarly review of the
-_teaching your undergraduate research_ course paradigm data was collected on
+_Teaching Your Undergraduate Research_ course paradigm data was collected on
 experience of students in this course. Data was collected from students (n=7)
 during interviews which were conducted during final retrospective meetings.
 
@@ -169,6 +178,8 @@ strategies and look for others that will help support our three goals.
 
 
 ---
+
+<!-- Begin References -->
 
 Fisher, D., & Frey, N. (2013). Better Learning Through Structured Teaching: A Framework for the Gradual Release of Responsibility. ASCD.
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <meta name="date" content="2020-06-11">
+    <meta name="date" content="2025-02-11">
     <title>{{ .Title }} | {{ site.Title }}</title>
 
     <style type="text/css">
@@ -62,7 +62,7 @@
 
         html {
             font-family: "Roboto";
-            font-size:  {{ .Page.Params.betterposter.dimensions.fontbase | default "24pt" }};;
+            font-size:  {{ .Page.Params.betterposter.dimensions.fontbase | default "27pt" }};;
             color: var(--r-Foreground);
             width: {{ .Page.Params.betterposter.dimensions.width | default "46.8in" }};
             height: {{ .Page.Params.betterposter.dimensions.height | default "33.1in" }};
@@ -80,11 +80,11 @@
 
         body {
             grid-template-areas:
-                "T H R"
-                "L H R"
-                "L H F";
-            grid-template-columns: 2fr 5fr 2fr;
-            grid-template-rows: 1fr 5fr 1fr;
+                {{ range .Page.Params.betterposter.dimensions.grid.area }}
+                    "{{.}}"
+                {{ end}};
+            grid-template-columns: {{ .Page.Params.betterposter.dimensions.grid.cols | default "2fr 5fr 2fr" }};
+            grid-template-rows: {{ .Page.Params.betterposter.dimensions.grid.rows | default "1fr 5fr 1fr" }};
         }
 
         #hero {
@@ -120,14 +120,14 @@
         }
 
         p {
-            margin-block-start: 0.25em;
+            margin-block-start: 0.25rem;
         }
 
         pre,
         pre.sourceCode {
-            font-size: 0.8em;
-            margin: 1em 0;
-            padding: 0.5em 0.5em;
+            font-size: 0.8rem;
+            margin: 1rem 0;
+            padding: 0.5rem 0.5rem;
         }
 
         code {
@@ -136,13 +136,13 @@
 
         blockquote {
             font-style: italic;
-            padding-left: 1em;
-            border-left: .5em solid  var(--r-Selection);
+            padding-left: 1rem;
+            border-left: .5rem solid  var(--r-Selection);
             margin-left: 0;
         }
 
         sup {
-            font-size: 0.75em;
+            font-size: 0.75rem;
             font-style: normal;
         }
 
@@ -152,7 +152,7 @@
             color:  var(--r-HeroText);
             font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
             padding: 5%;
-            font-size: 2.75em;
+            font-size: 2.5rem;
         }
 
         #hero h1 {
@@ -166,34 +166,34 @@
         }
 
         #hero p {
-            padding: 1em 0;
+            padding: 1rem 0;
         }
 
         #hero>p:first-of-type {
-            padding-top: 6em;
+            padding-top: 6rem;
         }
 
         #qrholder{
             {{ if eq .Page.Params.betterposter.qr.border "true" }}
             border: 4px solid var(--r-Foreground);
-            border-radius: .75em;
-            padding:.75em;
+            border-radius: .75rem;
+            padding:.75rem;
             {{ end }}
             position: absolute;
             bottom: 5%;
             left: 5%;
-            width: 8em;
+            width: 20rem;
         }
 
         #qrcode_toplbl, #qrcode_btmlbl{
-            font-size:.9em;
+            font-size:1.8rem;
             margin:0 !important;
         }
         #qrcode_btmlbl{
-            padding:1em 0 0 0  !important;
+            padding:1rem 0 0 0  !important;
         }
         #qrcode_toplbl{
-            padding: 0 0 1em 0  !important;
+            padding: 0 0 1rem 0  !important;
         }
 
         #title-container {
@@ -211,7 +211,7 @@
 
         #title-container .author {
             font-style: italic;
-            font-size: 1.25em;
+            font-size: 1.25rem;
         }
 
         #title-container .affiliation {
@@ -235,7 +235,7 @@
         #references p,
         #references ul,
         #references ol {
-            font-size: 0.6em;
+            font-size: 0.6rem;
         }
 
         table {
@@ -253,7 +253,7 @@
         table td,
         table th {
             padding: .1rem .2rem;
-            font-size: .5em;
+            font-size: .5rem;
         }
 
         table th {
@@ -265,8 +265,8 @@
             padding-top: 25%;
             background-image: url({{ .Page.Params.betterposter.logos.center }});
             background-repeat: no-repeat;
-            background-position: bottom center;
-            background-size: 13%;
+            background-position: 90% 95%;
+            background-size: 30%;
         }
 
         #right-bar {
@@ -337,10 +337,11 @@
 
 
     <script type="text/javascript">
+        var width = document.getElementById('qrholder').offsetWidth;
         var style = window.getComputedStyle(document.body)
         var qrcode = new QRCode(document.getElementById("qrcode"), {
-            width : 800,
-            height : 800,
+            width : width*.9,
+            height : width*.9,
             useSVG: true,
             colorDark : style.getPropertyValue("--r-HeroText"),
             colorLight : style.getPropertyValue("--r-Highlight"),
