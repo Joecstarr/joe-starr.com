@@ -1,0 +1,383 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="date" content="2025-02-11">
+    <title>{{ .Title }} | {{ site.Title }}</title>
+
+    <style type="text/css">
+        :root {
+            --r-Background: {{ .Page.Params.betterposter.colors.Background | default "#282a36" }};
+            --r-Selection: {{ .Page.Params.betterposter.colors.Selection | default "#44475a" }};
+            --r-Foreground: {{ .Page.Params.betterposter.colors.Foreground | default "#f8f8f2" }};
+            --r-Highlight: {{ .Page.Params.betterposter.colors.Highlight | default "#6272a4" }};
+            --r-HeroText: {{ .Page.Params.betterposter.colors.HeroText | default "#6272a4" }};
+            --r-Blue: {{ .Page.Params.betterposter.colors.Blue | default "#8be9fd" }};
+            --r-Green: {{ .Page.Params.betterposter.colors.Green | default "#50fa7b" }};
+            --r-Orange: {{ .Page.Params.betterposter.colors.Orange | default "#ffb86c" }};
+            --r-Pink: {{ .Page.Params.betterposter.colors.Pink | default "#ff79c6" }};
+            --r-Purple: {{ .Page.Params.betterposter.colors.Purple | default "#bd93f9" }};
+            --r-Red: {{ .Page.Params.betterposter.colors.Red | default "#ff5555" }};
+            --r-Yellow: {{ .Page.Params.betterposter.colors.Yellow | default "#f1fa8c" }};
+        }
+
+
+        .stroke-blue{stroke: var(--r-Blue) !important ;}
+        .stroke-green{stroke: var(--r-Green) !important ;}
+        .stroke-orange{stroke: var(--r-Orange) !important ;}
+        .stroke-pink{stroke: var(--r-Pink) !important ;}
+        .stroke-purple{stroke: var(--r-Purple) !important ;}
+        .stroke-red{stroke: var(--r-Red) !important ;}
+        .stroke-yellow{stroke: var(--r-Yellow) !important ;}
+        .stroke-background{stroke: var(--r-Background) !important ;}
+        .stroke-foreground{stroke: var(--r-Foreground) !important ;}
+        .stroke-highlight{stroke: var(--r-Highlight) !important ;}
+        .stroke-selection{stroke: var(--r-Selection) !important ;}
+        .fill-blue{fill: var(--r-Blue) !important ;}
+        .fill-green{fill: var(--r-Green) !important ;}
+        .fill-orange{fill: var(--r-Orange) !important ;}
+        .fill-pink{fill: var(--r-Pink) !important ;}
+        .fill-purple{fill: var(--r-Purple) !important ;}
+        .fill-red{fill: var(--r-Red) !important ;}
+        .fill-yellow{fill: var(--r-Yellow) !important ;}
+        .fill-background{fill: var(--r-Background) !important ;}
+        .fill-foreground{fill: var(--r-Foreground) !important ;}
+        .fill-highlight{fill: var(--r-Highlight) !important ;}
+        .fill-selection{fill: var(--r-Selection) !important ;}
+
+        @page {
+            width: {{ .Page.Params.betterposter.dimensions.width | default "46.8in" }};
+            height: {{ .Page.Params.betterposter.dimensions.height | default "33.1in" }};
+            margin: 0;
+        }
+
+        html,
+        body {
+            background:  var(--r-Background);
+        }
+
+        html {
+            font-family: "Roboto";
+            font-size:  {{ .Page.Params.betterposter.dimensions.fontbase | default "27pt" }};;
+            color: var(--r-Foreground);
+            width: {{ .Page.Params.betterposter.dimensions.width | default "46.8in" }};
+            height: {{ .Page.Params.betterposter.dimensions.height | default "33.1in" }};
+        }
+
+        body {
+            margin: 0;
+            width: 99%;
+            height: 99%;
+            display: grid;
+            grid-gap: 0.25in;
+            grid-template-columns: 60px 60px;
+            padding: 0.25in !important;
+        }
+
+        body {
+            grid-template-areas:
+                {{ range .Page.Params.betterposter.dimensions.grid.area }}
+                    "{{.}}"
+                {{ end}};
+            grid-template-columns: {{ .Page.Params.betterposter.dimensions.grid.cols | default "2fr 5fr 2fr" }};
+            grid-template-rows: {{ .Page.Params.betterposter.dimensions.grid.rows | default "1fr 5fr 1fr" }};
+        }
+
+        #hero {
+            grid-area: H;
+        }
+
+        #left-bar {
+            grid-area: L;
+        }
+
+        #right-bar {
+            grid-area: R;
+        }
+
+        #title-container {
+            grid-area: T;
+        }
+
+        #references {
+            grid-area: F;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-block-end: 0;
+            font-family: "Roboto Slab", Arial, sans-serif;
+        }
+
+        p {
+            margin-block-start: 0.25rem;
+        }
+
+        pre,
+        pre.sourceCode {
+            font-size: 0.8rem;
+            margin: 1rem 0;
+            padding: 0.5rem 0.5rem;
+        }
+
+        code {
+            font-family: "Source Code Pro", Monaco, monospace;
+        }
+
+        blockquote {
+            font-style: italic;
+            padding-left: 1rem;
+            border-left: .5rem solid  var(--r-Selection);
+            margin-left: 0;
+        }
+
+        sup {
+            font-size: 0.75rem;
+            font-style: normal;
+        }
+
+        #hero {
+            position: relative;
+            background: var(--r-Highlight);
+            color:  var(--r-HeroText);
+            font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+            padding: 5%;
+            font-size: 2.5rem;
+        }
+
+        #hero h1 {
+            font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+            padding-top: 5%;
+            font-weight:normal;
+        }
+
+        #hero h1 strong {
+            font-weight: 700;
+        }
+
+        #hero p {
+            padding: 1rem 0;
+        }
+
+        #hero>p:first-of-type {
+            padding-top: 6rem;
+        }
+
+        #qrholder{
+            {{ if eq .Page.Params.betterposter.qr.border "true" }}
+            border: 4px solid var(--r-Foreground);
+            border-radius: .75rem;
+            padding:.75rem;
+            {{ end }}
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            width: 20rem;
+        }
+
+        #qrcode_toplbl, #qrcode_btmlbl{
+            font-size:1.8rem;
+            margin:0 !important;
+        }
+        #qrcode_btmlbl{
+            padding:1rem 0 0 0  !important;
+        }
+        #qrcode_toplbl{
+            padding: 0 0 1rem 0  !important;
+        }
+
+        #title-container {
+            padding: 5% 5% 0 5%;
+            background: none;
+        }
+
+        #title-container .author,
+        #title-container .affiliation {
+            font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+        }
+        #title-container .extra_author{
+            color: var(--r-Selection);
+        }
+
+        #title-container .author {
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+
+        #title-container .affiliation {
+            font-weight: normal;
+        }
+
+        #left-bar {
+            background: none;
+            padding: 0 5%;
+        }
+
+        #right-bar {
+            background: none;
+            padding: 5%;
+        }
+
+        #references {
+            padding: 0 5%;
+        }
+
+        #references p,
+        #references ul,
+        #references ol {
+            font-size: 0.6rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: left;
+            width: 100%;
+            border: .05rem solid  var(--r-Selection);
+        }
+
+        table thead {
+            background:  var(--r-Selection);
+        }
+
+        table td,
+        table th {
+            padding: .1rem .2rem;
+            font-size: .5rem;
+        }
+
+        table th {
+            border-bottom-width: .1rem;
+        }
+
+
+    #hero{
+            padding-top: 25%;
+            background-image: url({{ .Page.Params.betterposter.logos.center }});
+            background-repeat: no-repeat;
+            background-position: 90% 95%;
+            background-size: 30%;
+        }
+
+        #right-bar {
+            background-image: url({{ .Page.Params.betterposter.logos.right }});
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 30%;
+        }
+
+        #left-bar {
+            background-image: url({{ .Page.Params.betterposter.logos.left  }});
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 40%;
+            margin-bottom: 2%;
+        }
+
+    </style>
+
+    {{ partial "extend-head.html" . }}
+    {{ $qrjs := resources.Get "js/qrcode.min.js" }}
+    <script src="{{ $qrjs.RelPermalink }}"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+
+
+    <div id="title-container">
+        <h1 id="title">
+            <p>{{ .Page.Params.betterposter.title | markdownify}}</p>
+        </h1>
+
+        <h3 >
+            <span id="author" class="author">{{ .Page.Params.betterposter.author.name | markdownify}}<sup> {{
+                .Page.Params.betterposter.author.affil | markdownify}}</sup></span>
+
+            {{ range .Page.Params.betterposter.authors }}
+            <span class="extra_author">{{.name | markdownify}}<sup>{{.affil | markdownify}}</sup></span>
+            {{ end}}
+        </h3>
+
+        <p id="affiliation" class="affiliation">
+            {{ range .Page.Params.betterposter.affiliations }}
+            <sup>{{.num | markdownify}}</sup>{{.address | markdownify}}<br />
+            {{ end}}
+        </p>
+    </div>
+
+        <!--
+  Center Column of Poster
+
+  * The main text goes in <h1> (single #) header.
+  * You can add additional text if desired.
+-->
+
+
+    {{ block "main" . }}{{ end }}
+    <script type="text/javascript">
+        (function () {
+            // break words in <a> if the text and uri are identical
+                els = document.getElementsByTagName('a');
+                for (i = 0; i < els.length; i++) {
+                    el = els[i];
+                    if (el.getAttribute('href') === el.innerText) el.style.wordBreak = 'break-all';
+                }
+            })();
+    </script>
+
+
+    <script type="text/javascript">
+        var width = document.getElementById('qrholder').offsetWidth;
+        var style = window.getComputedStyle(document.body)
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : width*.9,
+            height : width*.9,
+            useSVG: true,
+            colorDark : style.getPropertyValue("--r-HeroText"),
+            colorLight : style.getPropertyValue("--r-Highlight"),
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        function makeCode () {
+            var elText = document.getElementById("text");
+
+            qrcode.makeCode({{ .Page.Params.betterposter.qr.src }});
+            var tl = {{ .Page.Params.betterposter.qr.label_top | markdownify }};
+            var bl = {{ .Page.Params.betterposter.qr.label_bottom | markdownify }};
+
+            if ( tl != "") {
+                var element = document.querySelector("#qrcode_toplbl");
+                const holder_tl = document.createElement('p')
+                holder_tl.innerHTML = tl;
+                holder_tl.setAttribute("id", "qrcode_toplbl");
+                element.replaceWith(holder_tl)
+            }
+            if ( bl != "") {
+                var element = document.querySelector("#qrcode_btmlbl");
+                const holder_bl = document.createElement('p')
+                holder_bl.innerHTML = bl;
+                holder_bl.setAttribute("id", "qrcode_btmlbl");
+                element.replaceWith(holder_bl)
+            }
+
+        }
+
+        makeCode();
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -30,6 +30,13 @@ pageRef = "resources"
 weight = 60
 
 [[main]]
+name = "Course Plans"
+parent = "Resources"
+pageRef = "resources/course_plans"
+weight = 70
+
+
+[[main]]
 name = "What is?"
 pageRef = "what_is"
 weight = 65
