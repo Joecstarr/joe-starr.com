@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Joe Starr</copyright>
-    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://joe-starr.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Materials for a Course on Basic Project Management</title>
+      <link>https://joe-starr.com/resources/course_plans/mfacobpm/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/resources/course_plans/mfacobpm/</guid>
+      <description>-| The contents of this repository describe the outline for a course on basic project management. There are three document sets each described in the README.</description>
+      
+    </item>
+    
+    <item>
+      <title>Materials for a Course on Teaching Undergraduate Research</title>
+      <link>https://joe-starr.com/resources/course_plans/mfacotur/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://joe-starr.com/resources/course_plans/mfacotur/</guid>
+      <description>-| The contents of this repository describe the outline for a course on teaching undergraduate research.</description>
+      
+    </item>
+    
     <item>
       <title>Tangle Tabulation</title>
       <link>https://joe-starr.com/what_is/tangle_tabulation/</link>

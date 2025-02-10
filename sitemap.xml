@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://joe-starr.com/resources/course_plans/mfacobpm/</loc>
+    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/resources/course_plans/mfacotur/</loc>
+    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://joe-starr.com/what_is/tangle_tabulation/</loc>
     <lastmod>2024-03-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -46,7 +58,31 @@
   </url>
   <url>
     <loc>https://joe-starr.com/</loc>
-    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/speaking/posters/</loc>
+    <lastmod>2025-02-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/speaking/</loc>
+    <lastmod>2025-02-27T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/resources/course_plans/</loc>
+    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://joe-starr.com/resources/</loc>
+    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -63,20 +99,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://joe-starr.com/speaking/</loc>
-    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://joe-starr.com/speaking/research/kiw50/</loc>
     <lastmod>2024-12-07T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://joe-starr.com/resources/</loc>
-    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -124,12 +148,6 @@
   </url>
   <url>
     <loc>https://joe-starr.com/speaking/posters/9mwagt/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://joe-starr.com/speaking/posters/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
