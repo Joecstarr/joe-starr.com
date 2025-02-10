@@ -151,15 +151,14 @@
             background: var(--r-Highlight);
             color:  var(--r-HeroText);
             font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-            padding: 10%;
+            padding: 5%;
             font-size: 2.75em;
         }
 
         #hero h1 {
             font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-            font-size: 3.25em;
-            font-weight: 400;
             padding-top: 5%;
+            font-weight:normal;
         }
 
         #hero h1 strong {
@@ -174,19 +173,28 @@
             padding-top: 6em;
         }
 
-        #qrcode{
+        #qrholder{
             {{ if eq .Page.Params.betterposter.qr.border "true" }}
             border: 4px solid var(--r-Foreground);
             border-radius: .75em;
             padding:.75em;
             {{ end }}
-            text-align:center;
             position: absolute;
-            bottom: 10%;
-            left: 10%;
+            bottom: 5%;
+            left: 5%;
             width: 8em;
         }
 
+        #qrcode_toplbl, #qrcode_btmlbl{
+            font-size:.9em;
+            margin:0 !important;
+        }
+        #qrcode_btmlbl{
+            padding:1em 0 0 0  !important;
+        }
+        #qrcode_toplbl{
+            padding: 0 0 1em 0  !important;
+        }
 
         #title-container {
             padding: 5% 5% 0 5%;
@@ -279,6 +287,8 @@
     </style>
 
     {{ partial "extend-head.html" . }}
+    {{ $qrjs := resources.Get "js/qrcode.min.js" }}
+    <script src="{{ $qrjs.RelPermalink }}"></script>
 </head>
 
 <body cz-shortcut-listen="true">
@@ -317,71 +327,53 @@
     <script type="text/javascript">
         (function () {
             // break words in <a> if the text and uri are identical
-            els = document.getElementsByTagName('a');
-            for (i = 0; i < els.length; i++) {
-                el = els[i];
-                if (el.getAttribute('href') === el.innerText) el.style.wordBreak = 'break-all';
-            }
-        })();
+                els = document.getElementsByTagName('a');
+                for (i = 0; i < els.length; i++) {
+                    el = els[i];
+                    if (el.getAttribute('href') === el.innerText) el.style.wordBreak = 'break-all';
+                }
+            })();
     </script>
+
 
     <script type="text/javascript">
-        function codeAddress() {
-            var element = document.querySelector("#qrcode");
-            var src = {{ .Page.Params.betterposter.qr.src }};
+        var style = window.getComputedStyle(document.body)
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 800,
+            height : 800,
+            useSVG: true,
+            colorDark : style.getPropertyValue("--r-HeroText"),
+            colorLight : style.getPropertyValue("--r-Highlight"),
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        function makeCode () {
+            var elText = document.getElementById("text");
+
+            qrcode.makeCode({{ .Page.Params.betterposter.qr.src }});
             var tl = {{ .Page.Params.betterposter.qr.label_top | markdownify }};
-            var bl = {{ .Page.Params.betterposter.qr.label_top | markdownify }};
+            var bl = {{ .Page.Params.betterposter.qr.label_bottom | markdownify }};
 
+            if ( tl != "") {
+                var element = document.querySelector("#qrcode_toplbl");
+                const holder_tl = document.createElement('p')
+                holder_tl.innerHTML = tl;
+                holder_tl.setAttribute("id", "qrcode_toplbl");
+                element.replaceWith(holder_tl)
+            }
+            if ( bl != "") {
+                var element = document.querySelector("#qrcode_btmlbl");
+                const holder_bl = document.createElement('p')
+                holder_bl.innerHTML = bl;
+                holder_bl.setAttribute("id", "qrcode_btmlbl");
+                element.replaceWith(holder_bl)
+            }
 
-            if (src.endsWith('.svg') == true) {
-                fetch(src)
-                    .then(res => res.text())
-                    .then(res => {
-                        const holder = document.createElement('div')
-                        const qr = document.createElement('div')
-                        qr.innerHTML = res
-                        if ( tl != "") {
-                            const holder_tl = document.createElement('p')
-                            holder_tl.innerHTML = tl;
-                            holder_tl.setAttribute("id", "qrcode_toplbl");
-                            holder.appendChild(holder_tl)
-                        }
-                        holder.appendChild(qr)
-                        if ( bl != "") {
-                            const holder_bl = document.createElement('p')
-                            holder_bl.innerHTML = bl;
-                            holder_bl.setAttribute("id", "qrcode_btmlbl");
-                            holder.appendChild(holder_bl)
-                        }
-                        holder.setAttribute("id", "qrcode");
-                        element.replaceWith(holder)
-                    })
-            }
-            else{
-                const holder = document.createElement('div')
-                holder.setAttribute("id", "qrcode");
-                const img = document.createElement('img')
-                img.setAttribute("src", src);
-                if ( tl != "") {
-                    const holder_tl = document.createElement('p')
-                    holder_tl.innerHTML = tl;
-                    holder_tl.setAttribute("id", "qrcode_toplbl");
-                    holder.appendChild(holder_tl)
-                }
-                holder.appendChild(img)
-                if ( bl != "") {
-                    const holder_bl = document.createElement('p')
-                    holder_bl.innerHTML = bl;
-                    holder_bl.setAttribute("id", "qrcode_btmlbl");
-                    holder.appendChild(holder_bl)
-                }
-                element.replaceWith(holder)
-            }
         }
 
-        window.onload = codeAddress;
-
+        makeCode();
     </script>
+
 
 
 

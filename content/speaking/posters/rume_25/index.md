@@ -1,33 +1,30 @@
 ---
-
 title: "27th SIGMAA on RUME Conference"
 date: "2025-02-27"
-tags: [
-    "Posters",
-]
-type: 'betterposter'
+tags: ["Posters"]
+type: "betterposter"
 betterposter:
     dimensions:
-                height: "36in"
-                width: "48in"
-                fontbase: "24pt"
+        height: "36in"
+        width: "48in"
+        fontbase: "24pt"
     colors:
-            Background: "#ffffff"
-            Selection: "#202020"
-            Foreground: "#000000"
-            Highlight: "#FFCD00"
-            HeroText: "#000000"
-            Blue: "#3984c6"
-            Green: "#4E7334"
-            Orange: "#E79461"
-            Pink: "#F0AFD2"
-            Purple: "#917CF0"
-            Red: "#CC553D"
-            Yellow: "#c1be3e"
+        Background: "#ffffff"
+        Selection: "#202020"
+        Foreground: "#000000"
+        Highlight: "#FFCD00"
+        HeroText: "#000000"
+        Blue: "#3984c6"
+        Green: "#4E7334"
+        Orange: "#E79461"
+        Pink: "#F0AFD2"
+        Purple: "#917CF0"
+        Red: "#CC553D"
+        Yellow: "#c1be3e"
     title: How One Graduate Teaching Assistant **Restructured a Course on Teaching Undergraduate Research**
     author:
-          name: '**Joseph Starr**'
-          affil: 1
+        name: "**Joseph Starr**"
+        affil: 1
     authors:
         - name: Lori Adams
           affil: 1
@@ -39,68 +36,144 @@ betterposter:
         center: ""
         right: ""
     qr:
-        src: https://raw.githubusercontent.com/Joecstarr/posters/master/qr_httpsjoe-starr.svg
+        src: https://github.com/Joecstarr/MfaCoTUR/releases/latest
         # label_top: |-
         #         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu congue lorem.
         label_bottom: |-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu congue lorem.
+            Follow the QR code for lesson plans and resource.
         border: "true"
 
 draft: false
 ---
 
-
-# A **title**
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu congue lorem. Morbi rutrum neque odio, at porta purus pulvinar vitae. Donec posuere magna nisl, eget commodo lacus euismod vulputate. Pellentesque ut sem nisl. Sed eu mi orci. Mauris tincidunt ultrices sapien, eu tristique libero commodo eu. Pellentesque a elit ac felis porttitor tincidunt at sit amet dui. Donec sed sapien metus. Nullam molestie turpis ut accumsan tempus. Nullam luctus dolor a tempor faucibus.
-$$sfasdkfja;s$$
+# Preparing **undergraduate researchers** for graduate school by **developing their instruction**.
 
 ---
 
-Pellentesque tristique, diam sed lobortis tempus, mauris enim varius mi, aliquet bibendum est elit sit amet nibh. Aenean nec rutrum augue, sit amet rhoncus lorem. Fusce vestibulum accumsan ligula quis ornare. Nullam sit amet neque vitae diam imperdiet sollicitudin eget et mi. Nam dictum dictum volutpat. Duis ut eros nisl. Sed ultrices risus quis velit vestibulum, vitae maximus ipsum aliquam. Integer porta sed lacus at tincidunt.
+## The course
 
-Ut ac est non sapien varius viverra. Duis tincidunt turpis tellus, vel aliquam nisi dictum nec. Etiam nisl magna, fermentum id lacinia rhoncus, feugiat sit amet risus. Sed luctus sollicitudin lorem ac condimentum. Phasellus nec condimentum ex. Donec semper eros nec nunc pellentesque pretium. Pellentesque mauris mi, tincidunt non aliquet non, tincidunt et metus. Vivamus non neque eu mi rutrum efficitur a id eros. Donec eget pulvinar risus. Nulla non justo eget turpis scelerisque pulvinar at quis diam. Pellentesque ex nulla, tristique ac purus ut, ornare interdum dolor. Fusce in sollicitudin erat. Integer fringilla euismod enim, quis suscipit enim viverra nec. Suspendisse risus enim, imperdiet non quam lobortis, venenatis imperdiet sem.
+The course, ISA:4040 _teaching your undergraduate research_ is based on the
+prior work of Hoffmann and Lenoch (Hoffmann & Lenoch, 2013) but reimagined for
+undergraduates engaged in undergraduate research. The course's established goal
+is to provide experience in instructional design and implementation to
+undergraduates whose intention is to continue to graduate school. The course has
+been offered for approximately five years, by The Iowa Sciences Academy a
+division of The University of Iowa, whose mission is to support the success of
+undergraduate students interested in research and scientific communication. In
+that time the design of the course has primarily been that of a traditional
+course, relying on lecture and written/oral assignments taking the form of a
+term project. The term project asked students to produce a teaching unit for a
+general audience lesson on the student's own research work. This teaching unit
+design and execution were graded against a common rubric.
 
-Nulla ligula ipsum, pharetra a fringilla quis, sollicitudin sed justo. Cras laoreet enim at tincidunt pellentesque. Aliquam dui urna, condimentum nec dictum at, dignissim vel diam. Fusce malesuada, dolor at imperdiet tincidunt, quam nulla eleifend est, quis volutpat tortor nisi eget nulla. Ut enim nunc, porta at tortor eu, maximus feugiat velit. Phasellus id finibus metus, molestie suscipit quam. Nam nisi risus, dapibus nec dui non, accumsan rutrum sapien. Suspendisse facilisis velit dapibus, elementum sapien tempus, auctor dui. Quisque fringilla odio egestas interdum porta. Sed ut sollicitudin sapien, sit amet feugiat erat. Vivamus iaculis condimentum dictum. Aenean porttitor nulla vestibulum justo lobortis fringilla ut eget ligula. Nam quis sem nisi. Integer semper dignissim diam sit amet molestie.
+## The Redesign
 
-Pellentesque tristique, diam sed lobortis tempus, mauris enim varius mi, aliquet bibendum est elit sit amet nibh. Aenean nec rutrum augue, sit amet rhoncus lorem. Fusce vestibulum accumsan ligula quis ornare. Nullam sit amet neque vitae diam imperdiet sollicitudin eget et mi. Nam dictum dictum volutpat. Duis ut eros nisl. Sed ultrices risus quis velit vestibulum, vitae maximus ipsum aliquam. Integer porta sed lacus at tincidunt.
+The redesigned course adopts modern instructional techniques such as
+a gradual release of responsibility model (Fisher & Frey, 2013) and ungraded
+assessments (Stommel, 2023).
 
-Ut ac est non sapien varius viverra. Duis tincidunt turpis tellus, vel aliquam nisi dictum nec. Etiam nisl magna, fermentum id lacinia rhoncus, feugiat sit amet risus. Sed luctus sollicitudin lorem ac condimentum. Phasellus nec condimentum ex. Donec semper eros nec nunc pellentesque pretium. Pellentesque mauris mi, tincidunt non aliquet non, tincidunt et metus. Vivamus non neque eu mi rutrum efficitur a id eros. Donec eget pulvinar risus. Nulla non justo eget turpis scelerisque pulvinar at quis diam. Pellentesque ex nulla, tristique ac purus ut, ornare interdum dolor. Fusce in sollicitudin erat. Integer fringilla euismod enim, quis suscipit enim viverra nec. Suspendisse risus enim, imperdiet non quam lobortis, venenatis imperdiet sem.
+### The Design Goals
+The following goals were established to drive the redesign of the course:
+1. Students can engage in teaching as a structured activity.
+2. Students are confident to **"go rogue"** in their own learning.
+3. Students acknowledge that failure breeds success.
 
-Nulla ligula ipsum, pharetra a fringilla quis, sollicitudin sed justo. Cras laoreet enim at tincidunt pellentesque. Aliquam dui urna, condimentum nec dictum at, dignissim vel diam. Fusce malesuada, dolor at imperdiet tincidunt, quam nulla eleifend est, quis volutpat tortor nisi eget nulla. Ut enim nunc, porta at tortor eu, maximus feugiat velit. Phasellus id finibus metus, molestie suscipit quam. Nam nisi risus, dapibus nec dui non, accumsan rutrum sapien. Suspendisse facilisis velit dapibus, elementum sapien tempus, auctor dui. Quisque fringilla odio egestas interdum porta. Sed ut sollicitudin sapien, sit amet feugiat erat. Vivamus iaculis condimentum dictum. Aenean porttitor nulla vestibulum justo lobortis fringilla ut eget ligula. Nam quis sem nisi. Integer semper dignissim diam sit amet molestie.
+### The Plan: Gradual Release
 
-Pellentesque tristique, diam sed lobortis tempus, mauris enim varius mi, aliquet bibendum est elit sit amet nibh. Aenean nec rutrum augue, sit amet rhoncus lorem. Fusce vestibulum accumsan ligula quis ornare. Nullam sit amet neque vitae diam imperdiet sollicitudin eget et mi. Nam dictum dictum volutpat. Duis ut eros nisl. Sed ultrices risus quis velit vestibulum, vitae maximus ipsum aliquam. Integer porta sed lacus at tincidunt.
-
-Ut ac est non sapien varius viverra. Duis tincidunt turpis tellus, vel aliquam nisi dictum nec. Etiam nisl magna, fermentum id lacinia rhoncus, feugiat sit amet risus. Sed luctus sollicitudin lorem ac condimentum. Phasellus nec condimentum ex. Donec semper eros nec nunc pellentesque pretium. Pellentesque mauris mi, tincidunt non aliquet non, tincidunt et metus. Vivamus non neque eu mi rutrum efficitur a id eros. Donec eget pulvinar risus. Nulla non justo eget turpis scelerisque pulvinar at quis diam. Pellentesque ex nulla, tristique ac purus ut, ornare interdum dolor. Fusce in sollicitudin erat. Integer fringilla euismod enim, quis suscipit enim viverra nec. Suspendisse risus enim, imperdiet non quam lobortis, venenatis imperdiet sem.
-
-Nulla ligula ipsum, pharetra a fringilla quis, sollicitudin sed justo. Cras laoreet enim at tincidunt pellentesque. Aliquam dui urna, condimentum nec dictum at, dignissim vel diam. Fusce malesuada, dolor at imperdiet tincidunt, quam nulla eleifend est, quis volutpat tortor nisi eget nulla. Ut enim nunc, porta at tortor eu, maximus feugiat velit. Phasellus id finibus metus, molestie suscipit quam. Nam nisi risus, dapibus nec dui non, accumsan rutrum sapien. Suspendisse facilisis velit dapibus, elementum sapien tempus, auctor dui. Quisque fringilla odio egestas interdum porta. Sed ut sollicitudin sapien, sit amet feugiat erat. Vivamus iaculis condimentum dictum. Aenean porttitor nulla vestibulum justo lobortis fringilla ut eget ligula. Nam quis sem nisi. Integer semper dignissim diam sit amet molestie.
+The course began with a model lesson presented by the instructor, based on the
+instructors own research. This was followed by a group discussion where the
+design of the model lesson was unpacked giving a practical example for backward
+design in the wild. This was supplemented with specific readings from
+Understanding by design (Wiggins & McTighe, 2008). Students were given more
+agency as the course moved to discussion of assessment. In this
+section of the course, students were given specific sources and
+empowered to select their own specific readings. The readings were
+discussed in a structured jigsaw activity where students were guided
+in sharing their learning from their selected readings. Students were then asked
+to prepare and present a five-minute lighting version of their lesson. The final
+section of instructional content was a peer review of drafts of their lesson.
+Students were asked to structure their own review requests where they prompted
+peers for specific feedback relevant to their particular needs. Following the
+main instructional portion of the course each student took fifty minutes each to
+give their lesson including prompting feedback from their peers. After all
+students have completed their lesson, each student conducted a qualitative
+analysis of their peer given feedback. This modeled a complete life
+cycle for course creation for each student.
 
 ---
 
-Vivamus suscipit maximus dolor blandit pharetra. Aenean semper vestibulum leo a cursus. Suspendisse consectetur non metus nec gravida. Donec neque libero, pellentesque in sapien vitae, scelerisque tincidunt mauris. Pellentesque a velit vel velit imperdiet eleifend nec eu est. Donec in vehicula sapien. Mauris sit amet sodales massa. Ut a urna odio.
+### The Plan: Ungrading
 
-Mauris sagittis turpis et suscipit porttitor. Aenean blandit hendrerit efficitur. Duis eu mi vitae elit hendrerit eleifend. Aenean semper, velit non imperdiet fringilla, lacus dui condimentum nibh, auctor venenatis eros arcu in nisl. Quisque at libero non nulla volutpat cursus. Mauris odio urna, dictum ac turpis at, hendrerit lacinia metus. Aenean mollis ut risus at porta.
+The redesigned course has four deliverables for students combined into a
+portfolio. First, students were still expected to create the teaching unit.
+Second is a collection of the students' design documentation detailing the
+evolution of the goals and design of their lesson throughout the
+semester. Students are presented with a backward design and
+encouraged to utilize it in their design process. As they moved
+through the course activities they were invited to change their
+minds, **"go rogue"**, and retain the artifacts of their evolving work.
+Third, is a collection of reflections on supplemental work. These supplemental
+assignments were designed and selected by the student. These included but was not
+limited to; literature reviews of teaching research, substantive extensions of
+their teaching unit, or self-determined mini-projects impacting their
+development in teaching. The final item in the portfolio is a collection of
+peer observation prompts and responses written and analyzed by the student.
+The redesigned course moves away from a unified rubric and adopts a concept of
+ungrading built from the ideas of Jesse Stommel (Stommel, 2023) as well as
+discussions with practitioners who have implemented similar methods. The ISA:4040
+upgrading strategy fits closely the professional one-to-one and
+performance review paradigm. Students were required to attend office hour
+one-to-ones with a minimum once a month plus once on the week before they teach,
+but were encouraged to attend office hours as frequently as desired.
+During these meetings the students' personal course objectives were
+discussed, agreed on, and progress evaluated. The semester culminated
+with a performance review where the portfolio is reviewed, and a
+course retrospective establishes a grade against the agreed on course
+objectives.
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras nulla mauris, dictum ut feugiat a, accumsan at lorem. Duis sagittis metus sed elit tempor molestie ut nec nunc. Vestibulum posuere finibus ipsum eu convallis. Cras in felis at ex mollis dignissim eget a nibh. Sed tellus turpis, facilisis id orci eu, pretium laoreet ante. Proin tempus nunc lorem, sit amet pretium lorem faucibus vitae. Aenean a consequat tortor. Praesent facilisis tempor metus nec mattis. In hendrerit massa sed lorem scelerisque fringilla. Aenean auctor non turpis vel dictum. Aliquam et turpis non lorem luctus sodales ac a justo. Maecenas ut elit eu ligula vestibulum varius. Etiam molestie posuere ligula nec sollicitudin. Nullam pulvinar malesuada mollis.
+## The Research
 
-Vivamus suscipit maximus dolor blandit pharetra. Aenean semper vestibulum leo a cursus. Suspendisse consectetur non metus nec gravida. Donec neque libero, pellentesque in sapien vitae, scelerisque tincidunt mauris. Pellentesque a velit vel velit imperdiet eleifend nec eu est. Donec in vehicula sapien. Mauris sit amet sodales massa. Ut a urna odio.
+As a portion of a more extensive scholarly review of the
+_teaching your undergraduate research_ course paradigm data was collected on
+experience of students in this course. Data was collected from students (n=7)
+during interviews which were conducted during final retrospective meetings.
 
-Mauris sagittis turpis et suscipit porttitor. Aenean blandit hendrerit efficitur. Duis eu mi vitae elit hendrerit eleifend. Aenean semper, velit non imperdiet fringilla, lacus dui condimentum nibh, auctor venenatis eros arcu in nisl. Quisque at libero non nulla volutpat cursus. Mauris odio urna, dictum ac turpis at, hendrerit lacinia metus. Aenean mollis ut risus at porta.
+### The Interview
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras nulla mauris, dictum ut feugiat a, accumsan at lorem. Duis sagittis metus sed elit tempor molestie ut nec nunc. Vestibulum posuere finibus ipsum eu convallis. Cras in felis at ex mollis dignissim eget a nibh. Sed tellus turpis, facilisis id orci eu, pretium laoreet ante. Proin tempus nunc lorem, sit amet pretium lorem faucibus vitae. Aenean a consequat tortor. Praesent facilisis tempor metus nec mattis. In hendrerit massa sed lorem scelerisque fringilla. Aenean auctor non turpis vel dictum. Aliquam et turpis non lorem luctus sodales ac a justo. Maecenas ut elit eu ligula vestibulum varius. Etiam molestie posuere ligula nec sollicitudin. Nullam pulvinar malesuada mollis.
+The interview was structured with a standardized question set which addressed
+the following areas of interest:
 
-Vivamus suscipit maximus dolor blandit pharetra. Aenean semper vestibulum leo a cursus. Suspendisse consectetur non metus nec gravida. Donec neque libero, pellentesque in sapien vitae, scelerisque tincidunt mauris. Pellentesque a velit vel velit imperdiet eleifend nec eu est. Donec in vehicula sapien. Mauris sit amet sodales massa. Ut a urna odio.
+1. General Experience
+1. Teaching Unit Development
+1. Learning Outcomes
+1. Feedback and Revision
+1. Impact of Grading Methods
+1. Broader Benefits
 
-Mauris sagittis turpis et suscipit porttitor. Aenean blandit hendrerit efficitur. Duis eu mi vitae elit hendrerit eleifend. Aenean semper, velit non imperdiet fringilla, lacus dui condimentum nibh, auctor venenatis eros arcu in nisl. Quisque at libero non nulla volutpat cursus. Mauris odio urna, dictum ac turpis at, hendrerit lacinia metus. Aenean mollis ut risus at porta.
+### Preliminary Report
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras nulla mauris, dictum ut feugiat a, accumsan at lorem. Duis sagittis metus sed elit tempor molestie ut nec nunc. Vestibulum posuere finibus ipsum eu convallis. Cras in felis at ex mollis dignissim eget a nibh. Sed tellus turpis, facilisis id orci eu, pretium laoreet ante. Proin tempus nunc lorem, sit amet pretium lorem faucibus vitae. Aenean a consequat tortor. Praesent facilisis tempor metus nec mattis. In hendrerit massa sed lorem scelerisque fringilla. Aenean auctor non turpis vel dictum. Aliquam et turpis non lorem luctus sodales ac a justo. Maecenas ut elit eu ligula vestibulum varius. Etiam molestie posuere ligula nec sollicitudin. Nullam pulvinar malesuada mollis.
+Data is still being processed as such only preliminary results are presented
+here. Student feedback during touchpoints indicates an increase apperception
+for the intricacies of instruction as well as increased confidence in students'
+self-identification as an instructor. Ungrading, seems to have allowed for
+students to decouple the failure of an aspect of their preparation from the
+students' failure in the course.
+
+Overall, the gradual release and ungrading models were successful for this
+small group of undergraduates. Extending these ideas to other course sections
+would provide additional broader data that would help us disaggregate data
+across several subgroups of students. We will continue using these instructional
+strategies and look for others that will help support our three goals.
+
+
+
 
 ---
 
-Sed congue sed arcu et convallis. Nam vestibulum sit amet ipsum ut dignissim. Ut interdum aliquam pulvinar. Donec non imperdiet erat. Maecenas ac sem quis turpis porttitor dictum. Proin tempus ornare malesuada. Ut non imperdiet lacus, sed semper ipsum.
+Fisher, D., & Frey, N. (2013). Better Learning Through Structured Teaching: A Framework for the Gradual Release of Responsibility. ASCD.
 
-Integer varius libero vel quam tempor, a porttitor tortor hendrerit. Aliquam molestie nec nibh in posuere. Quisque sit amet imperdiet odio, vitae aliquet quam. Praesent varius, nibh sit amet fermentum laoreet, erat diam aliquam risus, quis bibendum mauris erat a dolor. Donec suscipit neque eget est convallis ultricies. Etiam at commodo sem, ac eleifend nisi. Duis in tortor mauris. Sed molestie semper tortor sit amet commodo.
+Hoffmann, D., & Lenoch, S. (2013). Teaching Your Research: A Workshop to Teach Curriculum Design to Graduate Students and Post-doctoral Fellows. Medical Science Educator, 23(3), 336-345.
 
-Integer commodo eros ornare tincidunt imperdiet. Mauris a ex hendrerit, aliquet turpis vel, imperdiet tortor. Sed eu odio vel ante dictum elementum mollis sed ligula. Proin pellentesque facilisis massa eget cursus. Ut ultricies facilisis urna, non rutrum leo rutrum vel. Curabitur at mauris massa. Nullam dignissim arcu ante, et cursus odio tempus non. Morbi nec vulputate leo, vitae viverra magna. Quisque urna erat, convallis sed risus a, blandit tristique augue. In aliquam tempus diam vitae tristique.
+Stommel, J. (2023). Undoing the Grade: Why We Grade, and How to Stop. Hybrid Pedagogy Inc..
 
-
+Wiggins, G., & McTighe, J. (2008). Understanding by Design. Association for Supervision and Curriculum Development.
