@@ -20,9 +20,9 @@ $$\LB a\ b\ c\RB=c+\frac{1}{b+\frac{1}{a}}$$
 
 # Instructions
 
-Twist vectors here are space seperated lists of integers.
+Twist vectors here are space separated lists of integers.
 
-A rational number here is "/" seperating two integers.
+A rational number here is "/" separating two integers.
 
 ---
 
