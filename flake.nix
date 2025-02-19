@@ -25,14 +25,31 @@
           jq
           nodejs
           hugo
+           uv
           just
+          ruff
+          git
+          libxml2
+          libxslt
+          act
+          inkscape
+          chromium
+          svg2pdf
+          curl
+          zip
+          decktape
         ];
-
         shellHook = ''
-          export PATH="$PWD/node_modules/.bin/:$PATH"
-          alias scripts='jq ".scripts" package.json'
-          export PUPPETEER_EXECUTABLE_PATH="${pkgs.chromium.outPath}/bin/chromium"
-          npm install decktape
+          wget -q --spider https://google.com
+
+          if [ $? -eq 0 ]; then
+              echo "Online"
+              rm -r .venv
+          else
+              echo "Offline"
+          fi
+
+          just bootstrap
         '';
       };
     };

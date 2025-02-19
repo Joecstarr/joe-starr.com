@@ -1,24 +1,20 @@
-
-set export
-
-PYTHONPATH := "."
-python_dir := if os_family() == "windows" { "./.venv/Scripts" } else { "./.venv/bin" }
-python_exe := python_dir + if os_family() == "windows" { "/python.exe" } else { "/python3" }
+@_default:
+    just --list
 
 # Set up development environment
 bootstrap:
+    git submodule update --init --recursive
     if test ! -e .venv; then \
-    python -m venv .venv ; \
+    uv venv && uv pip install -r requirements.txt ; \
     fi
-    {{ python_exe }} -m pip install --upgrade pip wheel pip-tools
-    {{ python_exe }} -m pip install -r requirements.txt
+    source .venv/bin/activate
 
 proc-svg-size: bootstrap
     find ./static/presentations -iname "*.svg" -exec sh -c 'inkscape --actions="page-fit-to-selection" "$1" -o "$1" ' sh {} \;
-    {{ python_exe }} ./misc/proc_svg_size.py ./static/presentations
+    python ./misc/proc_svg_size.py ./static/presentations
 
 proc-svg-color: bootstrap
-    {{ python_exe }} ./misc/proc_svg_pallete.py ./static/presentations ./misc/colors.yaml
+    python ./misc/proc_svg_pallete.py ./static/presentations ./misc/colors.yaml
 
 proc-svg: proc-svg-size proc-svg-color
     echo "processing svg"
