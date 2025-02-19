@@ -73,6 +73,7 @@
             }
         }
     }
+    reveal_init_callbacks.push(()=>{MathJax.typeset()})
     reveal_slidechange_callbacks.push(remove_qr)
 </script>
 
@@ -87,7 +88,7 @@
   <script src="{{ $cdn_url_reveal }}/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
   <script src="{{ $cdn_url_reveal }}/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
   <script src="{{ $cdn_url_reveal }}/plugin/search/search.min.js" crossorigin="anonymous"></script>
-  <script src="{{ $cdn_url_reveal }}/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <!-- <script src="{{ $cdn_url_reveal }}/plugin/math/math.min.js" crossorigin="anonymous"></script> -->
   <script src="{{ $cdn_url_reveal }}/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
 
   {{/* Load third-party Reveal plugins. */}}
